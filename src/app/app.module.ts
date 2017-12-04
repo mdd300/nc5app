@@ -4,22 +4,27 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
-import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import { Qrgo_prototype } from './app.component';
+import { SlidesPage } from "../pages/themes/prototype/slides/slides";
+import { SlidesPageModule } from "../pages/themes/prototype/slides/slides.module";
+import {LoginPageModule} from "../pages/themes/prototype/login/login.module";
+import {Step1PageModule} from "../pages/themes/prototype/cadastro/step1/step1.module";
 
 @NgModule({
   declarations: [
-    MyApp,
-    HomePage
+    Qrgo_prototype
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    SlidesPageModule,
+    LoginPageModule,
+    Step1PageModule,
+    IonicModule.forRoot(Qrgo_prototype)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    HomePage
+    Qrgo_prototype,
+    SlidesPage
   ],
   providers: [
     StatusBar,

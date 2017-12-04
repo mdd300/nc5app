@@ -1,0 +1,49 @@
+<div class="login-page">
+
+    <div class="backpage-login" (click)="goBackSlides()" >
+        <svg class="backpage-ico">
+            <use [attr.xlink:href]="constants.src_svg + 'back.svg#Layer_1'"></use>
+        </svg> <!-- backpage-ico -->
+    </div> <!-- backpage-login -->
+
+    <div class="content-login-form">
+
+        <h3 class="welcome-title">Bem Vindo</h3>
+
+        <div class="image-logo-qrgo">
+            <img class="svg-logo" [src]="constants.src_svg + 'qrgo-logo.svg'"/>
+        </div> <!-- image-logo-qrgo -->
+
+        <div class="content-form-login">
+            <div class="form-cont pdg-b20">
+                <input type="text" class="form-ctrl" placeholder="Username / E-mail">
+            </div> <!-- form-cont -->
+            <div class="form-cont">
+                <input type="password" class="form-ctrl" placeholder="Senha">
+            </div> <!-- form-cont -->
+
+            <p class="forgot-pass"> Esqueci minha senha </p>
+
+            <div class="form-cont">
+                <button class="login-btn"> Entrar</button>
+            </div> <!-- form-cont -->
+
+            <span class="line-divider"></span> <!-- line-divider -->
+
+            <div class="content-singup">
+                <p class="ask-singup" > Não possui cadastro? </p> <!-- ask-singup -->
+                <p class="button-singup" (click)="goToCadastro()" > Cadastre-se </p> <!-- ask-singup -->
+            </div> <!-- content-singup -->
+
+        </div> <!-- content-form-login -->
+
+
+        <div class="explore-contents" >
+            <span class="explore-label"> Explorar </span>
+            <span class="explore-stick">  </span>
+        </div> <!-- explore-contents -->
+
+    </div> <!-- content-login-form -->
+
+
+</div> <!-- login-page -->
