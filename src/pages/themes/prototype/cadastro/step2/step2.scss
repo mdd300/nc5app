@@ -1,0 +1,40 @@
+page-step2 {
+
+  @import '../../../../../config/styles/theme-prototype-variables';
+  @import '../cadastro-theme';
+
+  .scroll-content {
+    margin-top: 50px;
+
+    .grid-complete-cnpj{
+      padding: 0;
+      transition: 0.5s;
+      animation: fadeInUp 0.5s ease;
+    }/** grid-complete-cnpj */
+
+  }
+  /** scroll-content */
+
+}
+
+@keyframes fadeInUp {
+  0%{
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutDown {
+  0%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}

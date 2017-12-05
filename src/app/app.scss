@@ -1,5 +1,5 @@
 // http://ionicframework.com/docs/theming/
-
+@import '../config/styles/theme-prototype-variables';
 
 @font-face {
   font-family: Multicolore;
@@ -25,3 +25,89 @@
   font-family: Roboto;
   src: url('../assets/themes/prototype/fonts/Roboto-Regular.ttf');
 }
+
+/** Separação para estilos relacionados ao formulário de cadastro */
+.cad-form-content {
+  width: 100%;
+  position: relative;
+  display: flex;
+  .cad-form-label {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+
+    &.icon-right {
+      position: relative;
+      .cad-form-ctrl {
+        padding: 13px 40px 13px 15px;
+      }
+      /** cad-form-ctrl */
+
+      &.checked-icon {
+        ion-icon {
+          &:before {
+            color: #21b94e;
+          }
+          /** before */
+        }
+        /** ion-icon */
+      }
+      /** checked-icon */
+
+      /** cad-form-ctrl */
+      ion-icon {
+        position: absolute;
+        right: 10px;
+        top: 29px;
+
+        &:before {
+          transition: 0.5s;
+          font-size: 1.9em;
+          color: $grey-color;
+        }
+        /** before */
+      }
+      /** ion-icon */
+    }
+    /** icon-right */
+
+    .cad-form-label-txt {
+      width: 100%;
+      display: flex;
+      padding: 0 0 3px 16px;
+      color: $grey-color;
+      font-family: Roboto;
+
+    }
+    /** cad-form-label-txt */
+    .cad-form-ctrl {
+      width: 100%;
+      border: 2px solid $grey-color;
+      border-radius: 30px;
+      color: $grey-color - #222;
+      padding: 13px 15px;
+
+      &.text-center{ text-align: center; }
+
+      &[readonly] {
+        background: #e8e8e8;
+        opacity: 0.7;
+        cursor: not-allowed;
+      }
+      /** readonly */
+
+      &::-moz-placeholder { color: $grey-color; }
+      &::-webkit-input-placeholder { color: $grey-color; }
+      &:focus{
+        &::-moz-placeholder { color: $grey-color + #222; }
+        &::-webkit-input-placeholder { color: $grey-color + #222; }
+
+      }
+
+    }
+    /** cad-form-ctrl */
+  }
+  /** cad-form-label */
+}
+
+/** cad-form-content */

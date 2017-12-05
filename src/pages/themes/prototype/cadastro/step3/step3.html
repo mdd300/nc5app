@@ -1,0 +1,112 @@
+<ion-header>
+    <div class="header-back" (click)="backToStep2()">
+
+        <svg class="backpage-ico">
+            <use [attr.xlink:href]="constants.src_svg + 'back.svg#Layer_1'"></use>
+        </svg> <!-- backpage-ico -->
+
+    </div> <!-- header-back -->
+</ion-header>
+
+<ion-content>
+
+    <div class="step-indicator">
+
+        <span class="dotdot actived"></span>
+        <span class="dot-stick actived"></span>
+        <span class="dotdot actived"></span>
+        <span class="dot-stick actived"></span>
+        <span class="dotdot actived rounded"></span>
+
+    </div> <!-- step-indicator -->
+
+    <h3 class="title-step">Finalizar Cadastro</h3> <!-- title-step -->
+
+    <div class="cad-content-inn">
+        <ion-grid>
+
+            <ion-row>
+                <ion-col>
+
+                    <div class="cad-form-content">
+                        <label class="cad-form-label">
+                            <span class="cad-form-label-txt"> Username: </span> <!-- cad-form-label-txt -->
+                            <input type="text" class="cad-form-ctrl" placeholder="Username">
+                        </label><!-- cad-form-label -->
+                    </div> <!-- cad-form-content -->
+
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col>
+
+                    <div class="cad-form-content">
+                        <label class="cad-form-label">
+                            <span class="cad-form-label-txt"> Senha: </span> <!-- cad-form-label-txt -->
+                            <input type="password" [(ngModel)]="password" (keyup)="checkPass()" class="cad-form-ctrl" placeholder="Senha">
+                        </label><!-- cad-form-label -->
+                    </div> <!-- cad-form-content -->
+
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col>
+
+                    <div class="cad-form-content">
+
+                        <label class="cad-form-label icon-right" [ngClass]="{ 'checked-icon': passwordsValiable }">
+                            <span class="cad-form-label-txt"> Confirmar Senha: </span> <!-- cad-form-label-txt -->
+                            <input type="password" [(ngModel)]="confirmPassword" (keyup)="checkPass()" class="cad-form-ctrl" placeholder="Confirmar Senha">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </label><!-- cad-form-label -->
+
+                    </div> <!-- cad-form-content -->
+
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col>
+
+                    <div class="cad-form-content">
+
+                        <label class="cad-form-label">
+                            <span class="cad-form-label-txt"> Email: </span> <!-- cad-form-label-txt -->
+                            <input type="email" class="cad-form-ctrl" placeholder="Email">
+                        </label><!-- cad-form-label -->
+
+                    </div> <!-- cad-form-content -->
+
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col>
+
+                    <div class="cad-form-content">
+
+                        <label class="cad-form-label">
+                            <span class="cad-form-label-txt"> Telefone: </span> <!-- cad-form-label-txt -->
+                            <input type="text" class="cad-form-ctrl" placeholder="Telefone">
+                        </label><!-- cad-form-label -->
+
+                    </div> <!-- cad-form-content -->
+
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col>
+
+                    <button class="button-finish" (click)="cadFinish()"> Pronto! </button>
+
+                </ion-col>
+            </ion-row>
+
+        </ion-grid>
+    </div> <!-- cad-content-inn -->
+
+
+</ion-content>

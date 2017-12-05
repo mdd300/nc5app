@@ -1,0 +1,148 @@
+<ion-header>
+    <div class="header-back" (click)="backToStep1()">
+
+        <svg class="backpage-ico">
+            <use [attr.xlink:href]="constants.src_svg + 'back.svg#Layer_1'"></use>
+        </svg> <!-- backpage-ico -->
+
+    </div> <!-- header-back -->
+</ion-header>
+
+<ion-content>
+
+    <div class="step-indicator">
+
+        <span class="dotdot actived"></span>
+        <span class="dot-stick actived"></span>
+        <span class="dotdot actived rounded"></span>
+        <span class="dot-stick"></span>
+        <span class="dotdot"></span>
+
+    </div> <!-- step-indicator -->
+
+    <h3 class="title-step">Complete</h3> <!-- title-step -->
+
+    <div class="cad-content-inn">
+        <ion-grid>
+
+            <ion-row>
+                <ion-col>
+                    <div class="cad-form-content">
+                        <label class="cad-form-label">
+                            <span class="cad-form-label-txt"> CNPJ: </span> <!-- cad-form-label-txt -->
+                            <input type="text" [(ngModel)]="cnpj" (keyup)="keyupCnpj( cnpj )" class="cad-form-ctrl" placeholder="Insira o CNPJ">
+                        </label><!-- cad-form-label -->
+                    </div> <!-- cad-form-content -->
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+
+                <ion-grid class="grid-complete-cnpj" [hidden]="!stepOk">
+                    <ion-row>
+                        <ion-col>
+
+                            <div class="cad-form-content">
+                                <label class="cad-form-label">
+                                    <span class="cad-form-label-txt"> Razão Social: </span> <!-- cad-form-label-txt -->
+                                    <input type="text" class="cad-form-ctrl" placeholder="Razão Social" value="Danillo Alves de Oliveira 47906756886" readonly>
+                                </label><!-- cad-form-label -->
+                            </div> <!-- cad-form-content -->
+
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+
+                            <div class="cad-form-content">
+                                <label class="cad-form-label">
+                                    <span class="cad-form-label-txt"> Nome Fantasia: </span> <!-- cad-form-label-txt -->
+                                    <input type="text" class="cad-form-ctrl" placeholder="Nome Fantasia" value="Webdragon" readonly>
+                                </label><!-- cad-form-label -->
+                            </div> <!-- cad-form-content -->
+
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+
+                            <div class="cad-form-content">
+                                <label class="cad-form-label">
+                                    <span class="cad-form-label-txt"> Bairro: </span> <!-- cad-form-label-txt -->
+                                    <input type="text" class="cad-form-ctrl" placeholder="Bairro" value="Pq. Piratininga." readonly>
+                                </label><!-- cad-form-label -->
+                            </div> <!-- cad-form-content -->
+
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+
+                            <div class="cad-form-content">
+                                <label class="cad-form-label">
+                                    <span class="cad-form-label-txt"> Endereço: </span> <!-- cad-form-label-txt -->
+                                    <input type="text" class="cad-form-ctrl" placeholder="Endereço" value="Teófilo Braga" readonly>
+                                </label><!-- cad-form-label -->
+                            </div> <!-- cad-form-content -->
+
+                        </ion-col>
+
+                        <ion-col col-4>
+                            <div class="cad-form-content">
+                                <label class="cad-form-label">
+                                    <span class="cad-form-label-txt"> Nº: </span> <!-- cad-form-label-txt -->
+                                    <input type="text" class="cad-form-ctrl" placeholder="Nº" value="415" readonly>
+                                </label><!-- cad-form-label -->
+                            </div> <!-- cad-form-content -->
+                        </ion-col>
+
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+
+                            <div class="cad-form-content">
+                                <label class="cad-form-label">
+                                    <span class="cad-form-label-txt"> Cidade: </span> <!-- cad-form-label-txt -->
+                                    <input type="text" class="cad-form-ctrl" placeholder="Cidade" value="Itaquaquecetuba" readonly>
+                                </label><!-- cad-form-label -->
+                            </div> <!-- cad-form-content -->
+
+                        </ion-col>
+
+                        <ion-col col-4>
+                            <div class="cad-form-content">
+                                <label class="cad-form-label">
+                                    <span class="cad-form-label-txt"> Estado: </span> <!-- cad-form-label-txt -->
+                                    <input type="text" class="cad-form-ctrl" placeholder="Estado" value="São Paulo" readonly>
+                                </label><!-- cad-form-label -->
+                            </div> <!-- cad-form-content -->
+                        </ion-col>
+
+                    </ion-row>
+
+                </ion-grid>
+
+            </ion-row>
+
+        </ion-grid>
+    </div> <!-- cad-content-inn -->
+
+
+</ion-content>
+
+
+<ion-footer>
+    <div class="footer-steps">
+
+        <div class="next-step-action" [ngClass]="{ 'allowed': stepOk }" (click)="goToStep3()">
+            <span class="next-step-label">
+                Próximo
+            </span> <!-- next-stap-label -->
+            <div class="nextstep-icon">
+                <span class="caret-body"></span>
+                <span class="caret-direction"></span>
+            </div> <!-- nextstep-icon -->
+        </div> <!-- next-stap-action -->
+
+    </div> <!-- footer-steps -->
+</ion-footer>

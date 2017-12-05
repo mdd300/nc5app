@@ -36,6 +36,15 @@ page-slides {
       padding: 20px 30px;
     }/** slide-description */
 
+    .start-button{
+      padding: 10px 30px;
+      background: $color;
+      color: #fff;
+      font-family: Multicolore;
+      font-size: 1em;
+      border-radius: 30px;
+    }/** start-button */
+
     .skip-slider{
       position: fixed;
       top: 10px;

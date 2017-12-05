@@ -1,6 +1,6 @@
 page-login {
-  $grey-color: #b4c1d6;
-  $pink-color: #ff5ba1;
+
+  @import '../../../../config/styles/theme-prototype-variables';
 
   .login-page {
     font-family: Roboto;

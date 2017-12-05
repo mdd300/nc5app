@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Constants } from "../../../../config/Constants";
-import { LoginPage } from "../login/login";
+import {Component} from '@angular/core';
+import {IonicPage, NavController, NavParams} from 'ionic-angular';
+import {Constants} from "../../../../config/Constants";
+import {LoginPage} from "../login/login";
 
 /**
  * Generated class for the SlidesPage page.
@@ -12,22 +12,24 @@ import { LoginPage } from "../login/login";
 
 @IonicPage()
 @Component({
-  selector: 'page-slides',
-  templateUrl: 'slides.html',
+    selector: 'page-slides',
+    templateUrl: 'slides.html',
 })
 export class SlidesPage {
 
 
-  public constants:any = Constants;
+    public constants: any = Constants;
 
-  constructor(
-      public navCtrl: NavController,
-      public navParams: NavParams
-  ){}
-  
-  public goToLoginPage = (() => {
-    this.navCtrl.push( LoginPage );
-  });
-  
+    constructor(public navCtrl: NavController,
+                public navParams: NavParams) {
+    }
+
+    /**
+     * Função utilizada para enviar o usuário para a pagina de login */
+    public startLogin = (() => {
+        /* Envia o usuário à pagina de login */
+        this.navCtrl.setRoot(LoginPage, {}, {animate: true, direction: 'forward'});
+
+    });
 
 }

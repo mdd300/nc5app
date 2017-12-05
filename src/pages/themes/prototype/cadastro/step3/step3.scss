@@ -1,0 +1,24 @@
+page-step3 {
+
+  @import '../../../../../config/styles/theme-prototype-variables';
+  @import '../cadastro-theme';
+
+  .header {
+    &:after { background: transparent; }
+  }
+  /** header */
+
+
+  .button-finish{
+    color: #fff;
+    background: $pink-color;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 14px 45px;
+    margin: 10px auto;
+    display: table;
+    font-family: Multicolore;
+    border-radius: 40px;
+  }/** button-finish */
+
+}
