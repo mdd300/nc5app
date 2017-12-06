@@ -2,101 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cdb3ec4-e9c9-4172-9086-7af4e7aee810" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/RELEASENOTES.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/CDVWKProcessPoolFactory.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/CDVWKProcessPoolFactory.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/CDVWKWebViewEngine.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/CDVWKWebViewEngine.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/CDVWKWebViewUIDelegate.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/CDVWKWebViewUIDelegate.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Core/GCDWebServer.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Core/GCDWebServer.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Core/GCDWebServerConnection.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Core/GCDWebServerConnection.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Core/GCDWebServerFunctions.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Core/GCDWebServerFunctions.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Core/GCDWebServerHTTPStatusCodes.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Core/GCDWebServerPrivate.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Core/GCDWebServerRequest.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Core/GCDWebServerRequest.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Core/GCDWebServerResponse.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Core/GCDWebServerResponse.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Requests/GCDWebServerDataRequest.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Requests/GCDWebServerDataRequest.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Requests/GCDWebServerFileRequest.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Requests/GCDWebServerFileRequest.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Requests/GCDWebServerMultiPartFormRequest.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Requests/GCDWebServerMultiPartFormRequest.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Requests/GCDWebServerURLEncodedFormRequest.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Requests/GCDWebServerURLEncodedFormRequest.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Responses/GCDWebServerDataResponse.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Responses/GCDWebServerDataResponse.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Responses/GCDWebServerErrorResponse.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Responses/GCDWebServerErrorResponse.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Responses/GCDWebServerFileResponse.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Responses/GCDWebServerFileResponse.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Responses/GCDWebServerStreamedResponse.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/GCDWebServer/Responses/GCDWebServerStreamedResponse.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/ios/wk-plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-ionic-webview/src/www/ios/ios-wkwebview-exec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/assets/themes/prototype/img/svg/right-arrow.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/themes/prototype/img/svg/right-arrow.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/assets/themes/prototype/img/svg/right-arrow.svg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-land-hdpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-land-hdpi/screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-land-ldpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-land-ldpi/screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-land-mdpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-land-mdpi/screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-land-xhdpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-land-xhdpi/screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-land-xxhdpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-land-xxhdpi/screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-land-xxxhdpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-land-xxxhdpi/screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-port-hdpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-port-hdpi/screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-port-ldpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-port-ldpi/screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-port-mdpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-port-mdpi/screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-port-xhdpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-port-xhdpi/screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-port-xxhdpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-port-xxhdpi/screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-port-xxxhdpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-port-xxxhdpi/screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-land-hdpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-land-hdpi-screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-land-ldpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-land-ldpi-screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-land-mdpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-land-mdpi-screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-land-xhdpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-land-xhdpi-screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-land-xxhdpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-land-xxhdpi-screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-land-xxxhdpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-land-xxxhdpi-screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-port-hdpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-port-hdpi-screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-port-ldpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-port-ldpi-screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-port-mdpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-port-mdpi-screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-port-xhdpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-port-xhdpi-screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-port-xxhdpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-port-xxhdpi-screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-port-xxxhdpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-port-xxxhdpi-screen.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sourcemaps/main.js.map" afterPath="$PROJECT_DIR$/.sourcemaps/main.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/build/main.css" afterPath="$PROJECT_DIR$/platforms/android/assets/www/build/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/build/main.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/build/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/build/main.js.map" afterPath="$PROJECT_DIR$/platforms/android/assets/www/build/main.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/build/vendor.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/build/vendor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/build/vendor.js.map" afterPath="$PROJECT_DIR$/platforms/android/assets/www/build/vendor.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/fetch.json" afterPath="$PROJECT_DIR$/plugins/fetch.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.module.ts" afterPath="$PROJECT_DIR$/src/app/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.scss" afterPath="$PROJECT_DIR$/src/app/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step1/step1.html" afterPath="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step1/step1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step1/step1.scss" afterPath="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step1/step1.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step1/step1.ts" afterPath="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step1/step1.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/themes/prototype/login/login.scss" afterPath="$PROJECT_DIR$/src/pages/themes/prototype/login/login.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/themes/prototype/login/login.html" afterPath="$PROJECT_DIR$/src/pages/themes/prototype/login/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/themes/prototype/login/login.ts" afterPath="$PROJECT_DIR$/src/pages/themes/prototype/login/login.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/themes/prototype/slides/slides.html" afterPath="$PROJECT_DIR$/src/pages/themes/prototype/slides/slides.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/themes/prototype/slides/slides.scss" afterPath="$PROJECT_DIR$/src/pages/themes/prototype/slides/slides.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/themes/prototype/slides/slides.ts" afterPath="$PROJECT_DIR$/src/pages/themes/prototype/slides/slides.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.css" afterPath="$PROJECT_DIR$/www/build/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.js" afterPath="$PROJECT_DIR$/www/build/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/main.js.map" afterPath="$PROJECT_DIR$/www/build/main.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/build/vendor.js" afterPath="$PROJECT_DIR$/www/build/vendor.js" />
@@ -110,36 +20,46 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/app.scss">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="explore.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/explore/explore.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="664">
-              <caret line="99" column="28" lean-forward="false" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
+            <state relative-caret-position="17">
+              <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="confirm-cad.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/cadastro/confirm-cad/confirm-cad.ts">
+      <file leaf-file-name="explore.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/explore/explore.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="493">
-              <caret line="29" column="109" lean-forward="false" selection-start-line="29" selection-start-column="109" selection-end-line="29" selection-end-column="109" />
+              <caret line="29" column="29" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
+                <element signature="e#0#42#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slides.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/slides/slides.ts">
+      <file leaf-file-name="gostos.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/gostos/gostos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="7" lean-forward="false" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+            <state relative-caret-position="119">
+              <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gostos.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/gostos/gostos.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
+                <element signature="e#0#42#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,70 +68,20 @@
       <file leaf-file-name="login.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/login/login.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="50" column="24" lean-forward="false" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="step3.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step3/step3.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="776">
-              <caret line="52" column="37" lean-forward="true" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+            <state relative-caret-position="708">
+              <caret line="45" column="82" lean-forward="false" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="82" />
               <folding>
-                <element signature="e#0#42#0" expanded="true" />
+                <element signature="e#0#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="step2.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step2/step2.ts">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/login/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="50" column="7" lean-forward="true" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="step2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step2/step2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="117" column="60" lean-forward="false" selection-start-line="112" selection-start-column="28" selection-end-line="117" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="slides.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/slides/slides.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+            <state relative-caret-position="487">
+              <caret line="30" column="68" lean-forward="true" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -232,7 +102,6 @@
       <list>
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/src/config/Constants.ts" />
-        <option value="$PROJECT_DIR$/src/pages/themes/prototype/login/login.html" />
         <option value="$PROJECT_DIR$/src/assets/themes/prototype/img/svg/confeccao.svg" />
         <option value="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step1/step1.module.ts" />
         <option value="$PROJECT_DIR$/src/config/styles/variables.scss" />
@@ -244,7 +113,6 @@
         <option value="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step2/step2.scss" />
         <option value="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/cadastro-theme.scss" />
         <option value="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step3/step3.scss" />
-        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/src/pages/themes/prototype/slides/slides.scss" />
         <option value="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step3/step3.html" />
         <option value="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step3/step3.ts" />
@@ -254,9 +122,15 @@
         <option value="$PROJECT_DIR$/src/pages/themes/prototype/slides/slides.html" />
         <option value="$PROJECT_DIR$/src/pages/themes/prototype/slides/slides.ts" />
         <option value="$PROJECT_DIR$/src/app/app.component.ts" />
-        <option value="$PROJECT_DIR$/src/pages/themes/prototype/login/login.ts" />
         <option value="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step2/step2.ts" />
         <option value="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/confirm-cad/confirm-cad.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/src/pages/themes/prototype/login/login.html" />
+        <option value="$PROJECT_DIR$/src/pages/themes/prototype/login/login.ts" />
+        <option value="$PROJECT_DIR$/src/pages/themes/prototype/explore/explore.html" />
+        <option value="$PROJECT_DIR$/src/pages/themes/prototype/explore/explore.ts" />
+        <option value="$PROJECT_DIR$/src/pages/themes/prototype/gostos/gostos.html" />
+        <option value="$PROJECT_DIR$/src/pages/themes/prototype/gostos/gostos.ts" />
       </list>
     </option>
   </component>
@@ -309,24 +183,6 @@
             <path>
               <item name="qrgo_prototype" type="b2602c69:ProjectViewProjectNode" />
               <item name="qrgo_prototype" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="qrgo_prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qrgo_prototype" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="android" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="qrgo_prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qrgo_prototype" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="android" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="splash" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="qrgo_prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qrgo_prototype" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -339,59 +195,6 @@
               <item name="qrgo_prototype" type="b2602c69:ProjectViewProjectNode" />
               <item name="qrgo_prototype" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="qrgo_prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qrgo_prototype" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="qrgo_prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qrgo_prototype" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="prototype" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="qrgo_prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qrgo_prototype" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="prototype" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="qrgo_prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qrgo_prototype" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="prototype" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="svg" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="qrgo_prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qrgo_prototype" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="qrgo_prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qrgo_prototype" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="styles" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="qrgo_prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qrgo_prototype" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -416,7 +219,7 @@
               <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="prototype" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cadastro" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="explore" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="qrgo_prototype" type="b2602c69:ProjectViewProjectNode" />
@@ -425,8 +228,7 @@
               <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="prototype" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cadastro" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="confirm-cad" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="gostos" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="qrgo_prototype" type="b2602c69:ProjectViewProjectNode" />
@@ -435,8 +237,7 @@
               <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="prototype" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cadastro" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="step2" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="login" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="qrgo_prototype" type="b2602c69:ProjectViewProjectNode" />
@@ -445,14 +246,7 @@
               <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="prototype" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cadastro" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="step3" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="qrgo_prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qrgo_prototype" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="theme" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="slides" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -467,8 +261,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro" />
       <recent name="C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype" />
+      <recent name="C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -493,35 +287,36 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512403225509</updated>
-      <workItem from="1512403228914" duration="54111000" />
+      <workItem from="1512403228914" duration="54811000" />
+      <workItem from="1512554069923" duration="2833000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54111000" />
+    <option name="totallyTimeSpent" value="57644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -536,7 +331,6 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/pages/themes/prototype/slides/slides.ts</url>
-          <properties />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
@@ -544,18 +338,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/assets/imgs/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/imgs/logo.png" />
     <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/login/login.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -587,7 +374,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -599,21 +385,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/login/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="6" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step2/step2.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -621,7 +396,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="86" column="12" lean-forward="true" selection-start-line="86" selection-start-column="12" selection-end-line="91" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -629,7 +403,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -637,7 +410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="68" column="86" lean-forward="false" selection-start-line="68" selection-start-column="86" selection-end-line="68" selection-end-column="86" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -645,9 +417,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="27" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -655,7 +424,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -663,7 +431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2073">
           <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -671,9 +438,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -681,7 +445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -689,7 +452,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -697,7 +459,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="3" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -705,7 +466,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -713,33 +473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="51" lean-forward="false" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="99" column="28" lean-forward="false" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/slides/slides.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/slides/slides.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="7" lean-forward="false" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -747,7 +480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -755,7 +487,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -763,7 +494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -771,7 +501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -798,28 +527,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step2/step2.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/cadastro/confirm-cad/confirm-cad.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="28" lean-forward="false" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="99" column="28" lean-forward="false" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step3/step3.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="776">
+          <caret line="52" column="37" lean-forward="false" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#0#42#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+    <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step2/step2.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step2/step2.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="521">
+          <caret line="50" column="7" lean-forward="false" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -832,36 +586,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step2/step2.ts">
+    <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/slides/slides.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="50" column="7" lean-forward="true" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+        <state relative-caret-position="317">
+          <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/slides/slides.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="30" column="68" lean-forward="true" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/login/login.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="50" column="24" lean-forward="false" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step3/step3.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="52" column="37" lean-forward="true" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/cadastro/confirm-cad/confirm-cad.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="109" lean-forward="false" selection-start-line="29" selection-start-column="109" selection-end-line="29" selection-end-column="109" />
+        <state relative-caret-position="708">
+          <caret line="45" column="82" lean-forward="false" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="82" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/explore/explore.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/explore/explore.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="29" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/gostos/gostos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/themes/prototype/gostos/gostos.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>

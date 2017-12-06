@@ -12,6 +12,8 @@ import {Step1PageModule} from "../pages/themes/prototype/cadastro/step1/step1.mo
 import {Step2PageModule} from "../pages/themes/prototype/cadastro/step2/step2.module";
 import {Step3PageModule} from "../pages/themes/prototype/cadastro/step3/step3.module";
 import {ConfirmCadPageModule} from "../pages/themes/prototype/cadastro/confirm-cad/confirm-cad.module";
+import {ExplorePageModule} from "../pages/themes/prototype/explore/explore.module";
+import {GostosPageModule} from "../pages/themes/prototype/gostos/gostos.module";
 
 @NgModule({
     declarations: [
@@ -25,6 +27,8 @@ import {ConfirmCadPageModule} from "../pages/themes/prototype/cadastro/confirm-c
         Step2PageModule,
         Step3PageModule,
         ConfirmCadPageModule,
+        ExplorePageModule,
+        GostosPageModule,
         IonicModule.forRoot(Qrgo_prototype)
     ],
     bootstrap: [IonicApp],
