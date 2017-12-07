@@ -34,6 +34,7 @@ export class GostosPage {
   ) {}
 
   public closeMeModal = (()=>{
+      if(this.actived.length > 0)
       this.viewCtrl.dismiss();
   });
 
@@ -61,6 +62,15 @@ export class GostosPage {
         }else{
 
             this.actived.splice(this.actived.indexOf(data), 1);
+            if(this.actived1.indexOf(data) > -1){
+                this.actived1.splice(this.actived1.indexOf(data), 1);
+            }else if(this.actived2.indexOf(data) > -1){
+                this.actived2.splice(this.actived2.indexOf(data), 1);
+            }else if(this.actived3.indexOf(data) > -1){
+                this.actived3.splice(this.actived3.indexOf(data), 1);
+            }else if(this.actived4.indexOf(data) > -1){
+                this.actived4.splice(this.actived4.indexOf(data), 1);
+            }
 
         }
     });/* Fim da função de definição do perfil selecionado */
