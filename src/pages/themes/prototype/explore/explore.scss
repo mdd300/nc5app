@@ -356,12 +356,31 @@ page-explore {
             width: 100%;
             display: flex;
             flex-flow: column;
-            padding: 0 0 0 10px;
+            padding: 0 10px;
             .text-label-mark-explore{
               width: 100%;
               display: flex;
               position: relative;
               flex-grow: 1;
+              .txt-label-mark-explore{
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                position: absolute;
+                left: 0;
+
+                &.title{
+                  text-transform: uppercase;
+                  font-size: 1.2em;
+                  font-weight: bold;
+                }/** title */
+                .description{
+                  text-transform: uppercase;
+                  font-size: 0.8em;
+                }/** description */
+
+              }/** txt-label-mark-explore */
             }/** text-label-mark-explore */
           }/** label-mark-explore */
         }/** label-mark-explore-cont */
