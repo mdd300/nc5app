@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import {ModalController, IonicPage, NavController, NavParams, ViewController} from 'ionic-angular';
+import {ModalController, IonicPage, NavController, NavParams } from 'ionic-angular';
 import {GostosPage} from "../gostos/gostos";
+import {Constants} from "../../../../config/Constants";
 
 /**
  * Generated class for the ExplorePage page.
@@ -21,6 +22,12 @@ export class ExplorePage {
       public navParams: NavParams,
       public modalCtrl: ModalController
   ) {}
+
+    public constants = Constants;
+    public recommendations = [
+        {mark: 'Unique', wallpaper: 'unique.jpg'},
+        {mark: 'Unike', wallpaper: 'unique2.jpg' }
+    ];
 
 
   /* Função iniciada quando a view for iniciada */

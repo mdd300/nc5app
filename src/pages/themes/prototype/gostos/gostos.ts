@@ -24,6 +24,7 @@ export class GostosPage {
   public closeMeModal = (()=>{
       this.viewCtrl.dismiss();
   });
-  
+
+
 
 }
