@@ -1,5 +1,5 @@
-import {Component } from '@angular/core';
-import {ModalController, IonicPage, NavController, NavParams } from 'ionic-angular';
+import {Component} from '@angular/core';
+import {ModalController, IonicPage, NavController, NavParams} from 'ionic-angular';
 import {GostosPage} from "../gostos/gostos";
 import {Constants} from "../../../../config/Constants";
 import * as $ from 'jquery';
@@ -32,24 +32,11 @@ export class ExplorePage {
     ];
 
     public marcas = [
-        {
-            marca: 'Unique',
-            produtos: [{null: null},{ null: null}]
-        },
-        {
-            marca: 'Unieke',
-            produtos: [{null: null},{ null: null}, {null: null}, {null: null}]
-        }
+        { marca: 'Unique', produtos: [{null: null},{ null: null}] },
+        { marca: 'Unieke', produtos: [{null: null},{ null: null}, {null: null}, {null: null}] }
     ];
 
 
-    /**
-     *
-     * @type {(event: any) => any}
-     */
-    public doScroll = (( event:any )=>{
-        console.log( event );
-    });
 
   /* Função iniciada quando a view for iniciada */
   ionViewDidLoad() {

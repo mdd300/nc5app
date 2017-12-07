@@ -79,10 +79,10 @@
             </ion-row>
         </ion-grid><!-- grid-header-recommendations -->
 
-        <div class="recommendations-content" (pan)="doScroll( $event )" >
+        <div class="recommendations-content" (mouseup)="finishScrollRecommended()" (scroll)="doScrollRecommended()">
             <ul class="recommendation-list">
 
-                <li class="reccommendation-item" *ngFor="let recommendation of recommendations">
+                <li class="reccommendation-item"  *ngFor="let recommendation of recommendations">
                     <div class="ctrl-recommendation-item" >
 
                         <div class="recommendation-mark" >
