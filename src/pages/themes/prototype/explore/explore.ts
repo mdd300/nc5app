@@ -42,7 +42,7 @@ export class ExplorePage {
     
     
     public doScroll = (( event:any )=>{
-        console.log( event.path );
+        console.log( event.path[0] );
     })
 
   /* Função iniciada quando a view for iniciada */
