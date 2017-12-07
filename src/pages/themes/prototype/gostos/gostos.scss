@@ -1,3 +1,126 @@
 page-gostos {
 
+
+  .content-card-estilo {
+    margin-left: 25%;
+  }
+  .card-boy-estilo {
+    width: 60% !important;
+    -moz-box-shadow: 0 0 20px #ccc;
+    -webkit-box-shadow: 0 0 20px #ccc;
+    box-shadow: 0 0 10px #cacccc;
+  }
+
+  .icon-card-estilo {
+    fill: $grey-color;
+  }
+  .btn-confir {
+    float: right;
+    padding: 3px;
+  }
+  .svg-ico-usertype {
+    width: 30%;
+    height: 40%;
+    position: fixed;
+    left: 7%;
+    top: 28%;
+    fill: white;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  /** svg-ico */
+  .icon-user-type {
+    height: 10%;
+    width: 50%;
+    position: relative;
+    background: #fff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    /* align-items: center; */
+    margin: 15% 0 0 25%;
+
+  }
+  /** icon-user-type */
+  .text-icon {
+    margin: 10px;
+    color: $grey-color;
+    font-size: 20px;
+    text-align: center;
+    font-family: Multicolore;
+  }
+  .btn-estilo {
+    background-color: $grey-color;
+    font-size: 6px;
+    &.actived-type {
+      background-color: $pink-color;
+    }
+    &.actived-type2 {
+      background-color: #1569ff;
+    }
+    &.actived-type3 {
+      background-color: #8dff5b;
+    }
+    &.actived-type4 {
+      background-color: #e13838;
+    }
+  }
+  .row-estilo {
+    align-self: center;
+  }
+
+  .btn-none {
+    display: none;
+  }
+  .sliderIn {
+    animation-name: slideDown;
+    -webkit-animation-name: slideDown;
+
+    animation-duration: 400ms;
+    -webkit-animation-duration: 400ms;
+
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+
+    visibility: visible !important;
+  }
+
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  @-webkit-keyframes slideDown {
+    0% {
+      -webkit-transform: translateY(-100%);
+    }
+    100% {
+      -webkit-transform: translateY(0%);
+    }
+  }
+
+
+  @keyframes slideUp {
+    0% {
+      -webkit-transform: translateY(0%);
+    }
+    100% {
+      -webkit-transform: translateY(-100%);
+    }
+  }
+
+  @-webkit-keyframes slideUp {
+    0% {
+      -webkit-transform: translateY(0%);
+    }
+    100% {
+      -webkit-transform: translateY(-100%);
+    }
+  }
+
+
 }
