@@ -21,9 +21,7 @@ export class MenuBottomComponent {
 
   public constants = Constants;
 
-  constructor() {
-    console.log( this );
-  }
+  constructor() {}
 
 
 }

@@ -2,7 +2,7 @@
 
 page-explore {
   .scroll-content{
-
+    padding: 0 0 60px 0;
     .header-background{
       width: 100%;
       padding: 100% 0 0 0;
@@ -51,7 +51,7 @@ page-explore {
           background: none;
           border: 1px solid #fff;
           border-radius: 30px;
-          padding: 15px 40px 15px 15px;
+          padding: 10px 40px 10px 15px;
           color: #fff;
 
           &::-moz-placeholder { color: #fff; }
@@ -66,8 +66,8 @@ page-explore {
         
         ion-icon{
           position: absolute;
-          right: 10px;
-          top: 6px;
+          right: 6px;
+          top: 1px;
           color: #fff;
           font-size: 2.5em;
           cursor: pointer;
@@ -88,7 +88,7 @@ page-explore {
 
     .ion-styles-explore{
       width: 100%;
-      margin: 75px 0 0 0;
+      margin: 55px 0 0 0;
       padding: 0 0 10px 0;
       position: relative;
 
@@ -333,7 +333,7 @@ page-explore {
       border-top: 1px solid $grey-color + #222;
 
       .explore-mark{
-        padding: 20px 0 50px 0;
+        padding: 20px 0 0 0;
         .col{ padding: 0; }
         .grid{ padding: 0; }
         
@@ -346,7 +346,19 @@ page-explore {
           .img-mark-explore{
             width: 100%;
             padding: 100% 0 0 0;
-            background: #f00;
+            position: relative;
+
+            .img-mark{
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              left: 0;
+              top: 0;
+              background: #fff;
+              border: 2px solid $grey-color;
+              border-radius: 5px;
+            }/** img-mark */
+
           }/** img-mark-explore */
         }/** image-mark-explore */
 
@@ -375,15 +387,88 @@ page-explore {
                   font-size: 1.2em;
                   font-weight: bold;
                 }/** title */
-                .description{
+                &.description{
                   text-transform: uppercase;
-                  font-size: 0.8em;
+                  font-size: 0.9em;
+                  top: -2px;
                 }/** description */
 
               }/** txt-label-mark-explore */
             }/** text-label-mark-explore */
           }/** label-mark-explore */
         }/** label-mark-explore-cont */
+
+        .products-mark-explore{
+          width: 100%;
+          overflow-x: auto;
+          overflow-y: hidden;
+          white-space: nowrap;
+          float: left;
+          &::-webkit-scrollbar{ display: none; }
+
+          .list-products-mark-explore{
+            white-space: nowrap;
+            list-style: none;
+            padding: 0 0 10px 0;
+            margin: 0;
+            .item-product-mark-explore{
+              width: 130px;
+              background: #fff;
+              display: inline-flex;
+              flex-flow: column;
+              box-shadow: 0 0 5px 1px $grey-color;
+              border-radius: 10px;
+              margin: 10px 10px 0 0;
+              position: relative;
+              overflow: hidden;
+              &:first-child{ margin-left: 40px; }
+
+              .product-mark-image{
+                width: 100%;
+                height: 150px;
+                background-color: #f8f8f8;
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                ul.colors-product-mark{
+                  width: 20px;
+                  display: table;
+                  position: absolute;
+                  right: 10px;
+                  top: 10px;
+                  list-style: none;
+                  margin: 0;
+                  padding: 0;
+                  li.color-product{
+                    width: 100%;
+                    padding: 100% 0 0 0;
+                    position: relative;
+                    border-radius: 100%;
+                    box-shadow: 0 0 0 2px $grey-color;
+                    margin: 0 0 10px 0;
+                  }/** color-product */
+                }/** colors-product-mark */
+
+              }/** product-mark-image */
+              .product-mark-label{
+                width: 100%;
+                position: relative;
+                display: flex;
+                padding: 15px 10px;
+                .product-mark-text{
+                  width: 100%;
+                  overflow: hidden;
+                  -ms-text-overflow: ellipsis;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  position: relative;
+                  text-transform: uppercase;
+                  font-weight: bold;
+                }
+              }/** product-mark-label */
+            }/** item-product-mark-explore */
+          }/** list-products-mark-explore */
+        }/** products-mark-explore */
 
       }/** explore-mark */
     }/** ion-explore-marks */
