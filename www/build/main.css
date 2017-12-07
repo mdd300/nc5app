@@ -27816,10 +27816,10 @@ page-gostos .btn-confir {
 }
 
 page-gostos .svg-ico-usertype {
-  width: 30%;
+  width: 16px;
   height: 40%;
   position: fixed;
-  left: 7%;
+  left: 8%;
   top: 28%;
   fill: white;
   -webkit-transition: 0.5s;
@@ -27840,14 +27840,14 @@ page-gostos .icon-user-type {
 page-gostos .text-icon {
   margin: 10px;
   color: #b4c1d6;
-  font-size: 20px;
+  font-size: 0.7em;
   text-align: center;
   font-family: Multicolore;
 }
 
 page-gostos .btn-estilo {
   background-color: #b4c1d6;
-  font-size: 6px;
+  font-size: 0.7em;
 }
 
 page-gostos .btn-estilo.actived-type {

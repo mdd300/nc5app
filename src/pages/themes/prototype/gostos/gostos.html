@@ -9,7 +9,7 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
 
     <div class="content-card-estilo">
         <ion-card class="card-boy-estilo">
@@ -20,7 +20,7 @@
         </ion-card>
     </div>
 
-    <ion-grid>
+    <ion-grid style="padding: 0px">
 
         <ion-row class="row-estilo">
             <ion-col col-auto>
@@ -28,7 +28,7 @@
                         [ngClass]="{ 'actived-type': actived.indexOf(1) > -1 && actived1.indexOf(1) > -1, 'actived-type2': actived.indexOf(1) > -1  && actived2.indexOf(1) > -1,'actived-type3': actived.indexOf(1) > -1  && actived3.indexOf(1) > -1,'actived-type4': actived.indexOf(1) > -1  && actived4.indexOf(1) > -1}"
                         (click)="defineActived(1)" round><div [ngClass]="{'btn-none': actived.indexOf(1) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">
                     <use [attr.xlink:href]="constants.src_svg + 'confirmar.svg#Layer_1'"></use>
-                </svg> <!-- svg-ico-usertype --> </div>VERÂO
+                </svg> <!-- svg-ico-usertype --> </div><div class="text-btn-estilo">VERÂO</div>
                 </button>
 
             </ion-col>
@@ -37,7 +37,7 @@
                         [ngClass]="{ 'actived-type': actived.indexOf(2) > -1 && actived1.indexOf(2) > -1, 'actived-type2': actived.indexOf(2) > -1  && actived2.indexOf(2) > -1,'actived-type3': actived.indexOf(2) > -1  && actived3.indexOf(2) > -1,'actived-type4': actived.indexOf(2) > -1  && actived4.indexOf(2) > -1}"
                         (click)="defineActived(2)" round><div [ngClass]="{'btn-none': actived.indexOf(2) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">
                     <use [attr.xlink:href]="constants.src_svg + 'confirmar.svg#Layer_1'"></use>
-                </svg> <!-- svg-ico-usertype --> </div>INVERNO
+                </svg> <!-- svg-ico-usertype --> </div><div class="text-btn-estilo">INVERNO</div>
                 </button>
             </ion-col>
             <ion-col col-auto>
@@ -154,7 +154,7 @@
                         [ngClass]="{ 'actived-type': actived.indexOf(9) > -1 && actived1.indexOf(9) > -1, 'actived-type2': actived.indexOf(9) > -1  && actived2.indexOf(9) > -1,'actived-type3': actived.indexOf(9) > -1  && actived3.indexOf(9) > -1,'actived-type4': actived.indexOf(9) > -1  && actived4.indexOf(9) > -1}"
                         (click)="defineActived(9)" round><div [ngClass]="{'btn-none': actived.indexOf(9) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">
                     <use [attr.xlink:href]="constants.src_svg + 'confirmar.svg#Layer_1'"></use>
-                </svg> <!-- svg-ico-usertype --> </div>ROUPAS EM PROMOÇÃO
+                </svg> <!-- svg-ico-usertype --> </div><div class="text-btn-estilo">ROUPAS EM PROMOÇÃO</div>
                 </button>
             </ion-col>
             <ion-col col-auto>

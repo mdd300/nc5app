@@ -27684,6 +27684,7 @@ page-explore .scroll-content .ion-explore-marks .explore-mark .label-mark-explor
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 page-explore .scroll-content .ion-explore-marks .explore-mark .label-mark-explore-cont .label-mark-explore .text-label-mark-explore .txt-label-mark-explore.description {
   text-transform: uppercase;
   font-size: 0.9em;
@@ -27788,6 +27789,11 @@ page-explore .scroll-content .ion-explore-marks .explore-mark .products-mark-exp
   position: relative;
   text-transform: uppercase;
   font-weight: bold;
+=======
+page-explore .scroll-content .ion-explore-marks .explore-mark .label-mark-explore-cont .label-mark-explore .text-label-mark-explore .txt-label-mark-explore .description {
+  text-transform: uppercase;
+  font-size: 0.8em;
+>>>>>>> 525efc4fd7c4d4eaf156ec00af3f3a81104483e2
 }
 
 /** page-explore */
