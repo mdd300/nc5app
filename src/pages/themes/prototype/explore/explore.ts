@@ -48,7 +48,7 @@ export class ExplorePage {
      * @type {(event: any) => any}
      */
     public doScroll = (( event:any )=>{
-        console.log( $(event.path[0]).scrollLeft() / 300);
+        console.log( event );
     });
 
   /* Função iniciada quando a view for iniciada */

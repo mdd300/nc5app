@@ -79,7 +79,7 @@
             </ion-row>
         </ion-grid><!-- grid-header-recommendations -->
 
-        <div class="recommendations-content" (scroll)="doScroll( $event )" >
+        <div class="recommendations-content" (pan)="doScroll( $event )" >
             <ul class="recommendation-list">
 
                 <li class="reccommendation-item" *ngFor="let recommendation of recommendations">
