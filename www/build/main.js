@@ -31,19 +31,19 @@ var map = {
 		162
 	],
 	"../pages/themes/prototype/cadastro/step3/step3.module": [
-		163
-	],
-	"../pages/themes/prototype/explore/explore.module": [
 		164
 	],
+	"../pages/themes/prototype/explore/explore.module": [
+		163
+	],
 	"../pages/themes/prototype/gostos/gostos.module": [
-		166
+		167
 	],
 	"../pages/themes/prototype/login/login.module": [
-		165
+		166
 	],
 	"../pages/themes/prototype/slides/slides.module": [
-		167
+		165
 	]
 };
 function webpackAsyncContext(req) {
@@ -234,6 +234,19 @@ var ExplorePage = (function () {
             { mark: 'Unique', wallpaper: 'unique.jpg' },
             { mark: 'Unike', wallpaper: 'unique2.jpg' }
         ];
+        this.marcas = [
+            {
+                marca: 'Unique',
+                produtos: [{ null: null }, { null: null }]
+            },
+            {
+                marca: 'Unieke',
+                produtos: [{ null: null }, { null: null }, { null: null }, { null: null }]
+            }
+        ];
+        this.doScroll = (function (event) {
+            console.log(event.path);
+        });
     }
     /* Função iniciada quando a view for iniciada */
     ExplorePage.prototype.ionViewDidLoad = function () {
@@ -243,13 +256,12 @@ var ExplorePage = (function () {
     }; /* Fim da função iniciada quando a view estiver pronta */
     ExplorePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-explore',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\explore\explore.html"*/'<ion-content>\n\n    <!-- Content da pagina de explorar -->\n\n    \n\n    <div class="header-background" [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'backgrounds/explore-background.png)\' }" ></div> <!-- header-background -->\n\n    \n\n    <!-- Header da pagina de exploração -->\n\n    <ion-header>\n\n        <ion-grid>\n\n            <ion-row>\n\n                <ion-col col-1 class="col-icon">\n\n                    <div class="icon-back-header" >\n\n                        \n\n                        <svg class="ico-back-header">\n\n                           <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n                        </svg> <!-- ico-back-header -->\n\n                        \n\n                    </div> <!-- icon-back-header -->\n\n                </ion-col>\n\n                <ion-col>\n\n                    <div class="content-search-input-header" >\n\n                        <input type="search" name="search-explore" class="inpt-search-explore" placeholder="Buscar">\n\n                        <ion-icon name="md-close-circle"></ion-icon>\n\n                    </div> <!-- content-search-input-header -->\n\n                </ion-col>\n\n            </ion-row>\n\n        </ion-grid>\n\n    </ion-header>\n\n    <!-- Fim do header da pagina de exploração -->\n\n    <div class="ion-styles-explore" >\n\n\n\n        <ion-grid>\n\n            <ion-row>\n\n                <ion-col>\n\n                    <span class="text-header-section">\n\n                        Seus estilos\n\n                    </span><!-- text-header-section -->\n\n                </ion-col>\n\n            </ion-row>\n\n            <ion-row>\n\n                <ion-col>\n\n                    <div class="show-styles-selecteds" >\n\n                        <div class="styles-selecteds" >\n\n\n\n                            <span class="style-slected">Masculino</span>\n\n                            <span class="style-slected">Masculino</span>\n\n                            <span class="style-slected">Masculino</span>\n\n                            <span class="style-slected">Social</span>\n\n                            <span class="style-slected">Social</span>\n\n                            <span class="style-slected">Social</span>\n\n\n\n                        </div> <!-- styles-selecteds -->\n\n                    </div> <!-- show-styles-selecteds -->\n\n                </ion-col>\n\n                <ion-col col-2 class="cont-config-styles">\n\n                    <div class="config-styles" >\n\n                        \n\n                        <div class="config-ico" >\n\n                            <svg class="ico-config">\n\n                               <use [attr.xlink:href]="constants.src_svg + \'settings.svg#Layer_1\'"></use>\n\n                            </svg> <!-- ico-config -->\n\n                        </div> <!-- config-ico -->\n\n\n\n                    </div> <!-- config-styles -->\n\n                </ion-col>\n\n            </ion-row>\n\n        </ion-grid>\n\n\n\n    </div> <!-- ion-styles-explore -->\n\n\n\n    <div class="ion-recommendations-explore" >\n\n        \n\n        <ion-grid class="grid-header-recommendations">\n\n            <ion-row>\n\n                <ion-col>\n\n                    <span class="text-header-section">\n\n                        Recomendações\n\n                    </span><!-- text-header-section -->\n\n                </ion-col>\n\n            </ion-row>\n\n        </ion-grid><!-- grid-header-recommendations -->\n\n\n\n        <div class="recommendations-content" >\n\n            <ul class="recommendation-list">\n\n\n\n                <li class="reccommendation-item" *ngFor="let recommendation of recommendations">\n\n                    <div class="ctrl-recommendation-item" >\n\n\n\n                        <div class="recommendation-mark" >\n\n\n\n                            <div class="recommendation-mark-header" >\n\n                                <div class="mark-header-image" >\n\n                                    <div class="image-header-mark" >\n\n\n\n                                    </div> <!-- image-header-mark -->\n\n                                </div> <!-- mark-header-image -->\n\n                                <div class="mark-header-description" >\n\n                                    <div class="header-description-line" >\n\n                                        <div class="description" >\n\n                                            <span class="text-description title">\n\n                                                {{recommendation.mark}}\n\n                                            </span>\n\n                                        </div> <!-- description -->\n\n                                    </div> <!-- header-description-line -->\n\n                                    <div class="header-description-line" >\n\n                                        <div class="description" >\n\n                                            <span class="text-description description">\n\n                                                Confecção\n\n                                            </span>\n\n                                        </div> <!-- description -->\n\n                                    </div> <!-- header-description-line -->\n\n                                </div> <!-- mark-header-description -->\n\n                                <div class="mark-header-action" >\n\n                                    <button class="button-action-header-mark">\n\n                                        Visitar\n\n                                    </button> <!-- button-action-header-mark -->\n\n                                </div> <!-- mark-header-action -->\n\n                            </div> <!-- recommendation-mark-header -->\n\n                            <div class="recommendation-mark-body" [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/\' + recommendation.wallpaper + \')\' }">\n\n                            </div> <!-- recommendation-mark-body -->\n\n\n\n                            <div class="recommendation-mark-footer" >\n\n                                <ul class="recommendation-mark-list-vitrine">\n\n                                    <li class="recommendation-mark-vitrine-item" [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/roupa1.jpg)\' }"></li><!-- recommendation-mark-vitrine-item -->\n\n                                    <li class="recommendation-mark-vitrine-item" [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/roupa1.jpg)\' }"></li><!-- recommendation-mark-vitrine-item -->\n\n                                    <li class="recommendation-mark-vitrine-item" [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/roupa1.jpg)\' }"></li><!-- recommendation-mark-vitrine-item -->\n\n                                </ul><!-- recommendation-mark-list-vitrine -->\n\n                            </div> <!-- recommendation-mark-footer -->\n\n\n\n\n\n                        </div> <!-- recommendation-mark -->\n\n\n\n                    </div> <!-- ctrl-recommendation-item -->\n\n                </li><!-- reccommendation-item -->\n\n\n\n            </ul><!-- recommendation-list -->\n\n        </div> <!-- recommendations-content -->\n\n    </div> <!-- ion-recommendations-explore -->\n\n\n\n    <div class="ion-explore-marks" >\n\n        <ion-grid class="no-padding">\n\n\n\n            <ion-row class="explore-mark">\n\n                <ion-col>\n\n                    <ion-grid>\n\n                        <ion-row>\n\n                            <ion-col col-2>\n\n                                <div class="image-mark-explore" >\n\n                                    <div class="img-mark-explore" >\n\n                                    \n\n                                    </div> <!-- img-mark-explore -->\n\n                                </div> <!-- image-mark-explore -->\n\n                            </ion-col>\n\n                            <ion-col class="label-mark-explore-cont">\n\n                                <div class="label-mark-explore" >\n\n                                    <div class="text-label-mark-explore" >\n\n                                        <div class="txt-label-mark-explore title" >\n\n                                            UniqueUniqueUniqueUniqueUniqueUniqueUniqueUniqueUniqueUniqueUnique\n\n                                        </div> <!-- txt-label-mark-explore -->\n\n                                    </div> <!-- text-label-mark-explore -->\n\n                                    <div class="text-label-mark-explore" >\n\n                                        <div class="txt-label-mark-explore description" >\n\n                                            UniqueUniqueUniqueUniqueUniqueUniqueUniqueUniqueUniqueUniqueUnique\n\n                                        </div> <!-- txt-label-mark-explore -->\n\n                                    </div> <!-- text-label-mark-explore -->\n\n                                </div> <!-- label-mark-explore -->\n\n                            </ion-col> <!-- label-mark-explore-cont -->\n\n                        </ion-row>\n\n                        <ion-row>\n\n                            <ion-col>\n\n                                Ola\n\n                            </ion-col>\n\n                        </ion-row>\n\n                    </ion-grid>\n\n                </ion-col>\n\n            </ion-row><!-- explore-mark -->\n\n\n\n        </ion-grid>\n\n    </div> <!-- ion-explore-marks -->\n\n    \n\n    \n\n<!-- Fim do content da pagina de exploração -->\n\n</ion-content>\n\n\n\n<fixed-menu page="explore"></fixed-menu>\n\n\n\n'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\explore\explore.html"*/,
+            selector: 'page-explore',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\explore\explore.html"*/'<ion-content>\n\n    <!-- Content da pagina de explorar -->\n\n    \n\n    <div class="header-background" [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'backgrounds/explore-background.png)\' }" ></div> <!-- header-background -->\n\n    \n\n    <!-- Header da pagina de exploração -->\n\n    <ion-header>\n\n        <ion-grid>\n\n            <ion-row>\n\n                <ion-col col-1 class="col-icon">\n\n                    <div class="icon-back-header" >\n\n                        \n\n                        <svg class="ico-back-header">\n\n                           <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n                        </svg> <!-- ico-back-header -->\n\n                        \n\n                    </div> <!-- icon-back-header -->\n\n                </ion-col>\n\n                <ion-col>\n\n                    <div class="content-search-input-header" >\n\n                        <input type="search" name="search-explore" class="inpt-search-explore" placeholder="Buscar">\n\n                        <ion-icon name="md-close-circle"></ion-icon>\n\n                    </div> <!-- content-search-input-header -->\n\n                </ion-col>\n\n            </ion-row>\n\n        </ion-grid>\n\n    </ion-header>\n\n    <!-- Fim do header da pagina de exploração -->\n\n    <div class="ion-styles-explore" >\n\n\n\n        <ion-grid>\n\n            <ion-row>\n\n                <ion-col>\n\n                    <span class="text-header-section">\n\n                        Seus estilos\n\n                    </span><!-- text-header-section -->\n\n                </ion-col>\n\n            </ion-row>\n\n            <ion-row>\n\n                <ion-col>\n\n                    <div class="show-styles-selecteds" >\n\n                        <div class="styles-selecteds" >\n\n\n\n                            <span class="style-slected">Masculino</span>\n\n                            <span class="style-slected">Masculino</span>\n\n                            <span class="style-slected">Masculino</span>\n\n                            <span class="style-slected">Social</span>\n\n                            <span class="style-slected">Social</span>\n\n                            <span class="style-slected">Social</span>\n\n\n\n                        </div> <!-- styles-selecteds -->\n\n                    </div> <!-- show-styles-selecteds -->\n\n                </ion-col>\n\n                <ion-col col-2 class="cont-config-styles">\n\n                    <div class="config-styles" >\n\n                        \n\n                        <div class="config-ico" >\n\n                            <svg class="ico-config">\n\n                               <use [attr.xlink:href]="constants.src_svg + \'settings.svg#Layer_1\'"></use>\n\n                            </svg> <!-- ico-config -->\n\n                        </div> <!-- config-ico -->\n\n\n\n                    </div> <!-- config-styles -->\n\n                </ion-col>\n\n            </ion-row>\n\n        </ion-grid>\n\n\n\n    </div> <!-- ion-styles-explore -->\n\n\n\n    <div class="ion-recommendations-explore" >\n\n        \n\n        <ion-grid class="grid-header-recommendations">\n\n            <ion-row>\n\n                <ion-col>\n\n                    <span class="text-header-section">\n\n                        Recomendações\n\n                    </span><!-- text-header-section -->\n\n                </ion-col>\n\n            </ion-row>\n\n        </ion-grid><!-- grid-header-recommendations -->\n\n\n\n        <div class="recommendations-content" (scroll)="doScroll( $event )" >\n\n            <ul class="recommendation-list">\n\n\n\n                <li class="reccommendation-item" *ngFor="let recommendation of recommendations">\n\n                    <div class="ctrl-recommendation-item" >\n\n\n\n                        <div class="recommendation-mark" >\n\n\n\n                            <div class="recommendation-mark-header" >\n\n                                <div class="mark-header-image" >\n\n                                    <div class="image-header-mark" >\n\n\n\n                                    </div> <!-- image-header-mark -->\n\n                                </div> <!-- mark-header-image -->\n\n                                <div class="mark-header-description" >\n\n                                    <div class="header-description-line" >\n\n                                        <div class="description" >\n\n                                            <span class="text-description title">\n\n                                                {{recommendation.mark}}\n\n                                            </span>\n\n                                        </div> <!-- description -->\n\n                                    </div> <!-- header-description-line -->\n\n                                    <div class="header-description-line" >\n\n                                        <div class="description" >\n\n                                            <span class="text-description description">\n\n                                                Confecção\n\n                                            </span>\n\n                                        </div> <!-- description -->\n\n                                    </div> <!-- header-description-line -->\n\n                                </div> <!-- mark-header-description -->\n\n                                <div class="mark-header-action" >\n\n                                    <button class="button-action-header-mark">\n\n                                        Visitar\n\n                                    </button> <!-- button-action-header-mark -->\n\n                                </div> <!-- mark-header-action -->\n\n                            </div> <!-- recommendation-mark-header -->\n\n                            <div class="recommendation-mark-body" [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/\' + recommendation.wallpaper + \')\' }">\n\n                            </div> <!-- recommendation-mark-body -->\n\n\n\n                            <div class="recommendation-mark-footer" >\n\n                                <ul class="recommendation-mark-list-vitrine">\n\n                                    <li class="recommendation-mark-vitrine-item" [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/roupa1.jpg)\' }"></li><!-- recommendation-mark-vitrine-item -->\n\n                                    <li class="recommendation-mark-vitrine-item" [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/roupa1.jpg)\' }"></li><!-- recommendation-mark-vitrine-item -->\n\n                                    <li class="recommendation-mark-vitrine-item" [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/roupa1.jpg)\' }"></li><!-- recommendation-mark-vitrine-item -->\n\n                                </ul><!-- recommendation-mark-list-vitrine -->\n\n                            </div> <!-- recommendation-mark-footer -->\n\n\n\n\n\n                        </div> <!-- recommendation-mark -->\n\n\n\n                    </div> <!-- ctrl-recommendation-item -->\n\n                </li><!-- reccommendation-item -->\n\n\n\n            </ul><!-- recommendation-list -->\n\n        </div> <!-- recommendations-content -->\n\n    </div> <!-- ion-recommendations-explore -->\n\n\n\n    <div class="ion-explore-marks" >\n\n        <ion-grid class="no-padding">\n\n\n\n            <ion-row class="explore-mark" *ngFor="let marca of marcas">\n\n                <ion-col>\n\n                    <ion-grid>\n\n                        <ion-row>\n\n                            <ion-col col-2>\n\n                                <div class="image-mark-explore" >\n\n                                    <div class="img-mark-explore" >\n\n                                        <div class="img-mark" ></div> <!-- img-mark -->\n\n                                    </div> <!-- img-mark-explore -->\n\n                                </div> <!-- image-mark-explore -->\n\n                            </ion-col>\n\n                            <ion-col class="label-mark-explore-cont">\n\n                                <div class="label-mark-explore" >\n\n                                    <div class="text-label-mark-explore" >\n\n                                        <div class="txt-label-mark-explore title" >\n\n                                            {{marca.marca}}\n\n                                        </div> <!-- txt-label-mark-explore -->\n\n                                    </div> <!-- text-label-mark-explore -->\n\n                                    <div class="text-label-mark-explore" >\n\n                                        <div class="txt-label-mark-explore description" >\n\n                                            Há 3 dias\n\n                                        </div> <!-- txt-label-mark-explore -->\n\n                                    </div> <!-- text-label-mark-explore -->\n\n                                </div> <!-- label-mark-explore -->\n\n                            </ion-col> <!-- label-mark-explore-cont -->\n\n                        </ion-row>\n\n                        <ion-row>\n\n                            <ion-col>\n\n                                <div class="products-mark-explore" >\n\n                                    <ul class="list-products-mark-explore">\n\n                                        <li class="item-product-mark-explore" *ngFor="let produto of marca.produtos">\n\n\n\n                                            <div class="product-mark-image" [ngStyle]="{\'background-image\': \'url(\' + constants.src_img + \'exemples/jaqueta1.jpg)\'}" >\n\n                                                <ul class="colors-product-mark">\n\n                                                    <li class="color-product" [ngStyle]="{\'background-color\': \'#c80114\'}"></li><!-- color-product -->\n\n                                                    <li class="color-product" [ngStyle]="{\'background-color\': \'#1d1d1d\'}"></li><!-- color-product -->\n\n                                                </ul><!-- colors-product-mark -->\n\n                                            </div> <!-- product-mark-image -->\n\n                                            <div class="product-mark-label" >\n\n                                                <span class="product-mark-text">\n\n                                                    Rufed Jacket\n\n                                                </span><!-- product-mark-text -->\n\n                                            </div> <!-- product-mark-label -->\n\n\n\n                                        </li><!-- item-product-mark-explore -->\n\n                                    </ul><!-- list-products-mark-explore -->\n\n                                </div> <!-- products-mark-explore -->\n\n                            </ion-col>\n\n                        </ion-row>\n\n                    </ion-grid>\n\n                </ion-col>\n\n            </ion-row><!-- explore-mark -->\n\n\n\n        </ion-grid>\n\n    </div> <!-- ion-explore-marks -->\n\n    \n\n    \n\n<!-- Fim do content da pagina de exploração -->\n\n</ion-content>\n\n\n\n<fixed-menu page="explore"></fixed-menu>\n\n\n\n'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\explore\explore.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */]) === "function" && _c || Object])
     ], ExplorePage);
     return ExplorePage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=explore.js.map
@@ -329,10 +341,11 @@ var GostosPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-gostos',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\gostos\gostos.html"*/'<!--\n\n  Generated template for the GostosPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n    <button (click)="closeMeModal()" ion-button color="light" round>Fechar</button>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n    <div class="content-card-estilo">\n\n        <ion-card class="card-boy-estilo">\n\n            <div class="icon-user-type">\n\n                <img class="icon-card-estilo" src="/assets/themes/prototype/img/png/boy.png">\n\n            </div> <!-- icon-user-type -->\n\n            <div class="text-icon">Qual é seu estilo?</div>\n\n        </ion-card>\n\n    </div>\n\n\n\n    <ion-grid>\n\n\n\n        <ion-row class="row-estilo">\n\n            <ion-col col-auto>\n\n                <button ion-button class="btn-estilo"\n\n                        [ngClass]="{ \'actived-type\': actived.indexOf(1) > -1 && actived1.indexOf(1) > -1, \'actived-type2\': actived.indexOf(1) > -1  && actived2.indexOf(1) > -1,\'actived-type3\': actived.indexOf(1) > -1  && actived3.indexOf(1) > -1,\'actived-type4\': actived.indexOf(1) > -1  && actived4.indexOf(1) > -1}"\n\n                        (click)="defineActived(1)" round><div [ngClass]="{\'btn-none\': actived.indexOf(1) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                </svg> <!-- svg-ico-usertype --> </div>VERÂO\n\n                </button>\n\n\n\n            </ion-col>\n\n            <ion-col col-auto>\n\n                <button ion-button class="btn-estilo"\n\n                        [ngClass]="{ \'actived-type\': actived.indexOf(2) > -1 && actived1.indexOf(2) > -1, \'actived-type2\': actived.indexOf(2) > -1  && actived2.indexOf(2) > -1,\'actived-type3\': actived.indexOf(2) > -1  && actived3.indexOf(2) > -1,\'actived-type4\': actived.indexOf(2) > -1  && actived4.indexOf(2) > -1}"\n\n                        (click)="defineActived(2)" round><div [ngClass]="{\'btn-none\': actived.indexOf(2) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                </svg> <!-- svg-ico-usertype --> </div>INVERNO\n\n                </button>\n\n            </ion-col>\n\n            <ion-col col-auto>\n\n                <button ion-button class="btn-estilo"\n\n                        [ngClass]="{ \'actived-type\': actived.indexOf(3) > -1 && actived1.indexOf(3) > -1, \'actived-type2\': actived.indexOf(3) > -1  && actived2.indexOf(3) > -1,\'actived-type3\': actived.indexOf(3) > -1  && actived3.indexOf(3) > -1,\'actived-type4\': actived.indexOf(3) > -1  && actived4.indexOf(3) > -1}"\n\n                        (click)="defineActived(3)" round><div [ngClass]="{\'btn-none\': actived.indexOf(3) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                </svg> <!-- svg-ico-usertype --> </div>JEANS\n\n                </button>\n\n            </ion-col>\n\n\n\n            <ion-row class="row-estilo sliderIn" [hidden]="actived.indexOf(1) < 0" >\n\n                <div >\n\n                    <ion-col col-auto>\n\n                        <button ion-button class="btn-estilo"\n\n                                [ngClass]="{ \'actived-type\': actived.indexOf(1) > -1 && actived1.indexOf(1) > -1, \'actived-type2\': actived.indexOf(1) > -1  && actived2.indexOf(1) > -1,\'actived-type3\': actived.indexOf(1) > -1  && actived3.indexOf(1) > -1,\'actived-type4\': actived.indexOf(1) > -1  && actived4.indexOf(1) > -1}"\n\n                                (click)="defineActived(11)" round><div [ngClass]="{\'btn-none\': actived.indexOf(11) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                            <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                        </svg> <!-- svg-ico-usertype --> </div>Calça\n\n                        </button>\n\n                    </ion-col>\n\n                    <ion-col col-auto>\n\n                        <button ion-button class="btn-estilo"\n\n                                [ngClass]="{ \'actived-type\': actived.indexOf(1) > -1 && actived1.indexOf(1) > -1, \'actived-type2\': actived.indexOf(1) > -1  && actived2.indexOf(1) > -1,\'actived-type3\': actived.indexOf(1) > -1  && actived3.indexOf(1) > -1,\'actived-type4\': actived.indexOf(1) > -1  && actived4.indexOf(1) > -1}"\n\n                                (click)="defineActived(12)" round><div [ngClass]="{\'btn-none\': actived.indexOf(12) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                            <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                        </svg> <!-- svg-ico-usertype --> </div>Camisa\n\n                        </button>\n\n                    </ion-col>\n\n                    <ion-col col-auto>\n\n                        <button ion-button class="btn-estilo"\n\n                                [ngClass]="{ \'actived-type\': actived.indexOf(1) > -1 && actived1.indexOf(1) > -1, \'actived-type2\': actived.indexOf(1) > -1  && actived2.indexOf(1) > -1,\'actived-type3\': actived.indexOf(1) > -1  && actived3.indexOf(1) > -1,\'actived-type4\': actived.indexOf(1) > -1  && actived4.indexOf(1) > -1}"\n\n                                (click)="defineActived(13)" round><div [ngClass]="{\'btn-none\': actived.indexOf(13) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                            <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                        </svg> <!-- svg-ico-usertype --> </div>Calça\n\n                        </button>\n\n                    </ion-col>\n\n                </div>\n\n            </ion-row>\n\n        </ion-row>\n\n\n\n        <ion-row class="row-estilo">\n\n            <ion-col col-auto>\n\n                <button ion-button class="btn-estilo"\n\n                        [ngClass]="{ \'actived-type\': actived.indexOf(4) > -1 && actived1.indexOf(4) > -1, \'actived-type2\': actived.indexOf(4) > -1  && actived2.indexOf(4) > -1,\'actived-type3\': actived.indexOf(4) > -1  && actived3.indexOf(4) > -1,\'actived-type4\': actived.indexOf(4) > -1  && actived4.indexOf(4) > -1}"\n\n                        (click)="defineActived(4)" round><div [ngClass]="{\'btn-none\': actived.indexOf(4) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                </svg> <!-- svg-ico-usertype --> </div>SPORT\n\n                </button>\n\n            </ion-col>\n\n            <ion-col col-auto>\n\n                <button ion-button class="btn-estilo"\n\n                        [ngClass]="{ \'actived-type\': actived.indexOf(5) > -1 && actived1.indexOf(5) > -1, \'actived-type2\': actived.indexOf(5) > -1  && actived2.indexOf(5) > -1,\'actived-type3\': actived.indexOf(5) > -1  && actived3.indexOf(5) > -1,\'actived-type4\': actived.indexOf(5) > -1  && actived4.indexOf(5) > -1}"\n\n                        (click)="defineActived(5)" round><div [ngClass]="{\'btn-none\': actived.indexOf(5) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                </svg> <!-- svg-ico-usertype --> </div>CASAMENTO\n\n                </button>\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row class="row-estilo">\n\n            <ion-col col-auto>\n\n                <button ion-button class="btn-estilo"\n\n                        [ngClass]="{ \'actived-type\': actived.indexOf(6) > -1 && actived1.indexOf(6) > -1, \'actived-type2\': actived.indexOf(6) > -1  && actived2.indexOf(6) > -1,\'actived-type3\': actived.indexOf(6) > -1  && actived3.indexOf(6) > -1,\'actived-type4\': actived.indexOf(6) > -1  && actived4.indexOf(6) > -1}"\n\n                        (click)="defineActived(6)" round><div [ngClass]="{\'btn-none\': actived.indexOf(6) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                </svg> <!-- svg-ico-usertype --> </div>FEMININO\n\n                </button>\n\n            </ion-col>\n\n            <ion-col col-auto>\n\n                <button ion-button class="btn-estilo"\n\n                        [ngClass]="{ \'actived-type\': actived.indexOf(7) > -1 && actived1.indexOf(7) > -1, \'actived-type2\': actived.indexOf(7) > -1  && actived2.indexOf(7) > -1,\'actived-type3\': actived.indexOf(7) > -1  && actived3.indexOf(7) > -1,\'actived-type4\': actived.indexOf(7) > -1  && actived4.indexOf(7) > -1}"\n\n                        (click)="defineActived(7)" round><div [ngClass]="{\'btn-none\': actived.indexOf(7) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                </svg> <!-- svg-ico-usertype --> </div>GRUNGE\n\n                </button>\n\n            </ion-col>\n\n            <ion-col col-auto>\n\n                <button ion-button class="btn-estilo"\n\n                        [ngClass]="{ \'actived-type\': actived.indexOf(8) > -1 && actived1.indexOf(8) > -1, \'actived-type2\': actived.indexOf(8) > -1  && actived2.indexOf(8) > -1,\'actived-type3\': actived.indexOf(8) > -1  && actived3.indexOf(8) > -1,\'actived-type4\': actived.indexOf(8) > -1  && actived4.indexOf(8) > -1}"\n\n                        (click)="defineActived(8)" round><div [ngClass]="{\'btn-none\': actived.indexOf(8) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                </svg> <!-- svg-ico-usertype --> </div>MASCULINO\n\n                </button>\n\n            </ion-col>\n\n\n\n\n\n            <ion-row class="row-estilo sliderIn" [hidden]="actived.indexOf(8) < 0" >\n\n            <div>\n\n                <ion-col col-auto>\n\n                    <button ion-button class="btn-estilo"\n\n                            [ngClass]="{ \'actived-type\': actived.indexOf(8) > -1 && actived1.indexOf(8) > -1, \'actived-type2\': actived.indexOf(8) > -1  && actived2.indexOf(8) > -1,\'actived-type3\': actived.indexOf(8) > -1  && actived3.indexOf(8) > -1,\'actived-type4\': actived.indexOf(8) > -1  && actived4.indexOf(8) > -1}"\n\n                            (click)="defineActived(14)" round><div [ngClass]="{\'btn-none\': actived.indexOf(14) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                    </svg> <!-- svg-ico-usertype --> </div>Calça\n\n                    </button>\n\n                </ion-col>\n\n                <ion-col col-auto>\n\n                    <button ion-button class="btn-estilo"\n\n                            [ngClass]="{ \'actived-type\': actived.indexOf(8) > -1 && actived1.indexOf(8) > -1, \'actived-type2\': actived.indexOf(8) > -1  && actived2.indexOf(8) > -1,\'actived-type3\': actived.indexOf(8) > -1  && actived3.indexOf(8) > -1,\'actived-type4\': actived.indexOf(8) > -1  && actived4.indexOf(8) > -1}"\n\n                            (click)="defineActived(15)" round><div [ngClass]="{\'btn-none\': actived.indexOf(15) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                    </svg> <!-- svg-ico-usertype --> </div>Camisa\n\n                    </button>\n\n                </ion-col>\n\n            </div>\n\n        </ion-row>\n\n\n\n        </ion-row>\n\n\n\n        <ion-row class="row-estilo">\n\n            <ion-col col-auto>\n\n                <button ion-button class="btn-estilo"\n\n                        [ngClass]="{ \'actived-type\': actived.indexOf(9) > -1 && actived1.indexOf(9) > -1, \'actived-type2\': actived.indexOf(9) > -1  && actived2.indexOf(9) > -1,\'actived-type3\': actived.indexOf(9) > -1  && actived3.indexOf(9) > -1,\'actived-type4\': actived.indexOf(9) > -1  && actived4.indexOf(9) > -1}"\n\n                        (click)="defineActived(9)" round><div [ngClass]="{\'btn-none\': actived.indexOf(9) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                </svg> <!-- svg-ico-usertype --> </div>ROUPAS EM PROMOÇÃO\n\n                </button>\n\n            </ion-col>\n\n            <ion-col col-auto>\n\n                <button ion-button class="btn-estilo"\n\n                        [ngClass]="{ \'actived-type\': actived.indexOf(10) > -1 && actived1.indexOf(10) > -1, \'actived-type2\': actived.indexOf(10) > -1  && actived2.indexOf(10) > -1,\'actived-type3\': actived.indexOf(10) > -1  && actived3.indexOf(10) > -1,\'actived-type4\': actived.indexOf(10) > -1  && actived4.indexOf(10) > -1}"\n\n                        (click)="defineActived(10)" round><div [ngClass]="{\'btn-none\': actived.indexOf(10) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                </svg> <!-- svg-ico-usertype --> </div>CASUAL\n\n                </button>\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n    </ion-grid>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\gostos\gostos.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ViewController */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ViewController */]])
     ], GostosPage);
     return GostosPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=gostos.js.map
@@ -467,44 +480,6 @@ var Step2PageModule = (function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Step3PageModule", function() { return Step3PageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__step3__ = __webpack_require__(161);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var Step3PageModule = (function () {
-    function Step3PageModule() {
-    }
-    Step3PageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__step3__["a" /* Step3Page */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__step3__["a" /* Step3Page */]),
-            ],
-        })
-    ], Step3PageModule);
-    return Step3PageModule;
-}());
-
-//# sourceMappingURL=step3.module.js.map
-
-/***/ }),
-
-/***/ 164:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExplorePageModule", function() { return ExplorePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
@@ -541,83 +516,45 @@ var ExplorePageModule = (function () {
 
 /***/ }),
 
+/***/ 164:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Step3PageModule", function() { return Step3PageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__step3__ = __webpack_require__(161);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var Step3PageModule = (function () {
+    function Step3PageModule() {
+    }
+    Step3PageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__step3__["a" /* Step3Page */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__step3__["a" /* Step3Page */]),
+            ],
+        })
+    ], Step3PageModule);
+    return Step3PageModule;
+}());
+
+//# sourceMappingURL=step3.module.js.map
+
+/***/ }),
+
 /***/ 165:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginPageModule", function() { return LoginPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login__ = __webpack_require__(80);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var LoginPageModule = (function () {
-    function LoginPageModule() {
-    }
-    LoginPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__login__["a" /* LoginPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login__["a" /* LoginPage */]),
-            ],
-        })
-    ], LoginPageModule);
-    return LoginPageModule;
-}());
-
-//# sourceMappingURL=login.module.js.map
-
-/***/ }),
-
-/***/ 166:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GostosPageModule", function() { return GostosPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gostos__ = __webpack_require__(160);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var GostosPageModule = (function () {
-    function GostosPageModule() {
-    }
-    GostosPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__gostos__["a" /* GostosPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__gostos__["a" /* GostosPage */]),
-            ],
-        })
-    ], GostosPageModule);
-    return GostosPageModule;
-}());
-
-//# sourceMappingURL=gostos.module.js.map
-
-/***/ }),
-
-/***/ 167:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -655,6 +592,82 @@ var SlidesPageModule = (function () {
 
 /***/ }),
 
+/***/ 166:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginPageModule", function() { return LoginPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login__ = __webpack_require__(80);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var LoginPageModule = (function () {
+    function LoginPageModule() {
+    }
+    LoginPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__login__["a" /* LoginPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login__["a" /* LoginPage */]),
+            ],
+        })
+    ], LoginPageModule);
+    return LoginPageModule;
+}());
+
+//# sourceMappingURL=login.module.js.map
+
+/***/ }),
+
+/***/ 167:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GostosPageModule", function() { return GostosPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gostos__ = __webpack_require__(160);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var GostosPageModule = (function () {
+    function GostosPageModule() {
+    }
+    GostosPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__gostos__["a" /* GostosPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__gostos__["a" /* GostosPage */]),
+            ],
+        })
+    ], GostosPageModule);
+    return GostosPageModule;
+}());
+
+//# sourceMappingURL=gostos.module.js.map
+
+/***/ }),
+
 /***/ 211:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -681,14 +694,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(210);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(287);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_themes_prototype_slides_slides__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_themes_prototype_slides_slides_module__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_themes_prototype_login_login_module__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_themes_prototype_slides_slides_module__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_themes_prototype_login_login_module__ = __webpack_require__(166);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_themes_prototype_cadastro_step1_step1_module__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_themes_prototype_cadastro_step2_step2_module__ = __webpack_require__(162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_themes_prototype_cadastro_step3_step3_module__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_themes_prototype_cadastro_step3_step3_module__ = __webpack_require__(164);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_themes_prototype_cadastro_confirm_cad_confirm_cad_module__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_themes_prototype_explore_explore_module__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_themes_prototype_gostos_gostos_module__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_themes_prototype_explore_explore_module__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_themes_prototype_gostos_gostos_module__ = __webpack_require__(167);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -733,11 +746,11 @@ var AppModule = (function () {
                         { loadChildren: '../pages/themes/prototype/cadastro/confirm-cad/confirm-cad.module#ConfirmCadPageModule', name: 'ConfirmCadPage', segment: 'confirm-cad', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/cadastro/step1/step1.module#Step1PageModule', name: 'Step1Page', segment: 'step1', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/cadastro/step2/step2.module#Step2PageModule', name: 'Step2Page', segment: 'step2', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/cadastro/step3/step3.module#Step3PageModule', name: 'Step3Page', segment: 'step3', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/explore/explore.module#ExplorePageModule', name: 'ExplorePage', segment: 'explore', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/cadastro/step3/step3.module#Step3PageModule', name: 'Step3Page', segment: 'step3', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/slides/slides.module#SlidesPageModule', name: 'SlidesPage', segment: 'slides', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/gostos/gostos.module#GostosPageModule', name: 'GostosPage', segment: 'gostos', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/slides/slides.module#SlidesPageModule', name: 'SlidesPage', segment: 'slides', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/themes/prototype/gostos/gostos.module#GostosPageModule', name: 'GostosPage', segment: 'gostos', priority: 'low', defaultHistory: [] }
                     ]
                 })
             ],
@@ -805,7 +818,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var MenuBottomComponent = (function () {
     function MenuBottomComponent() {
         this.constants = __WEBPACK_IMPORTED_MODULE_1__config_Constants__["a" /* Constants */];
-        console.log(this);
     }
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),

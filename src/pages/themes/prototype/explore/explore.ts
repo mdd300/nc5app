@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component } from '@angular/core';
 import {ModalController, IonicPage, NavController, NavParams } from 'ionic-angular';
 import {GostosPage} from "../gostos/gostos";
 import {Constants} from "../../../../config/Constants";
@@ -29,6 +29,21 @@ export class ExplorePage {
         {mark: 'Unike', wallpaper: 'unique2.jpg' }
     ];
 
+    public marcas = [
+        {
+            marca: 'Unique',
+            produtos: [{null: null},{ null: null}]
+        },
+        {
+            marca: 'Unieke',
+            produtos: [{null: null},{ null: null}, {null: null}, {null: null}]
+        }
+    ];
+    
+    
+    public doScroll = (( event:any )=>{
+        console.log( event.path );
+    })
 
   /* Função iniciada quando a view for iniciada */
   ionViewDidLoad() {
