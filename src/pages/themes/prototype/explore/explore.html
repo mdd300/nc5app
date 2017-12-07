@@ -1,3 +1,185 @@
 <ion-content>
-  explorar
+    <!-- Content da pagina de explorar -->
+    
+    <div class="header-background" [ngStyle]="{ 'background-image': 'url(' + constants.src_img + 'backgrounds/explore-background.png)' }" ></div> <!-- header-background -->
+    
+    <!-- Header da pagina de exploração -->
+    <ion-header>
+        <ion-grid>
+            <ion-row>
+                <ion-col col-1 class="col-icon">
+                    <div class="icon-back-header" >
+                        
+                        <svg class="ico-back-header">
+                           <use [attr.xlink:href]="constants.src_svg + 'back.svg#Layer_1'"></use>
+                        </svg> <!-- ico-back-header -->
+                        
+                    </div> <!-- icon-back-header -->
+                </ion-col>
+                <ion-col>
+                    <div class="content-search-input-header" >
+                        <input type="search" name="search-explore" class="inpt-search-explore" placeholder="Buscar">
+                        <ion-icon name="md-close-circle"></ion-icon>
+                    </div> <!-- content-search-input-header -->
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-header>
+    <!-- Fim do header da pagina de exploração -->
+    <div class="ion-styles-explore" >
+
+        <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <span class="text-header-section">
+                        Seus estilos
+                    </span><!-- text-header-section -->
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <div class="show-styles-selecteds" >
+                        <div class="styles-selecteds" >
+
+                            <span class="style-slected">Masculino</span>
+                            <span class="style-slected">Masculino</span>
+                            <span class="style-slected">Masculino</span>
+                            <span class="style-slected">Social</span>
+                            <span class="style-slected">Social</span>
+                            <span class="style-slected">Social</span>
+
+                        </div> <!-- styles-selecteds -->
+                    </div> <!-- show-styles-selecteds -->
+                </ion-col>
+                <ion-col col-2 class="cont-config-styles">
+                    <div class="config-styles" >
+                        
+                        <div class="config-ico" >
+                            <svg class="ico-config">
+                               <use [attr.xlink:href]="constants.src_svg + 'settings.svg#Layer_1'"></use>
+                            </svg> <!-- ico-config -->
+                        </div> <!-- config-ico -->
+
+                    </div> <!-- config-styles -->
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+    </div> <!-- ion-styles-explore -->
+
+    <div class="ion-recommendations-explore" >
+        
+        <ion-grid class="grid-header-recommendations">
+            <ion-row>
+                <ion-col>
+                    <span class="text-header-section">
+                        Recomendações
+                    </span><!-- text-header-section -->
+                </ion-col>
+            </ion-row>
+        </ion-grid><!-- grid-header-recommendations -->
+
+        <div class="recommendations-content" >
+            <ul class="recommendation-list">
+
+                <li class="reccommendation-item" *ngFor="let recommendation of recommendations">
+                    <div class="ctrl-recommendation-item" >
+
+                        <div class="recommendation-mark" >
+
+                            <div class="recommendation-mark-header" >
+                                <div class="mark-header-image" >
+                                    <div class="image-header-mark" >
+
+                                    </div> <!-- image-header-mark -->
+                                </div> <!-- mark-header-image -->
+                                <div class="mark-header-description" >
+                                    <div class="header-description-line" >
+                                        <div class="description" >
+                                            <span class="text-description title">
+                                                {{recommendation.mark}}
+                                            </span>
+                                        </div> <!-- description -->
+                                    </div> <!-- header-description-line -->
+                                    <div class="header-description-line" >
+                                        <div class="description" >
+                                            <span class="text-description description">
+                                                Confecção
+                                            </span>
+                                        </div> <!-- description -->
+                                    </div> <!-- header-description-line -->
+                                </div> <!-- mark-header-description -->
+                                <div class="mark-header-action" >
+                                    <button class="button-action-header-mark">
+                                        Visitar
+                                    </button> <!-- button-action-header-mark -->
+                                </div> <!-- mark-header-action -->
+                            </div> <!-- recommendation-mark-header -->
+                            <div class="recommendation-mark-body" [ngStyle]="{ 'background-image': 'url(' + constants.src_img + 'exemples/' + recommendation.wallpaper + ')' }">
+                            </div> <!-- recommendation-mark-body -->
+
+                            <div class="recommendation-mark-footer" >
+                                <ul class="recommendation-mark-list-vitrine">
+                                    <li class="recommendation-mark-vitrine-item" [ngStyle]="{ 'background-image': 'url(' + constants.src_img + 'exemples/roupa1.jpg)' }"></li><!-- recommendation-mark-vitrine-item -->
+                                    <li class="recommendation-mark-vitrine-item" [ngStyle]="{ 'background-image': 'url(' + constants.src_img + 'exemples/roupa1.jpg)' }"></li><!-- recommendation-mark-vitrine-item -->
+                                    <li class="recommendation-mark-vitrine-item" [ngStyle]="{ 'background-image': 'url(' + constants.src_img + 'exemples/roupa1.jpg)' }"></li><!-- recommendation-mark-vitrine-item -->
+                                </ul><!-- recommendation-mark-list-vitrine -->
+                            </div> <!-- recommendation-mark-footer -->
+
+
+                        </div> <!-- recommendation-mark -->
+
+                    </div> <!-- ctrl-recommendation-item -->
+                </li><!-- reccommendation-item -->
+
+            </ul><!-- recommendation-list -->
+        </div> <!-- recommendations-content -->
+    </div> <!-- ion-recommendations-explore -->
+
+    <div class="ion-explore-marks" >
+        <ion-grid class="no-padding">
+
+            <ion-row class="explore-mark">
+                <ion-col>
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col col-2>
+                                <div class="image-mark-explore" >
+                                    <div class="img-mark-explore" >
+                                    
+                                    </div> <!-- img-mark-explore -->
+                                </div> <!-- image-mark-explore -->
+                            </ion-col>
+                            <ion-col class="label-mark-explore-cont">
+                                <div class="label-mark-explore" >
+                                    <div class="text-label-mark-explore" >
+                                        <div class="txt-label-mark-explore title" >
+                                            UniqueUniqueUniqueUniqueUniqueUniqueUniqueUniqueUniqueUniqueUnique
+                                        </div> <!-- txt-label-mark-explore -->
+                                    </div> <!-- text-label-mark-explore -->
+                                    <div class="text-label-mark-explore" >
+                                        <div class="txt-label-mark-explore description" >
+                                            UniqueUniqueUniqueUniqueUniqueUniqueUniqueUniqueUniqueUniqueUnique
+                                        </div> <!-- txt-label-mark-explore -->
+                                    </div> <!-- text-label-mark-explore -->
+                                </div> <!-- label-mark-explore -->
+                            </ion-col> <!-- label-mark-explore-cont -->
+                        </ion-row>
+                        <ion-row>
+                            <ion-col>
+                                Ola
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-col>
+            </ion-row><!-- explore-mark -->
+
+        </ion-grid>
+    </div> <!-- ion-explore-marks -->
+    
+    
+<!-- Fim do content da pagina de exploração -->
 </ion-content>
+
+<fixed-menu page="explore"></fixed-menu>
+

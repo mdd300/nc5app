@@ -1,6 +1,5 @@
 page-gostos {
 
-
   .content-card-estilo {
     margin-left: 25%;
   }
@@ -19,10 +18,10 @@ page-gostos {
     padding: 3px;
   }
   .svg-ico-usertype {
-    width: 30%;
+    width: 16px;
     height: 40%;
     position: fixed;
-    left: 7%;
+    left: 8%;
     top: 28%;
     fill: white;
     -webkit-transition: 0.5s;
@@ -44,13 +43,13 @@ page-gostos {
   .text-icon {
     margin: 10px;
     color: $grey-color;
-    font-size: 20px;
+    font-size: 0.7em;
     text-align: center;
     font-family: Multicolore;
   }
   .btn-estilo {
     background-color: $grey-color;
-    font-size: 6px;
+    font-size: 0.7em;
     &.actived-type {
       background-color: $pink-color;
     }
@@ -103,7 +102,6 @@ page-gostos {
     }
   }
 
-
   @keyframes slideUp {
     0% {
       -webkit-transform: translateY(0%);
@@ -121,6 +119,5 @@ page-gostos {
       -webkit-transform: translateY(-100%);
     }
   }
-
 
 }

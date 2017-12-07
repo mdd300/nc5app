@@ -58,15 +58,11 @@ export class GostosPage {
                 this.actived4.push(data)
             }
 
-
-
-
         }else{
 
             this.actived.splice(this.actived.indexOf(data), 1);
 
         }
     });/* Fim da função de definição do perfil selecionado */
-
 
 }

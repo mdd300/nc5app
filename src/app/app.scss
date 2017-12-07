@@ -26,6 +26,11 @@
   src: url('../assets/themes/prototype/fonts/Roboto-Regular.ttf');
 }
 
+.no-padding{ padding: 0 !important; }
+.no-margin{ margin: 0 !important; }
+
+
+
 /** Separação para estilos relacionados ao formulário de cadastro */
 .cad-form-content {
   width: 100%;
