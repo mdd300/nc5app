@@ -205,6 +205,8 @@ var Step1PageModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gostos_gostos__ = __webpack_require__(160);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_Constants__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery__ = __webpack_require__(288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_jquery__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -214,6 +216,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -232,6 +235,7 @@ var ExplorePage = (function () {
         this.constants = __WEBPACK_IMPORTED_MODULE_3__config_Constants__["a" /* Constants */];
         this.recommendations = [
             { mark: 'Unique', wallpaper: 'unique.jpg' },
+            { mark: 'Unike', wallpaper: 'unique2.jpg' },
             { mark: 'Unike', wallpaper: 'unique2.jpg' }
         ];
         this.marcas = [
@@ -244,8 +248,12 @@ var ExplorePage = (function () {
                 produtos: [{ null: null }, { null: null }, { null: null }, { null: null }]
             }
         ];
+        /**
+         *
+         * @type {(event: any) => any}
+         */
         this.doScroll = (function (event) {
-            console.log(event.path[0]);
+            console.log(__WEBPACK_IMPORTED_MODULE_4_jquery__(event.path[0]).scrollLeft() / 300);
         });
     }
     /* Função iniciada quando a view for iniciada */

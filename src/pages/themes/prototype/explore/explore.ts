@@ -2,6 +2,7 @@ import {Component } from '@angular/core';
 import {ModalController, IonicPage, NavController, NavParams } from 'ionic-angular';
 import {GostosPage} from "../gostos/gostos";
 import {Constants} from "../../../../config/Constants";
+import * as $ from 'jquery';
 
 /**
  * Generated class for the ExplorePage page.
@@ -26,6 +27,7 @@ export class ExplorePage {
     public constants = Constants;
     public recommendations = [
         {mark: 'Unique', wallpaper: 'unique.jpg'},
+        {mark: 'Unike', wallpaper: 'unique2.jpg' },
         {mark: 'Unike', wallpaper: 'unique2.jpg' }
     ];
 
@@ -39,11 +41,15 @@ export class ExplorePage {
             produtos: [{null: null},{ null: null}, {null: null}, {null: null}]
         }
     ];
-    
-    
+
+
+    /**
+     *
+     * @type {(event: any) => any}
+     */
     public doScroll = (( event:any )=>{
-        console.log( event.path[0] );
-    })
+        console.log( $(event.path[0]).scrollLeft() / 300);
+    });
 
   /* Função iniciada quando a view for iniciada */
   ionViewDidLoad() {
