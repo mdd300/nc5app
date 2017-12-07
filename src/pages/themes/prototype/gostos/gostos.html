@@ -14,7 +14,7 @@
     <div class="content-card-estilo">
         <ion-card class="card-boy-estilo">
             <div class="icon-user-type">
-                <img class="icon-card-estilo" src="/assets/themes/prototype/img/png/boy.png">
+                <img class="icon-card-estilo" src="{{constants.src_img}}png/boy.png">
             </div> <!-- icon-user-type -->
             <div class="text-icon">Qual é seu estilo?</div>
         </ion-card>
@@ -169,4 +169,20 @@
 
     </ion-grid>
 </ion-content>
+
+<ion-footer>
+    <div class="footer-steps" >
+
+        <div class="next-step-action" [ngClass]="{'allowed': actived.length > 0}" (click)="closeMeModal()">
+            <span class="next-step-label">
+                Próximo
+            </span> <!-- next-stap-label -->
+            <div class="nextstep-icon" >
+                <span class="caret-body"></span>
+                <span class="caret-direction"></span>
+            </div> <!-- nextstep-icon -->
+        </div> <!-- next-stap-action -->
+
+    </div> <!-- footer-steps -->
+</ion-footer>
 
