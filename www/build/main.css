@@ -27697,14 +27697,13 @@ page-gostos .icon-card-estilo {
 
 page-gostos .btn-confir {
   float: right;
-  padding: 3px;
 }
 
 page-gostos .svg-ico-usertype {
   width: 16px;
   height: 40%;
-  position: fixed;
-  left: 8%;
+  position: absolute;
+  left: 5px;
   top: 28%;
   fill: white;
   -webkit-transition: 0.5s;
@@ -27807,6 +27806,125 @@ page-gostos .sliderIn {
   100% {
     -webkit-transform: translateY(-100%);
   }
+}
+
+page-gostos .footer {
+  /** footer-steps */
+}
+
+page-gostos .footer:before {
+  background: transparent;
+}
+
+page-gostos .footer .footer-steps {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-flow: row-reverse;
+  -ms-flex-flow: row-reverse;
+  flex-flow: row-reverse;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /** next-stap-action */
+}
+
+page-gostos .footer .footer-steps .next-step-action {
+  width: auto;
+  height: 50px;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  /** allowed */
+  /** next-step-label */
+  /** nextstep-icon */
+}
+
+page-gostos .footer .footer-steps .next-step-action.allowed {
+  /** next-step-label */
+  /** nextstep-icon */
+}
+
+page-gostos .footer .footer-steps .next-step-action.allowed .next-step-label {
+  color: #ff5ba1;
+}
+
+page-gostos .footer .footer-steps .next-step-action.allowed .nextstep-icon {
+  /** caret-body  */
+  /** caret-direction */
+}
+
+page-gostos .footer .footer-steps .next-step-action.allowed .nextstep-icon .caret-body {
+  background: #ff5ba1;
+}
+
+page-gostos .footer .footer-steps .next-step-action.allowed .nextstep-icon .caret-direction {
+  border-right: 3px solid #ff5ba1;
+  border-top: 3px solid #ff5ba1;
+}
+
+page-gostos .footer .footer-steps .next-step-action .next-step-label {
+  color: #b4c1d6;
+  font-family: Multicolore;
+  font-size: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+page-gostos .footer .footer-steps .next-step-action .nextstep-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 0 0 10px;
+  /** caret-body */
+  /** caret-direction */
+}
+
+page-gostos .footer .footer-steps .next-step-action .nextstep-icon .caret-body {
+  width: 60px;
+  height: 3px;
+  background: #b4c1d6;
+  border-radius: 3px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+page-gostos .footer .footer-steps .next-step-action .nextstep-icon .caret-direction {
+  width: 15px;
+  height: 15px;
+  border-right: 3px solid #b4c1d6;
+  border-top: 3px solid #b4c1d6;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin: 0 0 0 -16px;
 }
 
 page-login {
