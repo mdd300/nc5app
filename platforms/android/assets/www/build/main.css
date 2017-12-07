@@ -27006,6 +27006,139 @@ page-step3 .button-finish {
   border-radius: 40px;
 }
 
+page-gostos {
+  /** svg-ico */
+  /** icon-user-type */
+}
+
+page-gostos .content-card-estilo {
+  margin-left: 25%;
+}
+
+page-gostos .card-boy-estilo {
+  width: 60% !important;
+  -webkit-box-shadow: 0 0 20px #ccc;
+  box-shadow: 0 0 10px #cacccc;
+}
+
+page-gostos .icon-card-estilo {
+  fill: #b4c1d6;
+}
+
+page-gostos .btn-confir {
+  float: right;
+  padding: 3px;
+}
+
+page-gostos .svg-ico-usertype {
+  width: 30%;
+  height: 40%;
+  position: fixed;
+  left: 7%;
+  top: 28%;
+  fill: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+page-gostos .icon-user-type {
+  height: 10%;
+  width: 50%;
+  position: relative;
+  background: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* align-items: center; */
+  margin: 15% 0 0 25%;
+}
+
+page-gostos .text-icon {
+  margin: 10px;
+  color: #b4c1d6;
+  font-size: 20px;
+  text-align: center;
+  font-family: Multicolore;
+}
+
+page-gostos .btn-estilo {
+  background-color: #b4c1d6;
+  font-size: 6px;
+}
+
+page-gostos .btn-estilo.actived-type {
+  background-color: #ff5ba1;
+}
+
+page-gostos .btn-estilo.actived-type2 {
+  background-color: #1569ff;
+}
+
+page-gostos .btn-estilo.actived-type3 {
+  background-color: #8dff5b;
+}
+
+page-gostos .btn-estilo.actived-type4 {
+  background-color: #e13838;
+}
+
+page-gostos .row-estilo {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+page-gostos .btn-none {
+  display: none;
+}
+
+page-gostos .sliderIn {
+  animation-name: slideDown;
+  -webkit-animation-name: slideDown;
+  animation-duration: 400ms;
+  -webkit-animation-duration: 400ms;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  visibility: visible !important;
+}
+
+@keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+  }
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+  }
+}
+
 page-login {
   /** login-page */
 }
