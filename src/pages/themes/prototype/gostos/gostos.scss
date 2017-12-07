@@ -1,13 +1,15 @@
 page-gostos {
 
   .content-card-estilo {
+    margin-top: 40px;
     margin-left: 25%;
   }
   .card-boy-estilo {
     width: 60% !important;
     -moz-box-shadow: 0 0 20px #ccc;
     -webkit-box-shadow: 0 0 20px #ccc;
-    box-shadow: 0 0 10px #cacccc;
+    box-shadow: 0 0 6px #edeff3;
+    height: 200px;
   }
 
   .icon-card-estilo {
@@ -21,15 +23,15 @@ page-gostos {
     width: 16px;
     height: 40%;
     position: absolute;
-    left: 5px;
-    top: 28%;
+    top: 10.5px;
+    right: 8px;
     fill: white;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   /** svg-ico */
   .icon-user-type {
-    height: 10%;
+    height: 51%;
     width: 50%;
     position: relative;
     background: #fff;
@@ -42,14 +44,20 @@ page-gostos {
   /** icon-user-type */
   .text-icon {
     margin: 10px;
-    color: $grey-color;
-    font-size: 0.7em;
     text-align: center;
     font-family: Multicolore;
+    color: $grey-color;
+    font-size: 1.3em;
   }
   .btn-estilo {
     background-color: $grey-color;
     font-size: 0.7em;
+    font-family: Multicolore;
+    box-shadow: 0 0 0 #cacccc;
+    -moz-box-shadow: 0 0 0px #ccc;
+    -webkit-box-shadow: 0 0 0px #ccc;
+    padding: 0 26px;
+
     &.actived-type {
       background-color: $pink-color;
     }
