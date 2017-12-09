@@ -27326,7 +27326,7 @@ page-explore .scroll-content .ion-recommendations-explore .grid-header-recommend
 
 page-explore .scroll-content .ion-recommendations-explore .recommendations-content {
   width: 100%;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: hidden;
   float: left;
   white-space: nowrap;
