@@ -37,13 +37,13 @@ var map = {
 		164
 	],
 	"../pages/themes/prototype/gostos/gostos.module": [
-		167
-	],
-	"../pages/themes/prototype/login/login.module": [
 		165
 	],
-	"../pages/themes/prototype/slides/slides.module": [
+	"../pages/themes/prototype/login/login.module": [
 		166
+	],
+	"../pages/themes/prototype/slides/slides.module": [
+		167
 	]
 };
 function webpackAsyncContext(req) {
@@ -147,10 +147,11 @@ var ConfirmCadPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-confirm-cad',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\confirm-cad\confirm-cad.html"*/'<ion-content>\n\n\n\n  <div class="content-center" >\n\n\n\n    <h3 class="page-title">Confirme sua conta</h3>\n\n    <p class="page-description">Confira seu e-mail ou mensagem sms para confirmar sua conta para seguir usar o aplicativo da melhor forma possível!</p>\n\n    <div class="cont-confirmcode" >\n\n      <div class="cad-form-content">\n\n        <label class="cad-form-label">\n\n          <input type="text" class="cad-form-ctrl text-center" placeholder="Codigo" >\n\n        </label><!-- cad-form-label -->\n\n      </div> <!-- cad-form-content -->\n\n    </div> <!-- cont-confirmcode -->\n\n\n\n  </div> <!-- content-center -->\n\n\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <div class="footer-steps">\n\n\n\n    <div class="next-step-action allowed" (click)="skipCad()">\n\n            <span class="next-step-label">\n\n                Pular\n\n            </span> <!-- next-stap-label -->\n\n      <div class="nextstep-icon">\n\n        <span class="caret-body"></span>\n\n        <span class="caret-direction"></span>\n\n      </div> <!-- nextstep-icon -->\n\n    </div> <!-- next-stap-action -->\n\n\n\n  </div> <!-- footer-steps -->\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\confirm-cad\confirm-cad.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
     ], ConfirmCadPage);
     return ConfirmCadPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=confirm-cad.js.map
@@ -308,6 +309,83 @@ var GostosPage = (function () {
         this.actived4 = [];
         this.intActived = 0;
         this.show8 = false;
+        this.a = 0;
+        this.estilos = [
+            {
+                id: '1',
+                nome: "VERÃO",
+            },
+            {
+                id: '2',
+                nome: "INVERNO",
+            },
+            {
+                id: '3',
+                nome: "JEANS",
+            },
+            {
+                id: '4',
+                nome: "SPORT",
+            },
+            {
+                id: '5',
+                nome: "CASAMENTO",
+            },
+            {
+                id: '6',
+                nome: "FEMININO",
+            },
+            {
+                id: '7',
+                nome: "GRUNGE",
+            },
+            {
+                id: '8',
+                nome: "MASCULINO",
+            }, {
+                id: '9',
+                nome: "ROUPAS EM PROMOÇÃO",
+            },
+            {
+                id: '10',
+                nome: "CASUAL",
+            }
+        ];
+        this.subEstilo = [
+            { 1: [{
+                        id: '11',
+                        nome: "CALÇA",
+                        idEstilo: '1'
+                    },
+                    {
+                        id: '12',
+                        nome: "CAMISA",
+                        idEstilo: '1'
+                    },
+                    {
+                        id: '13',
+                        nome: "BLUSA",
+                        idEstilo: '1'
+                    }],
+                8: [{
+                        id: '14',
+                        nome: "CALÇA",
+                        idEstilo: '8'
+                    },
+                    {
+                        id: '15',
+                        nome: "CAMISA",
+                        idEstilo: '8'
+                    },
+                    {
+                        id: '16',
+                        nome: "BLUSA",
+                        idEstilo: '8'
+                    }] }
+        ];
+        this.rowNum = 0; //counter to iterate over the rows in the grid
+        this.grid = [];
+        this.colNum = [];
         this.closeMeModal = (function () {
             if (_this.actived.length > 0)
                 _this.viewCtrl.dismiss();
@@ -348,11 +426,58 @@ var GostosPage = (function () {
                     _this.actived4.splice(_this.actived4.indexOf(data), 1);
                 }
             }
-        }); /* Fim da função de definição do perfil selecionado */
+        });
+        this.teste();
     }
+    GostosPage.prototype.teste = function () {
+        var i = 0;
+        while (i < this.estilos.length) {
+            this.grid[this.a] = [];
+            for (var j = 0; j < 3; j++) {
+                if (!this.estilos[i]) {
+                    j = 3;
+                }
+                else {
+                    if (this.estilos[i].nome.length > 14) {
+                        if (j == 2) {
+                            this.a++;
+                            j++;
+                        }
+                        else if (j == 0) {
+                            this.grid[this.a][j] = [];
+                            this.grid[this.a][j].push(this.estilos[i]);
+                            j++;
+                            i++;
+                        }
+                        else {
+                            this.grid[this.a][j] = [];
+                            this.grid[this.a][j].push(this.estilos[i]);
+                            this.a++;
+                            j++;
+                            i++;
+                        }
+                    }
+                    else {
+                        this.grid[this.a][j] = [];
+                        this.grid[this.a][j].push(this.estilos[i]);
+                        this.rowNum++;
+                        i++;
+                        if (j == 2) {
+                            this.a++;
+                        }
+                    }
+                }
+            }
+            // }
+        }
+        for (var b = 0; b <= this.a; b++) {
+            this.colNum.push(b);
+        }
+    };
+    ;
     GostosPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-gostos',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\gostos\gostos.html"*/'<!--\n\n  Generated template for the GostosPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n</ion-header>\n\n\n\n\n\n<ion-content>\n\n\n\n    <div class="content-card-estilo">\n\n        <ion-card class="card-boy-estilo">\n\n            <div class="icon-user-type">\n\n                <img class="icon-card-estilo" src="{{constants.src_img}}png/boy.png">\n\n            </div> <!-- icon-user-type -->\n\n            <div class="text-icon">Qual é seu estilo?</div>\n\n        </ion-card>\n\n    </div>\n\n\n\n    <ion-grid style="padding-top: 12px;">\n\n\n\n        <ion-row class="row-estilo">\n\n            <ion-col col-auto>\n\n                <button ion-button class="btn-estilo"\n\n                        [ngClass]="{ \'actived-type\': actived.indexOf(1) > -1 && actived1.indexOf(1) > -1, \'actived-type2\': actived.indexOf(1) > -1  && actived2.indexOf(1) > -1,\'actived-type3\': actived.indexOf(1) > -1  && actived3.indexOf(1) > -1,\'actived-type4\': actived.indexOf(1) > -1  && actived4.indexOf(1) > -1}"\n\n                        (click)="defineActived(1)" round>\n\n                    <div class="text-btn-estilo">VERÂO</div>\n\n                    <div [ngClass]="{\'btn-none\': actived.indexOf(1) < 0}" class="btn-confir">\n\n                    <svg class="svg-ico-usertype">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                </svg> <!-- svg-ico-usertype --> </div>\n\n                </button>\n\n\n\n            </ion-col>\n\n            <ion-col col-auto>\n\n                <button ion-button class="btn-estilo"\n\n                        [ngClass]="{ \'actived-type\': actived.indexOf(2) > -1 && actived1.indexOf(2) > -1, \'actived-type2\': actived.indexOf(2) > -1  && actived2.indexOf(2) > -1,\'actived-type3\': actived.indexOf(2) > -1  && actived3.indexOf(2) > -1,\'actived-type4\': actived.indexOf(2) > -1  && actived4.indexOf(2) > -1}"\n\n                        (click)="defineActived(2)" round><div class="text-btn-estilo">INVERNO</div><div [ngClass]="{\'btn-none\': actived.indexOf(2) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                </svg> <!-- svg-ico-usertype --> </div>\n\n                </button>\n\n            </ion-col>\n\n            <ion-col col-auto>\n\n                <button ion-button class="btn-estilo"\n\n                        [ngClass]="{ \'actived-type\': actived.indexOf(3) > -1 && actived1.indexOf(3) > -1, \'actived-type2\': actived.indexOf(3) > -1  && actived2.indexOf(3) > -1,\'actived-type3\': actived.indexOf(3) > -1  && actived3.indexOf(3) > -1,\'actived-type4\': actived.indexOf(3) > -1  && actived4.indexOf(3) > -1}"\n\n                        (click)="defineActived(3)" round><div class="text-btn-estilo">JEANS</div><div [ngClass]="{\'btn-none\': actived.indexOf(3) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                </svg> <!-- svg-ico-usertype --> </div>\n\n                </button>\n\n            </ion-col>\n\n\n\n            <ion-row class="row-estilo sliderIn" [hidden]="actived.indexOf(1) < 0" >\n\n                <div >\n\n                    <ion-col col-auto>\n\n                        <button ion-button class="btn-estilo"\n\n                                [ngClass]="{ \'actived-type\': actived.indexOf(1) > -1 && actived1.indexOf(1) > -1, \'actived-type2\': actived.indexOf(1) > -1  && actived2.indexOf(1) > -1,\'actived-type3\': actived.indexOf(1) > -1  && actived3.indexOf(1) > -1,\'actived-type4\': actived.indexOf(1) > -1  && actived4.indexOf(1) > -1}"\n\n                                (click)="defineActived(11)" round><div class="text-btn-estilo">CALÇA</div><div [ngClass]="{\'btn-none\': actived.indexOf(11) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                            <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                        </svg> <!-- svg-ico-usertype --> </div>\n\n                        </button>\n\n                    </ion-col>\n\n                    <ion-col col-auto>\n\n                        <button ion-button class="btn-estilo"\n\n                                [ngClass]="{ \'actived-type\': actived.indexOf(1) > -1 && actived1.indexOf(1) > -1, \'actived-type2\': actived.indexOf(1) > -1  && actived2.indexOf(1) > -1,\'actived-type3\': actived.indexOf(1) > -1  && actived3.indexOf(1) > -1,\'actived-type4\': actived.indexOf(1) > -1  && actived4.indexOf(1) > -1}"\n\n                                (click)="defineActived(12)" round><div class="text-btn-estilo">CAMISA</div><div [ngClass]="{\'btn-none\': actived.indexOf(12) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                            <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                        </svg> <!-- svg-ico-usertype --> </div>\n\n                        </button>\n\n                    </ion-col>\n\n                    <ion-col col-auto>\n\n                        <button ion-button class="btn-estilo"\n\n                                [ngClass]="{ \'actived-type\': actived.indexOf(1) > -1 && actived1.indexOf(1) > -1, \'actived-type2\': actived.indexOf(1) > -1  && actived2.indexOf(1) > -1,\'actived-type3\': actived.indexOf(1) > -1  && actived3.indexOf(1) > -1,\'actived-type4\': actived.indexOf(1) > -1  && actived4.indexOf(1) > -1}"\n\n                                (click)="defineActived(13)" round><div class="text-btn-estilo">CALÇA</div><div [ngClass]="{\'btn-none\': actived.indexOf(13) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                            <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                        </svg> <!-- svg-ico-usertype --> </div>\n\n                        </button>\n\n                    </ion-col>\n\n                </div>\n\n            </ion-row>\n\n        </ion-row>\n\n\n\n        <ion-row class="row-estilo">\n\n            <ion-col col-auto>\n\n                <button ion-button class="btn-estilo"\n\n                        [ngClass]="{ \'actived-type\': actived.indexOf(4) > -1 && actived1.indexOf(4) > -1, \'actived-type2\': actived.indexOf(4) > -1  && actived2.indexOf(4) > -1,\'actived-type3\': actived.indexOf(4) > -1  && actived3.indexOf(4) > -1,\'actived-type4\': actived.indexOf(4) > -1  && actived4.indexOf(4) > -1}"\n\n                        (click)="defineActived(4)" round><div class="text-btn-estilo">SPORT</div><div [ngClass]="{\'btn-none\': actived.indexOf(4) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                </svg> <!-- svg-ico-usertype --> </div>\n\n                </button>\n\n            </ion-col>\n\n            <ion-col col-auto>\n\n                <button ion-button class="btn-estilo"\n\n                        [ngClass]="{ \'actived-type\': actived.indexOf(5) > -1 && actived1.indexOf(5) > -1, \'actived-type2\': actived.indexOf(5) > -1  && actived2.indexOf(5) > -1,\'actived-type3\': actived.indexOf(5) > -1  && actived3.indexOf(5) > -1,\'actived-type4\': actived.indexOf(5) > -1  && actived4.indexOf(5) > -1}"\n\n                        (click)="defineActived(5)" round><div class="text-btn-estilo">CASAMENTO</div><div [ngClass]="{\'btn-none\': actived.indexOf(5) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                </svg> <!-- svg-ico-usertype --> </div>\n\n                </button>\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row class="row-estilo">\n\n            <ion-col col-auto>\n\n                <button ion-button class="btn-estilo"\n\n                        [ngClass]="{ \'actived-type\': actived.indexOf(6) > -1 && actived1.indexOf(6) > -1, \'actived-type2\': actived.indexOf(6) > -1  && actived2.indexOf(6) > -1,\'actived-type3\': actived.indexOf(6) > -1  && actived3.indexOf(6) > -1,\'actived-type4\': actived.indexOf(6) > -1  && actived4.indexOf(6) > -1}"\n\n                        (click)="defineActived(6)" round><div class="text-btn-estilo">FEMININO</div><div [ngClass]="{\'btn-none\': actived.indexOf(6) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                </svg> <!-- svg-ico-usertype --> </div>\n\n                </button>\n\n            </ion-col>\n\n            <ion-col col-auto>\n\n                <button ion-button class="btn-estilo"\n\n                        [ngClass]="{ \'actived-type\': actived.indexOf(7) > -1 && actived1.indexOf(7) > -1, \'actived-type2\': actived.indexOf(7) > -1  && actived2.indexOf(7) > -1,\'actived-type3\': actived.indexOf(7) > -1  && actived3.indexOf(7) > -1,\'actived-type4\': actived.indexOf(7) > -1  && actived4.indexOf(7) > -1}"\n\n                        (click)="defineActived(7)" round><div class="text-btn-estilo">GRUNGE</div><div [ngClass]="{\'btn-none\': actived.indexOf(7) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                </svg> <!-- svg-ico-usertype --> </div>\n\n                </button>\n\n            </ion-col>\n\n            <ion-col col-auto>\n\n                <button ion-button class="btn-estilo"\n\n                        [ngClass]="{ \'actived-type\': actived.indexOf(8) > -1 && actived1.indexOf(8) > -1, \'actived-type2\': actived.indexOf(8) > -1  && actived2.indexOf(8) > -1,\'actived-type3\': actived.indexOf(8) > -1  && actived3.indexOf(8) > -1,\'actived-type4\': actived.indexOf(8) > -1  && actived4.indexOf(8) > -1}"\n\n                        (click)="defineActived(8)" round><div class="text-btn-estilo">MASCULINO</div><div [ngClass]="{\'btn-none\': actived.indexOf(8) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                </svg> <!-- svg-ico-usertype --> </div>\n\n                </button>\n\n            </ion-col>\n\n\n\n\n\n            <ion-row class="row-estilo sliderIn" [hidden]="actived.indexOf(8) < 0" >\n\n            <div>\n\n                <ion-col col-auto>\n\n                    <button ion-button class="btn-estilo"\n\n                            [ngClass]="{ \'actived-type\': actived.indexOf(8) > -1 && actived1.indexOf(8) > -1, \'actived-type2\': actived.indexOf(8) > -1  && actived2.indexOf(8) > -1,\'actived-type3\': actived.indexOf(8) > -1  && actived3.indexOf(8) > -1,\'actived-type4\': actived.indexOf(8) > -1  && actived4.indexOf(8) > -1}"\n\n                            (click)="defineActived(14)" round><div class="text-btn-estilo">CALÇA</div><div [ngClass]="{\'btn-none\': actived.indexOf(14) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                    </svg> <!-- svg-ico-usertype --> </div>\n\n                    </button>\n\n                </ion-col>\n\n                <ion-col col-auto>\n\n                    <button ion-button class="btn-estilo"\n\n                            [ngClass]="{ \'actived-type\': actived.indexOf(8) > -1 && actived1.indexOf(8) > -1, \'actived-type2\': actived.indexOf(8) > -1  && actived2.indexOf(8) > -1,\'actived-type3\': actived.indexOf(8) > -1  && actived3.indexOf(8) > -1,\'actived-type4\': actived.indexOf(8) > -1  && actived4.indexOf(8) > -1}"\n\n                            (click)="defineActived(15)" round><div class="text-btn-estilo">CAMISA</div><div [ngClass]="{\'btn-none\': actived.indexOf(15) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                    </svg> <!-- svg-ico-usertype --> </div>\n\n                    </button>\n\n                </ion-col>\n\n            </div>\n\n        </ion-row>\n\n\n\n        </ion-row>\n\n\n\n        <ion-row class="row-estilo">\n\n            <ion-col col-auto>\n\n                <button ion-button class="btn-estilo"\n\n                        [ngClass]="{ \'actived-type\': actived.indexOf(9) > -1 && actived1.indexOf(9) > -1, \'actived-type2\': actived.indexOf(9) > -1  && actived2.indexOf(9) > -1,\'actived-type3\': actived.indexOf(9) > -1  && actived3.indexOf(9) > -1,\'actived-type4\': actived.indexOf(9) > -1  && actived4.indexOf(9) > -1}"\n\n                        (click)="defineActived(9)" round><div class="text-btn-estilo">ROUPAS EM PROMOÇÃO</div><div [ngClass]="{\'btn-none\': actived.indexOf(9) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                </svg> <!-- svg-ico-usertype --> </div>\n\n                </button>\n\n            </ion-col>\n\n            <ion-col col-auto>\n\n                <button ion-button class="btn-estilo"\n\n                        [ngClass]="{ \'actived-type\': actived.indexOf(10) > -1 && actived1.indexOf(10) > -1, \'actived-type2\': actived.indexOf(10) > -1  && actived2.indexOf(10) > -1,\'actived-type3\': actived.indexOf(10) > -1  && actived3.indexOf(10) > -1,\'actived-type4\': actived.indexOf(10) > -1  && actived4.indexOf(10) > -1}"\n\n                        (click)="defineActived(10)" round><div class="text-btn-estilo">CASUAL</div><div [ngClass]="{\'btn-none\': actived.indexOf(10) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                </svg> <!-- svg-ico-usertype --> </div>\n\n                </button>\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n    </ion-grid>\n\n</ion-content>\n\n\n\n<ion-footer>\n\n    <div class="footer-steps" >\n\n\n\n        <div class="next-step-action" [ngClass]="{\'allowed\': actived.length > 0}" (click)="closeMeModal()">\n\n            <span class="next-step-label">\n\n                Próximo\n\n            </span> <!-- next-stap-label -->\n\n            <div class="nextstep-icon" >\n\n                <span class="caret-body"></span>\n\n                <span class="caret-direction"></span>\n\n            </div> <!-- nextstep-icon -->\n\n        </div> <!-- next-stap-action -->\n\n\n\n    </div> <!-- footer-steps -->\n\n</ion-footer>\n\n\n\n'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\gostos\gostos.html"*/,
+            selector: 'page-gostos',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\gostos\gostos.html"*/'<!--\n\n  Generated template for the GostosPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n</ion-header>\n\n\n\n\n\n<ion-content>\n\n\n\n    <div class="content-card-estilo">\n\n        <ion-card class="card-boy-estilo">\n\n            <div class="icon-user-type">\n\n                <img class="icon-card-estilo" src="{{constants.src_img}}png/boy.png">\n\n            </div> <!-- icon-user-type -->\n\n            <div class="text-icon">Qual é seu estilo?</div>\n\n        </ion-card>\n\n    </div>\n\n\n\n    <ion-grid style="padding-top: 12px;">\n\n\n\n        <ion-row class="row-estilo" *ngFor="let num of colNum" center>\n\n            <div *ngFor="let num2 of colNum">\n\n                <div *ngIf="grid[num]">\n\n                    <div *ngFor="let data of grid[num][num2]">\n\n                        <ion-col col-auto>\n\n                            <button ion-button class="btn-estilo"\n\n                                    [ngClass]="{ \'actived-type\': actived.indexOf(data.id) > -1 && actived1.indexOf(data.id) > -1, \'actived-type2\': actived.indexOf(data.id) > -1  && actived2.indexOf(data.id) > -1,\'actived-type3\': actived.indexOf(data.id) > -1  && actived3.indexOf(data.id) > -1,\'actived-type4\': actived.indexOf(data.id) > -1  && actived4.indexOf(data.id) > -1}"\n\n                                    (click)="defineActived(data.id)" round>\n\n                                <div class="text-btn-estilo">{{data.nome}}</div>\n\n                                <div [ngClass]="{\'btn-none\': actived.indexOf(data.id) < 0}" class="btn-confir">\n\n                                    <svg class="svg-ico-usertype">\n\n                                        <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                                    </svg> <!-- svg-ico-usertype --> </div>\n\n                            </button>\n\n                        </ion-col>\n\n                    </div>\n\n                </div>\n\n            </div>\n\n            <div *ngFor="let num2 of colNum">\n\n                <div *ngIf="grid[num]">\n\n                    <div *ngFor="let data of grid[num][num2]">\n\n                        <div [hidden]="actived.indexOf(data.id) < 0" *ngIf="subEstilo[0][data.id]">\n\n                            <ion-row class="row-estilo sliderIn" center>\n\n                                <div>\n\n                                    <ion-col col-auto *ngFor="let subData of subEstilo[0][data.id]">\n\n                                        <button ion-button class="btn-estilo"\n\n                                                [ngClass]="{ \'actived-type\': actived.indexOf(subData.idEstilo) > -1 && actived1.indexOf(subData.idEstilo) > -1, \'actived-type2\': actived.indexOf(subData.idEstilo) > -1  && actived2.indexOf(subData.idEstilo) > -1,\'actived-type3\': actived.indexOf(subData.idEstilo) > -1  && actived3.indexOf(subData.idEstilo) > -1,\'actived-type4\': actived.indexOf(subData.idEstilo) > -1  && actived4.indexOf(subData.idEstilo) > -1}"\n\n                                                (click)="defineActived(subData.id)" round>\n\n                                            <div class="text-btn-estilo">{{subData.nome}}</div>\n\n                                            <div [ngClass]="{\'btn-none\': actived.indexOf(subData.id) < 0}"\n\n                                                 class="btn-confir">\n\n                                                <svg class="svg-ico-usertype">\n\n                                                    <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                                                </svg> <!-- svg-ico-usertype -->\n\n                                            </div>\n\n                                        </button>\n\n                                    </ion-col>\n\n                                </div>\n\n                            </ion-row>\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n            </div>\n\n        </ion-row>\n\n\n\n    </ion-grid>\n\n</ion-content>\n\n\n\n<ion-footer>\n\n    <div class="footer-steps">\n\n\n\n        <div class="next-step-action" [ngClass]="{\'allowed\': actived.length > 0}" (click)="closeMeModal()">\n\n            <span class="next-step-label">\n\n                Próximo\n\n            </span> <!-- next-stap-label -->\n\n            <div class="nextstep-icon">\n\n                <span class="caret-body"></span>\n\n                <span class="caret-direction"></span>\n\n            </div> <!-- nextstep-icon -->\n\n        </div> <!-- next-stap-action -->\n\n\n\n    </div> <!-- footer-steps -->\n\n</ion-footer>\n\n\n\n'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\gostos\gostos.html"*/,
         }),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ViewController */]) === "function" && _c || Object])
     ], GostosPage);
@@ -425,12 +550,12 @@ var Step3Page = (function () {
             }
             else {
                 /* Caso as senhas não correspondam umas as outras */
-                var alert = _this.alertCtrl.create({
+                var alert_1 = _this.alertCtrl.create({
                     title: 'Senhas Incorretas',
                     subTitle: 'Por favor, preencha as senhas de forma identica!',
                     buttons: ['Ok']
                 });
-                alert.present();
+                alert_1.present();
             } /* Fim da verificação da correspondencia das senhas */
         });
     }
@@ -438,10 +563,11 @@ var Step3Page = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-step3',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\step3\step3.html"*/'<ion-header>\n\n    <div class="header-back" (click)="backToStep2()">\n\n\n\n        <svg class="backpage-ico">\n\n            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n        </svg> <!-- backpage-ico -->\n\n\n\n    </div> <!-- header-back -->\n\n</ion-header>\n\n\n\n<ion-content>\n\n\n\n    <div class="step-indicator">\n\n\n\n        <span class="dotdot actived"></span>\n\n        <span class="dot-stick actived"></span>\n\n        <span class="dotdot actived"></span>\n\n        <span class="dot-stick actived"></span>\n\n        <span class="dotdot actived rounded"></span>\n\n\n\n    </div> <!-- step-indicator -->\n\n\n\n    <h3 class="title-step">Finalizar Cadastro</h3> <!-- title-step -->\n\n\n\n    <div class="cad-content-inn">\n\n        <ion-grid>\n\n\n\n            <ion-row>\n\n                <ion-col>\n\n\n\n                    <div class="cad-form-content">\n\n                        <label class="cad-form-label">\n\n                            <span class="cad-form-label-txt"> Username: </span> <!-- cad-form-label-txt -->\n\n                            <input type="text" class="cad-form-ctrl" placeholder="Username">\n\n                        </label><!-- cad-form-label -->\n\n                    </div> <!-- cad-form-content -->\n\n\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n            <ion-row>\n\n                <ion-col>\n\n\n\n                    <div class="cad-form-content">\n\n                        <label class="cad-form-label">\n\n                            <span class="cad-form-label-txt"> Senha: </span> <!-- cad-form-label-txt -->\n\n                            <input type="password" [(ngModel)]="password" (keyup)="checkPass()" class="cad-form-ctrl" placeholder="Senha">\n\n                        </label><!-- cad-form-label -->\n\n                    </div> <!-- cad-form-content -->\n\n\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n            <ion-row>\n\n                <ion-col>\n\n\n\n                    <div class="cad-form-content">\n\n\n\n                        <label class="cad-form-label icon-right" [ngClass]="{ \'checked-icon\': passwordsValiable }">\n\n                            <span class="cad-form-label-txt"> Confirmar Senha: </span> <!-- cad-form-label-txt -->\n\n                            <input type="password" [(ngModel)]="confirmPassword" (keyup)="checkPass()" class="cad-form-ctrl" placeholder="Confirmar Senha">\n\n                            <ion-icon name="checkmark-circle"></ion-icon>\n\n                        </label><!-- cad-form-label -->\n\n\n\n                    </div> <!-- cad-form-content -->\n\n\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n            <ion-row>\n\n                <ion-col>\n\n\n\n                    <div class="cad-form-content">\n\n\n\n                        <label class="cad-form-label">\n\n                            <span class="cad-form-label-txt"> Email: </span> <!-- cad-form-label-txt -->\n\n                            <input type="email" class="cad-form-ctrl" placeholder="Email">\n\n                        </label><!-- cad-form-label -->\n\n\n\n                    </div> <!-- cad-form-content -->\n\n\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n            <ion-row>\n\n                <ion-col>\n\n\n\n                    <div class="cad-form-content">\n\n\n\n                        <label class="cad-form-label">\n\n                            <span class="cad-form-label-txt"> Telefone: </span> <!-- cad-form-label-txt -->\n\n                            <input type="text" class="cad-form-ctrl" placeholder="Telefone">\n\n                        </label><!-- cad-form-label -->\n\n\n\n                    </div> <!-- cad-form-content -->\n\n\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n            <ion-row>\n\n                <ion-col>\n\n\n\n                    <button class="button-finish" (click)="cadFinish()"> Pronto! </button>\n\n\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n        </ion-grid>\n\n    </div> <!-- cad-content-inn -->\n\n\n\n\n\n</ion-content>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\step3\step3.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
     ], Step3Page);
     return Step3Page;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=step3.js.map
@@ -570,6 +696,44 @@ var ExplorePageModule = (function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GostosPageModule", function() { return GostosPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gostos__ = __webpack_require__(160);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var GostosPageModule = (function () {
+    function GostosPageModule() {
+    }
+    GostosPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__gostos__["a" /* GostosPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__gostos__["a" /* GostosPage */]),
+            ],
+        })
+    ], GostosPageModule);
+    return GostosPageModule;
+}());
+
+//# sourceMappingURL=gostos.module.js.map
+
+/***/ }),
+
+/***/ 166:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginPageModule", function() { return LoginPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
@@ -603,7 +767,7 @@ var LoginPageModule = (function () {
 
 /***/ }),
 
-/***/ 166:
+/***/ 167:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -641,44 +805,6 @@ var SlidesPageModule = (function () {
 
 /***/ }),
 
-/***/ 167:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GostosPageModule", function() { return GostosPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gostos__ = __webpack_require__(160);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var GostosPageModule = (function () {
-    function GostosPageModule() {
-    }
-    GostosPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__gostos__["a" /* GostosPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__gostos__["a" /* GostosPage */]),
-            ],
-        })
-    ], GostosPageModule);
-    return GostosPageModule;
-}());
-
-//# sourceMappingURL=gostos.module.js.map
-
-/***/ }),
-
 /***/ 211:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -705,14 +831,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(210);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(287);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_themes_prototype_slides_slides__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_themes_prototype_slides_slides_module__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_themes_prototype_login_login_module__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_themes_prototype_slides_slides_module__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_themes_prototype_login_login_module__ = __webpack_require__(166);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_themes_prototype_cadastro_step1_step1_module__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_themes_prototype_cadastro_step2_step2_module__ = __webpack_require__(162);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_themes_prototype_cadastro_step3_step3_module__ = __webpack_require__(163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_themes_prototype_cadastro_confirm_cad_confirm_cad_module__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_themes_prototype_explore_explore_module__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_themes_prototype_gostos_gostos_module__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_themes_prototype_gostos_gostos_module__ = __webpack_require__(165);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -759,9 +885,9 @@ var AppModule = (function () {
                         { loadChildren: '../pages/themes/prototype/cadastro/step2/step2.module#Step2PageModule', name: 'Step2Page', segment: 'step2', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/cadastro/step3/step3.module#Step3PageModule', name: 'Step3Page', segment: 'step3', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/explore/explore.module#ExplorePageModule', name: 'ExplorePage', segment: 'explore', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/gostos/gostos.module#GostosPageModule', name: 'GostosPage', segment: 'gostos', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/slides/slides.module#SlidesPageModule', name: 'SlidesPage', segment: 'slides', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/gostos/gostos.module#GostosPageModule', name: 'GostosPage', segment: 'gostos', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/themes/prototype/slides/slides.module#SlidesPageModule', name: 'SlidesPage', segment: 'slides', priority: 'low', defaultHistory: [] }
                     ]
                 })
             ],
@@ -938,10 +1064,10 @@ var SlidesPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-slides',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\slides\slides.html"*/'<ion-slides pager>\n\n\n\n  <ion-slide class="slider-content" >\n\n    \n\n    <div class="image-content" >\n\n      <img class="img-slide" [attr.src]="constants.src_img + \'slides/01.png\'" alt="">\n\n    </div> <!-- image-content -->\n\n\n\n    <h1 class="slider-title">A confecção na palma da sua mão</h1>\n\n    <p class="slide-description">\n\n      Uma rede que oferece o <strong>controle</strong> e <strong>divulgação</strong> dos seus produtos em tempo real!\n\n    </p><!-- slide-description -->\n\n\n\n    <button class="skip-slider" (click)="startLogin()"> Pular </button>\n\n\n\n  </ion-slide> <!-- End of slider 1 -->\n\n\n\n  <ion-slide class="slider-content" >\n\n\n\n    <div class="image-content" >\n\n      <img class="img-slide" [attr.src]="constants.src_img + \'slides/02.png\'" alt="">\n\n    </div> <!-- image-content -->\n\n\n\n    <h1 class="slider-title">Procura & Demanda</h1>\n\n    <p class="slide-description">\n\n      Milhares de lojistas e confecções procurando fazer novos contatos!\n\n    </p><!-- slide-description -->\n\n\n\n    <button class="skip-slider" (click)="startLogin()"> Pular </button>\n\n\n\n  </ion-slide> <!-- End of slider 2 -->\n\n\n\n  <ion-slide class="slider-content" >\n\n\n\n    <div class="image-content" >\n\n      <img class="img-slide" [attr.src]="constants.src_img + \'slides/03.png\'" alt="">\n\n    </div> <!-- image-content -->\n\n\n\n    <h1 class="slider-title">Sempre Informado</h1>\n\n    <p class="slide-description">\n\n      Acompanhe em primeira mão em uma unica plataforma as <strong>novidades, publicações</strong> e <strong>promoções</strong> dos seus contatos!\n\n    </p><!-- slide-description -->\n\n\n\n    <button class="skip-slider" (click)="startLogin()"> Pular </button>\n\n\n\n  </ion-slide> <!-- End of slider 3 -->\n\n\n\n  <ion-slide class="slider-content" >\n\n\n\n    <div class="image-content" >\n\n      <img class="img-slide" [attr.src]="constants.src_img + \'slides/04.png\'" alt="">\n\n    </div> <!-- image-content -->\n\n\n\n    <h1 class="slider-title">Seja Independente</h1>\n\n    <p class="slide-description">\n\n      Sinta a liberdade de poder <strong>comprar</strong> e <strong>reservar peças</strong> sem estar a mercê do tempo de um vendedor.\n\n    </p><!-- slide-description -->\n\n\n\n    <button class="start-button" (click)="startLogin()">Começar!</button>\n\n\n\n    <button class="skip-slider" (click)="startLogin()"> Pular </button>\n\n\n\n  </ion-slide> <!-- End of slider 4 -->\n\n\n\n</ion-slides>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\slides\slides.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], SlidesPage);
     return SlidesPage;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=slides.js.map
@@ -1094,10 +1220,11 @@ var LoginPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-login',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\login\login.html"*/'<div class="login-page">\n\n\n\n    <div class="backpage-login" (click)="goBackSlides()" >\n\n        <svg class="backpage-ico">\n\n            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n        </svg> <!-- backpage-ico -->\n\n    </div> <!-- backpage-login -->\n\n\n\n    <div class="content-login-form">\n\n\n\n        <h3 class="welcome-title">Bem Vindo</h3>\n\n\n\n        <div class="image-logo-qrgo">\n\n            <img class="svg-logo" [src]="constants.src_svg + \'qrgo-logo.svg\'"/>\n\n        </div> <!-- image-logo-qrgo -->\n\n\n\n        <div class="content-form-login">\n\n            <div class="form-cont pdg-b20">\n\n                <input type="text" class="form-ctrl" placeholder="Username / E-mail">\n\n            </div> <!-- form-cont -->\n\n            <div class="form-cont">\n\n                <input type="password" class="form-ctrl" placeholder="Senha">\n\n            </div> <!-- form-cont -->\n\n\n\n            <p class="forgot-pass"> Esqueci minha senha </p>\n\n\n\n            <div class="form-cont">\n\n                <button class="login-btn" (click)="doLogin()" > Entrar</button>\n\n            </div> <!-- form-cont -->\n\n\n\n            <span class="line-divider"></span> <!-- line-divider -->\n\n\n\n            <div class="content-singup">\n\n                <p class="ask-singup" > Não possui cadastro? </p> <!-- ask-singup -->\n\n                <p class="button-singup" (click)="goToCadastro()" > Cadastre-se </p> <!-- ask-singup -->\n\n            </div> <!-- content-singup -->\n\n\n\n        </div> <!-- content-form-login -->\n\n\n\n\n\n        <div class="explore-contents" >\n\n            <span class="explore-label"> Explorar </span>\n\n            <span class="explore-stick">  </span>\n\n        </div> <!-- explore-contents -->\n\n\n\n    </div> <!-- content-login-form -->\n\n\n\n\n\n</div> <!-- login-page -->'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\login\login.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */]])
     ], LoginPage);
     return LoginPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=login.js.map
@@ -1172,12 +1299,12 @@ var Step2Page = (function () {
             }
             else {
                 /* Caso os campos não estejam preenchidos corretamente, o passo não poderá ser avançado */
-                var alert = _this.alertCtrl.create({
+                var alert_1 = _this.alertCtrl.create({
                     title: 'Preencha o CNPJ',
                     subTitle: 'Por favor, preencha o seu CNPJ e verifique se os dados correspondem corretamente.',
                     buttons: ['Ok']
                 });
-                alert.present();
+                alert_1.present();
             }
         }); /* Fim da função de avanço dos passos de cadastro do perfil */
     }
@@ -1185,10 +1312,12 @@ var Step2Page = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-step2',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\step2\step2.html"*/'<ion-header>\n\n    <div class="header-back" (click)="backToStep1()">\n\n\n\n        <svg class="backpage-ico">\n\n            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n        </svg> <!-- backpage-ico -->\n\n\n\n    </div> <!-- header-back -->\n\n</ion-header>\n\n\n\n<ion-content>\n\n\n\n    <div class="step-indicator">\n\n\n\n        <span class="dotdot actived"></span>\n\n        <span class="dot-stick actived"></span>\n\n        <span class="dotdot actived rounded"></span>\n\n        <span class="dot-stick"></span>\n\n        <span class="dotdot"></span>\n\n\n\n    </div> <!-- step-indicator -->\n\n\n\n    <h3 class="title-step">Complete</h3> <!-- title-step -->\n\n\n\n    <div class="cad-content-inn">\n\n        <ion-grid>\n\n\n\n            <ion-row>\n\n                <ion-col>\n\n                    <div class="cad-form-content">\n\n                        <label class="cad-form-label">\n\n                            <span class="cad-form-label-txt"> CNPJ: </span> <!-- cad-form-label-txt -->\n\n                            <input type="text" [(ngModel)]="cnpj" (keyup)="keyupCnpj( cnpj )" class="cad-form-ctrl" placeholder="Insira o CNPJ">\n\n                        </label><!-- cad-form-label -->\n\n                    </div> <!-- cad-form-content -->\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n            <ion-row>\n\n\n\n                <ion-grid class="grid-complete-cnpj" [hidden]="!stepOk">\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Razão Social: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Razão Social" value="Danillo Alves de Oliveira 47906756886" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n                    </ion-row>\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Nome Fantasia: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Nome Fantasia" value="Webdragon" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n                    </ion-row>\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Bairro: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Bairro" value="Pq. Piratininga." readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n                    </ion-row>\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Endereço: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Endereço" value="Teófilo Braga" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n\n\n                        <ion-col col-4>\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Nº: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Nº" value="415" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n                        </ion-col>\n\n\n\n                    </ion-row>\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Cidade: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Cidade" value="Itaquaquecetuba" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n\n\n                        <ion-col col-4>\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Estado: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Estado" value="São Paulo" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n                        </ion-col>\n\n\n\n                    </ion-row>\n\n\n\n                </ion-grid>\n\n\n\n            </ion-row>\n\n\n\n        </ion-grid>\n\n    </div> <!-- cad-content-inn -->\n\n\n\n\n\n</ion-content>\n\n\n\n\n\n<ion-footer>\n\n    <div class="footer-steps">\n\n\n\n        <div class="next-step-action" [ngClass]="{ \'allowed\': stepOk }" (click)="goToStep3()">\n\n            <span class="next-step-label">\n\n                Próximo\n\n            </span> <!-- next-stap-label -->\n\n            <div class="nextstep-icon">\n\n                <span class="caret-body"></span>\n\n                <span class="caret-direction"></span>\n\n            </div> <!-- nextstep-icon -->\n\n        </div> <!-- next-stap-action -->\n\n\n\n    </div> <!-- footer-steps -->\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\step2\step2.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Keyboard */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Keyboard */]) === "function" && _d || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Keyboard */]])
     ], Step2Page);
     return Step2Page;
-    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=step2.js.map
