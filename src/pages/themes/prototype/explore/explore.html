@@ -79,7 +79,7 @@
             </ion-row>
         </ion-grid><!-- grid-header-recommendations -->
 
-        <div class="recommendations-content scrollerRecommended" (mouseup)="leftScrollContent('scrollerRecommended')" (mousemove)="scrollContent('scrollerRecommended', $event)" (mousedown)="startScrollContent('scrollerRecommended', $event)">
+        <div class="recommendations-content scrollerRecommended" (pan)="doScrollContent( 'scrollerRecommended', $event )" >
             <ul class="recommendation-list">
 
                 <li class="reccommendation-item item-scrollable"  *ngFor="let recommendation of recommendations">

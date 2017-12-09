@@ -92,54 +92,26 @@ export class ExplorePage {
     /* fim da função de checagem de scroll */
 
 
-    private scrollable: boolean = false;
-    private content: any = null;
-    private coords: any = {};
+    private scrollable: boolean;
+    private content: any;
+    private coords: any;
+    private scrollTimeout: any;
     /**
      * Função utilizada para iniciar o scroll do content */
-    public startScrollContent = ((content: string, event: any) => {
+    public doScrollContent = ( ( content:string , event : any ) => {
 
-        this.content = $('body').find('.' + content);
-        this.scrollable = true;
-        this.coords = {x: event.pageX};
-
-    });
-    /* Fim da função de start do ScrollContent */
-
-    /**
-     * Função utilizada quando o dedo do usuário passar pela div, dando efeito ao scroll */
-    public scrollContent = ((content: string, event: any) => {
-        /* Verifica se o scroll está permitido, ou seja, se o evento de mouseDown já foi disparado */
-        if (this.scrollable) {
-            /* Caso o scroll esteja liberado */
-            /* Retorna as coordenadas atuais do mouse/dedo  */
-            let currentCoords = {x: event.pageX};
-
-            /* Verifica a direção do scroll - se menor que zero, significa que o scroll vem da esquerda para a direita */
-            if (( this.coords.x - currentCoords.x ) < 0) {
-                /* Caso o scroll seja para a esquerda */
-                this.content.stop().animate({ scrollLeft: '-=5px' }, 1);
-            } else {
-                /* Caso o scroll seja o inverso, neha da direita para a esquerda */
-                this.content.stop().animate({ scrollLeft: '+=5px' }, 1);
-
-            }/* Fim da verificação da direção do scroll */
-
-            this.coords = currentCoords;
+        let $scrollable = $('body').find( '.' + content );
+        clearTimeout( this.scrollTimeout );
+        console.log( event.distance );
+        if( event.direction === 2 ){
+            $scrollable.stop().animate({ scrollLeft: '+=' + ( event.distance / 10 ) +"px" }, 0 );
+        }
+        if( event.direction === 4 ){
+            $scrollable.stop().animate({ scrollLeft: '-=' + ( event.distance / 10 ) +'px' }, 0 );
 
         }
-        /* Fim da verificação de permissão de scroll */
-
+        
     });
-    /* Fim da função de scroll do content */
-
-    public leftScrollContent = ((content: string) => {
-
-        this.scrollable = false;
-
-
-    });
-    /* Fim da função de Fim do scroll (quando o usuário soltar o clique) */
 
 
     /* Função iniciada quando a view for iniciada */
