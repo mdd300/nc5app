@@ -27168,7 +27168,7 @@ page-explore .scroll-content .header .content-search-input-header .inpt-search-e
   background: none;
   border: 1px solid #fff;
   border-radius: 30px;
-  padding: 15px 40px 15px 15px;
+  padding: 10px 40px 10px 15px;
   color: #fff;
 }
 
@@ -27190,8 +27190,8 @@ page-explore .scroll-content .header .content-search-input-header .inpt-search-e
 
 page-explore .scroll-content .header .content-search-input-header ion-icon {
   position: absolute;
-  right: 10px;
-  top: 6px;
+  right: 6px;
+  top: 1px;
   color: #fff;
   font-size: 2.5em;
   cursor: pointer;
@@ -27208,7 +27208,7 @@ page-explore .scroll-content .text-header-section {
 
 page-explore .scroll-content .ion-styles-explore {
   width: 100%;
-  margin: 75px 0 0 0;
+  margin: 55px 0 0 0;
   padding: 0 0 10px 0;
   position: relative;
   /** show-styles-selecteds */
@@ -27684,7 +27684,6 @@ page-explore .scroll-content .ion-explore-marks .explore-mark .label-mark-explor
   font-weight: bold;
 }
 
-<<<<<<< HEAD
 page-explore .scroll-content .ion-explore-marks .explore-mark .label-mark-explore-cont .label-mark-explore .text-label-mark-explore .txt-label-mark-explore.description {
   text-transform: uppercase;
   font-size: 0.9em;
@@ -27789,11 +27788,6 @@ page-explore .scroll-content .ion-explore-marks .explore-mark .products-mark-exp
   position: relative;
   text-transform: uppercase;
   font-weight: bold;
-=======
-page-explore .scroll-content .ion-explore-marks .explore-mark .label-mark-explore-cont .label-mark-explore .text-label-mark-explore .txt-label-mark-explore .description {
-  text-transform: uppercase;
-  font-size: 0.8em;
->>>>>>> 525efc4fd7c4d4eaf156ec00af3f3a81104483e2
 }
 
 /** page-explore */
@@ -27803,13 +27797,15 @@ page-gostos {
 }
 
 page-gostos .content-card-estilo {
+  margin-top: 40px;
   margin-left: 25%;
 }
 
 page-gostos .card-boy-estilo {
   width: 60% !important;
   -webkit-box-shadow: 0 0 20px #ccc;
-  box-shadow: 0 0 10px #cacccc;
+  box-shadow: 0 0 6px #edeff3;
+  height: 200px;
 }
 
 page-gostos .icon-card-estilo {
@@ -27824,15 +27820,15 @@ page-gostos .svg-ico-usertype {
   width: 16px;
   height: 40%;
   position: absolute;
-  left: 5px;
-  top: 28%;
+  top: 10.5px;
+  right: 8px;
   fill: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 page-gostos .icon-user-type {
-  height: 10%;
+  height: 51%;
   width: 50%;
   position: relative;
   background: #fff;
@@ -27844,15 +27840,20 @@ page-gostos .icon-user-type {
 
 page-gostos .text-icon {
   margin: 10px;
-  color: #b4c1d6;
-  font-size: 0.7em;
   text-align: center;
   font-family: Multicolore;
+  color: #b4c1d6;
+  font-size: 1.3em;
 }
 
 page-gostos .btn-estilo {
   background-color: #b4c1d6;
   font-size: 0.7em;
+  font-family: Multicolore;
+  box-shadow: 0 0 0 #cacccc;
+  -moz-box-shadow: 0 0 0px #ccc;
+  -webkit-box-shadow: 0 0 0px #ccc;
+  padding: 0 26px;
 }
 
 page-gostos .btn-estilo.actived-type {
