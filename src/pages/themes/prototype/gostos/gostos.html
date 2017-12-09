@@ -13,7 +13,7 @@
     <div class="content-card-estilo">
         <ion-card class="card-boy-estilo">
             <div class="icon-user-type">
-                <img class="icon-card-estilo" src="{{constants.src_img}}png/boy.png">
+                <img class="icon-card-estilo" [src]="constants.src_img + 'png/boy.png'" >
             </div> <!-- icon-user-type -->
             <div class="text-icon">Qual é seu estilo?</div>
         </ion-card>
@@ -26,15 +26,15 @@
                 <div *ngIf="grid[num]">
                     <div *ngFor="let data of grid[num][num2]">
                         <ion-col col-auto>
-                            <button ion-button class="btn-estilo"
+                            <span  class="btn-estilo"
                                     [ngClass]="{ 'actived-type': actived.indexOf(data.id) > -1 && actived1.indexOf(data.id) > -1, 'actived-type2': actived.indexOf(data.id) > -1  && actived2.indexOf(data.id) > -1,'actived-type3': actived.indexOf(data.id) > -1  && actived3.indexOf(data.id) > -1,'actived-type4': actived.indexOf(data.id) > -1  && actived4.indexOf(data.id) > -1}"
-                                    (click)="defineActived(data.id)" round>
+                                    (click)="defineActived(data.id)" >
                                 <div class="text-btn-estilo">{{data.nome}}</div>
                                 <div [ngClass]="{'btn-none': actived.indexOf(data.id) < 0}" class="btn-confir">
                                     <svg class="svg-ico-usertype">
                                         <use [attr.xlink:href]="constants.src_svg + 'confirmar.svg#Layer_1'"></use>
                                     </svg> <!-- svg-ico-usertype --> </div>
-                            </button>
+                            </span>
                         </ion-col>
                     </div>
                 </div>
@@ -46,9 +46,9 @@
                             <ion-row class="row-estilo sliderIn" center>
                                 <div>
                                     <ion-col col-auto *ngFor="let subData of subEstilo[0][data.id]">
-                                        <button ion-button class="btn-estilo"
+                                        <span class="btn-estilo"
                                                 [ngClass]="{ 'actived-type': actived.indexOf(subData.idEstilo) > -1 && actived1.indexOf(subData.idEstilo) > -1, 'actived-type2': actived.indexOf(subData.idEstilo) > -1  && actived2.indexOf(subData.idEstilo) > -1,'actived-type3': actived.indexOf(subData.idEstilo) > -1  && actived3.indexOf(subData.idEstilo) > -1,'actived-type4': actived.indexOf(subData.idEstilo) > -1  && actived4.indexOf(subData.idEstilo) > -1}"
-                                                (click)="defineActived(subData.id)" round>
+                                                (click)="defineActived(subData.id)">
                                             <div class="text-btn-estilo">{{subData.nome}}</div>
                                             <div [ngClass]="{'btn-none': actived.indexOf(subData.id) < 0}"
                                                  class="btn-confir">
@@ -56,7 +56,7 @@
                                                     <use [attr.xlink:href]="constants.src_svg + 'confirmar.svg#Layer_1'"></use>
                                                 </svg> <!-- svg-ico-usertype -->
                                             </div>
-                                        </button>
+                                        </span>
                                     </ion-col>
                                 </div>
                             </ion-row>
