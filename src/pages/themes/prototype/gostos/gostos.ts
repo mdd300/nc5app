@@ -119,7 +119,7 @@ export class GostosPage {
                 if (!this.estilos[i]) {
                     j = 3;
                 } else {
-                    if (this.estilos[i].nome.length > 14) {
+                    if (this.estilos[i].nome.length > 11) {
                         if(j == 2) {
                             this.a++;
                             j++;

@@ -92,26 +92,14 @@ export class ExplorePage {
     /* fim da função de checagem de scroll */
 
 
-    private scrollable: boolean;
-    private content: any;
-    private coords: any;
-    private scrollTimeout: any;
+    private scrollElement: any;
     /**
      * Função utilizada para iniciar o scroll do content */
-    public doScrollContent = ( ( content:string , event : any ) => {
+    public doScrollContent = ( ( element:string , event: any) => {
 
-        let $scrollable = $('body').find( '.' + content );
-        clearTimeout( this.scrollTimeout );
-        console.log( event.distance );
-        if( event.direction === 2 ){
-            $scrollable.stop().animate({ scrollLeft: '+=' + ( event.distance / 10 ) +"px" }, 0 );
-        }
-        if( event.direction === 4 ){
-            $scrollable.stop().animate({ scrollLeft: '-=' + ( event.distance / 10 ) +'px' }, 0 );
+            
 
-        }
-        
-    });
+    });/* Fim função executada com o scroll do content */
 
 
     /* Função iniciada quando a view for iniciada */
