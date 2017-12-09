@@ -17,7 +17,6 @@ page-gostos {
   }
   .btn-confir {
     float: right;
-    //padding:  0 0 0 3px;
   }
   .svg-ico-usertype {
     width: 16px;
@@ -49,6 +48,9 @@ page-gostos {
     color: $grey-color;
     font-size: 1.3em;
   }
+  .row{
+    align-items: center;
+  }
   .btn-estilo {
     background-color: $grey-color;
     font-size: 0.7em;
@@ -57,6 +59,7 @@ page-gostos {
     -moz-box-shadow: 0 0 0px #ccc;
     -webkit-box-shadow: 0 0 0px #ccc;
     padding: 0 26px;
+    text-align: center;
 
     &.actived-type {
       background-color: $pink-color;

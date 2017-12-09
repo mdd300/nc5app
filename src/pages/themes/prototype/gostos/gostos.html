@@ -21,165 +21,62 @@
 
     <ion-grid style="padding-top: 12px;">
 
-        <ion-row class="row-estilo">
-            <ion-col col-auto>
-                <button ion-button class="btn-estilo"
-                        [ngClass]="{ 'actived-type': actived.indexOf(1) > -1 && actived1.indexOf(1) > -1, 'actived-type2': actived.indexOf(1) > -1  && actived2.indexOf(1) > -1,'actived-type3': actived.indexOf(1) > -1  && actived3.indexOf(1) > -1,'actived-type4': actived.indexOf(1) > -1  && actived4.indexOf(1) > -1}"
-                        (click)="defineActived(1)" round>
-                    <div class="text-btn-estilo">VERÂO</div>
-                    <div [ngClass]="{'btn-none': actived.indexOf(1) < 0}" class="btn-confir">
-                    <svg class="svg-ico-usertype">
-                    <use [attr.xlink:href]="constants.src_svg + 'confirmar.svg#Layer_1'"></use>
-                </svg> <!-- svg-ico-usertype --> </div>
-                </button>
-
-            </ion-col>
-            <ion-col col-auto>
-                <button ion-button class="btn-estilo"
-                        [ngClass]="{ 'actived-type': actived.indexOf(2) > -1 && actived1.indexOf(2) > -1, 'actived-type2': actived.indexOf(2) > -1  && actived2.indexOf(2) > -1,'actived-type3': actived.indexOf(2) > -1  && actived3.indexOf(2) > -1,'actived-type4': actived.indexOf(2) > -1  && actived4.indexOf(2) > -1}"
-                        (click)="defineActived(2)" round><div class="text-btn-estilo">INVERNO</div><div [ngClass]="{'btn-none': actived.indexOf(2) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">
-                    <use [attr.xlink:href]="constants.src_svg + 'confirmar.svg#Layer_1'"></use>
-                </svg> <!-- svg-ico-usertype --> </div>
-                </button>
-            </ion-col>
-            <ion-col col-auto>
-                <button ion-button class="btn-estilo"
-                        [ngClass]="{ 'actived-type': actived.indexOf(3) > -1 && actived1.indexOf(3) > -1, 'actived-type2': actived.indexOf(3) > -1  && actived2.indexOf(3) > -1,'actived-type3': actived.indexOf(3) > -1  && actived3.indexOf(3) > -1,'actived-type4': actived.indexOf(3) > -1  && actived4.indexOf(3) > -1}"
-                        (click)="defineActived(3)" round><div class="text-btn-estilo">JEANS</div><div [ngClass]="{'btn-none': actived.indexOf(3) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">
-                    <use [attr.xlink:href]="constants.src_svg + 'confirmar.svg#Layer_1'"></use>
-                </svg> <!-- svg-ico-usertype --> </div>
-                </button>
-            </ion-col>
-
-            <ion-row class="row-estilo sliderIn" [hidden]="actived.indexOf(1) < 0" >
-                <div >
-                    <ion-col col-auto>
-                        <button ion-button class="btn-estilo"
-                                [ngClass]="{ 'actived-type': actived.indexOf(1) > -1 && actived1.indexOf(1) > -1, 'actived-type2': actived.indexOf(1) > -1  && actived2.indexOf(1) > -1,'actived-type3': actived.indexOf(1) > -1  && actived3.indexOf(1) > -1,'actived-type4': actived.indexOf(1) > -1  && actived4.indexOf(1) > -1}"
-                                (click)="defineActived(11)" round><div class="text-btn-estilo">CALÇA</div><div [ngClass]="{'btn-none': actived.indexOf(11) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">
-                            <use [attr.xlink:href]="constants.src_svg + 'confirmar.svg#Layer_1'"></use>
-                        </svg> <!-- svg-ico-usertype --> </div>
-                        </button>
-                    </ion-col>
-                    <ion-col col-auto>
-                        <button ion-button class="btn-estilo"
-                                [ngClass]="{ 'actived-type': actived.indexOf(1) > -1 && actived1.indexOf(1) > -1, 'actived-type2': actived.indexOf(1) > -1  && actived2.indexOf(1) > -1,'actived-type3': actived.indexOf(1) > -1  && actived3.indexOf(1) > -1,'actived-type4': actived.indexOf(1) > -1  && actived4.indexOf(1) > -1}"
-                                (click)="defineActived(12)" round><div class="text-btn-estilo">CAMISA</div><div [ngClass]="{'btn-none': actived.indexOf(12) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">
-                            <use [attr.xlink:href]="constants.src_svg + 'confirmar.svg#Layer_1'"></use>
-                        </svg> <!-- svg-ico-usertype --> </div>
-                        </button>
-                    </ion-col>
-                    <ion-col col-auto>
-                        <button ion-button class="btn-estilo"
-                                [ngClass]="{ 'actived-type': actived.indexOf(1) > -1 && actived1.indexOf(1) > -1, 'actived-type2': actived.indexOf(1) > -1  && actived2.indexOf(1) > -1,'actived-type3': actived.indexOf(1) > -1  && actived3.indexOf(1) > -1,'actived-type4': actived.indexOf(1) > -1  && actived4.indexOf(1) > -1}"
-                                (click)="defineActived(13)" round><div class="text-btn-estilo">CALÇA</div><div [ngClass]="{'btn-none': actived.indexOf(13) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">
-                            <use [attr.xlink:href]="constants.src_svg + 'confirmar.svg#Layer_1'"></use>
-                        </svg> <!-- svg-ico-usertype --> </div>
-                        </button>
-                    </ion-col>
+        <ion-row class="row-estilo" *ngFor="let num of colNum" center>
+            <div *ngFor="let num2 of colNum">
+                <div *ngIf="grid[num]">
+                    <div *ngFor="let data of grid[num][num2]">
+                        <ion-col col-auto>
+                            <button ion-button class="btn-estilo"
+                                    [ngClass]="{ 'actived-type': actived.indexOf(data.id) > -1 && actived1.indexOf(data.id) > -1, 'actived-type2': actived.indexOf(data.id) > -1  && actived2.indexOf(data.id) > -1,'actived-type3': actived.indexOf(data.id) > -1  && actived3.indexOf(data.id) > -1,'actived-type4': actived.indexOf(data.id) > -1  && actived4.indexOf(data.id) > -1}"
+                                    (click)="defineActived(data.id)" round>
+                                <div class="text-btn-estilo">{{data.nome}}</div>
+                                <div [ngClass]="{'btn-none': actived.indexOf(data.id) < 0}" class="btn-confir">
+                                    <svg class="svg-ico-usertype">
+                                        <use [attr.xlink:href]="constants.src_svg + 'confirmar.svg#Layer_1'"></use>
+                                    </svg> <!-- svg-ico-usertype --> </div>
+                            </button>
+                        </ion-col>
+                    </div>
                 </div>
-            </ion-row>
-        </ion-row>
-
-        <ion-row class="row-estilo">
-            <ion-col col-auto>
-                <button ion-button class="btn-estilo"
-                        [ngClass]="{ 'actived-type': actived.indexOf(4) > -1 && actived1.indexOf(4) > -1, 'actived-type2': actived.indexOf(4) > -1  && actived2.indexOf(4) > -1,'actived-type3': actived.indexOf(4) > -1  && actived3.indexOf(4) > -1,'actived-type4': actived.indexOf(4) > -1  && actived4.indexOf(4) > -1}"
-                        (click)="defineActived(4)" round><div class="text-btn-estilo">SPORT</div><div [ngClass]="{'btn-none': actived.indexOf(4) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">
-                    <use [attr.xlink:href]="constants.src_svg + 'confirmar.svg#Layer_1'"></use>
-                </svg> <!-- svg-ico-usertype --> </div>
-                </button>
-            </ion-col>
-            <ion-col col-auto>
-                <button ion-button class="btn-estilo"
-                        [ngClass]="{ 'actived-type': actived.indexOf(5) > -1 && actived1.indexOf(5) > -1, 'actived-type2': actived.indexOf(5) > -1  && actived2.indexOf(5) > -1,'actived-type3': actived.indexOf(5) > -1  && actived3.indexOf(5) > -1,'actived-type4': actived.indexOf(5) > -1  && actived4.indexOf(5) > -1}"
-                        (click)="defineActived(5)" round><div class="text-btn-estilo">CASAMENTO</div><div [ngClass]="{'btn-none': actived.indexOf(5) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">
-                    <use [attr.xlink:href]="constants.src_svg + 'confirmar.svg#Layer_1'"></use>
-                </svg> <!-- svg-ico-usertype --> </div>
-                </button>
-            </ion-col>
-        </ion-row>
-
-        <ion-row class="row-estilo">
-            <ion-col col-auto>
-                <button ion-button class="btn-estilo"
-                        [ngClass]="{ 'actived-type': actived.indexOf(6) > -1 && actived1.indexOf(6) > -1, 'actived-type2': actived.indexOf(6) > -1  && actived2.indexOf(6) > -1,'actived-type3': actived.indexOf(6) > -1  && actived3.indexOf(6) > -1,'actived-type4': actived.indexOf(6) > -1  && actived4.indexOf(6) > -1}"
-                        (click)="defineActived(6)" round><div class="text-btn-estilo">FEMININO</div><div [ngClass]="{'btn-none': actived.indexOf(6) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">
-                    <use [attr.xlink:href]="constants.src_svg + 'confirmar.svg#Layer_1'"></use>
-                </svg> <!-- svg-ico-usertype --> </div>
-                </button>
-            </ion-col>
-            <ion-col col-auto>
-                <button ion-button class="btn-estilo"
-                        [ngClass]="{ 'actived-type': actived.indexOf(7) > -1 && actived1.indexOf(7) > -1, 'actived-type2': actived.indexOf(7) > -1  && actived2.indexOf(7) > -1,'actived-type3': actived.indexOf(7) > -1  && actived3.indexOf(7) > -1,'actived-type4': actived.indexOf(7) > -1  && actived4.indexOf(7) > -1}"
-                        (click)="defineActived(7)" round><div class="text-btn-estilo">GRUNGE</div><div [ngClass]="{'btn-none': actived.indexOf(7) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">
-                    <use [attr.xlink:href]="constants.src_svg + 'confirmar.svg#Layer_1'"></use>
-                </svg> <!-- svg-ico-usertype --> </div>
-                </button>
-            </ion-col>
-            <ion-col col-auto>
-                <button ion-button class="btn-estilo"
-                        [ngClass]="{ 'actived-type': actived.indexOf(8) > -1 && actived1.indexOf(8) > -1, 'actived-type2': actived.indexOf(8) > -1  && actived2.indexOf(8) > -1,'actived-type3': actived.indexOf(8) > -1  && actived3.indexOf(8) > -1,'actived-type4': actived.indexOf(8) > -1  && actived4.indexOf(8) > -1}"
-                        (click)="defineActived(8)" round><div class="text-btn-estilo">MASCULINO</div><div [ngClass]="{'btn-none': actived.indexOf(8) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">
-                    <use [attr.xlink:href]="constants.src_svg + 'confirmar.svg#Layer_1'"></use>
-                </svg> <!-- svg-ico-usertype --> </div>
-                </button>
-            </ion-col>
-
-
-            <ion-row class="row-estilo sliderIn" [hidden]="actived.indexOf(8) < 0" >
-            <div>
-                <ion-col col-auto>
-                    <button ion-button class="btn-estilo"
-                            [ngClass]="{ 'actived-type': actived.indexOf(8) > -1 && actived1.indexOf(8) > -1, 'actived-type2': actived.indexOf(8) > -1  && actived2.indexOf(8) > -1,'actived-type3': actived.indexOf(8) > -1  && actived3.indexOf(8) > -1,'actived-type4': actived.indexOf(8) > -1  && actived4.indexOf(8) > -1}"
-                            (click)="defineActived(14)" round><div class="text-btn-estilo">CALÇA</div><div [ngClass]="{'btn-none': actived.indexOf(14) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">
-                        <use [attr.xlink:href]="constants.src_svg + 'confirmar.svg#Layer_1'"></use>
-                    </svg> <!-- svg-ico-usertype --> </div>
-                    </button>
-                </ion-col>
-                <ion-col col-auto>
-                    <button ion-button class="btn-estilo"
-                            [ngClass]="{ 'actived-type': actived.indexOf(8) > -1 && actived1.indexOf(8) > -1, 'actived-type2': actived.indexOf(8) > -1  && actived2.indexOf(8) > -1,'actived-type3': actived.indexOf(8) > -1  && actived3.indexOf(8) > -1,'actived-type4': actived.indexOf(8) > -1  && actived4.indexOf(8) > -1}"
-                            (click)="defineActived(15)" round><div class="text-btn-estilo">CAMISA</div><div [ngClass]="{'btn-none': actived.indexOf(15) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">
-                        <use [attr.xlink:href]="constants.src_svg + 'confirmar.svg#Layer_1'"></use>
-                    </svg> <!-- svg-ico-usertype --> </div>
-                    </button>
-                </ion-col>
             </div>
-        </ion-row>
-
-        </ion-row>
-
-        <ion-row class="row-estilo">
-            <ion-col col-auto>
-                <button ion-button class="btn-estilo"
-                        [ngClass]="{ 'actived-type': actived.indexOf(9) > -1 && actived1.indexOf(9) > -1, 'actived-type2': actived.indexOf(9) > -1  && actived2.indexOf(9) > -1,'actived-type3': actived.indexOf(9) > -1  && actived3.indexOf(9) > -1,'actived-type4': actived.indexOf(9) > -1  && actived4.indexOf(9) > -1}"
-                        (click)="defineActived(9)" round><div class="text-btn-estilo">ROUPAS EM PROMOÇÃO</div><div [ngClass]="{'btn-none': actived.indexOf(9) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">
-                    <use [attr.xlink:href]="constants.src_svg + 'confirmar.svg#Layer_1'"></use>
-                </svg> <!-- svg-ico-usertype --> </div>
-                </button>
-            </ion-col>
-            <ion-col col-auto>
-                <button ion-button class="btn-estilo"
-                        [ngClass]="{ 'actived-type': actived.indexOf(10) > -1 && actived1.indexOf(10) > -1, 'actived-type2': actived.indexOf(10) > -1  && actived2.indexOf(10) > -1,'actived-type3': actived.indexOf(10) > -1  && actived3.indexOf(10) > -1,'actived-type4': actived.indexOf(10) > -1  && actived4.indexOf(10) > -1}"
-                        (click)="defineActived(10)" round><div class="text-btn-estilo">CASUAL</div><div [ngClass]="{'btn-none': actived.indexOf(10) < 0}" class="btn-confir"> <svg class="svg-ico-usertype">
-                    <use [attr.xlink:href]="constants.src_svg + 'confirmar.svg#Layer_1'"></use>
-                </svg> <!-- svg-ico-usertype --> </div>
-                </button>
-            </ion-col>
+            <div *ngFor="let num2 of colNum">
+                <div *ngIf="grid[num]">
+                    <div *ngFor="let data of grid[num][num2]">
+                        <div [hidden]="actived.indexOf(data.id) < 0" *ngIf="subEstilo[0][data.id]">
+                            <ion-row class="row-estilo sliderIn" center>
+                                <div>
+                                    <ion-col col-auto *ngFor="let subData of subEstilo[0][data.id]">
+                                        <button ion-button class="btn-estilo"
+                                                [ngClass]="{ 'actived-type': actived.indexOf(subData.idEstilo) > -1 && actived1.indexOf(subData.idEstilo) > -1, 'actived-type2': actived.indexOf(subData.idEstilo) > -1  && actived2.indexOf(subData.idEstilo) > -1,'actived-type3': actived.indexOf(subData.idEstilo) > -1  && actived3.indexOf(subData.idEstilo) > -1,'actived-type4': actived.indexOf(subData.idEstilo) > -1  && actived4.indexOf(subData.idEstilo) > -1}"
+                                                (click)="defineActived(subData.id)" round>
+                                            <div class="text-btn-estilo">{{subData.nome}}</div>
+                                            <div [ngClass]="{'btn-none': actived.indexOf(subData.id) < 0}"
+                                                 class="btn-confir">
+                                                <svg class="svg-ico-usertype">
+                                                    <use [attr.xlink:href]="constants.src_svg + 'confirmar.svg#Layer_1'"></use>
+                                                </svg> <!-- svg-ico-usertype -->
+                                            </div>
+                                        </button>
+                                    </ion-col>
+                                </div>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </ion-row>
 
     </ion-grid>
 </ion-content>
 
 <ion-footer>
-    <div class="footer-steps" >
+    <div class="footer-steps">
 
         <div class="next-step-action" [ngClass]="{'allowed': actived.length > 0}" (click)="closeMeModal()">
             <span class="next-step-label">
                 Próximo
             </span> <!-- next-stap-label -->
-            <div class="nextstep-icon" >
+            <div class="nextstep-icon">
                 <span class="caret-body"></span>
                 <span class="caret-direction"></span>
             </div> <!-- nextstep-icon -->
