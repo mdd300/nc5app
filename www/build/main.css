@@ -25712,6 +25712,22 @@ ion-navbar.toolbar {
   margin: 0 !important;
 }
 
+.footer {
+  background: transparent;
+}
+
+.footer:before {
+  background: transparent;
+}
+
+.header {
+  background: transparent;
+}
+
+.header:after {
+  background: transparent;
+}
+
 /** Separação para estilos relacionados ao formulário de cadastro */
 .cad-form-content {
   width: 100%;
@@ -25825,21 +25841,10 @@ ion-navbar.toolbar {
 
 /** cad-form-content */
 fixed-menu {
-  /** footer */
-}
-
-fixed-menu .footer {
-  background: transparent;
-  /** End of before */
   /** foot-menu */
 }
 
-fixed-menu .footer:before {
-  background: transparent;
-  height: 0px;
-}
-
-fixed-menu .footer .foot-menu {
+fixed-menu .foot-menu {
   width: 100%;
   background: #fff;
   border-radius: 10px 10px 0 0;
@@ -25849,15 +25854,15 @@ fixed-menu .footer .foot-menu {
   /** icon-menu-cont */
 }
 
-fixed-menu .footer .foot-menu .row {
+fixed-menu .foot-menu .row {
   padding: 0 10px;
 }
 
-fixed-menu .footer .foot-menu .grid, fixed-menu .footer .foot-menu .col {
+fixed-menu .foot-menu .grid, fixed-menu .foot-menu .col {
   padding: 0;
 }
 
-fixed-menu .footer .foot-menu .icon-menu-cont {
+fixed-menu .foot-menu .icon-menu-cont {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -25875,7 +25880,7 @@ fixed-menu .footer .foot-menu .icon-menu-cont {
   /** icon-menu */
 }
 
-fixed-menu .footer .foot-menu .icon-menu-cont .icon-menu {
+fixed-menu .foot-menu .icon-menu-cont .icon-menu {
   width: 33%;
   padding: 33% 0 0 0;
   display: table;
@@ -25884,7 +25889,7 @@ fixed-menu .footer .foot-menu .icon-menu-cont .icon-menu {
   /** ico-menu */
 }
 
-fixed-menu .footer .foot-menu .icon-menu-cont .icon-menu .ico-menu {
+fixed-menu .foot-menu .icon-menu-cont .icon-menu .ico-menu {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -25894,10 +25899,86 @@ fixed-menu .footer .foot-menu .icon-menu-cont .icon-menu .ico-menu {
   /** current-page */
 }
 
-fixed-menu .footer .foot-menu .icon-menu-cont .icon-menu .ico-menu.current-page {
+fixed-menu .foot-menu .icon-menu-cont .icon-menu .ico-menu.current-page {
   fill: #FF4BAD;
 }
 
+qr-header {
+  border-bottom: 1px solid #b4c1d6;
+  width: 100%;
+  display: table;
+  /** header-grid */
+}
+
+qr-header .header-grid {
+  height: 100%;
+  /** header-grid-row */
+}
+
+qr-header .header-grid .header-grid-row {
+  height: 100%;
+  /** header-last */
+  /** header-icon-action */
+  /** header-qrgo-center */
+}
+
+qr-header .header-grid .header-grid-row .header-last {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-flow: row-reverse;
+  -ms-flex-flow: row-reverse;
+  flex-flow: row-reverse;
+}
+
+qr-header .header-grid .header-grid-row .header-icon-action {
+  width: 60%;
+  padding: 60% 0 0 0;
+  position: relative;
+  cursor: pointer;
+  /** header-ico-action */
+}
+
+qr-header .header-grid .header-grid-row .header-icon-action .header-ico-action {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: #b4c1d6;
+}
+
+qr-header .header-grid .header-grid-row .header-qrgo-center {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  /** logo-qrgo-center */
+}
+
+qr-header .header-grid .header-grid-row .header-qrgo-center .logo-qrgo-center {
+  height: 115%;
+  display: table;
+  width: auto;
+  position: absolute;
+  cursor: pointer;
+}
+
+/** qr-header */
 page-confirm-cad {
   /** header */
   /** header-back */
@@ -27791,6 +27872,132 @@ page-explore .scroll-content .ion-explore-marks .explore-mark .products-mark-exp
 }
 
 /** page-explore */
+page-feed {
+  /** feed-background */
+  /** feed-post-something */
+  /** feed-filter */
+}
+
+page-feed .feed-background {
+  width: 100%;
+  padding: 100% 0 0 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #ff619e;
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #ff619e), color-stop(65%, #ff7d8e));
+  background: linear-gradient(to right, #ff619e 1%, #ff7d8e 65%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff619e', endColorstr='#ff7d8e',GradientType=1 );
+}
+
+page-feed .feed-post-something {
+  width: 100%;
+  padding: 3px 15px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  margin: 10px 0;
+  color: #fff;
+  position: relative;
+  /** post-something */
+  /** feed-publication-shortcut */
+}
+
+page-feed .feed-post-something .grid, page-feed .feed-post-something .row, page-feed .feed-post-something .col {
+  padding: 0;
+}
+
+page-feed .feed-post-something .post-something {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+page-feed .feed-post-something .feed-publication-shortcut {
+  width: 35px;
+  height: 35px;
+  margin: 0 0 0 5px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  /** ico-publication-shortcut */
+}
+
+page-feed .feed-post-something .feed-publication-shortcut .ico-publication-shortcut {
+  width: 70%;
+  height: 70%;
+  fill: #fff;
+}
+
+page-feed .feed-filter {
+  padding: 30px 0 0 0;
+  color: #fff;
+  font-family: Multicolore;
+  /** filter-indicator */
+  /** col */
+}
+
+page-feed .feed-filter .grid, page-feed .feed-filter .row, page-feed .feed-filter .col {
+  padding: 0;
+  position: relative;
+}
+
+page-feed .feed-filter .filter-indicator {
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /** filter-caret */
+}
+
+page-feed .feed-filter .filter-indicator .filter-caret {
+  width: 24%;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+page-feed .feed-filter .col {
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 0 0 12px 0;
+  opacity: 0.7;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /** actived-filter */
+}
+
+page-feed .feed-filter .col.actived-filter {
+  opacity: 1;
+}
+
+/** page-feed */
 page-gostos {
   /** svg-ico */
   /** icon-user-type */

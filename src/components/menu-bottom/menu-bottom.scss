@@ -2,13 +2,6 @@
 
 fixed-menu {
 
-  .footer{
-    background: transparent;
-    &:before{
-      background:transparent;
-      height: 0px;
-    }/** End of before */
-
     .foot-menu{
       width: 100%;
       background: #fff;
@@ -50,6 +43,5 @@ fixed-menu {
 
     }/** foot-menu */
 
-  }/** footer */
 
 }

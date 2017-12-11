@@ -1,7 +1,77 @@
-<qr-header></qr-header>
+<!-- Start of footer Content -->
+<ion-header>
+    <qr-header></qr-header>
+</ion-header>
+<!-- End of header Default -->
+<!-- Content of feed page -->
 <ion-content>
 
-    Home
+    <!-- Start of feed -->
+    <div class="feed-background" ></div> <!-- feed-background -->
+
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                
+                <div class="feed-post-something" >
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col class="post-something">
+                                Publique Algo...
+                            </ion-col><!-- post-something -->
+                            <ion-col col-auto>
+                                <div class="feed-publication-shortcut" >
+                                    <svg class="ico-publication-shortcut">
+                                        <use [attr.xlink:href]="constants.src_svg + 'hanger.svg#Layer_1'"></use>
+                                    </svg> <!-- ico-publication-shortcut -->
+                                </div> <!-- feed-publication-shortcut -->
+                            </ion-col>
+                            <ion-col col-auto>
+                                <div class="feed-publication-shortcut" >
+                                    <svg class="ico-publication-shortcut">
+                                       <use [attr.xlink:href]="constants.src_svg + 'picture.svg#Layer_1'"></use>
+                                    </svg> <!-- ico-publication-shortcut -->
+                                </div> <!-- feed-publication-shortcut -->
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                    
+                </div> <!-- feed-post-something -->
+
+                <div class="feed-filter" >
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col class="actived-filter">
+                                Todos
+                            </ion-col>
+                            <ion-col>
+                                Confecções
+                            </ion-col>
+                            <ion-col>
+                                Lojistas
+                            </ion-col>
+                            <ion-col>
+                                Roupas
+                            </ion-col>
+
+                            <span class="filter-indicator">
+                                <span class="filter-caret"></span>
+                            </span><!-- filter-indicator -->
+
+                        </ion-row><!-- feed-filter -->
+                    </ion-grid>
+                </div> <!-- feed-filter -->
+
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
 
 </ion-content>
-<fixed-menu page="feed"></fixed-menu>
+<!-- End of content Feed Page -->
+<!-- Start of Footer Content -->
+<ion-footer>
+    <fixed-menu page="feed"></fixed-menu>
+</ion-footer>
+<!-- End of footer content -->

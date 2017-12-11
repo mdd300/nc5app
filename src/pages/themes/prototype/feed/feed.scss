@@ -1,3 +1,87 @@
 page-feed {
 
-}
+  .feed-background{
+    width: 100%;
+    padding: 100% 0 0 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #ff619e;
+    background: -moz-linear-gradient(left, #ff619e 1%, #ff7d8e 65%);
+    background: -webkit-linear-gradient(left, #ff619e 1%,#ff7d8e 65%);
+    background: linear-gradient(to right, #ff619e 1%,#ff7d8e 65%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff619e', endColorstr='#ff7d8e',GradientType=1 );
+  }/** feed-background */
+
+  .feed-post-something{
+    width: 100%;
+    padding: 3px 15px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    margin: 10px 0;
+    color: #fff;
+    position: relative;
+    .grid, .row, .col{ padding: 0; }
+    .post-something{
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+      cursor: pointer;
+    }/** post-something */
+    .feed-publication-shortcut{
+      width: 35px;
+      height: 35px;
+      margin: 0 0 0 5px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .ico-publication-shortcut{
+        width: 70%;
+        height: 70%;
+        fill: #fff;
+      }/** ico-publication-shortcut */
+    }/** feed-publication-shortcut */
+
+  }/** feed-post-something */
+
+  .feed-filter{
+    padding: 30px 0 0 0;
+    color: #fff;
+    font-family: Multicolore;
+    .grid, .row, .col{ padding: 0; position: relative; }
+
+    .filter-indicator{
+      width: 100%;
+      height: 2px;
+      background: rgba( 255, 255, 255, 0.5);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      .filter-caret{
+        width: 24%;
+        height: 100%;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: 0.5s;
+      }/** filter-caret */
+    }/** filter-indicator */
+
+    .col{
+      cursor: pointer;
+      text-align: center;
+      font-size: 0.9em;
+      padding: 0 0 12px 0;
+      opacity: 0.7;
+      transition: 0.5s;
+      &.actived-filter{
+        opacity: 1;
+      }/** actived-filter */
+    }/** col */
+
+  }/** feed-filter */
+
+
+}/** page-feed */

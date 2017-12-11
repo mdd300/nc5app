@@ -30,6 +30,19 @@
 .no-margin{ margin: 0 !important; }
 
 
+.footer{
+  background: transparent;
+  &:before{
+    background: transparent;
+  }
+}
+.header{
+  background: transparent;
+  &:after{
+    background: transparent;
+  }
+}
+
 
 /** Separação para estilos relacionados ao formulário de cadastro */
 .cad-form-content {
@@ -106,7 +119,6 @@
       &:focus{
         &::-moz-placeholder { color: $grey-color + #222; }
         &::-webkit-input-placeholder { color: $grey-color + #222; }
-
       }
 
     }

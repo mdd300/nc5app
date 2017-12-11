@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Constants} from "../../config/Constants";
 
 /**
  * Generated class for the QrgoHeaderComponent component.
@@ -12,11 +13,9 @@ import { Component } from '@angular/core';
 })
 export class QrgoHeaderComponent {
 
-  text: string;
 
-  constructor() {
-    console.log('Hello QrgoHeaderComponent Component');
-    this.text = 'Hello World';
-  }
+  public constants = Constants;
+
+  constructor() {}
 
 }

@@ -2,7 +2,6 @@ import {Component, ViewChild} from '@angular/core';
 import {ModalController, IonicPage, NavController, NavParams, Platform} from 'ionic-angular';
 import {GostosPage} from "../gostos/gostos";
 import {Constants} from "../../../../config/Constants";
-import * as $ from 'jquery';
 
 
 /**
@@ -42,8 +41,6 @@ export class ExplorePage {
         {marca: 'Unieke', produtos: [{null: null}, {null: null}, {null: null}, {null: null}]}
     ];
 
-
-    private timeoutScroll:any;
     /**
      * Função utilizada para iniciar o scroll do content */
     public doScrollContent = ( ( element:string , event: any) => {
