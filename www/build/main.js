@@ -449,7 +449,7 @@ var GostosPage = (function () {
                     j = 3;
                 }
                 else {
-                    if (this.estilos[i].nome.length > 14) {
+                    if (this.estilos[i].nome.length > 15) {
                         if (j == 2) {
                             this.a++;
                             j++;

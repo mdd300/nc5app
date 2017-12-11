@@ -27814,14 +27814,13 @@ page-gostos .icon-card-estilo {
 
 page-gostos .btn-confir {
   float: right;
+  margin-left: 5px;
+  margin-top: 1px;
 }
 
 page-gostos .svg-ico-usertype {
-  width: 16px;
-  height: 40%;
-  position: absolute;
-  top: 10.5px;
-  right: 8px;
+  width: 13px;
+  height: 14px;
   fill: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -27846,14 +27845,39 @@ page-gostos .text-icon {
   font-size: 1.3em;
 }
 
+page-gostos .text-btn-estilo {
+  font-family: Multicolore;
+  font-size: 0.9em;
+}
+
+page-gostos .row {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 page-gostos .btn-estilo {
   background-color: #b4c1d6;
   font-size: 0.7em;
-  font-family: Multicolore;
-  box-shadow: 0 0 0 #cacccc;
-  -moz-box-shadow: 0 0 0px #ccc;
-  -webkit-box-shadow: 0 0 0px #ccc;
-  padding: 0 26px;
+  height: 35px;
+  padding: 10px 12px;
+  margin: 3px 3px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 page-gostos .btn-estilo.actived-type {
