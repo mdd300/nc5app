@@ -27847,7 +27847,11 @@ page-gostos .text-icon {
 
 page-gostos .text-btn-estilo {
   font-family: Multicolore;
+<<<<<<< HEAD
   font-size: 0.7em;
+=======
+  font-size: 0.9em;
+>>>>>>> f8f265aad30749053eefa5f9114c53b020d716a7
 }
 
 page-gostos .row {
@@ -27861,7 +27865,11 @@ page-gostos .btn-estilo {
   background-color: #b4c1d6;
   font-size: 0.7em;
   height: 35px;
+<<<<<<< HEAD
   padding: 10px 17px;
+=======
+  padding: 10px 12px;
+>>>>>>> f8f265aad30749053eefa5f9114c53b020d716a7
   margin: 3px 3px;
   border-radius: 30px;
   text-transform: uppercase;
