@@ -7,13 +7,13 @@
 <ion-content>
 
     <!-- Start of feed -->
-    <div class="feed-background" ></div> <!-- feed-background -->
+    <div class="feed-background"></div> <!-- feed-background -->
 
     <ion-grid>
         <ion-row>
             <ion-col>
-                
-                <div class="feed-post-something" >
+
+                <div class="feed-post-something">
 
                     <ion-grid>
                         <ion-row>
@@ -21,25 +21,29 @@
                                 Publique Algo...
                             </ion-col><!-- post-something -->
                             <ion-col col-auto>
-                                <div class="feed-publication-shortcut" >
+                                <div class="feed-publication-shortcut">
                                     <svg class="ico-publication-shortcut">
                                         <use [attr.xlink:href]="constants.src_svg + 'hanger.svg#Layer_1'"></use>
                                     </svg> <!-- ico-publication-shortcut -->
                                 </div> <!-- feed-publication-shortcut -->
                             </ion-col>
                             <ion-col col-auto>
-                                <div class="feed-publication-shortcut" >
+                                <div class="feed-publication-shortcut">
                                     <svg class="ico-publication-shortcut">
-                                       <use [attr.xlink:href]="constants.src_svg + 'picture.svg#Layer_1'"></use>
+                                        <use [attr.xlink:href]="constants.src_svg + 'picture.svg#Layer_1'"></use>
                                     </svg> <!-- ico-publication-shortcut -->
                                 </div> <!-- feed-publication-shortcut -->
                             </ion-col>
                         </ion-row>
                     </ion-grid>
-                    
+
                 </div> <!-- feed-post-something -->
 
-                <div class="feed-filter" >
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <div class="feed-filter">
                     <ion-grid>
                         <ion-row>
                             <ion-col class="actived-filter">
@@ -62,11 +66,192 @@
                         </ion-row><!-- feed-filter -->
                     </ion-grid>
                 </div> <!-- feed-filter -->
-
             </ion-col>
         </ion-row>
     </ion-grid>
 
+    <!-- Primeiro card do feed -->
+    <ion-card class="feed-card">
+        <div class="feed-card-structure">
+
+            <div class="feed-card-header">
+                <ion-grid>
+                    <ion-row>
+                        <ion-col col-2>
+                            <div class="feed-author-image">
+                                <div class="feed-author-img"></div> <!-- feed-author-img -->
+                            </div> <!-- feed-author-image -->
+                        </ion-col>
+                        <ion-col class="feed-author">
+                            <div class="feed-autor-label">
+                                <span class="feed-author-txt title ">
+                                    Unique Chic
+                                </span><!-- feed-author-txt -->
+                            </div> <!-- feed-autor-label -->
+                            <div class="feed-autor-label">
+                                <span class="feed-author-txt description">
+                                    Rua Anhaia, 284
+                                </span>
+                            </div> <!-- feed-autor-label -->
+                        </ion-col>
+                        <ion-col col-2>
+                            <div class="feed-card-header-options">
+                                <svg class="ico-card-options">
+                                    <use [attr.xlink:href]="constants.src_svg + 'vertical-dots.svg#Layer_1'"></use>
+                                </svg> <!-- ico-card-options -->
+                            </div> <!-- feed-card-header-options -->
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </div> <!-- feed-card-header -->
+            <div class="feed-card-body">
+
+                <!-- Primeira estrutura de layout de post -->
+                <!-- Post somente com imagens -->
+                <div class="card-body-image">
+
+                    <div class="card-body-img"
+                         [ngStyle]="{ 'background-image': 'url(' + constants.src_img + 'exemples/post1.jpg)' }"></div>
+                    <!-- card-body-img -->
+
+                    <div class="card-body-description">
+                        <span class="card-body-description-since"> Há 3 Minutos </span>
+                        <span class="card-body-description-desc">
+
+                            Welcome to <span class="hashtag-desc">#ThePradaDoubleClubMiami</span>, presented by Fondazione Prada and Carsten Höller. The temporary nightclub/installation is half gray scale.
+
+                        </span><!-- card-body-description-desc -->
+                    </div> <!-- card-body-description -->
+                    <div class="card-body-actions-post">
+                        <ion-grid>
+                            <ion-row>
+                                <ion-col>
+                                    <div class="card-footer-action">
+                                        <svg class="ico-footer-action">
+                                            <use [attr.xlink:href]="constants.src_svg + 'hearth.svg#Layer_1'"></use>
+                                        </svg> <!-- ico-footer-action -->
+                                    </div> <!-- card-footer-action" -->
+                                </ion-col>
+                                <ion-col>
+                                    <div class="card-footer-action">
+                                        <svg class="ico-footer-action">
+                                            <use [attr.xlink:href]="constants.src_svg + 'chat_ballon.svg#Layer_1'"></use>
+                                        </svg> <!-- ico-footer-action -->
+                                    </div> <!-- card-footer-action" -->
+                                </ion-col>
+                                <ion-col>
+                                    <div class="card-footer-action">
+                                        <svg class="ico-footer-action">
+                                            <use [attr.xlink:href]="constants.src_svg + 'share.svg#Layer_1'"></use>
+                                        </svg> <!-- ico-footer-action -->
+                                    </div> <!-- card-footer-action" -->
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+                    </div> <!-- card-body-actions-post -->
+                </div> <!-- card-body-image -->
+                <!-- Fim da estrutura do tipo de layout de post ( Post somente com imagens ) -->
+            </div> <!-- feed-card-body -->
+
+        </div> <!-- feed-card-structure -->
+    </ion-card><!-- feed-card -->
+    <!-- fim do primeiro card do feed -->
+    <!-- Segundo card do feed -->
+    <ion-card class="feed-card">
+        <div class="feed-card-structure">
+
+            <div class="feed-card-header">
+                <ion-grid>
+                    <ion-row>
+                        <ion-col col-2>
+                            <div class="feed-author-image">
+                                <div class="feed-author-img"></div> <!-- feed-author-img -->
+                            </div> <!-- feed-author-image -->
+                        </ion-col>
+                        <ion-col class="feed-author">
+                            <div class="feed-autor-label">
+                                <span class="feed-author-txt title ">
+                                    Chloé
+                                </span><!-- feed-author-txt -->
+                            </div> <!-- feed-autor-label -->
+                            <div class="feed-autor-label">
+                                <span class="feed-author-txt description">
+                                    Rua Paris
+                                </span>
+                            </div> <!-- feed-autor-label -->
+                        </ion-col>
+                        <ion-col col-2>
+                            <div class="feed-card-header-options">
+                                <svg class="ico-card-options">
+                                    <use [attr.xlink:href]="constants.src_svg + 'vertical-dots.svg#Layer_1'"></use>
+                                </svg> <!-- ico-card-options -->
+                            </div> <!-- feed-card-header-options -->
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </div> <!-- feed-card-header -->
+            <div class="feed-card-body">
+
+                <!-- Segunda estrutura de layout de post -->
+                <!-- Post somente de um produto -->
+                <div class="card-body-product" >
+
+                    <div class="card-body-product-img" [ngStyle]="{ 'background-image': 'url(' + constants.src_img + 'exemples/roupa3.jpg)' }" >
+                        <span class="label-estoque"> Em estoque! </span>
+                    </div> <!-- card-body-product-img -->
+                    
+                    <div class="card-body-product-variables" >
+                        <ul class="card-product-variables">
+                            <li class="product-variable actived-variable"></li><!-- product-variable -->
+                            <li class="product-variable"></li><!-- product-variable -->
+                            <li class="product-variable"></li><!-- product-variable -->
+                        </ul><!-- card-product-variables -->
+                    </div> <!-- card-body-product-variables -->
+
+                    <div class="card-body-description">
+                        <span class="card-body-description-since"> Há 3 Minutos </span>
+                        <span class="card-body-description-desc">
+                        </span><!-- card-body-description-desc -->
+                    </div> <!-- card-body-description -->
+
+                    <div class="card-body-actions-post">
+                        
+                        <ion-grid>
+                            <ion-row>
+                                <ion-col>
+                                    <div class="card-footer-action">
+                                        <svg class="ico-footer-action">
+                                            <use [attr.xlink:href]="constants.src_svg + 'hearth.svg#Layer_1'"></use>
+                                        </svg> <!-- ico-footer-action -->
+                                    </div> <!-- card-footer-action" -->
+                                </ion-col>
+                                <ion-col>
+                                    <div class="card-footer-action">
+                                        <svg class="ico-footer-action">
+                                            <use [attr.xlink:href]="constants.src_svg + 'chat_ballon.svg#Layer_1'"></use>
+                                        </svg> <!-- ico-footer-action -->
+                                    </div> <!-- card-footer-action" -->
+                                </ion-col>
+                                <ion-col>
+                                    <div class="card-footer-action">
+                                        <svg class="ico-footer-action">
+                                            <use [attr.xlink:href]="constants.src_svg + 'share.svg#Layer_1'"></use>
+                                        </svg> <!-- ico-footer-action -->
+                                    </div> <!-- card-footer-action" -->
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+
+                    </div> <!-- card-body-actions-post -->
+
+                </div> <!-- card-body-product -->
+                <!-- Fim da segunta estrutura do card do feed -->
+
+            </div> <!-- feed-card-body -->
+
+        </div> <!-- feed-card-structure -->
+    </ion-card><!-- feed-card -->
+    <!-- Fim do segundo card do feed -->
 
 </ion-content>
 <!-- End of content Feed Page -->
