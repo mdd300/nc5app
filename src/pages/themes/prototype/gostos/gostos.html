@@ -30,20 +30,23 @@
                 <div *ngIf="grid[num]">
                     <div *ngFor="let data of grid[num][num2]">
                         <ion-col col-auto>
-                            <span  class="btn-estilo "
-                                    [ngClass]="{ 'actived-type': actived.indexOf(data.id) > -1 && actived1.indexOf(data.id) > -1, 'actived-type2': actived.indexOf(data.id) > -1  && actived2.indexOf(data.id) > -1,'actived-type3': actived.indexOf(data.id) > -1  && actived3.indexOf(data.id) > -1,'actived-type4': actived.indexOf(data.id) > -1  && actived4.indexOf(data.id) > -1}"
-                                    (click)="defineActived(data.id)" >
-                                <div class="text-btn-estilo">{{data.nome}}</div>
+                            <span class="btn-estilo "
+                                  [ngClass]="{ 'actived-type': actived.indexOf(data.id) > -1 && actived1.indexOf(data.id) > -1, 'actived-type2': actived.indexOf(data.id) > -1  && actived2.indexOf(data.id) > -1,'actived-type3': actived.indexOf(data.id) > -1  && actived3.indexOf(data.id) > -1,'actived-type4': actived.indexOf(data.id) > -1  && actived4.indexOf(data.id) > -1}"
+                                  (click)="defineActived(data.id)">
+                                <div class="text-btn-estilo">
+                                    {{data.nome}}
+                                </div>
                                 <div [ngClass]="{'btn-none': actived.indexOf(data.id) < 0}" class="btn-confir wrapper">
                                     <svg class="svg-ico-usertype contents-col-sub">
                                         <use [attr.xlink:href]="constants.src_svg + 'confirmar.svg#Layer_1'"></use>
-                                    </svg> <!-- svg-ico-usertype --> </div>
+                                    </svg> <!-- svg-ico-usertype -->
+                                </div>
                             </span>
                         </ion-col>
                     </div>
                 </div>
             </div>
-            <div  *ngFor="let num2 of colNum">
+            <div *ngFor="let num2 of colNum">
                 <div *ngIf="grid[num]">
                     <div *ngFor="let data of grid[num][num2]">
                         <div [hidden]="actived.indexOf(data.id) < 0" *ngIf="subEstilo[0][data.id]">
@@ -51,8 +54,8 @@
                                 <div>
                                     <ion-col col-auto *ngFor="let subData of subEstilo[0][data.id]">
                                         <span class="btn-estilo"
-                                                [ngClass]="{ 'actived-type': actived.indexOf(subData.idEstilo) > -1 && actived1.indexOf(subData.idEstilo) > -1, 'actived-type2': actived.indexOf(subData.idEstilo) > -1  && actived2.indexOf(subData.idEstilo) > -1,'actived-type3': actived.indexOf(subData.idEstilo) > -1  && actived3.indexOf(subData.idEstilo) > -1,'actived-type4': actived.indexOf(subData.idEstilo) > -1  && actived4.indexOf(subData.idEstilo) > -1}"
-                                                (click)="defineActived(subData.id)">
+                                              [ngClass]="{ 'actived-type': actived.indexOf(subData.idEstilo) > -1 && actived1.indexOf(subData.idEstilo) > -1, 'actived-type2': actived.indexOf(subData.idEstilo) > -1  && actived2.indexOf(subData.idEstilo) > -1,'actived-type3': actived.indexOf(subData.idEstilo) > -1  && actived3.indexOf(subData.idEstilo) > -1,'actived-type4': actived.indexOf(subData.idEstilo) > -1  && actived4.indexOf(subData.idEstilo) > -1}"
+                                              (click)="defineActived(subData.id)">
                                             <div class="text-btn-estilo">{{subData.nome}}</div>
                                             <div [ngClass]="{'btn-none': actived.indexOf(subData.id) < 0}"
                                                  class="btn-confir wrapper">

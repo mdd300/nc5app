@@ -28,7 +28,7 @@ page-gostos {
   }
   .svg-ico-usertype {
     width: 13px;
-    height: 14px;
+    height: 13px;
     fill: white;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -55,8 +55,6 @@ page-gostos {
   .text-btn-estilo{
     font-family: Multicolore;
     font-size: 1em;
-    padding: 1px;
-
   }
   .row{
     align-items: center;
@@ -64,13 +62,10 @@ page-gostos {
   .btn-estilo {
     background-color: $grey-color;
     font-size: 0.7em;
-    height: 35px;
     padding: 10px 12px;
-    margin: 3px 3px;
     border-radius: 30px;
     text-transform: uppercase;
     color: #fff;
-    display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -99,6 +94,7 @@ page-gostos {
   .row-estilo {
     align-self: center;
     max-width: 100%;
+    .col{ display: table; }
   }
 .grid{
   padding: 0px;
@@ -235,7 +231,6 @@ page-gostos {
   }
 
   .wrapper {
-    padding-bottom: 2px;
     width: auto;
 
   }

@@ -27320,8 +27320,7 @@ page-explore .scroll-content .ion-styles-explore .show-styles-selecteds .styles-
 
 page-explore .scroll-content .ion-styles-explore .show-styles-selecteds .styles-selecteds .style-slected {
   font-size: 0.7em;
-  height: 100%;
-  padding: 0 15px;
+  padding: 10px 15px;
   margin: 0 3px 0 0;
   border-radius: 30px;
   background: #663f87;
@@ -28033,7 +28032,7 @@ page-gostos .icon-card-estilo {
 
 page-gostos .svg-ico-usertype {
   width: 13px;
-  height: 14px;
+  height: 13px;
   fill: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -28060,7 +28059,6 @@ page-gostos .text-icon {
 page-gostos .text-btn-estilo {
   font-family: Multicolore;
   font-size: 1em;
-  padding: 1px;
 }
 
 page-gostos .row {
@@ -28073,15 +28071,13 @@ page-gostos .row {
 page-gostos .btn-estilo {
   background-color: #b4c1d6;
   font-size: 0.7em;
-  height: 35px;
   padding: 10px 12px;
-  margin: 3px 3px;
   border-radius: 30px;
   text-transform: uppercase;
   color: #fff;
-  display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
+  display: -webkit-inline-box;
   display: inline-flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -28114,6 +28110,10 @@ page-gostos .row-estilo {
   -ms-flex-item-align: center;
   align-self: center;
   max-width: 100%;
+}
+
+page-gostos .row-estilo .col {
+  display: table;
 }
 
 page-gostos .grid {
@@ -28292,7 +28292,6 @@ page-gostos .footer .footer-steps .next-step-action .nextstep-icon .caret-direct
 }
 
 page-gostos .wrapper {
-  padding-bottom: 2px;
   width: auto;
 }
 
