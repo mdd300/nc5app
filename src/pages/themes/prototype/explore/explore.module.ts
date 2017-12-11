@@ -1,15 +1,15 @@
 import { NgModule} from '@angular/core';
 import {IonicPageModule} from 'ionic-angular';
 import {ExplorePage} from './explore';
-import {MenuBottomComponent} from "../../../../components/menu-bottom/menu-bottom";
+import {SharedModule} from "../../../../config/share.module";
 
 @NgModule({
     declarations: [
-        ExplorePage,
-        MenuBottomComponent
+        ExplorePage
     ],
     imports: [
         IonicPageModule.forChild(ExplorePage),
+        SharedModule
     ]
 
 })

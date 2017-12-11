@@ -1,5 +1,5 @@
 import {Component, ViewChild} from '@angular/core';
-import {ModalController, IonicPage, NavController, NavParams} from 'ionic-angular';
+import {ModalController, IonicPage, NavController, NavParams, Platform} from 'ionic-angular';
 import {GostosPage} from "../gostos/gostos";
 import {Constants} from "../../../../config/Constants";
 import * as $ from 'jquery';
@@ -19,19 +19,22 @@ import * as $ from 'jquery';
 })
 export class ExplorePage {
 
+    @ViewChild('scrollerRecommended') scrollerRecommended;
 
-    @ViewChild('scrollerRecomended') scrollerRecomended: any;
 
     constructor(public navCtrl: NavController,
                 public navParams: NavParams,
-                public modalCtrl: ModalController) {
+                public modalCtrl: ModalController,
+                public platform: Platform) {
     }
 
     public constants = Constants;
     public recommendations = [
         {mark: 'Unique', wallpaper: 'unique.jpg'},
         {mark: 'Unike', wallpaper: 'unique2.jpg'},
-        {mark: 'Unike', wallpaper: 'unique2.jpg'}
+        {mark: 'Unique', wallpaper: 'unique.jpg'},
+        {mark: 'Unike', wallpaper: 'unique2.jpg'},
+        {mark: 'Unique', wallpaper: 'unique.jpg'},
     ];
 
     public marcas = [
@@ -40,26 +43,12 @@ export class ExplorePage {
     ];
 
 
-    private timeoutRecommended: any = null;
+    private timeoutScroll:any;
     /**
-     * Função para verificar o nivel de scroll
-     */
-    public doScrollRecommended = (() => {
+     * Função utilizada para iniciar o scroll do content */
+    public doScrollContent = ( ( element:string , event: any) => {
 
-        clearTimeout(this.timeoutRecommended);
-        this.timeoutRecommended = setTimeout(function () {
-
-            console.log( this.scrollerRecomended );
-            //let $scroller = $( this.scrollerRecomended );
-            //let $itens = $scroller.find( 'li.reccommendation-item' );
-            //console.log( $itens );
-
-
-        }, 350);
-
-
-    });
-    /* fim da função de checagem de scroll */
+    });/* Fim função executada com o scroll do content */
 
 
     /* Função iniciada quando a view for iniciada */
