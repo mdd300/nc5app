@@ -3,6 +3,13 @@ page-gostos {
   .content-card-estilo {
     margin-top: 40px;
     margin-left: 25%;
+    height: 222px;
+    width: 245px;
+  }
+  .ico-config{
+    fill: $grey-color;
+    width: 112px;
+    height: 119px;
   }
   .card-boy-estilo {
     width: 60%;
@@ -19,11 +26,6 @@ page-gostos {
     top: 0;
     fill: $grey-color;
   }
-  .btn-confir {
-    float: right;
-    margin-left: 5px;
-    margin-top: 1px;
-  }
   .svg-ico-usertype {
     width: 13px;
     height: 14px;
@@ -33,14 +35,13 @@ page-gostos {
   }
   /** svg-ico */
   .icon-user-type {
-    padding: 57% 0 0 0;
-    width: 50%;
     position: relative;
     background: #fff;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     margin: auto;
-    display: table;
+    width: 75%;
+    padding-top: 16px;
 
   }
   /** icon-user-type */
@@ -53,7 +54,8 @@ page-gostos {
   }
   .text-btn-estilo{
     font-family: Multicolore;
-    font-size: 0.9em;
+    font-size: 1em;
+    padding: 1px;
 
   }
   .row{
@@ -96,8 +98,11 @@ page-gostos {
   }
   .row-estilo {
     align-self: center;
+    max-width: 100%;
   }
-
+.grid{
+  padding: 0px;
+}
   .btn-none {
     display: none;
   }
@@ -222,11 +227,63 @@ page-gostos {
           /** caret-direction */
         }
         /** nextstep-icon */
-      }
+      } 
       /** next-stap-action */
 
     }
     /** footer-steps */
   }
+
+  .wrapper {
+    padding-bottom: 2px;
+    width: auto;
+
+  }
+
+  .contents-col-sub {
+
+    white-space:nowrap;
+    overflow:hidden;
+    float: right;
+    margin-left: 5px;
+
+    animation-name: slideleft;
+    -webkit-animation-name: slideleft;
+
+    animation-duration: 400ms;
+    -webkit-animation-duration: 400ms;
+
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+
+    @keyframes slideleft {
+      0% {
+        transform: translateX(-100%);
+        width: 0px;
+      }
+
+      100% {
+        transform: translateX(0%);
+        width: 15px;
+      }
+    }
+
+    @-webkit-keyframes slideleft {
+      0% {
+        -webkit-transform: translateX(-100%);
+        width: 0px;
+
+      }
+      100% {
+        -webkit-transform: translateX(0%);
+        width: 15px;
+
+      }
+    }
+
+
+  }
+
+
 
 }
