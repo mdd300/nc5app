@@ -8,86 +8,81 @@
 
   </ion-content>
 </ion-menu>
-
-
-<ion-footer #footer>
   
-  <div class="foot-menu" >
-    <!-- Grid com os icones do menu -->
-    <ion-grid>
-      <!-- Linha com as colunas com os icones -->
-      <ion-row>
-        <!-- Colunas com os icones -->
-        <ion-col>
+<div class="foot-menu" #footer>
+  <!-- Grid com os icones do menu -->
+  <ion-grid>
+    <!-- Linha com as colunas com os icones -->
+    <ion-row>
+      <!-- Colunas com os icones -->
+      <ion-col>
 
-          <div class="icon-menu-cont" (click)="goToFeed()">
-            <div class="icon-menu" >
+        <div class="icon-menu-cont" (click)="goToFeed()">
+          <div class="icon-menu" >
 
-              <svg class="ico-menu" [ngClass]="{ 'current-page': page == 'feed' }">
-                 <use [attr.xlink:href]=" constants.src_svg + 'menu-inferior/home.svg#Layer_1'"></use>
-              </svg> <!-- ico-menu -->
+            <svg class="ico-menu" [ngClass]="{ 'current-page': page == 'feed' }">
+               <use [attr.xlink:href]=" constants.src_svg + 'menu-inferior/home.svg#Layer_1'"></use>
+            </svg> <!-- ico-menu -->
 
-            </div> <!-- icon-menu -->
           </div> <!-- icon-menu -->
+        </div> <!-- icon-menu -->
 
-        </ion-col>
-        <ion-col>
+      </ion-col>
+      <ion-col>
 
-          <div class="icon-menu-cont" (click)="goToExplore()">
-            <div class="icon-menu" >
+        <div class="icon-menu-cont" (click)="goToExplore()">
+          <div class="icon-menu" >
 
-              <svg class="ico-menu" [ngClass]="{ 'current-page': page == 'explore' }">
-                <use [attr.xlink:href]=" constants.src_svg + 'menu-inferior/search.svg#Layer_1'"></use>
-              </svg> <!-- ico-menu -->
+            <svg class="ico-menu" [ngClass]="{ 'current-page': page == 'explore' }">
+              <use [attr.xlink:href]=" constants.src_svg + 'menu-inferior/search.svg#Layer_1'"></use>
+            </svg> <!-- ico-menu -->
 
-            </div> <!-- icon-menu -->
           </div> <!-- icon-menu -->
+        </div> <!-- icon-menu -->
 
-        </ion-col>
-        <ion-col>
+      </ion-col>
+      <ion-col>
 
-          <div class="icon-menu-cont" >
-            <div class="icon-menu" >
+        <div class="icon-menu-cont" >
+          <div class="icon-menu" >
 
-              <svg class="ico-menu" [ngClass]="{ 'current-page': page == 'products' }">
-                <use [attr.xlink:href]=" constants.src_svg + 'menu-inferior/bag.svg#Layer_1'"></use>
-              </svg> <!-- ico-menu -->
+            <svg class="ico-menu" [ngClass]="{ 'current-page': page == 'products' }">
+              <use [attr.xlink:href]=" constants.src_svg + 'menu-inferior/bag.svg#Layer_1'"></use>
+            </svg> <!-- ico-menu -->
 
-            </div> <!-- icon-menu -->
           </div> <!-- icon-menu -->
+        </div> <!-- icon-menu -->
 
-        </ion-col>
-        <ion-col>
+      </ion-col>
+      <ion-col>
 
-          <div class="icon-menu-cont" >
-            <div class="icon-menu" >
+        <div class="icon-menu-cont" >
+          <div class="icon-menu" >
 
-              <svg class="ico-menu">
-                <use [attr.xlink:href]=" constants.src_svg + 'menu-inferior/notification.svg#Layer_1'"></use>
-              </svg> <!-- ico-menu -->
+            <svg class="ico-menu">
+              <use [attr.xlink:href]=" constants.src_svg + 'menu-inferior/notification.svg#Layer_1'"></use>
+            </svg> <!-- ico-menu -->
 
-            </div> <!-- icon-menu -->
           </div> <!-- icon-menu -->
+        </div> <!-- icon-menu -->
 
-        </ion-col>
-        <ion-col>
+      </ion-col>
+      <ion-col>
 
-          <div class="icon-menu-cont" menuToggle="right" >
-            <div class="icon-menu" >
+        <div class="icon-menu-cont" menuToggle="right" >
+          <div class="icon-menu" >
 
-              <svg class="ico-menu">
-                <use [attr.xlink:href]=" constants.src_svg + 'menu-inferior/menu.svg#Layer_1'"></use>
-              </svg> <!-- ico-menu -->
+            <svg class="ico-menu">
+              <use [attr.xlink:href]=" constants.src_svg + 'menu-inferior/menu.svg#Layer_1'"></use>
+            </svg> <!-- ico-menu -->
 
-            </div> <!-- icon-menu -->
           </div> <!-- icon-menu -->
+        </div> <!-- icon-menu -->
 
-        </ion-col>
-        <!-- Fim da linha  -->
-      </ion-row>
-      <!-- Fim do grid -->
-    </ion-grid>
-  
-  </div> <!-- foot-menu -->
+      </ion-col>
+      <!-- Fim da linha  -->
+    </ion-row>
+    <!-- Fim do grid -->
+  </ion-grid>
 
-</ion-footer>
+</div> <!-- foot-menu -->
