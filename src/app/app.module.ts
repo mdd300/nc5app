@@ -14,6 +14,7 @@ import {Step3PageModule} from "../pages/themes/prototype/cadastro/step3/step3.mo
 import {ConfirmCadPageModule} from "../pages/themes/prototype/cadastro/confirm-cad/confirm-cad.module";
 import {ExplorePageModule} from "../pages/themes/prototype/explore/explore.module";
 import {GostosPageModule} from "../pages/themes/prototype/gostos/gostos.module";
+import {FeedPageModule} from "../pages/themes/prototype/feed/feed.module";
 
 @NgModule({
     declarations: [
@@ -29,6 +30,7 @@ import {GostosPageModule} from "../pages/themes/prototype/gostos/gostos.module";
         ConfirmCadPageModule,
         ExplorePageModule,
         GostosPageModule,
+        FeedPageModule,
         IonicModule.forRoot(Qrgo_prototype)
     ],
     bootstrap: [IonicApp],
@@ -41,6 +43,7 @@ import {GostosPageModule} from "../pages/themes/prototype/gostos/gostos.module";
         SplashScreen,
         {provide: ErrorHandler, useClass: IonicErrorHandler}
     ]
+
 })
 export class AppModule {
 }

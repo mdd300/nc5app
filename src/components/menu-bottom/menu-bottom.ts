@@ -1,6 +1,8 @@
-import { Component, Input } from '@angular/core';
-import {Constants} from "../../config/Constants";
-
+import {Component, Input, ViewChild } from '@angular/core';
+import { Constants } from "../../config/Constants";
+import { FeedPage } from "../../pages/themes/prototype/feed/feed";
+import { NavController, Content } from "ionic-angular";
+import { ExplorePage } from "../../pages/themes/prototype/explore/explore";
 /**
  * Generated class for the MenuBottomComponent component.
  *
@@ -18,10 +20,30 @@ import {Constants} from "../../config/Constants";
 export class MenuBottomComponent {
 
   @Input() page: string;
+  @ViewChild(Content) content: Content;
 
   public constants = Constants;
 
-  constructor() {}
+  constructor(
+        public navCtrl: NavController
+  ){}
+
+  public goToExplore = (()=>{
+      if( this.page !== 'explore' ){
+        this.navCtrl.push( ExplorePage );
+      }else{
+          this.content.scrollToTop();
+      }
+  });
+
+  public goToFeed = (()=>{
+      if( this.page !== 'feed' ) {
+          this.navCtrl.push(FeedPage);
+      }else{
+          this.content.scrollToTop();
+      }
+  });
+
 
 
 }

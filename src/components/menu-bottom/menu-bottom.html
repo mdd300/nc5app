@@ -20,10 +20,10 @@
         <!-- Colunas com os icones -->
         <ion-col>
 
-          <div class="icon-menu-cont">
+          <div class="icon-menu-cont" (click)="goToFeed()">
             <div class="icon-menu" >
 
-              <svg class="ico-menu" [ngClass]="{ 'current-page': page == 'home' }">
+              <svg class="ico-menu" [ngClass]="{ 'current-page': page == 'feed' }">
                  <use [attr.xlink:href]=" constants.src_svg + 'menu-inferior/home.svg#Layer_1'"></use>
               </svg> <!-- ico-menu -->
 
@@ -33,7 +33,7 @@
         </ion-col>
         <ion-col>
 
-          <div class="icon-menu-cont" >
+          <div class="icon-menu-cont" (click)="goToExplore()">
             <div class="icon-menu" >
 
               <svg class="ico-menu" [ngClass]="{ 'current-page': page == 'explore' }">

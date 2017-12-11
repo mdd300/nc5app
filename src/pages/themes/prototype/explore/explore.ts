@@ -43,61 +43,39 @@ export class ExplorePage {
     ];
 
 
-    private timeoutRecommended: any = null;
-    /**
-     * Função para verificar o nivel de scroll
-     */
-    public doScrollRecommended = (() => {
-
-        let $scroller: any = $(this.scrollerRecommended.nativeElement);
-        let $items: any = $scroller.find('li.reccommendation-item');
-        let platformWidth: number = this.platform.width();
-        let halfPlatWidth: number = (platformWidth / 2);
-
-        clearTimeout(this.timeoutRecommended);
-        this.timeoutRecommended = setTimeout(function () {
-
-            $.each($items, function (key, item) {
-                let $item: any = $(item);
-                let $itemScroll: number = parseInt($item.offset().left);
-                let itensConfig = {w: $item.width(), h: $item.height(), wFull: ( $item.width() * key )}
-
-                if (key > 0) {
-                    itensConfig.wFull += (10 * key);
-                }
-
-                /* Verifica se o scroll é positivo - O Próximo item */
-                if (( $itemScroll > 0 && $itemScroll < halfPlatWidth  )) {
-
-                    $scroller.stop().animate({scrollLeft: itensConfig.wFull + "px"}, 100);
-                    return false;
-
-                }
-                /* Fim da verificação de positividade */
-                /* Verificação de negatividade - O item Anterior */
-                else if (( $itemScroll > -(halfPlatWidth - 10) && $itemScroll <= 0)) {
-
-                    $scroller.stop().animate({scrollLeft: itensConfig.wFull + "px"}, 100);
-                    return false;
-
-                }
-                /* Fim da verificação da negatividade */
-
-
-            });
-
-        }, 150);
-
-    });
-    /* fim da função de checagem de scroll */
-
-
-    private scrollElement: any;
+    private timeoutScroll:any;
     /**
      * Função utilizada para iniciar o scroll do content */
     public doScrollContent = ( ( element:string , event: any) => {
 
-            
+        let $element: any = $('body').find( '.' + element );
+        let $items: any = $element.find('.item-scrollable');
+        let platformWidth: number = this.platform.width();
+
+        clearTimeout( this.timeoutScroll );
+        this.timeoutScroll = setTimeout(function(){
+            $.each($items, function (key, item) {
+
+                let $item: any = $(item);
+                let $itemScroll: number = parseInt($item.offset().left);
+                let itensConfig = {w: $item.width(), h: $item.height(), scroll: ( $item.width() * key )}
+                if (key > 0) {
+                    itensConfig.scroll += (10 * key);
+                }
+                /* Verifica se o scroll é positivo - O Próximo item */
+                if (( $itemScroll > 0 && $itemScroll < ( platformWidth / 2 ) )) {
+                    $element.stop().animate({scrollLeft: itensConfig.scroll + "px"}, 50);
+                    return false;
+                }
+                /* Fim da verificação de positividade */
+                /* Verificação de negatividade - O item Anterior */
+                else if (( $itemScroll > -( ( platformWidth / 2 ) - 10) && $itemScroll <= 0)) {
+                    $element.stop().animate({scrollLeft: itensConfig.scroll + "px"}, 50);
+                    return false;
+                }
+                /* Fim da verificação da negatividade */
+            });
+        }, 150);
 
     });/* Fim função executada com o scroll do content */
 

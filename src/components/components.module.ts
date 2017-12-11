@@ -1,8 +1,15 @@
 import { NgModule } from '@angular/core';
 import { MenuBottomComponent } from './menu-bottom/menu-bottom';
+import { QrgoHeaderComponent } from './qrgo-header/qrgo-header';
 @NgModule({
-	declarations: [MenuBottomComponent],
+	declarations: [
+		MenuBottomComponent,
+    QrgoHeaderComponent
+	],
 	imports: [],
-	exports: [MenuBottomComponent]
+	exports: [
+		MenuBottomComponent,
+    QrgoHeaderComponent
+	]
 })
 export class ComponentsModule {}
