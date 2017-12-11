@@ -28006,6 +28006,14 @@ page-gostos {
 page-gostos .content-card-estilo {
   margin-top: 40px;
   margin-left: 25%;
+  height: 222px;
+  width: 245px;
+}
+
+page-gostos .ico-config {
+  fill: #b4c1d6;
+  width: 112px;
+  height: 119px;
 }
 
 page-gostos .card-boy-estilo {
@@ -28021,12 +28029,15 @@ page-gostos .icon-card-estilo {
   left: 0;
   top: 0;
   fill: #b4c1d6;
+<<<<<<< HEAD
 }
 
 page-gostos .btn-confir {
   float: right;
   margin-left: 5px;
   margin-top: 1px;
+=======
+>>>>>>> 353f00a6710a4ed5e8f1acfd7f48e77c34395270
 }
 
 page-gostos .svg-ico-usertype {
@@ -28038,14 +28049,13 @@ page-gostos .svg-ico-usertype {
 }
 
 page-gostos .icon-user-type {
-  padding: 57% 0 0 0;
-  width: 50%;
   position: relative;
   background: #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   margin: auto;
-  display: table;
+  width: 75%;
+  padding-top: 16px;
 }
 
 page-gostos .text-icon {
@@ -28058,7 +28068,8 @@ page-gostos .text-icon {
 
 page-gostos .text-btn-estilo {
   font-family: Multicolore;
-  font-size: 0.9em;
+  font-size: 1em;
+  padding: 1px;
 }
 
 page-gostos .row {
@@ -28111,6 +28122,11 @@ page-gostos .row-estilo {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  max-width: 100%;
+}
+
+page-gostos .grid {
+  padding: 0px;
 }
 
 page-gostos .btn-none {
@@ -28282,6 +28298,48 @@ page-gostos .footer .footer-steps .next-step-action .nextstep-icon .caret-direct
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   margin: 0 0 0 -16px;
+}
+
+page-gostos .wrapper {
+  padding-bottom: 2px;
+  width: auto;
+}
+
+page-gostos .contents-col-sub {
+  white-space: nowrap;
+  overflow: hidden;
+  float: right;
+  margin-left: 5px;
+  animation-name: slideleft;
+  -webkit-animation-name: slideleft;
+  animation-duration: 400ms;
+  -webkit-animation-duration: 400ms;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+}
+
+@keyframes slideleft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    width: 0px;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    width: 15px;
+  }
+}
+
+@-webkit-keyframes slideleft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    width: 0px;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+    width: 15px;
+  }
 }
 
 page-login {
