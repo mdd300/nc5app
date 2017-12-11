@@ -48,35 +48,6 @@ export class ExplorePage {
      * Função utilizada para iniciar o scroll do content */
     public doScrollContent = ( ( element:string , event: any) => {
 
-        let $element: any = $('body').find( '.' + element );
-        let $items: any = $element.find('.item-scrollable');
-        let platformWidth: number = this.platform.width();
-
-        clearTimeout( this.timeoutScroll );
-        this.timeoutScroll = setTimeout(function(){
-            $.each($items, function (key, item) {
-
-                let $item: any = $(item);
-                let $itemScroll: number = parseInt($item.offset().left);
-                let itensConfig = {w: $item.width(), h: $item.height(), scroll: ( $item.width() * key )}
-                if (key > 0) {
-                    itensConfig.scroll += (10 * key);
-                }
-                /* Verifica se o scroll é positivo - O Próximo item */
-                if (( $itemScroll > 0 && $itemScroll < ( platformWidth / 2 ) )) {
-                    $element.stop().animate({scrollLeft: itensConfig.scroll + "px"}, 50);
-                    return false;
-                }
-                /* Fim da verificação de positividade */
-                /* Verificação de negatividade - O item Anterior */
-                else if (( $itemScroll > -( ( platformWidth / 2 ) - 10) && $itemScroll <= 0)) {
-                    $element.stop().animate({scrollLeft: itensConfig.scroll + "px"}, 50);
-                    return false;
-                }
-                /* Fim da verificação da negatividade */
-            });
-        }, 150);
-
     });/* Fim função executada com o scroll do content */
 
 

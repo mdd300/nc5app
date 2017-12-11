@@ -13,7 +13,9 @@
     <div class="content-card-estilo">
         <ion-card class="card-boy-estilo">
             <div class="icon-user-type">
-                <img class="icon-card-estilo" [src]="constants.src_img + 'png/boy.png'" >
+
+                <img class="icon-card-estilo" [attr.src]=" constants.src_img + 'png/boy.png' " />
+
             </div> <!-- icon-user-type -->
             <div class="text-icon">Qual é seu estilo?</div>
         </ion-card>
