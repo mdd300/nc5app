@@ -1,3 +1,5 @@
+$feed-image-height: 65%;
+
 page-feed {
 
   .feed-background{
@@ -46,7 +48,7 @@ page-feed {
   }/** feed-post-something */
 
   .feed-filter{
-    padding: 30px 0 0 0;
+    padding: 20px 0 20px 0;
     color: #fff;
     font-family: Multicolore;
     .grid, .row, .col{ padding: 0; position: relative; }
@@ -80,8 +82,249 @@ page-feed {
         opacity: 1;
       }/** actived-filter */
     }/** col */
-
   }/** feed-filter */
 
+  .feed-card{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    background: #fff;
+    border-bottom: 1px solid #e1e6ef;
+    &:nth-of-type(1){ border-radius: 10px 10px 0 0; }
+
+    .feed-card-structure{
+      width: 100%;
+      display: flex;
+      flex-flow: column;
+      .feed-card-header{
+        width: 100%;
+        display: flex;
+        padding: 10px;
+        .grid, .row, .col{ padding: 0; }
+
+        .feed-author-image{
+          width: 80%;
+          padding: 80% 0 0 0;
+          background-color: $grey-color;
+          border-radius: 3px;
+          box-shadow: 0 0 2px #cccccc;
+          position: relative;
+          .feed-author-img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+          }/** feed-author-img */
+        }/** feed-author-image */
+
+        .feed-author{
+          display: flex;
+          flex-grow: 1;
+          flex-flow: column;
+          .feed-autor-label{
+            width: 100%;
+            display: flex;
+            flex-grow: 1;
+            position: relative;
+            .feed-author-txt{
+              width: 100%;
+              position: absolute;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+
+              &.title{
+                text-transform: uppercase;
+                color: #000;
+                bottom: 0;
+                font-size: 1.2em;
+                font-weight: bold;
+              }/** title */
+
+              &.description{
+                text-transform: uppercase;
+                color: #737373;
+                top: 0;
+                font-size: 0.9em;
+                padding: 3px 0 0 17px;
+                &:before{
+                  color: #737373;
+                  width: 20px;
+                  height: 20px;
+                  font-family: "Ionicons";
+                  content: "\f1e5";
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  font-size: 1.5em;
+                }/** before */
+              }/** description */
+
+            }/** feed-author-txt */
+          }/** feed-autor-label */
+        }/** feed-author */
+
+        .feed-card-header-options{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          cursor: pointer;
+          .ico-card-options{
+            width: 50%;
+            height: 50%;
+            display: table;
+            fill: $grey-color;
+          }/** ico-card-options */
+        }/** feed-card-header-options */
+      }/** feed-card-header */
+
+      .feed-card-body{
+        width: 100%;
+        display: table;
+
+        .card-body-image{
+          width: 100%;
+          display: table;
+          .card-body-img{
+            width: 100%;
+            padding: $feed-image-height 0 0 0;
+
+            background-color: $grey-color;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+          }/** card-body-img */
+        }/** card-body-image */
+
+        .card-body-description{
+          width: 100%;
+          display: flex;
+          flex-flow: column;
+          padding: 5px 20px;
+          background: #fff;
+
+          .card-body-description-since{
+            width: 100%;
+            font-size: 1em;
+            color: #4c4c4c;
+            padding: 5px 0;
+          }/** card-body-description-since */
+          .card-body-description-desc{
+            width: 100%;
+            display: table;
+            padding: 5px 0;
+            font-size: 1em;
+            color: #767e8a;
+
+            .hashtag-desc{
+              font-weight: bold;
+              color: $pink-color;
+              cursor: pointer;
+            }/** hashtag-desc */
+
+          }/** card-body-description-desc */
+        }/** card-body-description */
+
+        .card-body-actions-post{
+          width: 100%;
+          position: relative;
+          .col{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .card-footer-action{
+              width: 25%;
+              padding: 25% 0 0 0;
+              position: relative;
+              cursor: pointer;
+              .ico-footer-action{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                fill: $grey-color;
+              }/** ico-footer-action */
+            }/** card-footer-action */
+
+          }/** col */
+        }/** card-body-actions-post */
+
+      }/** feed-card-body */
+
+      .card-body-product{
+        width: 100%;
+        position: relative;
+        .card-body-product-img{
+          width: 100%;
+          padding: $feed-image-height 0 0 0;
+          position: relative;
+
+          background-color: $grey-color;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+
+          .label-estoque{
+            padding: 6px 10px;
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            border-radius: 3px;
+            background: #ba007c;
+            color: #fff;
+            text-transform: uppercase;
+          }/** label-estoque */
+
+        }/** card-body-product-img */
+
+        .card-body-product-variables{
+          width: 100%;
+          padding: 10px 0;
+          ul.card-product-variables{
+            width: auto;
+            display: table;
+            padding: 0;
+            list-style: none;
+            margin: 0 auto;
+            li.product-variable{
+              width: 20px;
+              height: 20px;
+              border-radius: 100%;
+              display: inline-block;
+              position: relative;
+              margin: 0 10px;
+              background-color: $grey-color;
+              cursor: pointer;
+              &.actived-variable{
+                border: 1px solid #fff;
+                box-shadow: 0 0 1px 2px $pink-color;
+              }/** actived-variable */
+
+            }/** product-variable */
+
+          }/** ul.card-product-variables */
+
+        }/** card-body-product-variables */
+
+      }/** card-body-product */
+
+    }/** feed-card-structure */
+
+  }/** feed-card */
 
 }/** page-feed */
