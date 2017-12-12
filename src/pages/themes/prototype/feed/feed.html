@@ -47,16 +47,16 @@
                     <ion-grid>
                         <ion-row>
 
-                            <ion-col (click)="changeFilter( $event )" [class]="{'actived-filter': filter == 1  }">
+                            <ion-col (click)="changeFilter( $event, 1 )" [ngClass]="{'actived-filter': filter == 1 }">
                                 Todos
                             </ion-col>
-                            <ion-col (click)="changeFilter( $event )">
+                            <ion-col (click)="changeFilter( $event, 2 )" [ngClass]="{'actived-filter': filter == 2 }">
                                 Confecções
                             </ion-col>
-                            <ion-col (click)="changeFilter( $event )">
+                            <ion-col (click)="changeFilter( $event, 3 )" [ngClass]="{'actived-filter': filter == 3 }">
                                 Lojistas
                             </ion-col>
-                            <ion-col (click)="changeFilter( $event )">
+                            <ion-col (click)="changeFilter( $event, 4 )" [ngClass]="{'actived-filter': filter == 4 }">
                                 Roupas
                             </ion-col>
 
