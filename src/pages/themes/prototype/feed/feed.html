@@ -46,21 +46,22 @@
                 <div class="feed-filter">
                     <ion-grid>
                         <ion-row>
-                            <ion-col class="actived-filter">
+
+                            <ion-col (click)="changeFilter( $event )" [class]="{'actived-filter': filter == 1  }">
                                 Todos
                             </ion-col>
-                            <ion-col>
+                            <ion-col (click)="changeFilter( $event )">
                                 Confecções
                             </ion-col>
-                            <ion-col>
+                            <ion-col (click)="changeFilter( $event )">
                                 Lojistas
                             </ion-col>
-                            <ion-col>
+                            <ion-col (click)="changeFilter( $event )">
                                 Roupas
                             </ion-col>
 
                             <span class="filter-indicator">
-                                <span class="filter-caret"></span>
+                                <span class="filter-caret" #filterCaret ></span>
                             </span><!-- filter-indicator -->
 
                         </ion-row><!-- feed-filter -->
@@ -71,7 +72,7 @@
     </ion-grid>
 
     <!-- Primeiro card do feed -->
-    <ion-card class="feed-card">
+    <ion-card class="feed-card" *ngFor="let post of feed">
         <div class="feed-card-structure">
 
             <div class="feed-card-header">
@@ -85,7 +86,7 @@
                         <ion-col class="feed-author">
                             <div class="feed-autor-label">
                                 <span class="feed-author-txt title ">
-                                    Unique Chic
+                                    {{ post.company }}
                                 </span><!-- feed-author-txt -->
                             </div> <!-- feed-autor-label -->
                             <div class="feed-autor-label">
@@ -108,10 +109,13 @@
 
                 <!-- Primeira estrutura de layout de post -->
                 <!-- Post somente com imagens -->
-                <div class="card-body-image">
+
+                <!-- ------------ -->
+                <div class="card-body-image" [hidden]="post.type != 1">
 
                     <div class="card-body-img"
-                         [ngStyle]="{ 'background-image': 'url(' + constants.src_img + 'exemples/post1.jpg)' }"></div>
+                         [hidden]="post.image == null"
+                         [ngStyle]="{ 'background-image': 'url(' + constants.src_img + 'exemples/' + post.image + ')' }"></div>
                     <!-- card-body-img -->
 
                     <div class="card-body-description">
@@ -148,64 +152,25 @@
                         </ion-grid>
                     </div> <!-- card-body-actions-post -->
                 </div> <!-- card-body-image -->
-                <!-- Fim da estrutura do tipo de layout de post ( Post somente com imagens ) -->
-            </div> <!-- feed-card-body -->
+                <!-- ------------ -->
+                <!-- ------------ -->
+                <div class="card-body-product" [hidden]="post.type != 2">
 
-        </div> <!-- feed-card-structure -->
-    </ion-card><!-- feed-card -->
-    <!-- fim do primeiro card do feed -->
-    <!-- Segundo card do feed -->
-    <ion-card class="feed-card">
-        <div class="feed-card-structure">
+                    <div class="card-body-product-img">
 
-            <div class="feed-card-header">
-                <ion-grid>
-                    <ion-row>
-                        <ion-col col-2>
-                            <div class="feed-author-image">
-                                <div class="feed-author-img"></div> <!-- feed-author-img -->
-                            </div> <!-- feed-author-image -->
-                        </ion-col>
-                        <ion-col class="feed-author">
-                            <div class="feed-autor-label">
-                                <span class="feed-author-txt title ">
-                                    Chloé
-                                </span><!-- feed-author-txt -->
-                            </div> <!-- feed-autor-label -->
-                            <div class="feed-autor-label">
-                                <span class="feed-author-txt description">
-                                    Rua Paris
-                                </span>
-                            </div> <!-- feed-autor-label -->
-                        </ion-col>
-                        <ion-col col-2>
-                            <div class="feed-card-header-options">
-                                <svg class="ico-card-options">
-                                    <use [attr.xlink:href]="constants.src_svg + 'vertical-dots.svg#Layer_1'"></use>
-                                </svg> <!-- ico-card-options -->
-                            </div> <!-- feed-card-header-options -->
-                        </ion-col>
-                    </ion-row>
-                </ion-grid>
-            </div> <!-- feed-card-header -->
-            <div class="feed-card-body">
+                        <ion-slides class="product-variables">
+                            <ion-slide>
+                                <div class="product-variable-cover" [ngStyle]="{'background-image': 'url(' + constants.src_img + 'exemples/' + post.image + ')'}"  ></div> <!-- product-variable-cover -->
+                            </ion-slide>
+                        </ion-slides><!-- product-variables -->
 
-                <!-- Segunda estrutura de layout de post -->
-                <!-- Post somente de um produto -->
-                <div class="card-body-product">
+                        <ul class="variables-valiable">
+                            <li class="variable actived-variable"></li> <!-- variable -->
+                            <li class="variable"></li> <!-- variable -->
+                            <li class="variable"></li> <!-- variable -->
+                        </ul><!-- variables-valiable -->
 
-                    <div class="card-body-product-img"
-                         [ngStyle]="{ 'background-image': 'url(' + constants.src_img + 'exemples/roupa3.jpg)' }">
-                        <span class="label-estoque"> Em estoque! </span>
                     </div> <!-- card-body-product-img -->
-
-                    <div class="card-body-product-variables">
-                        <ul class="card-product-variables">
-                            <li class="product-variable actived-variable"></li><!-- product-variable -->
-                            <li class="product-variable"></li><!-- product-variable -->
-                            <li class="product-variable"></li><!-- product-variable -->
-                        </ul><!-- card-product-variables -->
-                    </div> <!-- card-body-product-variables -->
 
                     <div class="card-body-description">
                         <span class="card-body-description-since"> Há 3 Minutos </span>
@@ -225,11 +190,9 @@
                                         </ion-col><!-- col-varejo -->
                                         <ion-col class="col-action">
                                             <button class="button-action-product">
-
                                                 <svg class="icon-button-action-product">
                                                     <use [attr.xlink:href]="constants.src_svg + 'cart.svg#Layer_1'"></use>
                                                 </svg> <!-- icon-button-action-product -->
-
                                                 Comprar
                                             </button><!-- button-action-product -->
                                         </ion-col><!-- col-action -->
@@ -281,75 +244,74 @@
                     </div> <!-- card-body-actions-post -->
 
                 </div> <!-- card-body-product -->
-                <!-- Fim da segunta estrutura do card do feed -->
-
-            </div> <!-- feed-card-body -->
-
-        </div> <!-- feed-card-structure -->
-    </ion-card><!-- feed-card -->
-    <!-- Fim do segundo card do feed -->
-
-    <!-- Terceiro card do feed -->
-    <ion-card class="feed-card">
-        <div class="feed-card-structure">
-
-            <div class="feed-card-header">
-                <ion-grid>
-                    <ion-row>
-                        <ion-col col-2>
-                            <div class="feed-author-image">
-                                <div class="feed-author-img"></div> <!-- feed-author-img -->
-                            </div> <!-- feed-author-image -->
-                        </ion-col>
-                        <ion-col class="feed-author">
-                            <div class="feed-autor-label">
-                                <span class="feed-author-txt title ">
-                                    Unique Chic
-                                </span><!-- feed-author-txt -->
-                            </div> <!-- feed-autor-label -->
-                            <div class="feed-autor-label">
-                                <span class="feed-author-txt description">
-                                    Rua Anhaia, 284
-                                </span>
-                            </div> <!-- feed-autor-label -->
-                        </ion-col>
-                        <ion-col col-2>
-                            <div class="feed-card-header-options">
-                                <svg class="ico-card-options">
-                                    <use [attr.xlink:href]="constants.src_svg + 'vertical-dots.svg#Layer_1'"></use>
-                                </svg> <!-- ico-card-options -->
-                            </div> <!-- feed-card-header-options -->
-                        </ion-col>
-                    </ion-row>
-                </ion-grid>
-            </div> <!-- feed-card-header -->
-            <div class="feed-card-body">
-                <!-- Inicio do terceiro layout do card de feed -->
-
-                <div class="card-body-product-group" >
-                    <div class="product-group-cover" ></div> <!-- product-group-cover -->
+                <!-- ---------- -->
+                <!-- ---------- -->
+                <div class="card-body-product-group" [hidden]="post.type != 3">
+                    <div class="product-group-cover"
+                         [hidden]="post.image == null"
+                         [ngStyle]="{ 'background-image': 'url(' + constants.src_img + 'exemples/' + post.image + ')' }" ></div> <!-- product-group-cover -->
                     <div class="content-slide-group" >
-                        <ion-slides class="product-group-slides">
+                        <ion-slides class="product-group-slides" pager>
 
-                            <ion-slide style="background-color: green">
-                                <h2>Slide 1</h2>
-                            </ion-slide>
-
-                            <ion-slide style="background-color: blue">
-                                <h2>Slide 2</h2>
-                            </ion-slide>
-
-                            <ion-slide style="background-color: red">
-                                <h2>Slide 3</h2>
+                            <ion-slide *ngFor="let grupos of post.products">
+                                <ul class="list-group-products">
+                                    <li class="item-group-product" *ngFor="let produto of grupos.group">
+                                        <div class="item-product-cover" [ngStyle]="{ 'background-image': 'url(' + constants.src_img + 'exemples/' + produto.prod_image +')' }">
+                                        </div> <!-- item-product-cover -->
+                                    </li><!-- item-group-product -->
+                                </ul><!-- list-group-products -->
                             </ion-slide>
 
                         </ion-slides><!-- product-group-slides -->
                     </div> <!-- content-slide-group -->
+
+                    <div class="card-body-description">
+                        <span class="card-body-description-since"> Há 3 Minutos </span>
+                        <span class="card-body-description-desc">
+                            Welcome to <span class="hashtag-desc">#ThePradaDoubleClubMiami</span>, presented by Fondazione Prada and Carsten Höller. The temporary nightclub/installation is half gray scale.
+                        </span><!-- card-body-description-desc -->
+                    </div> <!-- card-body-description -->
+                    <div class="card-body-actions-post">
+                        <ion-grid>
+                            <ion-row>
+                                <ion-col>
+                                    <div class="card-footer-action">
+                                        <svg class="ico-footer-action">
+                                            <use [attr.xlink:href]="constants.src_svg + 'hearth.svg#Layer_1'"></use>
+                                        </svg> <!-- ico-footer-action -->
+                                    </div> <!-- card-footer-action" -->
+                                </ion-col>
+                                <ion-col>
+                                    <div class="card-footer-action">
+                                        <svg class="ico-footer-action">
+                                            <use [attr.xlink:href]="constants.src_svg + 'chat_ballon.svg#Layer_1'"></use>
+                                        </svg> <!-- ico-footer-action -->
+                                    </div> <!-- card-footer-action" -->
+                                </ion-col>
+                                <ion-col>
+                                    <div class="card-footer-action">
+                                        <svg class="ico-footer-action">
+                                            <use [attr.xlink:href]="constants.src_svg + 'share.svg#Layer_1'"></use>
+                                        </svg> <!-- ico-footer-action -->
+                                    </div> <!-- card-footer-action" -->
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+                    </div> <!-- card-body-actions-post -->
+
                 </div> <!-- card-body-product-group -->
-                <!-- Fim do terceiro layout do card de feed -->
-            </div><!-- feed-card-body -->
-        </div><!-- feed-card-structure -->
+                <!-- ---------- -->
+                <!-- ---------- -->
+
+                <!-- Fim da estrutura do tipo de layout de post ( Post somente com imagens ) -->
+            </div> <!-- feed-card-body -->
+
+        </div> <!-- feed-card-structure -->
     </ion-card><!-- feed-card -->
+    <!-- fim do primeiro card do feed -->
+
+
+    <!-- Terceiro card do feed -->
     <!-- Fim do terceiro card do feed -->
 
 </ion-content>

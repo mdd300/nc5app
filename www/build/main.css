@@ -27986,7 +27986,7 @@ page-feed .feed-filter .col {
   cursor: pointer;
   text-align: center;
   font-size: 0.9em;
-  padding: 0 0 12px 0;
+  padding: 5px 0 12px 0;
   opacity: 0.7;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -28209,9 +28209,10 @@ page-feed .feed-card .feed-card-structure .feed-card-body .card-body-description
 
 page-feed .feed-card .feed-card-structure .feed-card-body .card-body-description .card-body-description-since {
   width: 100%;
-  font-size: 1em;
+  font-size: 0.9em;
   color: #4c4c4c;
   padding: 5px 0;
+  text-transform: uppercase;
 }
 
 page-feed .feed-card .feed-card-structure .feed-card-body .card-body-description .card-body-description-desc {
@@ -28395,81 +28396,163 @@ page-feed .feed-card .feed-card-structure .feed-card-body .card-body-product-gro
 page-feed .feed-card .feed-card-structure .feed-card-body .card-body-product-group .product-group-cover {
   width: 100%;
   padding: 65% 0 0 0;
-  background-color: #b4c1d6;
+  background-color: #e7f4ff;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0 0 -30px 0;
+  margin: 0 0 -50px 0;
 }
 
 page-feed .feed-card .feed-card-structure .feed-card-body .card-body-product-group .content-slide-group {
   width: 100%;
-  height: 100px;
   position: relative;
-  background: #f00;
   overflow: hidden;
+  /** product-group-slides */
+  /** swiper-pagination */
+  /** swiper-pagination-bullet */
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-product-group .content-slide-group .product-group-slides {
+  /** ul.list-group-products */
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-product-group .content-slide-group .product-group-slides ul.list-group-products {
+  width: 100%;
+  padding: 0 0 25px 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  /** li.item-group-product */
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-product-group .content-slide-group .product-group-slides ul.list-group-products li.item-group-product {
+  width: 25%;
+  padding: 25% 0 0 0;
+  margin: 0 2%;
+  border: 2px solid #b4c1d6;
+  border-radius: 5px;
+  position: relative;
+  /** item-product-cover */
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-product-group .content-slide-group .product-group-slides ul.list-group-products li.item-group-product .item-product-cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-product-group .content-slide-group .swiper-pagination {
+  bottom: 0;
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-product-group .content-slide-group .swiper-pagination-bullet {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  /** swiper-pagination-bullet-active */
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-product-group .content-slide-group .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #ff5ba1;
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 page-feed .feed-card .feed-card-structure .card-body-product {
   width: 100%;
   position: relative;
   /** card-body-product-img */
-  /** card-body-product-variables */
 }
 
 page-feed .feed-card .feed-card-structure .card-body-product .card-body-product-img {
   width: 100%;
-  padding: 65% 0 0 0;
   position: relative;
+  padding: 0 0 30px 0;
+  /** product-variables */
+  /** variables-valiable */
+}
+
+page-feed .feed-card .feed-card-structure .card-body-product .card-body-product-img .product-variables {
+  /** swiper-pagination-bullet */
+  /** product-variable-cover */
+}
+
+page-feed .feed-card .feed-card-structure .card-body-product .card-body-product-img .product-variables .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  /** swiper-pagination-bullet-active */
+}
+
+page-feed .feed-card .feed-card-structure .card-body-product .card-body-product-img .product-variables .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #ff5ba1;
+}
+
+page-feed .feed-card .feed-card-structure .card-body-product .card-body-product-img .product-variables .product-variable-cover {
+  width: 100%;
+  padding: 65% 0 0 0;
   background-color: #b4c1d6;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /** label-estoque */
 }
 
-page-feed .feed-card .feed-card-structure .card-body-product .card-body-product-img .label-estoque {
-  padding: 6px 10px;
-  position: absolute;
-  left: 5px;
-  top: 5px;
-  border-radius: 3px;
-  background: #ba007c;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-page-feed .feed-card .feed-card-structure .card-body-product .card-body-product-variables {
+page-feed .feed-card .feed-card-structure .card-body-product .card-body-product-img ul.variables-valiable {
   width: 100%;
-  padding: 10px 0;
-  /** ul.card-product-variables */
-}
-
-page-feed .feed-card .feed-card-structure .card-body-product .card-body-product-variables ul.card-product-variables {
-  width: auto;
-  display: table;
-  padding: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
   list-style: none;
-  margin: 0 auto;
-  /** product-variable */
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  /** variable */
 }
 
-page-feed .feed-card .feed-card-structure .card-body-product .card-body-product-variables ul.card-product-variables li.product-variable {
+page-feed .feed-card .feed-card-structure .card-body-product .card-body-product-img ul.variables-valiable li.variable {
   width: 20px;
   height: 20px;
   border-radius: 100%;
-  display: inline-block;
-  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: #b4c1d6;
   margin: 0 10px;
-  background-color: #b4c1d6;
   cursor: pointer;
+  position: relative;
   /** actived-variable */
 }
 
-page-feed .feed-card .feed-card-structure .card-body-product .card-body-product-variables ul.card-product-variables li.product-variable.actived-variable {
+page-feed .feed-card .feed-card-structure .card-body-product .card-body-product-img ul.variables-valiable li.variable.actived-variable {
+  border-radius: 100%;
   border: 1px solid #fff;
-  -webkit-box-shadow: 0 0 1px 2px #ff5ba1;
-  box-shadow: 0 0 1px 2px #ff5ba1;
+  -webkit-box-shadow: 0 0 0 2px #ff5ba1;
+  box-shadow: 0 0 0 2px #ff5ba1;
 }
 
 /** page-feed */

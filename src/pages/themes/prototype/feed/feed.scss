@@ -74,7 +74,7 @@ page-feed {
       cursor: pointer;
       text-align: center;
       font-size: 0.9em;
-      padding: 0 0 12px 0;
+      padding: 5px 0 12px 0;
       opacity: 0.7;
       transition: 0.5s;
       &.actived-filter{
@@ -216,9 +216,10 @@ page-feed {
 
           .card-body-description-since{
             width: 100%;
-            font-size: 1em;
+            font-size: 0.9em;
             color: #4c4c4c;
             padding: 5px 0;
+            text-transform: uppercase;
           }/** card-body-description-since */
           .card-body-description-desc{
             width: 100%;
@@ -338,20 +339,60 @@ page-feed {
           .product-group-cover{
             width: 100%;
             padding: $feed-image-height 0 0 0;
-            background-color: $grey-color;
+            background-color: $grey-color + #333;
 
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
 
-            margin: 0 0 -30px 0;
+            margin: 0 0 -50px 0;
           }/** product-group-cover */
           .content-slide-group{
             width: 100%;
-            height: 100px;
             position: relative;
-            background: #f00;
             overflow: hidden;
+            .product-group-slides{
+
+              ul.list-group-products{
+                width: 100%;
+                padding: 0 0 25px 0;
+                margin: 0;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                li.item-group-product{
+                  width: 25%;
+                  padding: 25% 0 0 0;
+                  margin: 0 2%;
+                  border: 2px solid $grey-color;
+                  border-radius: 5px;
+                  position: relative;
+                  .item-product-cover{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+
+                    background-color: #fff;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                  }/** item-product-cover */
+                }/** li.item-group-product */
+              }/** ul.list-group-products */
+
+            }/** product-group-slides */
+            .swiper-pagination{ bottom: 0; }/** swiper-pagination */
+            .swiper-pagination-bullet{
+              transition: 0.3s;
+              &.swiper-pagination-bullet-active{ 
+                background: $pink-color; 
+                transform: scale(1.3); 
+              }/** swiper-pagination-bullet-active */
+            }/** swiper-pagination-bullet */
+
           }/** product-group-slides */
 
 
@@ -365,55 +406,58 @@ page-feed {
         position: relative;
         .card-body-product-img{
           width: 100%;
-          padding: $feed-image-height 0 0 0;
           position: relative;
+          padding: 0 0 30px 0;
+          .product-variables{
 
-          background-color: $grey-color;
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
+            .swiper-pagination-bullet{
+              width: 15px;
+              height: 15px;
+              &.swiper-pagination-bullet-active{
+                background: $pink-color;
+              }/** swiper-pagination-bullet-active */
+            }/** swiper-pagination-bullet */
 
-          .label-estoque{
-            padding: 6px 10px;
+            .product-variable-cover{
+              width: 100%;
+              padding: $feed-image-height 0 0 0;
+              background-color: $grey-color;
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+            }/** product-variable-cover */
+          }/** product-variables */
+
+          ul.variables-valiable{
+            width: 100%;
             position: absolute;
-            left: 5px;
-            top: 5px;
-            border-radius: 3px;
-            background: #ba007c;
-            color: #fff;
-            text-transform: uppercase;
-          }/** label-estoque */
-
-        }/** card-body-product-img */
-
-        .card-body-product-variables{
-          width: 100%;
-          padding: 10px 0;
-          ul.card-product-variables{
-            width: auto;
-            display: table;
-            padding: 0;
+            left: 0;
+            bottom: 0;
             list-style: none;
-            margin: 0 auto;
-            li.product-variable{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            li.variable{
               width: 20px;
               height: 20px;
               border-radius: 100%;
-              display: inline-block;
-              position: relative;
+              transition: 0.5s;
+              background: $grey-color;
               margin: 0 10px;
-              background-color: $grey-color;
               cursor: pointer;
+              position: relative;
               &.actived-variable{
+                border-radius: 100%;
                 border: 1px solid #fff;
-                box-shadow: 0 0 1px 2px $pink-color;
+                box-shadow: 0 0 0 2px $pink-color;
               }/** actived-variable */
+            }/** variable */
+          }/** variables-valiable */
 
-            }/** product-variable */
-
-          }/** ul.card-product-variables */
-
-        }/** card-body-product-variables */
+        }/** card-body-product-img */
 
       }/** card-body-product */
 
