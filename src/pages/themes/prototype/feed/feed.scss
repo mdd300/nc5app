@@ -1,7 +1,6 @@
 $feed-image-height: 65%;
 
 page-feed {
-
   .feed-background{
     width: 100%;
     padding: 100% 0 0 0;
@@ -192,7 +191,6 @@ page-feed {
 
       .feed-card-body{
         width: 100%;
-        display: table;
 
         .card-body-image{
           width: 100%;
@@ -229,6 +227,73 @@ page-feed {
             font-size: 1em;
             color: #767e8a;
 
+            .product-title{
+              width: 100%;
+              font-size: 1.3em;
+              font-weight: bold;
+              color: #000000;
+            }/** product-title */
+
+            .product-prices{
+              width: 100%;
+              display: flex;
+              .grid, .col, .row{ padding: 0; }
+              .grid-prices{
+                margin: 10px 0 0 0;
+
+                .col-border{ border-right: 1px solid $grey-color; padding: 0 10px 0 0; }/** col-border */
+                .col-varejo{ padding: 0 0 0 10px; }/** col-varejo */
+                .col-action{
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  .button-action-product{
+                    padding: 10px 15px;
+                    border: 2px solid #9fdaa9;
+                    border-radius: 5px;
+                    color: #9fdaa9;
+                    background: none;
+                    font-size: 1em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .icon-button-action-product{
+                      width: 15px;
+                      height: 15px;
+                      margin: -3px 10px 0 0;
+                      fill: #9fdaa9;
+                    }/** icon-button-action-product */
+                  }/** button-action-product */
+                }/** col-action */
+                .col-label{
+                  width: 100%;
+                  text-transform: uppercase;
+                  color: $grey-color;
+                  font-weight: bold;
+                  float: left;
+                }/** col-label */
+                .price{
+                  width: 100%;
+                  float: left;
+                  font-size: 1.6em;
+                  font-weight: bold;
+                  color: $pink-color;
+                  &:before{
+                    content: "R$ ";
+                    font-size: 0.6em;
+                  }/** before */
+                }/** price */
+              }/** grid-prices */
+            }/** product-prices */
+
+            .product-description{
+              width: 100%;
+              padding: 5px 0;
+              float: left;
+              font-size: 1em;
+
+            }/** product-description */
+
             .hashtag-desc{
               font-weight: bold;
               color: $pink-color;
@@ -248,6 +313,8 @@ page-feed {
 
             .card-footer-action{
               width: 25%;
+              min-width: 26px;
+              min-height: 26px;
               padding: 25% 0 0 0;
               position: relative;
               cursor: pointer;
@@ -263,6 +330,33 @@ page-feed {
 
           }/** col */
         }/** card-body-actions-post */
+
+        .card-body-product-group{
+          width: 100%;
+          position: relative;
+
+          .product-group-cover{
+            width: 100%;
+            padding: $feed-image-height 0 0 0;
+            background-color: $grey-color;
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            margin: 0 0 -30px 0;
+          }/** product-group-cover */
+          .content-slide-group{
+            width: 100%;
+            height: 100px;
+            position: relative;
+            background: #f00;
+            overflow: hidden;
+          }/** product-group-slides */
+
+
+        }/** card-body-product-group */
+
 
       }/** feed-card-body */
 

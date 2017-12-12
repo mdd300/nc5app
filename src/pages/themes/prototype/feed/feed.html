@@ -117,9 +117,7 @@
                     <div class="card-body-description">
                         <span class="card-body-description-since"> Há 3 Minutos </span>
                         <span class="card-body-description-desc">
-
                             Welcome to <span class="hashtag-desc">#ThePradaDoubleClubMiami</span>, presented by Fondazione Prada and Carsten Höller. The temporary nightclub/installation is half gray scale.
-
                         </span><!-- card-body-description-desc -->
                     </div> <!-- card-body-description -->
                     <div class="card-body-actions-post">
@@ -194,13 +192,14 @@
 
                 <!-- Segunda estrutura de layout de post -->
                 <!-- Post somente de um produto -->
-                <div class="card-body-product" >
+                <div class="card-body-product">
 
-                    <div class="card-body-product-img" [ngStyle]="{ 'background-image': 'url(' + constants.src_img + 'exemples/roupa3.jpg)' }" >
+                    <div class="card-body-product-img"
+                         [ngStyle]="{ 'background-image': 'url(' + constants.src_img + 'exemples/roupa3.jpg)' }">
                         <span class="label-estoque"> Em estoque! </span>
                     </div> <!-- card-body-product-img -->
-                    
-                    <div class="card-body-product-variables" >
+
+                    <div class="card-body-product-variables">
                         <ul class="card-product-variables">
                             <li class="product-variable actived-variable"></li><!-- product-variable -->
                             <li class="product-variable"></li><!-- product-variable -->
@@ -210,18 +209,56 @@
 
                     <div class="card-body-description">
                         <span class="card-body-description-since"> Há 3 Minutos </span>
+                        <div class="card-body-description-desc">
+
+                            <span class="product-title"> TURTLENECK TOP </span>
+                            <div class="product-prices">
+                                <ion-grid class="grid-prices">
+                                    <ion-row>
+                                        <ion-col class="col-border">
+                                            <span class="col-label"> Atacado </span><!-- col-label -->
+                                            <span class="price"> 590 </span> <!-- price -->
+                                        </ion-col>
+                                        <ion-col class="col-varejo">
+                                            <span class="col-label"> Varejo </span><!-- col-label -->
+                                            <span class="price"> 590 </span> <!-- price -->
+                                        </ion-col><!-- col-varejo -->
+                                        <ion-col class="col-action">
+                                            <button class="button-action-product">
+
+                                                <svg class="icon-button-action-product">
+                                                    <use [attr.xlink:href]="constants.src_svg + 'cart.svg#Layer_1'"></use>
+                                                </svg> <!-- icon-button-action-product -->
+
+                                                Comprar
+                                            </button><!-- button-action-product -->
+                                        </ion-col><!-- col-action -->
+                                    </ion-row>
+                                </ion-grid><!-- grid-prices -->
+                            </div><!-- product-prices -->
+
+                        </div><!-- card-body-description-desc -->
+
                         <span class="card-body-description-desc">
+                            Confira a novidade na nossa loja essa semana!
                         </span><!-- card-body-description-desc -->
+
                     </div> <!-- card-body-description -->
 
                     <div class="card-body-actions-post">
-                        
                         <ion-grid>
                             <ion-row>
                                 <ion-col>
                                     <div class="card-footer-action">
                                         <svg class="ico-footer-action">
                                             <use [attr.xlink:href]="constants.src_svg + 'hearth.svg#Layer_1'"></use>
+                                        </svg> <!-- ico-footer-action -->
+                                    </div> <!-- card-footer-action" -->
+                                </ion-col>
+                                <ion-col>
+                                    <div class="card-footer-action">
+                                        <svg class="ico-footer-action">
+                                            <use [attr.xlink:href]="constants.src_svg + 'star.svg#Layer_1'"></use>
                                         </svg> <!-- ico-footer-action -->
                                     </div> <!-- card-footer-action" -->
                                 </ion-col>
@@ -241,7 +278,6 @@
                                 </ion-col>
                             </ion-row>
                         </ion-grid>
-
                     </div> <!-- card-body-actions-post -->
 
                 </div> <!-- card-body-product -->
@@ -252,6 +288,69 @@
         </div> <!-- feed-card-structure -->
     </ion-card><!-- feed-card -->
     <!-- Fim do segundo card do feed -->
+
+    <!-- Terceiro card do feed -->
+    <ion-card class="feed-card">
+        <div class="feed-card-structure">
+
+            <div class="feed-card-header">
+                <ion-grid>
+                    <ion-row>
+                        <ion-col col-2>
+                            <div class="feed-author-image">
+                                <div class="feed-author-img"></div> <!-- feed-author-img -->
+                            </div> <!-- feed-author-image -->
+                        </ion-col>
+                        <ion-col class="feed-author">
+                            <div class="feed-autor-label">
+                                <span class="feed-author-txt title ">
+                                    Unique Chic
+                                </span><!-- feed-author-txt -->
+                            </div> <!-- feed-autor-label -->
+                            <div class="feed-autor-label">
+                                <span class="feed-author-txt description">
+                                    Rua Anhaia, 284
+                                </span>
+                            </div> <!-- feed-autor-label -->
+                        </ion-col>
+                        <ion-col col-2>
+                            <div class="feed-card-header-options">
+                                <svg class="ico-card-options">
+                                    <use [attr.xlink:href]="constants.src_svg + 'vertical-dots.svg#Layer_1'"></use>
+                                </svg> <!-- ico-card-options -->
+                            </div> <!-- feed-card-header-options -->
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </div> <!-- feed-card-header -->
+            <div class="feed-card-body">
+                <!-- Inicio do terceiro layout do card de feed -->
+
+                <div class="card-body-product-group" >
+                    <div class="product-group-cover" ></div> <!-- product-group-cover -->
+                    <div class="content-slide-group" >
+                        <ion-slides class="product-group-slides">
+
+                            <ion-slide style="background-color: green">
+                                <h2>Slide 1</h2>
+                            </ion-slide>
+
+                            <ion-slide style="background-color: blue">
+                                <h2>Slide 2</h2>
+                            </ion-slide>
+
+                            <ion-slide style="background-color: red">
+                                <h2>Slide 3</h2>
+                            </ion-slide>
+
+                        </ion-slides><!-- product-group-slides -->
+                    </div> <!-- content-slide-group -->
+                </div> <!-- card-body-product-group -->
+                <!-- Fim do terceiro layout do card de feed -->
+            </div><!-- feed-card-body -->
+        </div><!-- feed-card-structure -->
+    </ion-card><!-- feed-card -->
+    <!-- Fim do terceiro card do feed -->
 
 </ion-content>
 <!-- End of content Feed Page -->

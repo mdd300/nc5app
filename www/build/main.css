@@ -28169,10 +28169,10 @@ page-feed .feed-card .feed-card-structure .feed-card-header .feed-card-header-op
 
 page-feed .feed-card .feed-card-structure .feed-card-body {
   width: 100%;
-  display: table;
   /** card-body-image */
   /** card-body-description */
   /** card-body-actions-post */
+  /** card-body-product-group */
 }
 
 page-feed .feed-card .feed-card-structure .feed-card-body .card-body-image {
@@ -28220,7 +28220,122 @@ page-feed .feed-card .feed-card-structure .feed-card-body .card-body-description
   padding: 5px 0;
   font-size: 1em;
   color: #767e8a;
+  /** product-title */
+  /** product-prices */
+  /** product-description */
   /** hashtag-desc */
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-description .card-body-description-desc .product-title {
+  width: 100%;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #000000;
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-description .card-body-description-desc .product-prices {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  /** grid-prices */
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-description .card-body-description-desc .product-prices .grid, page-feed .feed-card .feed-card-structure .feed-card-body .card-body-description .card-body-description-desc .product-prices .col, page-feed .feed-card .feed-card-structure .feed-card-body .card-body-description .card-body-description-desc .product-prices .row {
+  padding: 0;
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-description .card-body-description-desc .product-prices .grid-prices {
+  margin: 10px 0 0 0;
+  /** col-border */
+  /** col-varejo */
+  /** col-action */
+  /** col-label */
+  /** price */
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-description .card-body-description-desc .product-prices .grid-prices .col-border {
+  border-right: 1px solid #b4c1d6;
+  padding: 0 10px 0 0;
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-description .card-body-description-desc .product-prices .grid-prices .col-varejo {
+  padding: 0 0 0 10px;
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-description .card-body-description-desc .product-prices .grid-prices .col-action {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  /** button-action-product */
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-description .card-body-description-desc .product-prices .grid-prices .col-action .button-action-product {
+  padding: 10px 15px;
+  border: 2px solid #9fdaa9;
+  border-radius: 5px;
+  color: #9fdaa9;
+  background: none;
+  font-size: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  /** icon-button-action-product */
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-description .card-body-description-desc .product-prices .grid-prices .col-action .button-action-product .icon-button-action-product {
+  width: 15px;
+  height: 15px;
+  margin: -3px 10px 0 0;
+  fill: #9fdaa9;
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-description .card-body-description-desc .product-prices .grid-prices .col-label {
+  width: 100%;
+  text-transform: uppercase;
+  color: #b4c1d6;
+  font-weight: bold;
+  float: left;
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-description .card-body-description-desc .product-prices .grid-prices .price {
+  width: 100%;
+  float: left;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #ff5ba1;
+  /** before */
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-description .card-body-description-desc .product-prices .grid-prices .price:before {
+  content: "R$ ";
+  font-size: 0.6em;
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-description .card-body-description-desc .product-description {
+  width: 100%;
+  padding: 5px 0;
+  float: left;
+  font-size: 1em;
 }
 
 page-feed .feed-card .feed-card-structure .feed-card-body .card-body-description .card-body-description-desc .hashtag-desc {
@@ -28253,6 +28368,8 @@ page-feed .feed-card .feed-card-structure .feed-card-body .card-body-actions-pos
 
 page-feed .feed-card .feed-card-structure .feed-card-body .card-body-actions-post .col .card-footer-action {
   width: 25%;
+  min-width: 26px;
+  min-height: 26px;
   padding: 25% 0 0 0;
   position: relative;
   cursor: pointer;
@@ -28266,6 +28383,31 @@ page-feed .feed-card .feed-card-structure .feed-card-body .card-body-actions-pos
   left: 0;
   top: 0;
   fill: #b4c1d6;
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-product-group {
+  width: 100%;
+  position: relative;
+  /** product-group-cover */
+  /** product-group-slides */
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-product-group .product-group-cover {
+  width: 100%;
+  padding: 65% 0 0 0;
+  background-color: #b4c1d6;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 0 -30px 0;
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-product-group .content-slide-group {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background: #f00;
+  overflow: hidden;
 }
 
 page-feed .feed-card .feed-card-structure .card-body-product {
