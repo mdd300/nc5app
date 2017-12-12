@@ -28169,10 +28169,10 @@ page-feed .feed-card .feed-card-structure .feed-card-header .feed-card-header-op
 
 page-feed .feed-card .feed-card-structure .feed-card-body {
   width: 100%;
-  display: table;
   /** card-body-image */
   /** card-body-description */
   /** card-body-actions-post */
+  /** card-body-product-group */
 }
 
 page-feed .feed-card .feed-card-structure .feed-card-body .card-body-image {
@@ -28383,6 +28383,31 @@ page-feed .feed-card .feed-card-structure .feed-card-body .card-body-actions-pos
   left: 0;
   top: 0;
   fill: #b4c1d6;
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-product-group {
+  width: 100%;
+  position: relative;
+  /** product-group-cover */
+  /** product-group-slides */
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-product-group .product-group-cover {
+  width: 100%;
+  padding: 65% 0 0 0;
+  background-color: #b4c1d6;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 0 -30px 0;
+}
+
+page-feed .feed-card .feed-card-structure .feed-card-body .card-body-product-group .content-slide-group {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background: #f00;
+  overflow: hidden;
 }
 
 page-feed .feed-card .feed-card-structure .card-body-product {
