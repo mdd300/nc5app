@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 import {Component, ViewChild} from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import {Constants} from "../../../../config/Constants";
 import * as $ from "jquery";
+=======
+import { Component } from '@angular/core';
+import {IonicPage, ModalController, NavController, NavParams} from 'ionic-angular';
+import {Constants} from "../../../../config/Constants";
+import {PostPage} from "../post/post";
+>>>>>>> bfb0f165b210489218a8b87dab37d177e9cb1fcd
 
 /**
  * Generated class for the FeedPage page.
@@ -19,10 +26,24 @@ export class FeedPage {
 
     public constants = Constants;
 
+<<<<<<< HEAD
     constructor(public navCtrl: NavController,
                 public navParams: NavParams) {
     }
+=======
+  constructor(
+      public navCtrl: NavController,
+      public modalCtrl: ModalController,
+      public navParams: NavParams
+  ) {}
+>>>>>>> bfb0f165b210489218a8b87dab37d177e9cb1fcd
 
+  // Abrir modal para realizar psot
+    public doPost = ( ()=>{
+        let profileModal = this.modalCtrl.create(PostPage);
+        profileModal.present();
+
+    });
 
     /**
      * Estrutura Padrão e Base de como os dados do feed devem ser retornados */
