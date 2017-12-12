@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {IonicPage, ModalController, NavController, NavParams} from 'ionic-angular';
 import {Constants} from "../../../../config/Constants";
+import {PostPage} from "../post/post";
 
 /**
  * Generated class for the FeedPage page.
@@ -20,9 +21,16 @@ export class FeedPage {
 
   constructor(
       public navCtrl: NavController,
+      public modalCtrl: ModalController,
       public navParams: NavParams
   ) {}
 
+  // Abrir modal para realizar psot
+    public doPost = ( ()=>{
+        let profileModal = this.modalCtrl.create(PostPage);
+        profileModal.present();
+
+    });
 
 
 }

@@ -15,6 +15,8 @@ import {ConfirmCadPageModule} from "../pages/themes/prototype/cadastro/confirm-c
 import {ExplorePageModule} from "../pages/themes/prototype/explore/explore.module";
 import {GostosPageModule} from "../pages/themes/prototype/gostos/gostos.module";
 import {FeedPageModule} from "../pages/themes/prototype/feed/feed.module";
+import {PostPageModule} from "../pages/themes/prototype/post/post.module";
+
 
 @NgModule({
     declarations: [
@@ -31,6 +33,7 @@ import {FeedPageModule} from "../pages/themes/prototype/feed/feed.module";
         ExplorePageModule,
         GostosPageModule,
         FeedPageModule,
+        PostPageModule,
         IonicModule.forRoot(Qrgo_prototype)
     ],
     bootstrap: [IonicApp],

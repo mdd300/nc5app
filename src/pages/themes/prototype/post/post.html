@@ -1,0 +1,50 @@
+<ion-content>
+
+    <div class="header-background" style=" background: #ff57a3;
+  background: -webkit-linear-gradient(left, #ff57a3 , #ff9b7e);
+  background: -o-linear-gradient(right, #ff57a3, #ff9b7e);
+  background: -moz-linear-gradient(right, #ff57a3, #ff9b7e);
+  background: linear-gradient(to right, #ff57a3 , #ff9b7e); "></div> <!-- header-background -->
+
+    <ion-header>
+        <ion-grid>
+            <ion-row style="display: inline-flex;   ">
+                <ion-col col-1 class="col-icon">
+                    <div class="icon-back-header">
+
+                        <svg class="ico-back-header">
+                            <use [attr.xlink:href]="constants.src_svg + 'back.svg#Layer_1'"></use>
+                        </svg> <!-- ico-back-header -->
+                    </div> <!-- icon-back-header -->
+
+
+                </ion-col>
+                <ion-col col-auto style="width: 46%;">
+                    <div class="text-btn-publicar">PUBLIQUE ALGO...</div>
+                </ion-col>
+                <ion-col col-auto style="width: 45%">
+                    <span text-align="center" class="btn-publicar">
+                        <div class="icon-publicar-send">
+                            <img [src]="constants.src_img + 'png/send.png'">
+                        </div>
+                    <div text-align="center" class="text-btn-publicar">
+                        Publicar
+                    </div>
+                    <div text-align="center" class="btn-wrapper">
+
+                    </div>
+                    </span>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-header>
+
+
+</ion-content>
+
+<ion-footer class="foo">
+    <ion-row>
+        <ion-col ><div class="col-footer-post"><div class="text-footer-post">Produtos</div></div></ion-col>
+        <ion-col ><div class="col-footer-post"><div class="text-footer-post">Imagens</div></div></ion-col>
+    </ion-row>
+</ion-footer>
