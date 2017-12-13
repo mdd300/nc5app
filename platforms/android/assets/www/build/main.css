@@ -29131,6 +29131,9 @@ page-post .header-background {
   top: 0;
   background-size: cover;
   background-position: top;
+  background: #ff57a3;
+  background: -webkit-gradient(linear, left top, right top, from(#ff57a3), to(#ff9b7e));
+  background: linear-gradient(to right, #ff57a3, #ff9b7e);
 }
 
 page-post .header {
@@ -29144,7 +29147,7 @@ page-post .header:after {
 }
 
 page-post .header .col-icon {
-  padding-top: 9px;
+  padding-top: 5px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -29220,7 +29223,8 @@ page-post .header .content-search-input-header ion-icon {
   cursor: pointer;
 }
 
-page-post .text-btn-estilo {
+page-post .text-btn-publicar {
+  color: #ffffff;
   padding: 3px;
   font-family: Multicolore;
   font-size: 1em;
@@ -29251,19 +29255,47 @@ page-post .row {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  height: 100%;
 }
 
-page-post .btn-estilo {
+page-post .icon-publicar-send {
+  margin-right: 3px;
+}
+
+page-post .icon-publicar-send .svg-send-header {
+  fill: #ff7791;
+  width: 100%;
+  height: 17px;
+}
+
+page-post .btn-publicar {
+  float: right;
   vertical-align: middle;
   line-height: normal;
-  background-color: #b4c1d6;
+  background-color: #ffbbb6;
   font-size: 0.7em;
   height: auto;
-  padding: 12px 12px;
-  margin: 3px 3px;
-  border-radius: 30px;
+  padding: 7px 10px;
+  border-radius: 5px;
   text-transform: uppercase;
-  color: #fff;
+  color: #ff7791;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+page-post .btn-wrapper {
+  width: auto;
+}
+
+page-post .text-footer-post {
+  color: #b4c1d6;
+  font-family: Roboto;
+  text-align: center;
+  vertical-align: middle;
+  line-height: normal;
+  text-transform: uppercase;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -29284,8 +29316,172 @@ page-post .btn-estilo {
   align-content: center;
 }
 
-page-post .wrapper {
+page-post .col-footer-post {
+  float: right;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  line-height: normal;
+  text-transform: uppercase;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -moz-box-align: center;
+  -moz-text-align-last: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+page-post .foo {
+  height: 50px !important;
+}
+
+page-post .icon-footer {
+  height: auto;
   width: auto;
+}
+
+page-post .icon-footer .svg-footer {
+  fill: #b4c1d6;
+  height: 22px;
+  width: 40px;
+}
+
+page-post .head-icon-right {
+  margin-left: 25%;
+}
+
+page-post .content-post {
+  width: 100%;
+  height: 100%;
+}
+
+page-post .content-post .content-info-post {
+  height: 17%;
+}
+
+page-post .content-post .content-info-post .content-icon {
+  width: 100%;
+  height: 100%;
+}
+
+page-post .content-post .content-info-post .content-icon-user {
+  height: 100%;
+  width: 90%;
+  float: right;
+}
+
+page-post .content-post .content-info-post .img-user-post {
+  width: 83%;
+  border-radius: 5px;
+  border: 2px solid #cccccc;
+  background: red;
+  height: 75%;
+  float: right;
+  margin-top: 15%;
+}
+
+page-post .content-post .content-info-post .text-nome-fantasia {
+  width: 100%;
+  float: left;
+  height: 30%;
+}
+
+page-post .content-post .content-info-post .content-btn-loc {
+  height: auto;
+  float: left;
+  width: 60%;
+}
+
+page-post .content-post .content-info-post .text-btn-estilo {
+  padding: 2%;
+  font-family: Multicolore;
+  font-size: 1em;
+  display: inline-block;
+}
+
+page-post .content-post .content-info-post .btn-estilo {
+  border-radius: 5px !important;
+  color: #b4c1d6 !important;
+  border: 2px solid #b4c1d6 !important;
+  height: 2.6rem !important;
+  width: 10.6rem !important;
+  font-size: 1.0rem;
+}
+
+page-post .content-post .content-info-post .wrapper {
+  width: auto;
+  padding-right: 7%;
+}
+
+page-post .content-post .content-info-post .svg-ico-usertype {
+  width: 13px;
+  height: 14px;
+  fill: #b4c1d6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+page-post .content-post .content-info-post .content-data-user {
+  float: left;
+  padding-left: 6%;
+  width: 100%;
+  height: 100%;
+}
+
+page-post .content-post .content-info-post .empty-content {
+  height: 15%;
+  width: 100%;
+}
+
+page-post .content-post .col-user {
+  padding: 0px !important;
+  height: 100%;
+}
+
+page-post .content-post .row-user {
+  border-bottom: solid #b4c1d6 1px;
+}
+
+page-post .col-footer {
+  height: 100%;
+  vertical-align: middle;
+  line-height: normal;
+  text-transform: uppercase;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -moz-box-align: center;
+  -moz-text-align-last: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+page-post .empty-content-header {
+  height: 9%;
+  width: 100%;
 }
 
 page-slides {

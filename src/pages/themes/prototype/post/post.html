@@ -1,12 +1,8 @@
 <ion-content>
 
-    <div class="header-background" style=" background: #ff57a3;
-  background: -webkit-linear-gradient(left, #ff57a3 , #ff9b7e);
-  background: -o-linear-gradient(right, #ff57a3, #ff9b7e);
-  background: -moz-linear-gradient(right, #ff57a3, #ff9b7e);
-  background: linear-gradient(to right, #ff57a3 , #ff9b7e); "></div> <!-- header-background -->
+    <div class="header-background" [hidden]="text"></div> <!-- header-background -->
 
-    <ion-header>
+    <ion-header [hidden]="text">
         <ion-grid>
             <ion-row style="display: inline-flex;   ">
                 <ion-col col-1 class="col-icon">
@@ -23,9 +19,12 @@
                     <div class="text-btn-publicar">PUBLIQUE ALGO...</div>
                 </ion-col>
                 <ion-col col-auto style="width: 45%">
+                    <div class="head-icon-right">
                     <span text-align="center" class="btn-publicar">
                         <div class="icon-publicar-send">
-                            <img [src]="constants.src_img + 'png/send.png'">
+                    <svg class="svg-send-header">
+                        <use [attr.xlink:href]="constants.src_svg + 'send-button.svg#Layer_1'"></use>
+                    </svg> <!-- ico-back-header -->
                         </div>
                     <div text-align="center" class="text-btn-publicar">
                         Publicar
@@ -34,17 +33,94 @@
 
                     </div>
                     </span>
+                    </div>
                 </ion-col>
             </ion-row>
         </ion-grid>
     </ion-header>
 
+    <div class="content-post">
+
+        <div class="empty-content-header" [hidden]="text">
+
+        </div>
+        <ion-row class="content-info-post row-user" [hidden]="text">
+            <ion-col col-3 class="col-user">
+                <div class="content-icon">
+                    <div class="content-icon-user">
+                        <div class="img-user-post">
+
+                        </div>
+                    </div>
+                </div>
+            </ion-col>
+            <ion-col class="col-user">
+                <div class="content-data-user">
+
+                    <div class="empty-content">
+
+                    </div>
+
+                    <div class="text-nome-fantasia">
+                        <b>UNIQUE CHIC</b>
+                    </div>
+
+
+
+                    <div class="content-btn-loc">
+
+                        <button ion-button class="btn-estilo" outline>
+                            <div text-align="center" class="btn-confir wrapper">
+                            <svg class="svg-ico-usertype">
+                                <use [attr.xlink:href]="constants.src_svg + 'maps-and-flags.svg#Layer_1'"></use>
+                            </svg> <!-- svg-ico-usertype -->
+                        </div>
+                            <div text-align="center" class="text-btn-estilo">
+                                LOCALIZAR
+                            </div></button>
+
+                        <!--<div text-align="center" class="btn-estilo">-->
+                            <!---->
+                        <!--</div>-->
+                    </div>
+                </div>
+
+            </ion-col>
+        </ion-row>
+
+        <div class="content-data-post">
+            <ion-textarea #textInput placeholder="Escreva algo..." (ionBlur)="onBlur()" (ionFocus)="onFocus()" (keypress)="eventHandler($event.keyCode, $event.target)"></ion-textarea>
+        </div>
+
+    </div>
+
 
 </ion-content>
 
-<ion-footer class="foo">
+<ion-footer class="foo" [hidden]="text">
     <ion-row>
-        <ion-col ><div class="col-footer-post"><div class="text-footer-post">Produtos</div></div></ion-col>
-        <ion-col ><div class="col-footer-post"><div class="text-footer-post">Imagens</div></div></ion-col>
+
+        <ion-col class="col-footer">
+            <div class="col-footer-post">
+                <div class="icon-footer">
+                    <svg class="svg-footer">
+                        <use [attr.xlink:href]="constants.src_svg + 'shirt-hanger.svg#Layer_1'"></use>
+                    </svg> <!-- ico-back-header -->
+                </div>
+                <div class="text-footer-post">Produtos</div>
+            </div>
+        </ion-col>
+
+        <ion-col class="col-footer">
+            <div class="col-footer-post">
+                <div class="icon-footer">
+                    <svg class="svg-footer">
+                        <use [attr.xlink:href]="constants.src_svg + 'picture.svg#Layer_1'"></use>
+                    </svg> <!-- ico-back-header -->
+                </div>
+                <div class="text-footer-post">Imagens</div>
+            </div>
+        </ion-col>
+
     </ion-row>
 </ion-footer>

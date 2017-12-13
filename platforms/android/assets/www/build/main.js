@@ -761,6 +761,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
  * Generated class for the PostPage page.
  *
@@ -768,16 +769,37 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var PostPage = (function () {
-    function PostPage(navCtrl, navParams) {
+    function PostPage(navCtrl, navParams, keyboard) {
+        var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.keyboard = keyboard;
         this.constants = __WEBPACK_IMPORTED_MODULE_2__config_Constants__["a" /* Constants */];
+        this.text = false;
+        this.onBlur = (function () {
+            _this.text = false;
+        });
+        this.onFocus = (function () {
+            _this.text = true;
+        });
+        this.eventHandler = (function (num, target) {
+            if (num == 13) {
+                _this.text = false;
+                var activeElement = document.activeElement;
+                activeElement && activeElement.blur && activeElement.blur();
+                _this.keyboard.close();
+            }
+        });
     }
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])('textInput'),
+        __metadata("design:type", Object)
+    ], PostPage.prototype, "textInput", void 0);
     PostPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-post',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\post\post.html"*/'<ion-content>\n\n    <div class="header-background" style=" background: #ff57a3;\n  background: -webkit-linear-gradient(left, #ff57a3 , #ff9b7e);\n  background: -o-linear-gradient(right, #ff57a3, #ff9b7e);\n  background: -moz-linear-gradient(right, #ff57a3, #ff9b7e);\n  background: linear-gradient(to right, #ff57a3 , #ff9b7e); "></div> <!-- header-background -->\n\n    <ion-header>\n        <ion-grid>\n            <ion-row>\n                <ion-col col-1 class="col-icon">\n                    <div class="icon-back-header">\n\n                        <svg class="ico-back-header">\n                            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n                        </svg> <!-- ico-back-header -->\n                    </div> <!-- icon-back-header -->\n                    <div>PUBLIQUE ALGO...</div>\n                    <span text-align="center" class="btn-estilo">\n                    <div text-align="center" class="text-btn-estilo">\n                        {{data.nome}}\n                    </div>\n                    <div text-align="center" class="btn-confir wrapper">\n\n                    </div>\n                    </span>\n                </ion-col>\n                <ion-col>\n                    <div class="content-search-input-header">\n                    </div> <!-- content-search-input-header -->\n                </ion-col>\n            </ion-row>\n        </ion-grid>\n    </ion-header>\n\n\n</ion-content>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\post\post.html"*/,
+            selector: 'page-post',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\post\post.html"*/'<ion-content>\n\n    <div class="header-background" [hidden]="text"></div> <!-- header-background -->\n\n    <ion-header [hidden]="text">\n        <ion-grid>\n            <ion-row style="display: inline-flex;   ">\n                <ion-col col-1 class="col-icon">\n                    <div class="icon-back-header">\n\n                        <svg class="ico-back-header">\n                            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n                        </svg> <!-- ico-back-header -->\n                    </div> <!-- icon-back-header -->\n\n\n                </ion-col>\n                <ion-col col-auto style="width: 46%;">\n                    <div class="text-btn-publicar">PUBLIQUE ALGO...</div>\n                </ion-col>\n                <ion-col col-auto style="width: 45%">\n                    <div class="head-icon-right">\n                    <span text-align="center" class="btn-publicar">\n                        <div class="icon-publicar-send">\n                    <svg class="svg-send-header">\n                        <use [attr.xlink:href]="constants.src_svg + \'send-button.svg#Layer_1\'"></use>\n                    </svg> <!-- ico-back-header -->\n                        </div>\n                    <div text-align="center" class="text-btn-publicar">\n                        Publicar\n                    </div>\n                    <div text-align="center" class="btn-wrapper">\n\n                    </div>\n                    </span>\n                    </div>\n                </ion-col>\n            </ion-row>\n        </ion-grid>\n    </ion-header>\n\n    <div class="content-post">\n\n        <div class="empty-content-header" [hidden]="text">\n\n        </div>\n        <ion-row class="content-info-post row-user" [hidden]="text">\n            <ion-col col-3 class="col-user">\n                <div class="content-icon">\n                    <div class="content-icon-user">\n                        <div class="img-user-post">\n\n                        </div>\n                    </div>\n                </div>\n            </ion-col>\n            <ion-col class="col-user">\n                <div class="content-data-user">\n\n                    <div class="empty-content">\n\n                    </div>\n\n                    <div class="text-nome-fantasia">\n                        <b>UNIQUE CHIC</b>\n                    </div>\n\n\n\n                    <div class="content-btn-loc">\n\n                        <button ion-button class="btn-estilo" outline>\n                            <div text-align="center" class="btn-confir wrapper">\n                            <svg class="svg-ico-usertype">\n                                <use [attr.xlink:href]="constants.src_svg + \'maps-and-flags.svg#Layer_1\'"></use>\n                            </svg> <!-- svg-ico-usertype -->\n                        </div>\n                            <div text-align="center" class="text-btn-estilo">\n                                LOCALIZAR\n                            </div></button>\n\n                        <!--<div text-align="center" class="btn-estilo">-->\n                            <!---->\n                        <!--</div>-->\n                    </div>\n                </div>\n\n            </ion-col>\n        </ion-row>\n\n        <div class="content-data-post">\n            <ion-textarea #textInput placeholder="Escreva algo..." (ionBlur)="onBlur()" (ionFocus)="onFocus()" (keypress)="eventHandler($event.keyCode, $event.target)"></ion-textarea>\n        </div>\n\n    </div>\n\n\n</ion-content>\n\n<ion-footer class="foo" [hidden]="text">\n    <ion-row>\n\n        <ion-col class="col-footer">\n            <div class="col-footer-post">\n                <div class="icon-footer">\n                    <svg class="svg-footer">\n                        <use [attr.xlink:href]="constants.src_svg + \'shirt-hanger.svg#Layer_1\'"></use>\n                    </svg> <!-- ico-back-header -->\n                </div>\n                <div class="text-footer-post">Produtos</div>\n            </div>\n        </ion-col>\n\n        <ion-col class="col-footer">\n            <div class="col-footer-post">\n                <div class="icon-footer">\n                    <svg class="svg-footer">\n                        <use [attr.xlink:href]="constants.src_svg + \'picture.svg#Layer_1\'"></use>\n                    </svg> <!-- ico-back-header -->\n                </div>\n                <div class="text-footer-post">Imagens</div>\n            </div>\n        </ion-col>\n\n    </ion-row>\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\post\post.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Keyboard */]])
     ], PostPage);
     return PostPage;
 }());
