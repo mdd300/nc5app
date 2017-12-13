@@ -29586,7 +29586,6 @@ page-system-tabs .tabbar {
 
 page-system-tabs .tabbar.show-tabbar {
   background: #fff;
-  padding: 10px 0;
 }
 
 page-system-tabs .tabs-ios .tab-button {
@@ -29607,4 +29606,8 @@ page-system-tabs .tabs-md .tab-button-icon {
 
 page-system-tabs .tabs-md .tab-button {
   min-height: 0 !important;
+}
+
+page-system-tabs .tab-button {
+  padding: 10px 5px !important;
 }

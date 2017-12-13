@@ -1,9 +1,7 @@
 page-system-tabs {
-
   .tabbar{
     &.show-tabbar {
       background: #fff;
-      padding: 10px 0;
     } /** .show-tabbar */
   }/** .tabbar */
 
@@ -15,5 +13,5 @@ page-system-tabs {
       min-height: 0 !important;
     }
   }
-
+  .tab-button{ padding: 10px 5px !important; }
 }
