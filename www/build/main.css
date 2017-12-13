@@ -29634,6 +29634,15 @@ page-post .empty-content-header {
   width: 100%;
 }
 
+page-post .input-text-post {
+  height: 100%;
+  font-size: 1.5em;
+}
+
+page-post .content-data-post {
+  height: 100%;
+}
+
 page-slides {
   /** slider-content */
 }
