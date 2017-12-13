@@ -25840,6 +25840,73 @@ ion-navbar.toolbar {
 }
 
 /** cad-form-content */
+/** Criação de ICONES customizados para o footer dos Tabs */
+.ion-ios-QrHome-outline,
+.ion-ios-QrHome, .ion-md-QrHome, .ion-md-QrHome-outline {
+  content: url("../assets/themes/prototype/img/svg/menu-inferior/home.svg");
+  width: 40%;
+}
+
+.ion-ios-QrHome-outline[ng-reflect-is-active="true"],
+.ion-ios-QrHome[ng-reflect-is-active="true"], .ion-md-QrHome[ng-reflect-is-active="true"], .ion-md-QrHome-outline[ng-reflect-is-active="true"] {
+  content: url("../assets/themes/prototype/img/svg/menu-inferior/home-fill.svg");
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+
+.ion-ios-QrExplore-outline,
+.ion-ios-QrExplore, .ion-md-QrExplore, .ion-md-QrExplore-outline {
+  content: url("../assets/themes/prototype/img/svg/menu-inferior/search.svg");
+  width: 40%;
+}
+
+.ion-ios-QrExplore-outline[ng-reflect-is-active="true"],
+.ion-ios-QrExplore[ng-reflect-is-active="true"], .ion-md-QrExplore[ng-reflect-is-active="true"], .ion-md-QrExplore-outline[ng-reflect-is-active="true"] {
+  content: url("../assets/themes/prototype/img/svg/menu-inferior/search-fill.svg");
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+
+.ion-ios-QrBag-outline,
+.ion-ios-QrBag, .ion-md-QrBag, .ion-md-QrBag-outline {
+  content: url("../assets/themes/prototype/img/svg/menu-inferior/bag.svg");
+  width: 40%;
+}
+
+.ion-ios-QrBag-outline[ng-reflect-is-active="true"],
+.ion-ios-QrBag[ng-reflect-is-active="true"], .ion-md-QrBag[ng-reflect-is-active="true"], .ion-md-QrBag-outline[ng-reflect-is-active="true"] {
+  content: url("../assets/themes/prototype/img/svg/menu-inferior/bag-fill.svg");
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+
+.ion-ios-QrNotification-outline,
+.ion-ios-QrNotification, .ion-md-QrNotification, .ion-md-QrNotification-outline {
+  content: url("../assets/themes/prototype/img/svg/menu-inferior/notification.svg");
+  width: 40%;
+}
+
+.ion-ios-QrNotification-outline[ng-reflect-is-active="true"],
+.ion-ios-QrNotification[ng-reflect-is-active="true"], .ion-md-QrNotification[ng-reflect-is-active="true"], .ion-md-QrNotification-outline[ng-reflect-is-active="true"] {
+  content: url("../assets/themes/prototype/img/svg/menu-inferior/notification-fill.svg");
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+
+.ion-ios-QrMore-outline,
+.ion-ios-QrMore, .ion-md-QrMore, .ion-md-QrMore-outline {
+  content: url("../assets/themes/prototype/img/svg/menu-inferior/menu.svg");
+  width: 40%;
+}
+
+.ion-ios-QrMore-outline[ng-reflect-is-active="true"],
+.ion-ios-QrMore[ng-reflect-is-active="true"], .ion-md-QrMore[ng-reflect-is-active="true"], .ion-md-QrMore-outline[ng-reflect-is-active="true"] {
+  content: url("../assets/themes/prototype/img/svg/menu-inferior/menu-fill.svg");
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+
+/** Fim da criação dos icones das tabs do app */
 fixed-menu {
   /** foot-menu */
 }
@@ -29506,4 +29573,38 @@ page-slides .slider-content .skip-slider {
   padding: 10px 0;
   background: none;
   font-size: 17px;
+}
+
+page-system-tabs {
+  /** .tabbar */
+  /** .tabs-ios .tab-button */
+}
+
+page-system-tabs .tabbar {
+  /** .show-tabbar */
+}
+
+page-system-tabs .tabbar.show-tabbar {
+  background: #fff;
+  padding: 10px 0;
+}
+
+page-system-tabs .tabs-ios .tab-button {
+  min-height: 0 !important;
+}
+
+page-system-tabs .tabs-ios .tab-button-icon {
+  margin: 0;
+  min-width: 0;
+  height: auto;
+}
+
+page-system-tabs .tabs-md .tab-button-icon {
+  margin: 0;
+  min-width: 0;
+  height: auto;
+}
+
+page-system-tabs .tabs-md .tab-button {
+  min-height: 0 !important;
 }

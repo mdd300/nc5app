@@ -16,6 +16,9 @@ import {ExplorePageModule} from "../pages/themes/prototype/explore/explore.modul
 import {GostosPageModule} from "../pages/themes/prototype/gostos/gostos.module";
 import {FeedPageModule} from "../pages/themes/prototype/feed/feed.module";
 import {PostPageModule} from "../pages/themes/prototype/post/post.module";
+import {LoginPage} from "../pages/themes/prototype/login/login";
+import {SystemTabsPageModule} from "../pages/themes/prototype/system-tabs/system-tabs.module";
+import {SystemTabsPage} from "../pages/themes/prototype/system-tabs/system-tabs";
 
 
 @NgModule({
@@ -34,12 +37,15 @@ import {PostPageModule} from "../pages/themes/prototype/post/post.module";
         GostosPageModule,
         FeedPageModule,
         PostPageModule,
+        SystemTabsPageModule,
         IonicModule.forRoot(Qrgo_prototype)
     ],
     bootstrap: [IonicApp],
     entryComponents: [
         Qrgo_prototype,
-        SlidesPage
+        SlidesPage,
+        LoginPage,
+        SystemTabsPage
     ],
     providers: [
         StatusBar,

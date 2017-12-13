@@ -1,0 +1,19 @@
+page-system-tabs {
+
+  .tabbar{
+    &.show-tabbar {
+      background: #fff;
+      padding: 10px 0;
+    } /** .show-tabbar */
+  }/** .tabbar */
+
+  .tabs-ios .tab-button{ min-height: 0 !important; }/** .tabs-ios .tab-button */
+  .tabs-ios .tab-button-icon{ margin: 0; min-width: 0; height: auto; }
+  .tabs-md .tab-button-icon{ margin: 0; min-width: 0; height: auto; }
+  .tabs-md{
+    .tab-button{
+      min-height: 0 !important;
+    }
+  }
+
+}

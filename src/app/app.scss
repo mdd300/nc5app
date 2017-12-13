@@ -128,3 +128,56 @@
 }
 
 /** cad-form-content */
+
+
+/** Criação de ICONES customizados para o footer dos Tabs */
+.ion-ios-QrHome-outline,
+.ion-ios-QrHome,.ion-md-QrHome,.ion-md-QrHome-outline {
+  content: url('../assets/themes/prototype/img/svg/menu-inferior/home.svg');
+  width: 40%;
+  &[ng-reflect-is-active="true"]{
+    content: url('../assets/themes/prototype/img/svg/menu-inferior/home-fill.svg');
+    transform: none !important;
+  }
+}
+
+.ion-ios-QrExplore-outline,
+.ion-ios-QrExplore,.ion-md-QrExplore,.ion-md-QrExplore-outline {
+  content: url('../assets/themes/prototype/img/svg/menu-inferior/search.svg');
+  width: 40%;
+  &[ng-reflect-is-active="true"]{
+    content: url('../assets/themes/prototype/img/svg/menu-inferior/search-fill.svg');
+    transform: none !important;
+  }
+}
+
+.ion-ios-QrBag-outline,
+.ion-ios-QrBag,.ion-md-QrBag,.ion-md-QrBag-outline {
+  content: url('../assets/themes/prototype/img/svg/menu-inferior/bag.svg');
+  width: 40%;
+  &[ng-reflect-is-active="true"]{
+    content: url('../assets/themes/prototype/img/svg/menu-inferior/bag-fill.svg');
+    transform: none !important;
+  }
+}
+
+.ion-ios-QrNotification-outline,
+.ion-ios-QrNotification,.ion-md-QrNotification,.ion-md-QrNotification-outline {
+  content: url('../assets/themes/prototype/img/svg/menu-inferior/notification.svg');
+  width: 40%;
+  &[ng-reflect-is-active="true"]{
+    content: url('../assets/themes/prototype/img/svg/menu-inferior/notification-fill.svg');
+    transform: none !important;
+  }
+}
+
+.ion-ios-QrMore-outline,
+.ion-ios-QrMore,.ion-md-QrMore,.ion-md-QrMore-outline {
+  content: url('../assets/themes/prototype/img/svg/menu-inferior/menu.svg');
+  width: 40%;
+  &[ng-reflect-is-active="true"]{
+    content: url('../assets/themes/prototype/img/svg/menu-inferior/menu-fill.svg');
+    transform: none !important;
+  }
+}
+/** Fim da criação dos icones das tabs do app */
