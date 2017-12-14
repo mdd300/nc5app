@@ -15,8 +15,7 @@ export class Qrgo_prototype {
 
     private storage: string = localStorage.getItem('qrgo_application');
     private session: any = JSON.parse(this.storage);
-    //rootPage: any = ( ( this.session == null || this.session.first_access != false ) ? SlidesPage : LoginPage );
-    rootPage: any = SystemTabsPage;
+    rootPage: any = ( ( this.session == null || this.session.first_access != false ) ? SlidesPage : LoginPage );
 
 
     constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {

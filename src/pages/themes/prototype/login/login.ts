@@ -3,8 +3,7 @@ import {IonicPage, NavController, NavParams, ToastController} from 'ionic-angula
 import {Constants} from "../../../../config/Constants";
 import {SlidesPage} from "../slides/slides";
 import {Step1Page} from "../cadastro/step1/step1";
-import {ExplorePage} from "../explore/explore";
-
+import {SystemTabsPage} from "../system-tabs/system-tabs";
 /**
  * Generated class for the LoginPage page.
  *
@@ -43,7 +42,7 @@ export class LoginPage {
      * Função utilizada para realizar o login do usuário */
     public doLogin = ( ()=>{
         /* Redireciona a pagina root como a pagina de exploração */
-        this.navCtrl.setRoot( ExplorePage, {}, {animate: true, direction: 'forward'} );
+        this.navCtrl.setRoot( SystemTabsPage, {}, {animate: true, direction: 'forward'} );
     });/* Fim da função de realização do login do usuário */
 
 
