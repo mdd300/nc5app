@@ -3,6 +3,7 @@ import {IonicPage, NavController, NavParams, AlertController, Keyboard} from 'io
 import {Constants} from "../../../../../config/Constants";
 import {Step1Page} from "../step1/step1";
 import {Step3Page} from "../step3/step3";
+import {Http} from '@angular/http';
 
 /**
  * Generated class for the Step2Page page.
@@ -20,13 +21,16 @@ export class Step2Page {
 
     public constants = Constants;
     public cnpj:any = "";
+    public emp:any = {razao:"" , nome:"", bairro:"" , endereco:"" , numero:"", cidade:"", estado:""};
     public stepOk:boolean = false;
 
-    constructor(
+
+constructor(
         public navCtrl: NavController,
         public navParams: NavParams,
         private alertCtrl: AlertController,
-        private keyboard: Keyboard
+        private keyboard: Keyboard,
+        private http: Http
     ) {}
 
     /**
@@ -43,10 +47,22 @@ export class Step2Page {
     public keyupCnpj = (( cnpj:number )=>{
         /* Verifica se o CNPJ é real */
         this.stepOk = ( ( cnpj == 123 ) ? true : false );
+        this.getPeople();
+        console.log(cnpj);
         if( this.stepOk ){
             this.keyboard.close();
         }
     });/* Fim da função */
+
+    getPeople() {
+        this.http.post('http://localhost/fashon/qrgo/Cadastro/getCaptcha', JSON.stringify({solicitacao: true})).subscribe(
+            res => {
+
+            }
+        );
+    }
+
+
 
     /**
      * Função utilizada para avançar para o Setep 3 Do cadastro do perfil
@@ -69,3 +85,5 @@ export class Step2Page {
     });/* Fim da função de avanço dos passos de cadastro do perfil */
 
 }
+
+

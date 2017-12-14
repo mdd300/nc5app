@@ -21,7 +21,6 @@ import {LoginPage} from "../pages/themes/prototype/login/login";
 import {SystemTabsPageModule} from "../pages/themes/prototype/system-tabs/system-tabs.module";
 import {SystemTabsPage} from "../pages/themes/prototype/system-tabs/system-tabs";
 import {ForgotPassPageModule} from "../pages/themes/prototype/modais/forgot-pass/forgot-pass.module";
-
 import {HttpModule} from '@angular/http';
 import { CategoriaProvider } from '../providers/categoria/categoria';
 
@@ -46,6 +45,7 @@ import { CategoriaProvider } from '../providers/categoria/categoria';
         LocalizacaoPageModule,
         IonicModule.forRoot(Qrgo_prototype),
         HttpModule,
+
     ],
     bootstrap: [IonicApp],
     entryComponents: [
