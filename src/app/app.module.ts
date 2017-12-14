@@ -20,8 +20,7 @@ import {PostPageModule} from "../pages/themes/prototype/modais/post/post.module"
 import {LoginPage} from "../pages/themes/prototype/login/login";
 import {SystemTabsPageModule} from "../pages/themes/prototype/system-tabs/system-tabs.module";
 import {SystemTabsPage} from "../pages/themes/prototype/system-tabs/system-tabs";
-import {ActionsFeedPageModule} from "../pages/themes/prototype/popovers/actions-feed/actions-feed.module";
-
+import {ForgotPassPageModule} from "../pages/themes/prototype/modais/forgot-pass/forgot-pass.module";
 import {HttpModule} from '@angular/http';
 import { CategoriaProvider } from '../providers/categoria/categoria';
 
@@ -42,14 +41,11 @@ import { CategoriaProvider } from '../providers/categoria/categoria';
         FeedPageModule,
         PostPageModule,
         SystemTabsPageModule,
-        ActionsFeedPageModule,
-<<<<<<< HEAD
+        ForgotPassPageModule,
         LocalizacaoPageModule,
-        IonicModule.forRoot(Qrgo_prototype)
-=======
         IonicModule.forRoot(Qrgo_prototype),
         HttpModule,
->>>>>>> b150d07ea5cd9a4f94f49150b609ac19bbe634d1
+
     ],
     bootstrap: [IonicApp],
     entryComponents: [

@@ -15,6 +15,6 @@ export class CategoriaProvider {
 
   getCategorias()
   {
-    return this.http.get(this.basePath);
+    return this.http.get(this.baseApiPath);
   }
 }

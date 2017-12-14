@@ -61,6 +61,8 @@ export class Step1Page {
     public defineActived = ((data: number) => {
         /* Define o ID do perfil selecionado */
         this.actived = data;
+
+
     });/* Fim da função de definição do perfil selecionado */
 
 
