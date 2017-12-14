@@ -41,8 +41,9 @@ import { CategoriaProvider } from '../providers/categoria/categoria';
         PostPageModule,
         SystemTabsPageModule,
         ActionsFeedPageModule,
-        IonicModule.forRoot(Qrgo_prototype),
         HttpModule,
+        IonicModule.forRoot(Qrgo_prototype),
+
     ],
     bootstrap: [IonicApp],
     entryComponents: [

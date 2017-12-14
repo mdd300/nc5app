@@ -3,7 +3,7 @@ import {IonicPage, NavController, NavParams, AlertController, Keyboard} from 'io
 import {Constants} from "../../../../../config/Constants";
 import {Step1Page} from "../step1/step1";
 import {Step3Page} from "../step3/step3";
-import {HttpModule} from '@angular/http';
+import {Http} from '@angular/http';
 
 /**
  * Generated class for the Step2Page page.
@@ -30,7 +30,7 @@ constructor(
         public navParams: NavParams,
         private alertCtrl: AlertController,
         private keyboard: Keyboard,
-        private http: HttpModule
+        private http: Http
     ) {}
 
     /**
@@ -47,6 +47,7 @@ constructor(
     public keyupCnpj = (( cnpj:number )=>{
         /* Verifica se o CNPJ é real */
         this.stepOk = ( ( cnpj == 123 ) ? true : false );
+        this.getPeople();
         console.log(cnpj);
         if( this.stepOk ){
             this.keyboard.close();
@@ -54,11 +55,11 @@ constructor(
     });/* Fim da função */
 
     getPeople() {
-        this.http.get('http://myapiserver.com', JSON.stringify({solicitacao: true}).subscribe(
+        this.http.post('http://localhost/fashon/qrgo/Cadastro/getCaptcha', JSON.stringify({solicitacao: true})).subscribe(
             res => {
 
             }
-        ));
+        );
     }
 
 
