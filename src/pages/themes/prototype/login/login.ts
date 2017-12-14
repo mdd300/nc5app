@@ -58,7 +58,9 @@ export class LoginPage {
 
         var data_send = this.logindata;
 
-        this.http.post('http://localhost/fashon/qrgo/login/dologin', $.param(data_send)).subscribe(response => {
+        this.http.post(this.constants.api_path + 'login/dologin', $.param(data_send)).subscribe(response => {
+
+            console.log(response);
 
             this.login = JSON.parse(response._body);
 
@@ -73,7 +75,6 @@ export class LoginPage {
                 setTimeout(function () {
                     __this.login.text = "";
                 }, 2000);
-                // this.teste = this.login.text;
             }
 
         });
