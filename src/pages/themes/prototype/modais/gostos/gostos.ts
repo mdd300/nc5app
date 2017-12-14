@@ -90,8 +90,16 @@ export class GostosPage {
     };
 
     public closeMeModal = (() => {
-        if (this.actived.length > 0)
-            this.viewCtrl.dismiss();
+        if (this.actived.length > 0) {
+
+            this.categoriaProvider.setCategorias(this.actived).subscribe(data => {
+                console.log(data);
+            }, error => {
+                console.log(error);
+            }).add(() => {
+                this.viewCtrl.dismiss();
+            });
+        }
     });
 
     public defineActived = ((data) => {
