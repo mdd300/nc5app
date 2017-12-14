@@ -1,7 +1,8 @@
 import {Component, ViewChild} from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {IonicPage, ModalController, NavController, NavParams} from 'ionic-angular';
 import {Constants} from "../../../../../config/Constants";
 import { Keyboard } from 'ionic-angular';
+import {LocalizacaoPage} from "../localizacao/localizacao";
 
 /**
  * Generated class for the PostPage page.
@@ -21,7 +22,7 @@ export class PostPage {
     public text = false;
     @ViewChild('textInput') textInput;
 
-    constructor(public navCtrl: NavController, public navParams: NavParams, public keyboard: Keyboard) {
+    constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController, public keyboard: Keyboard) {
   }
 
     public onBlur = ( ()=>{
@@ -44,6 +45,13 @@ export class PostPage {
             activeElement && activeElement.blur && activeElement.blur();
             this.keyboard.close();
         }
+    });
+
+    // Abrir modal para realizar psot
+    public LocationPost = ( ()=>{
+        let profileModal = this.modalCtrl.create(LocalizacaoPage);
+        profileModal.present();
+
     });
 
 

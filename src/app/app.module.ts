@@ -14,12 +14,16 @@ import {Step3PageModule} from "../pages/themes/prototype/cadastro/step3/step3.mo
 import {ConfirmCadPageModule} from "../pages/themes/prototype/cadastro/confirm-cad/confirm-cad.module";
 import {ExplorePageModule} from "../pages/themes/prototype/explore/explore.module";
 import {GostosPageModule} from "../pages/themes/prototype/modais/gostos/gostos.module";
+import {LocalizacaoPageModule} from "../pages/themes/prototype/modais/localizacao/localizacao.module";
 import {FeedPageModule} from "../pages/themes/prototype/feed/feed.module";
 import {PostPageModule} from "../pages/themes/prototype/modais/post/post.module";
 import {LoginPage} from "../pages/themes/prototype/login/login";
 import {SystemTabsPageModule} from "../pages/themes/prototype/system-tabs/system-tabs.module";
 import {SystemTabsPage} from "../pages/themes/prototype/system-tabs/system-tabs";
 import {ForgotPassPageModule} from "../pages/themes/prototype/modais/forgot-pass/forgot-pass.module";
+
+import {HttpModule} from '@angular/http';
+import { CategoriaProvider } from '../providers/categoria/categoria';
 
 @NgModule({
     declarations: [
@@ -39,7 +43,9 @@ import {ForgotPassPageModule} from "../pages/themes/prototype/modais/forgot-pass
         PostPageModule,
         SystemTabsPageModule,
         ForgotPassPageModule,
-        IonicModule.forRoot(Qrgo_prototype)
+        LocalizacaoPageModule,
+        IonicModule.forRoot(Qrgo_prototype),
+        HttpModule,
     ],
     bootstrap: [IonicApp],
     entryComponents: [
@@ -51,7 +57,8 @@ import {ForgotPassPageModule} from "../pages/themes/prototype/modais/forgot-pass
     providers: [
         StatusBar,
         SplashScreen,
-        {provide: ErrorHandler, useClass: IonicErrorHandler}
+        {provide: ErrorHandler, useClass: IonicErrorHandler},
+        CategoriaProvider
     ]
 
 })

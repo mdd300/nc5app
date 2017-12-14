@@ -95,7 +95,7 @@ export class FeedPage {
     private feedAction:any = null;
 
     /**
-     * Função utilizada para realizar ações relacionadas para 
+     * Função utilizada para realizar ações relacionadas para
      * @param post
      */
     public actionsPostFeed( post:any ) {
@@ -107,11 +107,6 @@ export class FeedPage {
                 {
                     text: 'Publicação: ' + this.feedAction.company.toUpperCase(),
                     cssClass: 'closeFeedActions'
-                },
-                {
-                    text: 'Deixar de Seguir: ' + this.feedAction.company.toUpperCase(),
-                    cssClass: 'actionButton btnUnfollow',
-                    handler: () => {}
                 },
                 {
                     text: 'Ocultar: ' + this.feedAction.company.toUpperCase(),

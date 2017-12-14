@@ -66,21 +66,21 @@
                     </div>
 
 
-
                     <div class="content-btn-loc">
 
-                        <button ion-button class="btn-estilo" outline>
+                        <button ion-button class="btn-estilo" (click)="LocationPost()" outline>
                             <div text-align="center" class="btn-confir wrapper">
-                            <svg class="svg-ico-usertype">
-                                <use [attr.xlink:href]="constants.src_svg + 'maps-and-flags.svg#Layer_1'"></use>
-                            </svg> <!-- svg-ico-usertype -->
-                        </div>
+                                <svg class="svg-ico-usertype">
+                                    <use [attr.xlink:href]="constants.src_svg + 'maps-and-flags.svg#Layer_1'"></use>
+                                </svg> <!-- svg-ico-usertype -->
+                            </div>
                             <div text-align="center" class="text-btn-estilo">
                                 LOCALIZAR
-                            </div></button>
+                            </div>
+                        </button>
 
                         <!--<div text-align="center" class="btn-estilo">-->
-                            <!---->
+                        <!---->
                         <!--</div>-->
                     </div>
                 </div>
@@ -89,7 +89,9 @@
         </ion-row>
 
         <div class="content-data-post">
-            <ion-textarea class="input-text-post" #textInput placeholder="Escreva algo..." (ionBlur)="onBlur()" (ionFocus)="onFocus()" (keypress)="eventHandler($event.keyCode, $event.target)"></ion-textarea>
+            <ion-textarea class="input-text-post" #textInput placeholder="Escreva algo..." (ionBlur)="onBlur()"
+                          (ionFocus)="onFocus()"
+                          (keypress)="eventHandler($event.keyCode, $event.target)"></ion-textarea>
         </div>
 
     </div>
