@@ -7,7 +7,7 @@
     <div class="cont-confirmcode" >
       <div class="cad-form-content">
         <label class="cad-form-label">
-          <input type="text" class="cad-form-ctrl text-center" placeholder="Codigo" >
+          <input type="text" class="cad-form-ctrl text-center" placeholder="Codigo" maxlength="6" [(ngModel)]="codeautentic" (keyup)="autenticaCod ( codeautentic )" [disabled]="seisdigitos">
         </label><!-- cad-form-label -->
       </div> <!-- cad-form-content -->
     </div> <!-- cont-confirmcode -->

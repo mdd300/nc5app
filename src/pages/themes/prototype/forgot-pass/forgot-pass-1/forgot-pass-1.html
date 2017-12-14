@@ -1,0 +1,49 @@
+<ion-header>
+    <ion-grid>
+        <ion-row>
+            <ion-col col-auto class="col-icon-back" (click)="backPage()">
+                <ion-icon name="ios-arrow-back" class="icon-back"></ion-icon>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-header>
+<ion-content padding>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col> 
+                <h3 class="title-page">
+                    Recuperar Senha.
+                </h3><!-- title-page -->
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <p class="page-description">
+                    Atenção: Se você perdeu, ou não lembra mais a sua senha de acesso, preencha este formulário para iniciar o processo para gerar uma nova senha para você!
+                </p><!-- page-description -->
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+                <span class="label-form">
+                Insira o seu Email
+                </span><!-- label-form -->
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+                <input type="email" class="recover-form" placeholder="exemple@exemple.com">
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+                <button ion-button class="recover-form-btn" > Continuar! </button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+</ion-content>
