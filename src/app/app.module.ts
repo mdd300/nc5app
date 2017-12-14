@@ -22,6 +22,8 @@ import {SystemTabsPageModule} from "../pages/themes/prototype/system-tabs/system
 import {SystemTabsPage} from "../pages/themes/prototype/system-tabs/system-tabs";
 import {ActionsFeedPageModule} from "../pages/themes/prototype/popovers/actions-feed/actions-feed.module";
 
+import {HttpModule} from '@angular/http';
+import { CategoriaProvider } from '../providers/categoria/categoria';
 
 @NgModule({
     declarations: [
@@ -41,8 +43,13 @@ import {ActionsFeedPageModule} from "../pages/themes/prototype/popovers/actions-
         PostPageModule,
         SystemTabsPageModule,
         ActionsFeedPageModule,
+<<<<<<< HEAD
         LocalizacaoPageModule,
         IonicModule.forRoot(Qrgo_prototype)
+=======
+        IonicModule.forRoot(Qrgo_prototype),
+        HttpModule,
+>>>>>>> b150d07ea5cd9a4f94f49150b609ac19bbe634d1
     ],
     bootstrap: [IonicApp],
     entryComponents: [
@@ -54,7 +61,8 @@ import {ActionsFeedPageModule} from "../pages/themes/prototype/popovers/actions-
     providers: [
         StatusBar,
         SplashScreen,
-        {provide: ErrorHandler, useClass: IonicErrorHandler}
+        {provide: ErrorHandler, useClass: IonicErrorHandler},
+        CategoriaProvider
     ]
 
 })

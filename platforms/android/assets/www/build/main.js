@@ -28,7 +28,11 @@ var map = {
 		161
 	],
 	"../pages/themes/prototype/cadastro/step2/step2.module": [
+<<<<<<< HEAD
 		166
+=======
+		176
+>>>>>>> b150d07ea5cd9a4f94f49150b609ac19bbe634d1
 	],
 	"../pages/themes/prototype/cadastro/step3/step3.module": [
 		167
@@ -49,13 +53,21 @@ var map = {
 		173
 	],
 	"../pages/themes/prototype/popovers/actions-feed/actions-feed.module": [
+<<<<<<< HEAD
 		174
+=======
+		173
+>>>>>>> b150d07ea5cd9a4f94f49150b609ac19bbe634d1
 	],
 	"../pages/themes/prototype/slides/slides.module": [
 		175
 	],
 	"../pages/themes/prototype/system-tabs/system-tabs.module": [
+<<<<<<< HEAD
 		176
+=======
+		175
+>>>>>>> b150d07ea5cd9a4f94f49150b609ac19bbe634d1
 	]
 };
 function webpackAsyncContext(req) {
@@ -642,6 +654,7 @@ var Step3Page = (function () {
 /***/ }),
 
 /***/ 166:
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -680,6 +693,8 @@ var Step2PageModule = (function () {
 /***/ }),
 
 /***/ 167:
+=======
+>>>>>>> b150d07ea5cd9a4f94f49150b609ac19bbe634d1
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1034,7 +1049,11 @@ var SlidesPageModule = (function () {
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 176:
+=======
+/***/ 175:
+>>>>>>> b150d07ea5cd9a4f94f49150b609ac19bbe634d1
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1049,6 +1068,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+<<<<<<< HEAD
 
 
 
@@ -1069,6 +1089,66 @@ var SystemTabsPageModule = (function () {
 }());
 
 //# sourceMappingURL=system-tabs.module.js.map
+=======
+
+
+
+var SystemTabsPageModule = (function () {
+    function SystemTabsPageModule() {
+    }
+    SystemTabsPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__system_tabs__["a" /* SystemTabsPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__system_tabs__["a" /* SystemTabsPage */]),
+            ],
+        })
+    ], SystemTabsPageModule);
+    return SystemTabsPageModule;
+}());
+
+//# sourceMappingURL=system-tabs.module.js.map
+
+/***/ }),
+
+/***/ 176:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Step2PageModule", function() { return Step2PageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__step2__ = __webpack_require__(84);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var Step2PageModule = (function () {
+    function Step2PageModule() {
+    }
+    Step2PageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__step2__["a" /* Step2Page */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__step2__["a" /* Step2Page */]),
+            ],
+        })
+    ], Step2PageModule);
+    return Step2PageModule;
+}());
+
+//# sourceMappingURL=step2.module.js.map
+>>>>>>> b150d07ea5cd9a4f94f49150b609ac19bbe634d1
 
 /***/ }),
 
@@ -1101,17 +1181,28 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_themes_prototype_slides_slides_module__ = __webpack_require__(175);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_themes_prototype_login_login_module__ = __webpack_require__(171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_themes_prototype_cadastro_step1_step1_module__ = __webpack_require__(161);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_themes_prototype_cadastro_step2_step2_module__ = __webpack_require__(166);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_themes_prototype_cadastro_step3_step3_module__ = __webpack_require__(167);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_themes_prototype_cadastro_step2_step2_module__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_themes_prototype_cadastro_step3_step3_module__ = __webpack_require__(166);
+>>>>>>> b150d07ea5cd9a4f94f49150b609ac19bbe634d1
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_themes_prototype_cadastro_confirm_cad_confirm_cad_module__ = __webpack_require__(159);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_themes_prototype_explore_explore_module__ = __webpack_require__(168);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_themes_prototype_modais_gostos_gostos_module__ = __webpack_require__(172);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_themes_prototype_feed_feed_module__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_themes_prototype_modais_post_post_module__ = __webpack_require__(173);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_themes_prototype_login_login__ = __webpack_require__(41);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_themes_prototype_system_tabs_system_tabs_module__ = __webpack_require__(176);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_themes_prototype_system_tabs_system_tabs__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_themes_prototype_popovers_actions_feed_actions_feed_module__ = __webpack_require__(174);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_themes_prototype_system_tabs_system_tabs_module__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_themes_prototype_system_tabs_system_tabs__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_themes_prototype_popovers_actions_feed_actions_feed_module__ = __webpack_require__(173);
+>>>>>>> b150d07ea5cd9a4f94f49150b609ac19bbe634d1
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1165,7 +1256,6 @@ var AppModule = (function () {
                     links: [
                         { loadChildren: '../pages/themes/prototype/cadastro/confirm-cad/confirm-cad.module#ConfirmCadPageModule', name: 'ConfirmCadPage', segment: 'confirm-cad', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/cadastro/step1/step1.module#Step1PageModule', name: 'Step1Page', segment: 'step1', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/cadastro/step2/step2.module#Step2PageModule', name: 'Step2Page', segment: 'step2', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/cadastro/step3/step3.module#Step3PageModule', name: 'Step3Page', segment: 'step3', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/explore/explore.module#ExplorePageModule', name: 'ExplorePage', segment: 'explore', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/feed/feed.module#FeedPageModule', name: 'FeedPage', segment: 'feed', priority: 'low', defaultHistory: [] },
@@ -1174,7 +1264,12 @@ var AppModule = (function () {
                         { loadChildren: '../pages/themes/prototype/modais/post/post.module#PostPageModule', name: 'PostPage', segment: 'post', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/popovers/actions-feed/actions-feed.module#ActionsFeedPageModule', name: 'ActionsFeedPage', segment: 'actions-feed', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/slides/slides.module#SlidesPageModule', name: 'SlidesPage', segment: 'slides', priority: 'low', defaultHistory: [] },
+<<<<<<< HEAD
                         { loadChildren: '../pages/themes/prototype/system-tabs/system-tabs.module#SystemTabsPageModule', name: 'SystemTabsPage', segment: 'system-tabs', priority: 'low', defaultHistory: [] }
+=======
+                        { loadChildren: '../pages/themes/prototype/system-tabs/system-tabs.module#SystemTabsPageModule', name: 'SystemTabsPage', segment: 'system-tabs', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/cadastro/step2/step2.module#Step2PageModule', name: 'Step2Page', segment: 'step2', priority: 'low', defaultHistory: [] }
+>>>>>>> b150d07ea5cd9a4f94f49150b609ac19bbe634d1
                     ]
                 })
             ],

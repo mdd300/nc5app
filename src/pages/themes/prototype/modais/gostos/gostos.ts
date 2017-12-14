@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams, ViewController} from 'ionic-angular';
 import {Constants} from "../../../../../config/Constants";
+import { CategoriaProvider } from '../../../../../providers/categoria/categoria';
 
 /**
  * Generated class for the GostosPage page.
@@ -13,6 +14,9 @@ import {Constants} from "../../../../../config/Constants";
 @Component({
     selector: 'page-gostos',
     templateUrl: 'gostos.html',
+    providers: [
+        CategoriaProvider
+    ]
 })
 export class GostosPage {
 
@@ -106,8 +110,8 @@ export class GostosPage {
 
     constructor(public navCtrl: NavController,
                 public navParams: NavParams,
-                public viewCtrl: ViewController,) {
-        this.teste();
+                public viewCtrl: ViewController,
+                public categoriaProvider: CategoriaProvider) {
     }
 
     public teste() {
@@ -200,4 +204,8 @@ export class GostosPage {
     });
     /* Fim da função de definição do perfil selecionado */
 
+    ionViewDidLoad()
+    {
+        this.teste();
+    }
 }
