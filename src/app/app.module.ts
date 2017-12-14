@@ -14,6 +14,7 @@ import {Step3PageModule} from "../pages/themes/prototype/cadastro/step3/step3.mo
 import {ConfirmCadPageModule} from "../pages/themes/prototype/cadastro/confirm-cad/confirm-cad.module";
 import {ExplorePageModule} from "../pages/themes/prototype/explore/explore.module";
 import {GostosPageModule} from "../pages/themes/prototype/modais/gostos/gostos.module";
+import {LocalizacaoPageModule} from "../pages/themes/prototype/modais/localizacao/localizacao.module";
 import {FeedPageModule} from "../pages/themes/prototype/feed/feed.module";
 import {PostPageModule} from "../pages/themes/prototype/modais/post/post.module";
 import {LoginPage} from "../pages/themes/prototype/login/login";
@@ -40,6 +41,7 @@ import {ActionsFeedPageModule} from "../pages/themes/prototype/popovers/actions-
         PostPageModule,
         SystemTabsPageModule,
         ActionsFeedPageModule,
+        LocalizacaoPageModule,
         IonicModule.forRoot(Qrgo_prototype)
     ],
     bootstrap: [IonicApp],
