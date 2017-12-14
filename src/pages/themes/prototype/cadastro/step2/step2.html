@@ -45,7 +45,7 @@
                             <div class="cad-form-content">
                                 <label class="cad-form-label">
                                     <span class="cad-form-label-txt"> Razão Social: </span> <!-- cad-form-label-txt -->
-                                    <input type="text" class="cad-form-ctrl" placeholder="Razão Social" value="Danillo Alves de Oliveira 47906756886" readonly>
+                                    <input type="text" class="cad-form-ctrl" placeholder="Razão Social" [(ngModel)]="emp.razao" value="" readonly>
                                 </label><!-- cad-form-label -->
                             </div> <!-- cad-form-content -->
 
@@ -57,7 +57,7 @@
                             <div class="cad-form-content">
                                 <label class="cad-form-label">
                                     <span class="cad-form-label-txt"> Nome Fantasia: </span> <!-- cad-form-label-txt -->
-                                    <input type="text" class="cad-form-ctrl" placeholder="Nome Fantasia" value="Webdragon" readonly>
+                                    <input type="text" class="cad-form-ctrl" placeholder="Nome Fantasia"  [(ngModel)]="emp.nome" readonly>
                                 </label><!-- cad-form-label -->
                             </div> <!-- cad-form-content -->
 
@@ -69,7 +69,7 @@
                             <div class="cad-form-content">
                                 <label class="cad-form-label">
                                     <span class="cad-form-label-txt"> Bairro: </span> <!-- cad-form-label-txt -->
-                                    <input type="text" class="cad-form-ctrl" placeholder="Bairro" value="Pq. Piratininga." readonly>
+                                    <input type="text" class="cad-form-ctrl" placeholder="Bairro" [(ngModel)]="emp.bairro" readonly>
                                 </label><!-- cad-form-label -->
                             </div> <!-- cad-form-content -->
 
@@ -81,7 +81,7 @@
                             <div class="cad-form-content">
                                 <label class="cad-form-label">
                                     <span class="cad-form-label-txt"> Endereço: </span> <!-- cad-form-label-txt -->
-                                    <input type="text" class="cad-form-ctrl" placeholder="Endereço" value="Teófilo Braga" readonly>
+                                    <input type="text" class="cad-form-ctrl" placeholder="Endereço" [(ngModel)]="emp.endereco" readonly>
                                 </label><!-- cad-form-label -->
                             </div> <!-- cad-form-content -->
 
@@ -91,7 +91,7 @@
                             <div class="cad-form-content">
                                 <label class="cad-form-label">
                                     <span class="cad-form-label-txt"> Nº: </span> <!-- cad-form-label-txt -->
-                                    <input type="text" class="cad-form-ctrl" placeholder="Nº" value="415" readonly>
+                                    <input type="text" class="cad-form-ctrl" placeholder="Nº" [(ngModel)]="emp.numero" readonly>
                                 </label><!-- cad-form-label -->
                             </div> <!-- cad-form-content -->
                         </ion-col>
@@ -103,7 +103,7 @@
                             <div class="cad-form-content">
                                 <label class="cad-form-label">
                                     <span class="cad-form-label-txt"> Cidade: </span> <!-- cad-form-label-txt -->
-                                    <input type="text" class="cad-form-ctrl" placeholder="Cidade" value="Itaquaquecetuba" readonly>
+                                    <input type="text" class="cad-form-ctrl" placeholder="Cidade" [(ngModel)]="emp.cidade" readonly>
                                 </label><!-- cad-form-label -->
                             </div> <!-- cad-form-content -->
 
@@ -113,7 +113,7 @@
                             <div class="cad-form-content">
                                 <label class="cad-form-label">
                                     <span class="cad-form-label-txt"> Estado: </span> <!-- cad-form-label-txt -->
-                                    <input type="text" class="cad-form-ctrl" placeholder="Estado" value="São Paulo" readonly>
+                                    <input type="text" class="cad-form-ctrl" placeholder="Estado" [(ngModel)]="emp.estado" readonly>
                                 </label><!-- cad-form-label -->
                             </div> <!-- cad-form-content -->
                         </ion-col>
