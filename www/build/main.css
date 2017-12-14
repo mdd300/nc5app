@@ -26627,7 +26627,7 @@ page-step1 .scroll-content .choose-content .choose-column .type-user .icon-user-
   position: relative;
   background: #fff;
   border: 1px solid #b4c1d6;
-  border-radius: 25px;
+  border-radius: 20px;
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -27232,7 +27232,7 @@ page-step3 .button-finish {
   margin: 10px auto;
   display: table;
   font-family: Multicolore;
-  border-radius: 40px;
+  border-radius: 30px;
 }
 
 page-explore {
@@ -29140,7 +29140,7 @@ page-login .login-page .content-login-form .content-form-login .form-cont.pdg-b2
 page-login .login-page .content-login-form .content-form-login .form-cont .form-ctrl {
   width: 100%;
   border: 1px solid #b4c1d6;
-  border-radius: 25px;
+  border-radius: 20px;
   padding: 13px 15px;
   font-family: Roboto;
   color: #5f6c81;

@@ -13,12 +13,13 @@ import {Step2PageModule} from "../pages/themes/prototype/cadastro/step2/step2.mo
 import {Step3PageModule} from "../pages/themes/prototype/cadastro/step3/step3.module";
 import {ConfirmCadPageModule} from "../pages/themes/prototype/cadastro/confirm-cad/confirm-cad.module";
 import {ExplorePageModule} from "../pages/themes/prototype/explore/explore.module";
-import {GostosPageModule} from "../pages/themes/prototype/gostos/gostos.module";
+import {GostosPageModule} from "../pages/themes/prototype/modais/gostos/gostos.module";
 import {FeedPageModule} from "../pages/themes/prototype/feed/feed.module";
-import {PostPageModule} from "../pages/themes/prototype/post/post.module";
+import {PostPageModule} from "../pages/themes/prototype/modais/post/post.module";
 import {LoginPage} from "../pages/themes/prototype/login/login";
 import {SystemTabsPageModule} from "../pages/themes/prototype/system-tabs/system-tabs.module";
 import {SystemTabsPage} from "../pages/themes/prototype/system-tabs/system-tabs";
+import {ActionsFeedPage} from "../pages/themes/prototype/popovers/actions-feed/actions-feed";
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import {SystemTabsPage} from "../pages/themes/prototype/system-tabs/system-tabs"
         FeedPageModule,
         PostPageModule,
         SystemTabsPageModule,
+        ActionsFeedPage,
         IonicModule.forRoot(Qrgo_prototype)
     ],
     bootstrap: [IonicApp],

@@ -45,7 +45,7 @@ page-login {
         width: 100%;
         text-align: center;
         font-family: Multicolore;
-        color: $grey-color;
+        color: $color-grey;
         font-size: 1.3em;
       }
       /** welcome-title */
@@ -78,17 +78,17 @@ page-login {
 
           .form-ctrl {
             width: 100%;
-            border: 1px solid $grey-color;
-            border-radius: 25px;
+            border: 1px solid $color-grey;
+            border-radius: $border-rd-lg;
             padding: 13px 15px;
             font-family: Roboto;
-            color: $grey-color - #555;
+            color: $color-grey - #555;
 
             &::-moz-placeholder {
-              color: $grey-color;
+              color: $color-grey;
             }
             &::-webkit-input-placeholder {
-              color: $grey-color;
+              color: $color-grey;
             }
 
           }
@@ -96,9 +96,9 @@ page-login {
 
           .login-btn {
             padding: 15px 50px;
-            border-radius: 30px;
+            border-radius: $border-rd-xl;
             margin: 20px 0 0 0;
-            background: $pink-color;
+            background: $color-pink;
             text-transform: uppercase;
             color: #fff;
             font-weight: bold;
@@ -110,7 +110,7 @@ page-login {
         /** form-cont */
 
         .forgot-pass {
-          color: $grey-color;
+          color: $color-grey;
           width: 100%;
           margin: 10px 0 0 0;
           text-align: right;
@@ -121,7 +121,7 @@ page-login {
         .line-divider {
           width: 80%;
           height: 3px;
-          background: $pink-color;
+          background: $color-pink;
           margin: 30px 10% 10px 10%;
         }
         /** line-divider */
@@ -135,7 +135,7 @@ page-login {
           .ask-singup {
             width: auto;
             display: table;
-            color: $pink-color;
+            color: $color-pink;
             font-size: 0.9em;
             margin: 0;
           }
@@ -143,7 +143,7 @@ page-login {
           .button-singup {
             width: auto;
             display: table;
-            color: $pink-color;
+            color: $color-pink;
             font-size: 1.4em;
             margin: 4px 0 0 0;
             font-family: Multicolore;
@@ -171,7 +171,7 @@ page-login {
         .explore-label{
           width: auto;
           text-transform: uppercase;
-          color: $grey-color;
+          color: $color-grey;
           font-family: Multicolore;
           font-size: 1.1em;
           cursor: pointer;
@@ -179,8 +179,8 @@ page-login {
         .explore-stick{
           width: 3px;
           height: 40px;
-          background: $grey-color;
-          border-radius: 5px 5px 0 0;
+          background: $color-grey;
+          border-radius: $border-rd-sm $border-rd-sm 0 0;
           margin: 10px 0 0 0;
         }/** explore-stick */
       }/** explore-contents */

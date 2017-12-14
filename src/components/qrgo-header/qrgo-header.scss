@@ -1,5 +1,5 @@
 qr-header {
-  border-bottom: 1px solid $grey-color;
+  border-bottom: 1px solid $color-grey;
   width: 100%;
   display: table;
   .header-grid {
@@ -24,7 +24,7 @@ qr-header {
           position: absolute;
           left: 0;
           top: 0;
-          fill: $grey-color;
+          fill: $color-grey;
         }/** header-ico-action */
 
       }

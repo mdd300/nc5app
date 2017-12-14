@@ -81,7 +81,7 @@
         &:before {
           transition: 0.5s;
           font-size: 1.9em;
-          color: $grey-color;
+          color: $color-grey;
         }
         /** before */
       }
@@ -93,16 +93,16 @@
       width: 100%;
       display: flex;
       padding: 0 0 3px 16px;
-      color: $grey-color;
+      color: $color-grey;
       font-family: Roboto;
 
     }
     /** cad-form-label-txt */
     .cad-form-ctrl {
       width: 100%;
-      border: 2px solid $grey-color;
-      border-radius: 30px;
-      color: $grey-color - #222;
+      border: 2px solid $color-grey;
+      border-radius: $border-rd-xl;
+      color: $color-grey - #222;
       padding: 13px 15px;
 
       &.text-center{ text-align: center; }
@@ -114,11 +114,11 @@
       }
       /** readonly */
 
-      &::-moz-placeholder { color: $grey-color; }
-      &::-webkit-input-placeholder { color: $grey-color; }
+      &::-moz-placeholder { color: $color-grey; }
+      &::-webkit-input-placeholder { color: $color-grey; }
       &:focus{
-        &::-moz-placeholder { color: $grey-color + #222; }
-        &::-webkit-input-placeholder { color: $grey-color + #222; }
+        &::-moz-placeholder { color: $color-grey + #222; }
+        &::-webkit-input-placeholder { color: $color-grey + #222; }
       }
 
     }

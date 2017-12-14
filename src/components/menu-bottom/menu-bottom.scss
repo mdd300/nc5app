@@ -5,8 +5,8 @@ fixed-menu {
     .foot-menu{
       width: 100%;
       background: #fff;
-      border-radius: 10px 10px 0 0;
-      border-top: 1px solid $grey-color;
+      border-radius: $border-rd-md $border-rd-md 0 0;
+      border-top: 1px solid $color-grey;
       padding: 0;
       .row{ padding: 0 10px; }
       .grid, .col{ padding: 0; }/** grid */
@@ -30,7 +30,7 @@ fixed-menu {
             position: absolute;
             left: 0;
             top: 0;
-            fill: $grey-color;
+            fill: $color-grey;
 
             &.current-page{
               //fill: linear-gradient(135deg, rgba(255,163,121,1) 18%,rgba(255,75,173,1) 100%);

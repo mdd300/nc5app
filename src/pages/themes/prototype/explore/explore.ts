@@ -1,6 +1,6 @@
 import {Component, ViewChild} from '@angular/core';
 import {ModalController, IonicPage, NavController, NavParams, Platform} from 'ionic-angular';
-import {GostosPage} from "../gostos/gostos";
+import {GostosPage} from "../modais/gostos/gostos";
 import {Constants} from "../../../../config/Constants";
 
 

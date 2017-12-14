@@ -8,17 +8,16 @@ page-step3 {
   }
   /** header */
 
-
   .button-finish{
     color: #fff;
-    background: $pink-color;
+    background: $color-pink;
     font-size: 18px;
     text-transform: uppercase;
     padding: 14px 45px;
     margin: 10px auto;
     display: table;
     font-family: Multicolore;
-    border-radius: 40px;
+    border-radius: $border-rd-xl;
   }/** button-finish */
 
 }

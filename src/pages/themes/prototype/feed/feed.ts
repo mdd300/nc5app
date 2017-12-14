@@ -1,7 +1,7 @@
 import {IonicPage, ModalController, NavController, NavParams} from 'ionic-angular';
 import {Component, ViewChild} from '@angular/core';
 import {Constants} from "../../../../config/Constants";
-import {PostPage} from "../post/post";
+import {PostPage} from "../modais/post/post";
 import * as $ from "jquery";
 
 /**

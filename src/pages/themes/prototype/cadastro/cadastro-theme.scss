@@ -36,18 +36,18 @@
       width: 15px;
       height: 15px;
       position: relative;
-      background: $grey-color;
+      background: $color-grey;
       border-radius: 100%;
 
       &.actived {
-        background: $pink-color;
+        background: $color-pink;
         &.rounded {
           &:after {
             content: "";
             border-radius: 100%;
             width: 15px;
             height: 15px;
-            box-shadow: 0 0 2px 2px $pink-color;
+            box-shadow: 0 0 2px 2px $color-pink;
             position: absolute;
             left: -3px;
             top: -3px;
@@ -67,9 +67,9 @@
       width: 100px;
       height: 1px;
       border-radius: 10px;
-      background: $grey-color;
+      background: $color-grey;
       &.actived {
-        background: $pink-color;
+        background: $color-pink;
       }
       /** actived */
     }
@@ -85,7 +85,7 @@
     text-align: center;
     margin: 0;
     padding: 6px 0 0 0;
-    color: $grey-color;
+    color: $color-grey;
   }
   /** title-step */
 
@@ -126,22 +126,22 @@
 
       &.allowed {
         .next-step-label {
-          color: $pink-color;
+          color: $color-pink;
         }/** next-step-label */
         .nextstep-icon {
           .caret-body {
-            background: $pink-color;
+            background: $color-pink;
           }/** caret-body  */
           .caret-direction{
-            border-right: 3px solid $pink-color;
-            border-top: 3px solid $pink-color;
+            border-right: 3px solid $color-pink;
+            border-top: 3px solid $color-pink;
           }/** caret-direction */
         }/** nextstep-icon */
       }
       /** allowed */
 
       .next-step-label {
-        color: $grey-color;
+        color: $color-grey;
         font-family: Multicolore;
         font-size: 1em;
         display: flex;
@@ -157,7 +157,7 @@
         .caret-body {
           width: 60px;
           height: 3px;
-          background: $grey-color;
+          background: $color-grey;
           border-radius: 3px;
           transition: 0.5s;
         }
@@ -165,8 +165,8 @@
         .caret-direction {
           width: 15px;
           height: 15px;
-          border-right: 3px solid $grey-color;
-          border-top: 3px solid $grey-color;
+          border-right: 3px solid $color-grey;
+          border-top: 3px solid $color-grey;
           transform: rotate(45deg);
           margin: 0 0 0 -16px;
         }
