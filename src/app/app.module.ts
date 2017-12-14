@@ -20,7 +20,8 @@ import {LoginPage} from "../pages/themes/prototype/login/login";
 import {SystemTabsPageModule} from "../pages/themes/prototype/system-tabs/system-tabs.module";
 import {SystemTabsPage} from "../pages/themes/prototype/system-tabs/system-tabs";
 import {ActionsFeedPageModule} from "../pages/themes/prototype/popovers/actions-feed/actions-feed.module";
-
+import {HttpModule} from '@angular/http';
+import { CategoriaProvider } from '../providers/categoria/categoria';
 
 @NgModule({
     declarations: [
@@ -40,7 +41,8 @@ import {ActionsFeedPageModule} from "../pages/themes/prototype/popovers/actions-
         PostPageModule,
         SystemTabsPageModule,
         ActionsFeedPageModule,
-        IonicModule.forRoot(Qrgo_prototype)
+        IonicModule.forRoot(Qrgo_prototype),
+        HttpModule,
     ],
     bootstrap: [IonicApp],
     entryComponents: [
@@ -52,7 +54,8 @@ import {ActionsFeedPageModule} from "../pages/themes/prototype/popovers/actions-
     providers: [
         StatusBar,
         SplashScreen,
-        {provide: ErrorHandler, useClass: IonicErrorHandler}
+        {provide: ErrorHandler, useClass: IonicErrorHandler},
+        CategoriaProvider
     ]
 
 })
