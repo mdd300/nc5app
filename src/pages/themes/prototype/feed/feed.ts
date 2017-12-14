@@ -3,6 +3,8 @@ import {Component, ViewChild} from '@angular/core';
 import {Constants} from "../../../../config/Constants";
 import {PostPage} from "../modais/post/post";
 import * as $ from "jquery";
+import { PopoverController } from 'ionic-angular';
+import {ActionsFeedPage} from "../popovers/actions-feed/actions-feed";
 
 /**
  * Generated class for the FeedPage page.
@@ -23,7 +25,8 @@ export class FeedPage {
   constructor(
       public navCtrl: NavController,
       public modalCtrl: ModalController,
-      public navParams: NavParams
+      public navParams: NavParams,
+      public popoverCtrl: PopoverController
   ) {}
 
   // Abrir modal para realizar psot
@@ -85,8 +88,12 @@ export class FeedPage {
         let $filter = $( event.path[0] );
         let dimensions = { w: $filter.width(), x: $filter.position().left }
         $caret.css({ width: dimensions.w+'px', left: dimensions.x + 'px' });
-
         this.filter = filterId;
     });
+
+    public popoverActionsPost() {
+        let popover = this.popoverCtrl.create( ActionsFeedPage );
+        popover.present();
+    }
 
 }

@@ -19,7 +19,7 @@ import {PostPageModule} from "../pages/themes/prototype/modais/post/post.module"
 import {LoginPage} from "../pages/themes/prototype/login/login";
 import {SystemTabsPageModule} from "../pages/themes/prototype/system-tabs/system-tabs.module";
 import {SystemTabsPage} from "../pages/themes/prototype/system-tabs/system-tabs";
-import {ActionsFeedPage} from "../pages/themes/prototype/popovers/actions-feed/actions-feed";
+import {ActionsFeedPageModule} from "../pages/themes/prototype/popovers/actions-feed/actions-feed.module";
 
 
 @NgModule({
@@ -39,7 +39,7 @@ import {ActionsFeedPage} from "../pages/themes/prototype/popovers/actions-feed/a
         FeedPageModule,
         PostPageModule,
         SystemTabsPageModule,
-        ActionsFeedPage,
+        ActionsFeedPageModule,
         IonicModule.forRoot(Qrgo_prototype)
     ],
     bootstrap: [IonicApp],
