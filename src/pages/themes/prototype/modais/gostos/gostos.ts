@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams, ViewController} from 'ionic-angular';
 import {Constants} from "../../../../../config/Constants";
+import { CategoriaProvider } from '../../../../../providers/categoria/categoria';
 
 /**
  * Generated class for the GostosPage page.
@@ -13,6 +14,9 @@ import {Constants} from "../../../../../config/Constants";
 @Component({
     selector: 'page-gostos',
     templateUrl: 'gostos.html',
+    providers: [
+        CategoriaProvider
+    ]
 })
 export class GostosPage {
 
@@ -25,80 +29,8 @@ export class GostosPage {
     public intActived: number = 0;
     public show8 = false;
     public a = 0;
-    public estilos = [
-        {
-            id: '1',
-            nome: "VERÃO",
-        },
-        {
-            id: '2',
-            nome: "INVERNO",
-        },
-        {
-            id: '3',
-            nome: "JEANS",
-        },
-        {
-            id: '4',
-            nome: "SPORT",
-        },
-        {
-            id: '5',
-            nome: "CASAMENTO",
-        },
-        {
-            id: '6',
-            nome: "FEMININO",
-        },
-        {
-            id: '7',
-            nome: "GRUNGE",
-        },
-        {
-            id: '8',
-            nome: "MASCULINO",
-        }, {
-            id: '9',
-            nome: "ROUPAS EM PROMOÇÃO",
-        },
-        {
-            id: '10',
-            nome: "CASUAL",
-        }
-    ];
-    public subEstilo = [
-        {1:[{
-            id: '11',
-            nome: "CALÇA",
-            idEstilo: '1'
-        },
-        {
-            id: '12',
-            nome: "CAMISA",
-            idEstilo: '1'
-        },
-        {
-            id: '13',
-            nome: "BLUSA",
-            idEstilo: '1'
-
-        }],
-        8:[{
-            id: '14',
-            nome: "CALÇA",
-            idEstilo: '8'
-        },
-        {
-            id: '15',
-            nome: "CAMISA",
-            idEstilo: '8'
-        },
-        {
-            id: '16',
-            nome: "BLUSA",
-            idEstilo: '8'
-        }]}
-    ];
+    public estilos   = [];
+    public subEstilo = [];
     public rowNum = 0; //counter to iterate over the rows in the grid
     public grid = [];
     public colNum = [];
@@ -106,8 +38,8 @@ export class GostosPage {
 
     constructor(public navCtrl: NavController,
                 public navParams: NavParams,
-                public viewCtrl: ViewController,) {
-        this.teste();
+                public viewCtrl: ViewController,
+                public categoriaProvider: CategoriaProvider) {
     }
 
     public teste() {
@@ -158,8 +90,16 @@ export class GostosPage {
     };
 
     public closeMeModal = (() => {
-        if (this.actived.length > 0)
-            this.viewCtrl.dismiss();
+        if (this.actived.length > 0) {
+
+            this.categoriaProvider.setCategorias(this.actived).subscribe(data => {
+                console.log(data);
+            }, error => {
+                console.log(error);
+            }).add(() => {
+                this.viewCtrl.dismiss();
+            });
+        }
     });
 
     public defineActived = ((data) => {
@@ -200,4 +140,18 @@ export class GostosPage {
     });
     /* Fim da função de definição do perfil selecionado */
 
+    ionViewDidLoad()
+    {
+        this.categoriaProvider.getCategorias().subscribe(data => {
+            const response = (data as any);
+            const objeto_retorno = JSON.parse(response._body);
+
+            this.estilos = objeto_retorno.main;
+            this.subEstilo = [objeto_retorno.sub];
+        }, error => {
+            console.log(error);
+        }).add(() => {
+            this.teste();
+        });
+    }
 }

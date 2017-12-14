@@ -449,12 +449,15 @@ page-feed {
               margin: 0 10px;
               cursor: pointer;
               position: relative;
+
               &.actived-variable{
                 border-radius: 100%;
                 border: 1px solid #fff;
                 box-shadow: 0 0 0 2px $color-pink;
               }/** actived-variable */
+
             }/** variable */
+
           }/** variables-valiable */
 
         }/** card-body-product-img */
