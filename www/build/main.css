@@ -25907,6 +25907,130 @@ ion-navbar.toolbar {
 }
 
 /** Fim da criação dos icones das tabs do app */
+/** Criação Da action Sheet das opções de post do feed */
+.feed-post-actions {
+  /** Estilos dos Botões */
+  /** actionButton */
+}
+
+.feed-post-actions .action-sheet-group {
+  position: relative;
+  background: #fff;
+  padding: 0 !important;
+}
+
+.feed-post-actions .closeFeedActions {
+  position: relative;
+  padding: 20px 16px 25px 16px;
+  margin: 0 0;
+  color: #767e8a;
+  font-size: 1em;
+}
+
+.feed-post-actions .closeFeedActions:after {
+  content: url("../assets/themes/prototype/img/svg/filled/cancel-grey.svg");
+  -webkit-transform: none !important;
+  transform: none !important;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  right: 16px;
+  top: 20px;
+}
+
+.feed-post-actions .actionButton {
+  color: #767e8a;
+  font-size: 1.15em;
+  position: relative;
+  padding: 15px 10px 15px 60px;
+  /** button-inner */
+  /** before */
+  /** after */
+  /** btnUnfollow */
+  /** btnOcultar */
+  /** btnOcultar */
+  /** btnOcultar */
+}
+
+.feed-post-actions .actionButton .button-inner {
+  margin: 0 0 16px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.feed-post-actions .actionButton:before {
+  position: absolute;
+  left: 16px;
+  top: 15px;
+  width: 27px;
+  height: 27px;
+}
+
+.feed-post-actions .actionButton:after {
+  width: 100%;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  bottom: 12px;
+  padding: 0 0 0 60px;
+  color: #b4c1d6;
+  font-size: 0.8em;
+}
+
+.feed-post-actions .actionButton.btnUnfollow {
+  /** before */
+  /** after */
+}
+
+.feed-post-actions .actionButton.btnUnfollow:before {
+  content: url("../assets/themes/prototype/img/svg/filled/unfollow-grey.svg");
+}
+
+.feed-post-actions .actionButton.btnUnfollow:after {
+  content: "Deixar de ver publicações, mas continuar amigos.";
+}
+
+.feed-post-actions .actionButton.btnOcultar {
+  /** before */
+}
+
+.feed-post-actions .actionButton.btnOcultar:before {
+  content: url("../assets/themes/prototype/img/svg/filled/ocultar-grey.svg");
+}
+
+.feed-post-actions .actionButton.btnOcultar:after {
+  content: "Ocultar publicações como essa.";
+}
+
+.feed-post-actions .actionButton.btnNotifications {
+  /** before */
+}
+
+.feed-post-actions .actionButton.btnNotifications:before {
+  content: url("../assets/themes/prototype/img/svg/filled/notification-grey.svg");
+}
+
+.feed-post-actions .actionButton.btnNotifications:after {
+  content: "Receber notificações sempre que o usuário postar.";
+}
+
+.feed-post-actions .actionButton.btnDenunciar {
+  margin-bottom: 20px;
+  /** before */
+}
+
+.feed-post-actions .actionButton.btnDenunciar:before {
+  content: url("../assets/themes/prototype/img/svg/filled/denunciar-grey.svg");
+}
+
+.feed-post-actions .actionButton.btnDenunciar:after {
+  content: "Denunciar usuário para a administração.";
+}
+
+/** feed-post-actions */
+/** Fim do estilo da action sheet das opções de post do feed */
 fixed-menu {
   /** foot-menu */
 }
