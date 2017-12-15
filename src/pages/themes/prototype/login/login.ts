@@ -7,6 +7,7 @@ import {Step1Page} from "../cadastro/step1/step1";
 import {SystemTabsPage} from "../system-tabs/system-tabs";
 import {ForgotPass_1Page} from "../forgot-pass/forgot-pass-1/forgot-pass-1";
 import * as $ from "jquery";
+import {ConfirmCadPage} from "../cadastro/confirm-cad/confirm-cad";
 
 /**
  * Generated class for the LoginPage page.
@@ -57,31 +58,38 @@ export class LoginPage {
      * Função utilizada para realizar o login do usuário */
     public doLogin = (() => {
 
-        var data_send = this.logindata;
+        // var data_send = this.logindata;
+        this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
 
-        this.http.post(this.constants.api_path + 'login/dologin', $.param(data_send)).subscribe(response => {
+        // this.http.post(this.constants.api_path + 'login/dologin', $.param(data_send)).subscribe(response => {
+        //
+        //     const res = (response as any);
+        //     this.login = JSON.parse(res._body);
+        //     const login = (this.login as any);
+        //
+        //     console.log(login);
 
-            const res = (response as any);
-            const login = (this.login as any);
-            this.login = JSON.parse(res._body);
 
-            if (login.success) {
-                /* Redireciona a pagina root como a pagina de exploração */
-                this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
-            }
-            else {
+        // if (login.success) {
+        //     this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
+        // }else {
+        //     var __this = this;
+        //
+        //     if (login.no_verified) {
+        //         this.navCtrl.push(ConfirmCadPage);
+        //     }
+        //     else {
+        //         setTimeout(function () {
+        //
+        //             const text = (__this.login as any);
+        //
+        //             text.text = "";
+        //         }, 3000);
+        //     }
+        // }
 
-                var __this = this;
 
-                setTimeout(function () {
-
-                    const text = (__this.login as any);
-
-                    text.text = "";
-                }, 3000);
-            }
-
-        });
+        // });
 
 
     });
@@ -91,11 +99,12 @@ export class LoginPage {
      * Função para dar inicio ao processo de recuperar senha
      * @type {() => void}
      */
-    public recoverPass = ( ():void => {
+    public recoverPass = ((): void => {
         /**
          * Redireciona o usuário para a primeira págimna do processo */
-        this.navCtrl.push( ForgotPass_1Page );
+        this.navCtrl.push(ForgotPass_1Page);
 
-    });/* Fim da função recoverPass  */
+    });
+    /* Fim da função recoverPass  */
 
 }
