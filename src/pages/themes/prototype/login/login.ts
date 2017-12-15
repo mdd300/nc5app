@@ -67,28 +67,25 @@ export class LoginPage {
         //     this.login = JSON.parse(res._body);
         //     const login = (this.login as any);
         //
-        //     console.log(login);
-
-
-        // if (login.success) {
-        //     this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
-        // }else {
-        //     var __this = this;
+        //     if (login.success) {
         //
-        //     if (login.no_verified) {
-        //         this.navCtrl.push(ConfirmCadPage);
-        //     }
-        //     else {
+        //         if (login.no_verified) {
+        //             console.log(login);
+        //             this.navCtrl.push(ConfirmCadPage);
+        //         }
+        //         else {
+        //             this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
+        //         }
+        //
+        //     } else {
+        //         var __this = this;
         //         setTimeout(function () {
-        //
         //             const text = (__this.login as any);
-        //
         //             text.text = "";
         //         }, 3000);
+        //
         //     }
-        // }
-
-
+        //
         // });
 
 
