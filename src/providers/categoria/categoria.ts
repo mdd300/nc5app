@@ -23,4 +23,9 @@ export class CategoriaProvider {
     return this.http.post(this.baseApiPath + 'create', {body});
   }
 
+  getCategoriasSelecionadas()
+  {
+    return this.http.get(this.baseApiPath + 'categories_selected');
+  }
+
 }
