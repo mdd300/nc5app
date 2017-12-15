@@ -5,6 +5,7 @@ import {Constants} from "../../../../config/Constants";
 import {SlidesPage} from "../slides/slides";
 import {Step1Page} from "../cadastro/step1/step1";
 import {SystemTabsPage} from "../system-tabs/system-tabs";
+import {ForgotPass_1Page} from "../forgot-pass/forgot-pass-1/forgot-pass-1";
 import * as $ from "jquery";
 
 /**
@@ -86,5 +87,15 @@ export class LoginPage {
     });
     /* Fim da função de realização do login do usuário */
 
+    /**
+     * Função para dar inicio ao processo de recuperar senha
+     * @type {() => void}
+     */
+    public recoverPass = ( ():void => {
+        /**
+         * Redireciona o usuário para a primeira págimna do processo */
+        this.navCtrl.push( ForgotPass_1Page );
+
+    });/* Fim da função recoverPass  */
 
 }

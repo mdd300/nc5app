@@ -15,10 +15,13 @@
         <param name="android-package" value="io.ionic.keyboard.IonicKeyboard" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="SocialSharing">
+        <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+    </feature>
     <name>QRGO Prototype</name>
     <description>Protótipo da aplicação</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">QrGo Team</author>
-    <content original-src="index.html" src="http://192.168.0.62:8100" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
