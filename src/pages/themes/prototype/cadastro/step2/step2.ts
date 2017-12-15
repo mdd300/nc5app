@@ -20,11 +20,12 @@ import {Http, Headers, RequestOptions} from '@angular/http';
 export class Step2Page {
 
     public constants = Constants;
-    public emp:any = {razao:"" , nome:"", bairro:"" , endereco:"" , numero:"", cidade:"", estado:""};
+    public emp:any = {empresa_razao:"" , empresa_nomefantasia:"", empresa_bairro:"" , empresa_endereco:"" , empresa_numero:"", empresa_cidade:"", empresa_estado:"" ,empresa_cnpj:""};
     public captcha:any = {digito:"", key:"", cnpj:""};
     public stepOk:boolean = false;
     public stepOkCnpj:boolean = false;
     public imgCaptcha:string = "";
+    public user_type = this.navParams.get("user_type");
 
     constructor(
         public navCtrl: NavController,
@@ -32,6 +33,7 @@ export class Step2Page {
         private alertCtrl: AlertController,
         private keyboard: Keyboard,
         private http: Http
+
     ) {}
 
 
@@ -50,7 +52,7 @@ export class Step2Page {
         /* Verifica se o CNPJ é real */
         // console.log(this.cnpj.length);
 
-        if( this.captcha.cnpj.length == 11  ){
+        if( this.captcha.cnpj.length == 14  ){
             this.getCaptcha();
             this.keyboard.close();
         }else{
@@ -60,15 +62,16 @@ export class Step2Page {
 
 
     public getCaptcha = (() => {
-
+console.log(this.user_type);
         this.http.post(
             'http://localhost/fashon/qrgo/cadastro/getCaptcha', {'cnpj': this.captcha.cnpj})
             .subscribe((data) => {
                     var resposta = JSON.parse(data._body);
-                    console.log(resposta);
                     if(!resposta.existe){
                         this.imgCaptcha = resposta.dados.captchaBase64;
+                        this.captcha.key = resposta.dados.cookie;
                         this.stepOk = true;
+
                     }
                 }
 
@@ -82,11 +85,11 @@ export class Step2Page {
             'http://localhost/fashon/qrgo/cadastro/getCnpj',(this.captcha))
             .subscribe((data) => {
                     var resposta = JSON.parse(data._body);
-                    if(resposta.existe){
-                        this.imgCaptcha = resposta.dados.captchaBase64;
+                    if(resposta.success){
+                        this.emp = resposta.dados;
                         this.stepOkCnpj = true;
                         this.stepOk = false;
-                        this.captcha.key = resposta.dados.cookie;
+
 
                     }
                 }
@@ -96,15 +99,14 @@ export class Step2Page {
 
 
 
-
     /**
      * Função utilizada para avançar para o Setep 3 Do cadastro do perfil
      * @type {() => any}*/
     public goToStep3 = (() => {
         /* Verifica se o Passo está preenchido corretamente, ou seja, se o CNPJ foi escrito */
-        if( this.stepOk ){
+        if( this.stepOkCnpj  ){
             /* Caso os campos estejam preenchidos corretamente, o passo poderá ser avançado */
-            this.navCtrl.push(Step3Page);
+            this.navCtrl.push(Step3Page , {empresa:this.emp , user_type:this.user_type});
 
         }else{
             /* Caso os campos não estejam preenchidos corretamente, o passo não poderá ser avançado */
