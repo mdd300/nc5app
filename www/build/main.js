@@ -1686,6 +1686,9 @@ var Qrgo_prototype = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__cadastro_step1_step1__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__system_tabs_system_tabs__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__forgot_pass_forgot_pass_1_forgot_pass_1__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_jquery__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_jquery__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__cadastro_confirm_cad_confirm_cad__ = __webpack_require__(164);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1695,6 +1698,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
+
 
 
 
@@ -1739,33 +1744,29 @@ var LoginPage = (function () {
         /**
          * Função utilizada para realizar o login do usuário */
         this.doLogin = (function () {
-            // var data_send = this.logindata;
-            _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_6__system_tabs_system_tabs__["a" /* SystemTabsPage */], {}, { animate: true, direction: 'forward' });
-            // this.http.post(this.constants.api_path + 'login/dologin', $.param(data_send)).subscribe(response => {
-            //
-            //     const res = (response as any);
-            //     this.login = JSON.parse(res._body);
-            //     const login = (this.login as any);
-            //
-            //     console.log(login);
-            // if (login.success) {
-            //     this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
-            // }else {
-            //     var __this = this;
-            //
-            //     if (login.no_verified) {
-            //         this.navCtrl.push(ConfirmCadPage);
-            //     }
-            //     else {
-            //         setTimeout(function () {
-            //
-            //             const text = (__this.login as any);
-            //
-            //             text.text = "";
-            //         }, 3000);
-            //     }
-            // }
-            // });
+            var data_send = _this.logindata;
+            // this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
+            _this.http.post(_this.constants.api_path + 'login/dologin', __WEBPACK_IMPORTED_MODULE_8_jquery__["param"](data_send)).subscribe(function (response) {
+                var res = response;
+                _this.login = JSON.parse(res._body);
+                var login = _this.login;
+                if (login.success) {
+                    _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_6__system_tabs_system_tabs__["a" /* SystemTabsPage */], {}, { animate: true, direction: 'forward' });
+                }
+                else {
+                    var __this = _this;
+                    if (login.no_verified) {
+                        console.log(login);
+                        _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_9__cadastro_confirm_cad_confirm_cad__["a" /* ConfirmCadPage */]);
+                    }
+                    else {
+                        setTimeout(function () {
+                            var text = __this.login;
+                            text.text = "";
+                        }, 3000);
+                    }
+                }
+            });
         });
         /* Fim da função de realização do login do usuário */
         /**
@@ -1782,12 +1783,10 @@ var LoginPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-login',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\login\login.html"*/'<div class="login-page">\n\n\n\n    <div class="backpage-login" (click)="goBackSlides()" >\n\n        <svg class="backpage-ico">\n\n            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n        </svg> <!-- backpage-ico -->\n\n    </div> <!-- backpage-login -->\n\n\n\n    <div class="content-login-form">\n\n\n\n        <h3 class="welcome-title">Bem Vindo</h3>\n\n\n\n        <div class="image-logo-qrgo">\n\n            <img class="svg-logo" [src]="constants.src_svg + \'qrgo-logo.svg\'"/>\n\n        </div> <!-- image-logo-qrgo -->\n\n\n\n        <div class="content-form-login">\n\n            <div class="form-cont pdg-b20">\n\n                <input type="text" class="form-ctrl" placeholder="Username / E-mail" [(ngModel)]="logindata.user_login">\n\n            </div> <!-- form-cont -->\n\n            <div class="form-cont">\n\n                <input type="password" class="form-ctrl" placeholder="Senha" [(ngModel)]="logindata.user_pass">\n\n            </div> <!-- form-cont -->\n\n\n\n            <p class="forgot-pass"> {{ login.text }} </p>\n\n            <p class="forgot-pass" (click)="recoverPass()"> Esqueci minha senha </p>\n\n\n\n            <div class="form-cont">\n\n                <button [disabled]="!logindata.user_login || !logindata.user_pass" class="login-btn" (click)="doLogin()" > Entrar</button>\n\n            </div> <!-- form-cont -->\n\n\n\n            <span class="line-divider"></span> <!-- line-divider -->\n\n\n\n            <div class="content-singup">\n\n                <p class="ask-singup" > Não possui cadastro? </p> <!-- ask-singup -->\n\n                <p class="button-singup" (click)="goToCadastro()" > Cadastre-se </p> <!-- ask-singup -->\n\n            </div> <!-- content-singup -->\n\n\n\n        </div> <!-- content-form-login -->\n\n\n\n\n\n        <div class="explore-contents" >\n\n            <span class="explore-label"> Explorar </span>\n\n            <span class="explore-stick"></span>\n\n        </div> <!-- explore-contents -->\n\n\n\n    </div> <!-- content-login-form -->\n\n\n\n\n\n</div> <!-- login-page -->'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\login\login.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["k" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["n" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["k" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["n" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["n" /* ToastController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]) === "function" && _d || Object])
     ], LoginPage);
     return LoginPage;
+    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=login.js.map

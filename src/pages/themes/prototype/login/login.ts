@@ -58,38 +58,34 @@ export class LoginPage {
      * Função utilizada para realizar o login do usuário */
     public doLogin = (() => {
 
-        // var data_send = this.logindata;
-        this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
+        var data_send = this.logindata;
+        // this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
 
-        // this.http.post(this.constants.api_path + 'login/dologin', $.param(data_send)).subscribe(response => {
-        //
-        //     const res = (response as any);
-        //     this.login = JSON.parse(res._body);
-        //     const login = (this.login as any);
-        //
-        //     console.log(login);
+        this.http.post(this.constants.api_path + 'login/dologin', $.param(data_send)).subscribe(response => {
 
+            const res = (response as any);
+            this.login = JSON.parse(res._body);
+            const login = (this.login as any);
 
-        // if (login.success) {
-        //     this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
-        // }else {
-        //     var __this = this;
-        //
-        //     if (login.no_verified) {
-        //         this.navCtrl.push(ConfirmCadPage);
-        //     }
-        //     else {
-        //         setTimeout(function () {
-        //
-        //             const text = (__this.login as any);
-        //
-        //             text.text = "";
-        //         }, 3000);
-        //     }
-        // }
+            if (login.success) {
+                this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
+            } else {
+                var __this = this;
+
+                if (login.no_verified) {
+                    console.log(login);
+                    this.navCtrl.push(ConfirmCadPage);
+                }
+                else {
+                    setTimeout(function () {
+                        const text = (__this.login as any);
+                        text.text = "";
+                    }, 3000);
+                }
+            }
 
 
-        // });
+        });
 
 
     });
