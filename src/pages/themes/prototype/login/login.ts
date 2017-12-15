@@ -58,28 +58,25 @@ export class LoginPage {
     public doLogin = (() => {
 
         var data_send = this.logindata;
-
         this.http.post(this.constants.api_path + 'login/dologin', $.param(data_send)).subscribe(response => {
 
             const res = (response as any);
             const login = (this.login as any);
             this.login = JSON.parse(res._body);
 
+            this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
+
+            /*
             if (login.success) {
-                /* Redireciona a pagina root como a pagina de exploração */
                 this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
-            }
-            else {
-
+            }else {
                 var __this = this;
-
                 setTimeout(function () {
-
-                    const text = (__this.login as any);
-
+                    const text = ( __this.login as any );
                     text.text = "";
                 }, 3000);
             }
+            */
 
         });
 

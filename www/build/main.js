@@ -584,7 +584,7 @@ var ForgotPass_1Page = (function () {
     }
     ForgotPass_1Page = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-forgot-pass-1',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\forgot-pass\forgot-pass-1\forgot-pass-1.html"*/'<ion-header>\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col col-auto class="col-icon-back" (click)="backPage()">\n\n                <ion-icon name="ios-arrow-back" class="icon-back"></ion-icon>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-header>\n\n<ion-content padding>\n\n\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col> \n\n                <h3 class="title-page">\n\n                    Recuperar Senha.\n\n                </h3><!-- title-page -->\n\n            </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n            <ion-col>\n\n                <p class="page-description">\n\n                    Atenção: Se você perdeu, ou não lembra mais a sua senha de acesso, preencha este formulário para iniciar o processo para gerar uma nova senha para você!\n\n                </p><!-- page-description -->\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n                <span class="label-form">\n\n                Insira o seu Email\n\n                </span><!-- label-form -->\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n                <input type="email" class="recover-form" placeholder="exemple@exemple.com">\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n                <button ion-button class="recover-form-btn" > Continuar! </button>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\forgot-pass\forgot-pass-1\forgot-pass-1.html"*/,
+            selector: 'page-forgot-pass-1',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\forgot-pass\forgot-pass-1\forgot-pass-1.html"*/'<ion-header>\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col col-auto class="col-icon-back" (click)="backPage()">\n\n                <ion-icon name="ios-arrow-back" class="icon-back"></ion-icon>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-header>\n\n<ion-content padding>\n\n\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col> \n\n                <h3 class="title-page">\n\n                    Recuperar Senha.\n\n                </h3><!-- title-page -->\n\n            </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n            <ion-col>\n\n                <p class="page-description">\n\n                    Atenção: Se você perdeu, ou não lembra mais a sua senha de acesso, preencha este formulário para iniciar o processo para gerar uma nova senha para você!\n\n                </p><!-- page-description -->\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n                <span class="label-form">\n\n                Insira o seu Email\n\n                </span><!-- label-form -->\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n                <input type="email" class="recover-form" placeholder="exemple@exemple.com">\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n    </ion-grid>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\forgot-pass\forgot-pass-1\forgot-pass-1.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
     ], ForgotPass_1Page);
@@ -1706,17 +1706,18 @@ var LoginPage = (function () {
                 var res = response;
                 var login = _this.login;
                 _this.login = JSON.parse(res._body);
+                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_6__system_tabs_system_tabs__["a" /* SystemTabsPage */], {}, { animate: true, direction: 'forward' });
+                /*
                 if (login.success) {
-                    /* Redireciona a pagina root como a pagina de exploração */
-                    _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_6__system_tabs_system_tabs__["a" /* SystemTabsPage */], {}, { animate: true, direction: 'forward' });
-                }
-                else {
-                    var __this = _this;
+                    this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
+                }else {
+                    var __this = this;
                     setTimeout(function () {
-                        var text = __this.login;
+                        const text = ( __this.login as any );
                         text.text = "";
                     }, 3000);
                 }
+                */
             });
         });
         /* Fim da função de realização do login do usuário */

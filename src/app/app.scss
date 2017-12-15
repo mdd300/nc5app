@@ -272,7 +272,7 @@
   width: 100%;
   border: 1px solid $color-grey;
   border-radius: $border-rd-xl;
-  padding: 10px;
+  padding: 13px 15px;
   color: $color-grey;
 
   &::-moz-placeholder { color: $color-grey; transition: 0.5s; }
@@ -283,12 +283,3 @@
   }
   
 }/** recover-form */
-.recover-form-btn{
-  width: 50%;
-  background: $color-pink;
-  margin: 0 auto;
-  display: table;
-  font-weight: bold;
-  padding: 2  0px 30px !important;
-  border-radius: $border-rd-xl;
-}/** recover-form-btn */
