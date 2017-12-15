@@ -64,7 +64,9 @@ export class ExplorePage {
         }, error => {
             console.log(error);
             // captura dados locais caso não consiga os dados online
-            this.styles = (this.storage.get('styles') as any);
+            this.storage.get('styles').then(data => {
+               this.styles = (typeof data === 'object') ? data : [];
+            });
         }).add(() => {
             // apresenta o modal caso o usuário nunca tenha cadastrado 1 estilo
             if (this.styles.length < 1) {
