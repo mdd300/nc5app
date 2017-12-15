@@ -4,7 +4,7 @@
 </ion-header>
 <!-- End of header Default -->
 <!-- Content of feed page -->
-<ion-content>
+<ion-content #Content>
 
     <!-- Start of feed -->
     <div class="feed-background"></div> <!-- feed-background -->
@@ -91,11 +91,11 @@
                             </div> <!-- feed-autor-label -->
                             <div class="feed-autor-label">
                                 <span class="feed-author-txt description">
-                                    Rua Anhaia, 284
+                                    Rua Anhaia, 284 <ion-icon name="ai-notification"></ion-icon>
                                 </span>
                             </div> <!-- feed-autor-label -->
                         </ion-col>
-                        <ion-col col-2 (click)="popoverActionsPost()">
+                        <ion-col col-2 (click)="actionsPostFeed( post )">
                             <div class="feed-card-header-options">
                                 <svg class="ico-card-options">
                                     <use [attr.xlink:href]="constants.src_svg + 'vertical-dots.svg#Layer_1'"></use>
@@ -109,7 +109,6 @@
 
                 <!-- Primeira estrutura de layout de post -->
                 <!-- Post somente com imagens -->
-
                 <!-- ------------ -->
                 <div class="card-body-image" [hidden]="post.type != 1">
 
@@ -141,7 +140,7 @@
                                         </svg> <!-- ico-footer-action -->
                                     </div> <!-- card-footer-action" -->
                                 </ion-col>
-                                <ion-col>
+                                <ion-col (click)="sharePost( post )">
                                     <div class="card-footer-action">
                                         <svg class="ico-footer-action">
                                             <use [attr.xlink:href]="constants.src_svg + 'share.svg#Layer_1'"></use>
@@ -232,7 +231,7 @@
                                         </svg> <!-- ico-footer-action -->
                                     </div> <!-- card-footer-action" -->
                                 </ion-col>
-                                <ion-col>
+                                <ion-col (click)="sharePost( post )">
                                     <div class="card-footer-action">
                                         <svg class="ico-footer-action">
                                             <use [attr.xlink:href]="constants.src_svg + 'share.svg#Layer_1'"></use>
@@ -288,7 +287,7 @@
                                         </svg> <!-- ico-footer-action -->
                                     </div> <!-- card-footer-action" -->
                                 </ion-col>
-                                <ion-col>
+                                <ion-col (click)="sharePost( post )">
                                     <div class="card-footer-action">
                                         <svg class="ico-footer-action">
                                             <use [attr.xlink:href]="constants.src_svg + 'share.svg#Layer_1'"></use>

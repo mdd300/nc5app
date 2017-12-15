@@ -20,9 +20,12 @@ import {PostPageModule} from "../pages/themes/prototype/modais/post/post.module"
 import {LoginPage} from "../pages/themes/prototype/login/login";
 import {SystemTabsPageModule} from "../pages/themes/prototype/system-tabs/system-tabs.module";
 import {SystemTabsPage} from "../pages/themes/prototype/system-tabs/system-tabs";
-import {ActionsFeedPageModule} from "../pages/themes/prototype/popovers/actions-feed/actions-feed.module";
 import {HttpModule} from '@angular/http';
 import { CategoriaProvider } from '../providers/categoria/categoria';
+import {SocialSharing} from "@ionic-native/social-sharing";
+import {ForgotPass_1PageModule} from "../pages/themes/prototype/forgot-pass/forgot-pass-1/forgot-pass-1.module";
+import {ForgotPass_2PageModule} from "../pages/themes/prototype/forgot-pass/forgot-pass-2/forgot-pass-2.module";
+import {ForgotPass_3PageModule} from "../pages/themes/prototype/forgot-pass/forgot-pass-3/forgot-pass-3.module";
 
 @NgModule({
     declarations: [
@@ -41,8 +44,13 @@ import { CategoriaProvider } from '../providers/categoria/categoria';
         FeedPageModule,
         PostPageModule,
         SystemTabsPageModule,
-        ActionsFeedPageModule,
+        LocalizacaoPageModule,
         IonicModule.forRoot(Qrgo_prototype),
+
+        ForgotPass_1PageModule,
+        ForgotPass_2PageModule,
+        ForgotPass_3PageModule,
+
         HttpModule,
 
     ],
@@ -56,6 +64,7 @@ import { CategoriaProvider } from '../providers/categoria/categoria';
     providers: [
         StatusBar,
         SplashScreen,
+        SocialSharing,
         {provide: ErrorHandler, useClass: IonicErrorHandler},
         CategoriaProvider
     ]

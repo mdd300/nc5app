@@ -9,7 +9,7 @@ import { Http } from '@angular/http';
 */
 @Injectable()
 export class CategoriaProvider {
-  private baseApiPath = 'http://localhost/fashon/qrgo/categorias/estilos';
+  private baseApiPath = 'http://localhost/fashon/qrgo/categorias/estilos/';
 
   constructor(public http: Http) {}
 
@@ -17,4 +17,15 @@ export class CategoriaProvider {
   {
     return this.http.get(this.baseApiPath);
   }
+
+  setCategorias(body)
+  {
+    return this.http.post(this.baseApiPath + 'create', {body});
+  }
+
+  getCategoriasSelecionadas()
+  {
+    return this.http.get(this.baseApiPath + 'categories_selected');
+  }
+
 }

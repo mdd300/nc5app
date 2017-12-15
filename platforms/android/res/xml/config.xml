@@ -15,6 +15,9 @@
         <param name="android-package" value="io.ionic.keyboard.IonicKeyboard" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="SocialSharing">
+        <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+    </feature>
     <name>QRGO Prototype</name>
     <description>Protótipo da aplicação</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">QrGo Team</author>
@@ -27,6 +30,7 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <allow-navigation href="http://192.168.0.47:8100" />
+    <allow-navigation href="http://192.168.0.62:8100" />
     <allow-intent href="market:*" />
     <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
     <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />

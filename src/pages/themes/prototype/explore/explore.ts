@@ -2,7 +2,7 @@ import {Component, ViewChild} from '@angular/core';
 import {ModalController, IonicPage, NavController, NavParams, Platform} from 'ionic-angular';
 import {GostosPage} from "../modais/gostos/gostos";
 import {Constants} from "../../../../config/Constants";
-
+import { CategoriaProvider } from '../../../../providers/categoria/categoria';
 
 /**
  * Generated class for the ExplorePage page.
@@ -24,7 +24,8 @@ export class ExplorePage {
     constructor(public navCtrl: NavController,
                 public navParams: NavParams,
                 public modalCtrl: ModalController,
-                public platform: Platform) {
+                public platform: Platform,
+                public categoriaProvider: CategoriaProvider) {
     }
 
     public constants = Constants;
@@ -41,6 +42,8 @@ export class ExplorePage {
         {marca: 'Unieke', produtos: [{null: null}, {null: null}, {null: null}, {null: null}]}
     ];
 
+    public styles = [];
+
     /**
      * Função utilizada para iniciar o scroll do content */
     public doScrollContent = ( ( element:string , event: any) => {
@@ -52,7 +55,16 @@ export class ExplorePage {
     ionViewDidLoad() {
         /* Quando a view foi iniciada, e ja está pronta */
         let profileModal = this.modalCtrl.create(GostosPage);
-        profileModal.present();
+
+        this.categoriaProvider.getCategoriasSelecionadas().subscribe(data => {
+            const response = (data as any);
+            const objeto_retorno = JSON.parse(response._body);
+            
+            this.styles = objeto_retorno;
+        }, error => {
+            console.log(error);
+        })
+            profileModal.present();
     }
 
     /* Fim da função iniciada quando a view estiver pronta */

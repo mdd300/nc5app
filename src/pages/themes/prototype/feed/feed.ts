@@ -3,9 +3,9 @@ import {Component, ViewChild} from '@angular/core';
 import {Constants} from "../../../../config/Constants";
 import {PostPage} from "../modais/post/post";
 import * as $ from "jquery";
-import { PopoverController } from 'ionic-angular';
-import {ActionsFeedPage} from "../popovers/actions-feed/actions-feed";
 
+import { ActionSheetController } from 'ionic-angular'
+import { SocialSharing } from '@ionic-native/social-sharing';
 /**
  * Generated class for the FeedPage page.
  *
@@ -26,7 +26,8 @@ export class FeedPage {
       public navCtrl: NavController,
       public modalCtrl: ModalController,
       public navParams: NavParams,
-      public popoverCtrl: PopoverController
+      public actionSheetCtrl: ActionSheetController,
+      private socialSharing: SocialSharing
   ) {}
 
   // Abrir modal para realizar psot
@@ -91,9 +92,48 @@ export class FeedPage {
         this.filter = filterId;
     });
 
-    public popoverActionsPost() {
-        let popover = this.popoverCtrl.create( ActionsFeedPage );
-        popover.present();
-    }
+
+    private feedAction:any = null;
+
+    /**
+     * Função utilizada para realizar ações relacionadas para
+     * @param post
+     */
+    public actionsPostFeed( post:any ) {
+
+        this.feedAction = post;
+        let actionSheet = this.actionSheetCtrl.create({
+            cssClass: 'feed-post-actions',
+            buttons: [
+                {
+                    text: 'Publicação: ' + this.feedAction.company.toUpperCase(),
+                    cssClass: 'closeFeedActions'
+                },
+                {
+                    text: 'Ocultar: ' + this.feedAction.company.toUpperCase(),
+                    cssClass: 'actionButton btnOcultar',
+                    handler: () => {}
+                },
+                {
+                    text: 'Receber Notificações',
+                    cssClass: 'actionButton btnNotifications',
+                    handler: () => {}
+                },
+                {
+                    text: 'Denunciar: ' + this.feedAction.company.toUpperCase(),
+                    cssClass: 'actionButton btnDenunciar',
+                    handler: () => {}
+                },
+            ]
+        });
+        /* Fim das options de ações de Post do Feed */
+        actionSheet.present();
+    }/* Fim da function actionsPostFeed */
+
+
+    public sharePost = (( post ):void  => {
+        this.socialSharing.share('Olhe este produto que eu encontrei em: ','', '', 'www.go.qrgo.com.br/image').then( ()=> {
+        });
+    });
 
 }
