@@ -138,6 +138,9 @@ var ConfirmCadPageModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfirmCadPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__(273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_jquery__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -149,6 +152,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+
 /**
  * Generated class for the ConfirmCadPage page.
  *
@@ -156,11 +161,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var ConfirmCadPage = (function () {
-    function ConfirmCadPage(navCtrl, navParams, alertCtrl) {
+    function ConfirmCadPage(navCtrl, navParams, http, alertCtrl) {
         var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.http = http;
         this.alertCtrl = alertCtrl;
+        this.Url_http = 'http://localhost/fashon/qrgo/cadastro/autenticacao';
         this.seisdigitos = false;
         /**
          * Função utilizada para pular a confirmação do cadastro
@@ -179,14 +186,41 @@ var ConfirmCadPage = (function () {
             //se o usuario digitar 6 digitos
             if (code.length == 6) {
                 //desabilita o input 
-                _this.seisdigitos = true;
-                //realiza o ajax 
-                var alert_1 = _this.alertCtrl.create({
-                    title: 'Autenticação',
-                    subTitle: 'Usúario autenticado com sucesso!',
-                    buttons: ['Ok']
+                //this.seisdigitos=true;
+                //realiza o ajax enviando como parametro o código de entrada "data"
+                _this.http.post(_this.Url_http, __WEBPACK_IMPORTED_MODULE_3_jquery__["param"]({ codigo: code })).subscribe(function (data) {
+                    var response = data;
+                    var objeto_retorno = JSON.parse(response._body);
+                    //console.log(response._body);
+                    //retorna o código
+                    if (objeto_retorno === true) {
+                        //modal de confirmação para o usuario
+                        var alert = _this.alertCtrl.create({
+                            title: 'Parabéns',
+                            subTitle: 'Parabéns, você realizou o cadastro em nosso sistema. Você será logado automáticamente.',
+                            buttons: ['Ok']
+                        });
+                        alert.present();
+                    }
+                    else {
+                        //modal de código invalido
+                        var alert = _this.alertCtrl.create({
+                            title: 'Autenticação',
+                            subTitle: 'Código incorreto',
+                            buttons: ['Ok']
+                        });
+                        alert.present();
+                    }
+                }, function (error) {
+                    //modal de erro na autenticação
+                    var alert = _this.alertCtrl.create({
+                        title: 'Autenticação',
+                        subTitle: 'Erro na autenticação',
+                        buttons: ['Ok']
+                    });
+                    alert.present();
+                    console.log(error);
                 });
-                alert_1.present();
             }
         });
     }
@@ -194,11 +228,10 @@ var ConfirmCadPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-confirm-cad',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\confirm-cad\confirm-cad.html"*/'<ion-content>\n\n\n\n  <div class="content-center" >\n\n\n\n    <h3 class="page-title">Confirme sua conta</h3>\n\n    <p class="page-description">Confira seu e-mail ou mensagem sms para confirmar sua conta para seguir usar o aplicativo da melhor forma possível!</p>\n\n    <div class="cont-confirmcode" >\n\n      <div class="cad-form-content">\n\n        <label class="cad-form-label">\n\n          <input type="text" class="cad-form-ctrl text-center" placeholder="Codigo" maxlength="6" [(ngModel)]="codeautentic" (keyup)="autenticaCod ( codeautentic )" [disabled]="seisdigitos">\n\n        </label><!-- cad-form-label -->\n\n      </div> <!-- cad-form-content -->\n\n    </div> <!-- cont-confirmcode -->\n\n\n\n  </div> <!-- content-center -->\n\n\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <div class="footer-steps">\n\n\n\n    <div class="next-step-action allowed" (click)="skipCad()">\n\n            <span class="next-step-label">\n\n                Pular\n\n            </span> <!-- next-stap-label -->\n\n      <div class="nextstep-icon">\n\n        <span class="caret-body"></span>\n\n        <span class="caret-direction"></span>\n\n      </div> <!-- nextstep-icon -->\n\n    </div> <!-- next-stap-action -->\n\n\n\n  </div> <!-- footer-steps -->\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\confirm-cad\confirm-cad.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]) === "function" && _d || Object])
     ], ConfirmCadPage);
     return ConfirmCadPage;
+    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=confirm-cad.js.map
