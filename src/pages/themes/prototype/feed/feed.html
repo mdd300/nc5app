@@ -4,7 +4,7 @@
 </ion-header>
 <!-- End of header Default -->
 <!-- Content of feed page -->
-<ion-content>
+<ion-content #Content>
 
     <!-- Start of feed -->
     <div class="feed-background"></div> <!-- feed-background -->
@@ -140,7 +140,7 @@
                                         </svg> <!-- ico-footer-action -->
                                     </div> <!-- card-footer-action" -->
                                 </ion-col>
-                                <ion-col>
+                                <ion-col (click)="sharePost( post )">
                                     <div class="card-footer-action">
                                         <svg class="ico-footer-action">
                                             <use [attr.xlink:href]="constants.src_svg + 'share.svg#Layer_1'"></use>
@@ -231,7 +231,7 @@
                                         </svg> <!-- ico-footer-action -->
                                     </div> <!-- card-footer-action" -->
                                 </ion-col>
-                                <ion-col>
+                                <ion-col (click)="sharePost( post )">
                                     <div class="card-footer-action">
                                         <svg class="ico-footer-action">
                                             <use [attr.xlink:href]="constants.src_svg + 'share.svg#Layer_1'"></use>
@@ -287,7 +287,7 @@
                                         </svg> <!-- ico-footer-action -->
                                     </div> <!-- card-footer-action" -->
                                 </ion-col>
-                                <ion-col>
+                                <ion-col (click)="sharePost( post )">
                                     <div class="card-footer-action">
                                         <svg class="ico-footer-action">
                                             <use [attr.xlink:href]="constants.src_svg + 'share.svg#Layer_1'"></use>
