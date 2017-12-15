@@ -26926,6 +26926,15 @@ page-step2 .scroll-content .grid-complete-cnpj {
   animation: fadeInUp 0.5s ease;
 }
 
+.img-captcha {
+  width: 206px;
+  height: 85px;
+  text-align: center;
+  border-radius: 8px;
+  margin-left: 18%;
+  margin-top: 6%;
+}
+
 @-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -26978,6 +26987,21 @@ page-step2 .scroll-content .grid-complete-cnpj {
   }
 }
 
+.login-btn {
+  padding: 15px 50px;
+  border-radius: 30px;
+  margin: 20px 0 0 0;
+  background: #ff5ba1;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 23%;
+  margin-top: 6%;
+}
+
+/** login-btn */
+/** form-cont */
 page-step3 {
   /** header */
   /** header-back */

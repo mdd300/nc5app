@@ -3,7 +3,7 @@ import {IonicPage, NavController, NavParams, AlertController, Keyboard} from 'io
 import {Constants} from "../../../../../config/Constants";
 import {Step1Page} from "../step1/step1";
 import {Step3Page} from "../step3/step3";
-import {Http} from '@angular/http';
+import {Http, Headers, RequestOptions} from '@angular/http';
 
 /**
  * Generated class for the Step2Page page.
@@ -20,18 +20,20 @@ import {Http} from '@angular/http';
 export class Step2Page {
 
     public constants = Constants;
-    public cnpj:any = "";
     public emp:any = {razao:"" , nome:"", bairro:"" , endereco:"" , numero:"", cidade:"", estado:""};
+    public captcha:any = {digito:"", key:"", cnpj:""};
     public stepOk:boolean = false;
+    public stepOkCnpj:boolean = false;
+    public imgCaptcha:string = "";
 
-
-constructor(
+    constructor(
         public navCtrl: NavController,
         public navParams: NavParams,
         private alertCtrl: AlertController,
         private keyboard: Keyboard,
         private http: Http
     ) {}
+
 
     /**
      * Função utilizada para retornar ao passo 1 do cadastro
@@ -44,23 +46,54 @@ constructor(
      * Função utilizada para verifica o CNPJ digitado
      * @type {(cnpj: number) => any} - valor do numero do cnpj
      */
-    public keyupCnpj = (( cnpj:number )=>{
+    public keyupCnpj = (()=>{
         /* Verifica se o CNPJ é real */
-        this.stepOk = ( ( cnpj == 123 ) ? true : false );
-        this.getPeople();
-        console.log(cnpj);
-        if( this.stepOk ){
+        // console.log(this.cnpj.length);
+
+        if( this.captcha.cnpj.length == 11  ){
+            this.getCaptcha();
             this.keyboard.close();
+        }else{
+            this.stepOk = false;
         }
     });/* Fim da função */
 
-    getPeople() {
-        this.http.post('http://localhost/fashon/qrgo/Cadastro/getCaptcha', JSON.stringify({solicitacao: true})).subscribe(
-            res => {
 
-            }
-        );
-    }
+    public getCaptcha = (() => {
+
+        this.http.post(
+            'http://localhost/fashon/qrgo/cadastro/getCaptcha', {'cnpj': this.captcha.cnpj})
+            .subscribe((data) => {
+                    var resposta = JSON.parse(data._body);
+                    console.log(resposta);
+                    if(!resposta.existe){
+                        this.imgCaptcha = resposta.dados.captchaBase64;
+                        this.stepOk = true;
+                    }
+                }
+
+            )
+    });
+
+
+    public getCnpj = (() => {
+
+        this.http.post(
+            'http://localhost/fashon/qrgo/cadastro/getCnpj',(this.captcha))
+            .subscribe((data) => {
+                    var resposta = JSON.parse(data._body);
+                    if(resposta.existe){
+                        this.imgCaptcha = resposta.dados.captchaBase64;
+                        this.stepOkCnpj = true;
+                        this.stepOk = false;
+                        this.captcha.key = resposta.dados.cookie;
+
+                    }
+                }
+
+            )
+    });
+
 
 
 

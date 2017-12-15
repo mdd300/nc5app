@@ -30,15 +30,33 @@
                     <div class="cad-form-content">
                         <label class="cad-form-label">
                             <span class="cad-form-label-txt"> CNPJ: </span> <!-- cad-form-label-txt -->
-                            <input type="text" [(ngModel)]="cnpj" (keyup)="keyupCnpj( cnpj )" class="cad-form-ctrl" placeholder="Insira o CNPJ">
+                            <input type="text" [(ngModel)]="captcha.cnpj" (keyup)="keyupCnpj()" class="cad-form-ctrl" placeholder="Insira o CNPJ">
                         </label><!-- cad-form-label -->
                     </div> <!-- cad-form-content -->
                 </ion-col>
             </ion-row>
 
-            <ion-row>
 
-                <ion-grid class="grid-complete-cnpj" [hidden]="!stepOk">
+            <div [hidden]="!stepOk">
+                <ion-row>
+                    <ion-col>
+                        <img  class="img-captcha"  [attr.src]="imgCaptcha">
+                        <i class="ion-refresh"></i>
+                        <div class="cad-form-content">
+                            <label class="cad-form-label">
+                                <span class="cad-form-label-txt"> Captcha: </span> <!-- cad-form-label-txt -->
+                                <input type="text" [(ngModel)]="captcha.digito" class="cad-form-ctrl" placeholder="Insira o Captcha">
+                            </label><!-- cad-form-label -->
+                        </div> <!-- cad-form-content -->
+                    </ion-col>
+                </ion-row>
+                <div class="form-cont">
+                    <button class="login-btn" (click)=" getCnpj()">Consultar</button>
+                </div> <!-- form-cont -->
+            </div>
+
+            <ion-row>
+                <ion-grid class="grid-complete-cnpj" [hidden]="!stepOkCnpj">
                     <ion-row>
                         <ion-col>
 
