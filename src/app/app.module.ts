@@ -26,6 +26,7 @@ import {SocialSharing} from "@ionic-native/social-sharing";
 import {ForgotPass_1PageModule} from "../pages/themes/prototype/forgot-pass/forgot-pass-1/forgot-pass-1.module";
 import {ForgotPass_2PageModule} from "../pages/themes/prototype/forgot-pass/forgot-pass-2/forgot-pass-2.module";
 import {ForgotPass_3PageModule} from "../pages/themes/prototype/forgot-pass/forgot-pass-3/forgot-pass-3.module";
+import {IonicStorageModule} from '@ionic/storage';
 
 @NgModule({
     declarations: [
@@ -52,7 +53,10 @@ import {ForgotPass_3PageModule} from "../pages/themes/prototype/forgot-pass/forg
         ForgotPass_3PageModule,
 
         HttpModule,
-
+        IonicStorageModule.forRoot({
+            name: 'fashon',
+            driverOrder: ['sqlite', 'websql', 'indexeddb']
+        })
     ],
     bootstrap: [IonicApp],
     entryComponents: [

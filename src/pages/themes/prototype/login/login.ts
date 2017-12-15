@@ -59,7 +59,6 @@ export class LoginPage {
     public doLogin = (() => {
 
         var data_send = this.logindata;
-
         this.http.post(this.constants.api_path + 'login/dologin', $.param(data_send)).subscribe(response => {
 
             const res = (response as any);
@@ -68,26 +67,26 @@ export class LoginPage {
 
             console.log(login);
 
-            if (login.success) {
-                /* Redireciona a pagina root como a pagina de exploração */
-                this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
-            }
-            else {
+            this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
 
-                var __this = this;
+            // if (login.success) {
+            //     this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
+            // }else {
+            //     var __this = this;
+            //
+            //     if (login.no_verified) {
+            //         this.navCtrl.push(ConfirmCadPage);
+            //     }
+            //     else {
+            //         setTimeout(function () {
+            //
+            //             const text = (__this.login as any);
+            //
+            //             text.text = "";
+            //         }, 3000);
+            //     }
+            // }
 
-                if (login.no_verified) {
-                    this.navCtrl.push(ConfirmCadPage);
-                }
-                else {
-                    setTimeout(function () {
-
-                        const text = (__this.login as any);
-
-                        text.text = "";
-                    }, 3000);
-                }
-            }
 
         });
 
