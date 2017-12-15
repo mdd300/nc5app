@@ -58,37 +58,38 @@ export class LoginPage {
      * Função utilizada para realizar o login do usuário */
     public doLogin = (() => {
 
-        var data_send = this.logindata;
-        this.http.post(this.constants.api_path + 'login/dologin', $.param(data_send)).subscribe(response => {
+        // var data_send = this.logindata;
+        this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
 
-            const res = (response as any);
-            this.login = JSON.parse(res._body);
-            const login = (this.login as any);
-
-            console.log(login);
-
-            this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
-
-            // if (login.success) {
-            //     this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
-            // }else {
-            //     var __this = this;
-            //
-            //     if (login.no_verified) {
-            //         this.navCtrl.push(ConfirmCadPage);
-            //     }
-            //     else {
-            //         setTimeout(function () {
-            //
-            //             const text = (__this.login as any);
-            //
-            //             text.text = "";
-            //         }, 3000);
-            //     }
-            // }
+        // this.http.post(this.constants.api_path + 'login/dologin', $.param(data_send)).subscribe(response => {
+        //
+        //     const res = (response as any);
+        //     this.login = JSON.parse(res._body);
+        //     const login = (this.login as any);
+        //
+        //     console.log(login);
 
 
-        });
+        // if (login.success) {
+        //     this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
+        // }else {
+        //     var __this = this;
+        //
+        //     if (login.no_verified) {
+        //         this.navCtrl.push(ConfirmCadPage);
+        //     }
+        //     else {
+        //         setTimeout(function () {
+        //
+        //             const text = (__this.login as any);
+        //
+        //             text.text = "";
+        //         }, 3000);
+        //     }
+        // }
+
+
+        // });
 
 
     });
