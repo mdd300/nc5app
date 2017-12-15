@@ -1,18 +1,65 @@
-<!--
-  Generated template for the ForgotPass_3Page page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>forgot-pass-3</ion-title>
-  </ion-navbar>
-
+  <ion-grid>
+    <ion-row>
+      <ion-col col-auto class="col-icon-back" (click)="backPage()">
+        <ion-icon name="ios-arrow-back" class="icon-back"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-header>
-
-
 <ion-content padding>
 
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h3 class="title-page">
+          Código de Confirmação
+        </h3><!-- title-page -->
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p class="page-description">
+          Um código de verificação foi enviado ao seu email. Por favor, digite o código aqui para continuar o processo! estamos quase lá!
+        </p><!-- page-description -->
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+          <span class="label-form">
+          Código de Confirmação
+          </span><!-- label-form -->
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <input type="teste" class="recover-form" placeholder="Código">
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <span class="resend-code"> Re-enviar código </span>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
 </ion-content>
+<ion-footer>
+  <div class="footer-steps" >
+
+    <div class="next-step-action" [ngClass]="{'allowed': true }" (click)="confirmCode()" >
+            <span class="next-step-label">
+                Confirmar!
+            </span> <!-- next-stap-label -->
+      <div class="nextstep-icon" >
+        <span class="caret-body"></span>
+        <span class="caret-direction"></span>
+      </div> <!-- nextstep-icon -->
+    </div> <!-- next-stap-action -->
+
+  </div> <!-- footer-steps -->
+</ion-footer>

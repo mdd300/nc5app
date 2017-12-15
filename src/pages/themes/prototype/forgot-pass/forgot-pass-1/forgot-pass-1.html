@@ -47,7 +47,7 @@
 <ion-footer>
     <div class="footer-steps" >
 
-        <div class="next-step-action" [ngClass]="{'allowed': valid_email }">
+        <div class="next-step-action" [ngClass]="{'allowed': valid_email }" (click)="sendEmail()">
             <span class="next-step-label">
                 Próximo
             </span> <!-- next-stap-label -->
