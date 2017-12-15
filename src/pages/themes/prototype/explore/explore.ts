@@ -2,7 +2,8 @@ import {Component, ViewChild} from '@angular/core';
 import {ModalController, IonicPage, NavController, NavParams, Platform} from 'ionic-angular';
 import {GostosPage} from "../modais/gostos/gostos";
 import {Constants} from "../../../../config/Constants";
-import { CategoriaProvider } from '../../../../providers/categoria/categoria';
+import {CategoriaProvider} from '../../../../providers/categoria/categoria';
+import {Storage} from '@ionic/storage';
 
 /**
  * Generated class for the ExplorePage page.
@@ -25,7 +26,8 @@ export class ExplorePage {
                 public navParams: NavParams,
                 public modalCtrl: ModalController,
                 public platform: Platform,
-                public categoriaProvider: CategoriaProvider) {
+                public categoriaProvider: CategoriaProvider,
+                public storage: Storage) {
     }
 
     public constants = Constants;
@@ -61,10 +63,19 @@ export class ExplorePage {
             const objeto_retorno = JSON.parse(response._body);
             
             this.styles = objeto_retorno;
+            
+            // armazena localmente para caso de falta de internet
+            this.storage.set('styles', objeto_retorno);
+            this.storage.set('profile_modal_clicado', true);
         }, error => {
             console.log(error);
-        })
-            profileModal.present();
+            // captura dados locais caso não consiga os dados online
+            this.styles = (this.storage.get('styles') as any);
+        }).add(() => {
+            if (this.styles.length < 1) {
+                profileModal.present();
+            }
+        });
     }
 
     /* Fim da função iniciada quando a view estiver pronta */
