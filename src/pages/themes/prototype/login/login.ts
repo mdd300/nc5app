@@ -60,11 +60,11 @@ export class LoginPage {
 
         this.http.post(this.constants.api_path + 'login/dologin', $.param(data_send)).subscribe(response => {
 
-            console.log(response);
+            const res = (response as any);
+            const login = (this.login as any);
+            this.login = JSON.parse(res._body);
 
-            this.login = JSON.parse(response._body);
-
-            if (this.login.success) {
+            if (login.success) {
                 /* Redireciona a pagina root como a pagina de exploração */
                 this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
             }
@@ -73,8 +73,11 @@ export class LoginPage {
                 var __this = this;
 
                 setTimeout(function () {
-                    __this.login.text = "";
-                }, 2000);
+
+                    const text = (__this.login as any);
+
+                    text.text = "";
+                }, 3000);
             }
 
         });
