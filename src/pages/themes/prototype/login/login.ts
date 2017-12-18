@@ -8,6 +8,7 @@ import {SystemTabsPage} from "../system-tabs/system-tabs";
 import {ForgotPass_1Page} from "../forgot-pass/forgot-pass-1/forgot-pass-1";
 import * as $ from "jquery";
 import {ConfirmCadPage} from "../cadastro/confirm-cad/confirm-cad";
+import {Storage} from '@ionic/storage';
 
 /**
  * Generated class for the LoginPage page.
@@ -35,7 +36,8 @@ export class LoginPage {
     constructor(public navCtrl: NavController,
                 public navParams: NavParams,
                 public toastCtrl: ToastController,
-                public http: Http,) { /* Init of constructor of class */
+                public http: Http,
+                public storage: Storage) { /* Init of constructor of class */
     }
 
     /** Fim do constructor da classe */
@@ -58,35 +60,37 @@ export class LoginPage {
      * Função utilizada para realizar o login do usuário */
     public doLogin = (() => {
 
-        // var data_send = this.logindata;
-        this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
+        // this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
 
-        // this.http.post(this.constants.api_path + 'login/dologin', $.param(data_send)).subscribe(response => {
-        //
-        //     const res = (response as any);
-        //     this.login = JSON.parse(res._body);
-        //     const login = (this.login as any);
-        //
-        //     if (login.success) {
-        //
-        //         if (login.no_verified) {
-        //             console.log(login);
-        //             this.navCtrl.push(ConfirmCadPage);
-        //         }
-        //         else {
-        //             this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
-        //         }
-        //
-        //     } else {
-        //         var __this = this;
-        //         setTimeout(function () {
-        //             const text = (__this.login as any);
-        //             text.text = "";
-        //         }, 3000);
-        //
-        //     }
-        //
-        // });
+        var data_send = this.logindata;
+        this.http.post(this.constants.api_path + 'login/dologin', $.param(data_send)).subscribe(response => {
+
+            const res = (response as any);
+            this.login = JSON.parse(res._body);
+            const login = (this.login as any);
+
+            if (login.success) {
+
+                this.storage.set('user_logged', login.userdata);
+
+                if (login.no_verified) {
+                    console.log(login);
+                    this.navCtrl.push(ConfirmCadPage);
+                }
+                else {
+                    this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
+                }
+
+            } else {
+                var __this = this;
+                setTimeout(function () {
+                    const text = (__this.login as any);
+                    text.text = "";
+                }, 3000);
+
+            }
+
+        });
 
 
     });

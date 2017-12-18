@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 import {ForgotPass_2Page} from "../forgot-pass-2/forgot-pass-2";
+import {Storage} from '@ionic/storage';
 
 /**
  * Generated class for the ForgotPass_1Page page.
@@ -20,7 +21,8 @@ export class ForgotPass_1Page {
     constructor(
         public navCtrl: NavController,
         public navParams: NavParams,
-        private alertCtrl: AlertController
+        private alertCtrl: AlertController,
+        public storage: Storage
     ) {}
 
     public valid_email:boolean;
@@ -47,7 +49,10 @@ export class ForgotPass_1Page {
         /* Verifica se o Email digitado é valido */
         if( this.valid_email ){
             /* Caso valido, prossegue com o processo */
-            this.navCtrl.push( ForgotPass_2Page )
+
+            console.log(this.storage.get('user_logged'));
+
+            // this.navCtrl.push( ForgotPass_2Page )
         }else{
             /* Caso o email digitado não seja válido */
             /* Exibe o alerta dizendo que o email é necessário */
