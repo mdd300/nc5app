@@ -26031,6 +26031,36 @@ ion-navbar.toolbar {
 
 /** feed-post-actions */
 /** Fim do estilo da action sheet das opções de post do feed */
+.pink-button {
+  background: #ff5ba1;
+  border-radius: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-family: Multicolore;
+  padding: 20px 30px;
+  /** activated */
+  /** active */
+}
+
+.pink-button.activated {
+  background: #cc286e !important;
+}
+
+.pink-button:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #cc286e !important;
+}
+
+/** pink-button */
+.align-center {
+  margin: 0 auto;
+  display: table;
+}
+
+/** align-center */
 /** Form de recuperação de senha */
 .recover-form {
   width: 100%;
@@ -26206,6 +26236,9 @@ page-confirm-cad {
   /** scroll-content */
   /** footer */
   /** content-center */
+  /** content-center */
+  /** resend-code */
+  /** confirm-code */
 }
 
 page-confirm-cad .header:after {
@@ -26472,25 +26505,48 @@ page-confirm-cad .content-center .page-title {
   text-align: center;
   color: #b4c1d6;
   font-size: 1.8em;
-  padding: 0 20px;
   margin: 0;
   text-transform: uppercase;
 }
 
 page-confirm-cad .content-center .page-description {
-  width: 80%;
+  width: 100%;
   display: table;
-  padding: 20px 0;
   color: #b4c1d6;
   margin: 0 auto;
   text-align: center;
 }
 
 page-confirm-cad .content-center .cont-confirmcode {
-  width: 80%;
+  width: 100%;
   display: table;
   margin: 0 auto;
   position: relative;
+}
+
+page-confirm-cad .content-center {
+  width: 100%;
+  padding: 0 5%;
+}
+
+page-confirm-cad .resend-code {
+  position: relative;
+  float: right;
+  color: #b4c1d6;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+
+page-confirm-cad .confirm-code {
+  width: 60%;
+  margin: 0 auto;
+  display: table;
+  border-radius: 30px;
+  background: #ff5ba1;
+  font-family: Multicolore;
+  padding: 10px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 page-step1 {
