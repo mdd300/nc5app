@@ -2,6 +2,8 @@ import {Component} from '@angular/core';
 import {AlertController, IonicPage, NavController, NavParams} from 'ionic-angular';
 import { Http } from '@angular/http';
 import * as $ from 'jquery';
+import {Constants} from "../../../../../config/Constants";
+
 
 /**
  * Generated class for the ConfirmCadPage page.
@@ -16,10 +18,9 @@ import * as $ from 'jquery';
     templateUrl: 'confirm-cad.html',
 })
 export class ConfirmCadPage {
-
-    private Url_http = 'http://localhost/fashon/qrgo/cadastro/autenticacao';
-
+    
     public seisdigitos:boolean = false;
+    public constants = Constants;
 
     constructor(public navCtrl: NavController,
                 public navParams: NavParams,
@@ -50,7 +51,7 @@ export class ConfirmCadPage {
             //this.seisdigitos=true;
 
             //realiza o ajax enviando como parametro o código de entrada "data"
-            this.http.post(this.Url_http,$.param({codigo:code})).subscribe(data => {
+            this.http.post(this.constants.api_path+'cadastro/autenticacao',$.param({codigo:code})).subscribe(data => {
                 const response = (data as any);
                 const objeto_retorno = JSON.parse(response._body);
                 

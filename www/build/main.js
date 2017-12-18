@@ -147,6 +147,7 @@ var ConfirmCadPageModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_jquery__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_Constants__ = __webpack_require__(13);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -156,6 +157,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -173,8 +175,8 @@ var ConfirmCadPage = (function () {
         this.navParams = navParams;
         this.http = http;
         this.alertCtrl = alertCtrl;
-        this.Url_http = 'http://localhost/fashon/qrgo/cadastro/autenticacao';
         this.seisdigitos = false;
+        this.constants = __WEBPACK_IMPORTED_MODULE_4__config_Constants__["a" /* Constants */];
         /**
          * Função utilizada para pular a confirmação do cadastro
          */
@@ -194,28 +196,28 @@ var ConfirmCadPage = (function () {
                 //desabilita o input 
                 //this.seisdigitos=true;
                 //realiza o ajax enviando como parametro o código de entrada "data"
-                _this.http.post(_this.Url_http, __WEBPACK_IMPORTED_MODULE_3_jquery__["param"]({ codigo: code })).subscribe(function (data) {
+                _this.http.post(_this.constants.api_path + 'cadastro/autenticacao', __WEBPACK_IMPORTED_MODULE_3_jquery__["param"]({ codigo: code })).subscribe(function (data) {
                     var response = data;
                     var objeto_retorno = JSON.parse(response._body);
                     //console.log(response._body);
                     //retorna o código
                     if (objeto_retorno === true) {
                         //modal de confirmação para o usuario
-                        var alert_1 = _this.alertCtrl.create({
+                        var alert = _this.alertCtrl.create({
                             title: 'Parabéns',
                             subTitle: 'Parabéns, você realizou o cadastro em nosso sistema. Você será logado automáticamente.',
                             buttons: ['Ok']
                         });
-                        alert_1.present();
+                        alert.present();
                     }
                     else {
                         //modal de código invalido
-                        var alert_2 = _this.alertCtrl.create({
+                        var alert = _this.alertCtrl.create({
                             title: 'Autenticação',
                             subTitle: 'Código incorreto',
                             buttons: ['Ok']
                         });
-                        alert_2.present();
+                        alert.present();
                     }
                 }, function (error) {
                     //modal de erro na autenticação
@@ -234,12 +236,10 @@ var ConfirmCadPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-confirm-cad',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\confirm-cad\confirm-cad.html"*/'<ion-content>\n\n\n\n  <div class="content-center" >\n\n\n\n    <ion-grid class="grid-confirm-cad">\n\n      <ion-row>\n\n        <ion-col>\n\n\n\n          <h3 class="page-title">Confirme sua conta</h3>\n\n\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row>\n\n        <ion-col>\n\n\n\n          <p class="page-description">Confira seu e-mail ou mensagem sms para confirmar sua conta para seguir usar o aplicativo da melhor forma possível!</p>\n\n\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n      <ion-row>\n\n        <ion-col>\n\n\n\n          <div class="cont-confirmcode" >\n\n            <div class="cad-form-content">\n\n              <label class="cad-form-label">\n\n                <input type="text" class="cad-form-ctrl text-center" placeholder="Codigo" maxlength="6" [(ngModel)]="codeautentic" (keyup)="autenticaCod ( codeautentic )" [disabled]="seisdigitos">\n\n              </label><!-- cad-form-label -->\n\n            </div> <!-- cad-form-content -->\n\n          </div> <!-- cont-confirmcode -->\n\n\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n      <ion-row>\n\n        <ion-col>\n\n          <span class="resend-code"> Re-enviar código </span>\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n      <ion-row>\n\n        <ion-col>\n\n          <button ion-button class="pink-button align-center" > Confirmar </button>\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n    </ion-grid><!-- grid-confirm-cad -->\n\n\n\n  </div> <!-- content-center -->\n\n\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <div class="footer-steps">\n\n\n\n    <div class="next-step-action allowed" (click)="skipCad()">\n\n            <span class="next-step-label">\n\n                Pular\n\n            </span> <!-- next-stap-label -->\n\n      <div class="nextstep-icon">\n\n        <span class="caret-body"></span>\n\n        <span class="caret-direction"></span>\n\n      </div> <!-- nextstep-icon -->\n\n    </div> <!-- next-stap-action -->\n\n\n\n  </div> <!-- footer-steps -->\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\confirm-cad\confirm-cad.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]) === "function" && _d || Object])
     ], ConfirmCadPage);
     return ConfirmCadPage;
+    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=confirm-cad.js.map
@@ -2368,7 +2368,7 @@ var ExplorePage = (function () {
     }
     ExplorePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-explore',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\explore\explore.html"*/'<ion-content>\n\n\n\n    <div class="background-explore" [ngStyle]="{\'background-image\': \'url(\' + constants.src_img + \'backgrounds/explore-background.png)\'}"></div> <!-- background-explore -->\n\n\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col col-auto class="pointer">\n\n\n\n                <div class="explore-back" >\n\n                    <svg class="ico-explore-back">\n\n                       <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-explore-back -->\n\n                </div> <!-- explore-back -->\n\n\n\n            </ion-col>\n\n            <ion-col class="relative">\n\n\n\n                <input type="search" class="explore-search" placeholder="Buscar">\n\n                <ion-icon name="md-close-circle" class="explore-search-close" ></ion-icon>\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n\n\n    <ion-grid class="grid-estilos">\n\n        <ion-row>\n\n            <ion-col>\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n            <ion-col col-auto>\n\n                More...\n\n            </ion-col>\n\n            <ion-col>\n\n                gosto...\n\n            </ion-col>\n\n            <ion-col col-auto>\n\n                Ola\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid><!-- grid-estilos -->\n\n\n\n</ion-content>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\explore\explore.html"*/,
+            selector: 'page-explore',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\explore\explore.html"*/'<ion-content>\n\n\n\n    <div class="background-explore" [ngStyle]="{\'background-image\': \'url(\' + constants.src_img + \'backgrounds/explore-background.png)\'}"></div> <!-- background-explore -->\n\n\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col col-auto class="pointer">\n\n\n\n                <div class="explore-back" >\n\n                    <svg class="ico-explore-back">\n\n                       <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-explore-back -->\n\n                </div> <!-- explore-back -->\n\n\n\n            </ion-col>\n\n            <ion-col class="relative">\n\n\n\n                <input type="search" class="explore-search" placeholder="Buscar">\n\n                <ion-icon name="md-close-circle" class="explore-search-close" ></ion-icon>\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n\n\n    <ion-grid class="grid-estilos">\n\n        <ion-row>\n\n            <ion-col>\n\n\n\n                <span class="grid-title">\n\n                    Seus Estilos\n\n                </span> <!-- grid-title -->\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n            <ion-col col-auto>\n\n                More...\n\n            </ion-col>\n\n            <ion-col>\n\n                gosto...\n\n            </ion-col>\n\n            <ion-col col-auto>\n\n                Ola\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid><!-- grid-estilos -->\n\n\n\n</ion-content>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\explore\explore.html"*/,
         }),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]) === "function" && _b || Object])
     ], ExplorePage);

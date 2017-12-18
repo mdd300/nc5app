@@ -52,10 +52,18 @@ page-explore {
     cursor: pointer;
   }/** explore-search-close */
 
-
   .grid-estilos{
     margin: 10px 0 0 0;
-    
+    .grid-title{
+      width: 100%;
+      float: left;
+      font-weight: bold;
+      font-family: Multicolore;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1em;
+      padding: 0 0 0 10px;
+    }/** grid-title */
   }/** grid-estilos */
 
 }/** page-explore */

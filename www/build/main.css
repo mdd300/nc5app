@@ -27524,6 +27524,18 @@ page-explore .explore-search-close {
 
 page-explore .grid-estilos {
   margin: 10px 0 0 0;
+  /** grid-title */
+}
+
+page-explore .grid-estilos .grid-title {
+  width: 100%;
+  float: left;
+  font-weight: bold;
+  font-family: Multicolore;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 0 0 0 10px;
 }
 
 /** page-explore */
