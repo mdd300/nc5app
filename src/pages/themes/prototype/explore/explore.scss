@@ -64,6 +64,63 @@ page-explore {
       font-size: 1em;
       padding: 0 0 0 10px;
     }/** grid-title */
+
+    .style-plus-button{
+      padding: 5px 20px;
+      border: 2px solid #fff;
+      border-radius: $border-rd-xl;
+      background: transparent;
+      color: #fff;
+      font-size: 1.3em;
+    }/** style-plus-button */
+    .viewbox-styles{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      overflow-x: auto;
+      overflow-y: hidden;
+      &::-webkit-scrollbar{ display: none; }
+      
+      ul.list-styles{
+        width: auto;
+        position: relative;
+        list-style: none;
+        white-space: nowrap;
+        margin: 0;
+        padding: 0;
+        li.style-item{
+          padding: 7px 20px 6px 20px;
+          font-size: 1.1em;
+          display: inline-table;
+          margin: 0 3px 0 0;
+          color: #fff;
+          border-radius: $border-rd-xl;
+
+          &.pink{ background: #d72f6c; }
+          &.purple{ background: #b334d1; }
+          &.brown{ background: #66313a; }
+
+        }/** style-item */
+      }/** list-styles */
+
+    }/** viewbox-styles */
+    .filter-styles{
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      border: 2px solid #fff;
+      margin: -4px 0 0 20px;
+      position: relative;
+      cursor: pointer;
+      .ico-filter-styles{
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        left: 25%;
+        top: 25%;
+        fill: #fff;
+      }/** ico-filter-styles */
+    }/** filter-styles */
   }/** grid-estilos */
 
 }/** page-explore */
