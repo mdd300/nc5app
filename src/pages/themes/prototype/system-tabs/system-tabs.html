@@ -7,7 +7,7 @@
 </ion-menu>
 
 
-<ion-tabs #tabs selectedIndex="1">
+<ion-tabs #tabs selectedIndex="1" (tap)="scrollTopContent( $event )">
   <ion-tab [root]="pageHome" tabIcon="QrHome"></ion-tab>
   <ion-tab [root]="pageExplore" tabIcon="QrExplore"></ion-tab>
   <ion-tab [root]="pageBag" tabIcon="QrBag"></ion-tab>

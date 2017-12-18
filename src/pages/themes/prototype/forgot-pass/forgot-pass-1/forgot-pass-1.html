@@ -1,0 +1,61 @@
+<ion-header>
+    <ion-grid>
+        <ion-row>
+            <ion-col col-auto class="col-icon-back" (click)="backPage()">
+                <ion-icon name="ios-arrow-back" class="icon-back"></ion-icon>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-header>
+<ion-content padding>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col> 
+                <h3 class="title-page">
+                    Recuperar Senha.
+                </h3><!-- title-page -->
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <p class="page-description">
+                    Atenção: Se você perdeu, ou não lembra mais a sua senha de acesso, preencha este formulário para iniciar o processo para gerar uma nova senha para você!
+                </p><!-- page-description -->
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+                <span class="label-form">
+                Insira o seu Email
+                </span><!-- label-form -->
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+                    <input type="email" [(ngModel)]="email_to_recover" (keyup)="validateEmail( email_to_recover )" class="recover-form" placeholder="exemple@exemple.com">
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+
+</ion-content>
+
+
+<ion-footer>
+    <div class="footer-steps" >
+
+        <div class="next-step-action" [ngClass]="{'allowed': valid_email }" (click)="sendEmail()">
+            <span class="next-step-label">
+                Próximo
+            </span> <!-- next-stap-label -->
+            <div class="nextstep-icon" >
+                <span class="caret-body"></span>
+                <span class="caret-direction"></span>
+            </div> <!-- nextstep-icon -->
+        </div> <!-- next-stap-action -->
+        
+    </div> <!-- footer-steps -->
+</ion-footer>

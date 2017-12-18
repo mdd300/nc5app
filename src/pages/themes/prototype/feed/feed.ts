@@ -5,7 +5,7 @@ import {PostPage} from "../modais/post/post";
 import * as $ from "jquery";
 
 import { ActionSheetController } from 'ionic-angular'
-
+import { SocialSharing } from '@ionic-native/social-sharing';
 /**
  * Generated class for the FeedPage page.
  *
@@ -26,7 +26,8 @@ export class FeedPage {
       public navCtrl: NavController,
       public modalCtrl: ModalController,
       public navParams: NavParams,
-      public actionSheetCtrl: ActionSheetController
+      public actionSheetCtrl: ActionSheetController,
+      private socialSharing: SocialSharing
   ) {}
 
   // Abrir modal para realizar psot
@@ -128,5 +129,11 @@ export class FeedPage {
         /* Fim das options de ações de Post do Feed */
         actionSheet.present();
     }/* Fim da function actionsPostFeed */
+
+
+    public sharePost = (( post ):void  => {
+        this.socialSharing.share('Olhe este produto que eu encontrei em: ','', '', 'www.go.qrgo.com.br/image').then( ()=> {
+        });
+    });
 
 }
