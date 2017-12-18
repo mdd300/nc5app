@@ -61,11 +61,11 @@ export class LoginPage {
     public doLogin = (() => {
 
         this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
-
+        //
         // var data_send = this.logindata;
         // this.http.post(this.constants.api_path + 'login/dologin', $.param(data_send)).subscribe(response => {
         //
-        //     const res = (response as any);
+        //     var res = (response as any);
         //     this.login = JSON.parse(res._body);
         //     const login = (this.login as any);
         //
@@ -84,7 +84,7 @@ export class LoginPage {
         //     } else {
         //         var __this = this;
         //         setTimeout(function () {
-        //             const text = (__this.login as any);
+        //             var text = (__this.login as any);
         //             text.text = "";
         //         }, 3000);
         //
