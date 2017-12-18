@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
-import {IonicPage, NavController, NavParams} from 'ionic-angular';
+import {AlertController, IonicPage, NavController, NavParams} from 'ionic-angular';
+import {LoginPage} from "../../login/login";
 
 /**
  * Generated class for the ForgotPass_3Page page.
@@ -15,8 +16,11 @@ import {IonicPage, NavController, NavParams} from 'ionic-angular';
 })
 export class ForgotPass_3Page {
 
-    constructor(public navCtrl: NavController, public navParams: NavParams) {
-    }
+    constructor(
+        public navCtrl: NavController,
+        public navParams: NavParams,
+        private alertCtrl: AlertController
+    ) {}
 
     /**
      * Função utilizada para "voltar" uma pagina do aplicativo */
@@ -25,5 +29,25 @@ export class ForgotPass_3Page {
         this.navCtrl.pop();
     });
     /* Fim da função de backPage */
+
+    /**
+     * Função utilizada para finalizar o processo de recuperação de senha.
+     */
+    public finishNewPass = ( () => {
+
+        let alert = this.alertCtrl.create({
+            title: 'Senhas Alteradas!',
+            subTitle: 'Suas senhas foram alteradas com sucesso! você será redirecionado para a página de login.',
+            enableBackdropDismiss: false,
+            buttons: [{
+                text: 'Ok',
+                handler: () => {
+                    this.navCtrl.setRoot(LoginPage);
+                } /* Hander of "OK" button */
+            }]
+        });
+        alert.present();
+
+    } );
 
 }

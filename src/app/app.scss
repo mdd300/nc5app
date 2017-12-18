@@ -266,6 +266,28 @@
 }/** feed-post-actions */
 /** Fim do estilo da action sheet das opções de post do feed */
 
+.pink-button{
+  background: $color-pink;
+  border-radius: $border-rd-xl;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: none;
+  font-family: Multicolore;
+  padding: 20px 30px;
+  &.activated{
+    background: $color-pink - #333 !important;
+  }/** activated */
+  &:active{
+    box-shadow: none;
+    background: $color-pink - #333 !important;
+  }/** active */
+
+}/** pink-button */
+
+.align-center{
+  margin: 0 auto;
+  display: table;
+}/** align-center */
 
 /** Form de recuperação de senha */
 .recover-form{
