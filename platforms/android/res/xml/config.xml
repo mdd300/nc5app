@@ -18,7 +18,7 @@
     <name>QRGO Prototype</name>
     <description>Protótipo da aplicação</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">QrGo Team</author>
-    <content original-src="index.html" src="http://192.168.0.62:8100" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
