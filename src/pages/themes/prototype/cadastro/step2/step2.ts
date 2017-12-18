@@ -5,6 +5,7 @@ import {Step1Page} from "../step1/step1";
 import {Step3Page} from "../step3/step3";
 import {Http, Headers, RequestOptions} from '@angular/http';
 import * as $ from 'jquery';
+import { LoadingController } from 'ionic-angular';
 
 /**
  * Generated class for the Step2Page page.
@@ -29,17 +30,24 @@ export class Step2Page {
     public imgCaptcha:string = "";
     public user_type = this.navParams.get("user_type");
 
+
     constructor(
         public navCtrl: NavController,
         public navParams: NavParams,
         private alertCtrl: AlertController,
         private keyboard: Keyboard,
-        private http: Http
+        private http: Http,
+        public loadingCtrl: LoadingController
 
     ) {}
 
 
+
+
     /**
+
+     /**
+     /**
      * Função utilizada para retornar ao passo 1 do cadastro
      * @type {() => any} */
     public backToStep1 = (() => {
@@ -52,7 +60,6 @@ export class Step2Page {
      */
 
     public statusBusca = (()=>{
-        console.log('teste');
         this.stepOk = false;
         this.stepOkCnpj = false;
     });
@@ -64,24 +71,23 @@ export class Step2Page {
 
         if(this.validateCnpj()) {
             this.captcha.cnpj = this.clearDataMask(this.captcha.cnpj  , 'cnpj');
-            console.log( this.captcha.cnpj);
             this.getCaptcha();
         }
 
     });/* Fim da função */
 
-
-
-
     public getCaptcha = (() => {
         this.captcha.digito = "";
-
+        var resposta = null;
+        let loader = this.loadingCtrl.create({
+            content: "Please wait...",
+        });
+        loader.present();
         this.http.post(
             Constants.api_path+'cadastro/getCaptcha', {'cnpj': this.captcha.cnpj})
             .subscribe((data) => {
-                    var resposta = JSON.parse(data._body);
+                    resposta = JSON.parse(data._body);
                     if(!resposta.existe){
-                        console.log(resposta.dados);
                         this.imgCaptcha = resposta.dados.captchaBase64;
                         this.captcha.key = resposta.dados.cookie;
                         this.stepOk = true;
@@ -89,9 +95,7 @@ export class Step2Page {
                         this.emp.empresa_existe = false;
 
                     }else{
-                        console.log(this.emp);
                         this.emp = resposta.dados[0];
-                        console.log(this.emp);
                         this.stepOkCnpj = true;
                         this.stepOk = false;
                         this.emp.empresa_existe = true;
