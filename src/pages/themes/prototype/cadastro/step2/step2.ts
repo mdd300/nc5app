@@ -5,7 +5,7 @@ import {Step1Page} from "../step1/step1";
 import {Step3Page} from "../step3/step3";
 import {Http, Headers, RequestOptions} from '@angular/http';
 import * as $ from 'jquery';
-import { LoadingController } from 'ionic-angular';
+import {LoadingController} from 'ionic-angular';
 
 /**
  * Generated class for the Step2Page page.
@@ -22,12 +22,22 @@ import { LoadingController } from 'ionic-angular';
 export class Step2Page {
 
     public constants = Constants;
-    public emp:any = {empresa_razao:"" , empresa_nomefantasia:"", empresa_bairro:"" , empresa_endereco:"" , empresa_numero:"", empresa_cidade:"", empresa_estado:"" ,empresa_cnpj:"", empresa_existe:false};
-    public captcha:any = {digito:"", key:"", cnpj:"" , vazio:""};
-    public stepOk:boolean = false;
-    public stepOkCnpj:boolean = false;
-    public stepBuscar:boolean = true;
-    public imgCaptcha:string = "";
+    public emp: any = {
+        empresa_razao: "",
+        empresa_nomefantasia: "",
+        empresa_bairro: "",
+        empresa_endereco: "",
+        empresa_numero: "",
+        empresa_cidade: "",
+        empresa_estado: "",
+        empresa_cnpj: "",
+        empresa_existe: false
+    };
+    public captcha: any = {digito: "", key: "", cnpj: "", vazio: ""};
+    public stepOk: boolean = false;
+    public stepOkCnpj: boolean = false;
+    public stepBuscar: boolean = true;
+    public imgCaptcha: string = "";
     public user_type = this.navParams.get("user_type");
 
 
@@ -48,6 +58,7 @@ export class Step2Page {
             duration: data == null ? 1000 : 0
         });
         loader.present();
+
     }
 
 
@@ -59,46 +70,51 @@ export class Step2Page {
      * @type {() => any} */
     public backToStep1 = (() => {
         this.navCtrl.push(Step1Page);
-    }); /** Fim da função de retorno ao passo 1 do cadastro */
+    });
+    /** Fim da função de retorno ao passo 1 do cadastro */
 
     /**
      * Função utilizada para verifica o CNPJ digitado
      * @type {(cnpj: number) => any} - valor do numero do cnpj
      */
 
-    public statusBusca = (()=>{
+
+    public statusBusca = (() => {
 
         this.stepOk = false;
         this.stepOkCnpj = false;
     });
 
-    public searchCnpj = (()=>{
+    public searchCnpj = (() => {
         /* Verifica se o CNPJ é real */
 
         this.captcha.cnpj = $(".cnpj").val();
 
-        if(this.validateCnpj()) {
-            this.captcha.cnpj = this.clearDataMask(this.captcha.cnpj  , 'cnpj');
+        if (this.validateCnpj()) {
+            this.captcha.cnpj = this.clearDataMask(this.captcha.cnpj, 'cnpj');
             this.getCaptcha();
         }
 
-    });/* Fim da função */
+    });
+    /* Fim da função */
 
     public getCaptcha = (() => {
         this.captcha.digito = "";
         var resposta = null;
         this.http.post(
-            Constants.api_path+'cadastro/getCaptcha', {'cnpj': this.captcha.cnpj})
-            .subscribe( (data) => {
-                    resposta = JSON.parse(data._body);
-                    if(!resposta.existe){
+            Constants.api_path + 'cadastro/getCaptcha', {'cnpj': this.captcha.cnpj})
+            .subscribe((data) => {
+                    var resposta = (data as any);
+                    resposta = JSON.parse(resposta._body);
+                    if (!resposta.existe) {
+
                         this.imgCaptcha = resposta.dados.captchaBase64;
                         this.captcha.key = resposta.dados.cookie;
                         this.stepOk = true;
                         this.stepOkCnpj = false;
                         this.emp.empresa_existe = false;
 
-                    }else{
+                    } else {
                         this.emp = resposta.dados[0];
                         this.stepOkCnpj = true;
                         this.stepOk = false;
@@ -106,7 +122,6 @@ export class Step2Page {
 
                     }
                 }
-
             )
     });
 
@@ -114,7 +129,7 @@ export class Step2Page {
         var reg = /^\d{2}\.\d{3}\.\d{3}\/\d{4}\-\d{2}$/;
         var validate = true;
 
-        if(!(this.captcha.cnpj.length > 0)){
+        if (!(this.captcha.cnpj.length > 0)) {
             let alert = this.alertCtrl.create({
                 title: 'Preencha o CNPJ',
                 subTitle: 'Por favor, preencha o seu CNPJ e verifique se os dados correspondem corretamente.',
@@ -123,7 +138,7 @@ export class Step2Page {
             alert.present();
             validate = false;
 
-        }else if(!reg.test(this.captcha.cnpj)){
+        } else if (!reg.test(this.captcha.cnpj)) {
             let alert = this.alertCtrl.create({
                 title: 'Preencha o CNPJ',
                 subTitle: 'Por favor, preencha o seu CNPJ no formato correto.',
@@ -137,21 +152,23 @@ export class Step2Page {
     });
 
 
-
-
     public getCnpj = (() => {
         var resposta = null;
         this.http.post(
-            Constants.api_path+'cadastro/getCnpj',(this.captcha))
+            Constants.api_path + 'cadastro/getCnpj', (this.captcha))
             .subscribe((data) => {
+
                 this.presentLoading(resposta);
-                     resposta = JSON.parse(data._body);
-                    if(resposta.success){
+
+                resposta = (data as any);
+                    resposta = JSON.parse(resposta._body);
+                    if (resposta.success) {
+
                         this.emp = resposta.dados;
                         this.stepOkCnpj = true;
                         this.stepOk = false;
 
-                    }else{
+                    } else {
                         this.captcha.digito = "";
                         let alert = this.alertCtrl.create({
                             title: resposta.title,
@@ -163,24 +180,22 @@ export class Step2Page {
 
                     }
                 }
-
             )
     });
-    public clearDataMask = ((data , type) => {
+    public clearDataMask = ((data, type) => {
         var retorno = ''
-        switch (type){
+        switch (type) {
             case 'cnpj':
-                data = data.replace( ".", "" );
-                data = data.replace( ".", "" );
-                data = data.replace("/" , "");
-                data =  data.replace("-" , "");
+                data = data.replace(".", "");
+                data = data.replace(".", "");
+                data = data.replace("/", "");
+                data = data.replace("-", "");
                 retorno = data;
 
                 break;
         }
 
         return retorno;
-
 
 
     });
@@ -190,11 +205,11 @@ export class Step2Page {
      * @type {() => any}*/
     public goToStep3 = (() => {
         /* Verifica se o Passo está preenchido corretamente, ou seja, se o CNPJ foi escrito */
-        if( this.stepOkCnpj  ){
+        if (this.stepOkCnpj) {
             /* Caso os campos estejam preenchidos corretamente, o passo poderá ser avançado */
-            this.navCtrl.push(Step3Page , {empresa:this.emp , user_type:this.user_type});
+            this.navCtrl.push(Step3Page, {empresa: this.emp, user_type: this.user_type});
 
-        }else{
+        } else {
             /* Caso os campos não estejam preenchidos corretamente, o passo não poderá ser avançado */
             let alert = this.alertCtrl.create({
                 title: 'Preencha o CNPJ',
@@ -203,7 +218,8 @@ export class Step2Page {
             });
             alert.present();
         }
-    });/* Fim da função de avanço dos passos de cadastro do perfil */
+    });
+    /* Fim da função de avanço dos passos de cadastro do perfil */
 
 }
 

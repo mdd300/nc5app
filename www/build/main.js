@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 120:
+/***/ 122:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -13,7 +13,7 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 120;
+webpackEmptyAsyncContext.id = 122;
 
 /***/ }),
 
@@ -25,7 +25,8 @@ webpackEmptyAsyncContext.id = 120;
 var Constants = {
     'base_url': './',
     'theme': 'prototype',
-    'api_path': 'http://localhost/fashon/qrgo/',
+    'api_path': 'http://192.168.0.251/fashon/qrgo/',
+    //'api_path': 'http://localhost/fashon/qrgo/',
     'src_img': './assets/themes/prototype/img/',
     'src_svg': './assets/themes/prototype/img/svg/',
 };
@@ -33,54 +34,54 @@ var Constants = {
 
 /***/ }),
 
-/***/ 161:
+/***/ 163:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/themes/prototype/cadastro/confirm-cad/confirm-cad.module": [
-		162
-	],
-	"../pages/themes/prototype/cadastro/step1/step1.module": [
-		177
-	],
-	"../pages/themes/prototype/cadastro/step2/step2.module": [
 		164
 	],
+	"../pages/themes/prototype/cadastro/step1/step1.module": [
+		165
+	],
+	"../pages/themes/prototype/cadastro/step2/step2.module": [
+		174
+	],
 	"../pages/themes/prototype/cadastro/step3/step3.module": [
-		178
+		177
 	],
 	"../pages/themes/prototype/explore/explore.module": [
-		175
+		178
 	],
 	"../pages/themes/prototype/feed/feed.module": [
-		179
+		180
 	],
 	"../pages/themes/prototype/forgot-pass/forgot-pass-1/forgot-pass-1.module": [
-		186
+		181
 	],
 	"../pages/themes/prototype/forgot-pass/forgot-pass-2/forgot-pass-2.module": [
-		181
+		186
 	],
 	"../pages/themes/prototype/forgot-pass/forgot-pass-3/forgot-pass-3.module": [
 		182
 	],
 	"../pages/themes/prototype/login/login.module": [
-		180
+		183
 	],
 	"../pages/themes/prototype/modais/gostos/gostos.module": [
 		184
 	],
 	"../pages/themes/prototype/modais/localizacao/localizacao.module": [
-		183
-	],
-	"../pages/themes/prototype/modais/post/post.module": [
 		187
 	],
-	"../pages/themes/prototype/slides/slides.module": [
+	"../pages/themes/prototype/modais/post/post.module": [
 		188
 	],
-	"../pages/themes/prototype/system-tabs/system-tabs.module": [
+	"../pages/themes/prototype/slides/slides.module": [
 		189
+	],
+	"../pages/themes/prototype/system-tabs/system-tabs.module": [
+		190
 	]
 };
 function webpackAsyncContext(req) {
@@ -94,12 +95,12 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 161;
+webpackAsyncContext.id = 163;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 162:
+/***/ 164:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -107,7 +108,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConfirmCadPageModule", function() { return ConfirmCadPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__confirm_cad__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__confirm_cad__ = __webpack_require__(83);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -137,127 +138,15 @@ var ConfirmCadPageModule = (function () {
 
 /***/ }),
 
-/***/ 163:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfirmCadPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_Constants__ = __webpack_require__(13);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-/**
- * Generated class for the ConfirmCadPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var ConfirmCadPage = (function () {
-    function ConfirmCadPage(navCtrl, navParams, http, alertCtrl) {
-        var _this = this;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.http = http;
-        this.alertCtrl = alertCtrl;
-        this.seisdigitos = false;
-        this.constants = __WEBPACK_IMPORTED_MODULE_4__config_Constants__["a" /* Constants */];
-        /**
-         * Função utilizada para pular a confirmação do cadastro
-         */
-        this.skipCad = (function () {
-            /* Pula a confirmação do cadastro */
-            var alert = _this.alertCtrl.create({
-                title: 'Parabéns',
-                subTitle: 'Parabéns, você realizou o cadastro em nosso sistema. Você será logado automáticamente.',
-                buttons: ['Ok']
-            });
-            alert.present();
-        });
-        //função verifica o codiga com a existencia de 6 digitos 
-        this.autenticaCod = (function (code) {
-            //se o usuario digitar 6 digitos
-            if (code.length == 6) {
-                //desabilita o input 
-                //this.seisdigitos=true;
-                //realiza o ajax enviando como parametro o código de entrada "data"
-                _this.http.post(_this.constants.api_path + 'cadastro/autenticacao', __WEBPACK_IMPORTED_MODULE_3_jquery__["param"]({ codigo: code })).subscribe(function (data) {
-                    var response = data;
-                    var objeto_retorno = JSON.parse(response._body);
-                    //console.log(response._body);
-                    //retorna o código
-                    if (objeto_retorno === true) {
-                        //modal de confirmação para o usuario
-                        var alert_1 = _this.alertCtrl.create({
-                            title: 'Parabéns',
-                            subTitle: 'Parabéns, você realizou o cadastro em nosso sistema. Você será logado automáticamente.',
-                            buttons: ['Ok']
-                        });
-                        alert_1.present();
-                    }
-                    else {
-                        //modal de código invalido
-                        var alert_2 = _this.alertCtrl.create({
-                            title: 'Autenticação',
-                            subTitle: 'Código incorreto',
-                            buttons: ['Ok']
-                        });
-                        alert_2.present();
-                    }
-                }, function (error) {
-                    //modal de erro na autenticação
-                    var alert = _this.alertCtrl.create({
-                        title: 'Autenticação',
-                        subTitle: 'Erro na autenticação',
-                        buttons: ['Ok']
-                    });
-                    alert.present();
-                    console.log(error);
-                });
-            }
-        });
-    }
-    ConfirmCadPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-confirm-cad',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\confirm-cad\confirm-cad.html"*/'<ion-content>\n\n\n\n  <div class="content-center" >\n\n\n\n    <ion-grid class="grid-confirm-cad">\n\n      <ion-row>\n\n        <ion-col>\n\n\n\n          <h3 class="page-title">Confirme sua conta</h3>\n\n\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row>\n\n        <ion-col>\n\n\n\n          <p class="page-description">Confira seu e-mail ou mensagem sms para confirmar sua conta para seguir usar o aplicativo da melhor forma possível!</p>\n\n\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n      <ion-row>\n\n        <ion-col>\n\n\n\n          <div class="cont-confirmcode" >\n\n            <div class="cad-form-content">\n\n              <label class="cad-form-label">\n\n                <input type="text" class="cad-form-ctrl text-center" placeholder="Codigo" maxlength="6" [(ngModel)]="codeautentic" (keyup)="autenticaCod ( codeautentic )" [disabled]="seisdigitos">\n\n              </label><!-- cad-form-label -->\n\n            </div> <!-- cad-form-content -->\n\n          </div> <!-- cont-confirmcode -->\n\n\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n      <ion-row>\n\n        <ion-col>\n\n          <span class="resend-code"> Re-enviar código </span>\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n      <ion-row>\n\n        <ion-col>\n\n          <button ion-button class="pink-button align-center" > Confirmar </button>\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n    </ion-grid><!-- grid-confirm-cad -->\n\n\n\n  </div> <!-- content-center -->\n\n\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <div class="footer-steps">\n\n\n\n    <div class="next-step-action allowed" (click)="skipCad()">\n\n            <span class="next-step-label">\n\n                Pular\n\n            </span> <!-- next-stap-label -->\n\n      <div class="nextstep-icon">\n\n        <span class="caret-body"></span>\n\n        <span class="caret-direction"></span>\n\n      </div> <!-- nextstep-icon -->\n\n    </div> <!-- next-stap-action -->\n\n\n\n  </div> <!-- footer-steps -->\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\confirm-cad\confirm-cad.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]])
-    ], ConfirmCadPage);
-    return ConfirmCadPage;
-}());
-
-//# sourceMappingURL=confirm-cad.js.map
-
-/***/ }),
-
-/***/ 164:
+/***/ 165:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Step2PageModule", function() { return Step2PageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Step1PageModule", function() { return Step1PageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__step2__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_brmasker_ionic_3__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__step1__ = __webpack_require__(84);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -267,29 +156,27 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
-var Step2PageModule = (function () {
-    function Step2PageModule() {
+var Step1PageModule = (function () {
+    function Step1PageModule() {
     }
-    Step2PageModule = __decorate([
+    Step1PageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__step2__["a" /* Step2Page */],
+                __WEBPACK_IMPORTED_MODULE_2__step1__["a" /* Step1Page */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__step2__["a" /* Step2Page */]),
-                __WEBPACK_IMPORTED_MODULE_3_brmasker_ionic_3__["a" /* BrMaskerModule */],
-            ],
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__step1__["a" /* Step1Page */]),
+            ]
         })
-    ], Step2PageModule);
-    return Step2PageModule;
+    ], Step1PageModule);
+    return Step1PageModule;
 }());
 
-//# sourceMappingURL=step2.module.js.map
+//# sourceMappingURL=step1.module.js.map
 
 /***/ }),
 
-/***/ 165:
+/***/ 166:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -297,7 +184,7 @@ var Step2PageModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__localizacao_localizacao__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__localizacao_localizacao__ = __webpack_require__(167);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -364,7 +251,7 @@ var PostPage = (function () {
 
 /***/ }),
 
-/***/ 166:
+/***/ 167:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -409,14 +296,19 @@ var LocalizacaoPage = (function () {
 
 /***/ }),
 
-/***/ 169:
+/***/ 170:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ForgotPass_1Page; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__forgot_pass_2_forgot_pass_2__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__forgot_pass_2_forgot_pass_2__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_jquery__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -430,6 +322,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
+
+
 /**
  * Generated class for the ForgotPass_1Page page.
  *
@@ -437,17 +333,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var ForgotPass_1Page = (function () {
-    function ForgotPass_1Page(navCtrl, navParams, alertCtrl) {
+    function ForgotPass_1Page(navCtrl, navParams, alertCtrl, storage, http) {
         var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.alertCtrl = alertCtrl;
+        this.storage = storage;
+        this.http = http;
+        this.constants = __WEBPACK_IMPORTED_MODULE_2__config_Constants__["a" /* Constants */];
         /**
          * Função utilizada para "voltar" uma pagina do aplicativo */
         this.backPage = (function () {
             /* Remove uma página do controller de navegação */
             _this.navCtrl.pop();
-        }); /* Fim da função de backPage */
+        });
+        /* Fim da função de backPage */
         /**
          * Verifica se o email é valido para prosseguir */
         this.validateEmail = (function (email) {
@@ -460,7 +360,16 @@ var ForgotPass_1Page = (function () {
             /* Verifica se o Email digitado é valido */
             if (_this.valid_email) {
                 /* Caso valido, prossegue com o processo */
-                _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__forgot_pass_2_forgot_pass_2__["a" /* ForgotPass_2Page */]);
+                var data_send = { user_login: _this.email_to_recover };
+                _this.http.post(_this.constants.api_path + 'login/recover', __WEBPACK_IMPORTED_MODULE_6_jquery__["param"](data_send)).subscribe(function (response) {
+                    var res = response;
+                    _this.response = JSON.parse(res._body);
+                    if (_this.response.success) {
+                        _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__forgot_pass_2_forgot_pass_2__["a" /* ForgotPass_2Page */]);
+                    }
+                });
+                console.log(_this.storage.get('user_logged'));
+                // this.navCtrl.push( ForgotPass_2Page )
             }
             else {
                 /* Caso o email digitado não seja válido */
@@ -472,16 +381,19 @@ var ForgotPass_1Page = (function () {
                 });
                 alert_1.present();
                 /* Fim do alerta de email necessário */
-            } /* Fim da verificação de validade de Email */
-        }); /* Fim da função do processo de prosseguir com a recuperação da senha */
+            }
+            /* Fim da verificação de validade de Email */
+        });
     }
     ForgotPass_1Page = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'page-forgot-pass-1',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\forgot-pass\forgot-pass-1\forgot-pass-1.html"*/'<ion-header>\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col col-auto class="col-icon-back" (click)="backPage()">\n\n                <ion-icon name="ios-arrow-back" class="icon-back"></ion-icon>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-header>\n\n<ion-content padding>\n\n\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col> \n\n                <h3 class="title-page">\n\n                    Recuperar Senha.\n\n                </h3><!-- title-page -->\n\n            </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n            <ion-col>\n\n                <p class="page-description">\n\n                    Atenção: Se você perdeu, ou não lembra mais a sua senha de acesso, preencha este formulário para iniciar o processo para gerar uma nova senha para você!\n\n                </p><!-- page-description -->\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n                <span class="label-form">\n\n                Insira o seu Email\n\n                </span><!-- label-form -->\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n                    <input type="email" [(ngModel)]="email_to_recover" (keyup)="validateEmail( email_to_recover )" class="recover-form" placeholder="exemple@exemple.com">\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n    </ion-grid>\n\n\n\n</ion-content>\n\n\n\n\n\n<ion-footer>\n\n    <div class="footer-steps" >\n\n\n\n        <div class="next-step-action" [ngClass]="{\'allowed\': valid_email }" (click)="sendEmail()">\n\n            <span class="next-step-label">\n\n                Próximo\n\n            </span> <!-- next-stap-label -->\n\n            <div class="nextstep-icon" >\n\n                <span class="caret-body"></span>\n\n                <span class="caret-direction"></span>\n\n            </div> <!-- nextstep-icon -->\n\n        </div> <!-- next-stap-action -->\n\n        \n\n    </div> <!-- footer-steps -->\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\forgot-pass\forgot-pass-1\forgot-pass-1.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["b" /* AlertController */],
+            __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["b" /* Storage */],
+            __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]])
     ], ForgotPass_1Page);
     return ForgotPass_1Page;
 }());
@@ -490,14 +402,14 @@ var ForgotPass_1Page = (function () {
 
 /***/ }),
 
-/***/ 170:
+/***/ 171:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ForgotPass_2Page; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__forgot_pass_3_forgot_pass_3__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__forgot_pass_3_forgot_pass_3__ = __webpack_require__(172);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -567,14 +479,14 @@ var ForgotPass_2Page = (function () {
 
 /***/ }),
 
-/***/ 171:
+/***/ 172:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ForgotPass_3Page; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -639,7 +551,7 @@ var ForgotPass_3Page = (function () {
 
 /***/ }),
 
-/***/ 172:
+/***/ 173:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -647,10 +559,10 @@ var ForgotPass_3Page = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__step2_step2__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__confirm_cad_confirm_cad__ = __webpack_require__(163);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__step2_step2__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__confirm_cad_confirm_cad__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_jquery__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -768,7 +680,8 @@ var Step3Page = (function () {
             _this.http.post(__WEBPACK_IMPORTED_MODULE_2__config_Constants__["a" /* Constants */].api_path + 'cadastro/insertCadastro', __WEBPACK_IMPORTED_MODULE_6_jquery__["param"]({ 'empresa': _this.empresa, 'usuario': _this.user }))
                 .subscribe(function (data) {
                 _this.presentLoading(resposta);
-                resposta = JSON.parse(data._body);
+                resposta = data;
+                resposta = JSON.parse(resposta._body);
                 if (!resposta.existe) {
                     if (resposta.success) {
                         _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__confirm_cad_confirm_cad__["a" /* ConfirmCadPage */], { email: _this.user.email });
@@ -812,7 +725,89 @@ var Step3Page = (function () {
 
 /***/ }),
 
-/***/ 175:
+/***/ 174:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Step2PageModule", function() { return Step2PageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__step2__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_brmasker_ionic_3__ = __webpack_require__(175);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var Step2PageModule = (function () {
+    function Step2PageModule() {
+    }
+    Step2PageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__step2__["a" /* Step2Page */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__step2__["a" /* Step2Page */]),
+                __WEBPACK_IMPORTED_MODULE_3_brmasker_ionic_3__["a" /* BrMaskerModule */],
+            ],
+        })
+    ], Step2PageModule);
+    return Step2PageModule;
+}());
+
+//# sourceMappingURL=step2.module.js.map
+
+/***/ }),
+
+/***/ 177:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Step3PageModule", function() { return Step3PageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__step3__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_brmasker_ionic_3__ = __webpack_require__(175);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var Step3PageModule = (function () {
+    function Step3PageModule() {
+    }
+    Step3PageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__step3__["a" /* Step3Page */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__step3__["a" /* Step3Page */]),
+                __WEBPACK_IMPORTED_MODULE_3_brmasker_ionic_3__["a" /* BrMaskerModule */],
+            ],
+        })
+    ], Step3PageModule);
+    return Step3PageModule;
+}());
+
+//# sourceMappingURL=step3.module.js.map
+
+/***/ }),
+
+/***/ 178:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -821,7 +816,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__explore__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_share_module__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_share_module__ = __webpack_require__(179);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -853,15 +848,15 @@ var ExplorePageModule = (function () {
 
 /***/ }),
 
-/***/ 176:
+/***/ 179:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SharedModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_menu_bottom_menu_bottom__ = __webpack_require__(291);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_qrgo_header_qrgo_header__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_menu_bottom_menu_bottom__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_qrgo_header_qrgo_header__ = __webpack_require__(296);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -898,86 +893,7 @@ var SharedModule = (function () {
 
 /***/ }),
 
-/***/ 177:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Step1PageModule", function() { return Step1PageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__step1__ = __webpack_require__(84);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var Step1PageModule = (function () {
-    function Step1PageModule() {
-    }
-    Step1PageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__step1__["a" /* Step1Page */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__step1__["a" /* Step1Page */]),
-            ]
-        })
-    ], Step1PageModule);
-    return Step1PageModule;
-}());
-
-//# sourceMappingURL=step1.module.js.map
-
-/***/ }),
-
-/***/ 178:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Step3PageModule", function() { return Step3PageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__step3__ = __webpack_require__(172);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_brmasker_ionic_3__ = __webpack_require__(173);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var Step3PageModule = (function () {
-    function Step3PageModule() {
-    }
-    Step3PageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__step3__["a" /* Step3Page */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__step3__["a" /* Step3Page */]),
-                __WEBPACK_IMPORTED_MODULE_3_brmasker_ionic_3__["a" /* BrMaskerModule */],
-            ],
-        })
-    ], Step3PageModule);
-    return Step3PageModule;
-}());
-
-//# sourceMappingURL=step3.module.js.map
-
-/***/ }),
-
-/***/ 179:
+/***/ 180:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -986,7 +902,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feed__ = __webpack_require__(86);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_share_module__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_share_module__ = __webpack_require__(179);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1018,53 +934,15 @@ var FeedPageModule = (function () {
 
 /***/ }),
 
-/***/ 180:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginPageModule", function() { return LoginPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login__ = __webpack_require__(31);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var LoginPageModule = (function () {
-    function LoginPageModule() {
-    }
-    LoginPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__login__["a" /* LoginPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login__["a" /* LoginPage */]),
-            ],
-        })
-    ], LoginPageModule);
-    return LoginPageModule;
-}());
-
-//# sourceMappingURL=login.module.js.map
-
-/***/ }),
-
 /***/ 181:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForgotPass_2PageModule", function() { return ForgotPass_2PageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForgotPass_1PageModule", function() { return ForgotPass_1PageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__forgot_pass_2__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__forgot_pass_1__ = __webpack_require__(170);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1074,23 +952,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ForgotPass_2PageModule = (function () {
-    function ForgotPass_2PageModule() {
+var ForgotPass_1PageModule = (function () {
+    function ForgotPass_1PageModule() {
     }
-    ForgotPass_2PageModule = __decorate([
+    ForgotPass_1PageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__forgot_pass_2__["a" /* ForgotPass_2Page */],
+                __WEBPACK_IMPORTED_MODULE_2__forgot_pass_1__["a" /* ForgotPass_1Page */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__forgot_pass_2__["a" /* ForgotPass_2Page */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__forgot_pass_1__["a" /* ForgotPass_1Page */]),
             ],
         })
-    ], ForgotPass_2PageModule);
-    return ForgotPass_2PageModule;
+    ], ForgotPass_1PageModule);
+    return ForgotPass_1PageModule;
 }());
 
-//# sourceMappingURL=forgot-pass-2.module.js.map
+//# sourceMappingURL=forgot-pass-1.module.js.map
 
 /***/ }),
 
@@ -1102,7 +980,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForgotPass_3PageModule", function() { return ForgotPass_3PageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__forgot_pass_3__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__forgot_pass_3__ = __webpack_require__(172);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1137,10 +1015,10 @@ var ForgotPass_3PageModule = (function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LocalizacaoPageModule", function() { return LocalizacaoPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginPageModule", function() { return LoginPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__localizacao__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1150,23 +1028,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var LocalizacaoPageModule = (function () {
-    function LocalizacaoPageModule() {
+var LoginPageModule = (function () {
+    function LoginPageModule() {
     }
-    LocalizacaoPageModule = __decorate([
+    LoginPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__localizacao__["a" /* LocalizacaoPage */],
+                __WEBPACK_IMPORTED_MODULE_2__login__["a" /* LoginPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__localizacao__["a" /* LocalizacaoPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login__["a" /* LoginPage */]),
             ],
         })
-    ], LocalizacaoPageModule);
-    return LocalizacaoPageModule;
+    ], LoginPageModule);
+    return LoginPageModule;
 }());
 
-//# sourceMappingURL=localizacao.module.js.map
+//# sourceMappingURL=login.module.js.map
 
 /***/ }),
 
@@ -1178,7 +1056,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GostosPageModule", function() { return GostosPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gostos__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gostos__ = __webpack_require__(297);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1214,7 +1092,7 @@ var GostosPageModule = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CategoriaProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(31);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1262,10 +1140,10 @@ var CategoriaProvider = (function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForgotPass_1PageModule", function() { return ForgotPass_1PageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForgotPass_2PageModule", function() { return ForgotPass_2PageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__forgot_pass_1__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__forgot_pass_2__ = __webpack_require__(171);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1275,23 +1153,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ForgotPass_1PageModule = (function () {
-    function ForgotPass_1PageModule() {
+var ForgotPass_2PageModule = (function () {
+    function ForgotPass_2PageModule() {
     }
-    ForgotPass_1PageModule = __decorate([
+    ForgotPass_2PageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__forgot_pass_1__["a" /* ForgotPass_1Page */],
+                __WEBPACK_IMPORTED_MODULE_2__forgot_pass_2__["a" /* ForgotPass_2Page */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__forgot_pass_1__["a" /* ForgotPass_1Page */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__forgot_pass_2__["a" /* ForgotPass_2Page */]),
             ],
         })
-    ], ForgotPass_1PageModule);
-    return ForgotPass_1PageModule;
+    ], ForgotPass_2PageModule);
+    return ForgotPass_2PageModule;
 }());
 
-//# sourceMappingURL=forgot-pass-1.module.js.map
+//# sourceMappingURL=forgot-pass-2.module.js.map
 
 /***/ }),
 
@@ -1300,10 +1178,48 @@ var ForgotPass_1PageModule = (function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LocalizacaoPageModule", function() { return LocalizacaoPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__localizacao__ = __webpack_require__(167);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var LocalizacaoPageModule = (function () {
+    function LocalizacaoPageModule() {
+    }
+    LocalizacaoPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__localizacao__["a" /* LocalizacaoPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__localizacao__["a" /* LocalizacaoPage */]),
+            ],
+        })
+    ], LocalizacaoPageModule);
+    return LocalizacaoPageModule;
+}());
+
+//# sourceMappingURL=localizacao.module.js.map
+
+/***/ }),
+
+/***/ 188:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostPageModule", function() { return PostPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__post__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__post__ = __webpack_require__(166);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1333,7 +1249,7 @@ var PostPageModule = (function () {
 
 /***/ }),
 
-/***/ 188:
+/***/ 189:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1371,7 +1287,7 @@ var SlidesPageModule = (function () {
 
 /***/ }),
 
-/***/ 189:
+/***/ 190:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1409,13 +1325,13 @@ var SystemTabsPageModule = (function () {
 
 /***/ }),
 
-/***/ 231:
+/***/ 232:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(232);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(255);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(256);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -1423,7 +1339,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 255:
+/***/ 256:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1431,31 +1347,31 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(229);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(230);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(311);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(230);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(231);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(315);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_themes_prototype_slides_slides__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_themes_prototype_slides_slides_module__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_themes_prototype_login_login_module__ = __webpack_require__(180);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_themes_prototype_cadastro_step1_step1_module__ = __webpack_require__(177);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_themes_prototype_cadastro_step2_step2_module__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_themes_prototype_cadastro_step3_step3_module__ = __webpack_require__(178);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_themes_prototype_cadastro_confirm_cad_confirm_cad_module__ = __webpack_require__(162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_themes_prototype_explore_explore_module__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_themes_prototype_slides_slides_module__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_themes_prototype_login_login_module__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_themes_prototype_cadastro_step1_step1_module__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_themes_prototype_cadastro_step2_step2_module__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_themes_prototype_cadastro_step3_step3_module__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_themes_prototype_cadastro_confirm_cad_confirm_cad_module__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_themes_prototype_explore_explore_module__ = __webpack_require__(178);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_themes_prototype_modais_gostos_gostos_module__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_themes_prototype_modais_localizacao_localizacao_module__ = __webpack_require__(183);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_themes_prototype_feed_feed_module__ = __webpack_require__(179);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_themes_prototype_modais_post_post_module__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_themes_prototype_login_login__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_themes_prototype_system_tabs_system_tabs_module__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_themes_prototype_modais_localizacao_localizacao_module__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_themes_prototype_feed_feed_module__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_themes_prototype_modais_post_post_module__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_themes_prototype_login_login__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_themes_prototype_system_tabs_system_tabs_module__ = __webpack_require__(190);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_themes_prototype_system_tabs_system_tabs__ = __webpack_require__(85);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__angular_http__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__angular_http__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__providers_categoria_categoria__ = __webpack_require__(185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ionic_native_social_sharing__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_themes_prototype_forgot_pass_forgot_pass_1_forgot_pass_1_module__ = __webpack_require__(186);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_themes_prototype_forgot_pass_forgot_pass_2_forgot_pass_2_module__ = __webpack_require__(181);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ionic_native_social_sharing__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_themes_prototype_forgot_pass_forgot_pass_1_forgot_pass_1_module__ = __webpack_require__(181);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_themes_prototype_forgot_pass_forgot_pass_2_forgot_pass_2_module__ = __webpack_require__(186);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_themes_prototype_forgot_pass_forgot_pass_3_forgot_pass_3_module__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__ionic_storage__ = __webpack_require__(312);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__ionic_storage__ = __webpack_require__(90);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1515,17 +1431,17 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* Qrgo_prototype */], {}, {
                     links: [
                         { loadChildren: '../pages/themes/prototype/cadastro/confirm-cad/confirm-cad.module#ConfirmCadPageModule', name: 'ConfirmCadPage', segment: 'confirm-cad', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/cadastro/step2/step2.module#Step2PageModule', name: 'Step2Page', segment: 'step2', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/explore/explore.module#ExplorePageModule', name: 'ExplorePage', segment: 'explore', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/cadastro/step1/step1.module#Step1PageModule', name: 'Step1Page', segment: 'step1', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/cadastro/step2/step2.module#Step2PageModule', name: 'Step2Page', segment: 'step2', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/cadastro/step3/step3.module#Step3PageModule', name: 'Step3Page', segment: 'step3', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/explore/explore.module#ExplorePageModule', name: 'ExplorePage', segment: 'explore', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/feed/feed.module#FeedPageModule', name: 'FeedPage', segment: 'feed', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/forgot-pass/forgot-pass-2/forgot-pass-2.module#ForgotPass_2PageModule', name: 'ForgotPass_2Page', segment: 'forgot-pass-2', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/forgot-pass/forgot-pass-3/forgot-pass-3.module#ForgotPass_3PageModule', name: 'ForgotPass_3Page', segment: 'forgot-pass-3', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/modais/localizacao/localizacao.module#LocalizacaoPageModule', name: 'LocalizacaoPage', segment: 'localizacao', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/modais/gostos/gostos.module#GostosPageModule', name: 'GostosPage', segment: 'gostos', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/forgot-pass/forgot-pass-1/forgot-pass-1.module#ForgotPass_1PageModule', name: 'ForgotPass_1Page', segment: 'forgot-pass-1', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/forgot-pass/forgot-pass-3/forgot-pass-3.module#ForgotPass_3PageModule', name: 'ForgotPass_3Page', segment: 'forgot-pass-3', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/modais/gostos/gostos.module#GostosPageModule', name: 'GostosPage', segment: 'gostos', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/forgot-pass/forgot-pass-2/forgot-pass-2.module#ForgotPass_2PageModule', name: 'ForgotPass_2Page', segment: 'forgot-pass-2', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/modais/localizacao/localizacao.module#LocalizacaoPageModule', name: 'LocalizacaoPage', segment: 'localizacao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/modais/post/post.module#PostPageModule', name: 'PostPage', segment: 'post', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/slides/slides.module#SlidesPageModule', name: 'SlidesPage', segment: 'slides', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/system-tabs/system-tabs.module#SystemTabsPageModule', name: 'SystemTabsPage', segment: 'system-tabs', priority: 'low', defaultHistory: [] }
@@ -1563,7 +1479,7 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 291:
+/***/ 295:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1639,7 +1555,7 @@ var MenuBottomComponent = (function () {
 
 /***/ }),
 
-/***/ 292:
+/***/ 296:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1680,7 +1596,7 @@ var QrgoHeaderComponent = (function () {
 
 /***/ }),
 
-/***/ 293:
+/***/ 297:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1857,139 +1773,17 @@ var GostosPage = (function () {
 
 /***/ }),
 
-/***/ 31:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_Constants__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__slides_slides__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__cadastro_step1_step1__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__system_tabs_system_tabs__ = __webpack_require__(85);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__forgot_pass_forgot_pass_1_forgot_pass_1__ = __webpack_require__(169);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-
-/**
- * Generated class for the LoginPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var LoginPage = (function () {
-    function LoginPage(navCtrl, navParams, toastCtrl, http) {
-        var _this = this;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.toastCtrl = toastCtrl;
-        this.http = http;
-        this.constants = __WEBPACK_IMPORTED_MODULE_3__config_Constants__["a" /* Constants */];
-        this.login = {};
-        this.logindata = {
-            user_login: "",
-            user_pass: ""
-        };
-        this.teste = "";
-        /** Fim do constructor da classe */
-        /**
-         * Função utilizada para redirecionar o usuário novamente à pagina de slides */
-        this.goBackSlides = (function () {
-            _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__slides_slides__["a" /* SlidesPage */]);
-        });
-        /* Fim da função de redirecionamento para os slides */
-        /**
-         * Função utilizada para redirecionar o usuário à pagina de realizar o cadastro */
-        this.goToCadastro = (function () {
-            _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__cadastro_step1_step1__["a" /* Step1Page */]);
-        });
-        /* Fim da função de regdirecionamento para a página de cadastro */
-        /**
-         * Função utilizada para realizar o login do usuário */
-        this.doLogin = (function () {
-            // var data_send = this.logindata;
-            _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_6__system_tabs_system_tabs__["a" /* SystemTabsPage */], {}, { animate: true, direction: 'forward' });
-            // this.http.post(this.constants.api_path + 'login/dologin', $.param(data_send)).subscribe(response => {
-            //
-            //     const res = (response as any);
-            //     this.login = JSON.parse(res._body);
-            //     const login = (this.login as any);
-            //
-            //     if (login.success) {
-            //
-            //         if (login.no_verified) {
-            //             console.log(login);
-            //             this.navCtrl.push(ConfirmCadPage);
-            //         }
-            //         else {
-            //             this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
-            //         }
-            //
-            //     } else {
-            //         var __this = this;
-            //         setTimeout(function () {
-            //             const text = (__this.login as any);
-            //             text.text = "";
-            //         }, 3000);
-            //
-            //     }
-            //
-            // });
-        });
-        /* Fim da função de realização do login do usuário */
-        /**
-         * Função para dar inicio ao processo de recuperar senha
-         * @type {() => void}
-         */
-        this.recoverPass = (function () {
-            /**
-             * Redireciona o usuário para a primeira págimna do processo */
-            _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_7__forgot_pass_forgot_pass_1_forgot_pass_1__["a" /* ForgotPass_1Page */]);
-        });
-    }
-    LoginPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\login\login.html"*/'<div class="login-page">\n\n\n\n    <div class="backpage-login" (click)="goBackSlides()" >\n\n        <svg class="backpage-ico">\n\n            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n        </svg> <!-- backpage-ico -->\n\n    </div> <!-- backpage-login -->\n\n\n\n    <div class="content-login-form">\n\n\n\n        <h3 class="welcome-title">Bem Vindo</h3>\n\n\n\n        <div class="image-logo-qrgo">\n\n            <img class="svg-logo" [src]="constants.src_svg + \'qrgo-logo.svg\'"/>\n\n        </div> <!-- image-logo-qrgo -->\n\n\n\n        <div class="content-form-login">\n\n            <div class="form-cont pdg-b20">\n\n                <input type="text" class="form-ctrl" placeholder="Username / E-mail" [(ngModel)]="logindata.user_login">\n\n            </div> <!-- form-cont -->\n\n            <div class="form-cont">\n\n                <input type="password" class="form-ctrl" placeholder="Senha" [(ngModel)]="logindata.user_pass">\n\n            </div> <!-- form-cont -->\n\n\n\n            <p class="forgot-pass"> {{ login.text }} </p>\n\n            <p class="forgot-pass" (click)="recoverPass()"> Esqueci minha senha </p>\n\n\n\n            <div class="form-cont">\n\n                <button [disabled]="!logindata.user_login || !logindata.user_pass" class="login-btn" (click)="doLogin()" > Entrar</button>\n\n            </div> <!-- form-cont -->\n\n\n\n            <span class="line-divider"></span> <!-- line-divider -->\n\n\n\n            <div class="content-singup">\n\n                <p class="ask-singup" > Não possui cadastro? </p> <!-- ask-singup -->\n\n                <p class="button-singup" (click)="goToCadastro()" > Cadastre-se </p> <!-- ask-singup -->\n\n            </div> <!-- content-singup -->\n\n\n\n        </div> <!-- content-form-login -->\n\n\n\n\n\n        <div class="explore-contents" >\n\n            <span class="explore-label"> Explorar </span>\n\n            <span class="explore-stick"></span>\n\n        </div> <!-- explore-contents -->\n\n\n\n    </div> <!-- content-login-form -->\n\n\n\n\n\n</div> <!-- login-page -->'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\login\login.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["m" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["o" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]])
-    ], LoginPage);
-    return LoginPage;
-}());
-
-//# sourceMappingURL=login.js.map
-
-/***/ }),
-
-/***/ 311:
+/***/ 315:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Qrgo_prototype; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(230);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(229);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(231);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(230);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_themes_prototype_slides_slides__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_themes_prototype_login_login__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_themes_prototype_login_login__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2031,6 +1825,133 @@ var Qrgo_prototype = (function () {
 
 /***/ }),
 
+/***/ 33:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_Constants__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__slides_slides__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__cadastro_step1_step1__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__system_tabs_system_tabs__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__forgot_pass_forgot_pass_1_forgot_pass_1__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_jquery__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_jquery__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__cadastro_confirm_cad_confirm_cad__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_storage__ = __webpack_require__(90);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Generated class for the LoginPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var LoginPage = (function () {
+    function LoginPage(navCtrl, navParams, toastCtrl, http, storage) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.toastCtrl = toastCtrl;
+        this.http = http;
+        this.storage = storage;
+        this.constants = __WEBPACK_IMPORTED_MODULE_3__config_Constants__["a" /* Constants */];
+        this.login = {};
+        this.logindata = {
+            user_login: "",
+            user_pass: ""
+        };
+        this.teste = "";
+        /** Fim do constructor da classe */
+        /**
+         * Função utilizada para redirecionar o usuário novamente à pagina de slides */
+        this.goBackSlides = (function () {
+            _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__slides_slides__["a" /* SlidesPage */]);
+        });
+        /* Fim da função de redirecionamento para os slides */
+        /**
+         * Função utilizada para redirecionar o usuário à pagina de realizar o cadastro */
+        this.goToCadastro = (function () {
+            _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__cadastro_step1_step1__["a" /* Step1Page */]);
+        });
+        /* Fim da função de regdirecionamento para a página de cadastro */
+        /**
+         * Função utilizada para realizar o login do usuário */
+        this.doLogin = (function () {
+            // this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
+            var data_send = _this.logindata;
+            _this.http.post(_this.constants.api_path + 'login/dologin', __WEBPACK_IMPORTED_MODULE_8_jquery__["param"](data_send)).subscribe(function (response) {
+                var res = response;
+                _this.login = JSON.parse(res._body);
+                var login = _this.login;
+                if (login.success) {
+                    _this.storage.set('user_logged', login.userdata);
+                    if (login.no_verified) {
+                        console.log(login);
+                        _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_9__cadastro_confirm_cad_confirm_cad__["a" /* ConfirmCadPage */]);
+                    }
+                    else {
+                        _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_6__system_tabs_system_tabs__["a" /* SystemTabsPage */], {}, { animate: true, direction: 'forward' });
+                    }
+                }
+                else {
+                    var __this = _this;
+                    setTimeout(function () {
+                        var text = __this.login;
+                        text.text = "";
+                    }, 3000);
+                }
+            });
+        });
+        /* Fim da função de realização do login do usuário */
+        /**
+         * Função para dar inicio ao processo de recuperar senha
+         * @type {() => void}
+         */
+        this.recoverPass = (function () {
+            /**
+             * Redireciona o usuário para a primeira págimna do processo */
+            _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_7__forgot_pass_forgot_pass_1_forgot_pass_1__["a" /* ForgotPass_1Page */]);
+        });
+    }
+    LoginPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'page-login',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\login\login.html"*/'<div class="login-page">\n\n\n\n    <div class="backpage-login" (click)="goBackSlides()" >\n\n        <svg class="backpage-ico">\n\n            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n        </svg> <!-- backpage-ico -->\n\n    </div> <!-- backpage-login -->\n\n\n\n    <div class="content-login-form">\n\n\n\n        <h3 class="welcome-title">Bem Vindo</h3>\n\n\n\n        <div class="image-logo-qrgo">\n\n            <img class="svg-logo" [src]="constants.src_svg + \'qrgo-logo.svg\'"/>\n\n        </div> <!-- image-logo-qrgo -->\n\n\n\n        <div class="content-form-login">\n\n            <div class="form-cont pdg-b20">\n\n                <input type="text" class="form-ctrl" placeholder="Username / E-mail" [(ngModel)]="logindata.user_login">\n\n            </div> <!-- form-cont -->\n\n            <div class="form-cont">\n\n                <input type="password" class="form-ctrl" placeholder="Senha" [(ngModel)]="logindata.user_pass">\n\n            </div> <!-- form-cont -->\n\n\n\n            <p class="forgot-pass"> {{ login.text }} </p>\n\n            <p class="forgot-pass" (click)="recoverPass()"> Esqueci minha senha </p>\n\n\n\n            <div class="form-cont">\n\n                <button [disabled]="!logindata.user_login || !logindata.user_pass" class="login-btn" (click)="doLogin()" > Entrar</button>\n\n            </div> <!-- form-cont -->\n\n\n\n            <span class="line-divider"></span> <!-- line-divider -->\n\n\n\n            <div class="content-singup">\n\n                <p class="ask-singup" > Não possui cadastro? </p> <!-- ask-singup -->\n\n                <p class="button-singup" (click)="goToCadastro()" > Cadastre-se </p> <!-- ask-singup -->\n\n            </div> <!-- content-singup -->\n\n\n\n        </div> <!-- content-form-login -->\n\n\n\n\n\n        <div class="explore-contents" >\n\n            <span class="explore-label"> Explorar </span>\n\n            <span class="explore-stick"></span>\n\n        </div> <!-- explore-contents -->\n\n\n\n    </div> <!-- content-login-form -->\n\n\n\n\n\n</div> <!-- login-page -->'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\login\login.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["o" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */],
+            __WEBPACK_IMPORTED_MODULE_10__ionic_storage__["b" /* Storage */]])
+    ], LoginPage);
+    return LoginPage;
+}());
+
+//# sourceMappingURL=login.js.map
+
+/***/ }),
+
 /***/ 50:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2039,7 +1960,7 @@ var Qrgo_prototype = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_login__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_login__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2092,15 +2013,13 @@ var SlidesPage = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Step2Page; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfirmCadPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__step1_step1__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__step3_step3__ = __webpack_require__(172);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_jquery__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_jquery__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_Constants__ = __webpack_require__(13);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2115,175 +2034,89 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-
-
 /**
- * Generated class for the Step2Page page.
+ * Generated class for the ConfirmCadPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var Step2Page = (function () {
-    function Step2Page(navCtrl, navParams, alertCtrl, keyboard, http, loadingCtrl) {
+var ConfirmCadPage = (function () {
+    function ConfirmCadPage(navCtrl, navParams, http, alertCtrl) {
         var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.alertCtrl = alertCtrl;
-        this.keyboard = keyboard;
         this.http = http;
-        this.loadingCtrl = loadingCtrl;
-        this.constants = __WEBPACK_IMPORTED_MODULE_2__config_Constants__["a" /* Constants */];
-        this.emp = { empresa_razao: "", empresa_nomefantasia: "", empresa_bairro: "", empresa_endereco: "", empresa_numero: "", empresa_cidade: "", empresa_estado: "", empresa_cnpj: "", empresa_existe: false };
-        this.captcha = { digito: "", key: "", cnpj: "", vazio: "" };
-        this.stepOk = false;
-        this.stepOkCnpj = false;
-        this.stepBuscar = true;
-        this.imgCaptcha = "";
-        this.user_type = this.navParams.get("user_type");
+        this.alertCtrl = alertCtrl;
+        this.seisdigitos = false;
+        this.constants = __WEBPACK_IMPORTED_MODULE_4__config_Constants__["a" /* Constants */];
         /**
-    
-         /**
-         /**
-         * Função utilizada para retornar ao passo 1 do cadastro
-         * @type {() => any} */
-        this.backToStep1 = (function () {
-            _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__step1_step1__["a" /* Step1Page */]);
-        }); /** Fim da função de retorno ao passo 1 do cadastro */
-        /**
-         * Função utilizada para verifica o CNPJ digitado
-         * @type {(cnpj: number) => any} - valor do numero do cnpj
+         * Função utilizada para pular a confirmação do cadastro
          */
-        this.statusBusca = (function () {
-            _this.stepOk = false;
-            _this.stepOkCnpj = false;
-        });
-        this.searchCnpj = (function () {
-            /* Verifica se o CNPJ é real */
-            _this.captcha.cnpj = __WEBPACK_IMPORTED_MODULE_6_jquery__(".cnpj").val();
-            if (_this.validateCnpj()) {
-                _this.captcha.cnpj = _this.clearDataMask(_this.captcha.cnpj, 'cnpj');
-                _this.getCaptcha();
-            }
-        }); /* Fim da função */
-        this.getCaptcha = (function () {
-            _this.captcha.digito = "";
-            var resposta = null;
-            _this.http.post(__WEBPACK_IMPORTED_MODULE_2__config_Constants__["a" /* Constants */].api_path + 'cadastro/getCaptcha', { 'cnpj': _this.captcha.cnpj })
-                .subscribe(function (data) {
-                resposta = JSON.parse(data._body);
-                if (!resposta.existe) {
-                    _this.imgCaptcha = resposta.dados.captchaBase64;
-                    _this.captcha.key = resposta.dados.cookie;
-                    _this.stepOk = true;
-                    _this.stepOkCnpj = false;
-                    _this.emp.empresa_existe = false;
-                }
-                else {
-                    _this.emp = resposta.dados[0];
-                    _this.stepOkCnpj = true;
-                    _this.stepOk = false;
-                    _this.emp.empresa_existe = true;
-                }
+        this.skipCad = (function () {
+            /* Pula a confirmação do cadastro */
+            var alert = _this.alertCtrl.create({
+                title: 'Parabéns',
+                subTitle: 'Parabéns, você realizou o cadastro em nosso sistema. Você será logado automáticamente.',
+                buttons: ['Ok']
             });
+            alert.present();
         });
-        this.validateCnpj = (function () {
-            var reg = /^\d{2}\.\d{3}\.\d{3}\/\d{4}\-\d{2}$/;
-            var validate = true;
-            if (!(_this.captcha.cnpj.length > 0)) {
-                var alert = _this.alertCtrl.create({
-                    title: 'Preencha o CNPJ',
-                    subTitle: 'Por favor, preencha o seu CNPJ e verifique se os dados correspondem corretamente.',
-                    buttons: ['Ok']
-                });
-                alert.present();
-                validate = false;
-            }
-            else if (!reg.test(_this.captcha.cnpj)) {
-                var alert = _this.alertCtrl.create({
-                    title: 'Preencha o CNPJ',
-                    subTitle: 'Por favor, preencha o seu CNPJ no formato correto.',
-                    buttons: ['Ok']
-                });
-                alert.present();
-                validate = false;
-            }
-            return validate;
-        });
-        this.getCnpj = (function () {
-            var resposta = null;
-            _this.http.post(__WEBPACK_IMPORTED_MODULE_2__config_Constants__["a" /* Constants */].api_path + 'cadastro/getCnpj', (_this.captcha))
-                .subscribe(function (data) {
-                _this.presentLoading(resposta);
-                resposta = JSON.parse(data._body);
-                if (resposta.success) {
-                    _this.emp = resposta.dados;
-                    _this.stepOkCnpj = true;
-                    _this.stepOk = false;
-                }
-                else {
-                    _this.captcha.digito = "";
+        //função verifica o codiga com a existencia de 6 digitos 
+        this.autenticaCod = (function (code) {
+            //se o usuario digitar 6 digitos
+            if (code.length == 6) {
+                //desabilita o input 
+                //this.seisdigitos=true;
+                //realiza o ajax enviando como parametro o código de entrada "data"
+                _this.http.post(_this.constants.api_path + 'cadastro/autenticacao', __WEBPACK_IMPORTED_MODULE_3_jquery__["param"]({ codigo: code })).subscribe(function (data) {
+                    var response = data;
+                    var objeto_retorno = JSON.parse(response._body);
+                    //console.log(response._body);
+                    //retorna o código
+                    if (objeto_retorno === true) {
+                        //modal de confirmação para o usuario
+                        var alert_1 = _this.alertCtrl.create({
+                            title: 'Parabéns',
+                            subTitle: 'Parabéns, você realizou o cadastro em nosso sistema. Você será logado automáticamente.',
+                            buttons: ['Ok']
+                        });
+                        alert_1.present();
+                    }
+                    else {
+                        //modal de código invalido
+                        var alert_2 = _this.alertCtrl.create({
+                            title: 'Autenticação',
+                            subTitle: 'Código incorreto',
+                            buttons: ['Ok']
+                        });
+                        alert_2.present();
+                    }
+                }, function (error) {
+                    //modal de erro na autenticação
                     var alert = _this.alertCtrl.create({
-                        title: resposta.title,
-                        subTitle: resposta.msg,
+                        title: 'Autenticação',
+                        subTitle: 'Erro na autenticação',
                         buttons: ['Ok']
                     });
                     alert.present();
-                    _this.getCaptcha();
-                }
-            });
-        });
-        this.clearDataMask = (function (data, type) {
-            var retorno = '';
-            switch (type) {
-                case 'cnpj':
-                    data = data.replace(".", "");
-                    data = data.replace(".", "");
-                    data = data.replace("/", "");
-                    data = data.replace("-", "");
-                    retorno = data;
-                    break;
-            }
-            return retorno;
-        });
-        /**
-         * Função utilizada para avançar para o Setep 3 Do cadastro do perfil
-         * @type {() => any}*/
-        this.goToStep3 = (function () {
-            /* Verifica se o Passo está preenchido corretamente, ou seja, se o CNPJ foi escrito */
-            if (_this.stepOkCnpj) {
-                /* Caso os campos estejam preenchidos corretamente, o passo poderá ser avançado */
-                _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__step3_step3__["a" /* Step3Page */], { empresa: _this.emp, user_type: _this.user_type });
-            }
-            else {
-                /* Caso os campos não estejam preenchidos corretamente, o passo não poderá ser avançado */
-                var alert = _this.alertCtrl.create({
-                    title: 'Preencha o CNPJ',
-                    subTitle: 'Por favor, preencha o seu CNPJ e verifique se os dados correspondem corretamente.',
-                    buttons: ['Ok']
+                    console.log(error);
                 });
-                alert.present();
             }
-        }); /* Fim da função de avanço dos passos de cadastro do perfil */
-    }
-    Step2Page.prototype.presentLoading = function (data) {
-        var loader = this.loadingCtrl.create({
-            content: "Please wait...",
-            duration: data == null ? 1000 : 0
         });
-        loader.present();
-    };
-    Step2Page = __decorate([
+    }
+    ConfirmCadPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-step2',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\step2\step2.html"*/'<ion-header>\n\n    <div class="header-back" (click)="backToStep1()">\n\n\n\n        <svg class="backpage-ico">\n\n            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n        </svg> <!-- backpage-ico -->\n\n\n\n    </div> <!-- header-back -->\n\n</ion-header>\n\n\n\n<ion-content>\n\n\n\n    <div class="step-indicator">\n\n\n\n        <span class="dotdot actived"></span>\n\n        <span class="dot-stick actived"></span>\n\n        <span class="dotdot actived rounded"></span>\n\n        <span class="dot-stick"></span>\n\n        <span class="dotdot"></span>\n\n\n\n    </div> <!-- step-indicator -->\n\n\n\n    <h3 class="title-step">Complete</h3> <!-- title-step -->\n\n\n\n    <div class="cad-content-inn">\n\n        <ion-grid>\n\n\n\n            <ion-row>\n\n                <ion-col>\n\n                    <div class="cad-form-content">\n\n                        <label class="cad-form-label">\n\n                            <span class="cad-form-label-txt"> CNPJ: </span> <!-- cad-form-label-txt -->\n\n                            <input type="text" [(ngModel)]="captcha.vazio"  name="cpf" (keyup)="statusBusca()" class="cad-form-ctrl cnpj" placeholder="Insira o CNPJ"  [brmasker]="{person:true}">\n\n                        </label><!-- cad-form-label -->\n\n                    </div> <!-- cad-form-content -->\n\n                </ion-col>\n\n            </ion-row>\n\n            <div [hidden]="stepOk || stepOkCnpj">\n\n                <div class="form-cont">\n\n                    <button class="login-btn" (click)="searchCnpj()">Buscar</button>\n\n                </div> <!-- form-cont -->\n\n            </div>\n\n\n\n            <div [hidden]="!stepOk">\n\n                <ion-row>\n\n                    <ion-col>\n\n                        <img  class="img-captcha"  [attr.src]="imgCaptcha">\n\n                        <i class="ion-refresh"></i>\n\n                        <div class="cad-form-content">\n\n                            <label class="cad-form-label">\n\n                                <span class="cad-form-label-txt"> Captcha: </span> <!-- cad-form-label-txt -->\n\n                                <input type="text" [(ngModel)]="captcha.digito" class="cad-form-ctrl" placeholder="Insira o Captcha">\n\n                            </label><!-- cad-form-label -->\n\n                        </div> <!-- cad-form-content -->\n\n                    </ion-col>\n\n                </ion-row>\n\n                <div class="form-cont">\n\n                    <button class="login-btn" (click)=" getCnpj()">Enviar</button>\n\n                </div> <!-- form-cont -->\n\n            </div>\n\n\n\n            <ion-row>\n\n                <ion-grid class="grid-complete-cnpj" [hidden]="!stepOkCnpj">\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Razão Social: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Razão Social" [(ngModel)]="emp.empresa_razao" value="" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n                    </ion-row>\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Nome Fantasia: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Nome Fantasia"  [(ngModel)]="emp.empresa_nomefantasia" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n                    </ion-row>\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Bairro: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Bairro" [(ngModel)]="emp.empresa_bairro" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n                    </ion-row>\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Endereço: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Endereço" [(ngModel)]="emp.empresa_endereco" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n\n\n                        <ion-col col-4>\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Nº: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Nº" [(ngModel)]="emp.empresa_numero" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n                        </ion-col>\n\n\n\n                    </ion-row>\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Cidade: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Cidade" [(ngModel)]="emp.empresa_cidade" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n\n\n                        <ion-col col-4>\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Estado: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Estado" [(ngModel)]="emp.empresa_estado" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n                        </ion-col>\n\n\n\n                    </ion-row>\n\n\n\n                </ion-grid>\n\n\n\n            </ion-row>\n\n\n\n        </ion-grid>\n\n    </div> <!-- cad-content-inn -->\n\n\n\n\n\n</ion-content>\n\n\n\n\n\n<ion-footer>\n\n    <div class="footer-steps">\n\n\n\n        <div class="next-step-action" [ngClass]="{ \'allowed\': stepOkCnpj }" (click)="goToStep3()">\n\n            <span class="next-step-label">\n\n                Próximo\n\n            </span> <!-- next-stap-label -->\n\n            <div class="nextstep-icon">\n\n                <span class="caret-body"></span>\n\n                <span class="caret-direction"></span>\n\n            </div> <!-- nextstep-icon -->\n\n        </div> <!-- next-stap-action -->\n\n\n\n    </div> <!-- footer-steps -->\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\step2\step2.html"*/,
+            selector: 'page-confirm-cad',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\confirm-cad\confirm-cad.html"*/'<ion-content>\n\n\n\n  <div class="content-center" >\n\n\n\n    <ion-grid class="grid-confirm-cad">\n\n      <ion-row>\n\n        <ion-col>\n\n\n\n          <h3 class="page-title">Confirme sua conta</h3>\n\n\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row>\n\n        <ion-col>\n\n\n\n          <p class="page-description">Confira seu e-mail ou mensagem sms para confirmar sua conta para seguir usar o aplicativo da melhor forma possível!</p>\n\n\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n      <ion-row>\n\n        <ion-col>\n\n\n\n          <div class="cont-confirmcode" >\n\n            <div class="cad-form-content">\n\n              <label class="cad-form-label">\n\n                <input type="text" class="cad-form-ctrl text-center" placeholder="Codigo" maxlength="6" [(ngModel)]="codeautentic" (keyup)="autenticaCod ( codeautentic )" [disabled]="seisdigitos">\n\n              </label><!-- cad-form-label -->\n\n            </div> <!-- cad-form-content -->\n\n          </div> <!-- cont-confirmcode -->\n\n\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n      <ion-row>\n\n        <ion-col>\n\n          <span class="resend-code"> Re-enviar código </span>\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n      <ion-row>\n\n        <ion-col>\n\n          <button ion-button class="pink-button align-center" > Confirmar </button>\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n    </ion-grid><!-- grid-confirm-cad -->\n\n\n\n  </div> <!-- content-center -->\n\n\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <div class="footer-steps">\n\n\n\n    <div class="next-step-action allowed" (click)="skipCad()">\n\n            <span class="next-step-label">\n\n                Pular\n\n            </span> <!-- next-stap-label -->\n\n      <div class="nextstep-icon">\n\n        <span class="caret-body"></span>\n\n        <span class="caret-direction"></span>\n\n      </div> <!-- nextstep-icon -->\n\n    </div> <!-- next-stap-action -->\n\n\n\n  </div> <!-- footer-steps -->\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\confirm-cad\confirm-cad.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Keyboard */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Keyboard */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_5__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__angular_http__["a" /* Http */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* LoadingController */]) === "function" && _f || Object])
-    ], Step2Page);
-    return Step2Page;
-    var _a, _b, _c, _d, _e, _f;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]])
+    ], ConfirmCadPage);
+    return ConfirmCadPage;
 }());
 
-//# sourceMappingURL=step2.js.map
+//# sourceMappingURL=confirm-cad.js.map
 
 /***/ }),
 
@@ -2295,8 +2128,8 @@ var Step2Page = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_login__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__step2_step2__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_login__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__step2_step2__ = __webpack_require__(91);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2382,9 +2215,9 @@ var Step1Page = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feed_feed__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__explore_explore__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__login_login__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__login_login__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2479,10 +2312,10 @@ var SystemTabsPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modais_post_post__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modais_post_post__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__ = __webpack_require__(168);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2673,7 +2506,224 @@ var ExplorePage = (function () {
 
 //# sourceMappingURL=explore.js.map
 
+/***/ }),
+
+/***/ 91:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Step2Page; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__step1_step1__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__step3_step3__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_jquery__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+/**
+ * Generated class for the Step2Page page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var Step2Page = (function () {
+    function Step2Page(navCtrl, navParams, alertCtrl, keyboard, http, loadingCtrl) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.alertCtrl = alertCtrl;
+        this.keyboard = keyboard;
+        this.http = http;
+        this.loadingCtrl = loadingCtrl;
+        this.constants = __WEBPACK_IMPORTED_MODULE_2__config_Constants__["a" /* Constants */];
+        this.emp = {
+            empresa_razao: "",
+            empresa_nomefantasia: "",
+            empresa_bairro: "",
+            empresa_endereco: "",
+            empresa_numero: "",
+            empresa_cidade: "",
+            empresa_estado: "",
+            empresa_cnpj: "",
+            empresa_existe: false
+        };
+        this.captcha = { digito: "", key: "", cnpj: "", vazio: "" };
+        this.stepOk = false;
+        this.stepOkCnpj = false;
+        this.stepBuscar = true;
+        this.imgCaptcha = "";
+        this.user_type = this.navParams.get("user_type");
+        /**
+    
+         /**
+         /**
+         * Função utilizada para retornar ao passo 1 do cadastro
+         * @type {() => any} */
+        this.backToStep1 = (function () {
+            _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__step1_step1__["a" /* Step1Page */]);
+        });
+        /** Fim da função de retorno ao passo 1 do cadastro */
+        /**
+         * Função utilizada para verifica o CNPJ digitado
+         * @type {(cnpj: number) => any} - valor do numero do cnpj
+         */
+        this.statusBusca = (function () {
+            _this.stepOk = false;
+            _this.stepOkCnpj = false;
+        });
+        this.searchCnpj = (function () {
+            /* Verifica se o CNPJ é real */
+            _this.captcha.cnpj = __WEBPACK_IMPORTED_MODULE_6_jquery__(".cnpj").val();
+            if (_this.validateCnpj()) {
+                _this.captcha.cnpj = _this.clearDataMask(_this.captcha.cnpj, 'cnpj');
+                _this.getCaptcha();
+            }
+        });
+        /* Fim da função */
+        this.getCaptcha = (function () {
+            _this.captcha.digito = "";
+            var resposta = null;
+            _this.http.post(__WEBPACK_IMPORTED_MODULE_2__config_Constants__["a" /* Constants */].api_path + 'cadastro/getCaptcha', { 'cnpj': _this.captcha.cnpj })
+                .subscribe(function (data) {
+                var resposta = data;
+                resposta = JSON.parse(resposta._body);
+                if (!resposta.existe) {
+                    _this.imgCaptcha = resposta.dados.captchaBase64;
+                    _this.captcha.key = resposta.dados.cookie;
+                    _this.stepOk = true;
+                    _this.stepOkCnpj = false;
+                    _this.emp.empresa_existe = false;
+                }
+                else {
+                    _this.emp = resposta.dados[0];
+                    _this.stepOkCnpj = true;
+                    _this.stepOk = false;
+                    _this.emp.empresa_existe = true;
+                }
+            });
+        });
+        this.validateCnpj = (function () {
+            var reg = /^\d{2}\.\d{3}\.\d{3}\/\d{4}\-\d{2}$/;
+            var validate = true;
+            if (!(_this.captcha.cnpj.length > 0)) {
+                var alert_1 = _this.alertCtrl.create({
+                    title: 'Preencha o CNPJ',
+                    subTitle: 'Por favor, preencha o seu CNPJ e verifique se os dados correspondem corretamente.',
+                    buttons: ['Ok']
+                });
+                alert_1.present();
+                validate = false;
+            }
+            else if (!reg.test(_this.captcha.cnpj)) {
+                var alert_2 = _this.alertCtrl.create({
+                    title: 'Preencha o CNPJ',
+                    subTitle: 'Por favor, preencha o seu CNPJ no formato correto.',
+                    buttons: ['Ok']
+                });
+                alert_2.present();
+                validate = false;
+            }
+            return validate;
+        });
+        this.getCnpj = (function () {
+            var resposta = null;
+            _this.http.post(__WEBPACK_IMPORTED_MODULE_2__config_Constants__["a" /* Constants */].api_path + 'cadastro/getCnpj', (_this.captcha))
+                .subscribe(function (data) {
+                _this.presentLoading(resposta);
+                resposta = data;
+                resposta = JSON.parse(resposta._body);
+                if (resposta.success) {
+                    _this.emp = resposta.dados;
+                    _this.stepOkCnpj = true;
+                    _this.stepOk = false;
+                }
+                else {
+                    _this.captcha.digito = "";
+                    var alert_3 = _this.alertCtrl.create({
+                        title: resposta.title,
+                        subTitle: resposta.msg,
+                        buttons: ['Ok']
+                    });
+                    alert_3.present();
+                    _this.getCaptcha();
+                }
+            });
+        });
+        this.clearDataMask = (function (data, type) {
+            var retorno = '';
+            switch (type) {
+                case 'cnpj':
+                    data = data.replace(".", "");
+                    data = data.replace(".", "");
+                    data = data.replace("/", "");
+                    data = data.replace("-", "");
+                    retorno = data;
+                    break;
+            }
+            return retorno;
+        });
+        /**
+         * Função utilizada para avançar para o Setep 3 Do cadastro do perfil
+         * @type {() => any}*/
+        this.goToStep3 = (function () {
+            /* Verifica se o Passo está preenchido corretamente, ou seja, se o CNPJ foi escrito */
+            if (_this.stepOkCnpj) {
+                /* Caso os campos estejam preenchidos corretamente, o passo poderá ser avançado */
+                _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__step3_step3__["a" /* Step3Page */], { empresa: _this.emp, user_type: _this.user_type });
+            }
+            else {
+                /* Caso os campos não estejam preenchidos corretamente, o passo não poderá ser avançado */
+                var alert_4 = _this.alertCtrl.create({
+                    title: 'Preencha o CNPJ',
+                    subTitle: 'Por favor, preencha o seu CNPJ e verifique se os dados correspondem corretamente.',
+                    buttons: ['Ok']
+                });
+                alert_4.present();
+            }
+        });
+    }
+    Step2Page.prototype.presentLoading = function (data) {
+        var loader = this.loadingCtrl.create({
+            content: "Please wait...",
+            duration: data == null ? 1000 : 0
+        });
+        loader.present();
+    };
+    Step2Page = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'page-step2',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\step2\step2.html"*/'<ion-header>\n\n    <div class="header-back" (click)="backToStep1()">\n\n\n\n        <svg class="backpage-ico">\n\n            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n        </svg> <!-- backpage-ico -->\n\n\n\n    </div> <!-- header-back -->\n\n</ion-header>\n\n\n\n<ion-content>\n\n\n\n    <div class="step-indicator">\n\n\n\n        <span class="dotdot actived"></span>\n\n        <span class="dot-stick actived"></span>\n\n        <span class="dotdot actived rounded"></span>\n\n        <span class="dot-stick"></span>\n\n        <span class="dotdot"></span>\n\n\n\n    </div> <!-- step-indicator -->\n\n\n\n    <h3 class="title-step">Complete</h3> <!-- title-step -->\n\n\n\n    <div class="cad-content-inn">\n\n        <ion-grid>\n\n\n\n            <ion-row>\n\n                <ion-col>\n\n                    <div class="cad-form-content">\n\n                        <label class="cad-form-label">\n\n                            <span class="cad-form-label-txt"> CNPJ: </span> <!-- cad-form-label-txt -->\n\n                            <input type="text" [(ngModel)]="captcha.vazio"  name="cpf" (keyup)="statusBusca()" class="cad-form-ctrl cnpj" placeholder="Insira o CNPJ"  [brmasker]="{person:true}">\n\n                        </label><!-- cad-form-label -->\n\n                    </div> <!-- cad-form-content -->\n\n                </ion-col>\n\n            </ion-row>\n\n            <div [hidden]="stepOk || stepOkCnpj">\n\n                <div class="form-cont">\n\n                    <button class="login-btn" (click)="searchCnpj()">Buscar</button>\n\n                </div> <!-- form-cont -->\n\n            </div>\n\n\n\n            <div [hidden]="!stepOk">\n\n                <ion-row>\n\n                    <ion-col>\n\n                        <img  class="img-captcha"  [attr.src]="imgCaptcha">\n\n                        <i class="ion-refresh"></i>\n\n                        <div class="cad-form-content">\n\n                            <label class="cad-form-label">\n\n                                <span class="cad-form-label-txt"> Captcha: </span> <!-- cad-form-label-txt -->\n\n                                <input type="text" [(ngModel)]="captcha.digito" class="cad-form-ctrl" placeholder="Insira o Captcha">\n\n                            </label><!-- cad-form-label -->\n\n                        </div> <!-- cad-form-content -->\n\n                    </ion-col>\n\n                </ion-row>\n\n                <div class="form-cont">\n\n                    <button class="login-btn" (click)=" getCnpj()">Enviar</button>\n\n                </div> <!-- form-cont -->\n\n            </div>\n\n\n\n            <ion-row>\n\n                <ion-grid class="grid-complete-cnpj" [hidden]="!stepOkCnpj">\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Razão Social: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Razão Social" [(ngModel)]="emp.empresa_razao" value="" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n                    </ion-row>\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Nome Fantasia: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Nome Fantasia"  [(ngModel)]="emp.empresa_nomefantasia" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n                    </ion-row>\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Bairro: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Bairro" [(ngModel)]="emp.empresa_bairro" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n                    </ion-row>\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Endereço: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Endereço" [(ngModel)]="emp.empresa_endereco" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n\n\n                        <ion-col col-4>\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Nº: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Nº" [(ngModel)]="emp.empresa_numero" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n                        </ion-col>\n\n\n\n                    </ion-row>\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Cidade: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Cidade" [(ngModel)]="emp.empresa_cidade" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n\n\n                        <ion-col col-4>\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Estado: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Estado" [(ngModel)]="emp.empresa_estado" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n                        </ion-col>\n\n\n\n                    </ion-row>\n\n\n\n                </ion-grid>\n\n\n\n            </ion-row>\n\n\n\n        </ion-grid>\n\n    </div> <!-- cad-content-inn -->\n\n\n\n\n\n</ion-content>\n\n\n\n\n\n<ion-footer>\n\n    <div class="footer-steps">\n\n\n\n        <div class="next-step-action" [ngClass]="{ \'allowed\': stepOkCnpj }" (click)="goToStep3()">\n\n            <span class="next-step-label">\n\n                Próximo\n\n            </span> <!-- next-stap-label -->\n\n            <div class="nextstep-icon">\n\n                <span class="caret-body"></span>\n\n                <span class="caret-direction"></span>\n\n            </div> <!-- nextstep-icon -->\n\n        </div> <!-- next-stap-action -->\n\n\n\n    </div> <!-- footer-steps -->\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\step2\step2.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Keyboard */],
+            __WEBPACK_IMPORTED_MODULE_5__angular_http__["a" /* Http */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* LoadingController */]])
+    ], Step2Page);
+    return Step2Page;
+}());
+
+//# sourceMappingURL=step2.js.map
+
 /***/ })
 
-},[231]);
+},[232]);
 //# sourceMappingURL=main.js.map

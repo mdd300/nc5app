@@ -148,7 +148,9 @@ export class Step3Page {
             Constants.api_path+'cadastro/insertCadastro', $.param({'empresa': this.empresa ,'usuario': this.user }))
             .subscribe((data) => {
                 this.presentLoading(resposta);
-                     resposta = JSON.parse(data._body);
+                resposta = (data as any);
+                    resposta = JSON.parse(resposta._body);
+
                     if(!resposta.existe){
                         if(resposta.success){
                             this.navCtrl.push( ConfirmCadPage , {email:this.user.email});
