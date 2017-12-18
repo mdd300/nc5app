@@ -30068,7 +30068,7 @@ page-localizacao .content-post {
 }
 
 page-localizacao .content-post .content-info-post {
-  height: 17%;
+  height: 8%;
 }
 
 page-localizacao .content-post .content-info-post .content-icon {
@@ -30117,19 +30117,6 @@ page-localizacao .content-post .content-info-post .btn-estilo {
   font-size: 1.0rem;
 }
 
-page-localizacao .content-post .content-info-post .wrapper {
-  width: auto;
-  padding-right: 7%;
-}
-
-page-localizacao .content-post .content-info-post .svg-ico-usertype {
-  width: 13px;
-  height: 14px;
-  fill: #b4c1d6;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
 page-localizacao .content-post .content-info-post .content-data-user {
   float: left;
   padding-left: 6%;
@@ -30156,6 +30143,15 @@ page-localizacao .content-post .row-user {
 page-localizacao .content-post .row-user-2 {
   border-bottom: solid #b4c1d6 1px;
   width: 100%;
+}
+
+page-localizacao .content-post .input-search-maps {
+  border: 0px;
+  padding: 5px;
+}
+
+page-localizacao .content-post .grid {
+  padding-top: 10px;
 }
 
 page-localizacao .item-md {
@@ -30223,15 +30219,41 @@ page-localizacao .row-loc-default {
   overflow-y: hidden;
 }
 
-page-localizacao .content-location-post .content-all-location-post .content-info-location-post {
-  width: 70%;
+page-localizacao .row-loc-default::-webkit-scrollbar {
+  display: none;
+}
+
+page-localizacao .content-location-post .lojas-cad {
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+page-localizacao .content-location-post .content-all-location-post .wrapper {
+  width: 7%;
   float: left;
-  padding-left: 10%;
+  margin: 2px 12px;
+}
+
+page-localizacao .content-location-post .content-all-location-post .svg-ico-usertype {
+  width: 80%;
+  height: 45px;
+  fill: #b4c1d6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+page-localizacao .content-location-post .content-all-location-post .content-info-location-post {
+  width: 60%;
+  float: left;
 }
 
 page-localizacao .content-location-post .content-all-location-post .title-location-post {
   font-size: 1.5em;
   font-family: Roboto;
+}
+
+page-localizacao .content-location-post .content-all-location-post .description-location-post {
+  color: #b4c1d6;
 }
 
 page-localizacao .content-location-post .content-all-location-post .delete-location-post {

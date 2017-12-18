@@ -218,7 +218,7 @@ page-localizacao {
     height: 100%;
 
     .content-info-post {
-      height: 17%;
+      height: 8%;
 
       .content-icon {
         width: 100%;
@@ -262,17 +262,7 @@ page-localizacao {
         font-size: 1.0rem;
 
       }
-      .wrapper {
-        width: auto;
-        padding-right: 7%;
-      }
-      .svg-ico-usertype {
-        width: 13px;
-        height: 14px;
-        fill: $color-grey;
-        -webkit-transition: 0.5s;
-        transition: 0.5s;
-      }
+
       .content-data-user {
         float: left;
         padding-left: 6%;
@@ -297,6 +287,13 @@ page-localizacao {
     .row-user-2 {
       border-bottom: solid $color-grey 1px;
       width: 100%;
+    }
+    .input-search-maps{
+    border: 0px;
+      padding: 5px;
+  }
+    .grid{
+      padding-top: 10px;
     }
   }
 
@@ -348,15 +345,34 @@ page-localizacao {
     -ms-overflow-style: -ms-autohiding-scrollbar;
     overflow-y:hidden;
   }
+  .row-loc-default::-webkit-scrollbar {
+    display: none;
+  }
 
   .content-location-post {
+    .lojas-cad{
+      padding: 10px;
+      font-size: 1.2em;
+    }
+
     .content-all-location-post {
 
+      .wrapper {
+        width: 7%;
+        float: left;
+        margin: 2px 12px;
+      }
+      .svg-ico-usertype {
+        width: 80%;
+        height: 45px;
+        fill: #b4c1d6;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+      }
 
       .content-info-location-post {
-        width: 70%;
+        width: 60%;
         float: left;
-        padding-left: 10%;
       }
 
       .title-location-post {
@@ -364,7 +380,7 @@ page-localizacao {
         font-family: Roboto;
       }
       .description-location-post {
-
+      color: $color-grey;
       }
       .delete-location-post {
         width: 20%;
