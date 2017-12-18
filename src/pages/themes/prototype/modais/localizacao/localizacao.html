@@ -28,7 +28,15 @@
 
         </div>
         <ion-list class="content-info-post ">
-            <ion-item>
+            <ion-item class="content-input">
+
+                <div class="icon-back-header">
+
+                    <svg class="ico-back-header">
+                        <use [attr.xlink:href]="constants.src_svg + 'back.svg#Layer_1'"></use>
+                    </svg> <!-- ico-back-header -->
+                </div> <!-- icon-back-header -->
+
                     <ion-input placeholder="Digite a Localização" (ionBlur)="onBlur()"
                                (ionFocus)="onFocus()"
                                (keypress)="eventHandler($event.keyCode, $event.target)" class="input-search-maps"></ion-input>

@@ -216,6 +216,11 @@ page-localizacao {
   .content-post {
     width: 100%;
     height: 100%;
+    .content-input{
+      border: 1px solid #DDD;
+      width: 100%;
+      height: 100%;
+    }
 
     .content-info-post {
       height: 8%;
@@ -289,7 +294,7 @@ page-localizacao {
       width: 100%;
     }
     .input-search-maps{
-    border: 0px;
+      border: 0px;
       padding: 5px;
   }
     .grid{
