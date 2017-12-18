@@ -1,41 +1,95 @@
 <ion-content>
 
-  <div class="header-background" ></div> <!-- header-background -->
+    <div class="header-background"></div> <!-- header-background -->
 
-  <ion-header >
-    <ion-grid>
-      <ion-row style="display: inline-flex;   ">
-        <ion-col col-1 class="col-icon">
-          <div class="icon-back-header">
+    <ion-header>
+        <ion-grid>
+            <ion-scroll scrollX="true">
 
-            <svg class="ico-back-header">
-              <use [attr.xlink:href]="constants.src_svg + 'back.svg#Layer_1'"></use>
-            </svg> <!-- ico-back-header -->
-          </div> <!-- icon-back-header -->
+                <ion-row nowrap>
+                    <ion-col col-1 class="col-icon">
+                        <div class="icon-back-header">
+
+                            <svg class="ico-back-header">
+                                <use [attr.xlink:href]="constants.src_svg + 'back.svg#Layer_1'"></use>
+                            </svg> <!-- ico-back-header -->
+                        </div> <!-- icon-back-header -->
 
 
-        </ion-col>
-        <ion-col col-auto style="width: 46%;">
-          <div class="text-btn-publicar">LOCALIZAÇÃO</div>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-header>
+                    </ion-col>
+                    <ion-col col-auto style="width: 46%;">
+                        <div class="text-btn-publicar">LOCALIZAÇÃO</div>
+                    </ion-col>
+                </ion-row>
+            </ion-scroll>
 
-  <div class="content-post">
+        </ion-grid>
+    </ion-header>
 
-    <div class="empty-content-header" >
+    <div class="content-post">
 
-    </div>
-    <div class="content-info-post ">
-        <div class="row-user" >
-            <ion-input  placeholder="Digite a Localização"></ion-input>
+        <div class="empty-content-header">
+
         </div>
-      <div>
-      </div>
+        <ion-list class="content-info-post ">
+            <ion-item>
+                <ion-input placeholder="Digite a Localização"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-grid class="row-user-2">
+                    <ion-row class="row-loc-default">
+                        <ion-col>
+                            <button ion-button class="btn-estilo" outline>
+                                <div text-align="center" class="text-btn-estilo">
+                                    São Paulo
+                                </div>
+                            </button>
+                        </ion-col>
+                        <ion-col>
+                            <button ion-button class="btn-estilo" outline>
+                                <div text-align="center" class="text-btn-estilo">
+                                    Minas Gerais
+                                </div>
+                            </button>
+                        </ion-col>
+                        <ion-col>
+                            <button ion-button class="btn-estilo" outline>
+                                <div text-align="center" class="text-btn-estilo">
+                                    Rio de Janeiro
+                                </div>
+                            </button>
+                        </ion-col>
+                        <ion-col>
+                            <button ion-button class="btn-estilo" outline>
+                                <div text-align="center" class="text-btn-estilo">
+                                    Rio Grande do Sul
+                                </div>
+                            </button>
+                        </ion-col>
+
+
+                    </ion-row>
+                </ion-grid>
+            </ion-item>
+        </ion-list>
+
+        <div class="content-location-post">
+            <ion-list>
+                <ion-item class="content-all-location-post">
+                    <div class="second-content-all-location">
+                        <div class="content-info-location-post">
+                            <div class="title-location-post"><b>Uniquechic</b></div>
+                            <div class="description-location-post">São Paulo</div>
+                        </div>
+                        <div class="delete-location-post">
+                            <div class="icon-delete-location">X</div>
+                        </div>
+                    </div>
+                </ion-item>
+            </ion-list>
+        </div>
+
+
     </div>
-
-
-</div>
 </ion-content>
 
