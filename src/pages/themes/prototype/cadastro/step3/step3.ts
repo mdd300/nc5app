@@ -4,6 +4,7 @@ import {Constants} from "../../../../../config/Constants";
 import {Step2Page} from "../step2/step2";
 import {ConfirmCadPage} from "../confirm-cad/confirm-cad";
 import {Http, Headers, RequestOptions} from '@angular/http';
+import * as $ from 'jquery';
 
 
 /**
@@ -48,57 +49,90 @@ export class Step3Page {
     public checkPass = (()=>{
         /** Verifica se as senhas correspondem umas as outras*/
 
-            this.passwordsValiable = (this.user.password == this.confirmPassword ? true : false );
+        this.passwordsValiable = (this.user.password == this.confirmPassword ? true : false );
 
     }); /* Fim da função utilizada para conferir se as senhas estão iguais */
 
     /**
      * Função utilizada para finalizar o cadastro do perfil */
-    public cadFinish = (() => {
 
-        if(this.user.name == "" || this.user.email == "" ||  this.user.password == "" ||  this.user.fone == "" || this.confirmPassword == ""){
+
+    public validateUser = (() => {
+
+        var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+        var validate = true;
+        if(this.user.name == "" || this.user.email == "" ||  this.user.password == "" ||  this.user.fone == "" || this.confirmPassword == "") {
             let alert = this.alertCtrl.create({
                 title: 'Campos Vazios',
                 subTitle: 'Existem campos vazios a serem preechidos',
                 buttons: ['Ok']
             });
+           validate = false;
             alert.present();
-            this.camposValiable = false;
-        }else{
-            this.camposValiable = true;
-
-            if(!this.passwordsValiable ){
-                let alert = this.alertCtrl.create({
-                    title: 'Senhas Incorretas',
-                    subTitle: 'Por favor, preencha as senhas de forma identica!',
-                    buttons: ['Ok']
-                });
-                alert.present();
-            }/* Fim da verificação da correspondencia das senhas */
+            // this.camposValiable = false;
         }
+        else if(!this.passwordsValiable ){
+            let alert = this.alertCtrl.create({
+                title: 'Senhas Incorretas',
+                subTitle: 'Por favor, preencha as senhas de forma identica!',
+                buttons: ['Ok']
+            });
+            alert.present();
+           validate = false;
+            /* Fim da verificação da correspondencia das senhas */
+
+        }else if(!reg.test(this.user.email)){
+            let alert = this.alertCtrl.create({
+                title: 'Email Invalido',
+                subTitle: 'Por favor, Insira um email invalido!',
+                buttons: ['Ok']
+            });
+            alert.present();
+          validate = false;
+        }else if(this.user.password.length < 6) {
+            let alert = this.alertCtrl.create({
+                title: 'Senha',
+                subTitle: 'Por favor, Preencher no minimo 6 caracteres!',
+                buttons: ['Ok']
+            });
+            alert.present();
+            validate = false;
+        }
+        return validate;
 
 
+    });
+
+
+
+    public cadFinish = (() => {
 
         /** Verifica se as senhas correspondem umas as outras */
-        if(this.passwordsValiable && this.camposValiable ){
-            /* Caso as senhas correspondam umas as outras */
+         if(this.validateUser()){
+             /* Caso as senhas correspondam umas as outras */
             this.setUser();
-         //   this.navCtrl.push( ConfirmCadPage );
-
-        }
+         }
 
 
     });
 
 
     public setUser = (() => {
-        console.log(this.user_type);
         this.http.post(
-            'http://localhost/fashon/qrgo/cadastro/insertCadastro', {'empresa': this.empresa ,'usuario': this.user })
+            Constants.api_path+'cadastro/insertCadastro', $.param({'empresa': this.empresa ,'usuario': this.user }))
             .subscribe((data) => {
                     var resposta = JSON.parse(data._body);
-                    if(resposta.success){
-
+                    if(!resposta.existe){
+                        if(resposta.success){
+                            this.navCtrl.push( ConfirmCadPage , {email:this.user.email});
+                        }
+                    }else{
+                            let alert = this.alertCtrl.create({
+                                title: 'Cadastro',
+                                subTitle: resposta.msg,
+                                buttons: ['Ok']
+                            });
+                        alert.present();
                     }
                 }
 

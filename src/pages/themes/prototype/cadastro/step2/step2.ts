@@ -20,10 +20,11 @@ import {Http, Headers, RequestOptions} from '@angular/http';
 export class Step2Page {
 
     public constants = Constants;
-    public emp:any = {empresa_razao:"" , empresa_nomefantasia:"", empresa_bairro:"" , empresa_endereco:"" , empresa_numero:"", empresa_cidade:"", empresa_estado:"" ,empresa_cnpj:""};
+    public emp:any = {empresa_razao:"" , empresa_nomefantasia:"", empresa_bairro:"" , empresa_endereco:"" , empresa_numero:"", empresa_cidade:"", empresa_estado:"" ,empresa_cnpj:"", empresa_existe:false};
     public captcha:any = {digito:"", key:"", cnpj:""};
     public stepOk:boolean = false;
     public stepOkCnpj:boolean = false;
+    public stepBuscar:boolean = true;
     public imgCaptcha:string = "";
     public user_type = this.navParams.get("user_type");
 
@@ -48,29 +49,58 @@ export class Step2Page {
      * Função utilizada para verifica o CNPJ digitado
      * @type {(cnpj: number) => any} - valor do numero do cnpj
      */
-    public keyupCnpj = (()=>{
+
+    public statusBusca = (()=>{
+        this.stepOk = false;
+        this.stepOkCnpj = false;
+    });
+
+    public searchCnpj = (()=>{
         /* Verifica se o CNPJ é real */
         // console.log(this.cnpj.length);
-
-        if( this.captcha.cnpj.length == 14  ){
+        //
+        // if( this.captcha.cnpj.length == 14  ){
+        //     this.getCaptcha();
+        //     this.keyboard.close();
+        // }else{
+        //     this.stepOk = false;
+        // }
+        if(this.captcha.cnpj.length > 0) {
             this.getCaptcha();
-            this.keyboard.close();
         }else{
-            this.stepOk = false;
+            let alert = this.alertCtrl.create({
+                title: 'Preencha o CNPJ',
+                subTitle: 'Por favor, preencha o seu CNPJ e verifique se os dados correspondem corretamente.',
+                buttons: ['Ok']
+            });
+            alert.present();
         }
     });/* Fim da função */
 
 
+
+
     public getCaptcha = (() => {
-console.log(this.user_type);
+        this.captcha.digito = "";
         this.http.post(
-            'http://localhost/fashon/qrgo/cadastro/getCaptcha', {'cnpj': this.captcha.cnpj})
+            Constants.api_path+'cadastro/getCaptcha', {'cnpj': this.captcha.cnpj})
             .subscribe((data) => {
                     var resposta = JSON.parse(data._body);
                     if(!resposta.existe){
+                        console.log(resposta.dados);
                         this.imgCaptcha = resposta.dados.captchaBase64;
                         this.captcha.key = resposta.dados.cookie;
                         this.stepOk = true;
+                        this.stepOkCnpj = false;
+                        this.emp.empresa_existe = false;
+
+                    }else{
+                        console.log(this.emp);
+                        this.emp = resposta.dados[0];
+                        console.log(this.emp);
+                        this.stepOkCnpj = true;
+                        this.stepOk = false;
+                        this.emp.empresa_existe = true;
 
                     }
                 }
@@ -82,7 +112,7 @@ console.log(this.user_type);
     public getCnpj = (() => {
 
         this.http.post(
-            'http://localhost/fashon/qrgo/cadastro/getCnpj',(this.captcha))
+            Constants.api_path+'cadastro/getCnpj',(this.captcha))
             .subscribe((data) => {
                     var resposta = JSON.parse(data._body);
                     if(resposta.success){
@@ -90,6 +120,15 @@ console.log(this.user_type);
                         this.stepOkCnpj = true;
                         this.stepOk = false;
 
+                    }else{
+                        this.captcha.digito = "";
+                        let alert = this.alertCtrl.create({
+                            title: resposta.title,
+                            subTitle: resposta.msg,
+                            buttons: ['Ok']
+                        });
+                        alert.present();
+                        this.getCaptcha();
 
                     }
                 }
