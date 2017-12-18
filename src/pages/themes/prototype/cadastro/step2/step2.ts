@@ -79,10 +79,10 @@ export class Step2Page {
     public getCaptcha = (() => {
         this.captcha.digito = "";
         var resposta = null;
-        let loader = this.loadingCtrl.create({
-            content: "Please wait...",
-        });
-        loader.present();
+        // let loader = this.loadingCtrl.create({
+        //     content: "Please wait...",
+        // });
+        // loader.present();
         this.http.post(
             Constants.api_path+'cadastro/getCaptcha', {'cnpj': this.captcha.cnpj})
             .subscribe((data) => {
