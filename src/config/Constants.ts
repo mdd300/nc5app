@@ -6,4 +6,5 @@ export const Constants = {
 
     'src_img': './assets/themes/prototype/img/',
     'src_svg': './assets/themes/prototype/img/svg/',
+    
 };
