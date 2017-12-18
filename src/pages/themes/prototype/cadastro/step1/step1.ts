@@ -42,7 +42,7 @@ export class Step1Page {
         /* Verifica se o redirect está habilitado. Só estará se algum perfil foi selecionado, ou seja: se actived for diferente de 0 */
         if (this.actived != 0) {
             /* Se o redirect estiver hasbilitado */
-            this.navCtrl.push(Step2Page);
+            this.navCtrl.push(Step2Page , {user_type: this.actived});
         }else{
             /* Caso o redirect não esteja habilitado, exibe o alerta */
             let alert = this.alertCtrl.create({

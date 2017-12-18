@@ -17,6 +17,15 @@ page-step2 {
 
 }
 
+.img-captcha{
+  width: 206px;
+  height: 85px;
+  text-align: center;
+  border-radius: 8px;
+  margin-left: 18%;
+  margin-top: 6%;
+};
+
 @keyframes fadeInUp {
   0%{
     opacity: 0;
@@ -37,4 +46,25 @@ page-step2 {
     opacity: 0;
     transform: translateY(10px);
   }
-}
+
+
+};
+
+.login-btn {
+      padding: 15px 50px;
+      border-radius: $border-rd-xl;
+      margin: 20px 0 0 0;
+      background: $color-pink;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: bold;
+      font-size: 18px;
+  margin-left: 23%;
+  margin-top: 6%;
+    }
+    /** login-btn */
+
+/** form-cont */
+
+
+
