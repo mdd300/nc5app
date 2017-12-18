@@ -31,7 +31,7 @@
                     <div class="cad-form-content">
                         <label class="cad-form-label">
                             <span class="cad-form-label-txt"> Username: </span> <!-- cad-form-label-txt -->
-                            <input type="text" class="cad-form-ctrl" placeholder="Username">
+                            <input type="text" [(ngModel)]="user.name" class="cad-form-ctrl" placeholder="Username">
                         </label><!-- cad-form-label -->
                     </div> <!-- cad-form-content -->
 
@@ -44,7 +44,7 @@
                     <div class="cad-form-content">
                         <label class="cad-form-label">
                             <span class="cad-form-label-txt"> Senha: </span> <!-- cad-form-label-txt -->
-                            <input type="password" [(ngModel)]="password" (keyup)="checkPass()" class="cad-form-ctrl" placeholder="Senha">
+                            <input type="password" [(ngModel)]="user.password" (keyup)="checkPass()" class="cad-form-ctrl" placeholder="Senha">
                         </label><!-- cad-form-label -->
                     </div> <!-- cad-form-content -->
 
@@ -55,13 +55,11 @@
                 <ion-col>
 
                     <div class="cad-form-content">
-
                         <label class="cad-form-label icon-right" [ngClass]="{ 'checked-icon': passwordsValiable }">
                             <span class="cad-form-label-txt"> Confirmar Senha: </span> <!-- cad-form-label-txt -->
                             <input type="password" [(ngModel)]="confirmPassword" (keyup)="checkPass()" class="cad-form-ctrl" placeholder="Confirmar Senha">
                             <ion-icon name="checkmark-circle"></ion-icon>
                         </label><!-- cad-form-label -->
-
                     </div> <!-- cad-form-content -->
 
                 </ion-col>
@@ -74,7 +72,7 @@
 
                         <label class="cad-form-label">
                             <span class="cad-form-label-txt"> Email: </span> <!-- cad-form-label-txt -->
-                            <input type="email" class="cad-form-ctrl" placeholder="Email">
+                            <input type="email" [(ngModel)]="user.email" class="cad-form-ctrl" placeholder="Email">
                         </label><!-- cad-form-label -->
 
                     </div> <!-- cad-form-content -->
@@ -89,7 +87,7 @@
 
                         <label class="cad-form-label">
                             <span class="cad-form-label-txt"> Telefone: </span> <!-- cad-form-label-txt -->
-                            <input type="text" class="cad-form-ctrl" placeholder="Telefone">
+                            <input type="text"  class="cad-form-ctrl fone" placeholder="Telefone" [brmasker]="{phone: true}">
                         </label><!-- cad-form-label -->
 
                     </div> <!-- cad-form-content -->
