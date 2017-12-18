@@ -60,37 +60,37 @@ export class LoginPage {
      * Função utilizada para realizar o login do usuário */
     public doLogin = (() => {
 
-        this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
-        //
-        // var data_send = this.logindata;
-        // this.http.post(this.constants.api_path + 'login/dologin', $.param(data_send)).subscribe(response => {
-        //
-        //     var res = (response as any);
-        //     this.login = JSON.parse(res._body);
-        //     const login = (this.login as any);
-        //
-        //     if (login.success) {
-        //
-        //         this.storage.set('user_logged', login.userdata);
-        //
-        //         if (login.no_verified) {
-        //             console.log(login);
-        //             this.navCtrl.push(ConfirmCadPage);
-        //         }
-        //         else {
-        //             this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
-        //         }
-        //
-        //     } else {
-        //         var __this = this;
-        //         setTimeout(function () {
-        //             var text = (__this.login as any);
-        //             text.text = "";
-        //         }, 3000);
-        //
-        //     }
-        //
-        // });
+        // this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
+
+        var data_send = this.logindata;
+        this.http.post(this.constants.api_path + 'login/dologin', $.param(data_send)).subscribe(response => {
+
+            var res = (response as any);
+            this.login = JSON.parse(res._body);
+            const login = (this.login as any);
+
+            if (login.success) {
+
+                this.storage.set('user_logged', login.userdata);
+
+                if (login.no_verified) {
+                    console.log(login);
+                    this.navCtrl.push(ConfirmCadPage);
+                }
+                else {
+                    this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
+                }
+
+            } else {
+                var __this = this;
+                setTimeout(function () {
+                    var text = (__this.login as any);
+                    text.text = "";
+                }, 3000);
+
+            }
+
+        });
 
 
     });
