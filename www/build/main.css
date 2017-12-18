@@ -29153,6 +29153,19 @@ page-forgot-pass-2 .resend-code {
   cursor: pointer;
 }
 
+page-forgot-pass-3 {
+  /** label-new-pass */
+}
+
+page-forgot-pass-3 .label-new-pass {
+  width: 100%;
+  float: left;
+  font-size: 1em;
+  color: #b4c1d6;
+  font-weight: bold;
+  padding: 0 0 0 15px;
+}
+
 page-login {
   /** login-page */
 }

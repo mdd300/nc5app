@@ -77,10 +77,10 @@ var map = {
 		187
 	],
 	"../pages/themes/prototype/slides/slides.module": [
-		189
+		188
 	],
 	"../pages/themes/prototype/system-tabs/system-tabs.module": [
-		188
+		189
 	]
 };
 function webpackAsyncContext(req) {
@@ -746,6 +746,7 @@ var ForgotPass_2Page = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ForgotPass_3Page; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(42);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -757,6 +758,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 /**
  * Generated class for the ForgotPass_3Page page.
  *
@@ -764,24 +766,44 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var ForgotPass_3Page = (function () {
-    function ForgotPass_3Page(navCtrl, navParams) {
+    function ForgotPass_3Page(navCtrl, navParams, alertCtrl) {
         var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.alertCtrl = alertCtrl;
         /**
          * Função utilizada para "voltar" uma pagina do aplicativo */
         this.backPage = (function () {
             /* Remove uma página do controller de navegação */
             _this.navCtrl.pop();
         });
+        /* Fim da função de backPage */
+        /**
+         * Função utilizada para finalizar o processo de recuperação de senha.
+         */
+        this.finishNewPass = (function () {
+            var alert = _this.alertCtrl.create({
+                title: 'Senhas Alteradas!',
+                subTitle: 'Suas senhas foram alteradas com sucesso! você será redirecionado para a página de login.',
+                enableBackdropDismiss: false,
+                buttons: [{
+                        text: 'Ok',
+                        handler: function () {
+                            _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_2__login_login__["a" /* LoginPage */]);
+                        } /* Hander of "OK" button */
+                    }]
+            });
+            alert.present();
+        });
     }
     ForgotPass_3Page = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-forgot-pass-3',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\forgot-pass\forgot-pass-3\forgot-pass-3.html"*/'<ion-header>\n  <ion-grid>\n    <ion-row>\n      <ion-col col-auto class="col-icon-back" (click)="backPage()">\n        <ion-icon name="ios-arrow-back" class="icon-back"></ion-icon>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-header>\n<ion-content padding>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col>\n        <h3 class="title-page">\n          Código de Confirmação\n        </h3><!-- title-page -->\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <p class="page-description">\n          Um código de verificação foi enviado ao seu email. Por favor, digite o código aqui para continuar o processo! estamos quase lá!\n        </p><!-- page-description -->\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n      <ion-col>\n          <span class="label-form">\n          Código de Confirmação\n          </span><!-- label-form -->\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n      <ion-col>\n        <input type="teste" class="recover-form" placeholder="Código">\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n      <ion-col>\n        <span class="resend-code"> Re-enviar código </span>\n      </ion-col>\n    </ion-row>\n\n  </ion-grid>\n\n</ion-content>\n<ion-footer>\n  <div class="footer-steps" >\n\n    <div class="next-step-action" [ngClass]="{\'allowed\': true }" (click)="confirmCode()" >\n            <span class="next-step-label">\n                Confirmar!\n            </span> <!-- next-stap-label -->\n      <div class="nextstep-icon" >\n        <span class="caret-body"></span>\n        <span class="caret-direction"></span>\n      </div> <!-- nextstep-icon -->\n    </div> <!-- next-stap-action -->\n\n  </div> <!-- footer-steps -->\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\forgot-pass\forgot-pass-3\forgot-pass-3.html"*/,
+            selector: 'page-forgot-pass-3',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\forgot-pass\forgot-pass-3\forgot-pass-3.html"*/'<ion-header>\n  <ion-grid>\n    <ion-row>\n      <ion-col col-auto class="col-icon-back" (click)="backPage()">\n        <ion-icon name="ios-arrow-back" class="icon-back"></ion-icon>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-header>\n<ion-content padding>\n\n  <ion-grid>\n    <ion-row>\n      <ion-col>\n        <h3 class="title-page">\n          Novas Senhas\n        </h3><!-- title-page -->\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <p class="page-description">\n          Ultimo passo! para concluir este processo, Digite uma nova senha para que você possa efetuar o login novamente.\n        </p><!-- page-description -->\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n      <ion-col>\n          <span class="label-form">\n          Digite sua nova senha.\n          </span><!-- label-form -->\n      </ion-col>\n    </ion-row>\n\n    <ion-row>\n      <ion-col>\n        <span class="label-new-pass">Nova senha:</span>\n        <input type="password" class="recover-form" placeholder="Nova senha">\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <span class="label-new-pass">Confirme sua nova senha:</span>\n        <input type="password" class="recover-form" placeholder="Confirmar Senha">\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n</ion-content>\n<ion-footer>\n  <div class="footer-steps" >\n\n    <div class="next-step-action" [ngClass]="{\'allowed\': true }" (click)="finishNewPass()" >\n            <span class="next-step-label">\n                Terminar!\n            </span> <!-- next-stap-label -->\n      <div class="nextstep-icon" >\n        <span class="caret-body"></span>\n        <span class="caret-direction"></span>\n      </div> <!-- nextstep-icon -->\n    </div> <!-- next-stap-action -->\n\n  </div> <!-- footer-steps -->\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\forgot-pass\forgot-pass-3\forgot-pass-3.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]) === "function" && _c || Object])
     ], ForgotPass_3Page);
     return ForgotPass_3Page;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=forgot-pass-3.js.map
@@ -1347,44 +1369,6 @@ var PostPageModule = (function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SystemTabsPageModule", function() { return SystemTabsPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__system_tabs__ = __webpack_require__(84);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var SystemTabsPageModule = (function () {
-    function SystemTabsPageModule() {
-    }
-    SystemTabsPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__system_tabs__["a" /* SystemTabsPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__system_tabs__["a" /* SystemTabsPage */]),
-            ],
-        })
-    ], SystemTabsPageModule);
-    return SystemTabsPageModule;
-}());
-
-//# sourceMappingURL=system-tabs.module.js.map
-
-/***/ }),
-
-/***/ 189:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SlidesPageModule", function() { return SlidesPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
@@ -1418,6 +1402,44 @@ var SlidesPageModule = (function () {
 
 /***/ }),
 
+/***/ 189:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SystemTabsPageModule", function() { return SystemTabsPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__system_tabs__ = __webpack_require__(84);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var SystemTabsPageModule = (function () {
+    function SystemTabsPageModule() {
+    }
+    SystemTabsPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__system_tabs__["a" /* SystemTabsPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__system_tabs__["a" /* SystemTabsPage */]),
+            ],
+        })
+    ], SystemTabsPageModule);
+    return SystemTabsPageModule;
+}());
+
+//# sourceMappingURL=system-tabs.module.js.map
+
+/***/ }),
+
 /***/ 231:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1444,7 +1466,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(230);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(311);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_themes_prototype_slides_slides__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_themes_prototype_slides_slides_module__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_themes_prototype_slides_slides_module__ = __webpack_require__(188);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_themes_prototype_login_login_module__ = __webpack_require__(184);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_themes_prototype_cadastro_step1_step1_module__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_themes_prototype_cadastro_step2_step2_module__ = __webpack_require__(176);
@@ -1456,7 +1478,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_themes_prototype_feed_feed_module__ = __webpack_require__(180);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_themes_prototype_modais_post_post_module__ = __webpack_require__(187);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_themes_prototype_login_login__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_themes_prototype_system_tabs_system_tabs_module__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_themes_prototype_system_tabs_system_tabs_module__ = __webpack_require__(189);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_themes_prototype_system_tabs_system_tabs__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__angular_http__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__providers_categoria_categoria__ = __webpack_require__(89);
@@ -1536,8 +1558,8 @@ var AppModule = (function () {
                         { loadChildren: '../pages/themes/prototype/modais/gostos/gostos.module#GostosPageModule', name: 'GostosPage', segment: 'gostos', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/modais/localizacao/localizacao.module#LocalizacaoPageModule', name: 'LocalizacaoPage', segment: 'localizacao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/modais/post/post.module#PostPageModule', name: 'PostPage', segment: 'post', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/system-tabs/system-tabs.module#SystemTabsPageModule', name: 'SystemTabsPage', segment: 'system-tabs', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/slides/slides.module#SlidesPageModule', name: 'SlidesPage', segment: 'slides', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/themes/prototype/slides/slides.module#SlidesPageModule', name: 'SlidesPage', segment: 'slides', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/system-tabs/system-tabs.module#SystemTabsPageModule', name: 'SystemTabsPage', segment: 'system-tabs', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_24__pages_themes_prototype_forgot_pass_forgot_pass_1_forgot_pass_1_module__["ForgotPass_1PageModule"],
