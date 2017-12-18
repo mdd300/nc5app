@@ -1,49 +1,5 @@
 @import "../forgot-pass-theme";
 
 page-forgot-pass-1 {
-  .header{
-    background: #fff;
-
-    .col-icon-back{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-
-      .icon-back{
-        color: $color-grey;
-        font-size: 1.8em;
-        padding: 0 10px;
-      }/** icon-back */
-    }/** col-icon-back */
-
-
-    &:after{
-      background: none;
-    }/** after */
-  }/** header */
-
-  .title-page{
-    width: 100%;
-    font-size: 1.5em;
-    color: $color-grey;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-  }/** title-page */
-  .page-description{
-    width: 100%;
-    color: $color-grey;
-    text-align: center;
-  }/** page-description */
-  .label-form{
-    width: 100%;
-    float: left;
-    padding: 20px 0 0 0;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: $color-grey;
-    text-align: center;
-  }/** label-form */
 
 }

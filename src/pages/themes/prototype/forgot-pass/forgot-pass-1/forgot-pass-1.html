@@ -35,7 +35,7 @@
 
         <ion-row>
             <ion-col>
-                <input type="email" class="recover-form" placeholder="exemple@exemple.com">
+                    <input type="email" [(ngModel)]="email_to_recover" (keyup)="validateEmail( email_to_recover )" class="recover-form" placeholder="exemple@exemple.com">
             </ion-col>
         </ion-row>
 
@@ -46,7 +46,8 @@
 
 <ion-footer>
     <div class="footer-steps" >
-        <div class="next-step-action">
+
+        <div class="next-step-action" [ngClass]="{'allowed': valid_email }" (click)="sendEmail()">
             <span class="next-step-label">
                 Próximo
             </span> <!-- next-stap-label -->
@@ -55,5 +56,6 @@
                 <span class="caret-direction"></span>
             </div> <!-- nextstep-icon -->
         </div> <!-- next-stap-action -->
+        
     </div> <!-- footer-steps -->
 </ion-footer>
