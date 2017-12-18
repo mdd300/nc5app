@@ -87,7 +87,7 @@
 
                         <label class="cad-form-label">
                             <span class="cad-form-label-txt"> Telefone: </span> <!-- cad-form-label-txt -->
-                            <input type="text"  [(ngModel)]="user.fone"  class="cad-form-ctrl" placeholder="Telefone">
+                            <input type="text"  class="cad-form-ctrl fone" placeholder="Telefone" [brmasker]="{phone: true}">
                         </label><!-- cad-form-label -->
 
                     </div> <!-- cad-form-content -->

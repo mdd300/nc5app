@@ -4,6 +4,7 @@ import {Constants} from "../../../../../config/Constants";
 import {Step1Page} from "../step1/step1";
 import {Step3Page} from "../step3/step3";
 import {Http, Headers, RequestOptions} from '@angular/http';
+import * as $ from 'jquery';
 
 /**
  * Generated class for the Step2Page page.
@@ -21,7 +22,7 @@ export class Step2Page {
 
     public constants = Constants;
     public emp:any = {empresa_razao:"" , empresa_nomefantasia:"", empresa_bairro:"" , empresa_endereco:"" , empresa_numero:"", empresa_cidade:"", empresa_estado:"" ,empresa_cnpj:"", empresa_existe:false};
-    public captcha:any = {digito:"", key:"", cnpj:""};
+    public captcha:any = {digito:"", key:"", cnpj:"" , vazio:""};
     public stepOk:boolean = false;
     public stepOkCnpj:boolean = false;
     public stepBuscar:boolean = true;
@@ -51,30 +52,22 @@ export class Step2Page {
      */
 
     public statusBusca = (()=>{
+        console.log('teste');
         this.stepOk = false;
         this.stepOkCnpj = false;
     });
 
     public searchCnpj = (()=>{
         /* Verifica se o CNPJ é real */
-        // console.log(this.cnpj.length);
-        //
-        // if( this.captcha.cnpj.length == 14  ){
-        //     this.getCaptcha();
-        //     this.keyboard.close();
-        // }else{
-        //     this.stepOk = false;
-        // }
-        if(this.captcha.cnpj.length > 0) {
+
+        this.captcha.cnpj = $(".cnpj").val();
+
+        if(this.validateCnpj()) {
+            this.captcha.cnpj = this.clearDataMask(this.captcha.cnpj  , 'cnpj');
+            console.log( this.captcha.cnpj);
             this.getCaptcha();
-        }else{
-            let alert = this.alertCtrl.create({
-                title: 'Preencha o CNPJ',
-                subTitle: 'Por favor, preencha o seu CNPJ e verifique se os dados correspondem corretamente.',
-                buttons: ['Ok']
-            });
-            alert.present();
         }
+
     });/* Fim da função */
 
 
@@ -82,6 +75,7 @@ export class Step2Page {
 
     public getCaptcha = (() => {
         this.captcha.digito = "";
+
         this.http.post(
             Constants.api_path+'cadastro/getCaptcha', {'cnpj': this.captcha.cnpj})
             .subscribe((data) => {
@@ -107,6 +101,34 @@ export class Step2Page {
 
             )
     });
+
+    public validateCnpj = (() => {
+        var reg = /^\d{2}\.\d{3}\.\d{3}\/\d{4}\-\d{2}$/;
+        var validate = true;
+
+        if(!(this.captcha.cnpj.length > 0)){
+            let alert = this.alertCtrl.create({
+                title: 'Preencha o CNPJ',
+                subTitle: 'Por favor, preencha o seu CNPJ e verifique se os dados correspondem corretamente.',
+                buttons: ['Ok']
+            });
+            alert.present();
+            validate = false;
+
+        }else if(!reg.test(this.captcha.cnpj)){
+            let alert = this.alertCtrl.create({
+                title: 'Preencha o CNPJ',
+                subTitle: 'Por favor, preencha o seu CNPJ no formato correto.',
+                buttons: ['Ok']
+            });
+            alert.present();
+            validate = false;
+        }
+
+        return validate;
+    });
+
+
 
 
     public getCnpj = (() => {
@@ -135,8 +157,24 @@ export class Step2Page {
 
             )
     });
+    public clearDataMask = ((data , type) => {
+        var retorno = ''
+        switch (type){
+            case 'cnpj':
+                data = data.replace( ".", "" );
+                data = data.replace( ".", "" );
+                data = data.replace("/" , "");
+                data =  data.replace("-" , "");
+                retorno = data;
+
+                break;
+        }
+
+        return retorno;
 
 
+
+    });
 
     /**
      * Função utilizada para avançar para o Setep 3 Do cadastro do perfil

@@ -59,7 +59,9 @@ export class Step3Page {
 
     public validateUser = (() => {
 
-        var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+        var regEmail = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+        var regFone = /^(\([0-9]{2}\))\s([9]{1})?([0-9]{5})|([0-9]{4})-([0-9]{4})$/;
+
         var validate = true;
         if(this.user.name == "" || this.user.email == "" ||  this.user.password == "" ||  this.user.fone == "" || this.confirmPassword == "") {
             let alert = this.alertCtrl.create({
@@ -81,7 +83,7 @@ export class Step3Page {
            validate = false;
             /* Fim da verificação da correspondencia das senhas */
 
-        }else if(!reg.test(this.user.email)){
+        }else if(!regEmail.test(this.user.email)){
             let alert = this.alertCtrl.create({
                 title: 'Email Invalido',
                 subTitle: 'Por favor, Insira um email invalido!',
@@ -98,6 +100,15 @@ export class Step3Page {
             alert.present();
             validate = false;
         }
+        else if(!regFone.test(this.user.fone)) {
+            let alert = this.alertCtrl.create({
+                title: 'Telefone',
+                subTitle: 'Por favor, Preencher telefone no formato correto (00)0000-0000!',
+                buttons: ['Ok']
+            });
+            alert.present();
+            validate = false;
+        }
         return validate;
 
 
@@ -106,8 +117,10 @@ export class Step3Page {
 
 
     public cadFinish = (() => {
-
+        this.user.fone = $(".fone").val();
         /** Verifica se as senhas correspondem umas as outras */
+
+
          if(this.validateUser()){
              /* Caso as senhas correspondam umas as outras */
             this.setUser();
