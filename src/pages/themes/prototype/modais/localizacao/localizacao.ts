@@ -28,26 +28,4 @@ export class LocalizacaoPage {
     constructor(public navCtrl: NavController, public navParams: NavParams, public keyboard: Keyboard) {
   }
 
-    public onBlur = ( ()=>{
-
-        this.text = false;
-
-    });
-
-    public onFocus = ( ()=>{
-
-        this.text = true;
-
-    });
-
-    public eventHandler = ( (num, target)=>{
-
-        if(num == 13) {
-            this.text = false;
-            let activeElement = <HTMLElement>document.activeElement;
-            activeElement && activeElement.blur && activeElement.blur();
-            this.keyboard.close();
-        }
-    });
-
 }

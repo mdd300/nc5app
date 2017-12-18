@@ -2,8 +2,8 @@
 
     <div class="header-background"></div> <!-- header-background -->
 
-    <ion-header [hidden]="text">
-        <ion-grid>
+    <ion-header class="grid-content">
+        <ion-grid >
             <ion-row style="display: inline-flex;   ">
                 <ion-col col-1 class="col-icon">
                     <div class="icon-back-header">
@@ -15,7 +15,7 @@
 
 
                 </ion-col>
-                <ion-col col-auto style="width: 46%;">
+                <ion-col col-auto class="col-header-grid">
                     <div class="text-btn-publicar">LOCALIZAÇÃO</div>
                 </ion-col>
             </ion-row>
@@ -27,25 +27,24 @@
         <div class="empty-content-header">
 
         </div>
-        <ion-list class="content-info-post ">
-            <ion-item class="content-input">
+        <ion-grid class="content-info-post content-input">
+            <ion-row>
+                <ion-col col-2>
+                    <div text-align="center" class="btn-confir wrapper">
+                        <svg class="svg-ico-usertype">
+                            <use [attr.xlink:href]="constants.src_svg + 'search.svg#Layer_1'"></use>
+                        </svg> <!-- svg-ico-usertype -->
+                    </div>
+                </ion-col>
 
-                <div class="icon-back-header">
+                <ion-col col-8>
 
-                    <svg class="ico-back-header">
-                        <use [attr.xlink:href]="constants.src_svg + 'back.svg#Layer_1'"></use>
-                    </svg> <!-- ico-back-header -->
-                </div> <!-- icon-back-header -->
+                    <input type="search" placeholder="Digite um outro endereço."
+                               class="input-search-maps">
+                </ion-col>
+            </ion-row>
 
-                    <ion-input placeholder="Digite a Localização" (ionBlur)="onBlur()"
-                               (ionFocus)="onFocus()"
-                               (keypress)="eventHandler($event.keyCode, $event.target)" class="input-search-maps"></ion-input>
-
-            </ion-item>
-
-
-
-        </ion-list>
+        </ion-grid>
 
         <div class="content-location-post" [hidden]="text">
             <ion-list>

@@ -29515,7 +29515,7 @@ page-localizacao .content-post {
 }
 
 page-localizacao .content-post .content-input {
-  border: 1px solid #DDD;
+  border-bottom: 1px solid #DDD;
   width: 100%;
   height: 100%;
 }
@@ -29604,7 +29604,15 @@ page-localizacao .content-post .input-search-maps {
 }
 
 page-localizacao .content-post .grid {
-  padding-top: 10px;
+  padding: 0px 3px !important;
+}
+
+page-localizacao .col-header-grid {
+  width: 46%;
+}
+
+page-localizacao .grid-content {
+  padding-top: 1%;
 }
 
 page-localizacao .item-md {
@@ -29684,15 +29692,7 @@ page-localizacao .content-location-post .lojas-cad {
 page-localizacao .content-location-post .content-all-location-post .wrapper {
   width: 7%;
   float: left;
-  margin: 2px 12px;
-}
-
-page-localizacao .content-location-post .content-all-location-post .svg-ico-usertype {
-  width: 80%;
-  height: 45px;
-  fill: #b4c1d6;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  margin: 8px 12px;
 }
 
 page-localizacao .content-location-post .content-all-location-post .content-info-location-post {
@@ -29723,6 +29723,14 @@ page-localizacao .content-location-post .content-all-location-post .second-conte
   width: 100%;
   height: 100%;
   padding-top: 6px;
+}
+
+page-localizacao .svg-ico-usertype {
+  width: 80%;
+  height: 30px;
+  fill: #b4c1d6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 page-localizacao .list-md {
