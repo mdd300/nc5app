@@ -26095,6 +26095,10 @@ ion-navbar.toolbar {
   position: relative;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 fixed-menu {
   /** foot-menu */
 }
@@ -27454,6 +27458,7 @@ page-explore {
   /** explore-search */
   /** explore-back */
   /** explore-search-close */
+  /** grid-estilos */
 }
 
 page-explore .background-explore {
@@ -27515,6 +27520,10 @@ page-explore .explore-search-close {
   top: 10px;
   font-size: 2em;
   cursor: pointer;
+}
+
+page-explore .grid-estilos {
+  margin: 10px 0 0 0;
 }
 
 /** page-explore */

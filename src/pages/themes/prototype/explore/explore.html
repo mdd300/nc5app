@@ -2,26 +2,43 @@
 
     <div class="background-explore" [ngStyle]="{'background-image': 'url(' + constants.src_img + 'backgrounds/explore-background.png)'}"></div> <!-- background-explore -->
 
-        <ion-grid>
-            <ion-row>
+    <ion-grid>
+        <ion-row>
+            <ion-col col-auto class="pointer">
 
-                <ion-col col-auto>
-                    <div class="explore-back" >
-                        <svg class="ico-explore-back">
-                           <use [attr.xlink:href]="constants.src_svg + 'back.svg#Layer_1'"></use>
-                        </svg> <!-- ico-explore-back -->
-                    </div> <!-- explore-back -->
-                </ion-col>
-                <ion-col class="relative">
+                <div class="explore-back" >
+                    <svg class="ico-explore-back">
+                       <use [attr.xlink:href]="constants.src_svg + 'back.svg#Layer_1'"></use>
+                    </svg> <!-- ico-explore-back -->
+                </div> <!-- explore-back -->
 
-                    <input type="search" class="explore-search" placeholder="Buscar">
-                    <ion-icon name="md-close-circle" class="explore-search-close" ></ion-icon>
+            </ion-col>
+            <ion-col class="relative">
 
+                <input type="search" class="explore-search" placeholder="Buscar">
+                <ion-icon name="md-close-circle" class="explore-search-close" ></ion-icon>
 
-                </ion-col>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 
-            </ion-row>
-        </ion-grid>
+    <ion-grid class="grid-estilos">
+        <ion-row>
+            <ion-col>
 
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-auto>
+                More...
+            </ion-col>
+            <ion-col>
+                gosto...
+            </ion-col>
+            <ion-col col-auto>
+                Ola
+            </ion-col>
+        </ion-row>
+    </ion-grid><!-- grid-estilos -->
 
 </ion-content>
