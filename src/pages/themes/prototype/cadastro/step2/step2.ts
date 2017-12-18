@@ -42,6 +42,13 @@ export class Step2Page {
     ) {}
 
 
+    presentLoading(data) {
+        let loader = this.loadingCtrl.create({
+            content: "Please wait...",
+            duration: data == null ? 1000 : 0
+        });
+        loader.present();
+    }
 
 
     /**
@@ -60,6 +67,7 @@ export class Step2Page {
      */
 
     public statusBusca = (()=>{
+
         this.stepOk = false;
         this.stepOkCnpj = false;
     });
@@ -79,13 +87,9 @@ export class Step2Page {
     public getCaptcha = (() => {
         this.captcha.digito = "";
         var resposta = null;
-        // let loader = this.loadingCtrl.create({
-        //     content: "Please wait...",
-        // });
-        // loader.present();
         this.http.post(
             Constants.api_path+'cadastro/getCaptcha', {'cnpj': this.captcha.cnpj})
-            .subscribe((data) => {
+            .subscribe( (data) => {
                     resposta = JSON.parse(data._body);
                     if(!resposta.existe){
                         this.imgCaptcha = resposta.dados.captchaBase64;
@@ -136,11 +140,12 @@ export class Step2Page {
 
 
     public getCnpj = (() => {
-
+        var resposta = null;
         this.http.post(
             Constants.api_path+'cadastro/getCnpj',(this.captcha))
             .subscribe((data) => {
-                    var resposta = JSON.parse(data._body);
+                this.presentLoading(resposta);
+                     resposta = JSON.parse(data._body);
                     if(resposta.success){
                         this.emp = resposta.dados;
                         this.stepOkCnpj = true;

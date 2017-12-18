@@ -5,6 +5,7 @@ import {Step2Page} from "../step2/step2";
 import {ConfirmCadPage} from "../confirm-cad/confirm-cad";
 import {Http, Headers, RequestOptions} from '@angular/http';
 import * as $ from 'jquery';
+import { LoadingController } from 'ionic-angular';
 
 
 /**
@@ -25,7 +26,8 @@ export class Step3Page {
         public navCtrl: NavController,
         public navParams: NavParams,
         private alertCtrl: AlertController,
-        private http: Http
+        private http: Http,
+        public loadingCtrl: LoadingController
     ) {}
 
     /** Definição das variáveis de escopo padrão */
@@ -56,6 +58,16 @@ export class Step3Page {
     /**
      * Função utilizada para finalizar o cadastro do perfil */
 
+
+
+ // Função usada para dar loading
+    presentLoading(data) {
+        let loader = this.loadingCtrl.create({
+            content: "Please wait...",
+            duration: data == null ? 1000 : 0
+        });
+        loader.present();
+    }
 
     public validateUser = (() => {
 
@@ -131,10 +143,12 @@ export class Step3Page {
 
 
     public setUser = (() => {
+        var resposta = null
         this.http.post(
             Constants.api_path+'cadastro/insertCadastro', $.param({'empresa': this.empresa ,'usuario': this.user }))
             .subscribe((data) => {
-                    var resposta = JSON.parse(data._body);
+                this.presentLoading(resposta);
+                     resposta = JSON.parse(data._body);
                     if(!resposta.existe){
                         if(resposta.success){
                             this.navCtrl.push( ConfirmCadPage , {email:this.user.email});
