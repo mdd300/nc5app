@@ -26091,6 +26091,14 @@ ion-navbar.toolbar {
 }
 
 /** recover-form */
+.relative {
+  position: relative;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
 fixed-menu {
   /** foot-menu */
 }
@@ -27446,20 +27454,14 @@ page-step3 .button-finish {
 }
 
 page-explore {
-  /** scroll-content */
+  /** background-explore */
+  /** explore-search */
+  /** explore-back */
+  /** explore-search-close */
+  /** grid-estilos */
 }
 
-page-explore .scroll-content {
-  padding: 0 0 60px 0;
-  /** header-background */
-  /** header */
-  /** text-header-section */
-  /** ion-styles-explore */
-  /** ion-recommendations-explore */
-  /** ion-explore-marks */
-}
-
-page-explore .scroll-content .header-background {
+page-explore .background-explore {
   width: 100%;
   padding: 100% 0 0 0;
   position: absolute;
@@ -27467,684 +27469,73 @@ page-explore .scroll-content .header-background {
   top: 0;
   background-size: cover;
   background-position: top;
-}
-
-page-explore .scroll-content .header {
-  background: transparent;
-  /** col-icon */
-  /** content-search-input-header */
-}
-
-page-explore .scroll-content .header:after {
-  background: transparent;
-}
-
-page-explore .scroll-content .header .col-icon {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  /** icon-back-header */
-}
-
-page-explore .scroll-content .header .col-icon .icon-back-header {
-  width: 100%;
-  padding: 100% 0 0 0;
-  position: relative;
-  cursor: pointer;
-  /** ico-back-header */
-}
-
-page-explore .scroll-content .header .col-icon .icon-back-header .ico-back-header {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  fill: #fff;
-}
-
-page-explore .scroll-content .header .content-search-input-header {
-  width: 100%;
-  position: relative;
-  padding: 0 0 0 10px;
-  /** inpt-search-explore */
-  /** ion-icon */
-}
-
-page-explore .scroll-content .header .content-search-input-header .inpt-search-explore {
-  width: 100%;
-  position: relative;
-  background: none;
-  border: 1px solid #fff;
-  border-radius: 30px;
-  padding: 10px 40px 10px 15px;
-  color: #fff;
-}
-
-page-explore .scroll-content .header .content-search-input-header .inpt-search-explore::-moz-placeholder {
-  color: #fff;
-}
-
-page-explore .scroll-content .header .content-search-input-header .inpt-search-explore::-webkit-input-placeholder {
-  color: #fff;
-}
-
-page-explore .scroll-content .header .content-search-input-header .inpt-search-explore:focus::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-page-explore .scroll-content .header .content-search-input-header .inpt-search-explore:focus::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-page-explore .scroll-content .header .content-search-input-header ion-icon {
-  position: absolute;
-  right: 6px;
-  top: 1px;
-  color: #fff;
-  font-size: 2.5em;
-  cursor: pointer;
-}
-
-page-explore .scroll-content .text-header-section {
-  width: 100%;
-  font-size: 1em;
-  color: #fff;
-  float: left;
-  font-family: Multicolore;
-  text-transform: Uppercase;
-}
-
-page-explore .scroll-content .ion-styles-explore {
-  width: 100%;
-  margin: 55px 0 0 0;
-  padding: 0 0 10px 0;
-  position: relative;
-  /** show-styles-selecteds */
-  /** cont-config-styles */
-}
-
-page-explore .scroll-content .ion-styles-explore .show-styles-selecteds {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  /** styles-selecteds */
-}
-
-page-explore .scroll-content .ion-styles-explore .show-styles-selecteds .styles-selecteds {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  overflow: auto;
-  white-space: nowrap;
-  /** style-slected */
-}
-
-page-explore .scroll-content .ion-styles-explore .show-styles-selecteds .styles-selecteds::-webkit-scrollbar {
-  display: none;
-}
-
-page-explore .scroll-content .ion-styles-explore .show-styles-selecteds .styles-selecteds .style-slected {
-  font-size: 0.7em;
-  padding: 10px 15px;
-  margin: 0 3px 0 0;
-  border-radius: 30px;
-  background: #663f87;
-  text-transform: uppercase;
-  color: #fff;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-page-explore .scroll-content .ion-styles-explore .cont-config-styles {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  /** config-styles */
-}
-
-page-explore .scroll-content .ion-styles-explore .cont-config-styles .config-styles {
-  width: 70%;
-  padding: 70% 0 0 0;
-  position: relative;
-  cursor: pointer;
-  /** config-ico */
-}
-
-page-explore .scroll-content .ion-styles-explore .cont-config-styles .config-styles .config-ico {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 100%;
-  border: 1px solid #fff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  /** ico-config */
-}
-
-page-explore .scroll-content .ion-styles-explore .cont-config-styles .config-styles .config-ico .ico-config {
-  width: 50%;
-  height: 50%;
-  fill: #fff;
-}
-
-page-explore .scroll-content .ion-recommendations-explore {
-  width: 100%;
-  position: relative;
-  /** grid-header-recommendations */
-  /** recommendations-content */
-}
-
-page-explore .scroll-content .ion-recommendations-explore .grid-header-recommendations {
-  padding-top: 0;
-}
-
-page-explore .scroll-content .ion-recommendations-explore .recommendations-content {
-  width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  float: left;
-  white-space: nowrap;
-  /** recommendation-list */
-}
-
-page-explore .scroll-content .ion-recommendations-explore .recommendations-content::-webkit-scrollbar {
-  display: none;
-}
-
-page-explore .scroll-content .ion-recommendations-explore .recommendations-content ul.recommendation-list {
-  white-space: nowrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  /** li.reccommendation-item */
-}
-
-page-explore .scroll-content .ion-recommendations-explore .recommendations-content ul.recommendation-list li.reccommendation-item {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: auto;
-  margin: 0 10px 0 0;
-  /** ctrl-recommendation-item */
-}
-
-page-explore .scroll-content .ion-recommendations-explore .recommendations-content ul.recommendation-list li.reccommendation-item:first-child {
-  margin: 0 10px 0 10px;
-}
-
-page-explore .scroll-content .ion-recommendations-explore .recommendations-content ul.recommendation-list li.reccommendation-item .ctrl-recommendation-item {
-  width: 100%;
-  position: relative;
-  float: left;
-  /** recommendation-mark */
-}
-
-page-explore .scroll-content .ion-recommendations-explore .recommendations-content ul.recommendation-list li.reccommendation-item .ctrl-recommendation-item .recommendation-mark {
-  background: #fff;
-  float: left;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 0 10px #b4c1d6;
-  box-shadow: 0 0 10px #b4c1d6;
-  overflow: hidden;
-  /** recommendation-mark-header */
-  /** recommendation-mark-body */
-  /** recommendation-mark-footer */
-}
-
-page-explore .scroll-content .ion-recommendations-explore .recommendations-content ul.recommendation-list li.reccommendation-item .ctrl-recommendation-item .recommendation-mark .recommendation-mark-header {
-  height: 50px;
-  background: #fff;
-  border-bottom: 1px solid #b4c1d6;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0 10px;
-  /** mark-header-image */
-  /** mark-header-description */
-  /** mark-header-action */
-}
-
-page-explore .scroll-content .ion-recommendations-explore .recommendations-content ul.recommendation-list li.reccommendation-item .ctrl-recommendation-item .recommendation-mark .recommendation-mark-header .mark-header-image {
-  width: 50px;
-  height: 50px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  /** image-header-mark */
-}
-
-page-explore .scroll-content .ion-recommendations-explore .recommendations-content ul.recommendation-list li.reccommendation-item .ctrl-recommendation-item .recommendation-mark .recommendation-mark-header .mark-header-image .image-header-mark {
-  width: 100%;
-  padding: 100% 0 0 0;
-  position: absolute;
-  left: 0;
-  top: 21%;
-  border-radius: 5px;
-  background: #fff;
-  border: 2px solid #b4c1d6;
-}
-
-page-explore .scroll-content .ion-recommendations-explore .recommendations-content ul.recommendation-list li.reccommendation-item .ctrl-recommendation-item .recommendation-mark .recommendation-mark-header .mark-header-description {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 50px;
-  padding: 7px 0 0 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: column;
-  -ms-flex-flow: column;
-  flex-flow: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  /** header-description-line */
-}
-
-page-explore .scroll-content .ion-recommendations-explore .recommendations-content ul.recommendation-list li.reccommendation-item .ctrl-recommendation-item .recommendation-mark .recommendation-mark-header .mark-header-description .header-description-line {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  position: relative;
-  padding: 0 10px;
-  /** description */
-}
-
-page-explore .scroll-content .ion-recommendations-explore .recommendations-content ul.recommendation-list li.reccommendation-item .ctrl-recommendation-item .recommendation-mark .recommendation-mark-header .mark-header-description .header-description-line .description {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  position: relative;
-  /** text-description */
-}
-
-page-explore .scroll-content .ion-recommendations-explore .recommendations-content ul.recommendation-list li.reccommendation-item .ctrl-recommendation-item .recommendation-mark .recommendation-mark-header .mark-header-description .header-description-line .description .text-description {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  overflow: hidden;
-  -ms-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  /** title */
-  /** description */
-}
-
-page-explore .scroll-content .ion-recommendations-explore .recommendations-content ul.recommendation-list li.reccommendation-item .ctrl-recommendation-item .recommendation-mark .recommendation-mark-header .mark-header-description .header-description-line .description .text-description.title {
-  bottom: 0;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 1.2em;
-}
-
-page-explore .scroll-content .ion-recommendations-explore .recommendations-content ul.recommendation-list li.reccommendation-item .ctrl-recommendation-item .recommendation-mark .recommendation-mark-header .mark-header-description .header-description-line .description .text-description.description {
-  text-transform: uppercase;
-  font-size: 0.9em;
-  color: #707d92;
-}
-
-page-explore .scroll-content .ion-recommendations-explore .recommendations-content ul.recommendation-list li.reccommendation-item .ctrl-recommendation-item .recommendation-mark .recommendation-mark-header .mark-header-action {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: auto;
-  /** button-action-header-mark */
-}
-
-page-explore .scroll-content .ion-recommendations-explore .recommendations-content ul.recommendation-list li.reccommendation-item .ctrl-recommendation-item .recommendation-mark .recommendation-mark-header .mark-header-action .button-action-header-mark {
-  padding: 10px 15px;
-  background: #ff5ba1;
-  color: #fff;
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-
-page-explore .scroll-content .ion-recommendations-explore .recommendations-content ul.recommendation-list li.reccommendation-item .ctrl-recommendation-item .recommendation-mark .recommendation-mark-body {
-  width: 100%;
-  height: 180px;
-  background-color: #fafafa;
-  background-size: cover;
-  background-position: center;
-}
-
-page-explore .scroll-content .ion-recommendations-explore .recommendations-content ul.recommendation-list li.reccommendation-item .ctrl-recommendation-item .recommendation-mark .recommendation-mark-footer {
-  width: 100%;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 10px;
-  /** recommendation-mark-list-vitrine */
-}
-
-page-explore .scroll-content .ion-recommendations-explore .recommendations-content ul.recommendation-list li.reccommendation-item .ctrl-recommendation-item .recommendation-mark .recommendation-mark-footer .recommendation-mark-list-vitrine {
-  width: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: -70px 0 0 0;
-  /** recommendation-mark-vitrine-item */
-}
-
-page-explore .scroll-content .ion-recommendations-explore .recommendations-content ul.recommendation-list li.reccommendation-item .ctrl-recommendation-item .recommendation-mark .recommendation-mark-footer .recommendation-mark-list-vitrine li.recommendation-mark-vitrine-item {
-  width: 83px;
-  height: 120px;
-  border: 2px solid #fff;
-  background-color: #ccc;
-  margin: 0 5px;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
 }
 
-page-explore .scroll-content .ion-explore-marks {
+page-explore .explore-search {
   width: 100%;
-  float: left;
+  padding: 10px 35px 10px 15px;
+  border: 1px solid #fff;
+  background: none;
+  border-radius: 30px;
+  color: #fff;
+  /** ::-webkit-input-placeholder */
+  /** focus */
+}
+
+page-explore .explore-search::-webkit-input-placeholder {
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+page-explore .explore-search:focus {
+  /** ::-webkit-input-placeholder */
+}
+
+page-explore .explore-search:focus::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+page-explore .explore-back {
+  height: 39px;
+  width: 25px;
   position: relative;
-  margin: 15px 0 0 0;
-  border-top: 1px solid #d6e3f8;
-  /** explore-mark */
+  /** ico-explore-back */
 }
 
-page-explore .scroll-content .ion-explore-marks .explore-mark {
-  padding: 20px 0 0 0;
-  /** image-mark-explore */
-  /** label-mark-explore-cont */
-  /** products-mark-explore */
-}
-
-page-explore .scroll-content .ion-explore-marks .explore-mark .col {
-  padding: 0;
-}
-
-page-explore .scroll-content .ion-explore-marks .explore-mark .grid {
-  padding: 0;
-}
-
-page-explore .scroll-content .ion-explore-marks .explore-mark .image-mark-explore {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 0 0 0 10px;
-  /** img-mark-explore */
-}
-
-page-explore .scroll-content .ion-explore-marks .explore-mark .image-mark-explore .img-mark-explore {
-  width: 100%;
-  padding: 100% 0 0 0;
-  position: relative;
-  /** img-mark */
-}
-
-page-explore .scroll-content .ion-explore-marks .explore-mark .image-mark-explore .img-mark-explore .img-mark {
+page-explore .explore-back .ico-explore-back {
   width: 100%;
   height: 100%;
   position: absolute;
   left: 0;
   top: 0;
-  background: #fff;
-  border: 2px solid #b4c1d6;
-  border-radius: 5px;
+  fill: #fff;
 }
 
-page-explore .scroll-content .ion-explore-marks .explore-mark .label-mark-explore-cont {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  /** label-mark-explore */
-}
-
-page-explore .scroll-content .ion-explore-marks .explore-mark .label-mark-explore-cont .label-mark-explore {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: column;
-  -ms-flex-flow: column;
-  flex-flow: column;
-  padding: 0 10px;
-  /** text-label-mark-explore */
-}
-
-page-explore .scroll-content .ion-explore-marks .explore-mark .label-mark-explore-cont .label-mark-explore .text-label-mark-explore {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  /** txt-label-mark-explore */
-}
-
-page-explore .scroll-content .ion-explore-marks .explore-mark .label-mark-explore-cont .label-mark-explore .text-label-mark-explore .txt-label-mark-explore {
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+page-explore .explore-search-close {
+  color: #fff;
   position: absolute;
-  left: 0;
-  /** title */
-  /** description */
-}
-
-page-explore .scroll-content .ion-explore-marks .explore-mark .label-mark-explore-cont .label-mark-explore .text-label-mark-explore .txt-label-mark-explore.title {
-  text-transform: uppercase;
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-page-explore .scroll-content .ion-explore-marks .explore-mark .label-mark-explore-cont .label-mark-explore .text-label-mark-explore .txt-label-mark-explore.description {
-  text-transform: uppercase;
-  font-size: 0.9em;
-  top: -2px;
-}
-
-page-explore .scroll-content .ion-explore-marks .explore-mark .products-mark-explore {
-  width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-  float: left;
-  /** list-products-mark-explore */
-}
-
-page-explore .scroll-content .ion-explore-marks .explore-mark .products-mark-explore::-webkit-scrollbar {
-  display: none;
-}
-
-page-explore .scroll-content .ion-explore-marks .explore-mark .products-mark-explore .list-products-mark-explore {
-  white-space: nowrap;
-  list-style: none;
-  padding: 0 0 10px 0;
-  margin: 0;
-  /** item-product-mark-explore */
-}
-
-page-explore .scroll-content .ion-explore-marks .explore-mark .products-mark-explore .list-products-mark-explore .item-product-mark-explore {
-  width: 130px;
-  background: #fff;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: column;
-  -ms-flex-flow: column;
-  flex-flow: column;
-  -webkit-box-shadow: 0 0 5px 1px #b4c1d6;
-  box-shadow: 0 0 5px 1px #b4c1d6;
-  border-radius: 10px;
-  margin: 10px 10px 0 0;
-  position: relative;
-  overflow: hidden;
-  /** product-mark-image */
-  /** product-mark-label */
-}
-
-page-explore .scroll-content .ion-explore-marks .explore-mark .products-mark-explore .list-products-mark-explore .item-product-mark-explore:first-child {
-  margin-left: 40px;
-}
-
-page-explore .scroll-content .ion-explore-marks .explore-mark .products-mark-explore .list-products-mark-explore .item-product-mark-explore .product-mark-image {
-  width: 100%;
-  height: 150px;
-  background-color: #f8f8f8;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  /** colors-product-mark */
-}
-
-page-explore .scroll-content .ion-explore-marks .explore-mark .products-mark-explore .list-products-mark-explore .item-product-mark-explore .product-mark-image ul.colors-product-mark {
-  width: 20px;
-  display: table;
-  position: absolute;
-  right: 10px;
+  right: 15px;
   top: 10px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  /** color-product */
+  font-size: 2em;
+  cursor: pointer;
 }
 
-page-explore .scroll-content .ion-explore-marks .explore-mark .products-mark-explore .list-products-mark-explore .item-product-mark-explore .product-mark-image ul.colors-product-mark li.color-product {
-  width: 100%;
-  padding: 100% 0 0 0;
-  position: relative;
-  border-radius: 100%;
-  -webkit-box-shadow: 0 0 0 2px #b4c1d6;
-  box-shadow: 0 0 0 2px #b4c1d6;
-  margin: 0 0 10px 0;
+page-explore .grid-estilos {
+  margin: 10px 0 0 0;
+  /** grid-title */
 }
 
-page-explore .scroll-content .ion-explore-marks .explore-mark .products-mark-explore .list-products-mark-explore .item-product-mark-explore .product-mark-label {
+page-explore .grid-estilos .grid-title {
   width: 100%;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 15px 10px;
-}
-
-page-explore .scroll-content .ion-explore-marks .explore-mark .products-mark-explore .list-products-mark-explore .item-product-mark-explore .product-mark-label .product-mark-text {
-  width: 100%;
-  overflow: hidden;
-  -ms-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  position: relative;
-  text-transform: uppercase;
+  float: left;
   font-weight: bold;
+  font-family: Multicolore;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 0 0 0 10px;
 }
 
 /** page-explore */

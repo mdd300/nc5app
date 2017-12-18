@@ -2317,10 +2317,7 @@ var FeedPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ExplorePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modais_gostos_gostos__ = __webpack_require__(170);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_Constants__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_categoria_categoria__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(13);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2333,9 +2330,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-
-
 /**
  * Generated class for the ExplorePage page.
  *
@@ -2343,80 +2337,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var ExplorePage = (function () {
-    function ExplorePage(navCtrl, navParams, modalCtrl, platform, categoriaProvider, storage) {
+    function ExplorePage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.modalCtrl = modalCtrl;
-        this.platform = platform;
-        this.categoriaProvider = categoriaProvider;
-        this.storage = storage;
-        this.constants = __WEBPACK_IMPORTED_MODULE_3__config_Constants__["a" /* Constants */];
-        this.recommendations = [
-            { mark: 'Unique', wallpaper: 'unique.jpg' },
-            { mark: 'Unike', wallpaper: 'unique2.jpg' },
-            { mark: 'Unique', wallpaper: 'unique.jpg' },
-            { mark: 'Unike', wallpaper: 'unique2.jpg' },
-            { mark: 'Unique', wallpaper: 'unique.jpg' },
-        ];
-        this.marcas = [
-            { marca: 'Unique', produtos: [{ null: null }, { null: null }] },
-            { marca: 'Unieke', produtos: [{ null: null }, { null: null }, { null: null }, { null: null }] }
-        ];
-        this.styles = [];
-        /**
-         * Função utilizada para iniciar o scroll do content */
-        this.doScrollContent = (function (element, event) {
-        }); /* Fim função executada com o scroll do content */
+        this.constants = __WEBPACK_IMPORTED_MODULE_2__config_Constants__["a" /* Constants */];
     }
-    /* Função iniciada quando a view for iniciada */
-    ExplorePage.prototype.ionViewDidLoad = function () {
-        var _this = this;
-        /* Quando a view foi iniciada, e ja está pronta */
-        var profileModal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_2__modais_gostos_gostos__["a" /* GostosPage */]);
-        this.categoriaProvider.getCategoriasSelecionadas().subscribe(function (data) {
-            _this.storage.set('profile_modal_clicado', true);
-            _this.setCategoriasSelecionadas(data);
-        }, function (error) {
-            console.log(error);
-            // captura dados locais caso não consiga os dados online
-            _this.storage.get('styles').then(function (data) {
-                _this.styles = (typeof data === 'object') ? data : [];
-            });
-        }).add(function () {
-            // apresenta o modal caso o usuário nunca tenha cadastrado 1 estilo
-            if (_this.styles.length < 1) {
-                profileModal.present();
-                profileModal.onDidDismiss(function () {
-                    _this.categoriaProvider.getCategoriasSelecionadas().subscribe(function (data) {
-                        _this.setCategoriasSelecionadas(data);
-                    });
-                });
-            }
-        });
-    };
-    ExplorePage.prototype.setCategoriasSelecionadas = function (data) {
-        var response = data;
-        var objeto_retorno = JSON.parse(response._body);
-        this.styles = objeto_retorno;
-        // armazena localmente para caso de falta de internet
-        this.storage.set('styles', objeto_retorno);
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])('scrollerRecommended'),
-        __metadata("design:type", Object)
-    ], ExplorePage.prototype, "scrollerRecommended", void 0);
     ExplorePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-explore',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\explore\explore.html"*/'<ion-content>\n\n    <!-- Content da pagina de explorar -->\n\n    \n\n    <div class="header-background" [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'backgrounds/explore-background.png)\' }" ></div> <!-- header-background -->\n\n    \n\n    <!-- Header da pagina de exploração -->\n\n    <ion-header>\n\n        <ion-grid>\n\n            <ion-row>\n\n                <ion-col col-1 class="col-icon">\n\n                    <div class="icon-back-header" >\n\n                        \n\n                        <svg class="ico-back-header">\n\n                           <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n                        </svg> <!-- ico-back-header -->\n\n                        \n\n                    </div> <!-- icon-back-header -->\n\n                </ion-col>\n\n                <ion-col>\n\n                    <div class="content-search-input-header" >\n\n                        <input type="search" name="search-explore" class="inpt-search-explore" placeholder="Buscar">\n\n                        <ion-icon name="md-close-circle"></ion-icon>\n\n                    </div> <!-- content-search-input-header -->\n\n                </ion-col>\n\n            </ion-row>\n\n        </ion-grid>\n\n    </ion-header>\n\n    <!-- Fim do header da pagina de exploração -->\n\n    <div class="ion-styles-explore" >\n\n\n\n        <ion-grid>\n\n            <ion-row>\n\n                <ion-col>\n\n                    <span class="text-header-section">\n\n                        Seus estilos\n\n                    </span><!-- text-header-section -->\n\n                </ion-col>\n\n            </ion-row>\n\n            <ion-row>\n\n                <ion-col>\n\n                    <div class="show-styles-selecteds" >\n\n                        <div class="styles-selecteds">\n\n                            <span class="style-slected" *ngFor="let style of styles">{{ style.style_name }}</span>\n\n                        </div> <!-- styles-selecteds -->\n\n                    </div> <!-- show-styles-selecteds -->\n\n                </ion-col>\n\n                <ion-col col-2 class="cont-config-styles">\n\n                    <div class="config-styles" >\n\n                        \n\n                        <div class="config-ico" >\n\n                            <svg class="ico-config">\n\n                               <use [attr.xlink:href]="constants.src_svg + \'settings.svg#Layer_1\'"></use>\n\n                            </svg> <!-- ico-config -->\n\n                        </div> <!-- config-ico -->\n\n\n\n                    </div> <!-- config-styles -->\n\n                </ion-col>\n\n            </ion-row>\n\n        </ion-grid>\n\n\n\n    </div> <!-- ion-styles-explore -->\n\n\n\n    <div class="ion-recommendations-explore" >\n\n        \n\n        <ion-grid class="grid-header-recommendations">\n\n            <ion-row>\n\n                <ion-col>\n\n                    <span class="text-header-section">\n\n                        Recomendações\n\n                    </span><!-- text-header-section -->\n\n                </ion-col>\n\n            </ion-row>\n\n        </ion-grid><!-- grid-header-recommendations -->\n\n\n\n        <div class="recommendations-content scrollerRecommended" (scroll)="doScrollContent( \'scrollerRecommended\', $event )" >\n\n            <ul class="recommendation-list">\n\n\n\n                <li class="reccommendation-item item-scrollable"  *ngFor="let recommendation of recommendations">\n\n                    <div class="ctrl-recommendation-item" >\n\n\n\n                        <div class="recommendation-mark" >\n\n\n\n                            <div class="recommendation-mark-header" >\n\n                                <div class="mark-header-image" >\n\n                                    <div class="image-header-mark" >\n\n\n\n                                    </div> <!-- image-header-mark -->\n\n                                </div> <!-- mark-header-image -->\n\n                                <div class="mark-header-description" >\n\n                                    <div class="header-description-line" >\n\n                                        <div class="description" >\n\n                                            <span class="text-description title">\n\n                                                {{recommendation.mark}}\n\n                                            </span>\n\n                                        </div> <!-- description -->\n\n                                    </div> <!-- header-description-line -->\n\n                                    <div class="header-description-line" >\n\n                                        <div class="description" >\n\n                                            <span class="text-description description">\n\n                                                Confecção\n\n                                            </span>\n\n                                        </div> <!-- description -->\n\n                                    </div> <!-- header-description-line -->\n\n                                </div> <!-- mark-header-description -->\n\n                                <div class="mark-header-action" >\n\n                                    <button class="button-action-header-mark">\n\n                                        Visitar\n\n                                    </button> <!-- button-action-header-mark -->\n\n                                </div> <!-- mark-header-action -->\n\n                            </div> <!-- recommendation-mark-header -->\n\n                            <div class="recommendation-mark-body" [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/\' + recommendation.wallpaper + \')\' }">\n\n                            </div> <!-- recommendation-mark-body -->\n\n\n\n                            <div class="recommendation-mark-footer" >\n\n                                <ul class="recommendation-mark-list-vitrine">\n\n                                    <li class="recommendation-mark-vitrine-item" [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/roupa1.jpg)\' }"></li><!-- recommendation-mark-vitrine-item -->\n\n                                    <li class="recommendation-mark-vitrine-item" [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/roupa1.jpg)\' }"></li><!-- recommendation-mark-vitrine-item -->\n\n                                    <li class="recommendation-mark-vitrine-item" [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/roupa1.jpg)\' }"></li><!-- recommendation-mark-vitrine-item -->\n\n                                </ul><!-- recommendation-mark-list-vitrine -->\n\n                            </div> <!-- recommendation-mark-footer -->\n\n\n\n\n\n                        </div> <!-- recommendation-mark -->\n\n\n\n                    </div> <!-- ctrl-recommendation-item -->\n\n                </li><!-- reccommendation-item -->\n\n\n\n            </ul><!-- recommendation-list -->\n\n        </div> <!-- recommendations-content -->\n\n    </div> <!-- ion-recommendations-explore -->\n\n\n\n    <div class="ion-explore-marks" >\n\n        <ion-grid class="no-padding">\n\n\n\n            <ion-row class="explore-mark" *ngFor="let marca of marcas">\n\n                <ion-col>\n\n                    <ion-grid>\n\n                        <ion-row>\n\n                            <ion-col col-2>\n\n                                <div class="image-mark-explore" >\n\n                                    <div class="img-mark-explore" >\n\n                                        <div class="img-mark" ></div> <!-- img-mark -->\n\n                                    </div> <!-- img-mark-explore -->\n\n                                </div> <!-- image-mark-explore -->\n\n                            </ion-col>\n\n                            <ion-col class="label-mark-explore-cont">\n\n                                <div class="label-mark-explore" >\n\n                                    <div class="text-label-mark-explore" >\n\n                                        <div class="txt-label-mark-explore title" >\n\n                                            {{marca.marca}}\n\n                                        </div> <!-- txt-label-mark-explore -->\n\n                                    </div> <!-- text-label-mark-explore -->\n\n                                    <div class="text-label-mark-explore" >\n\n                                        <div class="txt-label-mark-explore description" >\n\n                                            Há 3 dias\n\n                                        </div> <!-- txt-label-mark-explore -->\n\n                                    </div> <!-- text-label-mark-explore -->\n\n                                </div> <!-- label-mark-explore -->\n\n                            </ion-col> <!-- label-mark-explore-cont -->\n\n                        </ion-row>\n\n                        <ion-row>\n\n                            <ion-col>\n\n                                <div class="products-mark-explore" >\n\n                                    <ul class="list-products-mark-explore">\n\n                                        <li class="item-product-mark-explore" *ngFor="let produto of marca.produtos">\n\n\n\n                                            <div class="product-mark-image" [ngStyle]="{\'background-image\': \'url(\' + constants.src_img + \'exemples/jaqueta1.jpg)\'}" >\n\n                                                <ul class="colors-product-mark">\n\n                                                    <li class="color-product" [ngStyle]="{\'background-color\': \'#c80114\'}"></li><!-- color-product -->\n\n                                                    <li class="color-product" [ngStyle]="{\'background-color\': \'#1d1d1d\'}"></li><!-- color-product -->\n\n                                                </ul><!-- colors-product-mark -->\n\n                                            </div> <!-- product-mark-image -->\n\n                                            <div class="product-mark-label" >\n\n                                                <span class="product-mark-text">\n\n                                                    Rufed Jacket\n\n                                                </span><!-- product-mark-text -->\n\n                                            </div> <!-- product-mark-label -->\n\n\n\n                                        </li><!-- item-product-mark-explore -->\n\n                                    </ul><!-- list-products-mark-explore -->\n\n                                </div> <!-- products-mark-explore -->\n\n                            </ion-col>\n\n                        </ion-row>\n\n                    </ion-grid>\n\n                </ion-col>\n\n            </ion-row><!-- explore-mark -->\n\n\n\n        </ion-grid>\n\n    </div> <!-- ion-explore-marks -->\n\n    \n\n    \n\n<!-- Fim do content da pagina de exploração -->\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\explore\explore.html"*/,
+            selector: 'page-explore',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\explore\explore.html"*/'<ion-content>\n\n\n\n    <div class="background-explore" [ngStyle]="{\'background-image\': \'url(\' + constants.src_img + \'backgrounds/explore-background.png)\'}"></div> <!-- background-explore -->\n\n\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col col-auto class="pointer">\n\n\n\n                <div class="explore-back" >\n\n                    <svg class="ico-explore-back">\n\n                       <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-explore-back -->\n\n                </div> <!-- explore-back -->\n\n\n\n            </ion-col>\n\n            <ion-col class="relative">\n\n\n\n                <input type="search" class="explore-search" placeholder="Buscar">\n\n                <ion-icon name="md-close-circle" class="explore-search-close" ></ion-icon>\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n\n\n    <ion-grid class="grid-estilos">\n\n        <ion-row>\n\n            <ion-col>\n\n\n\n                <span class="grid-title">\n\n                    Seus Estilos\n\n                </span> <!-- grid-title -->\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n            <ion-col col-auto>\n\n                More...\n\n            </ion-col>\n\n            <ion-col>\n\n                gosto...\n\n            </ion-col>\n\n            <ion-col col-auto>\n\n                Ola\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid><!-- grid-estilos -->\n\n\n\n</ion-content>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\explore\explore.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */],
-            __WEBPACK_IMPORTED_MODULE_4__providers_categoria_categoria__["a" /* CategoriaProvider */],
-            __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["b" /* Storage */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]) === "function" && _b || Object])
     ], ExplorePage);
     return ExplorePage;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=explore.js.map
