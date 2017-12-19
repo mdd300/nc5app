@@ -216,7 +216,7 @@ page-localizacao {
   .content-post {
     width: 100%;
     height: 100%;
-    .content-input{
+    .content-input {
       border-bottom: 1px solid #DDD;
       width: 100%;
       height: 100%;
@@ -293,19 +293,22 @@ page-localizacao {
       border-bottom: solid $color-grey 1px;
       width: 100%;
     }
-    .input-search-maps{
+    .input-search-maps {
       border: 0px;
       padding: 5px;
       width: 100%;
-  }
-    .grid{
+    }
+    ::placeholder { /* Most modern browsers support this now. */
+      color:    $color-grey;
+    }
+    .grid {
       padding: 0px 3px !important;
     }
   }
-.col-header-grid{
-  width: 46%;
-}
-  .grid-content{
+  .col-header-grid {
+    width: 46%;
+  }
+  .grid-content {
     padding-top: 1%;
   }
   .item-md {
@@ -332,7 +335,7 @@ page-localizacao {
     align-content: center;
   }
   .empty-content-header {
-    height: 8%;
+    height: 9%;
     width: 100%;
   }
   .input-text-post {
@@ -354,26 +357,25 @@ page-localizacao {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    overflow-y:hidden;
+    overflow-y: hidden;
   }
   .row-loc-default::-webkit-scrollbar {
     display: none;
   }
 
   .content-location-post {
-    .lojas-cad{
-      padding: 10px;
-      font-size: 1.2em;
+    .lojas-cad {
+      padding-top: 4%;
+      padding-left: 5%;
     }
 
     .content-all-location-post {
 
       .wrapper {
-        width: 7%;
+        width: 5%;
         float: left;
-        margin: 8px 12px;
+        margin: 1px 15px;
       }
-
 
       .content-info-location-post {
         width: 60%;
@@ -381,26 +383,31 @@ page-localizacao {
       }
 
       .title-location-post {
-        font-size: 1.5em;
+        font-size: 1em;
         font-family: Roboto;
       }
       .description-location-post {
-      color: $color-grey;
+        color: $color-grey;
+        font-size: 0.8em;
+        padding-top: 2%;
       }
-      .delete-location-post {
-        width: 20%;
-        float: right;
-        height: 2.5em;
-      }
-      .icon-delete-location {
-        padding: 15% 45%;
+      .title-search-post {
+        padding-left: 15%;
       }
       .second-content-all-location {
         width: 100%;
         height: 100%;
-        padding-top: 6px;
+        padding-top: 5%;
+
       }
     }
+  }
+  .svg-search-ico-usertype {
+    width: 100%;
+    height: 30px;
+    fill: #b4c1d6;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .svg-ico-usertype {
     width: 80%;
@@ -413,7 +420,7 @@ page-localizacao {
     margin: 0px;
   }
 
-  .item-md.item-block .item-inner{
+  .item-md.item-block .item-inner {
     border: 0px !important;
   }
 }
