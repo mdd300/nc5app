@@ -27548,7 +27548,19 @@ page-explore .explore-search-close {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
+page-explore .grid-estilos {
+  margin: 10px 0 0 0;
+  /** grid-title */
+  /** style-plus-button */
+  /** viewbox-styles */
+  /** filter-styles */
+}
+
+page-explore .grid-estilos .grid-title {
+=======
 page-explore .grid-title {
+>>>>>>> 043db32439fa4cdf0fb6c52954f4b4de7d82a272
   width: 100%;
   float: left;
   font-weight: bold;
@@ -27559,6 +27571,8 @@ page-explore .grid-title {
   padding: 0 0 0 10px;
 }
 
+<<<<<<< HEAD
+=======
 page-explore .grid-estilos {
   margin: 10px 0 0 0;
   /** style-plus-button */
@@ -27566,6 +27580,7 @@ page-explore .grid-estilos {
   /** filter-styles */
 }
 
+>>>>>>> 043db32439fa4cdf0fb6c52954f4b4de7d82a272
 page-explore .grid-estilos .style-plus-button {
   padding: 5px 20px;
   border: 2px solid #fff;
@@ -27639,6 +27654,8 @@ page-explore .grid-estilos .filter-styles .ico-filter-styles {
   fill: #fff;
 }
 
+<<<<<<< HEAD
+=======
 page-explore .viewport-destaques {
   width: 100%;
   position: relative;
@@ -27778,6 +27795,7 @@ page-explore .viewport-destaques ul.viewport-list li.destaque-item .destaque-bod
   background: #f00;
 }
 
+>>>>>>> 043db32439fa4cdf0fb6c52954f4b4de7d82a272
 /** page-explore */
 page-feed {
   /** feed-background */
@@ -28855,6 +28873,8 @@ page-forgot-pass-3 .label-new-pass {
 
 page-login {
   /** login-page */
+<<<<<<< HEAD
+=======
 }
 
 page-login .login-page {
@@ -29105,6 +29125,7 @@ page-gostos .content-card-estilo {
   margin-left: 25%;
   height: 222px;
   width: 245px;
+>>>>>>> loc
 }
 
 page-gostos .ico-config {
@@ -29505,7 +29526,7 @@ page-localizacao {
 
 page-localizacao .header-background {
   width: 100%;
-  padding: 15% 0 0 0;
+  padding: 14% 0 0 0;
   position: absolute;
   left: 0;
   top: 0;
@@ -29636,6 +29657,16 @@ page-localizacao .row {
   -ms-flex-align: center;
   align-items: center;
   height: 100%;
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+>>>>>>> loc
 }
 
 page-localizacao .icon-publicar-send {
@@ -29747,8 +29778,19 @@ page-localizacao .content-post {
   height: 100%;
 }
 
+<<<<<<< HEAD
 page-localizacao .content-post .content-info-post {
   height: 17%;
+=======
+page-localizacao .content-post .content-input {
+  border-bottom: 1px solid #DDD;
+  width: 100%;
+  height: 100%;
+}
+
+page-localizacao .content-post .content-info-post {
+  height: 8%;
+>>>>>>> loc
 }
 
 page-localizacao .content-post .content-info-post .content-icon {
@@ -29797,6 +29839,7 @@ page-localizacao .content-post .content-info-post .btn-estilo {
   font-size: 1.0rem;
 }
 
+<<<<<<< HEAD
 page-localizacao .content-post .content-info-post .wrapper {
   width: auto;
   padding-right: 7%;
@@ -29810,6 +29853,8 @@ page-localizacao .content-post .content-info-post .svg-ico-usertype {
   transition: 0.5s;
 }
 
+=======
+>>>>>>> loc
 page-localizacao .content-post .content-info-post .content-data-user {
   float: left;
   padding-left: 6%;
@@ -29833,6 +29878,36 @@ page-localizacao .content-post .row-user {
   position: fixed !important;
 }
 
+<<<<<<< HEAD
+=======
+page-localizacao .content-post .row-user-2 {
+  border-bottom: solid #b4c1d6 1px;
+  width: 100%;
+}
+
+page-localizacao .content-post .input-search-maps {
+  border: 0px;
+  padding: 5px;
+  width: 100%;
+}
+
+page-localizacao .content-post .grid {
+  padding: 0px 3px !important;
+}
+
+page-localizacao .col-header-grid {
+  width: 46%;
+}
+
+page-localizacao .grid-content {
+  padding-top: 1%;
+}
+
+page-localizacao .item-md {
+  padding-left: 0px;
+}
+
+>>>>>>> loc
 page-localizacao .col-footer {
   height: 100%;
   vertical-align: middle;
@@ -29859,7 +29934,7 @@ page-localizacao .col-footer {
 }
 
 page-localizacao .empty-content-header {
-  height: 9%;
+  height: 8%;
   width: 100%;
 }
 
@@ -29872,6 +29947,92 @@ page-localizacao .content-data-post {
   height: 100%;
 }
 
+<<<<<<< HEAD
+=======
+page-localizacao .btn-location-default {
+  background-color: #b4c1d6;
+}
+
+page-localizacao .label-md {
+  margin: 0px;
+}
+
+page-localizacao .row-loc-default {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-y: hidden;
+}
+
+page-localizacao .row-loc-default::-webkit-scrollbar {
+  display: none;
+}
+
+page-localizacao .content-location-post .lojas-cad {
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+page-localizacao .content-location-post .content-all-location-post .wrapper {
+  width: 7%;
+  float: left;
+  margin: 8px 12px;
+}
+
+page-localizacao .content-location-post .content-all-location-post .content-info-location-post {
+  width: 60%;
+  float: left;
+}
+
+page-localizacao .content-location-post .content-all-location-post .title-location-post {
+  font-size: 1.5em;
+  font-family: Roboto;
+}
+
+page-localizacao .content-location-post .content-all-location-post .description-location-post {
+  color: #b4c1d6;
+}
+
+page-localizacao .content-location-post .content-all-location-post .delete-location-post {
+  width: 20%;
+  float: right;
+  height: 2.5em;
+}
+
+page-localizacao .content-location-post .content-all-location-post .icon-delete-location {
+  padding: 15% 45%;
+}
+
+page-localizacao .content-location-post .content-all-location-post .second-content-all-location {
+  width: 100%;
+  height: 100%;
+  padding-top: 6px;
+}
+
+page-localizacao .svg-ico-usertype {
+  width: 80%;
+  height: 30px;
+  fill: #b4c1d6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+page-localizacao .list-md {
+  margin: 0px;
+}
+
+page-localizacao .item-md.item-block .item-inner {
+  border: 0px !important;
+}
+
+>>>>>>> loc
 page-post {
   /** header-background */
   /** header */
