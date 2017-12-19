@@ -22,4 +22,23 @@ export class ExplorePage {
         public navCtrl: NavController,
         public navParams: NavParams,) {}
 
+
+    public destaques = [
+        {
+            company_name: 'Unique',
+            company_type: 'Confecção',
+            company_logo: ''
+        },
+        {
+            company_name: 'Unieke',
+            company_type: 'Confecção',
+            company_logo: ''
+        },
+        {
+            company_name: 'Gucci',
+            company_type: 'Confecção',
+            company_logo: ''
+        }
+    ];
+
 }
