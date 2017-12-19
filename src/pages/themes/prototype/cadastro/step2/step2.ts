@@ -178,7 +178,9 @@ export class Step2Page {
 
                     }
                 }
-            )
+
+        )
+
     });
     public clearDataMask = ((data, type) => {
         var retorno = ''
