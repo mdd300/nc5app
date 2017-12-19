@@ -6,7 +6,7 @@ import {Step3Page} from "../step3/step3";
 import {Http, Headers, RequestOptions} from '@angular/http';
 import * as $ from 'jquery';
 import {LoadingController} from 'ionic-angular';
-
+import {DomSanitizer, SafeHtml, SafeStyle, SafeUrl} from '@angular/platform-browser';
 /**
  * Generated class for the Step2Page page.
  *
@@ -38,7 +38,7 @@ export class Step2Page {
     public stepOkCnpj: boolean = false;
     public loading: boolean = false;
     public stepBuscar: boolean = true;
-    public imgCaptcha: string = "";
+    public imgCaptcha: SafeUrl;
     public user_type = this.navParams.get("user_type");
 
 
@@ -48,22 +48,19 @@ export class Step2Page {
         private alertCtrl: AlertController,
         private keyboard: Keyboard,
         private http: Http,
-        public loadingCtrl: LoadingController
+        public loadingCtrl: LoadingController,
+        private sanitizer:DomSanitizer
 
     ) {}
 
 
     public presentLoading = (() => {
-
         let loader = this.loadingCtrl.create({
             content: "Aguarde...",
         });
         loader.present();
-
     });
 
-
-    /**
 
      /**
      /**
@@ -81,7 +78,6 @@ export class Step2Page {
 
 
     public statusBusca = (() => {
-
         this.stepOk = false;
         this.stepOkCnpj = false;
     });
@@ -109,7 +105,8 @@ export class Step2Page {
                     resposta = JSON.parse(resposta._body);
                     if (!resposta.existe) {
 
-                        this.imgCaptcha = resposta.dados.captchaBase64;
+                        //var captcha = this.sanitizer.bypassSecurityTrustResourceUrl("data:image/jpeg;"+resposta.dados.captchaBase64);
+                        this.imgCaptcha = "data:image/png;base64,"+resposta.dados.captchaBase64;
                         this.captcha.key = resposta.dados.cookie;
                         this.stepOk = true;
                         this.stepOkCnpj = false;
@@ -125,6 +122,11 @@ export class Step2Page {
                 }
             )
     });
+
+    // public getSantizeUrl(url : string) {
+    //     return this.sanitizer.bypassSecurityTrustUrl(url);
+    // }
+
 
     public validateCnpj = (() => {
         var reg = /^\d{2}\.\d{3}\.\d{3}\/\d{4}\-\d{2}$/;
