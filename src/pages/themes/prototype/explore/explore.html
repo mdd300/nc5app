@@ -33,13 +33,25 @@
         </ion-row>
         <ion-row>
             <ion-col col-auto>
-                More...
+                <button class="style-plus-button"> + </button>
             </ion-col>
-            <ion-col>
-                gosto...
+            <ion-col class="relative">
+                <div class="viewbox-styles" >
+                    <ul class="list-styles">
+                        <li class="style-item pink">Femininos</li>
+                        <li class="style-item purple">Jaquetas</li>
+                        <li class="style-item brown">Saias</li>
+                    </ul><!-- list-styles -->
+                </div> <!-- viewbox-styles -->
             </ion-col>
             <ion-col col-auto>
-                Ola
+                
+                <div class="filter-styles" >
+                    <svg class="ico-filter-styles">
+                       <use [attr.xlink:href]="constants.src_svg + 'settings.svg#Layer_1'"></use>
+                    </svg> <!-- ico-filter-styles -->
+                </div> <!-- filter-styles -->
+                
             </ion-col>
         </ion-row>
     </ion-grid><!-- grid-estilos -->

@@ -41,12 +41,24 @@ export class Step2Page {
     public user_type = this.navParams.get("user_type");
 
 
-    constructor(public navCtrl: NavController,
-                public navParams: NavParams,
-                private alertCtrl: AlertController,
-                private keyboard: Keyboard,
-                private http: Http,
-                public loadingCtrl: LoadingController) {
+    constructor(
+        public navCtrl: NavController,
+        public navParams: NavParams,
+        private alertCtrl: AlertController,
+        private keyboard: Keyboard,
+        private http: Http,
+        public loadingCtrl: LoadingController
+
+    ) {}
+
+
+    presentLoading(data) {
+        let loader = this.loadingCtrl.create({
+            content: "Please wait...",
+            duration: data == null ? 1000 : 0
+        });
+        loader.present();
+
     }
 
 
@@ -66,7 +78,9 @@ export class Step2Page {
      * @type {(cnpj: number) => any} - valor do numero do cnpj
      */
 
+
     public statusBusca = (() => {
+
         this.stepOk = false;
         this.stepOkCnpj = false;
     });
@@ -87,16 +101,13 @@ export class Step2Page {
     public getCaptcha = (() => {
         this.captcha.digito = "";
         var resposta = null;
-        // let loader = this.loadingCtrl.create({
-        //     content: "Please wait...",
-        // });
-        // loader.present();
         this.http.post(
             Constants.api_path + 'cadastro/getCaptcha', {'cnpj': this.captcha.cnpj})
             .subscribe((data) => {
                     var resposta = (data as any);
                     resposta = JSON.parse(resposta._body);
                     if (!resposta.existe) {
+
                         this.imgCaptcha = resposta.dados.captchaBase64;
                         this.captcha.key = resposta.dados.cookie;
                         this.stepOk = true;
@@ -142,13 +153,17 @@ export class Step2Page {
 
 
     public getCnpj = (() => {
-
+        var resposta = null;
         this.http.post(
             Constants.api_path + 'cadastro/getCnpj', (this.captcha))
             .subscribe((data) => {
-                    var resposta = (data as any);
+
+                this.presentLoading(resposta);
+
+                resposta = (data as any);
                     resposta = JSON.parse(resposta._body);
                     if (resposta.success) {
+
                         this.emp = resposta.dados;
                         this.stepOkCnpj = true;
                         this.stepOk = false;

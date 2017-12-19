@@ -22,6 +22,4 @@ export class ExplorePage {
         public navCtrl: NavController,
         public navParams: NavParams,) {}
 
-
-        
 }
