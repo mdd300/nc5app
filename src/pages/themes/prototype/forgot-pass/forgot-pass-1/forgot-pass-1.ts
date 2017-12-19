@@ -59,20 +59,18 @@ export class ForgotPass_1Page {
             /* Caso valido, prossegue com o processo */
 
             var data_send = {user_login: this.email_to_recover};
-            this.http.post(this.constants.api_path + 'login/recover', $.param(data_send)).subscribe(response => {
+            this.http.post(this.constants.api_path + 'login/start_recover', $.param(data_send)).subscribe(response => {
 
                 var res = (response as any);
                 this.response = JSON.parse(res._body);
 
                 if (this.response.success) {
-                    this.navCtrl.push(ForgotPass_2Page)
+                    this.navCtrl.push(ForgotPass_2Page, {user_login: this.email_to_recover})
                 }
 
             });
 
-
-            console.log(this.storage.get('user_logged'));
-
+            // console.log(this.storage.get('user_logged'));
             // this.navCtrl.push( ForgotPass_2Page )
         } else {
             /* Caso o email digitado não seja válido */

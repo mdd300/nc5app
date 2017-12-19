@@ -53,14 +53,13 @@ export class Step2Page {
 
     ) {}
 
-
+    
     public presentLoading = (() => {
         let loader = this.loadingCtrl.create({
             content: "Aguarde...",
         });
-        loader.present();
+            loader.present();
     });
-
 
      /**
      /**
@@ -84,10 +83,15 @@ export class Step2Page {
 
     public searchCnpj = (() => {
         /* Verifica se o CNPJ é real */
-
+        
+        
         this.captcha.cnpj = $(".cnpj").val();
 
         if (this.validateCnpj()) {
+
+            //inicia o loading
+            //this.presentLoading();
+
             this.captcha.cnpj = this.clearDataMask(this.captcha.cnpj, 'cnpj');
             this.getCaptcha();
         }
@@ -106,7 +110,8 @@ export class Step2Page {
                     if (!resposta.existe) {
 
                         //var captcha = this.sanitizer.bypassSecurityTrustResourceUrl("data:image/jpeg;"+resposta.dados.captchaBase64);
-                        this.imgCaptcha = "data:image/png;base64,"+resposta.dados.captchaBase64;
+                      //  this.imgCaptcha = "data:image/png;base64,"+resposta.dados.captchaBase64;
+                        this.imgCaptcha = resposta.dados.captchaBase64;
                         this.captcha.key = resposta.dados.cookie;
                         this.stepOk = true;
                         this.stepOkCnpj = false;
@@ -119,8 +124,17 @@ export class Step2Page {
                         this.emp.empresa_existe = true;
 
                     }
-                }
-            )
+
+            }, error => {
+                //modal de erro na autenticação
+                let alert =this.alertCtrl.create({
+                    title: 'QRGO',
+                    subTitle: 'CNPJ não encontrado',
+                    buttons: ['Ok']
+                });
+                alert.present();
+            });
+            
     });
 
     // public getSantizeUrl(url : string) {
