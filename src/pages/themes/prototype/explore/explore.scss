@@ -201,6 +201,7 @@ page-explore {
                   &.description{
                     top: 0;
                     padding: 2px 0 0 6px;
+                    font-size: 0.9em;
                   }/** description */
 
                 }/** destaque-info-label */
@@ -233,13 +234,13 @@ page-explore {
           background-color: $color-grey;
           background-size: cover;
           background-position: center;
-          margin: 0 0 -30px 0;
+          margin: 0 0 -40px 0;
         }/** destaque-body */
 
         .destaque-footer{
           width: 100%;
           padding: 10px;
-          .destaque-folder-list{
+          ul.destaque-footer-list{
             width: 100%;
             list-style: none;
             padding: 0;
@@ -248,8 +249,17 @@ page-explore {
             justify-content: center;
             align-items: center;
             white-space: nowrap;
-          }/** destaque-folder-list */
-
+            li.destaque-footer-item{
+              width: 30%;
+              padding: 25% 0 0 0;
+              margin: 0 10px;
+              border: 2px solid #fff;
+              border-radius: $border-rd-md;
+              background-color: $color-grey;
+              background-position: center;
+              background-repeat: no-repeat;
+            }/** li.destaque-footer-item */
+          }/** ul.destaque-footer-list */
         }/** destaque-footer */
 
       }/** destaque-item */
