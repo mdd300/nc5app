@@ -61,14 +61,14 @@ export class Step3Page {
 
 
  // Função usada para dar loading
-    presentLoading(data) {
+    public presentLoading = ((data) => {
+
         let loader = this.loadingCtrl.create({
-            content: "Please wait...",
-            duration: data == null ? 1000 : 0
+            content: "Aguarde...",
         });
         loader.present();
-    }
 
+    });
     public validateUser = (() => {
 
         var regEmail = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
@@ -132,7 +132,6 @@ export class Step3Page {
         this.user.fone = $(".fone").val();
         /** Verifica se as senhas correspondem umas as outras */
 
-
          if(this.validateUser()){
              /* Caso as senhas correspondam umas as outras */
             this.setUser();
@@ -147,7 +146,7 @@ export class Step3Page {
         this.http.post(
             Constants.api_path+'cadastro/insertCadastro', $.param({'empresa': this.empresa ,'usuario': this.user }))
             .subscribe((data) => {
-                this.presentLoading(resposta);
+
                 resposta = (data as any);
                     resposta = JSON.parse(resposta._body);
 

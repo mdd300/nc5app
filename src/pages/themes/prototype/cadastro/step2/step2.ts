@@ -36,6 +36,7 @@ export class Step2Page {
     public captcha: any = {digito: "", key: "", cnpj: "", vazio: ""};
     public stepOk: boolean = false;
     public stepOkCnpj: boolean = false;
+    public loading: boolean = false;
     public stepBuscar: boolean = true;
     public imgCaptcha: string = "";
     public user_type = this.navParams.get("user_type");
@@ -52,14 +53,14 @@ export class Step2Page {
     ) {}
 
 
-    presentLoading(data) {
+    public presentLoading = (() => {
+
         let loader = this.loadingCtrl.create({
-            content: "Please wait...",
-            duration: data == null ? 1000 : 0
+            content: "Aguarde...",
         });
         loader.present();
 
-    }
+    });
 
 
     /**
@@ -102,7 +103,7 @@ export class Step2Page {
         this.captcha.digito = "";
         var resposta = null;
         this.http.post(
-            Constants.api_path + 'cadastro/getCaptcha', {'cnpj': this.captcha.cnpj})
+            Constants.api_path + 'cadastro/getCaptcha', $.param({'cnpj': this.captcha.cnpj}))
             .subscribe((data) => {
                     var resposta = (data as any);
                     resposta = JSON.parse(resposta._body);
@@ -155,11 +156,8 @@ export class Step2Page {
     public getCnpj = (() => {
         var resposta = null;
         this.http.post(
-            Constants.api_path + 'cadastro/getCnpj', (this.captcha))
+            Constants.api_path + 'cadastro/getCnpj', $.param(this.captcha))
             .subscribe((data) => {
-
-                this.presentLoading(resposta);
-
                 resposta = (data as any);
                     resposta = JSON.parse(resposta._body);
                     if (resposta.success) {
