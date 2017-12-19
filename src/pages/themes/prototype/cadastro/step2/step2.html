@@ -44,7 +44,7 @@
             <div [hidden]="!stepOk">
                 <ion-row>
                     <ion-col>
-                        <img  class="img-captcha"  [attr.src]="imgCaptcha">
+                        <img  class="img-captcha"  [attr.src]="'data:image/jpeg;' + imgCaptcha">
                         <i class="ion-refresh"></i>
                         <div class="cad-form-content">
                             <label class="cad-form-label">
