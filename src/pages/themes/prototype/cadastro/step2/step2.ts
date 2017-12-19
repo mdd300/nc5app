@@ -106,7 +106,8 @@ export class Step2Page {
                     if (!resposta.existe) {
 
                         //var captcha = this.sanitizer.bypassSecurityTrustResourceUrl("data:image/jpeg;"+resposta.dados.captchaBase64);
-                        this.imgCaptcha = "data:image/png;base64,"+resposta.dados.captchaBase64;
+                      //  this.imgCaptcha = "data:image/png;base64,"+resposta.dados.captchaBase64;
+                        this.imgCaptcha = resposta.dados.captchaBase64;
                         this.captcha.key = resposta.dados.cookie;
                         this.stepOk = true;
                         this.stepOkCnpj = false;
