@@ -27549,6 +27549,9 @@ page-explore .explore-search-close {
 page-explore .grid-estilos {
   margin: 10px 0 0 0;
   /** grid-title */
+  /** style-plus-button */
+  /** viewbox-styles */
+  /** filter-styles */
 }
 
 page-explore .grid-estilos .grid-title {
@@ -27560,6 +27563,79 @@ page-explore .grid-estilos .grid-title {
   text-transform: uppercase;
   font-size: 1em;
   padding: 0 0 0 10px;
+}
+
+page-explore .grid-estilos .style-plus-button {
+  padding: 5px 20px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  background: transparent;
+  color: #fff;
+  font-size: 1.3em;
+}
+
+page-explore .grid-estilos .viewbox-styles {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow-x: auto;
+  overflow-y: hidden;
+  /** list-styles */
+}
+
+page-explore .grid-estilos .viewbox-styles::-webkit-scrollbar {
+  display: none;
+}
+
+page-explore .grid-estilos .viewbox-styles ul.list-styles {
+  width: auto;
+  position: relative;
+  list-style: none;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  /** style-item */
+}
+
+page-explore .grid-estilos .viewbox-styles ul.list-styles li.style-item {
+  padding: 7px 20px 6px 20px;
+  font-size: 1.1em;
+  display: inline-table;
+  margin: 0 3px 0 0;
+  color: #fff;
+  border-radius: 30px;
+}
+
+page-explore .grid-estilos .viewbox-styles ul.list-styles li.style-item.pink {
+  background: #d72f6c;
+}
+
+page-explore .grid-estilos .viewbox-styles ul.list-styles li.style-item.purple {
+  background: #b334d1;
+}
+
+page-explore .grid-estilos .viewbox-styles ul.list-styles li.style-item.brown {
+  background: #66313a;
+}
+
+page-explore .grid-estilos .filter-styles {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  margin: -4px 0 0 20px;
+  position: relative;
+  cursor: pointer;
+  /** ico-filter-styles */
+}
+
+page-explore .grid-estilos .filter-styles .ico-filter-styles {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  fill: #fff;
 }
 
 /** page-explore */
@@ -28409,7 +28485,6 @@ page-feed .feed-card .feed-card-structure .card-body-product .card-body-product-
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-<<<<<<< HEAD
 }
 
 /** title-page */
@@ -28430,28 +28505,6 @@ page-feed .feed-card .feed-card-structure .card-body-product .card-body-product-
   text-align: center;
 }
 
-=======
-}
-
-/** title-page */
-.page-description {
-  width: 100%;
-  color: #b4c1d6;
-  text-align: center;
-}
-
-/** page-description */
-.label-form {
-  width: 100%;
-  float: left;
-  padding: 20px 0 0 0;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #b4c1d6;
-  text-align: center;
-}
-
->>>>>>> 68f6b9b61394248177367dedc5464cd1283b20d8
 /** label-form */
 .header {
   background: #fff;
@@ -29561,6 +29614,12 @@ page-localizacao .content-post {
   height: 100%;
 }
 
+page-localizacao .content-post .content-input {
+  border-bottom: 1px solid #DDD;
+  width: 100%;
+  height: 100%;
+}
+
 page-localizacao .content-post .content-info-post {
   height: 8%;
 }
@@ -29642,10 +29701,19 @@ page-localizacao .content-post .row-user-2 {
 page-localizacao .content-post .input-search-maps {
   border: 0px;
   padding: 5px;
+  width: 100%;
 }
 
 page-localizacao .content-post .grid {
-  padding-top: 10px;
+  padding: 0px 3px !important;
+}
+
+page-localizacao .col-header-grid {
+  width: 46%;
+}
+
+page-localizacao .grid-content {
+  padding-top: 1%;
 }
 
 page-localizacao .item-md {
@@ -29725,15 +29793,7 @@ page-localizacao .content-location-post .lojas-cad {
 page-localizacao .content-location-post .content-all-location-post .wrapper {
   width: 7%;
   float: left;
-  margin: 2px 12px;
-}
-
-page-localizacao .content-location-post .content-all-location-post .svg-ico-usertype {
-  width: 80%;
-  height: 45px;
-  fill: #b4c1d6;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  margin: 8px 12px;
 }
 
 page-localizacao .content-location-post .content-all-location-post .content-info-location-post {
@@ -29766,8 +29826,20 @@ page-localizacao .content-location-post .content-all-location-post .second-conte
   padding-top: 6px;
 }
 
+page-localizacao .svg-ico-usertype {
+  width: 80%;
+  height: 30px;
+  fill: #b4c1d6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 page-localizacao .list-md {
   margin: 0px;
+}
+
+page-localizacao .item-md.item-block .item-inner {
+  border: 0px !important;
 }
 
 page-post {
