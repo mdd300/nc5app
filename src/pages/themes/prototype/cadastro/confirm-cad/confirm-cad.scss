@@ -18,22 +18,20 @@ page-confirm-cad {
       text-align: center;
       color: $color-grey;
       font-size: 1.8em;
-      padding: 0 20px;
       margin: 0;
       text-transform: uppercase;
     }
     /** page-title */
     .page-description{
-      width: 80%;
+      width: 100%;
       display: table;
-      padding: 20px 0;
       color: $color-grey;
       margin: 0 auto;
       text-align: center;
     }/** page-description */
 
     .cont-confirmcode{
-      width: 80%;
+      width: 100%;
       display: table;
       margin: 0 auto;
       position: relative;
@@ -41,5 +39,30 @@ page-confirm-cad {
 
   }
   /** content-center */
+  
+  .content-center{
+    width: 100%;
+    padding: 0 5%;
+  }/** content-center */
+  .resend-code{
+    position: relative;
+    float: right;
+    color: $color-grey;
+    text-transform: lowercase;
+    cursor: pointer;
+  }/** resend-code */
+
+
+  .confirm-code{
+    width: 60%;
+    margin: 0 auto;
+    display: table;
+    border-radius: $border-rd-xl;
+    background: $color-pink;
+    font-family: Multicolore;
+    padding: 10px;
+    box-shadow: none;
+  }/** confirm-code */
+
 
 }

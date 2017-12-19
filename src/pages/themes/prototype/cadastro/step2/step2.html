@@ -30,22 +30,44 @@
                     <div class="cad-form-content">
                         <label class="cad-form-label">
                             <span class="cad-form-label-txt"> CNPJ: </span> <!-- cad-form-label-txt -->
-                            <input type="text" [(ngModel)]="cnpj" (keyup)="keyupCnpj( cnpj )" class="cad-form-ctrl" placeholder="Insira o CNPJ">
+                            <input type="text" [(ngModel)]="captcha.vazio"  name="cpf" (keyup)="statusBusca()" class="cad-form-ctrl cnpj" placeholder="Insira o CNPJ"  [brmasker]="{person:true}">
                         </label><!-- cad-form-label -->
                     </div> <!-- cad-form-content -->
                 </ion-col>
             </ion-row>
+            <div [hidden]="stepOk || stepOkCnpj">
+                <div class="form-cont">
+                    <button class="login-btn" (click)="searchCnpj()">Buscar</button>
+                </div> <!-- form-cont -->
+            </div>
+
+            <div [hidden]="!stepOk">
+                <ion-row>
+                    <ion-col>
+                        <img  class="img-captcha"  [attr.src]="imgCaptcha">
+                        <i class="ion-refresh"></i>
+                        <div class="cad-form-content">
+                            <label class="cad-form-label">
+                                <span class="cad-form-label-txt"> Captcha: </span> <!-- cad-form-label-txt -->
+                                <input type="text" [(ngModel)]="captcha.digito" class="cad-form-ctrl" placeholder="Insira o Captcha">
+                            </label><!-- cad-form-label -->
+                        </div> <!-- cad-form-content -->
+                    </ion-col>
+                </ion-row>
+                <div class="form-cont">
+                    <button class="login-btn" (click)=" getCnpj()">Enviar</button>
+                </div> <!-- form-cont -->
+            </div>
 
             <ion-row>
-
-                <ion-grid class="grid-complete-cnpj" [hidden]="!stepOk">
+                <ion-grid class="grid-complete-cnpj" [hidden]="!stepOkCnpj">
                     <ion-row>
                         <ion-col>
 
                             <div class="cad-form-content">
                                 <label class="cad-form-label">
                                     <span class="cad-form-label-txt"> Razão Social: </span> <!-- cad-form-label-txt -->
-                                    <input type="text" class="cad-form-ctrl" placeholder="Razão Social" [(ngModel)]="emp.razao" value="" readonly>
+                                    <input type="text" class="cad-form-ctrl" placeholder="Razão Social" [(ngModel)]="emp.empresa_razao" value="" readonly>
                                 </label><!-- cad-form-label -->
                             </div> <!-- cad-form-content -->
 
@@ -57,7 +79,7 @@
                             <div class="cad-form-content">
                                 <label class="cad-form-label">
                                     <span class="cad-form-label-txt"> Nome Fantasia: </span> <!-- cad-form-label-txt -->
-                                    <input type="text" class="cad-form-ctrl" placeholder="Nome Fantasia"  [(ngModel)]="emp.nome" readonly>
+                                    <input type="text" class="cad-form-ctrl" placeholder="Nome Fantasia"  [(ngModel)]="emp.empresa_nomefantasia" readonly>
                                 </label><!-- cad-form-label -->
                             </div> <!-- cad-form-content -->
 
@@ -69,7 +91,7 @@
                             <div class="cad-form-content">
                                 <label class="cad-form-label">
                                     <span class="cad-form-label-txt"> Bairro: </span> <!-- cad-form-label-txt -->
-                                    <input type="text" class="cad-form-ctrl" placeholder="Bairro" [(ngModel)]="emp.bairro" readonly>
+                                    <input type="text" class="cad-form-ctrl" placeholder="Bairro" [(ngModel)]="emp.empresa_bairro" readonly>
                                 </label><!-- cad-form-label -->
                             </div> <!-- cad-form-content -->
 
@@ -81,7 +103,7 @@
                             <div class="cad-form-content">
                                 <label class="cad-form-label">
                                     <span class="cad-form-label-txt"> Endereço: </span> <!-- cad-form-label-txt -->
-                                    <input type="text" class="cad-form-ctrl" placeholder="Endereço" [(ngModel)]="emp.endereco" readonly>
+                                    <input type="text" class="cad-form-ctrl" placeholder="Endereço" [(ngModel)]="emp.empresa_endereco" readonly>
                                 </label><!-- cad-form-label -->
                             </div> <!-- cad-form-content -->
 
@@ -91,7 +113,7 @@
                             <div class="cad-form-content">
                                 <label class="cad-form-label">
                                     <span class="cad-form-label-txt"> Nº: </span> <!-- cad-form-label-txt -->
-                                    <input type="text" class="cad-form-ctrl" placeholder="Nº" [(ngModel)]="emp.numero" readonly>
+                                    <input type="text" class="cad-form-ctrl" placeholder="Nº" [(ngModel)]="emp.empresa_numero" readonly>
                                 </label><!-- cad-form-label -->
                             </div> <!-- cad-form-content -->
                         </ion-col>
@@ -103,7 +125,7 @@
                             <div class="cad-form-content">
                                 <label class="cad-form-label">
                                     <span class="cad-form-label-txt"> Cidade: </span> <!-- cad-form-label-txt -->
-                                    <input type="text" class="cad-form-ctrl" placeholder="Cidade" [(ngModel)]="emp.cidade" readonly>
+                                    <input type="text" class="cad-form-ctrl" placeholder="Cidade" [(ngModel)]="emp.empresa_cidade" readonly>
                                 </label><!-- cad-form-label -->
                             </div> <!-- cad-form-content -->
 
@@ -113,7 +135,7 @@
                             <div class="cad-form-content">
                                 <label class="cad-form-label">
                                     <span class="cad-form-label-txt"> Estado: </span> <!-- cad-form-label-txt -->
-                                    <input type="text" class="cad-form-ctrl" placeholder="Estado" [(ngModel)]="emp.estado" readonly>
+                                    <input type="text" class="cad-form-ctrl" placeholder="Estado" [(ngModel)]="emp.empresa_estado" readonly>
                                 </label><!-- cad-form-label -->
                             </div> <!-- cad-form-content -->
                         </ion-col>
@@ -134,7 +156,7 @@
 <ion-footer>
     <div class="footer-steps">
 
-        <div class="next-step-action" [ngClass]="{ 'allowed': stepOk }" (click)="goToStep3()">
+        <div class="next-step-action" [ngClass]="{ 'allowed': stepOkCnpj }" (click)="goToStep3()">
             <span class="next-step-label">
                 Próximo
             </span> <!-- next-stap-label -->

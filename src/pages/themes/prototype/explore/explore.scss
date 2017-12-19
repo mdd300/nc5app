@@ -1,476 +1,126 @@
-@import '../../../../config/styles/theme-prototype-variables';
-
 page-explore {
-  .scroll-content{
-    padding: 0 0 60px 0;
-    .header-background{
+
+  .background-explore{
+    width: 100%;
+    padding: 100% 0 0 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }/** background-explore */
+
+  .explore-search{
+    width: 100%;
+    padding: 10px 35px 10px 15px;
+    border: 1px solid #fff;
+    background: none;
+    border-radius: $border-rd-xl;
+    color: #fff;
+    &::-webkit-input-placeholder{
+      color: rgba(255,255,255,1);
+      transition: 0.5s;
+    }/** ::-webkit-input-placeholder */
+    &:focus{
+      &::-webkit-input-placeholder{
+        color: rgba(255,255,255,0.5);
+      }/** ::-webkit-input-placeholder */
+    }/** focus */
+  }/** explore-search */
+
+  .explore-back{
+    height: 39px;
+    width: 25px;
+    position: relative;
+    .ico-explore-back{
       width: 100%;
-      padding: 100% 0 0 0;
+      height: 100%;
       position: absolute;
       left: 0;
       top: 0;
-      background-size: cover;
-      background-position: top;
-    }/** header-background */
+      fill: #fff;
+    }/** ico-explore-back */
+  }/** explore-back */
 
-    .header{
-      background: transparent;
-      &:after{ background: transparent; }
+  .explore-search-close{
+    color: #fff;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 2em;
+    cursor: pointer;
+  }/** explore-search-close */
 
-      .col-icon{
-        //padding: 0;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-
-        .icon-back-header{
-          width: 100%;
-          padding: 100% 0 0 0;
-          position: relative;
-          cursor: pointer;
-          
-          .ico-back-header{
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-            fill: #fff;
-          }/** ico-back-header */
-        }/** icon-back-header */
-      }/** col-icon */
-
-      .content-search-input-header{
-        width: 100%;
-        position: relative;
-        padding: 0 0 0 10px;
-
-        .inpt-search-explore{
-          width: 100%;
-          position: relative;
-          background: none;
-          border: 1px solid #fff;
-          border-radius: 30px;
-          padding: 10px 40px 10px 15px;
-          color: #fff;
-
-          &::-moz-placeholder { color: #fff; }
-          &::-webkit-input-placeholder { color: #fff; }
-
-          &:focus{
-            &::-moz-placeholder { color: rgba(255,255,255, 0.5); }
-            &::-webkit-input-placeholder { color: rgba(255,255,255, 0.5); }
-          }
-
-        }/** inpt-search-explore */
-        
-        ion-icon{
-          position: absolute;
-          right: 6px;
-          top: 1px;
-          color: #fff;
-          font-size: 2.5em;
-          cursor: pointer;
-        } /** ion-icon */
-        
-      }/** content-search-input-header */
-
-    }/** header */
-
-    .text-header-section{
+  .grid-estilos{
+    margin: 10px 0 0 0;
+    .grid-title{
       width: 100%;
-      font-size: 1em;
-      color: #fff;
       float: left;
+      font-weight: bold;
       font-family: Multicolore;
-      text-transform: Uppercase;
-    }/** text-header-section */
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1em;
+      padding: 0 0 0 10px;
+    }/** grid-title */
 
-    .ion-styles-explore{
+    .style-plus-button{
+      padding: 5px 20px;
+      border: 2px solid #fff;
+      border-radius: $border-rd-xl;
+      background: transparent;
+      color: #fff;
+      font-size: 1.3em;
+    }/** style-plus-button */
+    .viewbox-styles{
       width: 100%;
-      margin: 55px 0 0 0;
-      padding: 0 0 10px 0;
-      position: relative;
-
-      .show-styles-selecteds{
-        width: 100%;
-        height: 100%;
+      height: 100%;
+      position: absolute;
+      overflow-x: auto;
+      overflow-y: hidden;
+      &::-webkit-scrollbar{ display: none; }
+      
+      ul.list-styles{
+        width: auto;
         position: relative;
-        .styles-selecteds{
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          left: 0;
-          top: 0;
-          overflow: auto;
-          white-space: nowrap;
-
-          &::-webkit-scrollbar{ display: none; }
-
-          .style-slected{
-            font-size: 0.7em;
-            padding: 10px 15px;
-            margin: 0 3px 0 0;
-            border-radius: 30px;
-            background: #663f87;
-            text-transform: uppercase;
-            color: #fff;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-
-          }/** style-slected */
-        }/** styles-selecteds */
-      }/** show-styles-selecteds */
-
-      .cont-config-styles{
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        .config-styles{
-          width: 70%;
-          padding: 70% 0 0 0;
-          position: relative;
-          cursor: pointer;
-
-          .config-ico{
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-            border-radius: 100%;
-            border: 1px solid #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .ico-config{
-              width: 50%;
-              height: 50%;
-              fill: #fff;
-            }/** ico-config */
-
-          }/** config-ico */
-
-        }/** config-styles */
-      }/** cont-config-styles */
-
-    }/** ion-styles-explore */
-
-    .ion-recommendations-explore{
-      width: 100%;
-      position: relative;
-      .grid-header-recommendations{
-        padding-top: 0;
-      }/** grid-header-recommendations */
-
-      .recommendations-content{
-        width: 100%;
-        overflow-x: auto;
-        overflow-y: hidden;
-        float: left;
+        list-style: none;
         white-space: nowrap;
+        margin: 0;
+        padding: 0;
+        li.style-item{
+          padding: 7px 20px 6px 20px;
+          font-size: 1.1em;
+          display: inline-table;
+          margin: 0 3px 0 0;
+          color: #fff;
+          border-radius: $border-rd-xl;
 
-        &::-webkit-scrollbar{ display: none; }
+          &.pink{ background: #d72f6c; }
+          &.purple{ background: #b334d1; }
+          &.brown{ background: #66313a; }
 
-        ul.recommendation-list{
-          white-space: nowrap;
-          list-style: none;
-          padding: 0;
-          margin: 0;
+        }/** style-item */
+      }/** list-styles */
 
-          li.reccommendation-item{
-            display: inline-flex;
-            width: auto;
-            margin: 0 10px 0 0;
-            &:first-child{ margin: 0 10px 0 10px }
-            .ctrl-recommendation-item{
-              width: 100%;
-              position: relative;
-              float: left;
-
-              .recommendation-mark{
-                background: #fff;
-                float: left;
-                border-radius: 10px;
-                box-shadow: 0 0 10px $color-grey;
-                overflow: hidden;
-                .recommendation-mark-header{
-                  height: 50px;
-                  background: #fff;
-                  border-bottom: 1px solid $color-grey;
-                  align-items: center;
-                  display: flex;
-                  padding: 0 10px;
-
-                  .mark-header-image{
-                    width: 50px;
-                    height: 50px;
-                    display: flex;
-                    position: relative;
-                    .image-header-mark{
-                      width: 100%;
-                      padding: 100% 0 0 0;
-                      position: absolute;
-                      left: 0;
-                      top: 21%;
-                      border-radius: 5px;
-                      background: #fff;
-                      border: 2px solid $color-grey;
-                    }/** image-header-mark */
-                  }/** mark-header-image */
-                  .mark-header-description{
-                    display: flex;
-                    height: 50px;
-                    padding: 7px 0 0 0;
-                    flex-grow: 1;
-                    flex-flow: column;
-                    align-items: center;
-                    justify-content: center;
-                    .header-description-line{
-                      width: 100%;
-                      display: flex;
-                      flex-grow: 1;
-                      position: relative;
-                      padding: 0 10px;
-                      .description{
-                        display: flex;
-                        flex-grow: 1;
-                        position: relative;
-                        .text-description{
-                          width: 100%;
-                          position: absolute;
-                          left: 0;
-                          overflow: hidden;
-                          -ms-text-overflow: ellipsis;
-                          text-overflow: ellipsis;
-                          white-space: nowrap;
-
-                          &.title{
-                            bottom: 0;
-                            font-weight: bold;
-                            text-transform: uppercase;
-                            font-size: 1.2em;
-                          }/** title */
-                          &.description{
-                            text-transform: uppercase;
-                            font-size: 0.9em;
-                            color: $color-grey - #444;
-                          }/** description */
-
-                        }/** text-description */
-                      }/** description */
-                    }/** header-description-line */
-                  }/** mark-header-description */
-                  .mark-header-action{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: auto;
-                    .button-action-header-mark{
-                      padding: 10px 15px;
-                      background: $color-pink;
-                      color: #fff;
-                      text-transform: uppercase;
-                      border-radius: 5px;
-                    }/** button-action-header-mark */
-                  }/** mark-header-action */
-
-                }/** recommendation-mark-header */
-                .recommendation-mark-body{
-                  width: 100%;
-                  height: 180px;
-                  background-color: #fafafa;
-                  background-size: cover;
-                  background-position: center;
-
-                }/** recommendation-mark-body */
-
-                .recommendation-mark-footer{
-                  width: 100%;
-                  position: relative;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  padding: 10px;
-                  .recommendation-mark-list-vitrine{
-                    width: auto;
-                    display: flex;
-                    list-style: none;
-                    padding: 0;
-                    margin: -70px 0 0 0;
-                    li.recommendation-mark-vitrine-item{
-                      width: 83px;
-                      height: 120px;
-                      border: 2px solid #fff;
-                      background-color: #ccc;
-                      margin: 0 5px;
-                      border-radius: 10px;
-                      background-size: cover;
-                      background-position: center;
-                      background-repeat: no-repeat;
-                    }/** recommendation-mark-vitrine-item */
-                  }/** recommendation-mark-list-vitrine */
-                }/** recommendation-mark-footer */
-
-              }/** recommendation-mark */
-
-            }/** ctrl-recommendation-item */
-          }/** li.reccommendation-item */
-
-        }/** recommendation-list */
-      }/** recommendations-content */
-
-    }/** ion-recommendations-explore */
-
-    .ion-explore-marks{
-      width: 100%;
-      float: left;
+    }/** viewbox-styles */
+    .filter-styles{
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      border: 2px solid #fff;
+      margin: -4px 0 0 20px;
       position: relative;
-      margin: 15px 0 0 0;
-      border-top: 1px solid $color-grey + #222;
+      cursor: pointer;
+      .ico-filter-styles{
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        left: 25%;
+        top: 25%;
+        fill: #fff;
+      }/** ico-filter-styles */
+    }/** filter-styles */
+  }/** grid-estilos */
 
-      .explore-mark{
-        padding: 20px 0 0 0;
-        .col{ padding: 0; }
-        .grid{ padding: 0; }
-        
-        
-        .image-mark-explore{
-          width: 100%;
-          display: flex;
-          align-items: center;
-          padding: 0 0 0 10px;
-          .img-mark-explore{
-            width: 100%;
-            padding: 100% 0 0 0;
-            position: relative;
-
-            .img-mark{
-              width: 100%;
-              height: 100%;
-              position: absolute;
-              left: 0;
-              top: 0;
-              background: #fff;
-              border: 2px solid $color-grey;
-              border-radius: 5px;
-            }/** img-mark */
-
-          }/** img-mark-explore */
-        }/** image-mark-explore */
-
-        .label-mark-explore-cont{
-          display: flex;
-          .label-mark-explore{
-            width: 100%;
-            display: flex;
-            flex-flow: column;
-            padding: 0 10px;
-            .text-label-mark-explore{
-              width: 100%;
-              display: flex;
-              position: relative;
-              flex-grow: 1;
-              .txt-label-mark-explore{
-                width: 100%;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                position: absolute;
-                left: 0;
-
-                &.title{
-                  text-transform: uppercase;
-                  font-size: 1.2em;
-                  font-weight: bold;
-                }/** title */
-                &.description{
-                  text-transform: uppercase;
-                  font-size: 0.9em;
-                  top: -2px;
-                }/** description */
-
-              }/** txt-label-mark-explore */
-            }/** text-label-mark-explore */
-          }/** label-mark-explore */
-        }/** label-mark-explore-cont */
-
-        .products-mark-explore{
-          width: 100%;
-          overflow-x: auto;
-          overflow-y: hidden;
-          white-space: nowrap;
-          float: left;
-          &::-webkit-scrollbar{ display: none; }
-
-          .list-products-mark-explore{
-            white-space: nowrap;
-            list-style: none;
-            padding: 0 0 10px 0;
-            margin: 0;
-            .item-product-mark-explore{
-              width: 130px;
-              background: #fff;
-              display: inline-flex;
-              flex-flow: column;
-              box-shadow: 0 0 5px 1px $color-grey;
-              border-radius: 10px;
-              margin: 10px 10px 0 0;
-              position: relative;
-              overflow: hidden;
-              &:first-child{ margin-left: 40px; }
-
-              .product-mark-image{
-                width: 100%;
-                height: 150px;
-                background-color: #f8f8f8;
-                background-size: cover;
-                background-position: center;
-                position: relative;
-                ul.colors-product-mark{
-                  width: 20px;
-                  display: table;
-                  position: absolute;
-                  right: 10px;
-                  top: 10px;
-                  list-style: none;
-                  margin: 0;
-                  padding: 0;
-                  li.color-product{
-                    width: 100%;
-                    padding: 100% 0 0 0;
-                    position: relative;
-                    border-radius: 100%;
-                    box-shadow: 0 0 0 2px $color-grey;
-                    margin: 0 0 10px 0;
-                  }/** color-product */
-                }/** colors-product-mark */
-
-              }/** product-mark-image */
-              .product-mark-label{
-                width: 100%;
-                position: relative;
-                display: flex;
-                padding: 15px 10px;
-                .product-mark-text{
-                  width: 100%;
-                  overflow: hidden;
-                  -ms-text-overflow: ellipsis;
-                  text-overflow: ellipsis;
-                  white-space: nowrap;
-                  position: relative;
-                  text-transform: uppercase;
-                  font-weight: bold;
-                }
-              }/** product-mark-label */
-            }/** item-product-mark-explore */
-          }/** list-products-mark-explore */
-        }/** products-mark-explore */
-
-      }/** explore-mark */
-    }/** ion-explore-marks */
-
-  }/** scroll-content */
 }/** page-explore */
