@@ -53,14 +53,13 @@ export class Step2Page {
 
     ) {}
 
-
+    
     public presentLoading = (() => {
         let loader = this.loadingCtrl.create({
             content: "Aguarde...",
         });
-        loader.present();
+            loader.present();
     });
-
 
      /**
      /**
@@ -84,10 +83,15 @@ export class Step2Page {
 
     public searchCnpj = (() => {
         /* Verifica se o CNPJ é real */
-
+        
+        
         this.captcha.cnpj = $(".cnpj").val();
 
         if (this.validateCnpj()) {
+
+            //inicia o loading
+            //this.presentLoading();
+
             this.captcha.cnpj = this.clearDataMask(this.captcha.cnpj, 'cnpj');
             this.getCaptcha();
         }
@@ -101,26 +105,33 @@ export class Step2Page {
         this.http.post(
             Constants.api_path + 'cadastro/getCaptcha', $.param({'cnpj': this.captcha.cnpj}))
             .subscribe((data) => {
-                    var resposta = (data as any);
-                    resposta = JSON.parse(resposta._body);
-                    if (!resposta.existe) {
+                var resposta = (data as any);
+                resposta = JSON.parse(resposta._body);
+                if (!resposta.existe) {
 
-                        //var captcha = this.sanitizer.bypassSecurityTrustResourceUrl("data:image/jpeg;"+resposta.dados.captchaBase64);
-                        this.imgCaptcha = "data:image/png;base64,"+resposta.dados.captchaBase64;
-                        this.captcha.key = resposta.dados.cookie;
-                        this.stepOk = true;
-                        this.stepOkCnpj = false;
-                        this.emp.empresa_existe = false;
+                    //var captcha = this.sanitizer.bypassSecurityTrustResourceUrl("data:image/jpeg;"+resposta.dados.captchaBase64);
+                    this.imgCaptcha = "data:image/png;base64,"+resposta.dados.captchaBase64;
+                    this.captcha.key = resposta.dados.cookie;
+                    this.stepOk = true;
+                    this.stepOkCnpj = false;
+                    this.emp.empresa_existe = false;
 
-                    } else {
-                        this.emp = resposta.dados[0];
-                        this.stepOkCnpj = true;
-                        this.stepOk = false;
-                        this.emp.empresa_existe = true;
-
-                    }
+                } else {
+                    this.emp = resposta.dados[0];
+                    this.stepOkCnpj = true;
+                    this.stepOk = false;
+                    this.emp.empresa_existe = true;
                 }
-            )
+            }, error => {
+                //modal de erro na autenticação
+                let alert =this.alertCtrl.create({
+                    title: 'QRGO',
+                    subTitle: 'CNPJ não encontrado',
+                    buttons: ['Ok']
+                });
+                alert.present();
+            });
+            
     });
 
     // public getSantizeUrl(url : string) {
