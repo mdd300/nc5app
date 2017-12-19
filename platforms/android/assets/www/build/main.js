@@ -8,7 +8,8 @@ webpackJsonp([0],{
 var Constants = {
     'base_url': './',
     'theme': 'prototype',
-    'api_path': 'http://192.168.0.251/fashon/qrgo/',
+    'api_path': 'http://192.168.0.55/fashon/qrgo/',
+    // 'api_path': 'http://192.168.0.251/fashon/qrgo/',
     // 'api_path': 'http://localhost/fashon/qrgo/',
     //   'api_path': 'http://ec2-184-72-119-250.compute-1.amazonaws.com/qrgo/',
     'src_img': './assets/themes/prototype/img/',
@@ -109,7 +110,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConfirmCadPageModule", function() { return ConfirmCadPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__confirm_cad__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__confirm_cad__ = __webpack_require__(85);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -147,7 +148,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Step1PageModule", function() { return Step1PageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__step1__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__step1__ = __webpack_require__(86);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -185,7 +186,8 @@ var Step1PageModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__localizacao_localizacao__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_keyboard__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__localizacao_localizacao__ = __webpack_require__(168);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -231,7 +233,7 @@ var PostPage = (function () {
         });
         // Abrir modal para realizar psot
         this.LocationPost = (function () {
-            var profileModal = _this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_3__localizacao_localizacao__["a" /* LocalizacaoPage */]);
+            var profileModal = _this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_4__localizacao_localizacao__["a" /* LocalizacaoPage */]);
             profileModal.present();
         });
     }
@@ -241,9 +243,9 @@ var PostPage = (function () {
     ], PostPage.prototype, "textInput", void 0);
     PostPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-post',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\modais\post\post.html"*/'<ion-content>\n\n\n\n    <div class="header-background" [hidden]="text"></div> <!-- header-background -->\n\n\n\n    <ion-header [hidden]="text">\n\n        <ion-grid>\n\n            <ion-row style="display: inline-flex;   ">\n\n                <ion-col col-1 class="col-icon">\n\n                    <div class="icon-back-header">\n\n\n\n                        <svg class="ico-back-header">\n\n                            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n                        </svg> <!-- ico-back-header -->\n\n                    </div> <!-- icon-back-header -->\n\n\n\n\n\n                </ion-col>\n\n                <ion-col col-auto style="width: 46%;">\n\n                    <div class="text-btn-publicar">PUBLIQUE ALGO...</div>\n\n                </ion-col>\n\n                <ion-col col-auto style="width: 45%">\n\n                    <div class="head-icon-right">\n\n                    <span text-align="center" class="btn-publicar">\n\n                        <div class="icon-publicar-send">\n\n                    <svg class="svg-send-header">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'send-button.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-back-header -->\n\n                        </div>\n\n                    <div text-align="center" class="text-btn-publicar">\n\n                        Publicar\n\n                    </div>\n\n                    <div text-align="center" class="btn-wrapper">\n\n\n\n                    </div>\n\n                    </span>\n\n                    </div>\n\n                </ion-col>\n\n            </ion-row>\n\n        </ion-grid>\n\n    </ion-header>\n\n\n\n    <div class="content-post">\n\n\n\n        <div class="empty-content-header" [hidden]="text">\n\n\n\n        </div>\n\n        <ion-row class="content-info-post row-user" [hidden]="text">\n\n            <ion-col col-3 class="col-user">\n\n                <div class="content-icon">\n\n                    <div class="content-icon-user">\n\n                        <div class="img-user-post">\n\n\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n            </ion-col>\n\n            <ion-col class="col-user">\n\n                <div class="content-data-user">\n\n\n\n                    <div class="empty-content">\n\n\n\n                    </div>\n\n\n\n                    <div class="text-nome-fantasia">\n\n                        <b>UNIQUE CHIC</b>\n\n                    </div>\n\n\n\n\n\n                    <div class="content-btn-loc">\n\n\n\n                        <button ion-button class="btn-estilo" (click)="LocationPost()" outline>\n\n                            <div text-align="center" class="btn-confir wrapper">\n\n                                <svg class="svg-ico-usertype">\n\n                                    <use [attr.xlink:href]="constants.src_svg + \'maps-and-flags.svg#Layer_1\'"></use>\n\n                                </svg> <!-- svg-ico-usertype -->\n\n                            </div>\n\n                            <div text-align="center" class="text-btn-estilo">\n\n                                LOCALIZAR\n\n                            </div>\n\n                        </button>\n\n\n\n                        <!--<div text-align="center" class="btn-estilo">-->\n\n                        <!---->\n\n                        <!--</div>-->\n\n                    </div>\n\n                </div>\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <div class="content-data-post">\n\n            <ion-textarea class="input-text-post" #textInput placeholder="Escreva algo..." (ionBlur)="onBlur()"\n\n                          (ionFocus)="onFocus()"\n\n                          (keypress)="eventHandler($event.keyCode, $event.target)"></ion-textarea>\n\n        </div>\n\n\n\n    </div>\n\n\n\n\n\n</ion-content>\n\n\n\n<ion-footer class="foo" [hidden]="text">\n\n    <ion-row>\n\n\n\n        <ion-col class="col-footer">\n\n            <div class="col-footer-post">\n\n                <div class="icon-footer">\n\n                    <svg class="svg-footer">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'shirt-hanger.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-back-header -->\n\n                </div>\n\n                <div class="text-footer-post">Produtos</div>\n\n            </div>\n\n        </ion-col>\n\n\n\n        <ion-col class="col-footer">\n\n            <div class="col-footer-post">\n\n                <div class="icon-footer">\n\n                    <svg class="svg-footer">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'picture.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-back-header -->\n\n                </div>\n\n                <div class="text-footer-post">Imagens</div>\n\n            </div>\n\n        </ion-col>\n\n\n\n    </ion-row>\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\modais\post\post.html"*/,
+            selector: 'page-post',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\modais\post\post.html"*/'<ion-content>\n\n\n\n    <div class="header-background" [hidden]="text"></div> <!-- header-background -->\n\n\n\n    <ion-header [hidden]="text">\n\n        <ion-grid>\n\n            <ion-row style="display: inline-flex;   ">\n\n                <ion-col col-1 class="col-icon">\n\n                    <div class="icon-back-header">\n\n\n\n                        <svg class="ico-back-header">\n\n                            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n                        </svg> <!-- ico-back-header -->\n\n                    </div> <!-- icon-back-header -->\n\n\n\n\n\n                </ion-col>\n\n                <ion-col col-auto style="width: 46%;">\n\n                    <div class="text-btn-publicar">PUBLIQUE ALGO...</div>\n\n                </ion-col>\n\n                <ion-col col-auto style="width: 45%">\n\n                    <div class="head-icon-right">\n\n                    <span text-align="center" class="btn-publicar">\n\n                        <div class="icon-publicar-send">\n\n                    <svg class="svg-send-header">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'send-button.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-back-header -->\n\n                        </div>\n\n                    <div text-align="center" class="text-btn-publicar">\n\n                        Publicar\n\n                    </div>\n\n                    <div text-align="center" class="btn-wrapper">\n\n\n\n                    </div>\n\n                    </span>\n\n                    </div>\n\n                </ion-col>\n\n            </ion-row>\n\n        </ion-grid>\n\n    </ion-header>\n\n\n\n    <div class="content-post">\n\n\n\n        <div class="empty-content-header" [hidden]="text">\n\n\n\n        </div>\n\n        <ion-row class="content-info-post row-user" [hidden]="text">\n\n            <ion-col col-3 class="col-user">\n\n                <div class="content-icon">\n\n                    <div class="content-icon-user">\n\n                        <div class="img-user-post">\n\n                            <img class="img-user-icon" src="http://ziromoda.com.br/ziroblog/wp-content/uploads/2016/03/Unique-Chic-Oficial.png">\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n            </ion-col>\n\n            <ion-col class="col-user">\n\n                <div class="content-data-user">\n\n\n\n                    <div class="empty-content">\n\n\n\n                    </div>\n\n\n\n                    <div class="text-nome-fantasia">\n\n                        <b>UNIQUE CHIC</b>\n\n                    </div>\n\n\n\n\n\n                    <div class="content-btn-loc">\n\n\n\n                        <button ion-button class="btn-estilo" (click)="LocationPost()" outline>\n\n                            <div text-align="center" class="btn-confir wrapper">\n\n                                <svg class="svg-ico-usertype">\n\n                                    <use [attr.xlink:href]="constants.src_svg + \'maps-and-flags.svg#Layer_1\'"></use>\n\n                                </svg> <!-- svg-ico-usertype -->\n\n                            </div>\n\n                            <div text-align="center" class="text-btn-estilo">\n\n                                LOCALIZAR\n\n                            </div>\n\n                        </button>\n\n\n\n                        <!--<div text-align="center" class="btn-estilo">-->\n\n                        <!---->\n\n                        <!--</div>-->\n\n                    </div>\n\n                </div>\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <div class="content-data-post">\n\n            <textarea class="input-text-post" #textInput placeholder="Escreva algo..." (ionBlur)="onBlur()"\n\n                          (ionFocus)="onFocus()"\n\n                      (keypress)="eventHandler($event.keyCode, $event.target)"></textarea>\n\n        </div>\n\n\n\n    </div>\n\n\n\n\n\n</ion-content>\n\n\n\n<ion-footer class="foo" [hidden]="text">\n\n    <ion-row class="row-footer">\n\n\n\n        <ion-col class="col-footer">\n\n            <div class="col-footer-post">\n\n                <div class="icon-footer">\n\n                    <svg class="svg-footer">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'shirt-hanger.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-back-header -->\n\n                </div>\n\n                <div class="text-footer-post">Produtos</div>\n\n            </div>\n\n        </ion-col>\n\n\n\n        <ion-col class="col-footer">\n\n            <div class="col-footer-post">\n\n                <div class="icon-footer">\n\n                    <svg class="svg-footer">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'picture.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-back-header -->\n\n                </div>\n\n                <div class="text-footer-post">Imagens</div>\n\n            </div>\n\n        </ion-col>\n\n\n\n    </ion-row>\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\modais\post\post.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Keyboard */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ModalController */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_keyboard__["a" /* Keyboard */]])
     ], PostPage);
     return PostPage;
 }());
@@ -252,7 +254,7 @@ var PostPage = (function () {
 
 /***/ }),
 
-/***/ 167:
+/***/ 168:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -286,6 +288,29 @@ var LocalizacaoPage = (function () {
         this.keyboard = keyboard;
         this.viewCtrl = viewCtrl;
         this.constants = __WEBPACK_IMPORTED_MODULE_2__config_Constants__["a" /* Constants */];
+        this.searchGoogle = [
+            {
+                end: 'Uniquechic',
+                desc: 'Rua Anhaia'
+            },
+            {
+                end: 'Casa',
+                desc: 'Rua Horacio Rodrigues'
+            },
+            {
+                end: 'Av. Paulista',
+                desc: 'Av. Paulista'
+            },
+            {
+                end: 'Rua Sei lá',
+                desc: 'Não sou criativo'
+            },
+            {
+                end: 'Rua To sem ideia',
+                desc: 'Continuo sem ideia'
+            },
+        ];
+        this.search = false;
         this.text = false;
         this.end = [
             {
@@ -302,9 +327,17 @@ var LocalizacaoPage = (function () {
             _this.viewCtrl.dismiss();
         });
     }
+    LocalizacaoPage.prototype.onSearchChange = function (searchValue) {
+        if (searchValue.length > 0) {
+            this.search = true;
+        }
+        else {
+            this.search = false;
+        }
+    };
     LocalizacaoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-localizacao',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\modais\localizacao\localizacao.html"*/'<ion-content>\n\n\n\n    <div class="header-background"></div> <!-- header-background -->\n\n\n\n    <ion-header class="grid-content">\n\n        <ion-grid >\n\n            <ion-row style="display: inline-flex;   ">\n\n                <ion-col col-1 class="col-icon" >\n\n                    <div class="icon-back-header"  (click)="closeMeModal()">\n\n                        <svg class="ico-back-header">\n\n                            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n                        </svg> <!-- ico-back-header -->\n\n                    </div> <!-- icon-back-header -->\n\n\n\n                </ion-col>\n\n                <ion-col col-auto class="col-header-grid">\n\n                    <div class="text-btn-publicar">LOCALIZAÇÃO</div>\n\n                </ion-col>\n\n            </ion-row>\n\n        </ion-grid>\n\n    </ion-header>\n\n\n\n    <div class="content-post">\n\n\n\n        <div class="empty-content-header">\n\n\n\n        </div>\n\n        <ion-grid class="content-info-post content-input">\n\n            <ion-row>\n\n                <ion-col col-2>\n\n                    <div text-align="center" class="btn-confir wrapper">\n\n                        <svg class="svg-ico-usertype">\n\n                            <use [attr.xlink:href]="constants.src_svg + \'search.svg#Layer_1\'"></use>\n\n                        </svg> <!-- svg-ico-usertype -->\n\n                    </div>\n\n                </ion-col>\n\n\n\n                <ion-col col-10>\n\n\n\n                    <input type="search" placeholder="Digite um outro endereço..."\n\n                               class="input-search-maps">\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n        </ion-grid>\n\n\n\n        <div class="content-location-post" [hidden]="text">\n\n            <ion-list>\n\n                <div class="lojas-cad">Suas Lojas Cadastradas</div>\n\n                <ion-item class="content-all-location-post" *ngFor="let data of end" (click)="closeMeModal()">\n\n                    <div class="second-content-all-location">\n\n                        <div text-align="center" class="btn-confir wrapper">\n\n                            <svg class="svg-ico-usertype">\n\n                                <use [attr.xlink:href]="constants.src_svg + \'maps-and-flags.svg#Layer_1\'"></use>\n\n                            </svg> <!-- svg-ico-usertype -->\n\n                        </div>\n\n                        <div class="content-info-location-post">\n\n                            <div class="title-location-post">{{data.nome}}</div>\n\n                            <div class="description-location-post">{{data.endereco}}</div>\n\n                        </div>\n\n                    </div>\n\n                </ion-item>\n\n            </ion-list>\n\n        </div>\n\n\n\n\n\n    </div>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\modais\localizacao\localizacao.html"*/,
+            selector: 'page-localizacao',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\modais\localizacao\localizacao.html"*/'<ion-content>\n\n\n\n    <div class="header-background"></div> <!-- header-background -->\n\n\n\n    <ion-header class="grid-content">\n\n        <ion-grid>\n\n            <ion-row style="display: inline-flex;   ">\n\n                <ion-col col-1 class="col-icon">\n\n                    <div class="icon-back-header" (click)="closeMeModal()">\n\n                        <svg class="ico-back-header">\n\n                            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n                        </svg> <!-- ico-back-header -->\n\n                    </div> <!-- icon-back-header -->\n\n\n\n                </ion-col>\n\n                <ion-col col-auto class="col-header-grid">\n\n                    <div class="text-btn-publicar">LOCALIZAÇÃO</div>\n\n                </ion-col>\n\n            </ion-row>\n\n        </ion-grid>\n\n    </ion-header>\n\n\n\n    <div class="content-post">\n\n\n\n        <div class="empty-content-header">\n\n\n\n        </div>\n\n        <ion-grid class="content-info-post content-input">\n\n            <ion-row>\n\n                <ion-col col-1>\n\n                    <div text-align="center" class="btn-confir wrapper">\n\n                        <svg class="svg-search-ico-usertype">\n\n                            <use [attr.xlink:href]="constants.src_svg + \'search.svg#Layer_1\'"></use>\n\n                        </svg> <!-- svg-ico-usertype -->\n\n                    </div>\n\n                </ion-col>\n\n\n\n                <ion-col col-10>\n\n\n\n                    <input type="search" placeholder="Digite um outro endereço..."\n\n                           class="input-search-maps" (input)="onSearchChange($event.target.value)">\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n        </ion-grid>\n\n\n\n        <div class="content-location-post" [hidden]="text">\n\n            <ion-list>\n\n                <div [hidden]="search">\n\n                    <div class="lojas-cad">Suas Lojas Cadastradas</div>\n\n                    <ion-item class="content-all-location-post" *ngFor="let data of end" (click)="closeMeModal()">\n\n                        <div class="second-content-all-location">\n\n                            <div text-align="center" class="btn-confir wrapper">\n\n                                <svg class="svg-ico-usertype">\n\n                                    <use [attr.xlink:href]="constants.src_svg + \'maps-and-flags.svg#Layer_1\'"></use>\n\n                                </svg> <!-- svg-ico-usertype -->\n\n                            </div>\n\n                            <div class="content-info-location-post">\n\n                                <div class="title-location-post">{{data.nome}}</div>\n\n                                <div class="description-location-post">{{data.endereco}}</div>\n\n                            </div>\n\n                        </div>\n\n                    </ion-item>\n\n                </div>\n\n                <div *ngIf="search == true">\n\n                    <ion-item class="content-all-location-post teste" *ngFor="let data of searchGoogle"\n\n                              (click)="closeMeModal()">\n\n                        <div class="second-content-all-location">\n\n                            <div class="content-info-location-post title-search-post">\n\n                                <div class="title-location-post ">{{data.end}}</div>\n\n                                <div class="description-location-post">{{data.desc}}</div>\n\n                            </div>\n\n                        </div>\n\n                    </ion-item>\n\n                </div>\n\n            </ion-list>\n\n        </div>\n\n\n\n\n\n    </div>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\modais\localizacao\localizacao.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Keyboard */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ViewController */]])
     ], LocalizacaoPage);
@@ -646,7 +679,7 @@ var ForgotPass_3Page = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__step2_step2__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__confirm_cad_confirm_cad__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__confirm_cad_confirm_cad__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_jquery__);
@@ -939,8 +972,8 @@ var ExplorePageModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SharedModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_menu_bottom_menu_bottom__ = __webpack_require__(295);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_qrgo_header_qrgo_header__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_menu_bottom_menu_bottom__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_qrgo_header_qrgo_header__ = __webpack_require__(297);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -985,7 +1018,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FeedPageModule", function() { return FeedPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feed__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feed__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_share_module__ = __webpack_require__(179);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1178,7 +1211,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GostosPageModule", function() { return GostosPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gostos__ = __webpack_require__(297);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gostos__ = __webpack_require__(298);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1265,7 +1298,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LocalizacaoPageModule", function() { return LocalizacaoPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__localizacao__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__localizacao__ = __webpack_require__(168);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1379,7 +1412,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SystemTabsPageModule", function() { return SystemTabsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__system_tabs__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__system_tabs__ = __webpack_require__(87);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1433,7 +1466,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(230);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(231);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(315);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(316);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_themes_prototype_slides_slides__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_themes_prototype_slides_slides_module__ = __webpack_require__(189);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_themes_prototype_login_login_module__ = __webpack_require__(184);
@@ -1448,10 +1481,10 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_themes_prototype_modais_post_post_module__ = __webpack_require__(188);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_themes_prototype_login_login__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_themes_prototype_system_tabs_system_tabs_module__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_themes_prototype_system_tabs_system_tabs__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_themes_prototype_system_tabs_system_tabs__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__angular_http__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__providers_categoria_categoria__ = __webpack_require__(186);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ionic_native_social_sharing__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ionic_native_social_sharing__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_themes_prototype_forgot_pass_forgot_pass_1_forgot_pass_1_module__ = __webpack_require__(181);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_themes_prototype_forgot_pass_forgot_pass_2_forgot_pass_2_module__ = __webpack_require__(182);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_themes_prototype_forgot_pass_forgot_pass_3_forgot_pass_3_module__ = __webpack_require__(183);
@@ -1512,7 +1545,15 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_17__pages_themes_prototype_modais_post_post_module__["PostPageModule"],
                 __WEBPACK_IMPORTED_MODULE_19__pages_themes_prototype_system_tabs_system_tabs_module__["SystemTabsPageModule"],
                 __WEBPACK_IMPORTED_MODULE_15__pages_themes_prototype_modais_localizacao_localizacao_module__["LocalizacaoPageModule"],
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* Qrgo_prototype */], {}, {
+                __WEBPACK_IMPORTED_MODULE_24__pages_themes_prototype_forgot_pass_forgot_pass_1_forgot_pass_1_module__["ForgotPass_1PageModule"],
+                __WEBPACK_IMPORTED_MODULE_25__pages_themes_prototype_forgot_pass_forgot_pass_2_forgot_pass_2_module__["ForgotPass_2PageModule"],
+                __WEBPACK_IMPORTED_MODULE_26__pages_themes_prototype_forgot_pass_forgot_pass_3_forgot_pass_3_module__["ForgotPass_3PageModule"],
+                __WEBPACK_IMPORTED_MODULE_21__angular_http__["b" /* HttpModule */],
+                __WEBPACK_IMPORTED_MODULE_27__ionic_storage__["a" /* IonicStorageModule */].forRoot({
+                    name: 'fashon',
+                    driverOrder: ['sqlite', 'websql', 'indexeddb']
+                }),
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* Qrgo_prototype */], { scrollAssist: false, autoFocusAssist: false }, {
                     links: [
                         { loadChildren: '../pages/themes/prototype/cadastro/confirm-cad/confirm-cad.module#ConfirmCadPageModule', name: 'ConfirmCadPage', segment: 'confirm-cad', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/cadastro/step1/step1.module#Step1PageModule', name: 'Step1Page', segment: 'step1', priority: 'low', defaultHistory: [] },
@@ -1531,14 +1572,6 @@ var AppModule = (function () {
                         { loadChildren: '../pages/themes/prototype/system-tabs/system-tabs.module#SystemTabsPageModule', name: 'SystemTabsPage', segment: 'system-tabs', priority: 'low', defaultHistory: [] }
                     ]
                 }),
-                __WEBPACK_IMPORTED_MODULE_24__pages_themes_prototype_forgot_pass_forgot_pass_1_forgot_pass_1_module__["ForgotPass_1PageModule"],
-                __WEBPACK_IMPORTED_MODULE_25__pages_themes_prototype_forgot_pass_forgot_pass_2_forgot_pass_2_module__["ForgotPass_2PageModule"],
-                __WEBPACK_IMPORTED_MODULE_26__pages_themes_prototype_forgot_pass_forgot_pass_3_forgot_pass_3_module__["ForgotPass_3PageModule"],
-                __WEBPACK_IMPORTED_MODULE_21__angular_http__["b" /* HttpModule */],
-                __WEBPACK_IMPORTED_MODULE_27__ionic_storage__["a" /* IonicStorageModule */].forRoot({
-                    name: 'fashon',
-                    driverOrder: ['sqlite', 'websql', 'indexeddb']
-                })
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicApp */]],
             entryComponents: [
@@ -1553,7 +1586,7 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_23__ionic_native_social_sharing__["a" /* SocialSharing */],
                 { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["v" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicErrorHandler */] },
                 __WEBPACK_IMPORTED_MODULE_22__providers_categoria_categoria__["a" /* CategoriaProvider */]
-            ]
+            ],
         })
     ], AppModule);
     return AppModule;
@@ -1563,14 +1596,14 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 295:
+/***/ 296:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuBottomComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_Constants__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_themes_prototype_feed_feed__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_themes_prototype_feed_feed__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_themes_prototype_explore_explore__ = __webpack_require__(50);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1639,7 +1672,7 @@ var MenuBottomComponent = (function () {
 
 /***/ }),
 
-/***/ 296:
+/***/ 297:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1680,7 +1713,7 @@ var QrgoHeaderComponent = (function () {
 
 /***/ }),
 
-/***/ 297:
+/***/ 298:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1857,7 +1890,7 @@ var GostosPage = (function () {
 
 /***/ }),
 
-/***/ 315:
+/***/ 316:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1919,12 +1952,12 @@ var Qrgo_prototype = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_Constants__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__slides_slides__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__cadastro_step1_step1__ = __webpack_require__(85);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__system_tabs_system_tabs__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__cadastro_step1_step1__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__system_tabs_system_tabs__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__forgot_pass_forgot_pass_1_forgot_pass_1__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_jquery__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__cadastro_confirm_cad_confirm_cad__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__cadastro_confirm_cad_confirm_cad__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_storage__ = __webpack_require__(90);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2156,7 +2189,7 @@ var SlidesPage = (function () {
 
 /***/ }),
 
-/***/ 84:
+/***/ 85:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2282,7 +2315,7 @@ var ConfirmCadPage = (function () {
 
 /***/ }),
 
-/***/ 85:
+/***/ 86:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2368,14 +2401,14 @@ var Step1Page = (function () {
 
 /***/ }),
 
-/***/ 86:
+/***/ 87:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SystemTabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feed_feed__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feed_feed__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__explore_explore__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_jquery__);
@@ -2466,7 +2499,7 @@ var SystemTabsPage = (function () {
 
 /***/ }),
 
-/***/ 87:
+/***/ 88:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2477,7 +2510,7 @@ var SystemTabsPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modais_post_post__ = __webpack_require__(166);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__ = __webpack_require__(169);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2632,7 +2665,7 @@ var FeedPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__step1_step1__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__step1_step1__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__step3_step3__ = __webpack_require__(173);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery__ = __webpack_require__(23);

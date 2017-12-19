@@ -1,7 +1,7 @@
 import {Component, ViewChild} from '@angular/core';
 import {IonicPage, ModalController, NavController, NavParams} from 'ionic-angular';
 import {Constants} from "../../../../../config/Constants";
-import { Keyboard } from 'ionic-angular';
+import { Keyboard } from '@ionic-native/keyboard';
 import {LocalizacaoPage} from "../localizacao/localizacao";
 
 /**
@@ -23,6 +23,7 @@ export class PostPage {
     @ViewChild('textInput') textInput;
 
     constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController, public keyboard: Keyboard) {
+
   }
 
     public onBlur = ( ()=>{

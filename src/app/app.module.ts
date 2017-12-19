@@ -29,9 +29,13 @@ import {ForgotPass_3PageModule} from "../pages/themes/prototype/forgot-pass/forg
 import {IonicStorageModule} from '@ionic/storage';
 
 @NgModule({
+
+
     declarations: [
         Qrgo_prototype
     ],
+
+
     imports: [
         BrowserModule,
         SlidesPageModule,
@@ -46,7 +50,6 @@ import {IonicStorageModule} from '@ionic/storage';
         PostPageModule,
         SystemTabsPageModule,
         LocalizacaoPageModule,
-        IonicModule.forRoot(Qrgo_prototype),
 
         ForgotPass_1PageModule,
         ForgotPass_2PageModule,
@@ -56,7 +59,8 @@ import {IonicStorageModule} from '@ionic/storage';
         IonicStorageModule.forRoot({
             name: 'fashon',
             driverOrder: ['sqlite', 'websql', 'indexeddb']
-        })
+        }),
+        IonicModule.forRoot(Qrgo_prototype, { scrollAssist: false, autoFocusAssist: false } ),
     ],
     bootstrap: [IonicApp],
     entryComponents: [
@@ -71,8 +75,12 @@ import {IonicStorageModule} from '@ionic/storage';
         SocialSharing,
         {provide: ErrorHandler, useClass: IonicErrorHandler},
         CategoriaProvider
-    ]
+    ],
+
 
 })
 export class AppModule {
+
+
 }
+

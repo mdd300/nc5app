@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {IonicPage, Keyboard, ModalController, NavController, NavParams, ViewController} from 'ionic-angular';
+import {IonicPage, Keyboard, NavController, NavParams, ViewController} from 'ionic-angular';
 import {Constants} from "../../../../../config/Constants";
 
 /**

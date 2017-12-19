@@ -8,9 +8,10 @@ webpackJsonp([0],{
 var Constants = {
     'base_url': './',
     'theme': 'prototype',
-    //'api_path': 'http://192.168.0.251/fashon/qrgo/',
-    'api_path': 'http://localhost/fashon/qrgo/',
-    //'api_path': 'http://ec2-184-72-119-250.compute-1.amazonaws.com/qrgo/',
+    'api_path': 'http://192.168.0.55/fashon/qrgo/',
+    // 'api_path': 'http://192.168.0.251/fashon/qrgo/',
+    // 'api_path': 'http://localhost/fashon/qrgo/',
+    //   'api_path': 'http://ec2-184-72-119-250.compute-1.amazonaws.com/qrgo/',
     'src_img': './assets/themes/prototype/img/',
     'src_svg': './assets/themes/prototype/img/svg/',
 };
@@ -40,49 +41,49 @@ webpackEmptyAsyncContext.id = 122;
 
 var map = {
 	"../pages/themes/prototype/cadastro/confirm-cad/confirm-cad.module": [
-		164
+		175
 	],
 	"../pages/themes/prototype/cadastro/step1/step1.module": [
-		165
-	],
-	"../pages/themes/prototype/cadastro/step2/step2.module": [
-		174
-	],
-	"../pages/themes/prototype/cadastro/step3/step3.module": [
 		177
 	],
+	"../pages/themes/prototype/cadastro/step2/step2.module": [
+		164
+	],
+	"../pages/themes/prototype/cadastro/step3/step3.module": [
+		176
+	],
 	"../pages/themes/prototype/explore/explore.module": [
-		178
-	],
-	"../pages/themes/prototype/feed/feed.module": [
-		180
-	],
-	"../pages/themes/prototype/forgot-pass/forgot-pass-1/forgot-pass-1.module": [
-		181
-	],
-	"../pages/themes/prototype/forgot-pass/forgot-pass-2/forgot-pass-2.module": [
-		182
-	],
-	"../pages/themes/prototype/forgot-pass/forgot-pass-3/forgot-pass-3.module": [
-		183
-	],
-	"../pages/themes/prototype/login/login.module": [
-		184
-	],
-	"../pages/themes/prototype/modais/gostos/gostos.module": [
-		185
-	],
-	"../pages/themes/prototype/modais/localizacao/localizacao.module": [
 		187
 	],
+	"../pages/themes/prototype/feed/feed.module": [
+		178
+	],
+	"../pages/themes/prototype/forgot-pass/forgot-pass-1/forgot-pass-1.module": [
+		180
+	],
+	"../pages/themes/prototype/forgot-pass/forgot-pass-2/forgot-pass-2.module": [
+		181
+	],
+	"../pages/themes/prototype/forgot-pass/forgot-pass-3/forgot-pass-3.module": [
+		190
+	],
+	"../pages/themes/prototype/login/login.module": [
+		182
+	],
+	"../pages/themes/prototype/modais/gostos/gostos.module": [
+		183
+	],
+	"../pages/themes/prototype/modais/localizacao/localizacao.module": [
+		185
+	],
 	"../pages/themes/prototype/modais/post/post.module": [
-		188
+		186
 	],
 	"../pages/themes/prototype/slides/slides.module": [
-		189
+		188
 	],
 	"../pages/themes/prototype/system-tabs/system-tabs.module": [
-		190
+		189
 	]
 };
 function webpackAsyncContext(req) {
@@ -106,10 +107,11 @@ module.exports = webpackAsyncContext;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConfirmCadPageModule", function() { return ConfirmCadPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Step2PageModule", function() { return Step2PageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__confirm_cad__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__step2__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_brmasker_ionic_3__ = __webpack_require__(173);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -119,23 +121,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ConfirmCadPageModule = (function () {
-    function ConfirmCadPageModule() {
+
+var Step2PageModule = (function () {
+    function Step2PageModule() {
     }
-    ConfirmCadPageModule = __decorate([
+    Step2PageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__confirm_cad__["a" /* ConfirmCadPage */],
+                __WEBPACK_IMPORTED_MODULE_2__step2__["a" /* Step2Page */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__confirm_cad__["a" /* ConfirmCadPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__step2__["a" /* Step2Page */]),
+                __WEBPACK_IMPORTED_MODULE_3_brmasker_ionic_3__["a" /* BrMaskerModule */],
             ],
         })
-    ], ConfirmCadPageModule);
-    return ConfirmCadPageModule;
+    ], Step2PageModule);
+    return Step2PageModule;
 }());
 
-//# sourceMappingURL=confirm-cad.module.js.map
+//# sourceMappingURL=step2.module.js.map
 
 /***/ }),
 
@@ -143,49 +147,12 @@ var ConfirmCadPageModule = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Step1PageModule", function() { return Step1PageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__step1__ = __webpack_require__(85);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var Step1PageModule = (function () {
-    function Step1PageModule() {
-    }
-    Step1PageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__step1__["a" /* Step1Page */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__step1__["a" /* Step1Page */]),
-            ]
-        })
-    ], Step1PageModule);
-    return Step1PageModule;
-}());
-
-//# sourceMappingURL=step1.module.js.map
-
-/***/ }),
-
-/***/ 166:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PostPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__localizacao_localizacao__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_keyboard__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__localizacao_localizacao__ = __webpack_require__(167);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -231,7 +198,7 @@ var PostPage = (function () {
         });
         // Abrir modal para realizar psot
         this.LocationPost = (function () {
-            var profileModal = _this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_3__localizacao_localizacao__["a" /* LocalizacaoPage */]);
+            var profileModal = _this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_4__localizacao_localizacao__["a" /* LocalizacaoPage */]);
             profileModal.present();
         });
     }
@@ -243,7 +210,7 @@ var PostPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'page-post',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\modais\post\post.html"*/'<ion-content>\n\n\n\n    <div class="header-background" [hidden]="text"></div> <!-- header-background -->\n\n\n\n    <ion-header [hidden]="text">\n\n        <ion-grid>\n\n            <ion-row style="display: inline-flex;   ">\n\n                <ion-col col-1 class="col-icon">\n\n                    <div class="icon-back-header">\n\n\n\n                        <svg class="ico-back-header">\n\n                            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n                        </svg> <!-- ico-back-header -->\n\n                    </div> <!-- icon-back-header -->\n\n\n\n\n\n                </ion-col>\n\n                <ion-col col-auto style="width: 46%;">\n\n                    <div class="text-btn-publicar">PUBLIQUE ALGO...</div>\n\n                </ion-col>\n\n                <ion-col col-auto style="width: 45%">\n\n                    <div class="head-icon-right">\n\n                    <span text-align="center" class="btn-publicar">\n\n                        <div class="icon-publicar-send">\n\n                    <svg class="svg-send-header">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'send-button.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-back-header -->\n\n                        </div>\n\n                    <div text-align="center" class="text-btn-publicar">\n\n                        Publicar\n\n                    </div>\n\n                    <div text-align="center" class="btn-wrapper">\n\n\n\n                    </div>\n\n                    </span>\n\n                    </div>\n\n                </ion-col>\n\n            </ion-row>\n\n        </ion-grid>\n\n    </ion-header>\n\n\n\n    <div class="content-post">\n\n\n\n        <div class="empty-content-header" [hidden]="text">\n\n\n\n        </div>\n\n        <ion-row class="content-info-post row-user" [hidden]="text">\n\n            <ion-col col-3 class="col-user">\n\n                <div class="content-icon">\n\n                    <div class="content-icon-user">\n\n                        <div class="img-user-post">\n\n                            <img class="img-user-icon" src="http://ziromoda.com.br/ziroblog/wp-content/uploads/2016/03/Unique-Chic-Oficial.png">\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n            </ion-col>\n\n            <ion-col class="col-user">\n\n                <div class="content-data-user">\n\n\n\n                    <div class="empty-content">\n\n\n\n                    </div>\n\n\n\n                    <div class="text-nome-fantasia">\n\n                        <b>UNIQUE CHIC</b>\n\n                    </div>\n\n\n\n\n\n                    <div class="content-btn-loc">\n\n\n\n                        <button ion-button class="btn-estilo" (click)="LocationPost()" outline>\n\n                            <div text-align="center" class="btn-confir wrapper">\n\n                                <svg class="svg-ico-usertype">\n\n                                    <use [attr.xlink:href]="constants.src_svg + \'maps-and-flags.svg#Layer_1\'"></use>\n\n                                </svg> <!-- svg-ico-usertype -->\n\n                            </div>\n\n                            <div text-align="center" class="text-btn-estilo">\n\n                                LOCALIZAR\n\n                            </div>\n\n                        </button>\n\n\n\n                        <!--<div text-align="center" class="btn-estilo">-->\n\n                        <!---->\n\n                        <!--</div>-->\n\n                    </div>\n\n                </div>\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <div class="content-data-post">\n\n            <textarea class="input-text-post" #textInput placeholder="Escreva algo..." (ionBlur)="onBlur()"\n\n                          (ionFocus)="onFocus()"\n\n                      (keypress)="eventHandler($event.keyCode, $event.target)"></textarea>\n\n        </div>\n\n\n\n    </div>\n\n\n\n\n\n</ion-content>\n\n\n\n<ion-footer class="foo" [hidden]="text">\n\n    <ion-row class="row-footer">\n\n\n\n        <ion-col class="col-footer">\n\n            <div class="col-footer-post">\n\n                <div class="icon-footer">\n\n                    <svg class="svg-footer">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'shirt-hanger.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-back-header -->\n\n                </div>\n\n                <div class="text-footer-post">Produtos</div>\n\n            </div>\n\n        </ion-col>\n\n\n\n        <ion-col class="col-footer">\n\n            <div class="col-footer-post">\n\n                <div class="icon-footer">\n\n                    <svg class="svg-footer">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'picture.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-back-header -->\n\n                </div>\n\n                <div class="text-footer-post">Imagens</div>\n\n            </div>\n\n        </ion-col>\n\n\n\n    </ion-row>\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\modais\post\post.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Keyboard */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ModalController */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_keyboard__["a" /* Keyboard */]])
     ], PostPage);
     return PostPage;
 }());
@@ -286,6 +253,29 @@ var LocalizacaoPage = (function () {
         this.keyboard = keyboard;
         this.viewCtrl = viewCtrl;
         this.constants = __WEBPACK_IMPORTED_MODULE_2__config_Constants__["a" /* Constants */];
+        this.searchGoogle = [
+            {
+                end: 'Uniquechic',
+                desc: 'Rua Anhaia'
+            },
+            {
+                end: 'Casa',
+                desc: 'Rua Horacio Rodrigues'
+            },
+            {
+                end: 'Av. Paulista',
+                desc: 'Av. Paulista'
+            },
+            {
+                end: 'Rua Sei lá',
+                desc: 'Não sou criativo'
+            },
+            {
+                end: 'Rua To sem ideia',
+                desc: 'Continuo sem ideia'
+            },
+        ];
+        this.search = false;
         this.text = false;
         this.end = [
             {
@@ -302,6 +292,14 @@ var LocalizacaoPage = (function () {
             _this.viewCtrl.dismiss();
         });
     }
+    LocalizacaoPage.prototype.onSearchChange = function (searchValue) {
+        if (searchValue.length > 0) {
+            this.search = true;
+        }
+        else {
+            this.search = false;
+        }
+    };
     LocalizacaoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'page-localizacao',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\modais\localizacao\localizacao.html"*/'<ion-content>\n\n\n\n    <div class="header-background"></div> <!-- header-background -->\n\n\n\n    <ion-header class="grid-content">\n\n        <ion-grid>\n\n            <ion-row style="display: inline-flex;   ">\n\n                <ion-col col-1 class="col-icon">\n\n                    <div class="icon-back-header" (click)="closeMeModal()">\n\n                        <svg class="ico-back-header">\n\n                            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n                        </svg> <!-- ico-back-header -->\n\n                    </div> <!-- icon-back-header -->\n\n\n\n                </ion-col>\n\n                <ion-col col-auto class="col-header-grid">\n\n                    <div class="text-btn-publicar">LOCALIZAÇÃO</div>\n\n                </ion-col>\n\n            </ion-row>\n\n        </ion-grid>\n\n    </ion-header>\n\n\n\n    <div class="content-post">\n\n\n\n        <div class="empty-content-header">\n\n\n\n        </div>\n\n        <ion-grid class="content-info-post content-input">\n\n            <ion-row>\n\n                <ion-col col-1>\n\n                    <div text-align="center" class="btn-confir wrapper">\n\n                        <svg class="svg-search-ico-usertype">\n\n                            <use [attr.xlink:href]="constants.src_svg + \'search.svg#Layer_1\'"></use>\n\n                        </svg> <!-- svg-ico-usertype -->\n\n                    </div>\n\n                </ion-col>\n\n\n\n                <ion-col col-10>\n\n\n\n                    <input type="search" placeholder="Digite um outro endereço..."\n\n                           class="input-search-maps" (input)="onSearchChange($event.target.value)">\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n        </ion-grid>\n\n\n\n        <div class="content-location-post" [hidden]="text">\n\n            <ion-list>\n\n                <div [hidden]="search">\n\n                    <div class="lojas-cad">Suas Lojas Cadastradas</div>\n\n                    <ion-item class="content-all-location-post" *ngFor="let data of end" (click)="closeMeModal()">\n\n                        <div class="second-content-all-location">\n\n                            <div text-align="center" class="btn-confir wrapper">\n\n                                <svg class="svg-ico-usertype">\n\n                                    <use [attr.xlink:href]="constants.src_svg + \'maps-and-flags.svg#Layer_1\'"></use>\n\n                                </svg> <!-- svg-ico-usertype -->\n\n                            </div>\n\n                            <div class="content-info-location-post">\n\n                                <div class="title-location-post">{{data.nome}}</div>\n\n                                <div class="description-location-post">{{data.endereco}}</div>\n\n                            </div>\n\n                        </div>\n\n                    </ion-item>\n\n                </div>\n\n                <div *ngIf="search == true">\n\n                    <ion-item class="content-all-location-post teste" *ngFor="let data of searchGoogle"\n\n                              (click)="closeMeModal()">\n\n                        <div class="second-content-all-location">\n\n                            <div class="content-info-location-post title-search-post">\n\n                                <div class="title-location-post ">{{data.end}}</div>\n\n                                <div class="description-location-post">{{data.desc}}</div>\n\n                            </div>\n\n                        </div>\n\n                    </ion-item>\n\n                </div>\n\n            </ion-list>\n\n        </div>\n\n\n\n\n\n    </div>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\modais\localizacao\localizacao.html"*/,
@@ -315,7 +313,7 @@ var LocalizacaoPage = (function () {
 
 /***/ }),
 
-/***/ 170:
+/***/ 169:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -324,7 +322,7 @@ var LocalizacaoPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__forgot_pass_2_forgot_pass_2__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__forgot_pass_2_forgot_pass_2__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_jquery__);
@@ -421,14 +419,14 @@ var ForgotPass_1Page = (function () {
 
 /***/ }),
 
-/***/ 171:
+/***/ 170:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ForgotPass_2Page; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__forgot_pass_3_forgot_pass_3__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__forgot_pass_3_forgot_pass_3__ = __webpack_require__(171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_Constants__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_jquery__ = __webpack_require__(23);
@@ -525,7 +523,7 @@ var ForgotPass_2Page = (function () {
 
 /***/ }),
 
-/***/ 172:
+/***/ 171:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -637,7 +635,7 @@ var ForgotPass_3Page = (function () {
 
 /***/ }),
 
-/***/ 173:
+/***/ 172:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -645,8 +643,8 @@ var ForgotPass_3Page = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__step2_step2__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__confirm_cad_confirm_cad__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__step2_step2__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__confirm_cad_confirm_cad__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_jquery__);
@@ -809,16 +807,15 @@ var Step3Page = (function () {
 
 /***/ }),
 
-/***/ 174:
+/***/ 175:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Step2PageModule", function() { return Step2PageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConfirmCadPageModule", function() { return ConfirmCadPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__step2__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_brmasker_ionic_3__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__confirm_cad__ = __webpack_require__(91);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -828,29 +825,27 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
-var Step2PageModule = (function () {
-    function Step2PageModule() {
+var ConfirmCadPageModule = (function () {
+    function ConfirmCadPageModule() {
     }
-    Step2PageModule = __decorate([
+    ConfirmCadPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__step2__["a" /* Step2Page */],
+                __WEBPACK_IMPORTED_MODULE_2__confirm_cad__["a" /* ConfirmCadPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__step2__["a" /* Step2Page */]),
-                __WEBPACK_IMPORTED_MODULE_3_brmasker_ionic_3__["a" /* BrMaskerModule */],
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__confirm_cad__["a" /* ConfirmCadPage */]),
             ],
         })
-    ], Step2PageModule);
-    return Step2PageModule;
+    ], ConfirmCadPageModule);
+    return ConfirmCadPageModule;
 }());
 
-//# sourceMappingURL=step2.module.js.map
+//# sourceMappingURL=confirm-cad.module.js.map
 
 /***/ }),
 
-/***/ 177:
+/***/ 176:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -858,8 +853,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Step3PageModule", function() { return Step3PageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__step3__ = __webpack_require__(173);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_brmasker_ionic_3__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__step3__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_brmasker_ionic_3__ = __webpack_require__(173);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -891,15 +886,53 @@ var Step3PageModule = (function () {
 
 /***/ }),
 
+/***/ 177:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Step1PageModule", function() { return Step1PageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__step1__ = __webpack_require__(86);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var Step1PageModule = (function () {
+    function Step1PageModule() {
+    }
+    Step1PageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__step1__["a" /* Step1Page */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__step1__["a" /* Step1Page */]),
+            ]
+        })
+    ], Step1PageModule);
+    return Step1PageModule;
+}());
+
+//# sourceMappingURL=step1.module.js.map
+
+/***/ }),
+
 /***/ 178:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExplorePageModule", function() { return ExplorePageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FeedPageModule", function() { return FeedPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__explore__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feed__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_share_module__ = __webpack_require__(179);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -911,24 +944,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ExplorePageModule = (function () {
-    function ExplorePageModule() {
+var FeedPageModule = (function () {
+    function FeedPageModule() {
     }
-    ExplorePageModule = __decorate([
+    FeedPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__explore__["a" /* ExplorePage */]
+                __WEBPACK_IMPORTED_MODULE_2__feed__["a" /* FeedPage */]
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__explore__["a" /* ExplorePage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__feed__["a" /* FeedPage */]),
                 __WEBPACK_IMPORTED_MODULE_3__config_share_module__["a" /* SharedModule */]
             ]
         })
-    ], ExplorePageModule);
-    return ExplorePageModule;
+    ], FeedPageModule);
+    return FeedPageModule;
 }());
 
-//# sourceMappingURL=explore.module.js.map
+//# sourceMappingURL=feed.module.js.map
 
 /***/ }),
 
@@ -939,8 +972,8 @@ var ExplorePageModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SharedModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_menu_bottom_menu_bottom__ = __webpack_require__(295);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_qrgo_header_qrgo_header__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_menu_bottom_menu_bottom__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_qrgo_header_qrgo_header__ = __webpack_require__(297);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -982,51 +1015,10 @@ var SharedModule = (function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FeedPageModule", function() { return FeedPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feed__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_share_module__ = __webpack_require__(179);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var FeedPageModule = (function () {
-    function FeedPageModule() {
-    }
-    FeedPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__feed__["a" /* FeedPage */]
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__feed__["a" /* FeedPage */]),
-                __WEBPACK_IMPORTED_MODULE_3__config_share_module__["a" /* SharedModule */]
-            ]
-        })
-    ], FeedPageModule);
-    return FeedPageModule;
-}());
-
-//# sourceMappingURL=feed.module.js.map
-
-/***/ }),
-
-/***/ 181:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForgotPass_1PageModule", function() { return ForgotPass_1PageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__forgot_pass_1__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__forgot_pass_1__ = __webpack_require__(169);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1056,7 +1048,7 @@ var ForgotPass_1PageModule = (function () {
 
 /***/ }),
 
-/***/ 182:
+/***/ 181:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1064,7 +1056,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForgotPass_2PageModule", function() { return ForgotPass_2PageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__forgot_pass_2__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__forgot_pass_2__ = __webpack_require__(170);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1094,45 +1086,7 @@ var ForgotPass_2PageModule = (function () {
 
 /***/ }),
 
-/***/ 183:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForgotPass_3PageModule", function() { return ForgotPass_3PageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__forgot_pass_3__ = __webpack_require__(172);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var ForgotPass_3PageModule = (function () {
-    function ForgotPass_3PageModule() {
-    }
-    ForgotPass_3PageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__forgot_pass_3__["a" /* ForgotPass_3Page */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__forgot_pass_3__["a" /* ForgotPass_3Page */]),
-            ],
-        })
-    ], ForgotPass_3PageModule);
-    return ForgotPass_3PageModule;
-}());
-
-//# sourceMappingURL=forgot-pass-3.module.js.map
-
-/***/ }),
-
-/***/ 184:
+/***/ 182:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1170,7 +1124,7 @@ var LoginPageModule = (function () {
 
 /***/ }),
 
-/***/ 185:
+/***/ 183:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1178,7 +1132,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GostosPageModule", function() { return GostosPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gostos__ = __webpack_require__(297);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gostos__ = __webpack_require__(298);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1208,7 +1162,7 @@ var GostosPageModule = (function () {
 
 /***/ }),
 
-/***/ 186:
+/***/ 184:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1257,7 +1211,7 @@ var CategoriaProvider = (function () {
 
 /***/ }),
 
-/***/ 187:
+/***/ 185:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1295,7 +1249,7 @@ var LocalizacaoPageModule = (function () {
 
 /***/ }),
 
-/***/ 188:
+/***/ 186:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1303,7 +1257,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostPageModule", function() { return PostPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__post__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__post__ = __webpack_require__(165);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1333,7 +1287,48 @@ var PostPageModule = (function () {
 
 /***/ }),
 
-/***/ 189:
+/***/ 187:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExplorePageModule", function() { return ExplorePageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__explore__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_share_module__ = __webpack_require__(179);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var ExplorePageModule = (function () {
+    function ExplorePageModule() {
+    }
+    ExplorePageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__explore__["a" /* ExplorePage */]
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__explore__["a" /* ExplorePage */]),
+                __WEBPACK_IMPORTED_MODULE_3__config_share_module__["a" /* SharedModule */]
+            ]
+        })
+    ], ExplorePageModule);
+    return ExplorePageModule;
+}());
+
+//# sourceMappingURL=explore.module.js.map
+
+/***/ }),
+
+/***/ 188:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1341,7 +1336,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SlidesPageModule", function() { return SlidesPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__slides__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__slides__ = __webpack_require__(50);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1371,7 +1366,7 @@ var SlidesPageModule = (function () {
 
 /***/ }),
 
-/***/ 190:
+/***/ 189:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1379,7 +1374,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SystemTabsPageModule", function() { return SystemTabsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__system_tabs__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__system_tabs__ = __webpack_require__(87);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1409,6 +1404,44 @@ var SystemTabsPageModule = (function () {
 
 /***/ }),
 
+/***/ 190:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForgotPass_3PageModule", function() { return ForgotPass_3PageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__forgot_pass_3__ = __webpack_require__(171);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var ForgotPass_3PageModule = (function () {
+    function ForgotPass_3PageModule() {
+    }
+    ForgotPass_3PageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__forgot_pass_3__["a" /* ForgotPass_3Page */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__forgot_pass_3__["a" /* ForgotPass_3Page */]),
+            ],
+        })
+    ], ForgotPass_3PageModule);
+    return ForgotPass_3PageModule;
+}());
+
+//# sourceMappingURL=forgot-pass-3.module.js.map
+
+/***/ }),
+
 /***/ 232:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1433,28 +1466,28 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(230);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(231);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(315);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_themes_prototype_slides_slides__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_themes_prototype_slides_slides_module__ = __webpack_require__(189);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_themes_prototype_login_login_module__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_themes_prototype_cadastro_step1_step1_module__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_themes_prototype_cadastro_step2_step2_module__ = __webpack_require__(174);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_themes_prototype_cadastro_step3_step3_module__ = __webpack_require__(177);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_themes_prototype_cadastro_confirm_cad_confirm_cad_module__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_themes_prototype_explore_explore_module__ = __webpack_require__(178);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_themes_prototype_modais_gostos_gostos_module__ = __webpack_require__(185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_themes_prototype_modais_localizacao_localizacao_module__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_themes_prototype_feed_feed_module__ = __webpack_require__(180);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_themes_prototype_modais_post_post_module__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(316);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_themes_prototype_slides_slides__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_themes_prototype_slides_slides_module__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_themes_prototype_login_login_module__ = __webpack_require__(182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_themes_prototype_cadastro_step1_step1_module__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_themes_prototype_cadastro_step2_step2_module__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_themes_prototype_cadastro_step3_step3_module__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_themes_prototype_cadastro_confirm_cad_confirm_cad_module__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_themes_prototype_explore_explore_module__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_themes_prototype_modais_gostos_gostos_module__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_themes_prototype_modais_localizacao_localizacao_module__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_themes_prototype_feed_feed_module__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_themes_prototype_modais_post_post_module__ = __webpack_require__(186);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_themes_prototype_login_login__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_themes_prototype_system_tabs_system_tabs_module__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_themes_prototype_system_tabs_system_tabs__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_themes_prototype_system_tabs_system_tabs_module__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_themes_prototype_system_tabs_system_tabs__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__angular_http__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__providers_categoria_categoria__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__providers_categoria_categoria__ = __webpack_require__(184);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ionic_native_social_sharing__ = __webpack_require__(168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_themes_prototype_forgot_pass_forgot_pass_1_forgot_pass_1_module__ = __webpack_require__(181);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_themes_prototype_forgot_pass_forgot_pass_2_forgot_pass_2_module__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_themes_prototype_forgot_pass_forgot_pass_3_forgot_pass_3_module__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_themes_prototype_forgot_pass_forgot_pass_1_forgot_pass_1_module__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_themes_prototype_forgot_pass_forgot_pass_2_forgot_pass_2_module__ = __webpack_require__(181);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_themes_prototype_forgot_pass_forgot_pass_3_forgot_pass_3_module__ = __webpack_require__(190);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__ionic_storage__ = __webpack_require__(90);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1512,25 +1545,6 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_17__pages_themes_prototype_modais_post_post_module__["PostPageModule"],
                 __WEBPACK_IMPORTED_MODULE_19__pages_themes_prototype_system_tabs_system_tabs_module__["SystemTabsPageModule"],
                 __WEBPACK_IMPORTED_MODULE_15__pages_themes_prototype_modais_localizacao_localizacao_module__["LocalizacaoPageModule"],
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* Qrgo_prototype */], {}, {
-                    links: [
-                        { loadChildren: '../pages/themes/prototype/cadastro/confirm-cad/confirm-cad.module#ConfirmCadPageModule', name: 'ConfirmCadPage', segment: 'confirm-cad', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/cadastro/step1/step1.module#Step1PageModule', name: 'Step1Page', segment: 'step1', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/cadastro/step2/step2.module#Step2PageModule', name: 'Step2Page', segment: 'step2', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/cadastro/step3/step3.module#Step3PageModule', name: 'Step3Page', segment: 'step3', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/explore/explore.module#ExplorePageModule', name: 'ExplorePage', segment: 'explore', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/feed/feed.module#FeedPageModule', name: 'FeedPage', segment: 'feed', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/forgot-pass/forgot-pass-1/forgot-pass-1.module#ForgotPass_1PageModule', name: 'ForgotPass_1Page', segment: 'forgot-pass-1', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/forgot-pass/forgot-pass-2/forgot-pass-2.module#ForgotPass_2PageModule', name: 'ForgotPass_2Page', segment: 'forgot-pass-2', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/forgot-pass/forgot-pass-3/forgot-pass-3.module#ForgotPass_3PageModule', name: 'ForgotPass_3Page', segment: 'forgot-pass-3', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/modais/gostos/gostos.module#GostosPageModule', name: 'GostosPage', segment: 'gostos', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/modais/localizacao/localizacao.module#LocalizacaoPageModule', name: 'LocalizacaoPage', segment: 'localizacao', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/modais/post/post.module#PostPageModule', name: 'PostPage', segment: 'post', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/slides/slides.module#SlidesPageModule', name: 'SlidesPage', segment: 'slides', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/system-tabs/system-tabs.module#SystemTabsPageModule', name: 'SystemTabsPage', segment: 'system-tabs', priority: 'low', defaultHistory: [] }
-                    ]
-                }),
                 __WEBPACK_IMPORTED_MODULE_24__pages_themes_prototype_forgot_pass_forgot_pass_1_forgot_pass_1_module__["ForgotPass_1PageModule"],
                 __WEBPACK_IMPORTED_MODULE_25__pages_themes_prototype_forgot_pass_forgot_pass_2_forgot_pass_2_module__["ForgotPass_2PageModule"],
                 __WEBPACK_IMPORTED_MODULE_26__pages_themes_prototype_forgot_pass_forgot_pass_3_forgot_pass_3_module__["ForgotPass_3PageModule"],
@@ -1538,7 +1552,26 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_27__ionic_storage__["a" /* IonicStorageModule */].forRoot({
                     name: 'fashon',
                     driverOrder: ['sqlite', 'websql', 'indexeddb']
-                })
+                }),
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* Qrgo_prototype */], { scrollAssist: false, autoFocusAssist: false }, {
+                    links: [
+                        { loadChildren: '../pages/themes/prototype/cadastro/step2/step2.module#Step2PageModule', name: 'Step2Page', segment: 'step2', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/cadastro/confirm-cad/confirm-cad.module#ConfirmCadPageModule', name: 'ConfirmCadPage', segment: 'confirm-cad', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/cadastro/step3/step3.module#Step3PageModule', name: 'Step3Page', segment: 'step3', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/cadastro/step1/step1.module#Step1PageModule', name: 'Step1Page', segment: 'step1', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/feed/feed.module#FeedPageModule', name: 'FeedPage', segment: 'feed', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/forgot-pass/forgot-pass-1/forgot-pass-1.module#ForgotPass_1PageModule', name: 'ForgotPass_1Page', segment: 'forgot-pass-1', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/forgot-pass/forgot-pass-2/forgot-pass-2.module#ForgotPass_2PageModule', name: 'ForgotPass_2Page', segment: 'forgot-pass-2', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/modais/gostos/gostos.module#GostosPageModule', name: 'GostosPage', segment: 'gostos', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/modais/localizacao/localizacao.module#LocalizacaoPageModule', name: 'LocalizacaoPage', segment: 'localizacao', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/modais/post/post.module#PostPageModule', name: 'PostPage', segment: 'post', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/explore/explore.module#ExplorePageModule', name: 'ExplorePage', segment: 'explore', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/slides/slides.module#SlidesPageModule', name: 'SlidesPage', segment: 'slides', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/system-tabs/system-tabs.module#SystemTabsPageModule', name: 'SystemTabsPage', segment: 'system-tabs', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/forgot-pass/forgot-pass-3/forgot-pass-3.module#ForgotPass_3PageModule', name: 'ForgotPass_3Page', segment: 'forgot-pass-3', priority: 'low', defaultHistory: [] }
+                    ]
+                }),
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicApp */]],
             entryComponents: [
@@ -1553,7 +1586,7 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_23__ionic_native_social_sharing__["a" /* SocialSharing */],
                 { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["v" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicErrorHandler */] },
                 __WEBPACK_IMPORTED_MODULE_22__providers_categoria_categoria__["a" /* CategoriaProvider */]
-            ]
+            ],
         })
     ], AppModule);
     return AppModule;
@@ -1563,16 +1596,16 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 295:
+/***/ 296:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuBottomComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_Constants__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_themes_prototype_feed_feed__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_themes_prototype_feed_feed__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_themes_prototype_explore_explore__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_themes_prototype_explore_explore__ = __webpack_require__(52);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1639,7 +1672,7 @@ var MenuBottomComponent = (function () {
 
 /***/ }),
 
-/***/ 296:
+/***/ 297:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1680,7 +1713,7 @@ var QrgoHeaderComponent = (function () {
 
 /***/ }),
 
-/***/ 297:
+/***/ 298:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1688,7 +1721,7 @@ var QrgoHeaderComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_categoria_categoria__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_categoria_categoria__ = __webpack_require__(184);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1857,7 +1890,7 @@ var GostosPage = (function () {
 
 /***/ }),
 
-/***/ 315:
+/***/ 316:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1866,7 +1899,7 @@ var GostosPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(231);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(230);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_themes_prototype_slides_slides__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_themes_prototype_slides_slides__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_themes_prototype_login_login__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1918,13 +1951,13 @@ var Qrgo_prototype = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_Constants__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__slides_slides__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__cadastro_step1_step1__ = __webpack_require__(85);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__system_tabs_system_tabs__ = __webpack_require__(86);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__forgot_pass_forgot_pass_1_forgot_pass_1__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__slides_slides__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__cadastro_step1_step1__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__system_tabs_system_tabs__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__forgot_pass_forgot_pass_1_forgot_pass_1__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_jquery__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__cadastro_confirm_cad_confirm_cad__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__cadastro_confirm_cad_confirm_cad__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_storage__ = __webpack_require__(90);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2023,10 +2056,13 @@ var LoginPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'page-login',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\login\login.html"*/'<div class="login-page">\n\n\n\n    <div class="backpage-login" (click)="goBackSlides()" >\n\n        <svg class="backpage-ico">\n\n            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n        </svg> <!-- backpage-ico -->\n\n    </div> <!-- backpage-login -->\n\n\n\n    <div class="content-login-form">\n\n\n\n        <h3 class="welcome-title">Bem Vindo</h3>\n\n\n\n        <div class="image-logo-qrgo">\n\n            <img class="svg-logo" [src]="constants.src_svg + \'qrgo-logo.svg\'"/>\n\n        </div> <!-- image-logo-qrgo -->\n\n\n\n        <div class="content-form-login">\n\n            <div class="form-cont pdg-b20">\n\n                <input type="text" class="form-ctrl" placeholder="Username / E-mail" [(ngModel)]="logindata.user_login">\n\n            </div> <!-- form-cont -->\n\n            <div class="form-cont">\n\n                <input type="password" class="form-ctrl" placeholder="Senha" [(ngModel)]="logindata.user_pass">\n\n            </div> <!-- form-cont -->\n\n\n\n            <p class="forgot-pass"> {{ login.text }} </p>\n\n            <p class="forgot-pass" (click)="recoverPass()"> Esqueci minha senha </p>\n\n\n\n            <div class="form-cont">\n\n                <button [disabled]="!logindata.user_login || !logindata.user_pass" class="login-btn" (click)="doLogin()" > Entrar</button>\n\n            </div> <!-- form-cont -->\n\n\n\n            <span class="line-divider"></span> <!-- line-divider -->\n\n\n\n            <div class="content-singup">\n\n                <p class="ask-singup" > Não possui cadastro? </p> <!-- ask-singup -->\n\n                <p class="button-singup" (click)="goToCadastro()" > Cadastre-se </p> <!-- ask-singup -->\n\n            </div> <!-- content-singup -->\n\n\n\n        </div> <!-- content-form-login -->\n\n\n\n\n\n        <div class="explore-contents" >\n\n            <span class="explore-label"> Explorar </span>\n\n            <span class="explore-stick"></span>\n\n        </div> <!-- explore-contents -->\n\n\n\n    </div> <!-- content-login-form -->\n\n\n\n\n\n</div> <!-- login-page -->'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\login\login.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["m" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["m" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["o" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["o" /* ToastController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_10__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_10__ionic_storage__["b" /* Storage */]) === "function" && _e || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["o" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */],
+            __WEBPACK_IMPORTED_MODULE_10__ionic_storage__["b" /* Storage */]])
     ], LoginPage);
     return LoginPage;
-    var _a, _b, _c, _d, _e;
 }());
 
 //# sourceMappingURL=login.js.map
@@ -2034,52 +2070,6 @@ var LoginPage = (function () {
 /***/ }),
 
 /***/ 50:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ExplorePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(12);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the ExplorePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var ExplorePage = (function () {
-    function ExplorePage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.constants = __WEBPACK_IMPORTED_MODULE_2__config_Constants__["a" /* Constants */];
-    }
-    ExplorePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-explore',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\explore\explore.html"*/'<ion-content>\n\n    <div class="background-explore" [ngStyle]="{\'background-image\': \'url(\' + constants.src_img + \'backgrounds/explore-background.png)\'}"></div> <!-- background-explore -->\n\n\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col col-auto class="pointer">\n\n\n\n                <div class="explore-back" >\n\n                    <svg class="ico-explore-back">\n\n                       <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-explore-back -->\n\n                </div> <!-- explore-back -->\n\n\n\n            </ion-col>\n\n            <ion-col class="relative">\n\n\n\n                <input type="search" class="explore-search" placeholder="Buscar">\n\n                <ion-icon name="md-close-circle" class="explore-search-close" ></ion-icon>\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n\n\n    <ion-grid class="grid-estilos">\n\n        <ion-row>\n\n            <ion-col>\n\n\n\n                <span class="grid-title">\n\n                    Seus Estilos\n\n                </span> <!-- grid-title -->\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n            <ion-col col-auto>\n\n                <button class="style-plus-button"> + </button>\n\n            </ion-col>\n\n            <ion-col class="relative">\n\n                <div class="viewbox-styles" >\n\n                    <ul class="list-styles">\n\n                        <li class="style-item pink">Femininos</li>\n\n                        <li class="style-item purple">Jaquetas</li>\n\n                        <li class="style-item brown">Saias</li>\n\n                    </ul><!-- list-styles -->\n\n                </div> <!-- viewbox-styles -->\n\n            </ion-col>\n\n            <ion-col col-auto>\n\n                \n\n                <div class="filter-styles" >\n\n                    <svg class="ico-filter-styles">\n\n                       <use [attr.xlink:href]="constants.src_svg + \'settings.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-filter-styles -->\n\n                </div> <!-- filter-styles -->\n\n                \n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid><!-- grid-estilos -->\n\n\n\n    <ion-grid class="grid-destaques">\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n                <span class="grid-title">\n\n                    Destaques\n\n                </span> <!-- grid-title -->\n\n            </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n            <ion-col>\n\n                <div class="viewport-destaques" >\n\n                    <ul class="viewport-list">\n\n                        <li class="destaque-item">\n\n                            <div class="destaque-header" >\n\n\n\n                                <div class="destaque-header-img">\n\n                                    <div class="img-destaque" ></div> <!-- img-destaque -->\n\n                                </div> <!-- destaque-header-img -->\n\n\n\n                                <div class="destaque-header-infos">\n\n                                    <div class="destaque-infos-cont" >\n\n                                        \n\n                                        <div class="destaque-info" >\n\n                                            <span class="destaque-info-label title" >\n\n                                                Unieke\n\n                                            </span> <!-- destaque-info-label -->\n\n                                        </div> <!-- destaque-info -->\n\n                                        <div class="destaque-info" >\n\n                                            <span class="destaque-info-label description" >\n\n                                                Confecção\n\n                                            </span> <!-- destaque-info-label -->\n\n                                        </div> <!-- destaque-info -->\n\n\n\n                                    </div> <!-- destaque-infos-cont -->\n\n                                </div> <!-- destaque-header-img -->\n\n\n\n                                <div class="destaque-header-actions">\n\n                                    <button ion-button class="destaque-header-action"> Conectar </button>\n\n                                </div> <!-- destaque-header-img -->\n\n\n\n                            </div> <!-- destaque-header -->\n\n\n\n                            <div class="destaque-body" ></div> <!-- destaque-body -->\n\n\n\n                            <div class="destaque-footer" >\n\n                                <ul class="destaque-footer-list">\n\n                                    <li class="destaque-footer-item"></li><!-- destaque-footer-item -->\n\n                                    <li class="destaque-footer-item"></li><!-- destaque-footer-item -->\n\n                                    <li class="destaque-footer-item"></li><!-- destaque-footer-item -->\n\n                                </ul><!-- destaque-footer-list -->\n\n                            </div> <!-- destaque-footer -->\n\n\n\n                        </li><!-- destaque-item -->\n\n                    </ul> <!-- viewport-list -->\n\n                </div> <!-- viewport-destaques -->\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n    </ion-grid><!-- grid-destaques -->\n\n\n\n</ion-content>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\explore\explore.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */]])
-    ], ExplorePage);
-    return ExplorePage;
-}());
-
-//# sourceMappingURL=explore.js.map
-
-/***/ }),
-
-/***/ 51:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2126,28 +2116,24 @@ var SlidesPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'page-slides',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\slides\slides.html"*/'<ion-slides pager>\n\n\n\n  <ion-slide class="slider-content" >\n\n    \n\n    <div class="image-content" >\n\n      <img class="img-slide" [attr.src]="constants.src_img + \'slides/01.png\'" alt="">\n\n    </div> <!-- image-content -->\n\n\n\n    <h1 class="slider-title">A confecção na palma da sua mão</h1>\n\n    <p class="slide-description">\n\n      Uma rede que oferece o <strong>controle</strong> e <strong>divulgação</strong> dos seus produtos em tempo real!\n\n    </p><!-- slide-description -->\n\n\n\n    <button class="skip-slider" (click)="startLogin()"> Pular </button>\n\n\n\n  </ion-slide> <!-- End of slider 1 -->\n\n\n\n  <ion-slide class="slider-content" >\n\n\n\n    <div class="image-content" >\n\n      <img class="img-slide" [attr.src]="constants.src_img + \'slides/02.png\'" alt="">\n\n    </div> <!-- image-content -->\n\n\n\n    <h1 class="slider-title">Procura & Demanda</h1>\n\n    <p class="slide-description">\n\n      Milhares de lojistas e confecções procurando fazer novos contatos!\n\n    </p><!-- slide-description -->\n\n\n\n    <button class="skip-slider" (click)="startLogin()"> Pular </button>\n\n\n\n  </ion-slide> <!-- End of slider 2 -->\n\n\n\n  <ion-slide class="slider-content" >\n\n\n\n    <div class="image-content" >\n\n      <img class="img-slide" [attr.src]="constants.src_img + \'slides/03.png\'" alt="">\n\n    </div> <!-- image-content -->\n\n\n\n    <h1 class="slider-title">Sempre Informado</h1>\n\n    <p class="slide-description">\n\n      Acompanhe em primeira mão em uma unica plataforma as <strong>novidades, publicações</strong> e <strong>promoções</strong> dos seus contatos!\n\n    </p><!-- slide-description -->\n\n\n\n    <button class="skip-slider" (click)="startLogin()"> Pular </button>\n\n\n\n  </ion-slide> <!-- End of slider 3 -->\n\n\n\n  <ion-slide class="slider-content" >\n\n\n\n    <div class="image-content" >\n\n      <img class="img-slide" [attr.src]="constants.src_img + \'slides/04.png\'" alt="">\n\n    </div> <!-- image-content -->\n\n\n\n    <h1 class="slider-title">Seja Independente</h1>\n\n    <p class="slide-description">\n\n      Sinta a liberdade de poder <strong>comprar</strong> e <strong>reservar peças</strong> sem estar a mercê do tempo de um vendedor.\n\n    </p><!-- slide-description -->\n\n\n\n    <button class="start-button" (click)="startLogin()">Começar!</button>\n\n\n\n    <button class="skip-slider" (click)="startLogin()"> Pular </button>\n\n\n\n  </ion-slide> <!-- End of slider 4 -->\n\n\n\n</ion-slides>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\slides\slides.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */]])
     ], SlidesPage);
     return SlidesPage;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=slides.js.map
 
 /***/ }),
 
-/***/ 84:
+/***/ 52:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfirmCadPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ExplorePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_Constants__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__explore_explore__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2160,105 +2146,46 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-
-
 /**
- * Generated class for the ConfirmCadPage page.
+ * Generated class for the ExplorePage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var ConfirmCadPage = (function () {
-    function ConfirmCadPage(navCtrl, navParams, http, alertCtrl) {
-        var _this = this;
+var ExplorePage = (function () {
+    function ExplorePage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.http = http;
-        this.alertCtrl = alertCtrl;
-        this.seisdigitos = false;
-        this.constants = __WEBPACK_IMPORTED_MODULE_4__config_Constants__["a" /* Constants */];
-        /**
-         * Função utilizada para pular a confirmação do cadastro
-         */
-        this.skipCad = (function () {
-            /* Pula a confirmação do cadastro */
-            var alert = _this.alertCtrl.create({
-                title: 'Atenção!',
-                subTitle: 'Autenticação pendente. Valide seu email para ter acesso a todo nosso app.',
-                enableBackdropDismiss: false,
-                buttons: [
-                    {
-                        text: 'Ok',
-                        handler: function () {
-                            _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_5__explore_explore__["a" /* ExplorePage */]);
-                        }
-                    }
-                ]
-            });
-            alert.present();
-        });
-        //função verifica o codiga com a existencia de 6 digitos 
-        this.autenticaCod = (function (code) {
-            //desabilita o input 
-            //this.seisdigitos=true;
-            //realiza o ajax enviando como parametro o código de entrada "data"
-            _this.http.post(_this.constants.api_path + 'cadastro/autenticacao', __WEBPACK_IMPORTED_MODULE_3_jquery__["param"]({ codigo: code })).subscribe(function (data) {
-                var response = data;
-                var objeto_retorno = JSON.parse(response._body);
-                //console.log(response._body);
-                //retorna o código
-                if (objeto_retorno === true) {
-                    //modal de confirmação para o usuario
-                    var alert_1 = _this.alertCtrl.create({
-                        title: 'Parabéns',
-                        subTitle: 'Parabéns, você realizou o cadastro em nosso sistema. Você será logado automáticamente.',
-                        enableBackdropDismiss: false,
-                        buttons: [
-                            {
-                                text: 'Ok',
-                                handler: function () {
-                                    _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_5__explore_explore__["a" /* ExplorePage */]);
-                                }
-                            }
-                        ]
-                    });
-                    alert_1.present();
-                }
-                else {
-                    //modal de código invalido
-                    var alert_2 = _this.alertCtrl.create({
-                        title: 'Autenticação',
-                        subTitle: 'Código incorreto',
-                        buttons: ['Ok']
-                    });
-                    alert_2.present();
-                }
-            }, function (error) {
-                //modal de erro na autenticação
-                var alert = _this.alertCtrl.create({
-                    title: 'Autenticação',
-                    subTitle: 'Erro na autenticação',
-                    buttons: ['Ok']
-                });
-                alert.present();
-                console.log(error);
-            });
-        });
+        this.constants = __WEBPACK_IMPORTED_MODULE_2__config_Constants__["a" /* Constants */];
+        this.destaques = [
+            {
+                company_name: 'Unique',
+                company_type: 'Confecção',
+                company_logo: ''
+            },
+            {
+                company_name: 'Unieke',
+                company_type: 'Confecção',
+                company_logo: ''
+            },
+            {
+                company_name: 'Gucci',
+                company_type: 'Confecção',
+                company_logo: ''
+            }
+        ];
     }
-    ConfirmCadPage = __decorate([
+    ExplorePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-confirm-cad',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\confirm-cad\confirm-cad.html"*/'<ion-content>\n\n\n\n  <div class="content-center" >\n\n\n\n    <ion-grid class="grid-confirm-cad">\n\n      <ion-row>\n\n        <ion-col>\n\n\n\n          <h3 class="page-title">Confirme sua conta</h3>\n\n\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row>\n\n        <ion-col>\n\n\n\n          <p class="page-description">Confira seu e-mail ou mensagem sms para confirmar sua conta para seguir usar o aplicativo da melhor forma possível!</p>\n\n\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n      <ion-row>\n\n        <ion-col>\n\n\n\n          <div class="cont-confirmcode" >\n\n            <div class="cad-form-content">\n\n              <label class="cad-form-label">\n\n                <input type="text" class="cad-form-ctrl text-center" placeholder="Codigo" maxlength="6" [(ngModel)]="codeautentic" [disabled]="seisdigitos">\n\n              </label><!-- cad-form-label -->\n\n            </div> <!-- cad-form-content -->\n\n          </div> <!-- cont-confirmcode -->\n\n\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n      <ion-row>\n\n        <ion-col>\n\n          <span class="resend-code"> Re-enviar código </span>\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n      <ion-row>\n\n        <ion-col>\n\n          <button ion-button class="pink-button align-center" (click)="autenticaCod ( codeautentic )"> Confirmar </button>\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n    </ion-grid><!-- grid-confirm-cad -->\n\n\n\n  </div> <!-- content-center -->\n\n\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <div class="footer-steps">\n\n\n\n    <div class="next-step-action allowed" (click)="skipCad()">\n\n            <span class="next-step-label">\n\n                Pular\n\n            </span> <!-- next-stap-label -->\n\n      <div class="nextstep-icon">\n\n        <span class="caret-body"></span>\n\n        <span class="caret-direction"></span>\n\n      </div> <!-- nextstep-icon -->\n\n    </div> <!-- next-stap-action -->\n\n\n\n  </div> <!-- footer-steps -->\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\confirm-cad\confirm-cad.html"*/,
+            selector: 'page-explore',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\explore\explore.html"*/'<ion-content>\n\n    <div class="background-explore" [ngStyle]="{\'background-image\': \'url(\' + constants.src_img + \'backgrounds/explore-background.png)\'}"></div> <!-- background-explore -->\n\n\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col col-auto class="pointer">\n\n\n\n                <div class="explore-back" >\n\n                    <svg class="ico-explore-back">\n\n                       <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-explore-back -->\n\n                </div> <!-- explore-back -->\n\n\n\n            </ion-col>\n\n            <ion-col class="relative">\n\n\n\n                <input type="search" class="explore-search" placeholder="Buscar">\n\n                <ion-icon name="md-close-circle" class="explore-search-close" ></ion-icon>\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n\n\n    <ion-grid class="grid-estilos">\n\n        <ion-row>\n\n            <ion-col>\n\n\n\n                <span class="grid-title">\n\n                    Seus Estilos\n\n                </span> <!-- grid-title -->\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n            <ion-col col-auto>\n\n                <button class="style-plus-button"> + </button>\n\n            </ion-col>\n\n            <ion-col class="relative">\n\n                <div class="viewbox-styles" >\n\n                    <ul class="list-styles">\n\n                        <li class="style-item pink">Femininos</li>\n\n                        <li class="style-item purple">Jaquetas</li>\n\n                        <li class="style-item brown">Saias</li>\n\n                    </ul><!-- list-styles -->\n\n                </div> <!-- viewbox-styles -->\n\n            </ion-col>\n\n            <ion-col col-auto>\n\n                \n\n                <div class="filter-styles" >\n\n                    <svg class="ico-filter-styles">\n\n                       <use [attr.xlink:href]="constants.src_svg + \'settings.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-filter-styles -->\n\n                </div> <!-- filter-styles -->\n\n                \n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid><!-- grid-estilos -->\n\n\n\n    <ion-grid class="grid-destaques">\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n                <span class="grid-title">\n\n                    Destaques\n\n                </span> <!-- grid-title -->\n\n            </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n            <ion-col>\n\n                <div class="viewport-destaques" >\n\n                    <ul class="viewport-list">\n\n                        <li class="destaque-item">\n\n                            <div class="destaque-header" >\n\n\n\n                                <div class="destaque-header-img">\n\n                                    <div class="img-destaque" ></div> <!-- img-destaque -->\n\n                                </div> <!-- destaque-header-img -->\n\n\n\n                                <div class="destaque-header-infos">\n\n                                    <div class="destaque-infos-cont" >\n\n                                        \n\n                                        <div class="destaque-info" >\n\n                                            <span class="destaque-info-label title" >\n\n                                                Unieke\n\n                                            </span> <!-- destaque-info-label -->\n\n                                        </div> <!-- destaque-info -->\n\n                                        <div class="destaque-info" >\n\n                                            <span class="destaque-info-label description" >\n\n                                                Confecção\n\n                                            </span> <!-- destaque-info-label -->\n\n                                        </div> <!-- destaque-info -->\n\n\n\n                                    </div> <!-- destaque-infos-cont -->\n\n                                </div> <!-- destaque-header-img -->\n\n\n\n                                <div class="destaque-header-actions">\n\n                                    <button ion-button class="destaque-header-action"> Conectar </button>\n\n                                </div> <!-- destaque-header-img -->\n\n\n\n                            </div> <!-- destaque-header -->\n\n\n\n                            <div class="destaque-body" ></div> <!-- destaque-body -->\n\n\n\n                            <div class="destaque-footer" >\n\n                                <ul class="destaque-footer-list">\n\n                                    <li class="destaque-footer-item"></li><!-- destaque-footer-item -->\n\n                                    <li class="destaque-footer-item"></li><!-- destaque-footer-item -->\n\n                                    <li class="destaque-footer-item"></li><!-- destaque-footer-item -->\n\n                                </ul><!-- destaque-footer-list -->\n\n                            </div> <!-- destaque-footer -->\n\n\n\n                        </li><!-- destaque-item -->\n\n                    </ul> <!-- viewport-list -->\n\n                </div> <!-- viewport-destaques -->\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n    </ion-grid><!-- grid-destaques -->\n\n\n\n</ion-content>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\explore\explore.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]])
-    ], ConfirmCadPage);
-    return ConfirmCadPage;
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */]])
+    ], ExplorePage);
+    return ExplorePage;
 }());
 
-//# sourceMappingURL=confirm-cad.js.map
+//# sourceMappingURL=explore.js.map
 
 /***/ }),
 
@@ -2266,354 +2193,12 @@ var ConfirmCadPage = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Step1Page; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_login__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__step2_step2__ = __webpack_require__(91);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-/**
- * Generated class for the Step1Page page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var Step1Page = (function () {
-    function Step1Page(navCtrl, navParams, alertCtrl) {
-        var _this = this;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.alertCtrl = alertCtrl;
-        this.constants = __WEBPACK_IMPORTED_MODULE_2__config_Constants__["a" /* Constants */];
-        this.actived = 0;
-        /**
-         * Função utilizada para a "volta" da pagina para a pagina de login
-         * @type {() => any} */
-        this.backToLogin = (function () {
-            /* Redireciona para a pagina de login */
-            _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__login_login__["a" /* LoginPage */]);
-        });
-        /**
-         * Função utilizada para redirecionar para o segundo passo do cadastro */
-        this.goToStep2 = (function () {
-            /* Verifica se o redirect está habilitado. Só estará se algum perfil foi selecionado, ou seja: se actived for diferente de 0 */
-            if (_this.actived != 0) {
-                /* Se o redirect estiver hasbilitado */
-                _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__step2_step2__["a" /* Step2Page */], { user_type: _this.actived });
-            }
-            else {
-                /* Caso o redirect não esteja habilitado, exibe o alerta */
-                var alert_1 = _this.alertCtrl.create({
-                    title: 'Selecione o perfil',
-                    subTitle: 'Por favor, selecione o seu perfil como usuário.',
-                    buttons: ['Ok']
-                });
-                alert_1.present();
-            }
-        }); /* Fim da função utiliazada para avançãr os passos do cadastro */
-        /**
-         * Função utilizada para definir o tipo do perfil selecionado
-         * @type {(data: number) => any} - ID do perfil selecionado */
-        this.defineActived = (function (data) {
-            /* Define o ID do perfil selecionado */
-            _this.actived = data;
-        }); /* Fim da função de definição do perfil selecionado */
-    }
-    Step1Page = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-step1',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\step1\step1.html"*/'<ion-header>\n\n    <div class="header-back" (click)="backToLogin()" >\n\n\n\n        <svg class="backpage-ico">\n\n            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n        </svg> <!-- backpage-ico -->\n\n\n\n    </div> <!-- header-back -->\n\n</ion-header>\n\n\n\n<ion-content>\n\n\n\n    <div class="step-indicator" >\n\n\n\n        <span class="dotdot actived rounded"></span>\n\n        <span class="dot-stick"></span>\n\n        <span class="dotdot "></span>\n\n        <span class="dot-stick"></span>\n\n        <span class="dotdot"></span>\n\n\n\n    </div> <!-- step-indicator -->\n\n\n\n    <h3 class="title-step">Escolha</h3> <!-- title-step -->\n\n\n\n    <div class="choose-content" >\n\n        <div class="choose-column" >\n\n\n\n            <div class="type-user" >\n\n\n\n                <div class="icon-user-type" [ngClass]="{ \'actived-type\': actived == 1 }" (click)="defineActived(1)" >\n\n                    <svg class="svg-ico-usertype">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'confeccao.svg#Layer_1\'"></use>\n\n                    </svg> <!-- svg-ico-usertype -->\n\n                </div> <!-- icon-user-type -->\n\n\n\n                <p class="type-title"> Confecção </p> <!-- type-title -->\n\n                <p class="type-description">\n\n                    Cadastre a sua confecção para realizar novas ligações e encontrar novos revendedores para a sua marca\n\n                </p> <!-- type-description -->\n\n\n\n            </div> <!-- type-user -->\n\n\n\n        </div> <!-- choose-column -->\n\n        <div class="choose-column" >\n\n\n\n            <div class="type-user" >\n\n\n\n                <div class="icon-user-type" [ngClass]="{ \'actived-type\': actived == 2 }" (click)="defineActived(2)">\n\n                    <svg class="svg-ico-usertype">\n\n                       <use [attr.xlink:href]="constants.src_svg + \'vendedor.svg#Layer_1\'"></use>\n\n                    </svg> <!-- svg-ico-usertype -->\n\n                </div> <!-- icon-user-type -->\n\n\n\n                <p class="type-title"> Lojista </p> <!-- type-title -->\n\n                <p class="type-description">\n\n                    Cadastre o seu perfil como lojista, para encontrar novas confecções para revendas. E novas conexões de clientes.\n\n                </p> <!-- type-description -->\n\n\n\n            </div> <!-- type-user -->\n\n\n\n        </div> <!-- choose-column -->\n\n    </div> <!-- choose-content -->\n\n    \n\n</ion-content>\n\n\n\n<ion-footer>\n\n    <div class="footer-steps" >\n\n\n\n        <div class="next-step-action" [ngClass]="{\'allowed\': actived != 0}" (click)="goToStep2()">\n\n            <span class="next-step-label">\n\n                Próximo\n\n            </span> <!-- next-stap-label -->\n\n            <div class="nextstep-icon" >\n\n                <span class="caret-body"></span>\n\n                <span class="caret-direction"></span>\n\n            </div> <!-- nextstep-icon -->\n\n        </div> <!-- next-stap-action -->\n\n\n\n    </div> <!-- footer-steps -->\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\step1\step1.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]])
-    ], Step1Page);
-    return Step1Page;
-}());
-
-//# sourceMappingURL=step1.js.map
-
-/***/ }),
-
-/***/ 86:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SystemTabsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feed_feed__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__explore_explore__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__login_login__ = __webpack_require__(33);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-/**
- * Generated class for the SystemTabsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var SystemTabsPage = (function () {
-    function SystemTabsPage(navCtrl, navParams, menuCtrl, alertCtrl) {
-        var _this = this;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.menuCtrl = menuCtrl;
-        this.alertCtrl = alertCtrl;
-        this.pageHome = __WEBPACK_IMPORTED_MODULE_2__feed_feed__["a" /* FeedPage */];
-        this.pageExplore = __WEBPACK_IMPORTED_MODULE_3__explore_explore__["a" /* ExplorePage */];
-        this.pageBag = null;
-        this.pageNotification = null;
-        /**
-         * Função utilizada para realizar o Scroll até o topo da pagina, quando clicar na "tab" que já está ativa
-         * @type {(event) => any} - Infos of pointer click event */
-        this.scrollTopContent = (function (event) {
-            if (__WEBPACK_IMPORTED_MODULE_4_jquery__(event.target).closest('.tab-button[aria-selected="true"]').length > 0) {
-                __WEBPACK_IMPORTED_MODULE_4_jquery__('.scroll-content').stop().animate({ 'scrollTop': 0 }, 300);
-            }
-        });
-        /* Fim da função utilizada para o scroll até o topo da pagina */
-        /**
-         * Função utilizada para abrir o menu de opções */
-        this.openMenu = (function () {
-            _this.menuCtrl.open();
-        }); /* Fim da função utilizada para abrir o menu de opções */
-        /**
-         * Função utilizada para realizar o Logout do usuário */
-        this.doLogout = (function () {
-            var alert = _this.alertCtrl.create({
-                title: 'Logout',
-                subTitle: 'Deseja realmente realizar o Logout do aplicativo?',
-                enableBackdropDismiss: false,
-                buttons: [
-                    {
-                        text: 'Não',
-                        handler: function () {
-                        }
-                    },
-                    {
-                        text: 'Sim',
-                        handler: function () {
-                            _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_5__login_login__["a" /* LoginPage */]);
-                        } /* Hander of "OK" button */
-                    }
-                ]
-            });
-            alert.present();
-        }); /* Fim da função utilizada para realizar o logout do usuário */
-    }
-    SystemTabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-system-tabs',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\system-tabs\system-tabs.html"*/'<ion-menu [content]="tabs" side="right">\n\n  <ion-header>\n\n    <ion-toolbar>\n\n      <ion-title>Menu</ion-title>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content>\n\n    <ion-list>\n\n\n\n      <button ion-item (tap)="doLogout()">\n\n        <ion-icon name="md-power"></ion-icon>\n\n        Logout\n\n      </button>\n\n\n\n    </ion-list>\n\n  </ion-content>\n\n\n\n</ion-menu>\n\n\n\n\n\n<ion-tabs #tabs selectedIndex="1" (tap)="scrollTopContent( $event )">\n\n  <ion-tab [root]="pageHome" tabIcon="QrHome"></ion-tab>\n\n  <ion-tab [root]="pageExplore" tabIcon="QrExplore"></ion-tab>\n\n  <ion-tab [root]="pageBag" tabIcon="QrBag"></ion-tab>\n\n  <ion-tab [root]="pageNotification" tabIcon="QrNotification"></ion-tab>\n\n  <ion-tab (ionSelect)="openMenu()" tabIcon="QrMore"></ion-tab>\n\n</ion-tabs>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\system-tabs\system-tabs.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* MenuController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]])
-    ], SystemTabsPage);
-    return SystemTabsPage;
-}());
-
-//# sourceMappingURL=system-tabs.js.map
-
-/***/ }),
-
-/***/ 87:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modais_post_post__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__ = __webpack_require__(168);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-/**
- * Generated class for the FeedPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var FeedPage = (function () {
-    function FeedPage(navCtrl, modalCtrl, navParams, actionSheetCtrl, socialSharing) {
-        var _this = this;
-        this.navCtrl = navCtrl;
-        this.modalCtrl = modalCtrl;
-        this.navParams = navParams;
-        this.actionSheetCtrl = actionSheetCtrl;
-        this.socialSharing = socialSharing;
-        this.constants = __WEBPACK_IMPORTED_MODULE_2__config_Constants__["a" /* Constants */];
-        // Abrir modal para realizar psot
-        this.doPost = (function () {
-            var profileModal = _this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_3__modais_post_post__["a" /* PostPage */]);
-            profileModal.present();
-        });
-        /**
-         * Estrutura Padrão e Base de como os dados do feed devem ser retornados */
-        this.feed = [
-            { type: 1, company: 'Unique', image: "post1.jpg", products: null },
-            { type: 1, company: 'Unieke', image: "unique.jpg", products: null },
-            { type: 1, company: 'CHLOE', image: null, products: null },
-            { type: 2, company: 'Marisa', image: 'roupa5.jpg', products: null },
-            {
-                type: 3, company: 'Zara', image: 'wallpaper.jpg', products: [
-                    { group: [
-                            { prod_image: 'roupa5.jpg' },
-                            { prod_image: 'roupa1.jpg' },
-                            { prod_image: 'roupa1.png' },
-                        ] },
-                    { group: [
-                            { prod_image: 'roupa5.jpg' },
-                            { prod_image: 'roupa2.png' },
-                            { prod_image: 'roupa4.jpg' }
-                        ] }
-                ] /* Fim do products */
-            },
-            {
-                type: 3, company: 'Brooksfield', image: null, products: [
-                    { group: [
-                            { prod_image: 'roupa1.jpg' },
-                            { prod_image: 'roupa2.png' },
-                            { prod_image: 'roupa3.jpg' },
-                        ] },
-                    { group: [
-                            { prod_image: 'roupa1.png' },
-                            { prod_image: 'roupa2.png' },
-                            { prod_image: 'roupa1.png' }
-                        ] },
-                    { group: [
-                            { prod_image: 'roupa1.jpg' },
-                            { prod_image: 'roupa2.png' },
-                        ] },
-                ] /* Fim do products */
-            },
-            { type: 1, company: 'WebCloset', image: null, products: null }
-        ];
-        /* Fim da estrutura base de como o feed deve ser retornado */
-        this.filter = 1;
-        this.changeFilter = (function (event, filterId) {
-            var $caret = __WEBPACK_IMPORTED_MODULE_4_jquery__(_this.filterCaret.nativeElement);
-            var $filter = __WEBPACK_IMPORTED_MODULE_4_jquery__(event.path[0]);
-            var dimensions = { w: $filter.width(), x: $filter.position().left };
-            $caret.css({ width: dimensions.w + 'px', left: dimensions.x + 'px' });
-            _this.filter = filterId;
-        });
-        this.feedAction = null;
-        this.sharePost = (function (post) {
-            _this.socialSharing.share('Olhe este produto que eu encontrei em: ', '', '', 'www.go.qrgo.com.br/image').then(function () {
-            });
-        });
-    }
-    /**
-     * Função utilizada para realizar ações relacionadas para
-     * @param post
-     */
-    FeedPage.prototype.actionsPostFeed = function (post) {
-        this.feedAction = post;
-        var actionSheet = this.actionSheetCtrl.create({
-            cssClass: 'feed-post-actions',
-            buttons: [
-                {
-                    text: 'Publicação: ' + this.feedAction.company.toUpperCase(),
-                    cssClass: 'closeFeedActions'
-                },
-                {
-                    text: 'Ocultar: ' + this.feedAction.company.toUpperCase(),
-                    cssClass: 'actionButton btnOcultar',
-                    handler: function () { }
-                },
-                {
-                    text: 'Receber Notificações',
-                    cssClass: 'actionButton btnNotifications',
-                    handler: function () { }
-                },
-                {
-                    text: 'Denunciar: ' + this.feedAction.company.toUpperCase(),
-                    cssClass: 'actionButton btnDenunciar',
-                    handler: function () { }
-                },
-            ]
-        });
-        /* Fim das options de ações de Post do Feed */
-        actionSheet.present();
-    }; /* Fim da function actionsPostFeed */
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_9" /* ViewChild */])('filterCaret'),
-        __metadata("design:type", Object)
-    ], FeedPage.prototype, "filterCaret", void 0);
-    FeedPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["n" /* Component */])({
-            selector: 'page-feed',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\feed\feed.html"*/'<!-- Start of footer Content -->\n\n<ion-header>\n\n    <qr-header></qr-header>\n\n</ion-header>\n\n<!-- End of header Default -->\n\n<!-- Content of feed page -->\n\n<ion-content #Content>\n\n\n\n    <!-- Start of feed -->\n\n    <div class="feed-background"></div> <!-- feed-background -->\n\n\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col>\n\n\n\n                <div class="feed-post-something" >\n\n\n\n                    <ion-grid>\n\n                        <ion-row>\n\n                            <ion-col class="post-something" (click)="doPost()">\n\n                                Publique Algo...\n\n                            </ion-col><!-- post-something -->\n\n                            <ion-col col-auto>\n\n                                <div class="feed-publication-shortcut">\n\n                                    <svg class="ico-publication-shortcut">\n\n                                        <use [attr.xlink:href]="constants.src_svg + \'hanger.svg#Layer_1\'"></use>\n\n                                    </svg> <!-- ico-publication-shortcut -->\n\n                                </div> <!-- feed-publication-shortcut -->\n\n                            </ion-col>\n\n                            <ion-col col-auto>\n\n                                <div class="feed-publication-shortcut">\n\n                                    <svg class="ico-publication-shortcut">\n\n                                        <use [attr.xlink:href]="constants.src_svg + \'picture.svg#Layer_1\'"></use>\n\n                                    </svg> <!-- ico-publication-shortcut -->\n\n                                </div> <!-- feed-publication-shortcut -->\n\n                            </ion-col>\n\n                        </ion-row>\n\n                    </ion-grid>\n\n\n\n                </div> <!-- feed-post-something -->\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n            <ion-col>\n\n                <div class="feed-filter">\n\n                    <ion-grid>\n\n                        <ion-row>\n\n\n\n                            <ion-col (click)="changeFilter( $event, 1 )" [ngClass]="{\'actived-filter\': filter == 1 }">\n\n                                Todos\n\n                            </ion-col>\n\n                            <ion-col (click)="changeFilter( $event, 2 )" [ngClass]="{\'actived-filter\': filter == 2 }">\n\n                                Confecções\n\n                            </ion-col>\n\n                            <ion-col (click)="changeFilter( $event, 3 )" [ngClass]="{\'actived-filter\': filter == 3 }">\n\n                                Lojistas\n\n                            </ion-col>\n\n                            <ion-col (click)="changeFilter( $event, 4 )" [ngClass]="{\'actived-filter\': filter == 4 }">\n\n                                Roupas\n\n                            </ion-col>\n\n\n\n                            <span class="filter-indicator">\n\n                                <span class="filter-caret" #filterCaret ></span>\n\n                            </span><!-- filter-indicator -->\n\n\n\n                        </ion-row><!-- feed-filter -->\n\n                    </ion-grid>\n\n                </div> <!-- feed-filter -->\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n\n\n    <!-- Primeiro card do feed -->\n\n    <ion-card class="feed-card" *ngFor="let post of feed">\n\n        <div class="feed-card-structure">\n\n\n\n            <div class="feed-card-header">\n\n                <ion-grid>\n\n                    <ion-row>\n\n                        <ion-col col-2>\n\n                            <div class="feed-author-image">\n\n                                <div class="feed-author-img"></div> <!-- feed-author-img -->\n\n                            </div> <!-- feed-author-image -->\n\n                        </ion-col>\n\n                        <ion-col class="feed-author">\n\n                            <div class="feed-autor-label">\n\n                                <span class="feed-author-txt title ">\n\n                                    {{ post.company }}\n\n                                </span><!-- feed-author-txt -->\n\n                            </div> <!-- feed-autor-label -->\n\n                            <div class="feed-autor-label">\n\n                                <span class="feed-author-txt description">\n\n                                    Rua Anhaia, 284 <ion-icon name="ai-notification"></ion-icon>\n\n                                </span>\n\n                            </div> <!-- feed-autor-label -->\n\n                        </ion-col>\n\n                        <ion-col col-2 (click)="actionsPostFeed( post )">\n\n                            <div class="feed-card-header-options">\n\n                                <svg class="ico-card-options">\n\n                                    <use [attr.xlink:href]="constants.src_svg + \'vertical-dots.svg#Layer_1\'"></use>\n\n                                </svg> <!-- ico-card-options -->\n\n                            </div> <!-- feed-card-header-options -->\n\n                        </ion-col>\n\n                    </ion-row>\n\n                </ion-grid>\n\n            </div> <!-- feed-card-header -->\n\n            <div class="feed-card-body">\n\n\n\n                <!-- Primeira estrutura de layout de post -->\n\n                <!-- Post somente com imagens -->\n\n                <!-- ------------ -->\n\n                <div class="card-body-image" [hidden]="post.type != 1">\n\n\n\n                    <div class="card-body-img"\n\n                         [hidden]="post.image == null"\n\n                         [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/\' + post.image + \')\' }"></div>\n\n                    <!-- card-body-img -->\n\n\n\n                    <div class="card-body-description">\n\n                        <span class="card-body-description-since"> Há 3 Minutos </span>\n\n                        <span class="card-body-description-desc">\n\n                            Welcome to <span class="hashtag-desc">#ThePradaDoubleClubMiami</span>, presented by Fondazione Prada and Carsten Höller. The temporary nightclub/installation is half gray scale.\n\n                        </span><!-- card-body-description-desc -->\n\n                    </div> <!-- card-body-description -->\n\n                    <div class="card-body-actions-post">\n\n                        <ion-grid>\n\n                            <ion-row>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'hearth.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col (click)="sharePost( post )">\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'share.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                            </ion-row>\n\n                        </ion-grid>\n\n                    </div> <!-- card-body-actions-post -->\n\n                </div> <!-- card-body-image -->\n\n                <!-- ------------ -->\n\n                <!-- ------------ -->\n\n                <div class="card-body-product" [hidden]="post.type != 2">\n\n\n\n                    <div class="card-body-product-img">\n\n\n\n                        <ion-slides class="product-variables">\n\n                            <ion-slide>\n\n                                <div class="product-variable-cover" [ngStyle]="{\'background-image\': \'url(\' + constants.src_img + \'exemples/\' + post.image + \')\'}"  ></div> <!-- product-variable-cover -->\n\n                            </ion-slide>\n\n                        </ion-slides><!-- product-variables -->\n\n\n\n                        <ul class="variables-valiable">\n\n                            <li class="variable actived-variable"></li> <!-- variable -->\n\n                            <li class="variable"></li> <!-- variable -->\n\n                            <li class="variable"></li> <!-- variable -->\n\n                        </ul><!-- variables-valiable -->\n\n\n\n                    </div> <!-- card-body-product-img -->\n\n\n\n                    <div class="card-body-description">\n\n                        <span class="card-body-description-since"> Há 3 Minutos </span>\n\n                        <div class="card-body-description-desc">\n\n\n\n                            <span class="product-title"> TURTLENECK TOP </span>\n\n                            <div class="product-prices">\n\n                                <ion-grid class="grid-prices">\n\n                                    <ion-row>\n\n                                        <ion-col class="col-border">\n\n                                            <span class="col-label"> Atacado </span><!-- col-label -->\n\n                                            <span class="price"> 590 </span> <!-- price -->\n\n                                        </ion-col>\n\n                                        <ion-col class="col-varejo">\n\n                                            <span class="col-label"> Varejo </span><!-- col-label -->\n\n                                            <span class="price"> 590 </span> <!-- price -->\n\n                                        </ion-col><!-- col-varejo -->\n\n                                        <ion-col class="col-action">\n\n                                            <button class="button-action-product">\n\n                                                <svg class="icon-button-action-product">\n\n                                                    <use [attr.xlink:href]="constants.src_svg + \'cart.svg#Layer_1\'"></use>\n\n                                                </svg> <!-- icon-button-action-product -->\n\n                                                Comprar\n\n                                            </button><!-- button-action-product -->\n\n                                        </ion-col><!-- col-action -->\n\n                                    </ion-row>\n\n                                </ion-grid><!-- grid-prices -->\n\n                            </div><!-- product-prices -->\n\n\n\n                        </div><!-- card-body-description-desc -->\n\n\n\n                        <span class="card-body-description-desc">\n\n                            Confira a novidade na nossa loja essa semana!\n\n                        </span><!-- card-body-description-desc -->\n\n\n\n                    </div> <!-- card-body-description -->\n\n\n\n                    <div class="card-body-actions-post">\n\n                        <ion-grid>\n\n                            <ion-row>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'hearth.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'star.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col (click)="sharePost( post )">\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'share.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                            </ion-row>\n\n                        </ion-grid>\n\n                    </div> <!-- card-body-actions-post -->\n\n\n\n                </div> <!-- card-body-product -->\n\n                <!-- ---------- -->\n\n                <!-- ---------- -->\n\n                <div class="card-body-product-group" [hidden]="post.type != 3">\n\n                    <div class="product-group-cover"\n\n                         [hidden]="post.image == null"\n\n                         [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/\' + post.image + \')\' }" ></div> <!-- product-group-cover -->\n\n                    <div class="content-slide-group" >\n\n                        <ion-slides class="product-group-slides" pager>\n\n\n\n                            <ion-slide *ngFor="let grupos of post.products">\n\n                                <ul class="list-group-products">\n\n                                    <li class="item-group-product" *ngFor="let produto of grupos.group">\n\n                                        <div class="item-product-cover" [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/\' + produto.prod_image +\')\' }">\n\n                                        </div> <!-- item-product-cover -->\n\n                                    </li><!-- item-group-product -->\n\n                                </ul><!-- list-group-products -->\n\n                            </ion-slide>\n\n\n\n                        </ion-slides><!-- product-group-slides -->\n\n                    </div> <!-- content-slide-group -->\n\n\n\n                    <div class="card-body-description">\n\n                        <span class="card-body-description-since"> Há 3 Minutos </span>\n\n                        <span class="card-body-description-desc">\n\n                            Welcome to <span class="hashtag-desc">#ThePradaDoubleClubMiami</span>, presented by Fondazione Prada and Carsten Höller. The temporary nightclub/installation is half gray scale.\n\n                        </span><!-- card-body-description-desc -->\n\n                    </div> <!-- card-body-description -->\n\n                    <div class="card-body-actions-post">\n\n                        <ion-grid>\n\n                            <ion-row>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'hearth.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col (click)="sharePost( post )">\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'share.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                            </ion-row>\n\n                        </ion-grid>\n\n                    </div> <!-- card-body-actions-post -->\n\n\n\n                </div> <!-- card-body-product-group -->\n\n                <!-- ---------- -->\n\n                <!-- ---------- -->\n\n\n\n                <!-- Fim da estrutura do tipo de layout de post ( Post somente com imagens ) -->\n\n            </div> <!-- feed-card-body -->\n\n\n\n        </div> <!-- feed-card-structure -->\n\n    </ion-card><!-- feed-card -->\n\n    <!-- fim do primeiro card do feed -->\n\n\n\n\n\n    <!-- Terceiro card do feed -->\n\n    <!-- Fim do terceiro card do feed -->\n\n\n\n</ion-content>\n\n<!-- End of content Feed Page -->\n\n'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\feed\feed.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["l" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["k" /* ModalController */],
-            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["m" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["a" /* ActionSheetController */],
-            __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__["a" /* SocialSharing */]])
-    ], FeedPage);
-    return FeedPage;
-}());
-
-//# sourceMappingURL=feed.js.map
-
-/***/ }),
-
-/***/ 91:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Step2Page; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__step1_step1__ = __webpack_require__(85);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__step3_step3__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__step1_step1__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__step3_step3__ = __webpack_require__(172);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_jquery__);
@@ -2833,6 +2418,474 @@ var Step2Page = (function () {
 }());
 
 //# sourceMappingURL=step2.js.map
+
+/***/ }),
+
+/***/ 86:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Step1Page; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_login__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__step2_step2__ = __webpack_require__(85);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+/**
+ * Generated class for the Step1Page page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var Step1Page = (function () {
+    function Step1Page(navCtrl, navParams, alertCtrl) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.alertCtrl = alertCtrl;
+        this.constants = __WEBPACK_IMPORTED_MODULE_2__config_Constants__["a" /* Constants */];
+        this.actived = 0;
+        /**
+         * Função utilizada para a "volta" da pagina para a pagina de login
+         * @type {() => any} */
+        this.backToLogin = (function () {
+            /* Redireciona para a pagina de login */
+            _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__login_login__["a" /* LoginPage */]);
+        });
+        /**
+         * Função utilizada para redirecionar para o segundo passo do cadastro */
+        this.goToStep2 = (function () {
+            /* Verifica se o redirect está habilitado. Só estará se algum perfil foi selecionado, ou seja: se actived for diferente de 0 */
+            if (_this.actived != 0) {
+                /* Se o redirect estiver hasbilitado */
+                _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__step2_step2__["a" /* Step2Page */], { user_type: _this.actived });
+            }
+            else {
+                /* Caso o redirect não esteja habilitado, exibe o alerta */
+                var alert_1 = _this.alertCtrl.create({
+                    title: 'Selecione o perfil',
+                    subTitle: 'Por favor, selecione o seu perfil como usuário.',
+                    buttons: ['Ok']
+                });
+                alert_1.present();
+            }
+        }); /* Fim da função utiliazada para avançãr os passos do cadastro */
+        /**
+         * Função utilizada para definir o tipo do perfil selecionado
+         * @type {(data: number) => any} - ID do perfil selecionado */
+        this.defineActived = (function (data) {
+            /* Define o ID do perfil selecionado */
+            _this.actived = data;
+        }); /* Fim da função de definição do perfil selecionado */
+    }
+    Step1Page = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'page-step1',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\step1\step1.html"*/'<ion-header>\n\n    <div class="header-back" (click)="backToLogin()" >\n\n\n\n        <svg class="backpage-ico">\n\n            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n        </svg> <!-- backpage-ico -->\n\n\n\n    </div> <!-- header-back -->\n\n</ion-header>\n\n\n\n<ion-content>\n\n\n\n    <div class="step-indicator" >\n\n\n\n        <span class="dotdot actived rounded"></span>\n\n        <span class="dot-stick"></span>\n\n        <span class="dotdot "></span>\n\n        <span class="dot-stick"></span>\n\n        <span class="dotdot"></span>\n\n\n\n    </div> <!-- step-indicator -->\n\n\n\n    <h3 class="title-step">Escolha</h3> <!-- title-step -->\n\n\n\n    <div class="choose-content" >\n\n        <div class="choose-column" >\n\n\n\n            <div class="type-user" >\n\n\n\n                <div class="icon-user-type" [ngClass]="{ \'actived-type\': actived == 1 }" (click)="defineActived(1)" >\n\n                    <svg class="svg-ico-usertype">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'confeccao.svg#Layer_1\'"></use>\n\n                    </svg> <!-- svg-ico-usertype -->\n\n                </div> <!-- icon-user-type -->\n\n\n\n                <p class="type-title"> Confecção </p> <!-- type-title -->\n\n                <p class="type-description">\n\n                    Cadastre a sua confecção para realizar novas ligações e encontrar novos revendedores para a sua marca\n\n                </p> <!-- type-description -->\n\n\n\n            </div> <!-- type-user -->\n\n\n\n        </div> <!-- choose-column -->\n\n        <div class="choose-column" >\n\n\n\n            <div class="type-user" >\n\n\n\n                <div class="icon-user-type" [ngClass]="{ \'actived-type\': actived == 2 }" (click)="defineActived(2)">\n\n                    <svg class="svg-ico-usertype">\n\n                       <use [attr.xlink:href]="constants.src_svg + \'vendedor.svg#Layer_1\'"></use>\n\n                    </svg> <!-- svg-ico-usertype -->\n\n                </div> <!-- icon-user-type -->\n\n\n\n                <p class="type-title"> Lojista </p> <!-- type-title -->\n\n                <p class="type-description">\n\n                    Cadastre o seu perfil como lojista, para encontrar novas confecções para revendas. E novas conexões de clientes.\n\n                </p> <!-- type-description -->\n\n\n\n            </div> <!-- type-user -->\n\n\n\n        </div> <!-- choose-column -->\n\n    </div> <!-- choose-content -->\n\n    \n\n</ion-content>\n\n\n\n<ion-footer>\n\n    <div class="footer-steps" >\n\n\n\n        <div class="next-step-action" [ngClass]="{\'allowed\': actived != 0}" (click)="goToStep2()">\n\n            <span class="next-step-label">\n\n                Próximo\n\n            </span> <!-- next-stap-label -->\n\n            <div class="nextstep-icon" >\n\n                <span class="caret-body"></span>\n\n                <span class="caret-direction"></span>\n\n            </div> <!-- nextstep-icon -->\n\n        </div> <!-- next-stap-action -->\n\n\n\n    </div> <!-- footer-steps -->\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\step1\step1.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]])
+    ], Step1Page);
+    return Step1Page;
+}());
+
+//# sourceMappingURL=step1.js.map
+
+/***/ }),
+
+/***/ 87:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SystemTabsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feed_feed__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__explore_explore__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_jquery__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__login_login__ = __webpack_require__(33);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+/**
+ * Generated class for the SystemTabsPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var SystemTabsPage = (function () {
+    function SystemTabsPage(navCtrl, navParams, menuCtrl, alertCtrl) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.menuCtrl = menuCtrl;
+        this.alertCtrl = alertCtrl;
+        this.pageHome = __WEBPACK_IMPORTED_MODULE_2__feed_feed__["a" /* FeedPage */];
+        this.pageExplore = __WEBPACK_IMPORTED_MODULE_3__explore_explore__["a" /* ExplorePage */];
+        this.pageBag = null;
+        this.pageNotification = null;
+        /**
+         * Função utilizada para realizar o Scroll até o topo da pagina, quando clicar na "tab" que já está ativa
+         * @type {(event) => any} - Infos of pointer click event */
+        this.scrollTopContent = (function (event) {
+            if (__WEBPACK_IMPORTED_MODULE_4_jquery__(event.target).closest('.tab-button[aria-selected="true"]').length > 0) {
+                __WEBPACK_IMPORTED_MODULE_4_jquery__('.scroll-content').stop().animate({ 'scrollTop': 0 }, 300);
+            }
+        });
+        /* Fim da função utilizada para o scroll até o topo da pagina */
+        /**
+         * Função utilizada para abrir o menu de opções */
+        this.openMenu = (function () {
+            _this.menuCtrl.open();
+        }); /* Fim da função utilizada para abrir o menu de opções */
+        /**
+         * Função utilizada para realizar o Logout do usuário */
+        this.doLogout = (function () {
+            var alert = _this.alertCtrl.create({
+                title: 'Logout',
+                subTitle: 'Deseja realmente realizar o Logout do aplicativo?',
+                enableBackdropDismiss: false,
+                buttons: [
+                    {
+                        text: 'Não',
+                        handler: function () {
+                        }
+                    },
+                    {
+                        text: 'Sim',
+                        handler: function () {
+                            _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_5__login_login__["a" /* LoginPage */]);
+                        } /* Hander of "OK" button */
+                    }
+                ]
+            });
+            alert.present();
+        }); /* Fim da função utilizada para realizar o logout do usuário */
+    }
+    SystemTabsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'page-system-tabs',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\system-tabs\system-tabs.html"*/'<ion-menu [content]="tabs" side="right">\n\n  <ion-header>\n\n    <ion-toolbar>\n\n      <ion-title>Menu</ion-title>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content>\n\n    <ion-list>\n\n\n\n      <button ion-item (tap)="doLogout()">\n\n        <ion-icon name="md-power"></ion-icon>\n\n        Logout\n\n      </button>\n\n\n\n    </ion-list>\n\n  </ion-content>\n\n\n\n</ion-menu>\n\n\n\n\n\n<ion-tabs #tabs selectedIndex="1" (tap)="scrollTopContent( $event )">\n\n  <ion-tab [root]="pageHome" tabIcon="QrHome"></ion-tab>\n\n  <ion-tab [root]="pageExplore" tabIcon="QrExplore"></ion-tab>\n\n  <ion-tab [root]="pageBag" tabIcon="QrBag"></ion-tab>\n\n  <ion-tab [root]="pageNotification" tabIcon="QrNotification"></ion-tab>\n\n  <ion-tab (ionSelect)="openMenu()" tabIcon="QrMore"></ion-tab>\n\n</ion-tabs>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\system-tabs\system-tabs.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* MenuController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]])
+    ], SystemTabsPage);
+    return SystemTabsPage;
+}());
+
+//# sourceMappingURL=system-tabs.js.map
+
+/***/ }),
+
+/***/ 88:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modais_post_post__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_jquery__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__ = __webpack_require__(168);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+/**
+ * Generated class for the FeedPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var FeedPage = (function () {
+    function FeedPage(navCtrl, modalCtrl, navParams, actionSheetCtrl, socialSharing) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.modalCtrl = modalCtrl;
+        this.navParams = navParams;
+        this.actionSheetCtrl = actionSheetCtrl;
+        this.socialSharing = socialSharing;
+        this.constants = __WEBPACK_IMPORTED_MODULE_2__config_Constants__["a" /* Constants */];
+        // Abrir modal para realizar psot
+        this.doPost = (function () {
+            var profileModal = _this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_3__modais_post_post__["a" /* PostPage */]);
+            profileModal.present();
+        });
+        /**
+         * Estrutura Padrão e Base de como os dados do feed devem ser retornados */
+        this.feed = [
+            { type: 1, company: 'Unique', image: "post1.jpg", products: null },
+            { type: 1, company: 'Unieke', image: "unique.jpg", products: null },
+            { type: 1, company: 'CHLOE', image: null, products: null },
+            { type: 2, company: 'Marisa', image: 'roupa5.jpg', products: null },
+            {
+                type: 3, company: 'Zara', image: 'wallpaper.jpg', products: [
+                    { group: [
+                            { prod_image: 'roupa5.jpg' },
+                            { prod_image: 'roupa1.jpg' },
+                            { prod_image: 'roupa1.png' },
+                        ] },
+                    { group: [
+                            { prod_image: 'roupa5.jpg' },
+                            { prod_image: 'roupa2.png' },
+                            { prod_image: 'roupa4.jpg' }
+                        ] }
+                ] /* Fim do products */
+            },
+            {
+                type: 3, company: 'Brooksfield', image: null, products: [
+                    { group: [
+                            { prod_image: 'roupa1.jpg' },
+                            { prod_image: 'roupa2.png' },
+                            { prod_image: 'roupa3.jpg' },
+                        ] },
+                    { group: [
+                            { prod_image: 'roupa1.png' },
+                            { prod_image: 'roupa2.png' },
+                            { prod_image: 'roupa1.png' }
+                        ] },
+                    { group: [
+                            { prod_image: 'roupa1.jpg' },
+                            { prod_image: 'roupa2.png' },
+                        ] },
+                ] /* Fim do products */
+            },
+            { type: 1, company: 'WebCloset', image: null, products: null }
+        ];
+        /* Fim da estrutura base de como o feed deve ser retornado */
+        this.filter = 1;
+        this.changeFilter = (function (event, filterId) {
+            var $caret = __WEBPACK_IMPORTED_MODULE_4_jquery__(_this.filterCaret.nativeElement);
+            var $filter = __WEBPACK_IMPORTED_MODULE_4_jquery__(event.path[0]);
+            var dimensions = { w: $filter.width(), x: $filter.position().left };
+            $caret.css({ width: dimensions.w + 'px', left: dimensions.x + 'px' });
+            _this.filter = filterId;
+        });
+        this.feedAction = null;
+        this.sharePost = (function (post) {
+            _this.socialSharing.share('Olhe este produto que eu encontrei em: ', '', '', 'www.go.qrgo.com.br/image').then(function () {
+            });
+        });
+    }
+    /**
+     * Função utilizada para realizar ações relacionadas para
+     * @param post
+     */
+    FeedPage.prototype.actionsPostFeed = function (post) {
+        this.feedAction = post;
+        var actionSheet = this.actionSheetCtrl.create({
+            cssClass: 'feed-post-actions',
+            buttons: [
+                {
+                    text: 'Publicação: ' + this.feedAction.company.toUpperCase(),
+                    cssClass: 'closeFeedActions'
+                },
+                {
+                    text: 'Ocultar: ' + this.feedAction.company.toUpperCase(),
+                    cssClass: 'actionButton btnOcultar',
+                    handler: function () { }
+                },
+                {
+                    text: 'Receber Notificações',
+                    cssClass: 'actionButton btnNotifications',
+                    handler: function () { }
+                },
+                {
+                    text: 'Denunciar: ' + this.feedAction.company.toUpperCase(),
+                    cssClass: 'actionButton btnDenunciar',
+                    handler: function () { }
+                },
+            ]
+        });
+        /* Fim das options de ações de Post do Feed */
+        actionSheet.present();
+    }; /* Fim da function actionsPostFeed */
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_9" /* ViewChild */])('filterCaret'),
+        __metadata("design:type", Object)
+    ], FeedPage.prototype, "filterCaret", void 0);
+    FeedPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["n" /* Component */])({
+            selector: 'page-feed',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\feed\feed.html"*/'<!-- Start of footer Content -->\n\n<ion-header>\n\n    <qr-header></qr-header>\n\n</ion-header>\n\n<!-- End of header Default -->\n\n<!-- Content of feed page -->\n\n<ion-content #Content>\n\n\n\n    <!-- Start of feed -->\n\n    <div class="feed-background"></div> <!-- feed-background -->\n\n\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col>\n\n\n\n                <div class="feed-post-something" >\n\n\n\n                    <ion-grid>\n\n                        <ion-row>\n\n                            <ion-col class="post-something" (click)="doPost()">\n\n                                Publique Algo...\n\n                            </ion-col><!-- post-something -->\n\n                            <ion-col col-auto>\n\n                                <div class="feed-publication-shortcut">\n\n                                    <svg class="ico-publication-shortcut">\n\n                                        <use [attr.xlink:href]="constants.src_svg + \'hanger.svg#Layer_1\'"></use>\n\n                                    </svg> <!-- ico-publication-shortcut -->\n\n                                </div> <!-- feed-publication-shortcut -->\n\n                            </ion-col>\n\n                            <ion-col col-auto>\n\n                                <div class="feed-publication-shortcut">\n\n                                    <svg class="ico-publication-shortcut">\n\n                                        <use [attr.xlink:href]="constants.src_svg + \'picture.svg#Layer_1\'"></use>\n\n                                    </svg> <!-- ico-publication-shortcut -->\n\n                                </div> <!-- feed-publication-shortcut -->\n\n                            </ion-col>\n\n                        </ion-row>\n\n                    </ion-grid>\n\n\n\n                </div> <!-- feed-post-something -->\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n            <ion-col>\n\n                <div class="feed-filter">\n\n                    <ion-grid>\n\n                        <ion-row>\n\n\n\n                            <ion-col (click)="changeFilter( $event, 1 )" [ngClass]="{\'actived-filter\': filter == 1 }">\n\n                                Todos\n\n                            </ion-col>\n\n                            <ion-col (click)="changeFilter( $event, 2 )" [ngClass]="{\'actived-filter\': filter == 2 }">\n\n                                Confecções\n\n                            </ion-col>\n\n                            <ion-col (click)="changeFilter( $event, 3 )" [ngClass]="{\'actived-filter\': filter == 3 }">\n\n                                Lojistas\n\n                            </ion-col>\n\n                            <ion-col (click)="changeFilter( $event, 4 )" [ngClass]="{\'actived-filter\': filter == 4 }">\n\n                                Roupas\n\n                            </ion-col>\n\n\n\n                            <span class="filter-indicator">\n\n                                <span class="filter-caret" #filterCaret ></span>\n\n                            </span><!-- filter-indicator -->\n\n\n\n                        </ion-row><!-- feed-filter -->\n\n                    </ion-grid>\n\n                </div> <!-- feed-filter -->\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n\n\n    <!-- Primeiro card do feed -->\n\n    <ion-card class="feed-card" *ngFor="let post of feed">\n\n        <div class="feed-card-structure">\n\n\n\n            <div class="feed-card-header">\n\n                <ion-grid>\n\n                    <ion-row>\n\n                        <ion-col col-2>\n\n                            <div class="feed-author-image">\n\n                                <div class="feed-author-img"></div> <!-- feed-author-img -->\n\n                            </div> <!-- feed-author-image -->\n\n                        </ion-col>\n\n                        <ion-col class="feed-author">\n\n                            <div class="feed-autor-label">\n\n                                <span class="feed-author-txt title ">\n\n                                    {{ post.company }}\n\n                                </span><!-- feed-author-txt -->\n\n                            </div> <!-- feed-autor-label -->\n\n                            <div class="feed-autor-label">\n\n                                <span class="feed-author-txt description">\n\n                                    Rua Anhaia, 284 <ion-icon name="ai-notification"></ion-icon>\n\n                                </span>\n\n                            </div> <!-- feed-autor-label -->\n\n                        </ion-col>\n\n                        <ion-col col-2 (click)="actionsPostFeed( post )">\n\n                            <div class="feed-card-header-options">\n\n                                <svg class="ico-card-options">\n\n                                    <use [attr.xlink:href]="constants.src_svg + \'vertical-dots.svg#Layer_1\'"></use>\n\n                                </svg> <!-- ico-card-options -->\n\n                            </div> <!-- feed-card-header-options -->\n\n                        </ion-col>\n\n                    </ion-row>\n\n                </ion-grid>\n\n            </div> <!-- feed-card-header -->\n\n            <div class="feed-card-body">\n\n\n\n                <!-- Primeira estrutura de layout de post -->\n\n                <!-- Post somente com imagens -->\n\n                <!-- ------------ -->\n\n                <div class="card-body-image" [hidden]="post.type != 1">\n\n\n\n                    <div class="card-body-img"\n\n                         [hidden]="post.image == null"\n\n                         [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/\' + post.image + \')\' }"></div>\n\n                    <!-- card-body-img -->\n\n\n\n                    <div class="card-body-description">\n\n                        <span class="card-body-description-since"> Há 3 Minutos </span>\n\n                        <span class="card-body-description-desc">\n\n                            Welcome to <span class="hashtag-desc">#ThePradaDoubleClubMiami</span>, presented by Fondazione Prada and Carsten Höller. The temporary nightclub/installation is half gray scale.\n\n                        </span><!-- card-body-description-desc -->\n\n                    </div> <!-- card-body-description -->\n\n                    <div class="card-body-actions-post">\n\n                        <ion-grid>\n\n                            <ion-row>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'hearth.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col (click)="sharePost( post )">\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'share.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                            </ion-row>\n\n                        </ion-grid>\n\n                    </div> <!-- card-body-actions-post -->\n\n                </div> <!-- card-body-image -->\n\n                <!-- ------------ -->\n\n                <!-- ------------ -->\n\n                <div class="card-body-product" [hidden]="post.type != 2">\n\n\n\n                    <div class="card-body-product-img">\n\n\n\n                        <ion-slides class="product-variables">\n\n                            <ion-slide>\n\n                                <div class="product-variable-cover" [ngStyle]="{\'background-image\': \'url(\' + constants.src_img + \'exemples/\' + post.image + \')\'}"  ></div> <!-- product-variable-cover -->\n\n                            </ion-slide>\n\n                        </ion-slides><!-- product-variables -->\n\n\n\n                        <ul class="variables-valiable">\n\n                            <li class="variable actived-variable"></li> <!-- variable -->\n\n                            <li class="variable"></li> <!-- variable -->\n\n                            <li class="variable"></li> <!-- variable -->\n\n                        </ul><!-- variables-valiable -->\n\n\n\n                    </div> <!-- card-body-product-img -->\n\n\n\n                    <div class="card-body-description">\n\n                        <span class="card-body-description-since"> Há 3 Minutos </span>\n\n                        <div class="card-body-description-desc">\n\n\n\n                            <span class="product-title"> TURTLENECK TOP </span>\n\n                            <div class="product-prices">\n\n                                <ion-grid class="grid-prices">\n\n                                    <ion-row>\n\n                                        <ion-col class="col-border">\n\n                                            <span class="col-label"> Atacado </span><!-- col-label -->\n\n                                            <span class="price"> 590 </span> <!-- price -->\n\n                                        </ion-col>\n\n                                        <ion-col class="col-varejo">\n\n                                            <span class="col-label"> Varejo </span><!-- col-label -->\n\n                                            <span class="price"> 590 </span> <!-- price -->\n\n                                        </ion-col><!-- col-varejo -->\n\n                                        <ion-col class="col-action">\n\n                                            <button class="button-action-product">\n\n                                                <svg class="icon-button-action-product">\n\n                                                    <use [attr.xlink:href]="constants.src_svg + \'cart.svg#Layer_1\'"></use>\n\n                                                </svg> <!-- icon-button-action-product -->\n\n                                                Comprar\n\n                                            </button><!-- button-action-product -->\n\n                                        </ion-col><!-- col-action -->\n\n                                    </ion-row>\n\n                                </ion-grid><!-- grid-prices -->\n\n                            </div><!-- product-prices -->\n\n\n\n                        </div><!-- card-body-description-desc -->\n\n\n\n                        <span class="card-body-description-desc">\n\n                            Confira a novidade na nossa loja essa semana!\n\n                        </span><!-- card-body-description-desc -->\n\n\n\n                    </div> <!-- card-body-description -->\n\n\n\n                    <div class="card-body-actions-post">\n\n                        <ion-grid>\n\n                            <ion-row>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'hearth.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'star.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col (click)="sharePost( post )">\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'share.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                            </ion-row>\n\n                        </ion-grid>\n\n                    </div> <!-- card-body-actions-post -->\n\n\n\n                </div> <!-- card-body-product -->\n\n                <!-- ---------- -->\n\n                <!-- ---------- -->\n\n                <div class="card-body-product-group" [hidden]="post.type != 3">\n\n                    <div class="product-group-cover"\n\n                         [hidden]="post.image == null"\n\n                         [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/\' + post.image + \')\' }" ></div> <!-- product-group-cover -->\n\n                    <div class="content-slide-group" >\n\n                        <ion-slides class="product-group-slides" pager>\n\n\n\n                            <ion-slide *ngFor="let grupos of post.products">\n\n                                <ul class="list-group-products">\n\n                                    <li class="item-group-product" *ngFor="let produto of grupos.group">\n\n                                        <div class="item-product-cover" [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/\' + produto.prod_image +\')\' }">\n\n                                        </div> <!-- item-product-cover -->\n\n                                    </li><!-- item-group-product -->\n\n                                </ul><!-- list-group-products -->\n\n                            </ion-slide>\n\n\n\n                        </ion-slides><!-- product-group-slides -->\n\n                    </div> <!-- content-slide-group -->\n\n\n\n                    <div class="card-body-description">\n\n                        <span class="card-body-description-since"> Há 3 Minutos </span>\n\n                        <span class="card-body-description-desc">\n\n                            Welcome to <span class="hashtag-desc">#ThePradaDoubleClubMiami</span>, presented by Fondazione Prada and Carsten Höller. The temporary nightclub/installation is half gray scale.\n\n                        </span><!-- card-body-description-desc -->\n\n                    </div> <!-- card-body-description -->\n\n                    <div class="card-body-actions-post">\n\n                        <ion-grid>\n\n                            <ion-row>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'hearth.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col (click)="sharePost( post )">\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'share.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                            </ion-row>\n\n                        </ion-grid>\n\n                    </div> <!-- card-body-actions-post -->\n\n\n\n                </div> <!-- card-body-product-group -->\n\n                <!-- ---------- -->\n\n                <!-- ---------- -->\n\n\n\n                <!-- Fim da estrutura do tipo de layout de post ( Post somente com imagens ) -->\n\n            </div> <!-- feed-card-body -->\n\n\n\n        </div> <!-- feed-card-structure -->\n\n    </ion-card><!-- feed-card -->\n\n    <!-- fim do primeiro card do feed -->\n\n\n\n\n\n    <!-- Terceiro card do feed -->\n\n    <!-- Fim do terceiro card do feed -->\n\n\n\n</ion-content>\n\n<!-- End of content Feed Page -->\n\n'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\feed\feed.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["k" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["a" /* ActionSheetController */],
+            __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__["a" /* SocialSharing */]])
+    ], FeedPage);
+    return FeedPage;
+}());
+
+//# sourceMappingURL=feed.js.map
+
+/***/ }),
+
+/***/ 91:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfirmCadPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_jquery__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_Constants__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__explore_explore__ = __webpack_require__(52);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+/**
+ * Generated class for the ConfirmCadPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ConfirmCadPage = (function () {
+    function ConfirmCadPage(navCtrl, navParams, http, alertCtrl) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.http = http;
+        this.alertCtrl = alertCtrl;
+        this.seisdigitos = false;
+        this.constants = __WEBPACK_IMPORTED_MODULE_4__config_Constants__["a" /* Constants */];
+        /**
+         * Função utilizada para pular a confirmação do cadastro
+         */
+        this.skipCad = (function () {
+            /* Pula a confirmação do cadastro */
+            var alert = _this.alertCtrl.create({
+                title: 'Atenção!',
+                subTitle: 'Autenticação pendente. Valide seu email para ter acesso a todo nosso app.',
+                enableBackdropDismiss: false,
+                buttons: [
+                    {
+                        text: 'Ok',
+                        handler: function () {
+                            _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_5__explore_explore__["a" /* ExplorePage */]);
+                        }
+                    }
+                ]
+            });
+            alert.present();
+        });
+        //função verifica o codiga com a existencia de 6 digitos 
+        this.autenticaCod = (function (code) {
+            //desabilita o input 
+            //this.seisdigitos=true;
+            //realiza o ajax enviando como parametro o código de entrada "data"
+            _this.http.post(_this.constants.api_path + 'cadastro/autenticacao', __WEBPACK_IMPORTED_MODULE_3_jquery__["param"]({ codigo: code })).subscribe(function (data) {
+                var response = data;
+                var objeto_retorno = JSON.parse(response._body);
+                //console.log(response._body);
+                //retorna o código
+                if (objeto_retorno === true) {
+                    //modal de confirmação para o usuario
+                    var alert_1 = _this.alertCtrl.create({
+                        title: 'Parabéns',
+                        subTitle: 'Parabéns, você realizou o cadastro em nosso sistema. Você será logado automáticamente.',
+                        enableBackdropDismiss: false,
+                        buttons: [
+                            {
+                                text: 'Ok',
+                                handler: function () {
+                                    _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_5__explore_explore__["a" /* ExplorePage */]);
+                                }
+                            }
+                        ]
+                    });
+                    alert_1.present();
+                }
+                else {
+                    //modal de código invalido
+                    var alert_2 = _this.alertCtrl.create({
+                        title: 'Autenticação',
+                        subTitle: 'Código incorreto',
+                        buttons: ['Ok']
+                    });
+                    alert_2.present();
+                }
+            }, function (error) {
+                //modal de erro na autenticação
+                var alert = _this.alertCtrl.create({
+                    title: 'Autenticação',
+                    subTitle: 'Erro na autenticação',
+                    buttons: ['Ok']
+                });
+                alert.present();
+                console.log(error);
+            });
+        });
+    }
+    ConfirmCadPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'page-confirm-cad',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\confirm-cad\confirm-cad.html"*/'<ion-content>\n\n\n\n  <div class="content-center" >\n\n\n\n    <ion-grid class="grid-confirm-cad">\n\n      <ion-row>\n\n        <ion-col>\n\n\n\n          <h3 class="page-title">Confirme sua conta</h3>\n\n\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row>\n\n        <ion-col>\n\n\n\n          <p class="page-description">Confira seu e-mail ou mensagem sms para confirmar sua conta para seguir usar o aplicativo da melhor forma possível!</p>\n\n\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n      <ion-row>\n\n        <ion-col>\n\n\n\n          <div class="cont-confirmcode" >\n\n            <div class="cad-form-content">\n\n              <label class="cad-form-label">\n\n                <input type="text" class="cad-form-ctrl text-center" placeholder="Codigo" maxlength="6" [(ngModel)]="codeautentic" [disabled]="seisdigitos">\n\n              </label><!-- cad-form-label -->\n\n            </div> <!-- cad-form-content -->\n\n          </div> <!-- cont-confirmcode -->\n\n\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n      <ion-row>\n\n        <ion-col>\n\n          <span class="resend-code"> Re-enviar código </span>\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n      <ion-row>\n\n        <ion-col>\n\n          <button ion-button class="pink-button align-center" (click)="autenticaCod ( codeautentic )"> Confirmar </button>\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n    </ion-grid><!-- grid-confirm-cad -->\n\n\n\n  </div> <!-- content-center -->\n\n\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <div class="footer-steps">\n\n\n\n    <div class="next-step-action allowed" (click)="skipCad()">\n\n            <span class="next-step-label">\n\n                Pular\n\n            </span> <!-- next-stap-label -->\n\n      <div class="nextstep-icon">\n\n        <span class="caret-body"></span>\n\n        <span class="caret-direction"></span>\n\n      </div> <!-- nextstep-icon -->\n\n    </div> <!-- next-stap-action -->\n\n\n\n  </div> <!-- footer-steps -->\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\confirm-cad\confirm-cad.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]])
+    ], ConfirmCadPage);
+    return ConfirmCadPage;
+}());
+
+//# sourceMappingURL=confirm-cad.js.map
 
 /***/ })
 
