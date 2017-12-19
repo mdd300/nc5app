@@ -3,6 +3,8 @@ import {AlertController, IonicPage, NavController, NavParams} from 'ionic-angula
 import { Http } from '@angular/http';
 import * as $ from 'jquery';
 import {Constants} from "../../../../../config/Constants";
+import { LoginPage } from '../../login/login';
+import { ExplorePage } from '../../explore/explore';
 
 
 /**
@@ -35,17 +37,21 @@ export class ConfirmCadPage {
     public skipCad = (() => {
         /* Pula a confirmação do cadastro */
         let alert = this.alertCtrl.create({
-            title: 'Parabéns',
-            subTitle: 'Parabéns, você realizou o cadastro em nosso sistema. Você será logado automáticamente.',
-            buttons: ['Ok']
+            title: 'Atenção!',
+            subTitle: 'Autenticação pendente. Valide seu email para ter acesso a todo nosso app.',
+            enableBackdropDismiss: false,
+            buttons: [
+                {
+                    text: 'Ok',
+                    handler: ( ) =>{
+                        this.navCtrl.setRoot(ExplorePage);
+                    }
+                }]
         });
         alert.present();
     });
     //função verifica o codiga com a existencia de 6 digitos 
     public autenticaCod = (( code:any) => {
-
-        //se o usuario digitar 6 digitos
-        if(code.length == 6 ){
 
             //desabilita o input 
             //this.seisdigitos=true;
@@ -63,7 +69,14 @@ export class ConfirmCadPage {
                     let alert = this.alertCtrl.create({
                         title: 'Parabéns',
                         subTitle: 'Parabéns, você realizou o cadastro em nosso sistema. Você será logado automáticamente.',
-                        buttons: ['Ok']
+                        enableBackdropDismiss: false,
+                        buttons: [
+                            {
+                                text: 'Ok',
+                                handler: ( ) =>{
+                                    this.navCtrl.setRoot(ExplorePage);
+                                }
+                            }]
                     });
                     alert.present();
                 }else{
@@ -89,8 +102,6 @@ export class ConfirmCadPage {
                 console.log(error);
             });
 
-            
-        }
     });
 
 }
