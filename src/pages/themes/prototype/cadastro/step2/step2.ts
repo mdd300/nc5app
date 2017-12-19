@@ -105,23 +105,26 @@ export class Step2Page {
         this.http.post(
             Constants.api_path + 'cadastro/getCaptcha', $.param({'cnpj': this.captcha.cnpj}))
             .subscribe((data) => {
-                var resposta = (data as any);
-                resposta = JSON.parse(resposta._body);
-                if (!resposta.existe) {
+                    var resposta = (data as any);
+                    resposta = JSON.parse(resposta._body);
+                    if (!resposta.existe) {
 
-                    //var captcha = this.sanitizer.bypassSecurityTrustResourceUrl("data:image/jpeg;"+resposta.dados.captchaBase64);
-                    this.imgCaptcha = "data:image/png;base64,"+resposta.dados.captchaBase64;
-                    this.captcha.key = resposta.dados.cookie;
-                    this.stepOk = true;
-                    this.stepOkCnpj = false;
-                    this.emp.empresa_existe = false;
+                        //var captcha = this.sanitizer.bypassSecurityTrustResourceUrl("data:image/jpeg;"+resposta.dados.captchaBase64);
+                      //  this.imgCaptcha = "data:image/png;base64,"+resposta.dados.captchaBase64;
+                        this.imgCaptcha = resposta.dados.captchaBase64;
+                        this.captcha.key = resposta.dados.cookie;
+                        this.stepOk = true;
+                        this.stepOkCnpj = false;
+                        this.emp.empresa_existe = false;
 
-                } else {
-                    this.emp = resposta.dados[0];
-                    this.stepOkCnpj = true;
-                    this.stepOk = false;
-                    this.emp.empresa_existe = true;
-                }
+                    } else {
+                        this.emp = resposta.dados[0];
+                        this.stepOkCnpj = true;
+                        this.stepOk = false;
+                        this.emp.empresa_existe = true;
+
+                    }
+
             }, error => {
                 //modal de erro na autenticação
                 let alert =this.alertCtrl.create({
