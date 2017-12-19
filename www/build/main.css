@@ -29601,6 +29601,7 @@ page-localizacao .content-post .row-user-2 {
 page-localizacao .content-post .input-search-maps {
   border: 0px;
   padding: 5px;
+  width: 100%;
 }
 
 page-localizacao .content-post .grid {
@@ -29735,6 +29736,10 @@ page-localizacao .svg-ico-usertype {
 
 page-localizacao .list-md {
   margin: 0px;
+}
+
+page-localizacao .item-md.item-block .item-inner {
+  border: 0px !important;
 }
 
 page-post {

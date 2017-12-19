@@ -5,14 +5,12 @@
     <ion-header class="grid-content">
         <ion-grid >
             <ion-row style="display: inline-flex;   ">
-                <ion-col col-1 class="col-icon">
-                    <div class="icon-back-header">
-
+                <ion-col col-1 class="col-icon" >
+                    <div class="icon-back-header"  (click)="closeMeModal()">
                         <svg class="ico-back-header">
                             <use [attr.xlink:href]="constants.src_svg + 'back.svg#Layer_1'"></use>
                         </svg> <!-- ico-back-header -->
                     </div> <!-- icon-back-header -->
-
 
                 </ion-col>
                 <ion-col col-auto class="col-header-grid">
@@ -37,9 +35,9 @@
                     </div>
                 </ion-col>
 
-                <ion-col col-8>
+                <ion-col col-10>
 
-                    <input type="search" placeholder="Digite um outro endereço."
+                    <input type="search" placeholder="Digite um outro endereço..."
                                class="input-search-maps">
                 </ion-col>
             </ion-row>
@@ -49,7 +47,7 @@
         <div class="content-location-post" [hidden]="text">
             <ion-list>
                 <div class="lojas-cad">Suas Lojas Cadastradas</div>
-                <ion-item class="content-all-location-post" *ngFor="let data of end">
+                <ion-item class="content-all-location-post" *ngFor="let data of end" (click)="closeMeModal()">
                     <div class="second-content-all-location">
                         <div text-align="center" class="btn-confir wrapper">
                             <svg class="svg-ico-usertype">

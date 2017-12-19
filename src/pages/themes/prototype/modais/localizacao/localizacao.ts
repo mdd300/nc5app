@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {IonicPage, Keyboard, NavController, NavParams} from 'ionic-angular';
+import {IonicPage, Keyboard, ModalController, NavController, NavParams, ViewController} from 'ionic-angular';
 import {Constants} from "../../../../../config/Constants";
 
 /**
@@ -22,10 +22,18 @@ export class LocalizacaoPage {
         {
         nome:'Uniquechic',
         endereco: 'Rua Anhaia'
+        },
+        {
+            nome: 'teste',
+            endereco: 'rua teste'
         }
     ];
 
-    constructor(public navCtrl: NavController, public navParams: NavParams, public keyboard: Keyboard) {
+    constructor(public navCtrl: NavController, public navParams: NavParams, public keyboard: Keyboard,public viewCtrl: ViewController) {
   }
+    public closeMeModal = (() => {
+console.log('teste');
+                this.viewCtrl.dismiss();
 
+    });
 }

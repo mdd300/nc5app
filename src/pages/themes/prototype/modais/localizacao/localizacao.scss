@@ -296,6 +296,7 @@ page-localizacao {
     .input-search-maps{
       border: 0px;
       padding: 5px;
+      width: 100%;
   }
     .grid{
       padding: 0px 3px !important;
@@ -410,5 +411,9 @@ page-localizacao {
   }
   .list-md {
     margin: 0px;
+  }
+
+  .item-md.item-block .item-inner{
+    border: 0px !important;
   }
 }
