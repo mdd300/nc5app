@@ -36,13 +36,13 @@
     <ion-row>
       <ion-col>
         <span class="label-new-pass">Nova senha:</span>
-        <input type="password" class="recover-form" placeholder="Nova senha">
+        <input type="password" class="recover-form" [(ngModel)]="user_pass" placeholder="Nova senha">
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
         <span class="label-new-pass">Confirme sua nova senha:</span>
-        <input type="password" class="recover-form" placeholder="Confirmar Senha">
+        <input type="password" class="recover-form" [(ngModel)]="confirm_pass" placeholder="Confirmar Senha">
       </ion-col>
     </ion-row>
   </ion-grid>
