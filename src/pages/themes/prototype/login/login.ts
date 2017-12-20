@@ -63,7 +63,7 @@ export class LoginPage {
         // this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
 
         var data_send = this.logindata;
-        this.http.post(this.constants.api_path + 'login/dologin', $.param(data_send)).subscribe(response => {
+        this.http.post(this.constants.api_path + 'login/do_login2', $.param(data_send)).subscribe(response => {
 
             var res = (response as any);
             this.login = JSON.parse(res._body);

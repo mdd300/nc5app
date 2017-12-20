@@ -2,7 +2,7 @@ export const Constants = {
     'base_url': './',
     'theme': 'prototype',
 
-   'api_path': 'http://192.168.0.55/fashon/qrgo/',
+   'api_path': 'http://192.168.0.101/nc5/',
    // 'api_path': 'http://192.168.0.251/fashon/qrgo/',
   // 'api_path': 'http://localhost/fashon/qrgo/',
   //   'api_path': 'http://ec2-184-72-119-250.compute-1.amazonaws.com/qrgo/',
