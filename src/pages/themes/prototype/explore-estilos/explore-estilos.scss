@@ -1,0 +1,97 @@
+page-explore-estilos {
+  .page-background{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #ff47ac;
+    background: -moz-linear-gradient(45deg, #ff47ac 0%, #ffa27a 100%);
+    background: -webkit-linear-gradient(45deg, #ff47ac 0%,#ffa27a 100%);
+    background: linear-gradient(45deg, #ff47ac 0%,#ffa27a 100%);
+    z-index: 1;
+  }/** page-background */
+
+  .header{
+    background: transparent;
+  }/** header */
+
+  .confirm-explore-estilos{
+    padding: 10px;
+    height: auto;
+    font-weight: normal;
+    color: $color-pink;
+    background: rgba( 255, 255, 255, 1);
+    transition: 0.5s;
+    box-shadow: none;
+    border-radius: $border-rd-sm;
+
+    &:active{
+      background: rgba(230, 230, 230, 1);
+    }/** :active */
+    &.activated{
+      background: rgba(230, 230, 230, 1);
+    } /** activated */
+
+  }/** confirm-explore-estilos */
+
+  .grid-styles{
+    padding: 0;
+    .row, .col{ padding: 0; }
+    ul.list-styles{
+      width: 100%;
+      list-style: none;
+      padding: 10px 0 0 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      li.list-styles-item {
+        display: table;
+        float: left;
+        margin: 10px 5px;
+        border-radius: $border-rd-xl;
+        color: #fff;
+        padding: 8px 25px;
+        cursor: pointer;
+        transition: 0.3s;
+        line-height: 17px;
+        position: relative;
+
+        &.pink{ background: #d7336a; }
+        &.brown{ background: #663239; }
+        &.purple{ background: #664982; }
+        &.blue{ background: #668dbd; }
+        &.green{ background: #668465; }
+        &.wine{ background: #a33555; }
+        &.grey{ background: #665879; }
+
+
+        &.selected {
+          padding-right: 40px;
+          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
+          &:after {
+            transform: scale(1);
+          }
+          /** after */
+        }
+        /** selected */
+
+        &:after {
+          content: "\f2bc";
+          font-family: "Ionicons";
+          width: 17px;
+          height: 17px;
+          color: #fff;
+          transition: 0.3s;
+          position: absolute;
+          right: 9px;
+          top: 9px;
+          transform: scale(0);
+        }
+        /** after */
+
+      }/** li.list-styles-item */
+    }/** list-styles */
+  }/** grid-styles */
+
+}

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
+import {Constants} from "../../config/Constants";
 
 /*
   Generated class for the CategoriaProvider provider.
@@ -9,23 +10,23 @@ import { Http } from '@angular/http';
 */
 @Injectable()
 export class CategoriaProvider {
-  private baseApiPath = 'http://localhost/fashon/qrgo/categorias/estilos/';
+  public constants: any = Constants;
 
   constructor(public http: Http) {}
 
   getCategorias()
   {
-    return this.http.get(this.baseApiPath);
+    return this.http.get(this.constants.api_path + 'categorias/estilos/');
   }
 
   setCategorias(body)
   {
-    return this.http.post(this.baseApiPath + 'create', {body});
+    return this.http.post(this.constants.api_path + 'categorias/estilos/create', {body});
   }
 
   getCategoriasSelecionadas()
   {
-    return this.http.get(this.baseApiPath + 'categories_selected');
+    return this.http.get(this.constants.api_path + 'categorias/estilos/categories_selected');
   }
 
 }

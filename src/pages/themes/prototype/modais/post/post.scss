@@ -1,8 +1,14 @@
 page-post {
 
+
+  .content-post-page{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+  }
   .header-background {
     width: 100%;
-    padding: 15% 0 0 0;
+    padding: 14% 0 0 0;
     position: absolute;
     left: 0;
     top: 0;
@@ -118,6 +124,8 @@ page-post {
   .row {
     align-items: center;
     height: 100%;
+    display: flex;
+    outline: none;
   }
   .icon-publicar-send {
     margin-right: 3px;
@@ -212,9 +220,12 @@ page-post {
   .content-post {
     width: 100%;
     height: 100%;
+    position: absolute;
+    z-index: 10;
+    display: block;
 
     .content-info-post {
-      height: 17%;
+      height: 20%;
 
       .content-icon {
         width: 100%;
@@ -229,7 +240,6 @@ page-post {
         width: 83%;
         border-radius: $border-rd-sm;
         border: 2px solid #cccccc;
-        background: red;
         height: 75%;
         float: right;
         margin-top: 15%;
@@ -238,12 +248,18 @@ page-post {
       .text-nome-fantasia {
         width: 100%;
         float: left;
-        height: 30%;
+        height: 20%;
       }
       .content-btn-loc {
         height: auto;
         float: left;
         width: 60%;
+      }
+      .location-selected{
+        width: 100%;
+        height: 25%;
+        float: left;
+        display: inline-flex;
       }
 
       .text-btn-estilo {
@@ -259,13 +275,45 @@ page-post {
 
       }
       .wrapper {
-        width: auto;
-        padding-right: 7%;
-      }
+         width: auto;
+         padding-right: 7%;
+       }
       .svg-ico-usertype {
         width: 13px;
         height: 14px;
         fill: $color-grey;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+      }
+      .wrapper-loc {
+        width: 6%;
+        width: 6%;
+        height: 100%;
+        padding: 1.5% 0px;
+      }
+      .location-text-next{
+        width: 7%;
+        height: 20px;
+        float: left;
+      }
+      .location-text-nome{
+        width: 82%;
+        color: #767e8a;
+        position: fixed;
+        padding: 1% 0%;
+      }
+      .location-text-selected{
+        width: 100%;
+        float: left;
+      }
+      .location-text-content-selected{
+        width: 100%;
+        display: inline-block;
+      }
+      .svg-ico-usertype-loc {
+        width: 13px;
+        height: 14px;
+        fill: $color-grey-dark;
         -webkit-transition: 0.5s;
         transition: 0.5s;
       }
@@ -316,13 +364,14 @@ page-post {
   }
   .input-text-post{
     height: 100%;
-    font-size: 1.5em;
+    font-size: 1.3em;
     width: 100%;
     border: 0px;
     resize: none;
   }
   .content-data-post{
-    height: 100%;
+    height: 81%;
+
   }
   .img-user-icon{
     width: 100%;
@@ -330,5 +379,48 @@ page-post {
   }
   .row-footer{
     border-top: 1px solid $color-grey;
+  }
+  .btn-location-more{
+    background-color: $color-grey-dark;
+    width: 15%;
+    height: 100%;
+    top: 0px;
+    margin-bottom: 100%;
+    margin-top: 0%;
+  }
+  .btn-location-content{
+    float: right;
+    width: 24%;
+    top: 0px;
+    padding: 2% 0px;
+  }
+
+  .height-textarea{
+    height: 50% !important;
+  }
+  .content-image-post {
+    width: 100%;
+    height: 40%;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    padding-top: 2%;
+  .img-post{
+    height: 100%;
+    width: 100%;
+  }
+    .delete-img-post{
+      float: right;
+      padding: 1% 0%;
+      font-size: 1.5em;
+      color: white;
+      right: 4%;
+      z-index: 100000;
+      position: absolute;
+    }
   }
 }

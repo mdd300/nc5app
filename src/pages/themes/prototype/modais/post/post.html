@@ -1,26 +1,26 @@
-<ion-content>
 
-    <div class="header-background" [hidden]="text"></div> <!-- header-background -->
+<!--<ion-header [hidden]="text">-->
+<ion-header style="z-index:20;">
+    <div class="header-background"></div> <!-- header-background -->
 
-    <ion-header [hidden]="text">
-        <ion-grid>
-            <ion-row style="display: inline-flex;   ">
-                <ion-col col-1 class="col-icon">
-                    <div class="icon-back-header">
+    <ion-grid>
+        <ion-row style="display: inline-flex;  ">
+            <ion-col col-1 class="col-icon">
 
-                        <svg class="ico-back-header">
-                            <use [attr.xlink:href]="constants.src_svg + 'back.svg#Layer_1'"></use>
-                        </svg> <!-- ico-back-header -->
-                    </div> <!-- icon-back-header -->
+                <div class="icon-back-header">
+                    <svg class="ico-back-header" (click)="toFeed()">
+                        <use [attr.xlink:href]="constants.src_svg + 'back.svg#Layer_1'"></use>
+                    </svg> <!-- ico-back-header -->
+                </div> <!-- icon-back-header -->
 
 
-                </ion-col>
-                <ion-col col-auto style="width: 46%;">
-                    <div class="text-btn-publicar">PUBLIQUE ALGO...</div>
-                </ion-col>
-                <ion-col col-auto style="width: 45%">
-                    <div class="head-icon-right">
-                    <span text-align="center" class="btn-publicar">
+            </ion-col>
+            <ion-col col-auto style="width: 46%;" >
+                <div class="text-btn-publicar">PUBLIQUE ALGO...</div>
+            </ion-col>
+            <ion-col col-auto style="width: 45%">
+                <div class="head-icon-right" (click)="publicar()">
+                    <span  text-align="center" class="btn-publicar" >
                         <div class="icon-publicar-send">
                     <svg class="svg-send-header">
                         <use [attr.xlink:href]="constants.src_svg + 'send-button.svg#Layer_1'"></use>
@@ -33,23 +33,22 @@
 
                     </div>
                     </span>
-                    </div>
-                </ion-col>
-            </ion-row>
-        </ion-grid>
-    </ion-header>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-header>
+
+<ion-content no-bounce>
 
     <div class="content-post">
-
-        <div class="empty-content-header" [hidden]="text">
-
-        </div>
         <ion-row class="content-info-post row-user" [hidden]="text">
             <ion-col col-3 class="col-user">
                 <div class="content-icon">
                     <div class="content-icon-user">
                         <div class="img-user-post">
-                            <img class="img-user-icon" src="http://ziromoda.com.br/ziroblog/wp-content/uploads/2016/03/Unique-Chic-Oficial.png">
+                            <div class="img-user-icon" style="; background-size:cover; background-position: center;"
+                                 [ngStyle]="{'background-image': 'url('+ 'http://ziromoda.com.br/ziroblog/wp-content/uploads/2016/03/Unique-Chic-Oficial.png' + ')'}" ngStyle="{'background-image': 'url('+ 'http://ziromoda.com.br/ziroblog/wp-content/uploads/2016/03/Unique-Chic-Oficial.png' + ')'}"></div>
                         </div>
                     </div>
                 </div>
@@ -83,16 +82,52 @@
                         <!---->
                         <!--</div>-->
                     </div>
+                    <div class="location-selected" *ngIf="this.post.localizacao.length > 0">
+
+                        <div text-align="center" class="btn-confir wrapper-loc">
+                            <svg class="svg-ico-usertype-loc">
+                                <use [attr.xlink:href]="constants.src_svg + 'maps-and-flags.svg#Layer_1'"></use>
+                            </svg> <!-- svg-ico-usertype -->
+                        </div>
+                        <div class="location-text-content-selected">
+                            <div class="location-text-selected">
+                                <div class="location-text-nome">{{nomeLocation}}</div>
+                                <div class="btn-location-content">
+
+                                    <!-- ajustes do oshiro-->
+
+                                    <button (click)="LocationPost()" ion-button class="btn-location-more" [hidden]="locationMore == 0" round>
+                                        +{{locationMore}}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </ion-col>
         </ion-row>
 
         <div class="content-data-post">
-            <textarea class="input-text-post" #textInput placeholder="Escreva algo..." (ionBlur)="onBlur()"
-                          (ionFocus)="onFocus()"
-                      (keypress)="eventHandler($event.keyCode, $event.target)"></textarea>
+
+            <div class="content-image-post" [hidden]="!imagePost">
+                <div class="delete-img-post" (click)="deleteImage()"> X </div>
+
+                <div class="img-post" [ngStyle]="{'background-image': 'url(' + imagePost + ')'}" ngStyle="{'background-image': 'url(' + imagePost + ')}'" style=" background-size:cover; background-position: center;"></div>
+
+
+            </div>
+
+            <ion-textarea class="input-text-post" [ngClass]="{ 'height-textarea': imagePost}" [(ngModel)]="post.text" #textInput placeholder="Escreva algo..." (ionBlur)="onBlur()"
+                      (ionFocus)="onFocus()"></ion-textarea>
         </div>
+
+        <!--<div class="content-data-post">-->
+        <!--<textarea class="input-text-post"  [(ngModel)]="post.text" #textInput placeholder="Escreva algo..." (ionBlur)="onBlur()"-->
+        <!--(ionFocus)="onFocus()"-->
+        <!--(keypress)="eventHandler($event.keyCode, $event.target)"></textarea>-->
+        <!--</div>-->
+
 
     </div>
 
@@ -113,7 +148,7 @@
             </div>
         </ion-col>
 
-        <ion-col class="col-footer">
+        <ion-col class="col-footer" (click)="actionsPostFeed( post )">
             <div class="col-footer-post">
                 <div class="icon-footer">
                     <svg class="svg-footer">

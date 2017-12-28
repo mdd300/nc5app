@@ -45,21 +45,28 @@
         <input type="password" class="recover-form" [(ngModel)]="confirm_pass" placeholder="Confirmar Senha">
       </ion-col>
     </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button class="pink-button align-center" [ngClass]="{'allowed': true }" (click)="finishNewPass()"> Enviar </button>
+      </ion-col>
+  </ion-row>
   </ion-grid>
 
 </ion-content>
-<ion-footer>
-  <div class="footer-steps" >
+<!-- 
+  <ion-footer>
+    <div class="footer-steps" >
 
-    <div class="next-step-action" [ngClass]="{'allowed': true }" (click)="finishNewPass()" >
-            <span class="next-step-label">
-                Terminar!
-            </span> <!-- next-stap-label -->
-      <div class="nextstep-icon" >
-        <span class="caret-body"></span>
-        <span class="caret-direction"></span>
-      </div> <!-- nextstep-icon -->
-    </div> <!-- next-stap-action -->
+      <div class="next-step-action" [ngClass]="{'allowed': true }" (click)="finishNewPass()" >
+              <span class="next-step-label">
+                  Terminar!
+              </span>  next-stap-label 
+        <div class="nextstep-icon" >
+          <span class="caret-body"></span>
+          <span class="caret-direction"></span>
+        </div>  nextstep-icon 
+      </div>  next-stap-action 
 
-  </div> <!-- footer-steps -->
-</ion-footer>
+    </div>  footer-steps 
+  </ion-footer>
+-->

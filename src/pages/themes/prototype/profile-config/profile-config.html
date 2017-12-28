@@ -1,0 +1,168 @@
+<ion-header class="header-background">
+  <ion-grid class="grid-header">
+    <ion-row>
+      <ion-col col-auto class="col-back" (click)="closeSettings()">
+        <div class="header-back"></div> <!-- header-back -->
+      </ion-col><!-- col-auto -->
+      <ion-col>
+            <span class="header-title">
+                Configurações
+            </span><!-- header-title -->
+      </ion-col>
+    </ion-row>
+  </ion-grid><!-- grid-header -->
+</ion-header><!-- header-background -->
+<ion-content>
+  <ion-scroll scrollY="true">
+
+    <ion-list>
+
+      <ion-list-header>
+        Meu Perfil
+      </ion-list-header>
+
+      <button ion-item >
+        <svg class="item-ico">
+           <use [attr.xlink:href]="constants.src_svg + 'pencil.svg#Layer_1'"></use>
+        </svg> <!-- item-ico -->
+        Editar meu Perfil 
+      </button>
+      <button ion-item (click)="changeProfileView()">
+        <svg class="item-ico">
+          <use [attr.xlink:href]="constants.src_svg + 'eye.svg#Layer_1'"></use>
+        </svg> <!-- item-ico -->
+        Visualizar Perfil como Visitante
+      </button>
+      <button ion-item >
+        <svg class="item-ico">
+          <use [attr.xlink:href]="constants.src_svg + 'megaphone.svg#Layer_1'"></use>
+        </svg> <!-- item-ico -->
+        Promover Perfil
+      </button>
+      <button ion-item >
+        <svg class="item-ico">
+          <use [attr.xlink:href]="constants.src_svg + 'shirt.svg#Layer_1'"></use>
+        </svg> <!-- item-ico -->
+        Gerenciar Lojas
+      </button>
+      <button ion-item class="no-border" >
+        <svg class="item-ico">
+          <use [attr.xlink:href]="constants.src_svg + 'lock.svg#Layer_1'"></use>
+        </svg> <!-- item-ico -->
+        Privacidade
+      </button>
+
+      <ion-list-header>
+        Configurações
+      </ion-list-header>
+
+      <button ion-item class="no-border" >
+        <svg class="item-ico">
+          <use [attr.xlink:href]="constants.src_svg + 'cogs.svg#Layer_1'"></use>
+        </svg> <!-- item-ico -->
+        Configurar Minha Conta
+      </button>
+      <button ion-item class="no-border" >
+        <svg class="item-ico">
+          <use [attr.xlink:href]="constants.src_svg + 'key.svg#Layer_1'"></use>
+        </svg> <!-- item-ico -->
+        Mudar Senha
+      </button>
+      <button ion-item class="no-border" >
+        <svg class="item-ico">
+          <use [attr.xlink:href]="constants.src_svg + 'diagram.svg#Layer_1'"></use>
+        </svg> <!-- item-ico -->
+        Gestão de Usuários
+      </button>
+      <button ion-item class="no-border" >
+        <svg class="item-ico">
+          <use [attr.xlink:href]="constants.src_svg + 'user_unabled.svg#Layer_1'"></use>
+        </svg> <!-- item-ico -->
+        Desativar Conta
+      </button>
+
+      <ion-list-header>
+        Gerenciar Loja
+      </ion-list-header>
+
+      <button ion-item class="no-border" >
+        <svg class="item-ico">
+          <use [attr.xlink:href]="constants.src_svg + 'shirt-hanger.svg#Layer_1'"></use>
+        </svg> <!-- item-ico -->
+        Gerenciar Produtos
+      </button>
+      <button ion-item class="no-border" >
+        <svg class="item-ico">
+          <use [attr.xlink:href]="constants.src_svg + 'cart.svg#Layer_1'"></use>
+        </svg> <!-- item-ico -->
+        Minhas Vendas
+      </button>
+      <button ion-item class="no-border" >
+        <svg class="item-ico">
+          <use [attr.xlink:href]="constants.src_svg + 'dollar.svg#Layer_1'"></use>
+        </svg> <!-- item-ico -->
+        Financeiro
+      </button>
+      <button ion-item class="no-border" >
+        <svg class="item-ico">
+          <use [attr.xlink:href]="constants.src_svg + 'graph.svg#Layer_1'"></use>
+        </svg> <!-- item-ico -->
+        Relatorios
+      </button>
+
+      <ion-list-header>
+        Geral
+      </ion-list-header>
+
+      <button ion-item class="no-border" >
+        <svg class="item-ico">
+          <use [attr.xlink:href]="constants.src_svg + 'bell.svg#Layer_1'"></use>
+        </svg> <!-- item-ico -->
+        Configurações de Notificações
+      </button>
+      <button ion-item class="no-border" >
+        <svg class="item-ico">
+          <use [attr.xlink:href]="constants.src_svg + 'user_plus.svg#Layer_1'"></use>
+        </svg> <!-- item-ico -->
+        Convidar Pessoas
+      </button>
+
+      <ion-list-header>
+        Suporte
+      </ion-list-header>
+
+      <button ion-item class="no-border" >
+        <svg class="item-ico">
+          <use [attr.xlink:href]="constants.src_svg + 'question_mark.svg#Layer_1'"></use>
+        </svg> <!-- item-ico -->
+        Central de Ajuda (FAQ)
+      </button>
+      <button ion-item class="no-border" >
+        <svg class="item-ico">
+          <use [attr.xlink:href]="constants.src_svg + 'caution.svg#Layer_1'"></use>
+        </svg> <!-- item-ico -->
+        Relatar Problemas
+      </button>
+
+      <span class="list-separator"></span>
+
+      <button ion-item class="no-border" >
+        <svg class="item-ico">
+          <use [attr.xlink:href]="constants.src_svg + 'qrgo_square.svg#Layer_1'"></use>
+        </svg> <!-- item-ico -->
+        Sobre o Aplicativo
+      </button>
+
+      <span class="list-separator"></span>
+
+      <button ion-item class="no-border" >
+        <svg class="item-ico">
+          <use [attr.xlink:href]="constants.src_svg + 'power.svg#Layer_1'"></use>
+        </svg> <!-- item-ico -->
+        Sair
+      </button>
+
+    </ion-list>
+
+  </ion-scroll>
+</ion-content>

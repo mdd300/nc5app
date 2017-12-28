@@ -30,14 +30,15 @@
                     <div class="cad-form-content">
                         <label class="cad-form-label">
                             <span class="cad-form-label-txt"> CNPJ: </span> <!-- cad-form-label-txt -->
-                            <input type="text" [(ngModel)]="captcha.vazio"  name="cpf" (keyup)="statusBusca()" class="cad-form-ctrl cnpj" placeholder="Insira o CNPJ"  [brmasker]="{person:true}">
+                            <input type="text" [(ngModel)]="captcha.vazio"  name="cnpj" (keyup)="statusBusca()" class="cad-form-ctrl cnpj" placeholder="Insira o CNPJ"  [brmasker]="{person:true}">
                         </label><!-- cad-form-label -->
                     </div> <!-- cad-form-content -->
                 </ion-col>
             </ion-row>
             <div [hidden]="stepOk || stepOkCnpj">
                 <div class="form-cont">
-                    <button class="login-btn" (click)="searchCnpj()">Buscar</button>
+                    <button  class="login-btn" (click)="searchCnpj()"> Buscar </button>
+                    <!--<ion-spinner [hidden]="!load" class="position-spinner"></ion-spinner>-->
                 </div> <!-- form-cont -->
             </div>
 

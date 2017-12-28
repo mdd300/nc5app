@@ -5,6 +5,7 @@ import {ForgotPass_3Page} from "../forgot-pass-3/forgot-pass-3";
 import {Constants} from "../../../../../config/Constants";
 import {Http} from "@angular/http";
 import * as $ from "jquery";
+import {LoadingController} from 'ionic-angular';
 
 /**
  * Generated class for the ForgotPass_2Page page.
@@ -23,9 +24,9 @@ export class ForgotPass_2Page {
     constructor(public navCtrl: NavController,
                 public navParams: NavParams,
                 private alertCtrl: AlertController,
-                public http: Http) {
+                public http: Http,
+                public loadingCtrl: LoadingController) {
     }
-
     public constants = Constants;
     public validCode: boolean = true;
     public response: any;
@@ -36,6 +37,38 @@ export class ForgotPass_2Page {
     public backPage = (() => {
         /* Remove uma página do controller de navegação */
         this.navCtrl.pop();
+    });
+    //reenviar código de confirmação 
+    public reviewCode = (() => {
+
+        //configura modal de load para reeinviar codigo
+        let loader = this.loadingCtrl.create({content: "Reenviando código..."});
+        //ativa o modal
+        loader.present();
+        
+        this.http.post(this.constants.api_path + 'login/start_recover', $.param({user_login:this.navParams.get('user_login')})).subscribe(response => {
+            var res = (response as any);
+            this.response = JSON.parse(res._body);
+            //destroy o modal de load
+            loader.dismissAll();
+                let alert = this.alertCtrl.create({
+                    title: 'QRGO',
+                    subTitle: 'Código enviado para: <br><br>'+this.navParams.get('user_login'),
+                    buttons: ['Ok']
+                });
+                alert.present();
+            
+        }, error => {
+            loader.dismissAll();
+            //modal de erro na autenticação
+            let alert = this.alertCtrl.create({
+                title: 'Erro!',
+                subTitle: 'Tente novamente mais tarde.',
+                buttons: ['Ok']
+            });
+            alert.present();
+        });
+
     });
     /* Fim da função de backPage */
 

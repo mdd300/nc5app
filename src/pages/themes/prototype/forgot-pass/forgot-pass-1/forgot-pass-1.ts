@@ -6,6 +6,7 @@ import {AlertController} from 'ionic-angular';
 import {ForgotPass_2Page} from "../forgot-pass-2/forgot-pass-2";
 import {Storage} from '@ionic/storage';
 import * as $ from "jquery";
+import {LoadingController} from 'ionic-angular';
 
 /**
  * Generated class for the ForgotPass_1Page page.
@@ -25,7 +26,8 @@ export class ForgotPass_1Page {
                 public navParams: NavParams,
                 private alertCtrl: AlertController,
                 public storage: Storage,
-                public http: Http) {
+                public http: Http,
+                public loadingCtrl: LoadingController) {
     }
 
     public constants = Constants;
@@ -59,15 +61,36 @@ export class ForgotPass_1Page {
             /* Caso valido, prossegue com o processo */
 
             var data_send = {user_login: this.email_to_recover};
-            this.http.post(this.constants.api_path + 'login/start_recover', $.param(data_send)).subscribe(response => {
 
+            //configura modal de load para reeinviar codigo
+            let loader = this.loadingCtrl.create({content: "Autenticando o e-mail..."});
+            //ativa o modal
+            loader.present();
+
+            this.http.post(this.constants.api_path + 'login/start_recover', $.param(data_send)).subscribe(response => {
+                //destroe o modal
+                loader.dismissAll();
                 var res = (response as any);
                 this.response = JSON.parse(res._body);
 
                 if (this.response.success) {
                     this.navCtrl.push(ForgotPass_2Page, {user_login: this.email_to_recover})
+                }else{
+                    let alert = this.alertCtrl.create({
+                        title: 'QRGO',
+                        subTitle: 'E-mail não cadastrado.',
+                        buttons: ['Ok']
+                    });
+                    alert.present();    
                 }
-
+            }, erro=>{
+                loader.dismissAll();
+                let alert = this.alertCtrl.create({
+                    title: 'QRGO',
+                    subTitle: 'Erro interno,<br> tente novamente mais tarde.',
+                    buttons: ['Ok']
+                });
+                alert.present();  
             });
 
             // console.log(this.storage.get('user_logged'));

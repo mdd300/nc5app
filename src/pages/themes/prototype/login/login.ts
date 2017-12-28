@@ -1,14 +1,15 @@
 import {Component} from '@angular/core';
-import {Http} from "@angular/http";
 import {IonicPage, NavController, NavParams, ToastController} from 'ionic-angular';
 import {Constants} from "../../../../config/Constants";
 import {SlidesPage} from "../slides/slides";
 import {Step1Page} from "../cadastro/step1/step1";
 import {SystemTabsPage} from "../system-tabs/system-tabs";
 import {ForgotPass_1Page} from "../forgot-pass/forgot-pass-1/forgot-pass-1";
+import {Http} from "@angular/http";
 import * as $ from "jquery";
 import {ConfirmCadPage} from "../cadastro/confirm-cad/confirm-cad";
 import {Storage} from '@ionic/storage';
+import {Platform} from 'ionic-angular';
 
 /**
  * Generated class for the LoginPage page.
@@ -31,13 +32,38 @@ export class LoginPage {
         user_pass: ""
     };
 
-    public teste = "";
-
     constructor(public navCtrl: NavController,
                 public navParams: NavParams,
                 public toastCtrl: ToastController,
                 public http: Http,
-                public storage: Storage) { /* Init of constructor of class */
+                public storage: Storage,
+                public platform: Platform) { /* Init of constructor of class */
+
+        platform.ready().then(() => {
+
+            // console.log(user_logged);
+            //
+            // storage.set('user_logged', null);
+            //
+            // storage.get('user_logged').then((user_logged) => {
+            //
+            //     console.log(user_logged);
+            //
+            //     if (user_logged !== null) {
+            //
+            //         console.log(user_logged.user_id);
+            //
+            //         if (user_logged.user_id) {
+            //             console.log(user_logged);
+            //             this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
+            //         }
+            //     }
+            //
+            // });
+
+
+        });
+
     }
 
     /** Fim do constructor da classe */
@@ -59,22 +85,24 @@ export class LoginPage {
     /**
      * Função utilizada para realizar o login do usuário */
     public doLogin = (() => {
-
-        // this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
+        //this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
 
         var data_send = this.logindata;
-        this.http.post(this.constants.api_path + 'login/do_login2', $.param(data_send)).subscribe(response => {
+        this.http.post(this.constants.api_path + 'login/dologin', $.param(data_send)).subscribe(response => {
 
             var res = (response as any);
             this.login = JSON.parse(res._body);
-            const login = (this.login as any);
+            var login = (this.login as any);
 
             if (login.success) {
 
-                this.storage.set('user_logged', login.userdata);
+                this.storage.set('user_logged', login.userdata).then(() => { // Setando os dados do usuário logado no storage
+                    localStorage.setItem('user_logged', JSON.stringify(login.userdata)); // E no localStorage
+                });
+
+                this.storage.set('access', login.access); // Setando o hash e token de acesso
 
                 if (login.no_verified) {
-                    console.log(login);
                     this.navCtrl.push(ConfirmCadPage);
                 }
                 else {

@@ -33,18 +33,30 @@
         </ion-row>
         <ion-row>
             <ion-col col-auto>
-                <button class="style-plus-button"> + </button>
+                <button class="style-plus-button" (click)="settingsStyles()"> + </button>
             </ion-col>
             <ion-col class="relative">
                 <div class="viewbox-styles" >
                     <ul class="list-styles">
-                        <li class="style-item pink">Femininos</li>
-                        <li class="style-item purple">Jaquetas</li>
-                        <li class="style-item brown">Saias</li>
+                        <li class="style-item pink">
+                            Femininos
+                            <span class="times-style"></span><!-- times-style -->
+                        </li><!-- style-item -->
+                        <li class="style-item purple">
+                            Jaquetas
+                            <span class="times-style"></span><!-- times-style -->
+                        </li><!-- style-item -->
+                        <li class="style-item brown">
+                            Saias
+                            <span class="times-style"></span><!-- times-style -->
+                        </li><!-- style-item --> <li class="style-item brown">
+                            Saias
+                            <span class="times-style"></span><!-- times-style -->
+                        </li><!-- style-item -->
                     </ul><!-- list-styles -->
                 </div> <!-- viewbox-styles -->
             </ion-col>
-            <ion-col col-auto>
+            <ion-col col-auto (click)="doLogout()">
                 
                 <div class="filter-styles" >
                     <svg class="ico-filter-styles">
@@ -59,21 +71,22 @@
     <ion-grid class="grid-destaques">
 
         <ion-row>
-            <ion-col>
+            <ion-col class="col-title">
                 <span class="grid-title">
                     Destaques
                 </span> <!-- grid-title -->
             </ion-col>
         </ion-row>
+
         <ion-row>
             <ion-col>
                 <div class="viewport-destaques" >
                     <ul class="viewport-list">
-                        <li class="destaque-item">
+                        <li class="destaque-item" *ngFor="let destaque of destaques">
                             <div class="destaque-header" >
 
                                 <div class="destaque-header-img">
-                                    <div class="img-destaque" ></div> <!-- img-destaque -->
+                                    <div class="img-destaque" [ngStyle]="{ 'background-image': 'url(' + constants.src_img + 'exemples/' + destaque.company_logo + ')'}" ></div> <!-- img-destaque -->
                                 </div> <!-- destaque-header-img -->
 
                                 <div class="destaque-header-infos">
@@ -81,12 +94,12 @@
                                         
                                         <div class="destaque-info" >
                                             <span class="destaque-info-label title" >
-                                                Unieke
+                                                {{ destaque.company_name }}
                                             </span> <!-- destaque-info-label -->
                                         </div> <!-- destaque-info -->
                                         <div class="destaque-info" >
                                             <span class="destaque-info-label description" >
-                                                Confecção
+                                                {{ destaque.company_type }}
                                             </span> <!-- destaque-info-label -->
                                         </div> <!-- destaque-info -->
 
@@ -99,13 +112,11 @@
 
                             </div> <!-- destaque-header -->
 
-                            <div class="destaque-body" ></div> <!-- destaque-body -->
+                            <div class="destaque-body" [ngStyle]="{ 'background-image': 'url(' + constants.src_img + 'exemples/' + destaque.destaque_wallpaper + ')'}" ></div> <!-- destaque-body -->
 
                             <div class="destaque-footer" >
                                 <ul class="destaque-footer-list">
-                                    <li class="destaque-footer-item"></li><!-- destaque-footer-item -->
-                                    <li class="destaque-footer-item"></li><!-- destaque-footer-item -->
-                                    <li class="destaque-footer-item"></li><!-- destaque-footer-item -->
+                                    <li class="destaque-footer-item" [ngStyle]="{ 'background-image': 'url(' + constants.src_img + 'exemples/' + produto.product_image + ')'}"  *ngFor="let produto of destaque.destaque_products"></li><!-- destaque-footer-item -->
                                 </ul><!-- destaque-footer-list -->
                             </div> <!-- destaque-footer -->
 
@@ -114,7 +125,61 @@
                 </div> <!-- viewport-destaques -->
             </ion-col>
         </ion-row>
-
     </ion-grid><!-- grid-destaques -->
+
+    <ion-grid class="grid-explore-middle">
+        <ion-row *ngFor="let feed of feedExplore">
+            <ion-col>
+                <ul class="list-explore-middle" [ngClass]="feed.direction">
+
+                    <li class="explore-middle-item" *ngFor="let produtos of feed.products">
+                        <div class="explore-item-cont" >
+                            <div class="explore-item" [ngStyle]="{'background-image': 'url(' + constants.src_img + 'exemples/' + produtos.product_image + ')'}">
+                                <div class="explore-item-logo" [ngStyle]="{'background-image': 'url(' + constants.src_img + 'exemples/' + produtos.product_logo + ')'}"  ></div> <!-- explore-item-logo -->
+                            </div> <!-- explore-item -->
+                        </div> <!-- explore-item-cont -->
+                    </li><!-- explore-middle-item -->
+
+                </ul><!-- list-explore-middle -->
+            </ion-col>
+        </ion-row>
+    </ion-grid><!-- grid-explore-middle -->
+
+    <ion-grid class="grid-follow-recommended">
+        <ion-row>
+            <ion-col>
+                <span class="grid-title grey">
+                    Sugestões para se conectar
+                </span> <!-- grid-title -->
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <div class="viewport-suggestions" >
+                    <ul class="viewport-suggestions-list">
+                        <li class="suggestions-item" *ngFor=" let suggestion of suggestions ">
+                            <div class="suggestion-image" [ngStyle]="{'background-image': 'url(' + constants.src_img +'exemples/' + suggestion.company_logo + ')'}" ></div> <!-- suggestion-image -->
+                            <div class="seggestion-actions" >
+                                <div class="suggestion-action" >
+                                    <span class="suggestion-label title">
+                                        {{suggestion.company_name}}
+                                    </span><!-- suggestion-label -->
+                                </div> <!-- suggestion-action -->
+                                <div class="suggestion-action description-action" >
+                                    <span class="suggestion-label description">
+                                        {{suggestion.company_type}}
+                                    </span><!-- suggestion-label -->
+                                </div> <!-- suggestion-action -->
+                                <div class="suggestion-action" >
+                                    <button ion-button class="suggestion-button"> Conectar </button>
+                                </div> <!-- suggestion-action -->
+                            </div> <!-- seggestion-actions -->
+
+                        </li><!-- suggestions-item -->
+                    </ul><!-- viewport-suggestions-list -->
+                </div> <!-- viewport-suggestions -->
+            </ion-col>
+        </ion-row>
+    </ion-grid><!-- grid-follow-recommended -->
 
 </ion-content>

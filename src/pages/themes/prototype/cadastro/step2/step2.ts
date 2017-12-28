@@ -1,12 +1,13 @@
 import {Component} from '@angular/core';
-import {IonicPage, NavController, NavParams, AlertController, Keyboard} from 'ionic-angular';
+import {IonicPage, NavController, NavParams, AlertController} from 'ionic-angular';
 import {Constants} from "../../../../../config/Constants";
 import {Step1Page} from "../step1/step1";
 import {Step3Page} from "../step3/step3";
-import {Http, Headers, RequestOptions} from '@angular/http';
+import {Http} from '@angular/http';
 import * as $ from 'jquery';
 import {LoadingController} from 'ionic-angular';
-import {DomSanitizer, SafeHtml, SafeStyle, SafeUrl} from '@angular/platform-browser';
+import {SafeUrl} from '@angular/platform-browser';
+
 /**
  * Generated class for the Step2Page page.
  *
@@ -40,32 +41,23 @@ export class Step2Page {
     public stepBuscar: boolean = true;
     public imgCaptcha: SafeUrl;
     public user_type = this.navParams.get("user_type");
+    public load:boolean = true;
+
+    constructor(public navCtrl: NavController,
+                public navParams: NavParams,
+                private alertCtrl: AlertController,
+                private http: Http,
+                public loadingCtrl: LoadingController) {
+    }
 
 
-    constructor(
-        public navCtrl: NavController,
-        public navParams: NavParams,
-        private alertCtrl: AlertController,
-        private keyboard: Keyboard,
-        private http: Http,
-        public loadingCtrl: LoadingController,
-        private sanitizer:DomSanitizer
 
-    ) {}
-
-    
-    public presentLoading = (() => {
-        let loader = this.loadingCtrl.create({
-            content: "Aguarde...",
-        });
-            loader.present();
-    });
-
-     /**
+    /**
      /**
      * Função utilizada para retornar ao passo 1 do cadastro
      * @type {() => any} */
     public backToStep1 = (() => {
+     //   $("input[name=cnpj]").val("");
         this.navCtrl.push(Step1Page);
     });
     /** Fim da função de retorno ao passo 1 do cadastro */
@@ -76,65 +68,69 @@ export class Step2Page {
      */
 
 
+
     public statusBusca = (() => {
+        this.load = true;
         this.stepOk = false;
         this.stepOkCnpj = false;
+
     });
 
     public searchCnpj = (() => {
         /* Verifica se o CNPJ é real */
-        
-        
-        this.captcha.cnpj = $(".cnpj").val();
-
+        this.captcha.cnpj = $("input[name=cnpj]").val();
         if (this.validateCnpj()) {
-
-            //inicia o loading
-            //this.presentLoading();
-
             this.captcha.cnpj = this.clearDataMask(this.captcha.cnpj, 'cnpj');
             this.getCaptcha();
         }
-
     });
     /* Fim da função */
 
     public getCaptcha = (() => {
         this.captcha.digito = "";
+        this.load = false;
         var resposta = null;
+        let loader = this.loadingCtrl.create({content: "Aguarde..."});
+        loader.present();
         this.http.post(
             Constants.api_path + 'cadastro/getCaptcha', $.param({'cnpj': this.captcha.cnpj}))
             .subscribe((data) => {
-                    var resposta = (data as any);
+                loader.dismissAll();
+                     resposta = (data as any);
                     resposta = JSON.parse(resposta._body);
-                    if (!resposta.existe) {
 
+                this.load = false;
+                    if (!resposta.existe) {
                         //var captcha = this.sanitizer.bypassSecurityTrustResourceUrl("data:image/jpeg;"+resposta.dados.captchaBase64);
-                      //  this.imgCaptcha = "data:image/png;base64,"+resposta.dados.captchaBase64;
-                        this.imgCaptcha = resposta.dados.captchaBase64;
+                        this.imgCaptcha = "data:image/png;base64,"+resposta.dados.captchaBase64;
+                        //this.imgCaptcha = resposta.dados.captchaBase64;
                         this.captcha.key = resposta.dados.cookie;
                         this.stepOk = true;
                         this.stepOkCnpj = false;
                         this.emp.empresa_existe = false;
 
                     } else {
-                        this.emp = resposta.dados[0];
-                        this.stepOkCnpj = true;
-                        this.stepOk = false;
-                        this.emp.empresa_existe = true;
+                        let alert = this.alertCtrl.create({
+                            title: 'CNPJ ',
+                            subTitle: 'Este CNPJ ja esta sendo usado por outra empresa.',
+                            buttons: ['Ok']
+                        });
+                        alert.present();
 
                     }
 
-            }, error => {
-                //modal de erro na autenticação
-                let alert =this.alertCtrl.create({
-                    title: 'QRGO',
-                    subTitle: 'CNPJ não encontrado',
-                    buttons: ['Ok']
-                });
-                alert.present();
-            });
-            
+
+            })
+        //, error => {
+        //     //modal de erro na autenticação
+        //     let alert =this.alertCtrl.create({
+        //         title: 'QRGO',
+        //         subTitle: 'CNPJ não encontrado',
+        //         buttons: ['Ok']
+        //     });
+        //     alert.present();
+        // });
+
     });
 
     // public getSantizeUrl(url : string) {
@@ -171,10 +167,13 @@ export class Step2Page {
 
     public getCnpj = (() => {
         var resposta = null;
+        let loader = this.loadingCtrl.create({content: "Aguarde..."});
+        loader.present();
         this.http.post(
             Constants.api_path + 'cadastro/getCnpj', $.param(this.captcha))
             .subscribe((data) => {
                 resposta = (data as any);
+                loader.dismissAll();
                     resposta = JSON.parse(resposta._body);
                     if (resposta.success) {
 
@@ -194,8 +193,7 @@ export class Step2Page {
 
                     }
                 }
-
-        )
+            )
 
     });
     public clearDataMask = ((data, type) => {

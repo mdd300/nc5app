@@ -42,7 +42,8 @@
     background: transparent;
   }
 }
-
+*{ &::-webkit-scrollbar{ display: none; } }
+ion-scroll{ height: 100%; }
 
 /** Separação para estilos relacionados ao formulário de cadastro */
 .cad-form-content {
@@ -129,12 +130,11 @@
 
 /** cad-form-content */
 
-
 /** Criação de ICONES customizados para o footer dos Tabs */
 .ion-ios-QrHome-outline,
 .ion-ios-QrHome,.ion-md-QrHome,.ion-md-QrHome-outline {
   content: url('../assets/themes/prototype/img/svg/menu-inferior/home.svg');
-  width: 40%;
+  width: 35%;
   &[ng-reflect-is-active="true"]{
     content: url('../assets/themes/prototype/img/svg/menu-inferior/home-fill.svg');
     transform: none !important;
@@ -144,7 +144,7 @@
 .ion-ios-QrExplore-outline,
 .ion-ios-QrExplore,.ion-md-QrExplore,.ion-md-QrExplore-outline {
   content: url('../assets/themes/prototype/img/svg/menu-inferior/search.svg');
-  width: 40%;
+  width: 35%;
   &[ng-reflect-is-active="true"]{
     content: url('../assets/themes/prototype/img/svg/menu-inferior/search-fill.svg');
     transform: none !important;
@@ -154,29 +154,28 @@
 .ion-ios-QrBag-outline,
 .ion-ios-QrBag,.ion-md-QrBag,.ion-md-QrBag-outline {
   content: url('../assets/themes/prototype/img/svg/menu-inferior/bag.svg');
-  width: 40%;
+  width: 35%;
   &[ng-reflect-is-active="true"]{
     content: url('../assets/themes/prototype/img/svg/menu-inferior/bag-fill.svg');
     transform: none !important;
   }
 }
 
-.ion-ios-QrNotification-outline,
-.ion-ios-QrNotification,.ion-md-QrNotification,.ion-md-QrNotification-outline {
-  content: url('../assets/themes/prototype/img/svg/menu-inferior/notification.svg');
-  width: 40%;
+.ion-ios-QrMessages-outline,
+.ion-ios-QrMessages,.ion-md-QrMessages,.ion-md-QrMessages-outline {
+  content: url('../assets/themes/prototype/img/svg/menu-inferior/messages.svg');
+  width: 35%;
   &[ng-reflect-is-active="true"]{
-    content: url('../assets/themes/prototype/img/svg/menu-inferior/notification-fill.svg');
+    content: url('../assets/themes/prototype/img/svg/menu-inferior/messages-fill.svg');
     transform: none !important;
   }
 }
-
-.ion-ios-QrMore-outline,
-.ion-ios-QrMore,.ion-md-QrMore,.ion-md-QrMore-outline {
-  content: url('../assets/themes/prototype/img/svg/menu-inferior/menu.svg');
-  width: 40%;
+.ion-ios-QrProfile-outline,
+.ion-ios-QrProfile,.ion-md-QrProfile,.ion-md-QrProfile-outline {
+  content: url('../assets/themes/prototype/img/svg/menu-inferior/user.svg');
+  width: 35%;
   &[ng-reflect-is-active="true"]{
-    content: url('../assets/themes/prototype/img/svg/menu-inferior/menu-fill.svg');
+    content: url('../assets/themes/prototype/img/svg/menu-inferior/user-fill.svg');
     transform: none !important;
   }
 }
@@ -261,6 +260,22 @@
       &:after{ content: "Denunciar usuário para a administração."; }
     }/** btnOcultar */
 
+
+    &.btnConnectUser{
+      &:before{ content: url('../assets/themes/prototype/img/svg/filled/follow-grey.svg'); } /** before */
+      &:after{ content: "Receba novidades e produtos do usuário."; }
+    }/** btnOcultar */
+    &.btnBlockUser{
+      &:before{ content: url('../assets/themes/prototype/img/svg/filled/block-grey.svg'); } /** before */
+      &:after{ content: "Bloquear qualquer tipo de conexão com este usuário."; }
+    }/** btnOcultar */
+    &.btnDenunciarUser{
+      margin-bottom: 20px;
+      &:before{ content: url('../assets/themes/prototype/img/svg/filled/denunciar-grey.svg'); } /** before */
+      &:after{ content: "Denunciar usuário para a administração."; }
+    }/** btnOcultar */
+
+
   }/** actionButton */
 
 }/** feed-post-actions */
@@ -308,3 +323,48 @@
 
 .relative{ position: relative; }
 .pointer{ cursor: pointer; }
+
+
+.grid-header{
+  .col{
+    display: flex;
+    align-items: center;
+  }
+  .col-back{
+    padding-left: 10px;
+    padding-right: 0px;
+    .header-back{
+      width: 25px;
+      height: 100%;
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      &:before{
+        content: "\f3cf";
+        font-family: "Ionicons";
+        color: #fff;
+        font-size: 2em;
+      }
+    }/** header-back */
+  }/** col-back */
+  .header-title{
+    font-family: Multicolore;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1em;
+  }/** header-title */
+
+}/** grid-header */
+
+.fullModal{
+  .modal-wrapper{ width: 100%; height: 100%; left: 0; top: 0; }
+}/** fullModal */
+
+.header-background{
+  background: rgb(255,86,164) !important;
+  background: -moz-linear-gradient(45deg, rgba(255,86,164,1) 0%, rgba(255,155,126,1) 100%) !important;
+  background: -webkit-linear-gradient(45deg, rgba(255,86,164,1) 0%,rgba(255,155,126,1) 100%) !important;
+  background: linear-gradient(45deg, rgba(255,86,164,1) 0%,rgba(255,155,126,1) 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff56a4', endColorstr='#ff9b7e',GradientType=1 ) !important;
+}/** header-background */

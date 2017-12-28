@@ -1,0 +1,513 @@
+page-profile {
+
+  .profile-header {
+    background: transparent;
+    .profile-header-grid {
+      width: 100%;
+
+      .profile-header-icon {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.left {
+          justify-content: flex-start;
+        }
+        /** left */
+        &.right {
+          justify-content: flex-end;
+        }
+        /** right */
+
+        .ico-profile-header {
+          width: 70%;
+          height: 70%;
+          fill: #fff;
+        }
+        /** ico-profile-header */
+      }
+      /** profile-header-icon */
+
+      .profile-header-names {
+        display: flex;
+        position: relative;
+
+        .profile-header-labels {
+          display: flex;
+          flex-grow: 1;
+          flex-flow: column;
+
+          .profile-header-label {
+            width: 100%;
+            position: relative;
+            color: rgba(255, 255, 255, 1);
+            text-transform: uppercase;
+            .profile-label {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              left: 0;
+              top: 0;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              text-align: center;
+              padding: 0 10px;
+            }
+            /** profile-label */
+
+            &.title {
+              height: 20px;
+              font-family: Multicolore;
+              font-size: 1.2em;
+            }
+            /** Title */
+            &.subtitle {
+              height: 15px;
+              color: rgba(255, 255, 255, 0.7);
+            }
+            /** subtitle */
+          }
+          /** profile-header-label */
+
+        }
+        /** profile-header-labels */
+      }
+      /** profile-header-names */
+
+    }
+    /** profile-header-grid */
+  }
+  /** profile-header */
+
+  .profile-content {
+    width: 100%;
+    position: relative;
+    display: table;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .background-gradient {
+      width: 100%;
+      height: 100px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+    /** background-gradient */
+    .background-gradient-bottom {
+      width: 100%;
+      height: 70%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+    }
+    /** background-gradient-bottom */
+
+    .profile-grid {
+      width: 100%;
+      margin: 150px 0 0 0;
+
+      .image-profile {
+        min-width: 80px;
+        min-height: 80px;
+        background: #fff;
+        border-radius: $border-rd-sm;
+        border: 1px solid #fff;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      /** image-profile */
+
+      .profile-settings {
+        display: flex;
+        flex-flow: column;
+
+        .company-name {
+          width: 100%;
+          padding: 12px 0 0 0;
+          color: #fff;
+          font-weight: bold;
+          font-size: 1.3em;
+          line-height: 13px;
+        }
+        /** company-name */
+        .company-type {
+          width: 100%;
+          padding: 2px 0 5px 0;
+          color: rgba(255, 255, 255, 0.8);
+          font-size: 1em;
+          text-transform: uppercase;
+
+        }
+        /** company-type */
+
+        .company-profile-actions {
+          width: 100%;
+          display: table;
+          position: relative;
+
+          .current-profile {
+            width: 100%;
+            float: left;
+            display: table;
+            position: relative;
+          }
+          /** current-profile */
+
+          .actions-profile-grid {
+            padding-left: 0;
+            padding-top: 0;
+            .row {
+              padding: 0;
+            }
+            .col {
+              padding-left: 0;
+              padding-top: 0;
+            }
+
+            .btn-connect-profile{
+              padding: 8px 15px;
+              box-shadow: 0 0 0 1px #66bdd9;
+              background: #66bdd9;
+              height: auto;
+              position: relative;
+              color: #fff;
+              text-transform: uppercase;
+              border-radius: $border-rd-sm;
+              font-weight: normal;
+              font-size: 0.9em;
+              outline: none;
+              margin: 1px 5px 0 0;
+            }/** btn-connect-profile */
+            .btn-edit-profile {
+              padding: 8px 45px;
+              border: 1px solid #fff;
+              background: transparent;
+              height: auto;
+              position: relative;
+              color: #fff;
+              text-transform: uppercase;
+              border-radius: $border-rd-sm;
+              font-weight: normal;
+              font-size: 0.9em;
+              outline: none;
+              margin: 0;
+            }
+            /** btn-edit-profile */
+
+            .profile-svg-button {
+              height: auto;
+              background: #fff;
+              border-radius: $border-rd-sm;
+              border: none;
+              outline: none;
+              display: table;
+              margin: 0 5px 0 0;
+              padding: 7px 9px;
+              .profile-svg-ico {
+                width: 16px;
+                height: 16px;
+                fill: #767e8a;
+                float: left;
+              }
+              /** profile-svg-ico */
+            }
+            /** profile-svg-button */
+
+          }
+          /** actions-profile-grid */
+
+        }
+        /** company-profile-actions */
+
+      }
+      /** profile-settings */
+
+      .row-profile-description {
+        .col {
+          padding-top: 0;
+          .label-profile-description {
+            width: 100%;
+            height: 20px;
+            position: relative;
+            float: left;
+            .profile-description {
+              position: absolute;
+              left: 0;
+              top: 0;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              width: 100%;
+              color: #fff;
+              font-size: 1em;
+            }
+            /** profile-description */
+          }
+          /** label-profile-description */
+        }
+        /** col */
+      }
+      /** row-profile-description */
+
+      .row-profile-styles {
+
+        .profile-style-plus {
+          height: auto;
+          border: 2px solid #fff;
+          background: transparent;
+          padding: 7px 20px;
+          border-radius: $border-rd-xl;
+          margin: 0;
+
+          .ico-profile-styles {
+            width: 10px;
+            height: 10px;
+            position: relative;
+            fill: #fff;
+          }
+          /** ico-profile-styles */
+
+        }
+        /** profile-style-plus */
+
+        .col-styles-profile{ min-height: 38px; }
+        .viewport-styles-profile {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          overflow-x: auto;
+          overflow-y: hidden;
+          padding: 5px;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+          ul.list-profile-style {
+            width: auto;
+            display: table;
+            white-space: nowrap;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li.list-profile-style-item {
+              height: auto;
+              color: #fff;
+              padding: 5px 15px;
+              border-radius: 30px;
+              margin: 0 3px;
+              font-size: 0.9em;
+              cursor: pointer;
+              display: inline-table;
+              &:first-child {
+                margin-left: 0;
+              }
+              &:last-child {
+                margin-right: 0;
+              }
+
+              &.pink {
+                background: rgba(161, 0, 69, 0.8);
+              }
+              &.blue {
+                background: rgba(0, 28, 135, 0.8);
+              }
+              &.brown {
+                background: rgba(117, 61, 0, 0.8);
+              }
+
+            }
+            /** list-profile-style-item */
+          }
+          /** list-profile-style */
+        }
+        /** viewport-styles-profile */
+
+      }
+      /** row-profile-styles */
+
+    }
+    /** profile-grid */
+
+  }
+  /** profile-content */
+
+  .grid-profile-content {
+    padding: 0;
+    .row {
+      padding: 0;
+    }
+    .col {
+      padding: 0;
+    }
+
+    .row-header-content {
+      width: 100%;
+      border-bottom: 1px solid $color-grey;
+      position: relative;
+      .col {
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+
+        &.actived-indicator {
+          .label-text {
+            color: $color-pink;
+          }
+          /** label-text */
+          .ico-label {
+            fill: $color-pink !important;
+          }
+          /** ico-label */
+        }
+        /** actived-indicator */
+
+      }
+      /** col */
+      .header-indicator {
+        height: 3px;
+        width: 50%;
+        position: absolute;
+        bottom: -2px;
+        background: $color-pink;
+        transition: 0.5s;
+
+      }
+      /** header-indicator */
+
+      .label-profile-header-content {
+        display: flex;
+        position: relative;
+        .icon-label {
+          width: 20px;
+          height: 20px;
+          position: relative;
+          .ico-label {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            fill: $color-grey;
+            transition: 0.5s;
+          }
+          /** ico-label */
+        }
+        /** icon-label */
+
+        .label-text {
+          padding: 0 0 0 15px;
+          display: flex;
+          flex-grow: 1;
+          transition: 0.5s;
+          align-items: center;
+          justify-content: center;
+          text-transform: uppercase;
+          color: $color-grey;
+        }
+        /** label-text */
+      }
+      /** label-profile-header-content */
+
+    }
+    /** row-header-content */
+
+    .row-search {
+      padding: 10px;
+
+      .search-products-profile {
+        padding: 9px 15px;
+        border: 1px solid $color-grey;
+        border-radius: $border-rd-xl;
+        width: 100%;
+
+        &::-webkit-input-placeholder {
+          color: rgba(180, 190, 214, 1);
+          transition: 0.5s;
+        }
+        &:focus {
+          &::-webkit-input-placeholder {
+            color: rgba(180, 190, 214, 0.7);
+            transition: 0.5s;
+          }
+        }
+        /** focus */
+
+      }
+      /** search-products-profile */
+
+      .search-products-icon {
+        width: 37px;
+        height: 37px;
+        margin: 0 0 0 10px;
+        position: relative;
+        border: 2px solid $color-grey;
+        border-radius: 100%;
+        cursor: pointer;
+        .search-products-ico {
+          width: 60%;
+          height: 60%;
+          position: absolute;
+          left: 20%;
+          top: 20%;
+          fill: $color-grey;
+        }
+        /** search-products-ico */
+      }
+      /** search-products-icon */
+
+    }
+    /** row-search */
+
+    .row-products-list {
+      width: 100%;
+      padding: 10px;
+      ul.products-list {
+        width: 100%;
+        position: relative;
+        float: left;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li.products-list-item {
+          width: 50%;
+          display: flex;
+          position: relative;
+          padding: 5px;
+          float: left;
+          .product-cover {
+            width: 100%;
+            height: 200px;
+            transition: 0.5s;
+            background: $color-grey;
+            border-radius: $border-rd-sm;
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+          /** product-cover */
+        }
+        /** li.products-list-item */
+      }
+      /** ul.products-list */
+    }
+    /** row-products-list */
+
+  }
+  /** grid-profile-content */
+
+}

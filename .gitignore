@@ -13,9 +13,10 @@ log.txt
 *.sublime-workspace
 .vscode/
 npm-debug.log*
-
+/.idea/
 .idea/
 .sourcemaps/
+/.sourcemaps/
 .sass-cache/
 .tmp/
 .versions/
@@ -24,13 +25,18 @@ dist/
 tmp/
 temp/
 hooks/
+/platforms/
 platforms/
-plugins/
-plugins/android.json
-plugins/ios.json
+#plugins/
+#plugins/android.json
+#plugins/ios.json
 www/
+/www/
 $RECYCLE.BIN/
 
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
+/src/HTML5Application/nbproject/private/
+/src/pages/HTML5Application1/nbproject/private/
+/src/pages/Qrgo/nbproject/private/

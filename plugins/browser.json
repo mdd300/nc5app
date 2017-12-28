@@ -7,31 +7,43 @@
     "files": {}
   },
   "installed_plugins": {
+    "com.synconset.imagepicker": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
     "cordova-plugin-device": {
       "PACKAGE_NAME": "io.ionic.starter"
     },
-    "cordova-plugin-ionic-webview": {
+    "mx.ferreyra.callnumber": {
       "PACKAGE_NAME": "io.ionic.starter"
     },
-    "cordova-plugin-splashscreen": {
+    "call-number": {
       "PACKAGE_NAME": "io.ionic.starter"
     },
-    "cordova-plugin-whitelist": {
+    "com.synconset.imagepicker": {
+      "PHOTO_LIBRARY_USAGE_DESCRIPTION": "galeria",
       "PACKAGE_NAME": "io.ionic.starter"
     },
-    "cordova-plugin-x-socialsharing": {
+    "cordova-plugin-call-number": {
       "PACKAGE_NAME": "io.ionic.starter"
     },
-    "ionic-plugin-keyboard": {
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-filechooser": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-photo-library": {
+      "PHOTO_LIBRARY_USAGE_DESCRIPTION": "To choose photos",
       "PACKAGE_NAME": "io.ionic.starter"
     }
   },
   "dependent_plugins": {
     "com.telerik.plugins.nativepagetransitions": {
       "PACKAGE_NAME": "io.ionic.starter"
-    },
-    "es6-promise-plugin": {
-      "PACKAGE_NAME": "io.ionic.starter"
+
     }
   }
 }

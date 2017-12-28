@@ -13,7 +13,7 @@
         <ion-row>
             <ion-col>
 
-                <div class="feed-post-something" >
+                <div class="feed-post-something">
 
                     <ion-grid>
                         <ion-row>
@@ -61,7 +61,7 @@
                             </ion-col>
 
                             <span class="filter-indicator">
-                                <span class="filter-caret" #filterCaret ></span>
+                                <span class="filter-caret" #filterCaret></span>
                             </span><!-- filter-indicator -->
 
                         </ion-row><!-- feed-filter -->
@@ -90,8 +90,8 @@
                                 </span><!-- feed-author-txt -->
                             </div> <!-- feed-autor-label -->
                             <div class="feed-autor-label">
-                                <span class="feed-author-txt description">
-                                    Rua Anhaia, 284 <ion-icon name="ai-notification"></ion-icon>
+                                <span class="feed-author-txt description" *ngFor="let endereco of post.enderecos">
+                                      {{endereco.endereco_local}} <ion-icon name="ai-notification"></ion-icon>
                                 </span>
                             </div> <!-- feed-autor-label -->
                         </ion-col>
@@ -113,14 +113,15 @@
                 <div class="card-body-image" [hidden]="post.type != 1">
 
                     <div class="card-body-img"
-                         [hidden]="post.image == null"
-                         [ngStyle]="{ 'background-image': 'url(' + constants.src_img + 'exemples/' + post.image + ')' }"></div>
+                         *ngIf="post.image[0]"
+                         [ngStyle]="{ 'background-image': 'url(' + post.image[0].img_url + ')' }"></div>
                     <!-- card-body-img -->
 
                     <div class="card-body-description">
-                        <span class="card-body-description-since"> Há 3 Minutos </span>
+                        <span class="card-body-description-since"> {{post.date}} </span>
                         <span class="card-body-description-desc">
-                            Welcome to <span class="hashtag-desc">#ThePradaDoubleClubMiami</span>, presented by Fondazione Prada and Carsten Höller. The temporary nightclub/installation is half gray scale.
+                            {{post.description}}
+                            <!--Welcome to <span class="hashtag-desc">#ThePradaDoubleClubMiami</span>, presented by Fondazione Prada and Carsten Höller. The temporary nightclub/installation is half gray scale.-->
                         </span><!-- card-body-description-desc -->
                     </div> <!-- card-body-description -->
                     <div class="card-body-actions-post">
@@ -128,7 +129,8 @@
                             <ion-row>
                                 <ion-col>
                                     <div class="card-footer-action">
-                                        <svg class="ico-footer-action">
+                                        <svg class="ico-footer-action" (click)="likePost(post)"
+                                             [ngStyle]="post.like_id ? {fill: 'red'} : {fill: '#b4c1d6'}">
                                             <use [attr.xlink:href]="constants.src_svg + 'hearth.svg#Layer_1'"></use>
                                         </svg> <!-- ico-footer-action -->
                                     </div> <!-- card-footer-action" -->
@@ -157,9 +159,11 @@
 
                     <div class="card-body-product-img">
 
-                        <ion-slides class="product-variables">
+                        <ion-slides class="product-variables" *ngIf="post.image[0]">
                             <ion-slide>
-                                <div class="product-variable-cover" [ngStyle]="{'background-image': 'url(' + constants.src_img + 'exemples/' + post.image + ')'}"  ></div> <!-- product-variable-cover -->
+                                <div class="product-variable-cover"
+                                     [ngStyle]="{'background-image': 'url(' + post.image[0].img_url + ')'}"></div>
+                                <!-- product-variable-cover -->
                             </ion-slide>
                         </ion-slides><!-- product-variables -->
 
@@ -172,7 +176,7 @@
                     </div> <!-- card-body-product-img -->
 
                     <div class="card-body-description">
-                        <span class="card-body-description-since"> Há 3 Minutos </span>
+                        <span class="card-body-description-since"> {{post.date}} </span>
                         <div class="card-body-description-desc">
 
                             <span class="product-title"> TURTLENECK TOP </span>
@@ -202,7 +206,7 @@
                         </div><!-- card-body-description-desc -->
 
                         <span class="card-body-description-desc">
-                            Confira a novidade na nossa loja essa semana!
+                            {{post.description}}
                         </span><!-- card-body-description-desc -->
 
                     </div> <!-- card-body-description -->
@@ -247,15 +251,17 @@
                 <!-- ---------- -->
                 <div class="card-body-product-group" [hidden]="post.type != 3">
                     <div class="product-group-cover"
-                         [hidden]="post.image == null"
-                         [ngStyle]="{ 'background-image': 'url(' + constants.src_img + 'exemples/' + post.image + ')' }" ></div> <!-- product-group-cover -->
-                    <div class="content-slide-group" >
+                         [hidden]="post.image == null" *ngIf="post.image[0]"
+                         [ngStyle]="{ 'background-image': 'url(' + post.image[0].img_url + ')' }"></div>
+                    <!-- product-group-cover -->
+                    <div class="content-slide-group">
                         <ion-slides class="product-group-slides" pager>
 
                             <ion-slide *ngFor="let grupos of post.products">
                                 <ul class="list-group-products">
                                     <li class="item-group-product" *ngFor="let produto of grupos.group">
-                                        <div class="item-product-cover" [ngStyle]="{ 'background-image': 'url(' + constants.src_img + 'exemples/' + produto.prod_image +')' }">
+                                        <div class="item-product-cover"
+                                             [ngStyle]="{ 'background-image': 'url(' + constants.api_path + constants.src_img_posts + '/' + produto.prod_image +')' }">
                                         </div> <!-- item-product-cover -->
                                     </li><!-- item-group-product -->
                                 </ul><!-- list-group-products -->
@@ -265,9 +271,10 @@
                     </div> <!-- content-slide-group -->
 
                     <div class="card-body-description">
-                        <span class="card-body-description-since"> Há 3 Minutos </span>
+                        <span class="card-body-description-since"> {{post.date}} </span>
                         <span class="card-body-description-desc">
-                            Welcome to <span class="hashtag-desc">#ThePradaDoubleClubMiami</span>, presented by Fondazione Prada and Carsten Höller. The temporary nightclub/installation is half gray scale.
+                            {{post.description}}
+                            <!--Welcome to <span class="hashtag-desc">#ThePradaDoubleClubMiami</span>, presented by Fondazione Prada and Carsten Höller. The temporary nightclub/installation is half gray scale.-->
                         </span><!-- card-body-description-desc -->
                     </div> <!-- card-body-description -->
                     <div class="card-body-actions-post">
@@ -308,6 +315,10 @@
         </div> <!-- feed-card-structure -->
     </ion-card><!-- feed-card -->
     <!-- fim do primeiro card do feed -->
+
+    <ion-infinite-scroll (ionInfinite)="doInfinite($event)"><!-- infinite scroll para carregar mais posts -->
+        <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
 
 
     <!-- Terceiro card do feed -->
