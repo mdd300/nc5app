@@ -3,17 +3,11 @@ export const Constants = {
     'theme': 'prototype',
 
     //local
-    //  'api_path': 'http://localhost/fashon/qrgo/',
-
-    //dev
-    'api_path': 'http://192.168.0.251/fashon/qrgo/',
+      'api_path': 'http://localhost/nc5/',
 
 
-    // diogo
-    // 'api_path': 'http://192.168.0.90/fashon/qrgo/',
 
-    //amazon
-    //'api_path': 'http://ec2-184-72-119-250.compute-1.amazonaws.com/qrgo/',
+
 
     'src_img': './assets/themes/prototype/img/',
     'src_img_posts': '../uploads/',

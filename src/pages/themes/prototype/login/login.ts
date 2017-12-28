@@ -71,7 +71,6 @@ export class LoginPage {
     /**
      * Função utilizada para redirecionar o usuário novamente à pagina de slides */
     public goBackSlides = (() => {
-        this.navCtrl.push(SlidesPage);
     });
     /* Fim da função de redirecionamento para os slides */
 
@@ -88,26 +87,21 @@ export class LoginPage {
         //this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
 
         var data_send = this.logindata;
-        this.http.post(this.constants.api_path + 'login/dologin', $.param(data_send)).subscribe(response => {
+        this.http.post(this.constants.api_path + 'login/do_login2', $.param(data_send)).subscribe(response => {
 
-            var res = (response as any);
-            this.login = JSON.parse(res._body);
-            var login = (this.login as any);
+            var login = (response as any);
+
+            console.log(login.id);
 
             if (login.success) {
 
-                this.storage.set('user_logged', login.userdata).then(() => { // Setando os dados do usuário logado no storage
-                    localStorage.setItem('user_logged', JSON.stringify(login.userdata)); // E no localStorage
+                this.storage.set('user_logged', login.id).then(() => { // Setando os dados do usuário logado no storage
+                    localStorage.setItem('user_logged', JSON.stringify(login.useriddata)); // E no localStorage
                 });
 
-                this.storage.set('access', login.access); // Setando o hash e token de acesso
 
-                if (login.no_verified) {
-                    this.navCtrl.push(ConfirmCadPage);
-                }
-                else {
                     this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
-                }
+
 
             } else {
                 var __this = this;

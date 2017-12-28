@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 127:
+/***/ 126:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -13,76 +13,76 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 127;
+webpackEmptyAsyncContext.id = 126;
 
 /***/ }),
 
-/***/ 168:
+/***/ 167:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/themes/prototype/cadastro/confirm-cad/confirm-cad.module": [
-		169
+		168
 	],
 	"../pages/themes/prototype/cadastro/step1/step1.module": [
 		187
 	],
 	"../pages/themes/prototype/cadastro/step2/step2.module": [
-		209
-	],
-	"../pages/themes/prototype/cadastro/step3/step3.module": [
 		188
 	],
-	"../pages/themes/prototype/explore-estilos/explore-estilos.module": [
+	"../pages/themes/prototype/cadastro/step3/step3.module": [
 		191
 	],
-	"../pages/themes/prototype/explore/explore.module": [
-		195
-	],
-	"../pages/themes/prototype/feed/feed.module": [
+	"../pages/themes/prototype/explore-estilos/explore-estilos.module": [
 		192
 	],
-	"../pages/themes/prototype/forgot-pass/forgot-pass-1/forgot-pass-1.module": [
+	"../pages/themes/prototype/explore/explore.module": [
 		193
 	],
-	"../pages/themes/prototype/forgot-pass/forgot-pass-2/forgot-pass-2.module": [
+	"../pages/themes/prototype/feed/feed.module": [
+		195
+	],
+	"../pages/themes/prototype/forgot-pass/forgot-pass-1/forgot-pass-1.module": [
 		194
 	],
-	"../pages/themes/prototype/forgot-pass/forgot-pass-3/forgot-pass-3.module": [
-		199
-	],
-	"../pages/themes/prototype/login/login.module": [
+	"../pages/themes/prototype/forgot-pass/forgot-pass-2/forgot-pass-2.module": [
 		196
 	],
-	"../pages/themes/prototype/modais/gostos/gostos.module": [
+	"../pages/themes/prototype/forgot-pass/forgot-pass-3/forgot-pass-3.module": [
 		197
 	],
+	"../pages/themes/prototype/login/login.module": [
+		202
+	],
+	"../pages/themes/prototype/modais/gostos/gostos.module": [
+		198
+	],
 	"../pages/themes/prototype/modais/localizacao/localizacao.module": [
-		203
-	],
-	"../pages/themes/prototype/modais/post/post.module": [
-		204
-	],
-	"../pages/themes/prototype/notificações/conexoes/conexoes.module": [
-		200
-	],
-	"../pages/themes/prototype/notificações/notificacao/notificacao.module": [
 		201
 	],
+	"../pages/themes/prototype/modais/post/post.module": [
+		200
+	],
+	"../pages/themes/prototype/notificações/conexoes/conexoes.module": [
+		203
+	],
+	"../pages/themes/prototype/notificações/notificacao/notificacao.module": [
+		205
+	],
 	"../pages/themes/prototype/produtos/product-profile/product-profile.module": [
-		202
+		206
 	],
 	"../pages/themes/prototype/profile-config/profile-config.module": [
 		207
 	],
 	"../pages/themes/prototype/profile/profile.module": [
-		206
+		204
 	],
 	"../pages/themes/prototype/slides/slides.module": [
 		208
 	],
 	"../pages/themes/prototype/system-tabs/system-tabs.module": [
-		205
+		209
 	]
 };
 function webpackAsyncContext(req) {
@@ -96,12 +96,12 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 168;
+webpackAsyncContext.id = 167;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 169:
+/***/ 168:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -109,7 +109,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConfirmCadPageModule", function() { return ConfirmCadPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__confirm_cad__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__confirm_cad__ = __webpack_require__(169);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -136,6 +136,174 @@ var ConfirmCadPageModule = (function () {
 }());
 
 //# sourceMappingURL=confirm-cad.module.js.map
+
+/***/ }),
+
+/***/ 169:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfirmCadPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_jquery__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_Constants__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__system_tabs_system_tabs__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(22);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+/**
+ * Generated class for the ConfirmCadPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ConfirmCadPage = (function () {
+    function ConfirmCadPage(navCtrl, navParams, http, alertCtrl, storage, loadingCtrl) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.http = http;
+        this.alertCtrl = alertCtrl;
+        this.storage = storage;
+        this.loadingCtrl = loadingCtrl;
+        this.seisdigitos = false;
+        this.constants = __WEBPACK_IMPORTED_MODULE_4__config_Constants__["a" /* Constants */];
+        this.newCod = (function () {
+            /* Reenvia novo código de atutenticação */
+            _this.storage.get('access').then(function (access) {
+                _this.http.post(_this.constants.api_path + 'cadastro/gerar_code', __WEBPACK_IMPORTED_MODULE_3_jquery__["param"]({
+                    token_id: access.token_id,
+                    token_hash: access.token_hash,
+                    updat: true
+                })).subscribe(function (data) {
+                    var response = data;
+                    var objeto_retorno = JSON.parse(response._body);
+                    //console.log(objeto_retorno);
+                    var alert = _this.alertCtrl.create({
+                        title: 'QRGO',
+                        subTitle: objeto_retorno.email_enviado,
+                        buttons: ['Ok']
+                    });
+                    alert.present();
+                }, function (error) {
+                    //modal de erro na autenticação
+                    return false;
+                });
+            });
+        });
+        this.skipCad = (function () {
+            /* Pula a confirmação do cadastro */
+            var alert = _this.alertCtrl.create({
+                title: 'Atenção!',
+                subTitle: 'Autenticação pendente. Valide seu email para ter acesso a todo nosso app.',
+                enableBackdropDismiss: false,
+                buttons: [
+                    {
+                        text: 'Ok',
+                        handler: function () {
+                            // this.navCtrl.setRoot(ExplorePage);
+                            _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_5__system_tabs_system_tabs__["a" /* SystemTabsPage */], {}, { animate: true, direction: 'forward' });
+                        }
+                    }
+                ]
+            });
+            alert.present();
+        });
+        //função verifica o codiga com a existencia de 6 digitos 
+        this.autenticaCod = (function (code) {
+            //desabilita o input
+            //this.seisdigitos=true;
+            _this.storage.get('access').then(function (access) {
+                //configura modal de load para reeinviar codigo
+                var loader = _this.loadingCtrl.create({ content: "Autenticando o e-mail..." });
+                //ativa o modal
+                loader.present();
+                //realiza o ajax enviando como parametro o código de entrada "data"
+                _this.http.post(_this.constants.api_path + 'cadastro/autenticacao', __WEBPACK_IMPORTED_MODULE_3_jquery__["param"]({
+                    codigo: code,
+                    token_id: access.token_id,
+                    token_hash: access.token_hash
+                })).subscribe(function (data) {
+                    var response = data;
+                    var objeto_retorno = JSON.parse(response._body);
+                    //destroe o modal
+                    loader.dismissAll();
+                    //console.log(response._body);
+                    //retorna o código
+                    if (objeto_retorno === true) {
+                        //modal de confirmação para o usuario
+                        var alert_1 = _this.alertCtrl.create({
+                            title: 'Parabéns<br>',
+                            subTitle: 'Parabéns, você realizou o cadastro em nosso sistema. Você será logado automáticamente.',
+                            enableBackdropDismiss: false,
+                            buttons: [
+                                {
+                                    text: 'Ok',
+                                    handler: function () {
+                                        // this.navCtrl.setRoot(ExplorePage);
+                                        _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_5__system_tabs_system_tabs__["a" /* SystemTabsPage */], {}, { animate: true, direction: 'forward' });
+                                    }
+                                }
+                            ]
+                        });
+                        alert_1.present();
+                    }
+                    else {
+                        //modal de código invalido
+                        var alert_2 = _this.alertCtrl.create({
+                            title: 'Autenticação',
+                            subTitle: 'Código incorreto',
+                            buttons: ['Ok']
+                        });
+                        alert_2.present();
+                    }
+                }, function (error) {
+                    //destroe o modal
+                    loader.dismissAll();
+                    //modal de erro na autenticação
+                    var alert = _this.alertCtrl.create({
+                        title: 'Autenticação',
+                        subTitle: 'Erro na autenticação',
+                        buttons: ['Ok']
+                    });
+                    alert.present();
+                });
+            });
+        });
+    }
+    ConfirmCadPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'page-confirm-cad',template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\cadastro\confirm-cad\confirm-cad.html"*/'<ion-content>\n\n\n\n  <div class="content-center" >\n\n\n\n    <ion-grid class="grid-confirm-cad">\n\n      <ion-row>\n\n        <ion-col>\n\n\n\n          <h3 class="page-title">Confirme sua conta</h3>\n\n\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row>\n\n        <ion-col>\n\n\n\n          <p class="page-description">Confira seu e-mail ou mensagem sms para confirmar sua conta para seguir usar o aplicativo da melhor forma possível!</p>\n\n\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n      <ion-row>\n\n        <ion-col>\n\n\n\n          <div class="cont-confirmcode" >\n\n            <div class="cad-form-content">\n\n              <label class="cad-form-label">\n\n                <input type="text" class="cad-form-ctrl text-center" placeholder="Codigo" maxlength="6" [(ngModel)]="codeautentic" [disabled]="seisdigitos">\n\n              </label><!-- cad-form-label -->\n\n            </div> <!-- cad-form-content -->\n\n          </div> <!-- cont-confirmcode -->\n\n\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n      <ion-row>\n\n        <ion-col>\n\n          <span (click)="newCod()" class="resend-code"> Re-enviar código </span>\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n      <ion-row>\n\n        <ion-col>\n\n          <button ion-button class="pink-button align-center" (click)="autenticaCod ( codeautentic )"> Confirmar </button>\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n    </ion-grid><!-- grid-confirm-cad -->\n\n\n\n  </div> <!-- content-center -->\n\n\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <div class="footer-steps">\n\n\n\n    <div class="next-step-action allowed" (click)="skipCad()">\n\n            <span class="next-step-label">\n\n                Pular\n\n            </span> <!-- next-stap-label -->\n\n      <div class="nextstep-icon">\n\n        <span class="caret-body"></span>\n\n        <span class="caret-direction"></span>\n\n      </div> <!-- nextstep-icon -->\n\n    </div> <!-- next-stap-action -->\n\n\n\n  </div> <!-- footer-steps -->\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\cadastro\confirm-cad\confirm-cad.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */],
+            __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* LoadingController */]])
+    ], ConfirmCadPage);
+    return ConfirmCadPage;
+}());
+
+//# sourceMappingURL=confirm-cad.js.map
 
 /***/ }),
 
@@ -407,7 +575,7 @@ var PostPage = (function () {
     ], PostPage.prototype, "textInput", void 0);
     PostPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-post',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\modais\post\post.html"*/'\n\n<!--<ion-header [hidden]="text">-->\n\n<ion-header style="z-index:20;">\n\n    <div class="header-background"></div> <!-- header-background -->\n\n\n\n    <ion-grid>\n\n        <ion-row style="display: inline-flex;  ">\n\n            <ion-col col-1 class="col-icon">\n\n\n\n                <div class="icon-back-header">\n\n                    <svg class="ico-back-header" (click)="toFeed()">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-back-header -->\n\n                </div> <!-- icon-back-header -->\n\n\n\n\n\n            </ion-col>\n\n            <ion-col col-auto style="width: 46%;" >\n\n                <div class="text-btn-publicar">PUBLIQUE ALGO...</div>\n\n            </ion-col>\n\n            <ion-col col-auto style="width: 45%">\n\n                <div class="head-icon-right" (click)="publicar()">\n\n                    <span  text-align="center" class="btn-publicar" >\n\n                        <div class="icon-publicar-send">\n\n                    <svg class="svg-send-header">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'send-button.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-back-header -->\n\n                        </div>\n\n                    <div text-align="center" class="text-btn-publicar">\n\n                        Publicar\n\n                    </div>\n\n                    <div text-align="center" class="btn-wrapper">\n\n\n\n                    </div>\n\n                    </span>\n\n                </div>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-header>\n\n\n\n<ion-content no-bounce>\n\n\n\n    <div class="content-post">\n\n        <ion-row class="content-info-post row-user" [hidden]="text">\n\n            <ion-col col-3 class="col-user">\n\n                <div class="content-icon">\n\n                    <div class="content-icon-user">\n\n                        <div class="img-user-post">\n\n                            <div class="img-user-icon" style="; background-size:cover; background-position: center;"\n\n                                 [ngStyle]="{\'background-image\': \'url(\'+ \'http://ziromoda.com.br/ziroblog/wp-content/uploads/2016/03/Unique-Chic-Oficial.png\' + \')\'}" ngStyle="{\'background-image\': \'url(\'+ \'http://ziromoda.com.br/ziroblog/wp-content/uploads/2016/03/Unique-Chic-Oficial.png\' + \')\'}"></div>\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n            </ion-col>\n\n            <ion-col class="col-user">\n\n                <div class="content-data-user">\n\n\n\n                    <div class="empty-content">\n\n\n\n                    </div>\n\n\n\n                    <div class="text-nome-fantasia">\n\n                        <b>UNIQUE CHIC</b>\n\n                    </div>\n\n\n\n\n\n                    <div class="content-btn-loc">\n\n\n\n                        <button ion-button class="btn-estilo" (click)="LocationPost()" outline>\n\n                            <div text-align="center" class="btn-confir wrapper">\n\n                                <svg class="svg-ico-usertype">\n\n                                    <use [attr.xlink:href]="constants.src_svg + \'maps-and-flags.svg#Layer_1\'"></use>\n\n                                </svg> <!-- svg-ico-usertype -->\n\n                            </div>\n\n                            <div text-align="center" class="text-btn-estilo">\n\n                                LOCALIZAR\n\n                            </div>\n\n                        </button>\n\n\n\n                        <!--<div text-align="center" class="btn-estilo">-->\n\n                        <!---->\n\n                        <!--</div>-->\n\n                    </div>\n\n                    <div class="location-selected" *ngIf="this.post.localizacao.length > 0">\n\n\n\n                        <div text-align="center" class="btn-confir wrapper-loc">\n\n                            <svg class="svg-ico-usertype-loc">\n\n                                <use [attr.xlink:href]="constants.src_svg + \'maps-and-flags.svg#Layer_1\'"></use>\n\n                            </svg> <!-- svg-ico-usertype -->\n\n                        </div>\n\n                        <div class="location-text-content-selected">\n\n                            <div class="location-text-selected">\n\n                                <div class="location-text-nome">{{nomeLocation}}</div>\n\n                                <div class="btn-location-content">\n\n\n\n                                    <!-- ajustes do oshiro-->\n\n\n\n                                    <button (click)="LocationPost()" ion-button class="btn-location-more" [hidden]="locationMore == 0" round>\n\n                                        +{{locationMore}}\n\n                                    </button>\n\n                                </div>\n\n                            </div>\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <div class="content-data-post">\n\n\n\n            <div class="content-image-post" [hidden]="!imagePost">\n\n                <div class="delete-img-post" (click)="deleteImage()"> X </div>\n\n\n\n                <div class="img-post" [ngStyle]="{\'background-image\': \'url(\' + imagePost + \')\'}" ngStyle="{\'background-image\': \'url(\' + imagePost + \')}\'" style=" background-size:cover; background-position: center;"></div>\n\n\n\n\n\n            </div>\n\n\n\n            <ion-textarea class="input-text-post" [ngClass]="{ \'height-textarea\': imagePost}" [(ngModel)]="post.text" #textInput placeholder="Escreva algo..." (ionBlur)="onBlur()"\n\n                      (ionFocus)="onFocus()"></ion-textarea>\n\n        </div>\n\n\n\n        <!--<div class="content-data-post">-->\n\n        <!--<textarea class="input-text-post"  [(ngModel)]="post.text" #textInput placeholder="Escreva algo..." (ionBlur)="onBlur()"-->\n\n        <!--(ionFocus)="onFocus()"-->\n\n        <!--(keypress)="eventHandler($event.keyCode, $event.target)"></textarea>-->\n\n        <!--</div>-->\n\n\n\n\n\n    </div>\n\n\n\n\n\n</ion-content>\n\n\n\n<ion-footer class="foo" [hidden]="text">\n\n    <ion-row class="row-footer">\n\n\n\n        <ion-col class="col-footer">\n\n            <div class="col-footer-post">\n\n                <div class="icon-footer">\n\n                    <svg class="svg-footer">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'shirt-hanger.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-back-header -->\n\n                </div>\n\n                <div class="text-footer-post">Produtos</div>\n\n            </div>\n\n        </ion-col>\n\n\n\n        <ion-col class="col-footer" (click)="actionsPostFeed( post )">\n\n            <div class="col-footer-post">\n\n                <div class="icon-footer">\n\n                    <svg class="svg-footer">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'picture.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-back-header -->\n\n                </div>\n\n                <div class="text-footer-post">Imagens</div>\n\n            </div>\n\n        </ion-col>\n\n\n\n    </ion-row>\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\modais\post\post.html"*/,
+            selector: 'page-post',template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\modais\post\post.html"*/'\n\n<!--<ion-header [hidden]="text">-->\n\n<ion-header style="z-index:20;">\n\n    <div class="header-background"></div> <!-- header-background -->\n\n\n\n    <ion-grid>\n\n        <ion-row style="display: inline-flex;  ">\n\n            <ion-col col-1 class="col-icon">\n\n\n\n                <div class="icon-back-header">\n\n                    <svg class="ico-back-header" (click)="toFeed()">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-back-header -->\n\n                </div> <!-- icon-back-header -->\n\n\n\n\n\n            </ion-col>\n\n            <ion-col col-auto style="width: 46%;" >\n\n                <div class="text-btn-publicar">PUBLIQUE ALGO...</div>\n\n            </ion-col>\n\n            <ion-col col-auto style="width: 45%">\n\n                <div class="head-icon-right" (click)="publicar()">\n\n                    <span  text-align="center" class="btn-publicar" >\n\n                        <div class="icon-publicar-send">\n\n                    <svg class="svg-send-header">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'send-button.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-back-header -->\n\n                        </div>\n\n                    <div text-align="center" class="text-btn-publicar">\n\n                        Publicar\n\n                    </div>\n\n                    <div text-align="center" class="btn-wrapper">\n\n\n\n                    </div>\n\n                    </span>\n\n                </div>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-header>\n\n\n\n<ion-content no-bounce>\n\n\n\n    <div class="content-post">\n\n        <ion-row class="content-info-post row-user" [hidden]="text">\n\n            <ion-col col-3 class="col-user">\n\n                <div class="content-icon">\n\n                    <div class="content-icon-user">\n\n                        <div class="img-user-post">\n\n                            <div class="img-user-icon" style="; background-size:cover; background-position: center;"\n\n                                 [ngStyle]="{\'background-image\': \'url(\'+ \'http://ziromoda.com.br/ziroblog/wp-content/uploads/2016/03/Unique-Chic-Oficial.png\' + \')\'}" ngStyle="{\'background-image\': \'url(\'+ \'http://ziromoda.com.br/ziroblog/wp-content/uploads/2016/03/Unique-Chic-Oficial.png\' + \')\'}"></div>\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n            </ion-col>\n\n            <ion-col class="col-user">\n\n                <div class="content-data-user">\n\n\n\n                    <div class="empty-content">\n\n\n\n                    </div>\n\n\n\n                    <div class="text-nome-fantasia">\n\n                        <b>UNIQUE CHIC</b>\n\n                    </div>\n\n\n\n\n\n                    <div class="content-btn-loc">\n\n\n\n                        <button ion-button class="btn-estilo" (click)="LocationPost()" outline>\n\n                            <div text-align="center" class="btn-confir wrapper">\n\n                                <svg class="svg-ico-usertype">\n\n                                    <use [attr.xlink:href]="constants.src_svg + \'maps-and-flags.svg#Layer_1\'"></use>\n\n                                </svg> <!-- svg-ico-usertype -->\n\n                            </div>\n\n                            <div text-align="center" class="text-btn-estilo">\n\n                                LOCALIZAR\n\n                            </div>\n\n                        </button>\n\n\n\n                        <!--<div text-align="center" class="btn-estilo">-->\n\n                        <!---->\n\n                        <!--</div>-->\n\n                    </div>\n\n                    <div class="location-selected" *ngIf="this.post.localizacao.length > 0">\n\n\n\n                        <div text-align="center" class="btn-confir wrapper-loc">\n\n                            <svg class="svg-ico-usertype-loc">\n\n                                <use [attr.xlink:href]="constants.src_svg + \'maps-and-flags.svg#Layer_1\'"></use>\n\n                            </svg> <!-- svg-ico-usertype -->\n\n                        </div>\n\n                        <div class="location-text-content-selected">\n\n                            <div class="location-text-selected">\n\n                                <div class="location-text-nome">{{nomeLocation}}</div>\n\n                                <div class="btn-location-content">\n\n\n\n                                    <!-- ajustes do oshiro-->\n\n\n\n                                    <button (click)="LocationPost()" ion-button class="btn-location-more" [hidden]="locationMore == 0" round>\n\n                                        +{{locationMore}}\n\n                                    </button>\n\n                                </div>\n\n                            </div>\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <div class="content-data-post">\n\n\n\n            <div class="content-image-post" [hidden]="!imagePost">\n\n                <div class="delete-img-post" (click)="deleteImage()"> X </div>\n\n\n\n                <div class="img-post" [ngStyle]="{\'background-image\': \'url(\' + imagePost + \')\'}" ngStyle="{\'background-image\': \'url(\' + imagePost + \')}\'" style=" background-size:cover; background-position: center;"></div>\n\n\n\n\n\n            </div>\n\n\n\n            <ion-textarea class="input-text-post" [ngClass]="{ \'height-textarea\': imagePost}" [(ngModel)]="post.text" #textInput placeholder="Escreva algo..." (ionBlur)="onBlur()"\n\n                      (ionFocus)="onFocus()"></ion-textarea>\n\n        </div>\n\n\n\n        <!--<div class="content-data-post">-->\n\n        <!--<textarea class="input-text-post"  [(ngModel)]="post.text" #textInput placeholder="Escreva algo..." (ionBlur)="onBlur()"-->\n\n        <!--(ionFocus)="onFocus()"-->\n\n        <!--(keypress)="eventHandler($event.keyCode, $event.target)"></textarea>-->\n\n        <!--</div>-->\n\n\n\n\n\n    </div>\n\n\n\n\n\n</ion-content>\n\n\n\n<ion-footer class="foo" [hidden]="text">\n\n    <ion-row class="row-footer">\n\n\n\n        <ion-col class="col-footer">\n\n            <div class="col-footer-post">\n\n                <div class="icon-footer">\n\n                    <svg class="svg-footer">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'shirt-hanger.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-back-header -->\n\n                </div>\n\n                <div class="text-footer-post">Produtos</div>\n\n            </div>\n\n        </ion-col>\n\n\n\n        <ion-col class="col-footer" (click)="actionsPostFeed( post )">\n\n            <div class="col-footer-post">\n\n                <div class="icon-footer">\n\n                    <svg class="svg-footer">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'picture.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-back-header -->\n\n                </div>\n\n                <div class="text-footer-post">Imagens</div>\n\n            </div>\n\n        </ion-col>\n\n\n\n    </ion-row>\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\modais\post\post.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
@@ -531,7 +699,7 @@ var LocalizacaoPage = (function () {
     };
     LocalizacaoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-localizacao',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\modais\localizacao\localizacao.html"*/'\n\n<ion-header class="grid-content">\n\n    <div class="header-background"></div> <!-- header-background -->\n\n    <ion-grid>\n\n        <ion-row style="display: inline-flex;   ">\n\n            <ion-col col-1 class="col-icon">\n\n                <div class="icon-back-header" (click)="selectLocation(false)">\n\n                    <svg class="ico-back-header">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-back-header -->\n\n                </div> <!-- icon-back-header -->\n\n\n\n            </ion-col>\n\n            <ion-col col-auto class="col-header-grid">\n\n                <div class="text-btn-publicar">LOCALIZAÇÃO</div>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-header>\n\n\n\n<ion-content>\n\n\n\n    <div class="content-post">\n\n\n\n        <ion-grid class="content-info-post content-input">\n\n            <ion-row>\n\n                <ion-col col-1>\n\n                    <div text-align="center" class="btn-confir wrapper">\n\n                        <svg class="svg-search-ico-usertype">\n\n                            <use [attr.xlink:href]="constants.src_svg + \'search.svg#Layer_1\'"></use>\n\n                        </svg> <!-- svg-ico-usertype -->\n\n                    </div>\n\n                </ion-col>\n\n\n\n                <ion-col col-10 class="col-input">\n\n                    <div class="content-form-login">\n\n                        <div class="form-cont">\n\n                    <ion-input type="search" class="form-ctrl" placeholder="Digite um outro endereço..."\n\n                               class="input-search-maps" (input)="onSearchChange($event.target.value)"></ion-input>\n\n                        </div>\n\n                    </div>\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n        </ion-grid>\n\n\n\n        <div class="location-selected-content">\n\n            <ion-grid>\n\n                    <ion-row class="row-loc-selected">\n\n                        <ion-col *ngFor="let data of end">\n\n                            <button ion-button class="btn-location-more" round>\n\n                                <div (click)="deleteSelected(data.id)">X &nbsp; &nbsp; </div> {{data.end}}\n\n                            </button>\n\n                        </ion-col>\n\n                    </ion-row>\n\n            </ion-grid>\n\n        </div>\n\n\n\n        <div class="content-location-post" [hidden]="text">\n\n            <ion-list>\n\n                <div [hidden]="search">\n\n                    <div class="lojas-cad">Suas Lojas Cadastradas:</div>\n\n                    <ion-item class="content-all-location-post" *ngFor="let data of end"\n\n                              (click)="selectLocation(false)">\n\n                        <div class="second-content-all-location">\n\n                            <div text-align="center" class="btn-confir wrapper">\n\n                                <svg class="svg-ico-usertype">\n\n                                    <use [attr.xlink:href]="constants.src_svg + \'maps-and-flags.svg#Layer_1\'"></use>\n\n                                </svg> <!-- svg-ico-usertype -->\n\n                            </div>\n\n                            <!--resultados existentes -->\n\n                            <div  class="content-info-location-post">\n\n                                <div class="title-location-post">{{data.end}}</div>\n\n                                <div class="description-location-post">{{data.desc}}</div>\n\n                            </div>\n\n                            \n\n                        </div>\n\n                    </ion-item>\n\n                </div>\n\n                <!--resultados da busca ajax-->\n\n                <div *ngIf="search == true">\n\n                    <ion-item class="content-all-location-post teste" *ngFor="let data of searchGoogle"\n\n                              (click)="selectLocation(data)">\n\n                        <div class="second-content-all-location">\n\n                            <div class="content-info-location-post title-search-post">\n\n                                <div class="title-location-post ">{{data.end}}</div>\n\n                                <div class="description-location-post">{{data.desc}}</div>\n\n                            </div>\n\n                        </div>\n\n                    </ion-item>\n\n                </div>\n\n            </ion-list>\n\n        </div>\n\n\n\n\n\n    </div>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\modais\localizacao\localizacao.html"*/,
+            selector: 'page-localizacao',template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\modais\localizacao\localizacao.html"*/'\n\n<ion-header class="grid-content">\n\n    <div class="header-background"></div> <!-- header-background -->\n\n    <ion-grid>\n\n        <ion-row style="display: inline-flex;   ">\n\n            <ion-col col-1 class="col-icon">\n\n                <div class="icon-back-header" (click)="selectLocation(false)">\n\n                    <svg class="ico-back-header">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-back-header -->\n\n                </div> <!-- icon-back-header -->\n\n\n\n            </ion-col>\n\n            <ion-col col-auto class="col-header-grid">\n\n                <div class="text-btn-publicar">LOCALIZAÇÃO</div>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-header>\n\n\n\n<ion-content>\n\n\n\n    <div class="content-post">\n\n\n\n        <ion-grid class="content-info-post content-input">\n\n            <ion-row>\n\n                <ion-col col-1>\n\n                    <div text-align="center" class="btn-confir wrapper">\n\n                        <svg class="svg-search-ico-usertype">\n\n                            <use [attr.xlink:href]="constants.src_svg + \'search.svg#Layer_1\'"></use>\n\n                        </svg> <!-- svg-ico-usertype -->\n\n                    </div>\n\n                </ion-col>\n\n\n\n                <ion-col col-10 class="col-input">\n\n                    <div class="content-form-login">\n\n                        <div class="form-cont">\n\n                    <ion-input type="search" class="form-ctrl" placeholder="Digite um outro endereço..."\n\n                               class="input-search-maps" (input)="onSearchChange($event.target.value)"></ion-input>\n\n                        </div>\n\n                    </div>\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n        </ion-grid>\n\n\n\n        <div class="location-selected-content">\n\n            <ion-grid>\n\n                    <ion-row class="row-loc-selected">\n\n                        <ion-col *ngFor="let data of end">\n\n                            <button ion-button class="btn-location-more" round>\n\n                                <div (click)="deleteSelected(data.id)">X &nbsp; &nbsp; </div> {{data.end}}\n\n                            </button>\n\n                        </ion-col>\n\n                    </ion-row>\n\n            </ion-grid>\n\n        </div>\n\n\n\n        <div class="content-location-post" [hidden]="text">\n\n            <ion-list>\n\n                <div [hidden]="search">\n\n                    <div class="lojas-cad">Suas Lojas Cadastradas:</div>\n\n                    <ion-item class="content-all-location-post" *ngFor="let data of end"\n\n                              (click)="selectLocation(false)">\n\n                        <div class="second-content-all-location">\n\n                            <div text-align="center" class="btn-confir wrapper">\n\n                                <svg class="svg-ico-usertype">\n\n                                    <use [attr.xlink:href]="constants.src_svg + \'maps-and-flags.svg#Layer_1\'"></use>\n\n                                </svg> <!-- svg-ico-usertype -->\n\n                            </div>\n\n                            <!--resultados existentes -->\n\n                            <div  class="content-info-location-post">\n\n                                <div class="title-location-post">{{data.end}}</div>\n\n                                <div class="description-location-post">{{data.desc}}</div>\n\n                            </div>\n\n                            \n\n                        </div>\n\n                    </ion-item>\n\n                </div>\n\n                <!--resultados da busca ajax-->\n\n                <div *ngIf="search == true">\n\n                    <ion-item class="content-all-location-post teste" *ngFor="let data of searchGoogle"\n\n                              (click)="selectLocation(data)">\n\n                        <div class="second-content-all-location">\n\n                            <div class="content-info-location-post title-search-post">\n\n                                <div class="title-location-post ">{{data.end}}</div>\n\n                                <div class="description-location-post">{{data.desc}}</div>\n\n                            </div>\n\n                        </div>\n\n                    </ion-item>\n\n                </div>\n\n            </ion-list>\n\n        </div>\n\n\n\n\n\n    </div>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\modais\localizacao\localizacao.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
@@ -554,8 +722,8 @@ var LocalizacaoPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__step2_step2__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__confirm_cad_confirm_cad__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__step2_step2__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__confirm_cad_confirm_cad__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_jquery__);
@@ -707,7 +875,7 @@ var Step3Page = (function () {
     }
     Step3Page = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-step3',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\step3\step3.html"*/'<ion-header>\n\n    <div class="header-back" (click)="backToStep2()">\n\n\n\n        <svg class="backpage-ico">\n\n            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n        </svg> <!-- backpage-ico -->\n\n\n\n    </div> <!-- header-back -->\n\n</ion-header>\n\n\n\n<ion-content>\n\n\n\n    <div class="step-indicator">\n\n\n\n        <span class="dotdot actived"></span>\n\n        <span class="dot-stick actived"></span>\n\n        <span class="dotdot actived"></span>\n\n        <span class="dot-stick actived"></span>\n\n        <span class="dotdot actived rounded"></span>\n\n\n\n    </div> <!-- step-indicator -->\n\n\n\n    <h3 class="title-step">Finalizar Cadastro</h3> <!-- title-step -->\n\n\n\n    <div class="cad-content-inn">\n\n        <ion-grid>\n\n\n\n            <ion-row>\n\n                <ion-col>\n\n\n\n                    <div class="cad-form-content">\n\n                        <label class="cad-form-label">\n\n                            <span class="cad-form-label-txt"> Username: </span> <!-- cad-form-label-txt -->\n\n                            <input type="text" [(ngModel)]="user.name" class="cad-form-ctrl" placeholder="Username">\n\n                        </label><!-- cad-form-label -->\n\n                    </div> <!-- cad-form-content -->\n\n\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n            <ion-row>\n\n                <ion-col>\n\n\n\n                    <div class="cad-form-content">\n\n                        <label class="cad-form-label">\n\n                            <span class="cad-form-label-txt"> Senha: </span> <!-- cad-form-label-txt -->\n\n                            <input type="password" [(ngModel)]="user.password" (keyup)="checkPass()" class="cad-form-ctrl" placeholder="Senha">\n\n                        </label><!-- cad-form-label -->\n\n                    </div> <!-- cad-form-content -->\n\n\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n            <ion-row>\n\n                <ion-col>\n\n\n\n                    <div class="cad-form-content">\n\n                        <label class="cad-form-label icon-right" [ngClass]="{ \'checked-icon\': passwordsValiable }">\n\n                            <span class="cad-form-label-txt"> Confirmar Senha: </span> <!-- cad-form-label-txt -->\n\n                            <input type="password" [(ngModel)]="confirmPassword" (keyup)="checkPass()" class="cad-form-ctrl" placeholder="Confirmar Senha">\n\n                            <ion-icon name="checkmark-circle"></ion-icon>\n\n                        </label><!-- cad-form-label -->\n\n                    </div> <!-- cad-form-content -->\n\n\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n            <ion-row>\n\n                <ion-col>\n\n\n\n                    <div class="cad-form-content">\n\n\n\n                        <label class="cad-form-label">\n\n                            <span class="cad-form-label-txt"> Email: </span> <!-- cad-form-label-txt -->\n\n                            <input type="email" [(ngModel)]="user.email" class="cad-form-ctrl" placeholder="Email">\n\n                        </label><!-- cad-form-label -->\n\n\n\n                    </div> <!-- cad-form-content -->\n\n\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n            <ion-row>\n\n                <ion-col>\n\n\n\n                    <div class="cad-form-content">\n\n\n\n                        <label class="cad-form-label">\n\n                            <span class="cad-form-label-txt"> Telefone: </span> <!-- cad-form-label-txt -->\n\n                            <input type="text"  class="cad-form-ctrl fone" placeholder="Telefone" [brmasker]="{phone: true}">\n\n                        </label><!-- cad-form-label -->\n\n\n\n                    </div> <!-- cad-form-content -->\n\n\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n            <ion-row>\n\n                <ion-col>\n\n                    <button class="button-finish" (click)="cadFinish()">Pronto!</button>\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n        </ion-grid>\n\n    </div> <!-- cad-content-inn -->\n\n\n\n\n\n</ion-content>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\step3\step3.html"*/,
+            selector: 'page-step3',template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\cadastro\step3\step3.html"*/'<ion-header>\n\n    <div class="header-back" (click)="backToStep2()">\n\n\n\n        <svg class="backpage-ico">\n\n            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n        </svg> <!-- backpage-ico -->\n\n\n\n    </div> <!-- header-back -->\n\n</ion-header>\n\n\n\n<ion-content>\n\n\n\n    <div class="step-indicator">\n\n\n\n        <span class="dotdot actived"></span>\n\n        <span class="dot-stick actived"></span>\n\n        <span class="dotdot actived"></span>\n\n        <span class="dot-stick actived"></span>\n\n        <span class="dotdot actived rounded"></span>\n\n\n\n    </div> <!-- step-indicator -->\n\n\n\n    <h3 class="title-step">Finalizar Cadastro</h3> <!-- title-step -->\n\n\n\n    <div class="cad-content-inn">\n\n        <ion-grid>\n\n\n\n            <ion-row>\n\n                <ion-col>\n\n\n\n                    <div class="cad-form-content">\n\n                        <label class="cad-form-label">\n\n                            <span class="cad-form-label-txt"> Username: </span> <!-- cad-form-label-txt -->\n\n                            <input type="text" [(ngModel)]="user.name" class="cad-form-ctrl" placeholder="Username">\n\n                        </label><!-- cad-form-label -->\n\n                    </div> <!-- cad-form-content -->\n\n\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n            <ion-row>\n\n                <ion-col>\n\n\n\n                    <div class="cad-form-content">\n\n                        <label class="cad-form-label">\n\n                            <span class="cad-form-label-txt"> Senha: </span> <!-- cad-form-label-txt -->\n\n                            <input type="password" [(ngModel)]="user.password" (keyup)="checkPass()" class="cad-form-ctrl" placeholder="Senha">\n\n                        </label><!-- cad-form-label -->\n\n                    </div> <!-- cad-form-content -->\n\n\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n            <ion-row>\n\n                <ion-col>\n\n\n\n                    <div class="cad-form-content">\n\n                        <label class="cad-form-label icon-right" [ngClass]="{ \'checked-icon\': passwordsValiable }">\n\n                            <span class="cad-form-label-txt"> Confirmar Senha: </span> <!-- cad-form-label-txt -->\n\n                            <input type="password" [(ngModel)]="confirmPassword" (keyup)="checkPass()" class="cad-form-ctrl" placeholder="Confirmar Senha">\n\n                            <ion-icon name="checkmark-circle"></ion-icon>\n\n                        </label><!-- cad-form-label -->\n\n                    </div> <!-- cad-form-content -->\n\n\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n            <ion-row>\n\n                <ion-col>\n\n\n\n                    <div class="cad-form-content">\n\n\n\n                        <label class="cad-form-label">\n\n                            <span class="cad-form-label-txt"> Email: </span> <!-- cad-form-label-txt -->\n\n                            <input type="email" [(ngModel)]="user.email" class="cad-form-ctrl" placeholder="Email">\n\n                        </label><!-- cad-form-label -->\n\n\n\n                    </div> <!-- cad-form-content -->\n\n\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n            <ion-row>\n\n                <ion-col>\n\n\n\n                    <div class="cad-form-content">\n\n\n\n                        <label class="cad-form-label">\n\n                            <span class="cad-form-label-txt"> Telefone: </span> <!-- cad-form-label-txt -->\n\n                            <input type="text"  class="cad-form-ctrl fone" placeholder="Telefone" [brmasker]="{phone: true}">\n\n                        </label><!-- cad-form-label -->\n\n\n\n                    </div> <!-- cad-form-content -->\n\n\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n            <ion-row>\n\n                <ion-col>\n\n                    <button class="button-finish" (click)="cadFinish()">Pronto!</button>\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n        </ion-grid>\n\n    </div> <!-- cad-content-inn -->\n\n\n\n\n\n</ion-content>'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\cadastro\step3\step3.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
@@ -838,7 +1006,7 @@ var ForgotPass_1Page = (function () {
     }
     ForgotPass_1Page = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-forgot-pass-1',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\forgot-pass\forgot-pass-1\forgot-pass-1.html"*/'<ion-header>\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col col-auto class="col-icon-back" (click)="backPage()">\n\n                <ion-icon name="ios-arrow-back" class="icon-back"></ion-icon>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-header>\n\n<ion-content padding>\n\n\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col> \n\n                <h3 class="title-page">\n\n                    Recuperar Senha.\n\n                </h3><!-- title-page -->\n\n            </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n            <ion-col>\n\n                <p class="page-description">\n\n                    Atenção: Se você perdeu, ou não lembra mais a sua senha de acesso, preencha este formulário para iniciar o processo para gerar uma nova senha para você!\n\n                </p><!-- page-description -->\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n                <span class="label-form">\n\n                Insira o seu Email\n\n                </span><!-- label-form -->\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n                    <input type="email" [(ngModel)]="email_to_recover" (keyup)="validateEmail( email_to_recover )" class="recover-form" placeholder="exemple@exemple.com">\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n              <button ion-button class="pink-button align-center" (click)="sendEmail (  )"> Enviar </button>\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n    </ion-grid>\n\n\n\n</ion-content>\n\n\n\n<!--  remoção do botão proximo para adição do botão enviar\n\n    <ion-footer>\n\n        <div class="footer-steps" >\n\n\n\n            <div class="next-step-action" [ngClass]="{\'allowed\': valid_email }" (click)="sendEmail()">\n\n                <span class="next-step-label">\n\n                    Próximo\n\n                </span>  next-stap-label\n\n                <div class="nextstep-icon" >\n\n                    <span class="caret-body"></span>\n\n                    <span class="caret-direction"></span>\n\n                </div>  nextstep-icon\n\n            </div>  next-stap-action \n\n            \n\n        </div>  footer-steps\n\n    </ion-footer>    \n\n-->'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\forgot-pass\forgot-pass-1\forgot-pass-1.html"*/,
+            selector: 'page-forgot-pass-1',template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\forgot-pass\forgot-pass-1\forgot-pass-1.html"*/'<ion-header>\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col col-auto class="col-icon-back" (click)="backPage()">\n\n                <ion-icon name="ios-arrow-back" class="icon-back"></ion-icon>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-header>\n\n<ion-content padding>\n\n\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col> \n\n                <h3 class="title-page">\n\n                    Recuperar Senha.\n\n                </h3><!-- title-page -->\n\n            </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n            <ion-col>\n\n                <p class="page-description">\n\n                    Atenção: Se você perdeu, ou não lembra mais a sua senha de acesso, preencha este formulário para iniciar o processo para gerar uma nova senha para você!\n\n                </p><!-- page-description -->\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n                <span class="label-form">\n\n                Insira o seu Email\n\n                </span><!-- label-form -->\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n                    <input type="email" [(ngModel)]="email_to_recover" (keyup)="validateEmail( email_to_recover )" class="recover-form" placeholder="exemple@exemple.com">\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n              <button ion-button class="pink-button align-center" (click)="sendEmail (  )"> Enviar </button>\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n    </ion-grid>\n\n\n\n</ion-content>\n\n\n\n<!--  remoção do botão proximo para adição do botão enviar\n\n    <ion-footer>\n\n        <div class="footer-steps" >\n\n\n\n            <div class="next-step-action" [ngClass]="{\'allowed\': valid_email }" (click)="sendEmail()">\n\n                <span class="next-step-label">\n\n                    Próximo\n\n                </span>  next-stap-label\n\n                <div class="nextstep-icon" >\n\n                    <span class="caret-body"></span>\n\n                    <span class="caret-direction"></span>\n\n                </div>  nextstep-icon\n\n            </div>  next-stap-action \n\n            \n\n        </div>  footer-steps\n\n    </ion-footer>    \n\n-->'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\forgot-pass\forgot-pass-1\forgot-pass-1.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["n" /* NavParams */],
@@ -974,7 +1142,7 @@ var ForgotPass_2Page = (function () {
     }
     ForgotPass_2Page = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-forgot-pass-2',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\forgot-pass\forgot-pass-2\forgot-pass-2.html"*/'<ion-header>\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col col-auto class="col-icon-back" (click)="backPage()">\n\n                <ion-icon name="ios-arrow-back" class="icon-back"></ion-icon>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-header>\n\n<ion-content padding>\n\n\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col>\n\n                <h3 class="title-page">\n\n                    Código de Confirmação\n\n                </h3><!-- title-page -->\n\n            </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n            <ion-col>\n\n                <p class="page-description">\n\n                    Um código de verificação foi enviado ao seu email. Por favor, digite o código aqui para continuar o\n\n                    processo! estamos quase lá!\n\n                </p><!-- page-description -->\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n          <span class="label-form">\n\n          Código de Confirmação\n\n          </span><!-- label-form -->\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n                <input type="teste" [(ngModel)]="code" class="recover-form" placeholder="Código">\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n                <span class="resend-code" (click)="reviewCode()"> Re-enviar código </span>\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n              <button ion-button class="pink-button align-center" [ngClass]="{\'allowed\': true }" (click)="confirmCode()"> Confirmar </button>\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n\n\n    </ion-grid>\n\n\n\n</ion-content>\n\n<!--\n\n    <ion-footer>\n\n        <div class="footer-steps">\n\n\n\n            <div class="next-step-action" [ngClass]="{\'allowed\': true }" (click)="confirmCode()">\n\n                <span class="next-step-label">\n\n                    Confirmar!\n\n                </span>  next-stap-label \n\n                <div class="nextstep-icon">\n\n                    <span class="caret-body"></span>\n\n                    <span class="caret-direction"></span>\n\n                </div>  nextstep-icon \n\n            </div>  next-stap-action \n\n\n\n        </div>  footer-steps \n\n    </ion-footer>\n\n-->'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\forgot-pass\forgot-pass-2\forgot-pass-2.html"*/,
+            selector: 'page-forgot-pass-2',template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\forgot-pass\forgot-pass-2\forgot-pass-2.html"*/'<ion-header>\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col col-auto class="col-icon-back" (click)="backPage()">\n\n                <ion-icon name="ios-arrow-back" class="icon-back"></ion-icon>\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n</ion-header>\n\n<ion-content padding>\n\n\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col>\n\n                <h3 class="title-page">\n\n                    Código de Confirmação\n\n                </h3><!-- title-page -->\n\n            </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n            <ion-col>\n\n                <p class="page-description">\n\n                    Um código de verificação foi enviado ao seu email. Por favor, digite o código aqui para continuar o\n\n                    processo! estamos quase lá!\n\n                </p><!-- page-description -->\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n          <span class="label-form">\n\n          Código de Confirmação\n\n          </span><!-- label-form -->\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n                <input type="teste" [(ngModel)]="code" class="recover-form" placeholder="Código">\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n                <span class="resend-code" (click)="reviewCode()"> Re-enviar código </span>\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n              <button ion-button class="pink-button align-center" [ngClass]="{\'allowed\': true }" (click)="confirmCode()"> Confirmar </button>\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n\n\n    </ion-grid>\n\n\n\n</ion-content>\n\n<!--\n\n    <ion-footer>\n\n        <div class="footer-steps">\n\n\n\n            <div class="next-step-action" [ngClass]="{\'allowed\': true }" (click)="confirmCode()">\n\n                <span class="next-step-label">\n\n                    Confirmar!\n\n                </span>  next-stap-label \n\n                <div class="nextstep-icon">\n\n                    <span class="caret-body"></span>\n\n                    <span class="caret-direction"></span>\n\n                </div>  nextstep-icon \n\n            </div>  next-stap-action \n\n\n\n        </div>  footer-steps \n\n    </ion-footer>\n\n-->'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\forgot-pass\forgot-pass-2\forgot-pass-2.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
@@ -1087,7 +1255,7 @@ var ForgotPass_3Page = (function () {
     }
     ForgotPass_3Page = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-forgot-pass-3',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\forgot-pass\forgot-pass-3\forgot-pass-3.html"*/'<ion-header>\n\n  <ion-grid>\n\n    <ion-row>\n\n      <ion-col col-auto class="col-icon-back" (click)="backPage()">\n\n        <ion-icon name="ios-arrow-back" class="icon-back"></ion-icon>\n\n      </ion-col>\n\n    </ion-row>\n\n  </ion-grid>\n\n</ion-header>\n\n<ion-content padding>\n\n\n\n  <ion-grid>\n\n    <ion-row>\n\n      <ion-col>\n\n        <h3 class="title-page">\n\n          Novas Senhas\n\n        </h3><!-- title-page -->\n\n      </ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col>\n\n        <p class="page-description">\n\n          Ultimo passo! para concluir este processo, Digite uma nova senha para que você possa efetuar o login novamente.\n\n        </p><!-- page-description -->\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n    <ion-row>\n\n      <ion-col>\n\n          <span class="label-form">\n\n          Digite sua nova senha.\n\n          </span><!-- label-form -->\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n    <ion-row>\n\n      <ion-col>\n\n        <span class="label-new-pass">Nova senha:</span>\n\n        <input type="password" class="recover-form" [(ngModel)]="user_pass" placeholder="Nova senha">\n\n      </ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col>\n\n        <span class="label-new-pass">Confirme sua nova senha:</span>\n\n        <input type="password" class="recover-form" [(ngModel)]="confirm_pass" placeholder="Confirmar Senha">\n\n      </ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col>\n\n        <button ion-button class="pink-button align-center" [ngClass]="{\'allowed\': true }" (click)="finishNewPass()"> Enviar </button>\n\n      </ion-col>\n\n  </ion-row>\n\n  </ion-grid>\n\n\n\n</ion-content>\n\n<!-- \n\n  <ion-footer>\n\n    <div class="footer-steps" >\n\n\n\n      <div class="next-step-action" [ngClass]="{\'allowed\': true }" (click)="finishNewPass()" >\n\n              <span class="next-step-label">\n\n                  Terminar!\n\n              </span>  next-stap-label \n\n        <div class="nextstep-icon" >\n\n          <span class="caret-body"></span>\n\n          <span class="caret-direction"></span>\n\n        </div>  nextstep-icon \n\n      </div>  next-stap-action \n\n\n\n    </div>  footer-steps \n\n  </ion-footer>\n\n-->'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\forgot-pass\forgot-pass-3\forgot-pass-3.html"*/,
+            selector: 'page-forgot-pass-3',template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\forgot-pass\forgot-pass-3\forgot-pass-3.html"*/'<ion-header>\n\n  <ion-grid>\n\n    <ion-row>\n\n      <ion-col col-auto class="col-icon-back" (click)="backPage()">\n\n        <ion-icon name="ios-arrow-back" class="icon-back"></ion-icon>\n\n      </ion-col>\n\n    </ion-row>\n\n  </ion-grid>\n\n</ion-header>\n\n<ion-content padding>\n\n\n\n  <ion-grid>\n\n    <ion-row>\n\n      <ion-col>\n\n        <h3 class="title-page">\n\n          Novas Senhas\n\n        </h3><!-- title-page -->\n\n      </ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col>\n\n        <p class="page-description">\n\n          Ultimo passo! para concluir este processo, Digite uma nova senha para que você possa efetuar o login novamente.\n\n        </p><!-- page-description -->\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n    <ion-row>\n\n      <ion-col>\n\n          <span class="label-form">\n\n          Digite sua nova senha.\n\n          </span><!-- label-form -->\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n    <ion-row>\n\n      <ion-col>\n\n        <span class="label-new-pass">Nova senha:</span>\n\n        <input type="password" class="recover-form" [(ngModel)]="user_pass" placeholder="Nova senha">\n\n      </ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col>\n\n        <span class="label-new-pass">Confirme sua nova senha:</span>\n\n        <input type="password" class="recover-form" [(ngModel)]="confirm_pass" placeholder="Confirmar Senha">\n\n      </ion-col>\n\n    </ion-row>\n\n    <ion-row>\n\n      <ion-col>\n\n        <button ion-button class="pink-button align-center" [ngClass]="{\'allowed\': true }" (click)="finishNewPass()"> Enviar </button>\n\n      </ion-col>\n\n  </ion-row>\n\n  </ion-grid>\n\n\n\n</ion-content>\n\n<!-- \n\n  <ion-footer>\n\n    <div class="footer-steps" >\n\n\n\n      <div class="next-step-action" [ngClass]="{\'allowed\': true }" (click)="finishNewPass()" >\n\n              <span class="next-step-label">\n\n                  Terminar!\n\n              </span>  next-stap-label \n\n        <div class="nextstep-icon" >\n\n          <span class="caret-body"></span>\n\n          <span class="caret-direction"></span>\n\n        </div>  nextstep-icon \n\n      </div>  next-stap-action \n\n\n\n    </div>  footer-steps \n\n  </ion-footer>\n\n-->'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\forgot-pass\forgot-pass-3\forgot-pass-3.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
@@ -1161,13 +1329,13 @@ var PostProvider = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__explore_estilos_explore_estilos__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__explore_estilos_explore_estilos__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_jquery__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__profile_config_profile_config__ = __webpack_require__(183);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_social_sharing__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_social_sharing__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_call_number__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_profile_ProfileProvider__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_profile_ProfileProvider__ = __webpack_require__(92);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1340,7 +1508,7 @@ var ProfilePage = (function () {
     };
     ProfilePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-profile',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\profile\profile.html"*/'<ion-content>\n\n    <ion-scroll scrollY="true">\n\n\n\n        <ion-header class="profile-header">\n\n            <ion-grid class="profile-header-grid">\n\n                <ion-row>\n\n\n\n                    <ion-col col-auto class="pointer">\n\n                        <div class="profile-header-icon left">\n\n                            <svg class="ico-profile-header">\n\n                                <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n                            </svg> <!-- ico-profile-header -->\n\n                        </div> <!-- profile-header-icon -->\n\n                    </ion-col><!-- pointer -->\n\n\n\n                    <ion-col class="profile-header-names">\n\n                        <div class="profile-header-labels">\n\n\n\n                            <div class="profile-header-label title">\n\n                    <span class="profile-label">\n\n                      {{profile.campany_name}}\n\n                    </span><!-- profile-label -->\n\n                            </div> <!-- profile-header-label -->\n\n                            <div class="profile-header-label subtitle">\n\n                    <span class="profile-label">\n\n                      {{profile.company_type}}\n\n                    </span><!-- profile-label -->\n\n                            </div> <!-- profile-header-label -->\n\n\n\n                        </div> <!-- profile-header-labels -->\n\n                    </ion-col><!-- profile-header-names -->\n\n\n\n                    <ion-col col-auto class="pointer" (click)="disableProfileView()" [hidden]="!seenProfile">\n\n                        <div class="profile-header-icon right">\n\n                            <svg class="ico-profile-header">\n\n                                <use [attr.xlink:href]="constants.src_svg + \'eye.svg#Layer_1\'"></use>\n\n                            </svg> <!-- ico-profile-header -->\n\n                        </div> <!-- profile-header-icon -->\n\n                    </ion-col><!-- pointer -->\n\n                    <ion-col col-auto class="pointer" (click)="profileActions()" [hidden]="ownProfile">\n\n                        <div class="profile-header-icon right">\n\n                            <svg class="ico-profile-header">\n\n                                <use [attr.xlink:href]="constants.src_svg + \'vertical-dots.svg#Layer_1\'"></use>\n\n                            </svg> <!-- ico-profile-header -->\n\n                        </div> <!-- profile-header-icon -->\n\n                    </ion-col><!-- pointer -->\n\n                    <ion-col col-auto class="pointer" (click)="profileConfigs()" [hidden]="!ownProfile">\n\n                        <div class="profile-header-icon right">\n\n                            <svg class="ico-profile-header">\n\n                                <use [attr.xlink:href]="constants.src_svg + \'cogs.svg#Layer_1\'"></use>\n\n                            </svg> <!-- ico-profile-header -->\n\n                        </div> <!-- profile-header-icon -->\n\n                    </ion-col><!-- pointer -->\n\n\n\n                </ion-row>\n\n            </ion-grid><!-- profile-header-grid -->\n\n        </ion-header><!-- profile-header -->\n\n\n\n        <div class="profile-content"\n\n             style="background-image: url(\'http://thenerdstash.com/wp-content/uploads/2016/07/cropped-1920-1080-706092.jpg\')">\n\n\n\n            <span class="background-gradient"></span>\n\n            <span class="background-gradient-bottom"></span>\n\n\n\n            <ion-grid class="profile-grid">\n\n\n\n                <ion-row>\n\n\n\n                    <ion-col col-auto>\n\n                        <div class="image-profile"\n\n                             [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/\' + profile.company_logo + \')\' }"></div>\n\n                        <!-- image-profile -->\n\n                    </ion-col>\n\n\n\n                    <ion-col class="profile-settings">\n\n\n\n                        <div class="company-name">\n\n                            {{profile.profile_connections}}\n\n                        </div> <!-- company-name -->\n\n                        <div class="company-type">Conexões</div> <!-- company-type -->\n\n\n\n                        <div class="company-profile-actions">\n\n\n\n                            <div class="default-profile" [hidden]="ownProfile">\n\n                                <ion-grid class="actions-profile-grid">\n\n                                    <ion-row>\n\n\n\n                                        <ion-col col-auto>\n\n                                            <button ion-button class="btn-connect-profile"> Conectar </button>\n\n                                        </ion-col>\n\n                                        <ion-col col-auto>\n\n                                            <button ion-button class="profile-svg-button">\n\n                                                <svg class="profile-svg-ico">\n\n                                                    <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n\n                                                </svg> <!-- profile-svg-ico -->\n\n                                            </button><!-- profile-svg-button -->\n\n                                        </ion-col>\n\n                                        <ion-col col-auto (click)="callProfile()">\n\n                                            <button ion-button class="profile-svg-button">\n\n                                                <svg class="profile-svg-ico">\n\n                                                    <use [attr.xlink:href]="constants.src_svg + \'phone.svg#Layer_1\'"></use>\n\n                                                </svg> <!-- profile-svg-ico -->\n\n                                            </button><!-- profile-svg-button -->\n\n                                        </ion-col>\n\n                                        <ion-col col-auto (click)="shareProfile()">\n\n                                            <button ion-button class="profile-svg-button">\n\n                                                <svg class="profile-svg-ico">\n\n                                                    <use [attr.xlink:href]="constants.src_svg + \'share.svg#Layer_1\'"></use>\n\n                                                </svg> <!-- profile-svg-ico -->\n\n                                            </button><!-- profile-svg-button -->\n\n                                        </ion-col>\n\n\n\n                                    </ion-row>\n\n                                </ion-grid><!-- actions-profile-grid -->\n\n                            </div> <!-- default-profile -->\n\n\n\n                            <div class="current-profile" [hidden]="!ownProfile">\n\n\n\n                                <ion-grid class="actions-profile-grid">\n\n                                    <ion-row>\n\n\n\n                                        <ion-col col-auto>\n\n                                            <button ion-button class="btn-edit-profile"> Editar Perfil </button>\n\n                                        </ion-col>\n\n\n\n                                        <ion-col col-auto (click)="shareProfile()">\n\n                                            <button ion-button class="profile-svg-button">\n\n                                                <svg class="profile-svg-ico">\n\n                                                    <use [attr.xlink:href]="constants.src_svg + \'share.svg#Layer_1\'"></use>\n\n                                                </svg> <!-- profile-svg-ico -->\n\n                                            </button><!-- profile-svg-button -->\n\n                                        </ion-col>\n\n\n\n                                    </ion-row>\n\n                                </ion-grid><!-- actions-profile-grid -->\n\n\n\n                            </div> <!-- current-profile -->\n\n\n\n                        </div> <!-- company-profile-actions -->\n\n\n\n                    </ion-col><!-- profile-settings -->\n\n                </ion-row>\n\n\n\n                <ion-row class="row-profile-description">\n\n                    <ion-col>\n\n                        <div class="label-profile-description">\n\n                  <span class="profile-description">\n\n                    Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI\n\n                  </span><!-- profile-description -->\n\n                        </div> <!-- label-profile-description -->\n\n                    </ion-col>\n\n                </ion-row><!-- row-profile-description -->\n\n\n\n                <ion-row class="row-profile-styles">\n\n                    <ion-col col-auto [hidden]="!ownProfile">\n\n\n\n                        <button ion-button class="profile-style-plus" (click)="settingsStyles()">\n\n                            <svg class="ico-profile-styles">\n\n                                <use [attr.xlink:href]="constants.src_svg + \'plus.svg#Layer_1\'"></use>\n\n                            </svg> <!-- ico-profile-styles -->\n\n                        </button><!-- profile-style-plus -->\n\n\n\n                    </ion-col>\n\n                    <ion-col class="relative col-styles-profile">\n\n                        <div class="viewport-styles-profile">\n\n                            <ul class="list-profile-style">\n\n                                <li class="list-profile-style-item pink"> Feminino</li><!-- list-profile-style-item -->\n\n                                <li class="list-profile-style-item blue"> Masculino</li><!-- list-profile-style-item -->\n\n                                <li class="list-profile-style-item blue"> Masculino</li><!-- list-profile-style-item -->\n\n                                <li class="list-profile-style-item blue"> Masculino</li><!-- list-profile-style-item -->\n\n                                <li class="list-profile-style-item blue"> Masculino</li><!-- list-profile-style-item -->\n\n                                <li class="list-profile-style-item blue"> Masculino</li><!-- list-profile-style-item -->\n\n                                <li class="list-profile-style-item brown"> Alfaiataria</li><!-- list-profile-style-item -->\n\n                            </ul><!-- list-profile-style -->\n\n                        </div> <!-- viewport-styles-profile -->\n\n                    </ion-col><!-- relative -->\n\n                </ion-row><!-- row-profile-styles -->\n\n\n\n            </ion-grid><!-- profile-grid -->\n\n\n\n        </div> <!-- profile-content -->\n\n\n\n        <ion-grid class="grid-profile-content">\n\n\n\n            <ion-row class="row-header-content">\n\n                <ion-col [ngClass]="{ \'actived-indicator\': activedPage == \'feed\' }" (click)="switchProfilePage(\'feed\')">\n\n                  <span class="label-profile-header-content">\n\n                    <div class="icon-label">\n\n                      <svg class="ico-label">\n\n                         <use [attr.xlink:href]="constants.src_svg + \'feed.svg#Layer_1\'"></use>\n\n                      </svg> <!-- ico-label -->\n\n                    </div> <!-- icon-label -->\n\n                    <div class="label-text">\n\n                      Feed\n\n                    </div> <!-- label-text -->\n\n                  </span><!-- label-profile-header-content -->\n\n                </ion-col>\n\n\n\n                <ion-col [ngClass]="{ \'actived-indicator\': activedPage == \'products\' }"\n\n                         (click)="switchProfilePage(\'products\')">\n\n                  <span class="label-profile-header-content">\n\n                    <div class="icon-label">\n\n                      <svg class="ico-label">\n\n                         <use [attr.xlink:href]="constants.src_svg + \'shirt.svg#Layer_1\'"></use>\n\n                      </svg> <!-- ico-label -->\n\n                    </div> <!-- icon-label -->\n\n                    <div class="label-text">\n\n                      Loja\n\n                    </div> <!-- label-text -->\n\n                  </span><!-- label-profile-header-content -->\n\n                </ion-col>\n\n\n\n                <span class="header-indicator" [ngStyle]="headerIndicator"></span>\n\n\n\n            </ion-row>\n\n\n\n            <ion-row [hidden]="activedPage == \'products\'" >\n\n                <ion-col>\n\n                    Feed Profile\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n            <ion-row [hidden]="activedPage == \'feed\'">\n\n                <ion-grid>\n\n                    <ion-row class="row-search">\n\n                        <ion-col>\n\n                            <input type="search" class="search-products-profile" placeholder="Buscar"\n\n                                   (input)="startSearch()" (focus)="startSearch()">\n\n                        </ion-col>\n\n                        <ion-col col-auto>\n\n                            <div class="search-products-icon">\n\n                                <svg class="search-products-ico">\n\n                                    <use [attr.xlink:href]="constants.src_svg + \'settings.svg#Layer_1\'"></use>\n\n                                </svg> <!-- ico-label -->\n\n                            </div> <!-- search-products-ico -->\n\n                        </ion-col>\n\n                    </ion-row>\n\n\n\n                    <ion-row class="row-products-list">\n\n                        <ion-col>\n\n\n\n                            <ul class="products-list">\n\n                                <li class="products-list-item" *ngFor="let product of profile_produts">\n\n                                    <div class="product-cover"\n\n                                         [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/\' + product.background + \')\' }"></div>\n\n                                    <!-- product-cover -->\n\n                                </li><!-- products-list-item -->\n\n                            </ul><!-- products-list -->\n\n\n\n                        </ion-col>\n\n                    </ion-row><!-- row-products-list -->\n\n                </ion-grid>\n\n            </ion-row>\n\n\n\n        </ion-grid><!-- grid-profile-content -->\n\n\n\n    </ion-scroll>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\profile\profile.html"*/,
+            selector: 'page-profile',template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\profile\profile.html"*/'<ion-content>\n\n    <ion-scroll scrollY="true">\n\n\n\n        <ion-header class="profile-header">\n\n            <ion-grid class="profile-header-grid">\n\n                <ion-row>\n\n\n\n                    <ion-col col-auto class="pointer">\n\n                        <div class="profile-header-icon left">\n\n                            <svg class="ico-profile-header">\n\n                                <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n                            </svg> <!-- ico-profile-header -->\n\n                        </div> <!-- profile-header-icon -->\n\n                    </ion-col><!-- pointer -->\n\n\n\n                    <ion-col class="profile-header-names">\n\n                        <div class="profile-header-labels">\n\n\n\n                            <div class="profile-header-label title">\n\n                    <span class="profile-label">\n\n                      {{profile.campany_name}}\n\n                    </span><!-- profile-label -->\n\n                            </div> <!-- profile-header-label -->\n\n                            <div class="profile-header-label subtitle">\n\n                    <span class="profile-label">\n\n                      {{profile.company_type}}\n\n                    </span><!-- profile-label -->\n\n                            </div> <!-- profile-header-label -->\n\n\n\n                        </div> <!-- profile-header-labels -->\n\n                    </ion-col><!-- profile-header-names -->\n\n\n\n                    <ion-col col-auto class="pointer" (click)="disableProfileView()" [hidden]="!seenProfile">\n\n                        <div class="profile-header-icon right">\n\n                            <svg class="ico-profile-header">\n\n                                <use [attr.xlink:href]="constants.src_svg + \'eye.svg#Layer_1\'"></use>\n\n                            </svg> <!-- ico-profile-header -->\n\n                        </div> <!-- profile-header-icon -->\n\n                    </ion-col><!-- pointer -->\n\n                    <ion-col col-auto class="pointer" (click)="profileActions()" [hidden]="ownProfile">\n\n                        <div class="profile-header-icon right">\n\n                            <svg class="ico-profile-header">\n\n                                <use [attr.xlink:href]="constants.src_svg + \'vertical-dots.svg#Layer_1\'"></use>\n\n                            </svg> <!-- ico-profile-header -->\n\n                        </div> <!-- profile-header-icon -->\n\n                    </ion-col><!-- pointer -->\n\n                    <ion-col col-auto class="pointer" (click)="profileConfigs()" [hidden]="!ownProfile">\n\n                        <div class="profile-header-icon right">\n\n                            <svg class="ico-profile-header">\n\n                                <use [attr.xlink:href]="constants.src_svg + \'cogs.svg#Layer_1\'"></use>\n\n                            </svg> <!-- ico-profile-header -->\n\n                        </div> <!-- profile-header-icon -->\n\n                    </ion-col><!-- pointer -->\n\n\n\n                </ion-row>\n\n            </ion-grid><!-- profile-header-grid -->\n\n        </ion-header><!-- profile-header -->\n\n\n\n        <div class="profile-content"\n\n             style="background-image: url(\'http://thenerdstash.com/wp-content/uploads/2016/07/cropped-1920-1080-706092.jpg\')">\n\n\n\n            <span class="background-gradient"></span>\n\n            <span class="background-gradient-bottom"></span>\n\n\n\n            <ion-grid class="profile-grid">\n\n\n\n                <ion-row>\n\n\n\n                    <ion-col col-auto>\n\n                        <div class="image-profile"\n\n                             [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/\' + profile.company_logo + \')\' }"></div>\n\n                        <!-- image-profile -->\n\n                    </ion-col>\n\n\n\n                    <ion-col class="profile-settings">\n\n\n\n                        <div class="company-name">\n\n                            {{profile.profile_connections}}\n\n                        </div> <!-- company-name -->\n\n                        <div class="company-type">Conexões</div> <!-- company-type -->\n\n\n\n                        <div class="company-profile-actions">\n\n\n\n                            <div class="default-profile" [hidden]="ownProfile">\n\n                                <ion-grid class="actions-profile-grid">\n\n                                    <ion-row>\n\n\n\n                                        <ion-col col-auto>\n\n                                            <button ion-button class="btn-connect-profile"> Conectar </button>\n\n                                        </ion-col>\n\n                                        <ion-col col-auto>\n\n                                            <button ion-button class="profile-svg-button">\n\n                                                <svg class="profile-svg-ico">\n\n                                                    <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n\n                                                </svg> <!-- profile-svg-ico -->\n\n                                            </button><!-- profile-svg-button -->\n\n                                        </ion-col>\n\n                                        <ion-col col-auto (click)="callProfile()">\n\n                                            <button ion-button class="profile-svg-button">\n\n                                                <svg class="profile-svg-ico">\n\n                                                    <use [attr.xlink:href]="constants.src_svg + \'phone.svg#Layer_1\'"></use>\n\n                                                </svg> <!-- profile-svg-ico -->\n\n                                            </button><!-- profile-svg-button -->\n\n                                        </ion-col>\n\n                                        <ion-col col-auto (click)="shareProfile()">\n\n                                            <button ion-button class="profile-svg-button">\n\n                                                <svg class="profile-svg-ico">\n\n                                                    <use [attr.xlink:href]="constants.src_svg + \'share.svg#Layer_1\'"></use>\n\n                                                </svg> <!-- profile-svg-ico -->\n\n                                            </button><!-- profile-svg-button -->\n\n                                        </ion-col>\n\n\n\n                                    </ion-row>\n\n                                </ion-grid><!-- actions-profile-grid -->\n\n                            </div> <!-- default-profile -->\n\n\n\n                            <div class="current-profile" [hidden]="!ownProfile">\n\n\n\n                                <ion-grid class="actions-profile-grid">\n\n                                    <ion-row>\n\n\n\n                                        <ion-col col-auto>\n\n                                            <button ion-button class="btn-edit-profile"> Editar Perfil </button>\n\n                                        </ion-col>\n\n\n\n                                        <ion-col col-auto (click)="shareProfile()">\n\n                                            <button ion-button class="profile-svg-button">\n\n                                                <svg class="profile-svg-ico">\n\n                                                    <use [attr.xlink:href]="constants.src_svg + \'share.svg#Layer_1\'"></use>\n\n                                                </svg> <!-- profile-svg-ico -->\n\n                                            </button><!-- profile-svg-button -->\n\n                                        </ion-col>\n\n\n\n                                    </ion-row>\n\n                                </ion-grid><!-- actions-profile-grid -->\n\n\n\n                            </div> <!-- current-profile -->\n\n\n\n                        </div> <!-- company-profile-actions -->\n\n\n\n                    </ion-col><!-- profile-settings -->\n\n                </ion-row>\n\n\n\n                <ion-row class="row-profile-description">\n\n                    <ion-col>\n\n                        <div class="label-profile-description">\n\n                  <span class="profile-description">\n\n                    Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI\n\n                  </span><!-- profile-description -->\n\n                        </div> <!-- label-profile-description -->\n\n                    </ion-col>\n\n                </ion-row><!-- row-profile-description -->\n\n\n\n                <ion-row class="row-profile-styles">\n\n                    <ion-col col-auto [hidden]="!ownProfile">\n\n\n\n                        <button ion-button class="profile-style-plus" (click)="settingsStyles()">\n\n                            <svg class="ico-profile-styles">\n\n                                <use [attr.xlink:href]="constants.src_svg + \'plus.svg#Layer_1\'"></use>\n\n                            </svg> <!-- ico-profile-styles -->\n\n                        </button><!-- profile-style-plus -->\n\n\n\n                    </ion-col>\n\n                    <ion-col class="relative col-styles-profile">\n\n                        <div class="viewport-styles-profile">\n\n                            <ul class="list-profile-style">\n\n                                <li class="list-profile-style-item pink"> Feminino</li><!-- list-profile-style-item -->\n\n                                <li class="list-profile-style-item blue"> Masculino</li><!-- list-profile-style-item -->\n\n                                <li class="list-profile-style-item blue"> Masculino</li><!-- list-profile-style-item -->\n\n                                <li class="list-profile-style-item blue"> Masculino</li><!-- list-profile-style-item -->\n\n                                <li class="list-profile-style-item blue"> Masculino</li><!-- list-profile-style-item -->\n\n                                <li class="list-profile-style-item blue"> Masculino</li><!-- list-profile-style-item -->\n\n                                <li class="list-profile-style-item brown"> Alfaiataria</li><!-- list-profile-style-item -->\n\n                            </ul><!-- list-profile-style -->\n\n                        </div> <!-- viewport-styles-profile -->\n\n                    </ion-col><!-- relative -->\n\n                </ion-row><!-- row-profile-styles -->\n\n\n\n            </ion-grid><!-- profile-grid -->\n\n\n\n        </div> <!-- profile-content -->\n\n\n\n        <ion-grid class="grid-profile-content">\n\n\n\n            <ion-row class="row-header-content">\n\n                <ion-col [ngClass]="{ \'actived-indicator\': activedPage == \'feed\' }" (click)="switchProfilePage(\'feed\')">\n\n                  <span class="label-profile-header-content">\n\n                    <div class="icon-label">\n\n                      <svg class="ico-label">\n\n                         <use [attr.xlink:href]="constants.src_svg + \'feed.svg#Layer_1\'"></use>\n\n                      </svg> <!-- ico-label -->\n\n                    </div> <!-- icon-label -->\n\n                    <div class="label-text">\n\n                      Feed\n\n                    </div> <!-- label-text -->\n\n                  </span><!-- label-profile-header-content -->\n\n                </ion-col>\n\n\n\n                <ion-col [ngClass]="{ \'actived-indicator\': activedPage == \'products\' }"\n\n                         (click)="switchProfilePage(\'products\')">\n\n                  <span class="label-profile-header-content">\n\n                    <div class="icon-label">\n\n                      <svg class="ico-label">\n\n                         <use [attr.xlink:href]="constants.src_svg + \'shirt.svg#Layer_1\'"></use>\n\n                      </svg> <!-- ico-label -->\n\n                    </div> <!-- icon-label -->\n\n                    <div class="label-text">\n\n                      Loja\n\n                    </div> <!-- label-text -->\n\n                  </span><!-- label-profile-header-content -->\n\n                </ion-col>\n\n\n\n                <span class="header-indicator" [ngStyle]="headerIndicator"></span>\n\n\n\n            </ion-row>\n\n\n\n            <ion-row [hidden]="activedPage == \'products\'" >\n\n                <ion-col>\n\n                    Feed Profile\n\n                </ion-col>\n\n            </ion-row>\n\n\n\n            <ion-row [hidden]="activedPage == \'feed\'">\n\n                <ion-grid>\n\n                    <ion-row class="row-search">\n\n                        <ion-col>\n\n                            <input type="search" class="search-products-profile" placeholder="Buscar"\n\n                                   (input)="startSearch()" (focus)="startSearch()">\n\n                        </ion-col>\n\n                        <ion-col col-auto>\n\n                            <div class="search-products-icon">\n\n                                <svg class="search-products-ico">\n\n                                    <use [attr.xlink:href]="constants.src_svg + \'settings.svg#Layer_1\'"></use>\n\n                                </svg> <!-- ico-label -->\n\n                            </div> <!-- search-products-ico -->\n\n                        </ion-col>\n\n                    </ion-row>\n\n\n\n                    <ion-row class="row-products-list">\n\n                        <ion-col>\n\n\n\n                            <ul class="products-list">\n\n                                <li class="products-list-item" *ngFor="let product of profile_produts">\n\n                                    <div class="product-cover"\n\n                                         [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/\' + product.background + \')\' }"></div>\n\n                                    <!-- product-cover -->\n\n                                </li><!-- products-list-item -->\n\n                            </ul><!-- products-list -->\n\n\n\n                        </ion-col>\n\n                    </ion-row><!-- row-products-list -->\n\n                </ion-grid>\n\n            </ion-row>\n\n\n\n        </ion-grid><!-- grid-profile-content -->\n\n\n\n    </ion-scroll>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\profile\profile.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
@@ -1366,7 +1534,7 @@ var ProfilePage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_profile_ProfileProvider__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_profile_ProfileProvider__ = __webpack_require__(92);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1408,7 +1576,7 @@ var ProfileConfigPage = (function () {
     }
     ProfileConfigPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-profile-config',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\profile-config\profile-config.html"*/'<ion-header class="header-background">\n\n  <ion-grid class="grid-header">\n\n    <ion-row>\n\n      <ion-col col-auto class="col-back" (click)="closeSettings()">\n\n        <div class="header-back"></div> <!-- header-back -->\n\n      </ion-col><!-- col-auto -->\n\n      <ion-col>\n\n            <span class="header-title">\n\n                Configurações\n\n            </span><!-- header-title -->\n\n      </ion-col>\n\n    </ion-row>\n\n  </ion-grid><!-- grid-header -->\n\n</ion-header><!-- header-background -->\n\n<ion-content>\n\n  <ion-scroll scrollY="true">\n\n\n\n    <ion-list>\n\n\n\n      <ion-list-header>\n\n        Meu Perfil\n\n      </ion-list-header>\n\n\n\n      <button ion-item >\n\n        <svg class="item-ico">\n\n           <use [attr.xlink:href]="constants.src_svg + \'pencil.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Editar meu Perfil \n\n      </button>\n\n      <button ion-item (click)="changeProfileView()">\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'eye.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Visualizar Perfil como Visitante\n\n      </button>\n\n      <button ion-item >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'megaphone.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Promover Perfil\n\n      </button>\n\n      <button ion-item >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'shirt.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Gerenciar Lojas\n\n      </button>\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'lock.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Privacidade\n\n      </button>\n\n\n\n      <ion-list-header>\n\n        Configurações\n\n      </ion-list-header>\n\n\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'cogs.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Configurar Minha Conta\n\n      </button>\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'key.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Mudar Senha\n\n      </button>\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'diagram.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Gestão de Usuários\n\n      </button>\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'user_unabled.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Desativar Conta\n\n      </button>\n\n\n\n      <ion-list-header>\n\n        Gerenciar Loja\n\n      </ion-list-header>\n\n\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'shirt-hanger.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Gerenciar Produtos\n\n      </button>\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'cart.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Minhas Vendas\n\n      </button>\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'dollar.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Financeiro\n\n      </button>\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'graph.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Relatorios\n\n      </button>\n\n\n\n      <ion-list-header>\n\n        Geral\n\n      </ion-list-header>\n\n\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'bell.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Configurações de Notificações\n\n      </button>\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'user_plus.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Convidar Pessoas\n\n      </button>\n\n\n\n      <ion-list-header>\n\n        Suporte\n\n      </ion-list-header>\n\n\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'question_mark.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Central de Ajuda (FAQ)\n\n      </button>\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'caution.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Relatar Problemas\n\n      </button>\n\n\n\n      <span class="list-separator"></span>\n\n\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'qrgo_square.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Sobre o Aplicativo\n\n      </button>\n\n\n\n      <span class="list-separator"></span>\n\n\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'power.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Sair\n\n      </button>\n\n\n\n    </ion-list>\n\n\n\n  </ion-scroll>\n\n</ion-content>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\profile-config\profile-config.html"*/,
+            selector: 'page-profile-config',template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\profile-config\profile-config.html"*/'<ion-header class="header-background">\n\n  <ion-grid class="grid-header">\n\n    <ion-row>\n\n      <ion-col col-auto class="col-back" (click)="closeSettings()">\n\n        <div class="header-back"></div> <!-- header-back -->\n\n      </ion-col><!-- col-auto -->\n\n      <ion-col>\n\n            <span class="header-title">\n\n                Configurações\n\n            </span><!-- header-title -->\n\n      </ion-col>\n\n    </ion-row>\n\n  </ion-grid><!-- grid-header -->\n\n</ion-header><!-- header-background -->\n\n<ion-content>\n\n  <ion-scroll scrollY="true">\n\n\n\n    <ion-list>\n\n\n\n      <ion-list-header>\n\n        Meu Perfil\n\n      </ion-list-header>\n\n\n\n      <button ion-item >\n\n        <svg class="item-ico">\n\n           <use [attr.xlink:href]="constants.src_svg + \'pencil.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Editar meu Perfil \n\n      </button>\n\n      <button ion-item (click)="changeProfileView()">\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'eye.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Visualizar Perfil como Visitante\n\n      </button>\n\n      <button ion-item >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'megaphone.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Promover Perfil\n\n      </button>\n\n      <button ion-item >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'shirt.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Gerenciar Lojas\n\n      </button>\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'lock.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Privacidade\n\n      </button>\n\n\n\n      <ion-list-header>\n\n        Configurações\n\n      </ion-list-header>\n\n\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'cogs.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Configurar Minha Conta\n\n      </button>\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'key.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Mudar Senha\n\n      </button>\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'diagram.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Gestão de Usuários\n\n      </button>\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'user_unabled.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Desativar Conta\n\n      </button>\n\n\n\n      <ion-list-header>\n\n        Gerenciar Loja\n\n      </ion-list-header>\n\n\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'shirt-hanger.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Gerenciar Produtos\n\n      </button>\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'cart.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Minhas Vendas\n\n      </button>\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'dollar.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Financeiro\n\n      </button>\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'graph.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Relatorios\n\n      </button>\n\n\n\n      <ion-list-header>\n\n        Geral\n\n      </ion-list-header>\n\n\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'bell.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Configurações de Notificações\n\n      </button>\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'user_plus.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Convidar Pessoas\n\n      </button>\n\n\n\n      <ion-list-header>\n\n        Suporte\n\n      </ion-list-header>\n\n\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'question_mark.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Central de Ajuda (FAQ)\n\n      </button>\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'caution.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Relatar Problemas\n\n      </button>\n\n\n\n      <span class="list-separator"></span>\n\n\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'qrgo_square.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Sobre o Aplicativo\n\n      </button>\n\n\n\n      <span class="list-separator"></span>\n\n\n\n      <button ion-item class="no-border" >\n\n        <svg class="item-ico">\n\n          <use [attr.xlink:href]="constants.src_svg + \'power.svg#Layer_1\'"></use>\n\n        </svg> <!-- item-ico -->\n\n        Sair\n\n      </button>\n\n\n\n    </ion-list>\n\n\n\n  </ion-scroll>\n\n</ion-content>'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\profile-config\profile-config.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
@@ -1428,7 +1596,7 @@ var ProfileConfigPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConexoesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__notificacao_notificacao__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__notificacao_notificacao__ = __webpack_require__(93);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_Constants__ = __webpack_require__(7);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1545,7 +1713,7 @@ var ConexoesPage = (function () {
     }
     ConexoesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-conexoes',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\notificações\conexoes\conexoes.html"*/'<ion-header>\n\n\n\n  <ion-grid>\n\n    <ion-row class="content-header-menu">\n\n      <ion-col>\n\n        <div text-align="center" class="btn-confir wrapper">\n\n          <svg class="svg-search-ico-usertype">\n\n            <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n\n          </svg> <!-- svg-ico-usertype -->\n\n        </div>\n\n        <div class="col-header-menu">MENSAGENS</div>\n\n      </ion-col>\n\n      <ion-col class="col-selected-border">\n\n        <div text-align="center" class="wrapper">\n\n          <svg class="svg-search-ico-usertype svg-selected">\n\n            <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n\n          </svg> <!-- svg-ico-usertype -->\n\n        </div>\n\n        <div class="col-header-menu col-selected">NOTIFICAÇÕES</div>\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n  </ion-grid>\n\n</ion-header>\n\n\n\n<!-- Content of notification page -->\n\n<ion-content #Content>\n\n\n\n  <!-- Start of notification -->\n\n\n\n  <ion-grid class="content-submenu-header">\n\n    <ion-row>\n\n      <ion-col class="col-submenu">\n\n        <div class="content-ativiades " (click)="atividades()">ATIVIDADES</div>\n\n      </ion-col>\n\n      <ion-col class="col-submenu" >\n\n        <div class="content-conexoes submenu-selected" >CONEXÕES</div>\n\n      </ion-col>\n\n    </ion-row>\n\n  </ion-grid>\n\n\n\n  <ion-list class="content-notification">\n\n    <ion-item *ngFor="let data of conexao">\n\n      <div class="content-icon">\n\n        <div class="content-icon-user">\n\n          <div class="img-user-post">\n\n            <div class="img-user-icon"\n\n                 style="; background-size:cover; background-position: center; "\n\n                 [ngStyle]="{\'background-image\': \'url(\'+ \'http://ziromoda.com.br/ziroblog/wp-content/uploads/2016/03/Unique-Chic-Oficial.png\' + \')\'}"\n\n                 ngStyle="{\'background-image\': \'url(\'+ \'http://ziromoda.com.br/ziroblog/wp-content/uploads/2016/03/Unique-Chic-Oficial.png\' + \')\'}"></div>\n\n          </div>\n\n        </div>\n\n      </div>\n\n      <div class="text-time"> {{data.Time}} </div>\n\n      <div class="text-content-notification">\n\n        <div class="text-notification text-nome-notification">\n\n          <b>{{data.Nome}} </b>\n\n        </div>\n\n      </div>\n\n      <div class="text-content-notification"><div class="text-notification text-solicitacao"> {{data.Nome}} enviou uma solicitações de conexão </div></div>\n\n\n\n      <div class="btn-content-conect">\n\n        <button ion-button class="btn-confirmar">Conectar</button>\n\n        <button ion-button class="btn-recusar" outline>Recusar</button>\n\n      </div>\n\n\n\n    </ion-item>\n\n  </ion-list>\n\n\n\n</ion-content>\n\n<!-- End of content notification Page -->\n\n'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\notificações\conexoes\conexoes.html"*/,
+            selector: 'page-conexoes',template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\notificações\conexoes\conexoes.html"*/'<ion-header>\n\n\n\n  <ion-grid>\n\n    <ion-row class="content-header-menu">\n\n      <ion-col>\n\n        <div text-align="center" class="btn-confir wrapper">\n\n          <svg class="svg-search-ico-usertype">\n\n            <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n\n          </svg> <!-- svg-ico-usertype -->\n\n        </div>\n\n        <div class="col-header-menu">MENSAGENS</div>\n\n      </ion-col>\n\n      <ion-col class="col-selected-border">\n\n        <div text-align="center" class="wrapper">\n\n          <svg class="svg-search-ico-usertype svg-selected">\n\n            <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n\n          </svg> <!-- svg-ico-usertype -->\n\n        </div>\n\n        <div class="col-header-menu col-selected">NOTIFICAÇÕES</div>\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n  </ion-grid>\n\n</ion-header>\n\n\n\n<!-- Content of notification page -->\n\n<ion-content #Content>\n\n\n\n  <!-- Start of notification -->\n\n\n\n  <ion-grid class="content-submenu-header">\n\n    <ion-row>\n\n      <ion-col class="col-submenu">\n\n        <div class="content-ativiades " (click)="atividades()">ATIVIDADES</div>\n\n      </ion-col>\n\n      <ion-col class="col-submenu" >\n\n        <div class="content-conexoes submenu-selected" >CONEXÕES</div>\n\n      </ion-col>\n\n    </ion-row>\n\n  </ion-grid>\n\n\n\n  <ion-list class="content-notification">\n\n    <ion-item *ngFor="let data of conexao">\n\n      <div class="content-icon">\n\n        <div class="content-icon-user">\n\n          <div class="img-user-post">\n\n            <div class="img-user-icon"\n\n                 style="; background-size:cover; background-position: center; "\n\n                 [ngStyle]="{\'background-image\': \'url(\'+ \'http://ziromoda.com.br/ziroblog/wp-content/uploads/2016/03/Unique-Chic-Oficial.png\' + \')\'}"\n\n                 ngStyle="{\'background-image\': \'url(\'+ \'http://ziromoda.com.br/ziroblog/wp-content/uploads/2016/03/Unique-Chic-Oficial.png\' + \')\'}"></div>\n\n          </div>\n\n        </div>\n\n      </div>\n\n      <div class="text-time"> {{data.Time}} </div>\n\n      <div class="text-content-notification">\n\n        <div class="text-notification text-nome-notification">\n\n          <b>{{data.Nome}} </b>\n\n        </div>\n\n      </div>\n\n      <div class="text-content-notification"><div class="text-notification text-solicitacao"> {{data.Nome}} enviou uma solicitações de conexão </div></div>\n\n\n\n      <div class="btn-content-conect">\n\n        <button ion-button class="btn-confirmar">Conectar</button>\n\n        <button ion-button class="btn-recusar" outline>Recusar</button>\n\n      </div>\n\n\n\n    </ion-item>\n\n  </ion-list>\n\n\n\n</ion-content>\n\n<!-- End of content notification Page -->\n\n'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\notificações\conexoes\conexoes.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
     ], ConexoesPage);
@@ -1590,7 +1758,7 @@ var ProductProfilePage = (function () {
     }
     ProductProfilePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-product-profile',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\produtos\product-profile\product-profile.html"*/'<ion-content>\n\n  <ion-scroll>\n\n\n\n    \n\n    <div class="headerbackground-gradient" ></div> <!-- headerbackground-gradient -->\n\n    <div class="header-product-profile" >\n\n      <ion-grid class="header-product-profile-grid">\n\n        <ion-row>\n\n          <ion-col col-auto class="col-icon-header">\n\n            <div class="headergrid-icon" >\n\n\n\n              <svg class="headergrid-ico">\n\n                 <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n              </svg> <!-- headergrid-ico -->\n\n\n\n            </div> <!-- headergrid-icon -->\n\n          </ion-col><!-- col-icon-header -->\n\n          <ion-col class="col-procut-title">\n\n\n\n            <div class="title-cont" >\n\n\n\n              <div class="title-product" >\n\n                <span class="title-label">\n\n                  Camiseta Darth Vader\n\n                </span><!-- title-label -->\n\n              </div> <!-- title-product -->\n\n              <div class="subtitle-product" >\n\n                <span class="subtitle-label">\n\n                  Dark Side Empire\n\n                </span><!-- subtitle-label -->\n\n              </div> <!-- subtitle-product -->\n\n\n\n            </div> <!-- title-cont -->\n\n\n\n          </ion-col><!-- col-procut-title -->\n\n        </ion-row>\n\n      </ion-grid><!-- header-product-profile-grid -->\n\n    </div> <!-- header-product-profile -->\n\n\n\n    <div class="product-slider" >\n\n    \n\n    </div> <!-- product-slider -->\n\n    \n\n\n\n  </ion-scroll>\n\n</ion-content>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\produtos\product-profile\product-profile.html"*/,
+            selector: 'page-product-profile',template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\produtos\product-profile\product-profile.html"*/'<ion-content>\n\n  <ion-scroll>\n\n\n\n    \n\n    <div class="headerbackground-gradient" ></div> <!-- headerbackground-gradient -->\n\n    <div class="header-product-profile" >\n\n      <ion-grid class="header-product-profile-grid">\n\n        <ion-row>\n\n          <ion-col col-auto class="col-icon-header">\n\n            <div class="headergrid-icon" >\n\n\n\n              <svg class="headergrid-ico">\n\n                 <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n              </svg> <!-- headergrid-ico -->\n\n\n\n            </div> <!-- headergrid-icon -->\n\n          </ion-col><!-- col-icon-header -->\n\n          <ion-col class="col-procut-title">\n\n\n\n            <div class="title-cont" >\n\n\n\n              <div class="title-product" >\n\n                <span class="title-label">\n\n                  Camiseta Darth Vader\n\n                </span><!-- title-label -->\n\n              </div> <!-- title-product -->\n\n              <div class="subtitle-product" >\n\n                <span class="subtitle-label">\n\n                  Dark Side Empire\n\n                </span><!-- subtitle-label -->\n\n              </div> <!-- subtitle-product -->\n\n\n\n            </div> <!-- title-cont -->\n\n\n\n          </ion-col><!-- col-procut-title -->\n\n        </ion-row>\n\n      </ion-grid><!-- header-product-profile-grid -->\n\n    </div> <!-- header-product-profile -->\n\n\n\n    <div class="product-slider" >\n\n    \n\n    </div> <!-- product-slider -->\n\n    \n\n\n\n  </ion-scroll>\n\n</ion-content>'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\produtos\product-profile\product-profile.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
     ], ProductProfilePage);
@@ -1609,7 +1777,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Step1PageModule", function() { return Step1PageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__step1__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__step1__ = __webpack_require__(87);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1640,6 +1808,47 @@ var Step1PageModule = (function () {
 /***/ }),
 
 /***/ 188:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Step2PageModule", function() { return Step2PageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__step2__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_brmasker_ionic_3__ = __webpack_require__(189);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var Step2PageModule = (function () {
+    function Step2PageModule() {
+    }
+    Step2PageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__step2__["a" /* Step2Page */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__step2__["a" /* Step2Page */]),
+                __WEBPACK_IMPORTED_MODULE_3_brmasker_ionic_3__["a" /* BrMaskerModule */],
+            ],
+        })
+    ], Step2PageModule);
+    return Step2PageModule;
+}());
+
+//# sourceMappingURL=step2.module.js.map
+
+/***/ }),
+
+/***/ 191:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1680,7 +1889,7 @@ var Step3PageModule = (function () {
 
 /***/ }),
 
-/***/ 191:
+/***/ 192:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1688,7 +1897,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExploreEstilosPageModule", function() { return ExploreEstilosPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__explore_estilos__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__explore_estilos__ = __webpack_require__(91);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1718,16 +1927,16 @@ var ExploreEstilosPageModule = (function () {
 
 /***/ }),
 
-/***/ 192:
+/***/ 193:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FeedPageModule", function() { return FeedPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExplorePageModule", function() { return ExplorePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feed__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_share_module__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__explore__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_share_module__ = __webpack_require__(94);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1738,28 +1947,28 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var FeedPageModule = (function () {
-    function FeedPageModule() {
+var ExplorePageModule = (function () {
+    function ExplorePageModule() {
     }
-    FeedPageModule = __decorate([
+    ExplorePageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__feed__["a" /* FeedPage */]
+                __WEBPACK_IMPORTED_MODULE_2__explore__["a" /* ExplorePage */]
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__feed__["a" /* FeedPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__explore__["a" /* ExplorePage */]),
                 __WEBPACK_IMPORTED_MODULE_3__config_share_module__["a" /* SharedModule */]
             ]
         })
-    ], FeedPageModule);
-    return FeedPageModule;
+    ], ExplorePageModule);
+    return ExplorePageModule;
 }());
 
-//# sourceMappingURL=feed.module.js.map
+//# sourceMappingURL=explore.module.js.map
 
 /***/ }),
 
-/***/ 193:
+/***/ 194:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1797,7 +2006,48 @@ var ForgotPass_1PageModule = (function () {
 
 /***/ }),
 
-/***/ 194:
+/***/ 195:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FeedPageModule", function() { return FeedPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feed__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_share_module__ = __webpack_require__(94);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var FeedPageModule = (function () {
+    function FeedPageModule() {
+    }
+    FeedPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__feed__["a" /* FeedPage */]
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__feed__["a" /* FeedPage */]),
+                __WEBPACK_IMPORTED_MODULE_3__config_share_module__["a" /* SharedModule */]
+            ]
+        })
+    ], FeedPageModule);
+    return FeedPageModule;
+}());
+
+//# sourceMappingURL=feed.module.js.map
+
+/***/ }),
+
+/***/ 196:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1835,86 +2085,45 @@ var ForgotPass_2PageModule = (function () {
 
 /***/ }),
 
-/***/ 195:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExplorePageModule", function() { return ExplorePageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__explore__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_share_module__ = __webpack_require__(96);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var ExplorePageModule = (function () {
-    function ExplorePageModule() {
-    }
-    ExplorePageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__explore__["a" /* ExplorePage */]
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__explore__["a" /* ExplorePage */]),
-                __WEBPACK_IMPORTED_MODULE_3__config_share_module__["a" /* SharedModule */]
-            ]
-        })
-    ], ExplorePageModule);
-    return ExplorePageModule;
-}());
-
-//# sourceMappingURL=explore.module.js.map
-
-/***/ }),
-
-/***/ 196:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginPageModule", function() { return LoginPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login__ = __webpack_require__(26);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var LoginPageModule = (function () {
-    function LoginPageModule() {
-    }
-    LoginPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__login__["a" /* LoginPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login__["a" /* LoginPage */]),
-            ],
-        })
-    ], LoginPageModule);
-    return LoginPageModule;
-}());
-
-//# sourceMappingURL=login.module.js.map
-
-/***/ }),
-
 /***/ 197:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForgotPass_3PageModule", function() { return ForgotPass_3PageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__forgot_pass_3__ = __webpack_require__(177);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var ForgotPass_3PageModule = (function () {
+    function ForgotPass_3PageModule() {
+    }
+    ForgotPass_3PageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__forgot_pass_3__["a" /* ForgotPass_3Page */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__forgot_pass_3__["a" /* ForgotPass_3Page */]),
+            ],
+        })
+    ], ForgotPass_3PageModule);
+    return ForgotPass_3PageModule;
+}());
+
+//# sourceMappingURL=forgot-pass-3.module.js.map
+
+/***/ }),
+
+/***/ 198:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1952,7 +2161,7 @@ var GostosPageModule = (function () {
 
 /***/ }),
 
-/***/ 198:
+/***/ 199:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2003,200 +2212,7 @@ var CategoriaProvider = (function () {
 
 /***/ }),
 
-/***/ 199:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForgotPass_3PageModule", function() { return ForgotPass_3PageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__forgot_pass_3__ = __webpack_require__(177);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var ForgotPass_3PageModule = (function () {
-    function ForgotPass_3PageModule() {
-    }
-    ForgotPass_3PageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__forgot_pass_3__["a" /* ForgotPass_3Page */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__forgot_pass_3__["a" /* ForgotPass_3Page */]),
-            ],
-        })
-    ], ForgotPass_3PageModule);
-    return ForgotPass_3PageModule;
-}());
-
-//# sourceMappingURL=forgot-pass-3.module.js.map
-
-/***/ }),
-
 /***/ 200:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConexoesPageModule", function() { return ConexoesPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__conexoes__ = __webpack_require__(185);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var ConexoesPageModule = (function () {
-    function ConexoesPageModule() {
-    }
-    ConexoesPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__conexoes__["a" /* ConexoesPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__conexoes__["a" /* ConexoesPage */]),
-            ],
-        })
-    ], ConexoesPageModule);
-    return ConexoesPageModule;
-}());
-
-//# sourceMappingURL=conexoes.module.js.map
-
-/***/ }),
-
-/***/ 201:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NotificacaoPageModule", function() { return NotificacaoPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__notificacao__ = __webpack_require__(95);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_share_module__ = __webpack_require__(96);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var NotificacaoPageModule = (function () {
-    function NotificacaoPageModule() {
-    }
-    NotificacaoPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__notificacao__["a" /* NotificacaoPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__notificacao__["a" /* NotificacaoPage */]),
-                __WEBPACK_IMPORTED_MODULE_3__config_share_module__["a" /* SharedModule */]
-            ],
-        })
-    ], NotificacaoPageModule);
-    return NotificacaoPageModule;
-}());
-
-//# sourceMappingURL=notificacao.module.js.map
-
-/***/ }),
-
-/***/ 202:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductProfilePageModule", function() { return ProductProfilePageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__product_profile__ = __webpack_require__(186);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var ProductProfilePageModule = (function () {
-    function ProductProfilePageModule() {
-    }
-    ProductProfilePageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__product_profile__["a" /* ProductProfilePage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__product_profile__["a" /* ProductProfilePage */]),
-            ],
-        })
-    ], ProductProfilePageModule);
-    return ProductProfilePageModule;
-}());
-
-//# sourceMappingURL=product-profile.module.js.map
-
-/***/ }),
-
-/***/ 203:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LocalizacaoPageModule", function() { return LocalizacaoPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__localizacao__ = __webpack_require__(171);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var LocalizacaoPageModule = (function () {
-    function LocalizacaoPageModule() {
-    }
-    LocalizacaoPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__localizacao__["a" /* LocalizacaoPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__localizacao__["a" /* LocalizacaoPage */]),
-            ],
-        })
-    ], LocalizacaoPageModule);
-    return LocalizacaoPageModule;
-}());
-
-//# sourceMappingURL=localizacao.module.js.map
-
-/***/ }),
-
-/***/ 204:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2234,15 +2250,15 @@ var PostPageModule = (function () {
 
 /***/ }),
 
-/***/ 205:
+/***/ 201:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SystemTabsPageModule", function() { return SystemTabsPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LocalizacaoPageModule", function() { return LocalizacaoPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__system_tabs__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__localizacao__ = __webpack_require__(171);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2252,27 +2268,103 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var SystemTabsPageModule = (function () {
-    function SystemTabsPageModule() {
+var LocalizacaoPageModule = (function () {
+    function LocalizacaoPageModule() {
     }
-    SystemTabsPageModule = __decorate([
+    LocalizacaoPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__system_tabs__["a" /* SystemTabsPage */],
+                __WEBPACK_IMPORTED_MODULE_2__localizacao__["a" /* LocalizacaoPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__system_tabs__["a" /* SystemTabsPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__localizacao__["a" /* LocalizacaoPage */]),
             ],
         })
-    ], SystemTabsPageModule);
-    return SystemTabsPageModule;
+    ], LocalizacaoPageModule);
+    return LocalizacaoPageModule;
 }());
 
-//# sourceMappingURL=system-tabs.module.js.map
+//# sourceMappingURL=localizacao.module.js.map
 
 /***/ }),
 
-/***/ 206:
+/***/ 202:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginPageModule", function() { return LoginPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login__ = __webpack_require__(26);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var LoginPageModule = (function () {
+    function LoginPageModule() {
+    }
+    LoginPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__login__["a" /* LoginPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login__["a" /* LoginPage */]),
+            ],
+        })
+    ], LoginPageModule);
+    return LoginPageModule;
+}());
+
+//# sourceMappingURL=login.module.js.map
+
+/***/ }),
+
+/***/ 203:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConexoesPageModule", function() { return ConexoesPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__conexoes__ = __webpack_require__(185);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var ConexoesPageModule = (function () {
+    function ConexoesPageModule() {
+    }
+    ConexoesPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__conexoes__["a" /* ConexoesPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__conexoes__["a" /* ConexoesPage */]),
+            ],
+        })
+    ], ConexoesPageModule);
+    return ConexoesPageModule;
+}());
+
+//# sourceMappingURL=conexoes.module.js.map
+
+/***/ }),
+
+/***/ 204:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2307,6 +2399,85 @@ var ProfilePageModule = (function () {
 }());
 
 //# sourceMappingURL=profile.module.js.map
+
+/***/ }),
+
+/***/ 205:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NotificacaoPageModule", function() { return NotificacaoPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__notificacao__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_share_module__ = __webpack_require__(94);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var NotificacaoPageModule = (function () {
+    function NotificacaoPageModule() {
+    }
+    NotificacaoPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__notificacao__["a" /* NotificacaoPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__notificacao__["a" /* NotificacaoPage */]),
+                __WEBPACK_IMPORTED_MODULE_3__config_share_module__["a" /* SharedModule */]
+            ],
+        })
+    ], NotificacaoPageModule);
+    return NotificacaoPageModule;
+}());
+
+//# sourceMappingURL=notificacao.module.js.map
+
+/***/ }),
+
+/***/ 206:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductProfilePageModule", function() { return ProductProfilePageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__product_profile__ = __webpack_require__(186);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var ProductProfilePageModule = (function () {
+    function ProductProfilePageModule() {
+    }
+    ProductProfilePageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__product_profile__["a" /* ProductProfilePage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__product_profile__["a" /* ProductProfilePage */]),
+            ],
+        })
+    ], ProductProfilePageModule);
+    return ProductProfilePageModule;
+}());
+
+//# sourceMappingURL=product-profile.module.js.map
 
 /***/ }),
 
@@ -2356,7 +2527,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SlidesPageModule", function() { return SlidesPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__slides__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__slides__ = __webpack_require__(95);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2391,11 +2562,10 @@ var SlidesPageModule = (function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Step2PageModule", function() { return Step2PageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SystemTabsPageModule", function() { return SystemTabsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__step2__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_brmasker_ionic_3__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__system_tabs__ = __webpack_require__(47);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2405,25 +2575,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
-var Step2PageModule = (function () {
-    function Step2PageModule() {
+var SystemTabsPageModule = (function () {
+    function SystemTabsPageModule() {
     }
-    Step2PageModule = __decorate([
+    SystemTabsPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__step2__["a" /* Step2Page */],
+                __WEBPACK_IMPORTED_MODULE_2__system_tabs__["a" /* SystemTabsPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__step2__["a" /* Step2Page */]),
-                __WEBPACK_IMPORTED_MODULE_3_brmasker_ionic_3__["a" /* BrMaskerModule */],
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__system_tabs__["a" /* SystemTabsPage */]),
             ],
         })
-    ], Step2PageModule);
-    return Step2PageModule;
+    ], SystemTabsPageModule);
+    return SystemTabsPageModule;
 }());
 
-//# sourceMappingURL=step2.module.js.map
+//# sourceMappingURL=system-tabs.module.js.map
 
 /***/ }),
 
@@ -2449,15 +2617,13 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__slides_slides__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__cadastro_step1_step1__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__system_tabs_system_tabs__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__forgot_pass_forgot_pass_1_forgot_pass_1__ = __webpack_require__(175);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_http__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_jquery__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__cadastro_confirm_cad_confirm_cad__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_storage__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cadastro_step1_step1__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__system_tabs_system_tabs__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__forgot_pass_forgot_pass_1_forgot_pass_1__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_http__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_jquery__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_jquery__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_storage__ = __webpack_require__(22);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2467,8 +2633,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
 
 
 
@@ -2504,13 +2668,12 @@ var LoginPage = (function () {
         /**
          * Função utilizada para redirecionar o usuário novamente à pagina de slides */
         this.goBackSlides = (function () {
-            _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__slides_slides__["a" /* SlidesPage */]);
         });
         /* Fim da função de redirecionamento para os slides */
         /**
          * Função utilizada para redirecionar o usuário à pagina de realizar o cadastro */
         this.goToCadastro = (function () {
-            _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__cadastro_step1_step1__["a" /* Step1Page */]);
+            _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__cadastro_step1_step1__["a" /* Step1Page */]);
         });
         /* Fim da função de regdirecionamento para a página de cadastro */
         /**
@@ -2518,21 +2681,14 @@ var LoginPage = (function () {
         this.doLogin = (function () {
             //this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
             var data_send = _this.logindata;
-            _this.http.post(_this.constants.api_path + 'login/dologin', __WEBPACK_IMPORTED_MODULE_8_jquery__["param"](data_send)).subscribe(function (response) {
-                var res = response;
-                _this.login = JSON.parse(res._body);
-                var login = _this.login;
+            _this.http.post(_this.constants.api_path + 'login/do_login2', __WEBPACK_IMPORTED_MODULE_7_jquery__["param"](data_send)).subscribe(function (response) {
+                var login = response;
+                console.log(login.id);
                 if (login.success) {
-                    _this.storage.set('user_logged', login.userdata).then(function () {
-                        localStorage.setItem('user_logged', JSON.stringify(login.userdata)); // E no localStorage
+                    _this.storage.set('user_logged', login.id).then(function () {
+                        localStorage.setItem('user_logged', JSON.stringify(login.useriddata)); // E no localStorage
                     });
-                    _this.storage.set('access', login.access); // Setando o hash e token de acesso
-                    if (login.no_verified) {
-                        _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_9__cadastro_confirm_cad_confirm_cad__["a" /* ConfirmCadPage */]);
-                    }
-                    else {
-                        _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_5__system_tabs_system_tabs__["a" /* SystemTabsPage */], {}, { animate: true, direction: 'forward' });
-                    }
+                    _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__system_tabs_system_tabs__["a" /* SystemTabsPage */], {}, { animate: true, direction: 'forward' });
                 }
                 else {
                     var __this = _this;
@@ -2551,7 +2707,7 @@ var LoginPage = (function () {
         this.recoverPass = (function () {
             /**
              * Redireciona o usuário para a primeira págimna do processo */
-            _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_6__forgot_pass_forgot_pass_1_forgot_pass_1__["a" /* ForgotPass_1Page */]);
+            _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__forgot_pass_forgot_pass_1_forgot_pass_1__["a" /* ForgotPass_1Page */]);
         });
         platform.ready().then(function () {
             // console.log(user_logged);
@@ -2577,13 +2733,13 @@ var LoginPage = (function () {
     }
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\login\login.html"*/'<div class="login-page">\n\n\n\n    <div class="backpage-login" (click)="goBackSlides()" >\n\n        <svg class="backpage-ico">\n\n            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n        </svg> <!-- backpage-ico -->\n\n    </div> <!-- backpage-login -->\n\n\n\n    <div class="content-login-form">\n\n\n\n        <h3 class="welcome-title">Bem Vindo</h3>\n\n\n\n        <div class="image-logo-qrgo">\n\n            <img class="svg-logo" [src]="constants.src_svg + \'qrgo-logo.svg\'"/>\n\n        </div> <!-- image-logo-qrgo -->\n\n\n\n        <div class="content-form-login">\n\n            <div class="form-cont pdg-b20">\n\n                <input type="text" class="form-ctrl" placeholder="Username / E-mail" [(ngModel)]="logindata.user_login">\n\n            </div> <!-- form-cont -->\n\n            <div class="form-cont">\n\n                <input type="password" class="form-ctrl" placeholder="Senha" [(ngModel)]="logindata.user_pass">\n\n            </div> <!-- form-cont -->\n\n\n\n            <p class="forgot-pass"> {{ login.text }} </p>\n\n            <p class="forgot-pass" (click)="recoverPass()"> Esqueci minha senha </p>\n\n\n\n            <div class="form-cont">\n\n                <button [disabled]="!logindata.user_login || !logindata.user_pass" class="login-btn" (click)="doLogin()" > Entrar</button>\n\n            </div> <!-- form-cont -->\n\n\n\n            <span class="line-divider"></span> <!-- line-divider -->\n\n\n\n            <div class="content-singup">\n\n                <p class="ask-singup" > Não possui cadastro? </p> <!-- ask-singup -->\n\n                <p class="button-singup" (click)="goToCadastro()" > Cadastre-se </p> <!-- ask-singup -->\n\n            </div> <!-- content-singup -->\n\n\n\n        </div> <!-- content-form-login -->\n\n\n\n\n\n        <div class="explore-contents" >\n\n            <span class="explore-label"> Explorar </span>\n\n            <span class="explore-stick"></span>\n\n        </div> <!-- explore-contents -->\n\n\n\n    </div> <!-- content-login-form -->\n\n\n\n\n\n</div> <!-- login-page -->'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\login\login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\login\login.html"*/'<div class="login-page">\n\n\n\n\n\n    <div class="content-login-form">\n\n\n\n        <h3 class="welcome-title">Bem Vindo</h3>\n\n\n\n\n\n\n\n        <div class="content-form-login">\n\n            <div class="form-cont pdg-b20">\n\n                <input type="text" class="form-ctrl" placeholder="Username" [(ngModel)]="logindata.user_login">\n\n            </div> <!-- form-cont -->\n\n            <div class="form-cont">\n\n                <input type="password" class="form-ctrl" placeholder="Senha" [(ngModel)]="logindata.user_pass">\n\n            </div> <!-- form-cont -->\n\n\n\n            <p class="forgot-pass"> {{ login.text }} </p>\n\n\n\n            <div class="form-cont">\n\n                <button [disabled]="!logindata.user_login || !logindata.user_pass" class="login-btn" (click)="doLogin()" > Entrar</button>\n\n            </div> <!-- form-cont -->\n\n\n\n\n\n        </div> <!-- content-form-login -->\n\n\n\n    </div> <!-- content-login-form -->\n\n\n\n\n\n</div> <!-- login-page -->'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\login\login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_7__angular_http__["a" /* Http */],
-            __WEBPACK_IMPORTED_MODULE_10__ionic_storage__["b" /* Storage */],
+            __WEBPACK_IMPORTED_MODULE_6__angular_http__["a" /* Http */],
+            __WEBPACK_IMPORTED_MODULE_8__ionic_storage__["b" /* Storage */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */]])
     ], LoginPage);
     return LoginPage;
@@ -2605,41 +2761,41 @@ var LoginPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(250);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_keyboard__ = __webpack_require__(251);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(335);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_themes_prototype_slides_slides__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_themes_prototype_slides_slides__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_themes_prototype_slides_slides_module__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_themes_prototype_login_login_module__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_themes_prototype_login_login_module__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_themes_prototype_cadastro_step1_step1_module__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_themes_prototype_cadastro_step2_step2_module__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_themes_prototype_cadastro_step3_step3_module__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_themes_prototype_cadastro_confirm_cad_confirm_cad_module__ = __webpack_require__(169);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_themes_prototype_explore_explore_module__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_themes_prototype_modais_gostos_gostos_module__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_themes_prototype_modais_localizacao_localizacao_module__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_themes_prototype_feed_feed_module__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_themes_prototype_modais_post_post_module__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_themes_prototype_notifica_es_notificacao_notificacao_module__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_themes_prototype_notifica_es_conexoes_conexoes_module__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_themes_prototype_cadastro_step2_step2_module__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_themes_prototype_cadastro_step3_step3_module__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_themes_prototype_cadastro_confirm_cad_confirm_cad_module__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_themes_prototype_explore_explore_module__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_themes_prototype_modais_gostos_gostos_module__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_themes_prototype_modais_localizacao_localizacao_module__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_themes_prototype_feed_feed_module__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_themes_prototype_modais_post_post_module__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_themes_prototype_notifica_es_notificacao_notificacao_module__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_themes_prototype_notifica_es_conexoes_conexoes_module__ = __webpack_require__(203);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_themes_prototype_login_login__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_themes_prototype_system_tabs_system_tabs_module__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_themes_prototype_system_tabs_system_tabs_module__ = __webpack_require__(209);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_themes_prototype_system_tabs_system_tabs__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__angular_http__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__providers_categoria_categoria__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__ionic_native_social_sharing__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_themes_prototype_forgot_pass_forgot_pass_1_forgot_pass_1_module__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_themes_prototype_forgot_pass_forgot_pass_2_forgot_pass_2_module__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_themes_prototype_forgot_pass_forgot_pass_3_forgot_pass_3_module__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__providers_categoria_categoria__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__ionic_native_social_sharing__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_themes_prototype_forgot_pass_forgot_pass_1_forgot_pass_1_module__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_themes_prototype_forgot_pass_forgot_pass_2_forgot_pass_2_module__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_themes_prototype_forgot_pass_forgot_pass_3_forgot_pass_3_module__ = __webpack_require__(197);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__ionic_storage__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__ionic_native_file_chooser__ = __webpack_require__(172);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__pages_themes_prototype_explore_estilos_explore_estilos_module__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__pages_themes_prototype_profile_profile_module__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__pages_themes_prototype_explore_estilos_explore_estilos_module__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__pages_themes_prototype_profile_profile_module__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__providers_post_post__ = __webpack_require__(181);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__ionic_native_camera__ = __webpack_require__(179);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__ionic_native_image_picker__ = __webpack_require__(178);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__ionic_native_file__ = __webpack_require__(180);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__pages_themes_prototype_profile_config_profile_config_module__ = __webpack_require__(207);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__ionic_native_call_number__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__providers_profile_ProfileProvider__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__pages_themes_prototype_produtos_product_profile_product_profile_module__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__providers_profile_ProfileProvider__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__pages_themes_prototype_produtos_product_profile_product_profile_module__ = __webpack_require__(206);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2736,25 +2892,25 @@ var AppModule = (function () {
                     links: [
                         { loadChildren: '../pages/themes/prototype/cadastro/confirm-cad/confirm-cad.module#ConfirmCadPageModule', name: 'ConfirmCadPage', segment: 'confirm-cad', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/cadastro/step1/step1.module#Step1PageModule', name: 'Step1Page', segment: 'step1', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/cadastro/step2/step2.module#Step2PageModule', name: 'Step2Page', segment: 'step2', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/cadastro/step3/step3.module#Step3PageModule', name: 'Step3Page', segment: 'step3', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/explore-estilos/explore-estilos.module#ExploreEstilosPageModule', name: 'ExploreEstilosPage', segment: 'explore-estilos', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/feed/feed.module#FeedPageModule', name: 'FeedPage', segment: 'feed', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/forgot-pass/forgot-pass-1/forgot-pass-1.module#ForgotPass_1PageModule', name: 'ForgotPass_1Page', segment: 'forgot-pass-1', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/forgot-pass/forgot-pass-2/forgot-pass-2.module#ForgotPass_2PageModule', name: 'ForgotPass_2Page', segment: 'forgot-pass-2', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/explore/explore.module#ExplorePageModule', name: 'ExplorePage', segment: 'explore', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/modais/gostos/gostos.module#GostosPageModule', name: 'GostosPage', segment: 'gostos', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/forgot-pass/forgot-pass-1/forgot-pass-1.module#ForgotPass_1PageModule', name: 'ForgotPass_1Page', segment: 'forgot-pass-1', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/feed/feed.module#FeedPageModule', name: 'FeedPage', segment: 'feed', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/forgot-pass/forgot-pass-2/forgot-pass-2.module#ForgotPass_2PageModule', name: 'ForgotPass_2Page', segment: 'forgot-pass-2', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/forgot-pass/forgot-pass-3/forgot-pass-3.module#ForgotPass_3PageModule', name: 'ForgotPass_3Page', segment: 'forgot-pass-3', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/modais/gostos/gostos.module#GostosPageModule', name: 'GostosPage', segment: 'gostos', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/modais/post/post.module#PostPageModule', name: 'PostPage', segment: 'post', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/modais/localizacao/localizacao.module#LocalizacaoPageModule', name: 'LocalizacaoPage', segment: 'localizacao', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/notificações/conexoes/conexoes.module#ConexoesPageModule', name: 'ConexoesPage', segment: 'conexoes', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/themes/prototype/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/notificações/notificacao/notificacao.module#NotificacaoPageModule', name: 'NotificacaoPage', segment: 'notificacao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/produtos/product-profile/product-profile.module#ProductProfilePageModule', name: 'ProductProfilePage', segment: 'product-profile', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/modais/localizacao/localizacao.module#LocalizacaoPageModule', name: 'LocalizacaoPage', segment: 'localizacao', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/modais/post/post.module#PostPageModule', name: 'PostPage', segment: 'post', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/system-tabs/system-tabs.module#SystemTabsPageModule', name: 'SystemTabsPage', segment: 'system-tabs', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/profile-config/profile-config.module#ProfileConfigPageModule', name: 'ProfileConfigPage', segment: 'profile-config', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/themes/prototype/slides/slides.module#SlidesPageModule', name: 'SlidesPage', segment: 'slides', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/themes/prototype/cadastro/step2/step2.module#Step2PageModule', name: 'Step2Page', segment: 'step2', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/themes/prototype/system-tabs/system-tabs.module#SystemTabsPageModule', name: 'SystemTabsPage', segment: 'system-tabs', priority: 'low', defaultHistory: [] }
                     ]
                 }),
             ],
@@ -2798,7 +2954,7 @@ var AppModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_Constants__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_themes_prototype_feed_feed__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_themes_prototype_explore_explore__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_themes_prototype_explore_explore__ = __webpack_require__(90);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2854,7 +3010,7 @@ var MenuBottomComponent = (function () {
     ], MenuBottomComponent.prototype, "content", void 0);
     MenuBottomComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'fixed-menu',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\components\menu-bottom\menu-bottom.html"*/'<ion-menu side="right" swipeEnabled="false" [content]="footer" >\n\n  <ion-content>\n\n\n\n    <ion-list>\n\n      <ion-item>Perfil</ion-item>\n\n      <ion-item>Carrinho</ion-item>\n\n    </ion-list>\n\n\n\n  </ion-content>\n\n</ion-menu>\n\n  \n\n<div class="foot-menu" #footer>\n\n  <!-- Grid com os icones do menu -->\n\n  <ion-grid>\n\n    <!-- Linha com as colunas com os icones -->\n\n    <ion-row>\n\n      <!-- Colunas com os icones -->\n\n      <ion-col>\n\n\n\n        <div class="icon-menu-cont" (click)="goToFeed()">\n\n          <div class="icon-menu" >\n\n\n\n            <svg class="ico-menu" [ngClass]="{ \'current-page\': page == \'feed\' }">\n\n               <use [attr.xlink:href]=" constants.src_svg + \'menu-inferior/home.svg#Layer_1\'"></use>\n\n            </svg> <!-- ico-menu -->\n\n\n\n          </div> <!-- icon-menu -->\n\n        </div> <!-- icon-menu -->\n\n\n\n      </ion-col>\n\n      <ion-col>\n\n\n\n        <div class="icon-menu-cont" (click)="goToExplore()">\n\n          <div class="icon-menu" >\n\n\n\n            <svg class="ico-menu" [ngClass]="{ \'current-page\': page == \'explore\' }">\n\n              <use [attr.xlink:href]=" constants.src_svg + \'menu-inferior/search.svg#Layer_1\'"></use>\n\n            </svg> <!-- ico-menu -->\n\n\n\n          </div> <!-- icon-menu -->\n\n        </div> <!-- icon-menu -->\n\n\n\n      </ion-col>\n\n      <ion-col>\n\n\n\n        <div class="icon-menu-cont" >\n\n          <div class="icon-menu" >\n\n\n\n            <svg class="ico-menu" [ngClass]="{ \'current-page\': page == \'products\' }">\n\n              <use [attr.xlink:href]=" constants.src_svg + \'menu-inferior/bag.svg#Layer_1\'"></use>\n\n            </svg> <!-- ico-menu -->\n\n\n\n          </div> <!-- icon-menu -->\n\n        </div> <!-- icon-menu -->\n\n\n\n      </ion-col>\n\n      <ion-col>\n\n\n\n        <div class="icon-menu-cont" >\n\n          <div class="icon-menu" >\n\n\n\n            <svg class="ico-menu">\n\n              <use [attr.xlink:href]=" constants.src_svg + \'menu-inferior/notification.svg#Layer_1\'"></use>\n\n            </svg> <!-- ico-menu -->\n\n\n\n          </div> <!-- icon-menu -->\n\n        </div> <!-- icon-menu -->\n\n\n\n      </ion-col>\n\n      <ion-col>\n\n\n\n        <div class="icon-menu-cont" menuToggle="right" >\n\n          <div class="icon-menu" >\n\n\n\n            <svg class="ico-menu">\n\n              <use [attr.xlink:href]=" constants.src_svg + \'menu-inferior/menu.svg#Layer_1\'"></use>\n\n            </svg> <!-- ico-menu -->\n\n\n\n          </div> <!-- icon-menu -->\n\n        </div> <!-- icon-menu -->\n\n\n\n      </ion-col>\n\n      <!-- Fim da linha  -->\n\n    </ion-row>\n\n    <!-- Fim do grid -->\n\n  </ion-grid>\n\n\n\n</div> <!-- foot-menu -->\n\n'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\components\menu-bottom\menu-bottom.html"*/
+            selector: 'fixed-menu',template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\components\menu-bottom\menu-bottom.html"*/'<ion-menu side="right" swipeEnabled="false" [content]="footer" >\n\n  <ion-content>\n\n\n\n    <ion-list>\n\n      <ion-item>Perfil</ion-item>\n\n      <ion-item>Carrinho</ion-item>\n\n    </ion-list>\n\n\n\n  </ion-content>\n\n</ion-menu>\n\n  \n\n<div class="foot-menu" #footer>\n\n  <!-- Grid com os icones do menu -->\n\n  <ion-grid>\n\n    <!-- Linha com as colunas com os icones -->\n\n    <ion-row>\n\n      <!-- Colunas com os icones -->\n\n      <ion-col>\n\n\n\n        <div class="icon-menu-cont" (click)="goToFeed()">\n\n          <div class="icon-menu" >\n\n\n\n            <svg class="ico-menu" [ngClass]="{ \'current-page\': page == \'feed\' }">\n\n               <use [attr.xlink:href]=" constants.src_svg + \'menu-inferior/home.svg#Layer_1\'"></use>\n\n            </svg> <!-- ico-menu -->\n\n\n\n          </div> <!-- icon-menu -->\n\n        </div> <!-- icon-menu -->\n\n\n\n      </ion-col>\n\n      <ion-col>\n\n\n\n        <div class="icon-menu-cont" (click)="goToExplore()">\n\n          <div class="icon-menu" >\n\n\n\n            <svg class="ico-menu" [ngClass]="{ \'current-page\': page == \'explore\' }">\n\n              <use [attr.xlink:href]=" constants.src_svg + \'menu-inferior/search.svg#Layer_1\'"></use>\n\n            </svg> <!-- ico-menu -->\n\n\n\n          </div> <!-- icon-menu -->\n\n        </div> <!-- icon-menu -->\n\n\n\n      </ion-col>\n\n      <ion-col>\n\n\n\n        <div class="icon-menu-cont" >\n\n          <div class="icon-menu" >\n\n\n\n            <svg class="ico-menu" [ngClass]="{ \'current-page\': page == \'products\' }">\n\n              <use [attr.xlink:href]=" constants.src_svg + \'menu-inferior/bag.svg#Layer_1\'"></use>\n\n            </svg> <!-- ico-menu -->\n\n\n\n          </div> <!-- icon-menu -->\n\n        </div> <!-- icon-menu -->\n\n\n\n      </ion-col>\n\n      <ion-col>\n\n\n\n        <div class="icon-menu-cont" >\n\n          <div class="icon-menu" >\n\n\n\n            <svg class="ico-menu">\n\n              <use [attr.xlink:href]=" constants.src_svg + \'menu-inferior/notification.svg#Layer_1\'"></use>\n\n            </svg> <!-- ico-menu -->\n\n\n\n          </div> <!-- icon-menu -->\n\n        </div> <!-- icon-menu -->\n\n\n\n      </ion-col>\n\n      <ion-col>\n\n\n\n        <div class="icon-menu-cont" menuToggle="right" >\n\n          <div class="icon-menu" >\n\n\n\n            <svg class="ico-menu">\n\n              <use [attr.xlink:href]=" constants.src_svg + \'menu-inferior/menu.svg#Layer_1\'"></use>\n\n            </svg> <!-- ico-menu -->\n\n\n\n          </div> <!-- icon-menu -->\n\n        </div> <!-- icon-menu -->\n\n\n\n      </ion-col>\n\n      <!-- Fim da linha  -->\n\n    </ion-row>\n\n    <!-- Fim do grid -->\n\n  </ion-grid>\n\n\n\n</div> <!-- foot-menu -->\n\n'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\components\menu-bottom\menu-bottom.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["m" /* NavController */]])
     ], MenuBottomComponent);
@@ -2895,7 +3051,7 @@ var QrgoHeaderComponent = (function () {
     }
     QrgoHeaderComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'qr-header',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\components\qrgo-header\qrgo-header.html"*/'<ion-grid class="header-grid">\n\n    <ion-row class="header-grid-row">\n\n        <ion-col col-2 >\n\n\n\n            <div class="header-icon-action" >\n\n                <svg class="header-ico-action">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'qrgo_square.svg#Layer_1\'"></use>\n\n                </svg> <!-- header-ico-action -->\n\n            </div> <!-- header-icon-action -->\n\n\n\n        </ion-col>\n\n        <ion-col>\n\n            <div class="header-qrgo-center" >\n\n                <img class="logo-qrgo-center" [src]="constants.src_svg + \'qrgo-logo.svg\'"/>\n\n            </div> <!-- header-qrgo-center -->\n\n        </ion-col>\n\n        <ion-col col-2 class="header-last">\n\n\n\n            <div class="header-icon-action" >\n\n                <svg class="header-ico-action">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n\n                </svg> <!-- header-ico-action -->\n\n            </div> <!-- header-icon-action -->\n\n            \n\n        </ion-col><!-- header-last -->\n\n    </ion-row><!-- header-grid-row -->\n\n</ion-grid><!-- header-grid -->\n\n'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\components\qrgo-header\qrgo-header.html"*/
+            selector: 'qr-header',template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\components\qrgo-header\qrgo-header.html"*/'<ion-grid class="header-grid">\n\n    <ion-row class="header-grid-row">\n\n        <ion-col col-2 >\n\n\n\n            <div class="header-icon-action" >\n\n                <svg class="header-ico-action">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'qrgo_square.svg#Layer_1\'"></use>\n\n                </svg> <!-- header-ico-action -->\n\n            </div> <!-- header-icon-action -->\n\n\n\n        </ion-col>\n\n        <ion-col>\n\n            <div class="header-qrgo-center" >\n\n                <img class="logo-qrgo-center" [src]="constants.src_svg + \'qrgo-logo.svg\'"/>\n\n            </div> <!-- header-qrgo-center -->\n\n        </ion-col>\n\n        <ion-col col-2 class="header-last">\n\n\n\n            <div class="header-icon-action" >\n\n                <svg class="header-ico-action">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n\n                </svg> <!-- header-ico-action -->\n\n            </div> <!-- header-icon-action -->\n\n            \n\n        </ion-col><!-- header-last -->\n\n    </ion-row><!-- header-grid-row -->\n\n</ion-grid><!-- header-grid -->\n\n'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\components\qrgo-header\qrgo-header.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], QrgoHeaderComponent);
@@ -2914,7 +3070,7 @@ var QrgoHeaderComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_categoria_categoria__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_categoria_categoria__ = __webpack_require__(199);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3066,7 +3222,7 @@ var GostosPage = (function () {
     };
     GostosPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-gostos',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\modais\gostos\gostos.html"*/'<!--\n\n  Generated template for the GostosPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n</ion-header>\n\n\n\n\n\n<ion-content>\n\n\n\n    <div class="content-card-estilo">\n\n        <ion-card class="card-boy-estilo">\n\n            <div class="icon-user-type">\n\n\n\n                <svg class="ico-config">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'boy.svg#Layer_1\'"></use>\n\n                </svg> <!-- ico-config -->\n\n\n\n            </div> <!-- icon-user-type -->\n\n            <div class="text-icon">Qual é seu estilo?</div>\n\n        </ion-card>\n\n    </div>\n\n\n\n    <ion-grid style="padding-top: 12px;">\n\n\n\n        <ion-row class="row-estilo " *ngFor="let num of colNum" center>\n\n            <div *ngFor="let num2 of colNum">\n\n                <div *ngIf="grid[num]">\n\n                    <div *ngFor="let data of grid[num][num2]">\n\n                        <ion-col col-auto style="  vertical-align: middle;\n\n  line-height: normal;">\n\n                            <span text-align="center" class="btn-estilo "\n\n                                  [ngClass]="{ \'actived-type\': actived.indexOf(data.id) > -1 && actived1.indexOf(data.id) > -1, \'actived-type2\': actived.indexOf(data.id) > -1  && actived2.indexOf(data.id) > -1,\'actived-type3\': actived.indexOf(data.id) > -1  && actived3.indexOf(data.id) > -1,\'actived-type4\': actived.indexOf(data.id) > -1  && actived4.indexOf(data.id) > -1}"\n\n                                  (click)="defineActived(data.id)">\n\n                                <div text-align="center" class="text-btn-estilo">\n\n                                    {{data.nome}}\n\n                                </div>\n\n                                <div text-align="center" class="btn-confir wrapper">\n\n                                    <svg [ngClass]="{\'contents-col-sub-hide\': actived.indexOf(data.id) < 0, \'contents-col-sub\': actived.indexOf(data.id) > -1}"\n\n                                         class="svg-ico-usertype contents-col-sub">\n\n                                        <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                                    </svg> <!-- svg-ico-usertype -->\n\n                                </div>\n\n                            </span>\n\n                        </ion-col>\n\n                    </div>\n\n                </div>\n\n            </div>\n\n            <div *ngFor="let num2 of colNum">\n\n                <div *ngIf="grid[num]">\n\n                    <div *ngFor="let data of grid[num][num2]">\n\n                        <div [hidden]="actived.indexOf(data.id) < 0" *ngIf="subEstilo[0][data.id]">\n\n                            <ion-row class="row-estilo sliderIn" center>\n\n                                <div>\n\n                                    <ion-col col-auto style="  vertical-align: middle;\n\n  line-height: normal;" *ngFor="let subData of subEstilo[0][data.id]">\n\n                                        <span class="btn-estilo"\n\n                                              [ngClass]="{ \'actived-type\': actived.indexOf(subData.idEstilo) > -1 && actived1.indexOf(subData.idEstilo) > -1, \'actived-type2\': actived.indexOf(subData.idEstilo) > -1  && actived2.indexOf(subData.idEstilo) > -1,\'actived-type3\': actived.indexOf(subData.idEstilo) > -1  && actived3.indexOf(subData.idEstilo) > -1,\'actived-type4\': actived.indexOf(subData.idEstilo) > -1  && actived4.indexOf(subData.idEstilo) > -1}"\n\n                                              (click)="defineActived(subData.id)">\n\n                                            <div text-align="center" class="btn-confir wrapper">\n\n                                            <div class="text-btn-estilo">{{subData.nome}}</div>\n\n                                            </div>\n\n                                            <div text-align="center" class="btn-confir wrapper">\n\n                                    <svg [ngClass]="{\'contents-col-sub-hide\': actived.indexOf(subData.id) < 0, \'contents-col-sub\': actived.indexOf(subData.id) > -1}"\n\n                                         class="svg-ico-usertype contents-col-sub">\n\n                                        <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                                    </svg> <!-- svg-ico-usertype -->\n\n                                </div>\n\n                                        </span>\n\n                                    </ion-col>\n\n                                </div>\n\n                            </ion-row>\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n            </div>\n\n        </ion-row>\n\n\n\n    </ion-grid>\n\n</ion-content>\n\n\n\n<ion-footer>\n\n    <div class="footer-steps">\n\n\n\n        <div class="next-step-action" [ngClass]="{\'allowed\': actived.length > 0}" (click)="closeMeModal()">\n\n            <span class="next-step-label">\n\n                Próximo\n\n            </span> <!-- next-stap-label -->\n\n            <div class="nextstep-icon">\n\n                <span class="caret-body"></span>\n\n                <span class="caret-direction"></span>\n\n            </div> <!-- nextstep-icon -->\n\n        </div> <!-- next-stap-action -->\n\n\n\n    </div> <!-- footer-steps -->\n\n</ion-footer>\n\n\n\n'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\modais\gostos\gostos.html"*/,
+            selector: 'page-gostos',template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\modais\gostos\gostos.html"*/'<!--\n\n  Generated template for the GostosPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n</ion-header>\n\n\n\n\n\n<ion-content>\n\n\n\n    <div class="content-card-estilo">\n\n        <ion-card class="card-boy-estilo">\n\n            <div class="icon-user-type">\n\n\n\n                <svg class="ico-config">\n\n                    <use [attr.xlink:href]="constants.src_svg + \'boy.svg#Layer_1\'"></use>\n\n                </svg> <!-- ico-config -->\n\n\n\n            </div> <!-- icon-user-type -->\n\n            <div class="text-icon">Qual é seu estilo?</div>\n\n        </ion-card>\n\n    </div>\n\n\n\n    <ion-grid style="padding-top: 12px;">\n\n\n\n        <ion-row class="row-estilo " *ngFor="let num of colNum" center>\n\n            <div *ngFor="let num2 of colNum">\n\n                <div *ngIf="grid[num]">\n\n                    <div *ngFor="let data of grid[num][num2]">\n\n                        <ion-col col-auto style="  vertical-align: middle;\n\n  line-height: normal;">\n\n                            <span text-align="center" class="btn-estilo "\n\n                                  [ngClass]="{ \'actived-type\': actived.indexOf(data.id) > -1 && actived1.indexOf(data.id) > -1, \'actived-type2\': actived.indexOf(data.id) > -1  && actived2.indexOf(data.id) > -1,\'actived-type3\': actived.indexOf(data.id) > -1  && actived3.indexOf(data.id) > -1,\'actived-type4\': actived.indexOf(data.id) > -1  && actived4.indexOf(data.id) > -1}"\n\n                                  (click)="defineActived(data.id)">\n\n                                <div text-align="center" class="text-btn-estilo">\n\n                                    {{data.nome}}\n\n                                </div>\n\n                                <div text-align="center" class="btn-confir wrapper">\n\n                                    <svg [ngClass]="{\'contents-col-sub-hide\': actived.indexOf(data.id) < 0, \'contents-col-sub\': actived.indexOf(data.id) > -1}"\n\n                                         class="svg-ico-usertype contents-col-sub">\n\n                                        <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                                    </svg> <!-- svg-ico-usertype -->\n\n                                </div>\n\n                            </span>\n\n                        </ion-col>\n\n                    </div>\n\n                </div>\n\n            </div>\n\n            <div *ngFor="let num2 of colNum">\n\n                <div *ngIf="grid[num]">\n\n                    <div *ngFor="let data of grid[num][num2]">\n\n                        <div [hidden]="actived.indexOf(data.id) < 0" *ngIf="subEstilo[0][data.id]">\n\n                            <ion-row class="row-estilo sliderIn" center>\n\n                                <div>\n\n                                    <ion-col col-auto style="  vertical-align: middle;\n\n  line-height: normal;" *ngFor="let subData of subEstilo[0][data.id]">\n\n                                        <span class="btn-estilo"\n\n                                              [ngClass]="{ \'actived-type\': actived.indexOf(subData.idEstilo) > -1 && actived1.indexOf(subData.idEstilo) > -1, \'actived-type2\': actived.indexOf(subData.idEstilo) > -1  && actived2.indexOf(subData.idEstilo) > -1,\'actived-type3\': actived.indexOf(subData.idEstilo) > -1  && actived3.indexOf(subData.idEstilo) > -1,\'actived-type4\': actived.indexOf(subData.idEstilo) > -1  && actived4.indexOf(subData.idEstilo) > -1}"\n\n                                              (click)="defineActived(subData.id)">\n\n                                            <div text-align="center" class="btn-confir wrapper">\n\n                                            <div class="text-btn-estilo">{{subData.nome}}</div>\n\n                                            </div>\n\n                                            <div text-align="center" class="btn-confir wrapper">\n\n                                    <svg [ngClass]="{\'contents-col-sub-hide\': actived.indexOf(subData.id) < 0, \'contents-col-sub\': actived.indexOf(subData.id) > -1}"\n\n                                         class="svg-ico-usertype contents-col-sub">\n\n                                        <use [attr.xlink:href]="constants.src_svg + \'confirmar.svg#Layer_1\'"></use>\n\n                                    </svg> <!-- svg-ico-usertype -->\n\n                                </div>\n\n                                        </span>\n\n                                    </ion-col>\n\n                                </div>\n\n                            </ion-row>\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n            </div>\n\n        </ion-row>\n\n\n\n    </ion-grid>\n\n</ion-content>\n\n\n\n<ion-footer>\n\n    <div class="footer-steps">\n\n\n\n        <div class="next-step-action" [ngClass]="{\'allowed\': actived.length > 0}" (click)="closeMeModal()">\n\n            <span class="next-step-label">\n\n                Próximo\n\n            </span> <!-- next-stap-label -->\n\n            <div class="nextstep-icon">\n\n                <span class="caret-body"></span>\n\n                <span class="caret-direction"></span>\n\n            </div> <!-- nextstep-icon -->\n\n        </div> <!-- next-stap-action -->\n\n\n\n    </div> <!-- footer-steps -->\n\n</ion-footer>\n\n\n\n'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\modais\gostos\gostos.html"*/,
             providers: [
                 __WEBPACK_IMPORTED_MODULE_3__providers_categoria_categoria__["a" /* CategoriaProvider */]
             ]
@@ -3093,7 +3249,7 @@ var GostosPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(250);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(249);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_keyboard__ = __webpack_require__(251);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_themes_prototype_slides_slides__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_themes_prototype_slides_slides__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_themes_prototype_login_login__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_themes_prototype_system_tabs_system_tabs__ = __webpack_require__(47);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -3143,7 +3299,7 @@ var Qrgo_prototype = (function () {
         });
     };
     Qrgo_prototype = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\app\app.html"*/,
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\app\app.html"*/,
             providers: [__WEBPACK_IMPORTED_MODULE_4__ionic_native_keyboard__["a" /* Keyboard */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */],
@@ -3166,13 +3322,13 @@ var Qrgo_prototype = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feed_feed__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__explore_explore__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__explore_explore__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_jquery__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__login_login__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__profile_profile__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__notifica_es_notificacao_notificacao__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__notifica_es_notificacao_notificacao__ = __webpack_require__(93);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__produtos_product_profile_product_profile__ = __webpack_require__(186);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3251,7 +3407,7 @@ var SystemTabsPage = (function () {
     }
     SystemTabsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-system-tabs',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\system-tabs\system-tabs.html"*/'<ion-tabs #tabs selectedIndex="1" (tap)="scrollTopContent( $event )">\n\n  <ion-tab [root]="pageHome" tabIcon="QrHome"></ion-tab>\n\n  <ion-tab [root]="pageExplore" tabIcon="QrExplore"></ion-tab>\n\n  <ion-tab [root]="pageBag" tabIcon="QrBag"></ion-tab>\n\n  <ion-tab [root]="pageMessages" tabIcon="QrMessages"></ion-tab>\n\n  <ion-tab [root]="pageProfile" tabsHideOnSubPages="true" tabIcon="QrProfile"></ion-tab>\n\n</ion-tabs>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\system-tabs\system-tabs.html"*/,
+            selector: 'page-system-tabs',template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\system-tabs\system-tabs.html"*/'<ion-tabs #tabs selectedIndex="1" (tap)="scrollTopContent( $event )">\n\n  <ion-tab [root]="pageHome" tabIcon="QrHome"></ion-tab>\n\n  <ion-tab [root]="pageExplore" tabIcon="QrExplore"></ion-tab>\n\n  <ion-tab [root]="pageBag" tabIcon="QrBag"></ion-tab>\n\n  <ion-tab [root]="pageMessages" tabIcon="QrMessages"></ion-tab>\n\n  <ion-tab [root]="pageProfile" tabsHideOnSubPages="true" tabIcon="QrProfile"></ion-tab>\n\n</ion-tabs>'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\system-tabs\system-tabs.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
@@ -3278,7 +3434,7 @@ var SystemTabsPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_jquery__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_post_post__ = __webpack_require__(181);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_social_sharing__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_social_sharing__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_http__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_storage__ = __webpack_require__(22);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -3504,7 +3660,7 @@ var FeedPage = (function () {
     ], FeedPage.prototype, "filterCaret", void 0);
     FeedPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["n" /* Component */])({
-            selector: 'page-feed',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\feed\feed.html"*/'<!-- Start of footer Content -->\n\n<ion-header>\n\n    <qr-header></qr-header>\n\n</ion-header>\n\n<!-- End of header Default -->\n\n<!-- Content of feed page -->\n\n<ion-content #Content>\n\n\n\n    <!-- Start of feed -->\n\n    <div class="feed-background"></div> <!-- feed-background -->\n\n\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col>\n\n\n\n                <div class="feed-post-something">\n\n\n\n                    <ion-grid>\n\n                        <ion-row>\n\n                            <ion-col class="post-something" (click)="doPost()">\n\n                                Publique Algo...\n\n                            </ion-col><!-- post-something -->\n\n                            <ion-col col-auto>\n\n                                <div class="feed-publication-shortcut">\n\n                                    <svg class="ico-publication-shortcut">\n\n                                        <use [attr.xlink:href]="constants.src_svg + \'hanger.svg#Layer_1\'"></use>\n\n                                    </svg> <!-- ico-publication-shortcut -->\n\n                                </div> <!-- feed-publication-shortcut -->\n\n                            </ion-col>\n\n                            <ion-col col-auto>\n\n                                <div class="feed-publication-shortcut">\n\n                                    <svg class="ico-publication-shortcut">\n\n                                        <use [attr.xlink:href]="constants.src_svg + \'picture.svg#Layer_1\'"></use>\n\n                                    </svg> <!-- ico-publication-shortcut -->\n\n                                </div> <!-- feed-publication-shortcut -->\n\n                            </ion-col>\n\n                        </ion-row>\n\n                    </ion-grid>\n\n\n\n                </div> <!-- feed-post-something -->\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n            <ion-col>\n\n                <div class="feed-filter">\n\n                    <ion-grid>\n\n                        <ion-row>\n\n\n\n                            <ion-col (click)="changeFilter( $event, 1 )" [ngClass]="{\'actived-filter\': filter == 1 }">\n\n                                Todos\n\n                            </ion-col>\n\n                            <ion-col (click)="changeFilter( $event, 2 )" [ngClass]="{\'actived-filter\': filter == 2 }">\n\n                                Confecções\n\n                            </ion-col>\n\n                            <ion-col (click)="changeFilter( $event, 3 )" [ngClass]="{\'actived-filter\': filter == 3 }">\n\n                                Lojistas\n\n                            </ion-col>\n\n                            <ion-col (click)="changeFilter( $event, 4 )" [ngClass]="{\'actived-filter\': filter == 4 }">\n\n                                Roupas\n\n                            </ion-col>\n\n\n\n                            <span class="filter-indicator">\n\n                                <span class="filter-caret" #filterCaret></span>\n\n                            </span><!-- filter-indicator -->\n\n\n\n                        </ion-row><!-- feed-filter -->\n\n                    </ion-grid>\n\n                </div> <!-- feed-filter -->\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n\n\n    <!-- Primeiro card do feed -->\n\n    <ion-card class="feed-card" *ngFor="let post of feed">\n\n        <div class="feed-card-structure">\n\n\n\n            <div class="feed-card-header">\n\n                <ion-grid>\n\n                    <ion-row>\n\n                        <ion-col col-2>\n\n                            <div class="feed-author-image">\n\n                                <div class="feed-author-img"></div> <!-- feed-author-img -->\n\n                            </div> <!-- feed-author-image -->\n\n                        </ion-col>\n\n                        <ion-col class="feed-author">\n\n                            <div class="feed-autor-label">\n\n                                <span class="feed-author-txt title ">\n\n                                    {{ post.company }}\n\n                                </span><!-- feed-author-txt -->\n\n                            </div> <!-- feed-autor-label -->\n\n                            <div class="feed-autor-label">\n\n                                <span class="feed-author-txt description" *ngFor="let endereco of post.enderecos">\n\n                                      {{endereco.endereco_local}} <ion-icon name="ai-notification"></ion-icon>\n\n                                </span>\n\n                            </div> <!-- feed-autor-label -->\n\n                        </ion-col>\n\n                        <ion-col col-2 (click)="actionsPostFeed( post )">\n\n                            <div class="feed-card-header-options">\n\n                                <svg class="ico-card-options">\n\n                                    <use [attr.xlink:href]="constants.src_svg + \'vertical-dots.svg#Layer_1\'"></use>\n\n                                </svg> <!-- ico-card-options -->\n\n                            </div> <!-- feed-card-header-options -->\n\n                        </ion-col>\n\n                    </ion-row>\n\n                </ion-grid>\n\n            </div> <!-- feed-card-header -->\n\n            <div class="feed-card-body">\n\n\n\n                <!-- Primeira estrutura de layout de post -->\n\n                <!-- Post somente com imagens -->\n\n                <!-- ------------ -->\n\n                <div class="card-body-image" [hidden]="post.type != 1">\n\n\n\n                    <div class="card-body-img"\n\n                         *ngIf="post.image[0]"\n\n                         [ngStyle]="{ \'background-image\': \'url(\' + post.image[0].img_url + \')\' }"></div>\n\n                    <!-- card-body-img -->\n\n\n\n                    <div class="card-body-description">\n\n                        <span class="card-body-description-since"> {{post.date}} </span>\n\n                        <span class="card-body-description-desc">\n\n                            {{post.description}}\n\n                            <!--Welcome to <span class="hashtag-desc">#ThePradaDoubleClubMiami</span>, presented by Fondazione Prada and Carsten Höller. The temporary nightclub/installation is half gray scale.-->\n\n                        </span><!-- card-body-description-desc -->\n\n                    </div> <!-- card-body-description -->\n\n                    <div class="card-body-actions-post">\n\n                        <ion-grid>\n\n                            <ion-row>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action" (click)="likePost(post)"\n\n                                             [ngStyle]="post.like_id ? {fill: \'red\'} : {fill: \'#b4c1d6\'}">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'hearth.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col (click)="sharePost( post )">\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'share.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                            </ion-row>\n\n                        </ion-grid>\n\n                    </div> <!-- card-body-actions-post -->\n\n                </div> <!-- card-body-image -->\n\n                <!-- ------------ -->\n\n                <!-- ------------ -->\n\n                <div class="card-body-product" [hidden]="post.type != 2">\n\n\n\n                    <div class="card-body-product-img">\n\n\n\n                        <ion-slides class="product-variables" *ngIf="post.image[0]">\n\n                            <ion-slide>\n\n                                <div class="product-variable-cover"\n\n                                     [ngStyle]="{\'background-image\': \'url(\' + post.image[0].img_url + \')\'}"></div>\n\n                                <!-- product-variable-cover -->\n\n                            </ion-slide>\n\n                        </ion-slides><!-- product-variables -->\n\n\n\n                        <ul class="variables-valiable">\n\n                            <li class="variable actived-variable"></li> <!-- variable -->\n\n                            <li class="variable"></li> <!-- variable -->\n\n                            <li class="variable"></li> <!-- variable -->\n\n                        </ul><!-- variables-valiable -->\n\n\n\n                    </div> <!-- card-body-product-img -->\n\n\n\n                    <div class="card-body-description">\n\n                        <span class="card-body-description-since"> {{post.date}} </span>\n\n                        <div class="card-body-description-desc">\n\n\n\n                            <span class="product-title"> TURTLENECK TOP </span>\n\n                            <div class="product-prices">\n\n                                <ion-grid class="grid-prices">\n\n                                    <ion-row>\n\n                                        <ion-col class="col-border">\n\n                                            <span class="col-label"> Atacado </span><!-- col-label -->\n\n                                            <span class="price"> 590 </span> <!-- price -->\n\n                                        </ion-col>\n\n                                        <ion-col class="col-varejo">\n\n                                            <span class="col-label"> Varejo </span><!-- col-label -->\n\n                                            <span class="price"> 590 </span> <!-- price -->\n\n                                        </ion-col><!-- col-varejo -->\n\n                                        <ion-col class="col-action">\n\n                                            <button class="button-action-product">\n\n                                                <svg class="icon-button-action-product">\n\n                                                    <use [attr.xlink:href]="constants.src_svg + \'cart.svg#Layer_1\'"></use>\n\n                                                </svg> <!-- icon-button-action-product -->\n\n                                                Comprar\n\n                                            </button><!-- button-action-product -->\n\n                                        </ion-col><!-- col-action -->\n\n                                    </ion-row>\n\n                                </ion-grid><!-- grid-prices -->\n\n                            </div><!-- product-prices -->\n\n\n\n                        </div><!-- card-body-description-desc -->\n\n\n\n                        <span class="card-body-description-desc">\n\n                            {{post.description}}\n\n                        </span><!-- card-body-description-desc -->\n\n\n\n                    </div> <!-- card-body-description -->\n\n\n\n                    <div class="card-body-actions-post">\n\n                        <ion-grid>\n\n                            <ion-row>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'hearth.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'star.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col (click)="sharePost( post )">\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'share.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                            </ion-row>\n\n                        </ion-grid>\n\n                    </div> <!-- card-body-actions-post -->\n\n\n\n                </div> <!-- card-body-product -->\n\n                <!-- ---------- -->\n\n                <!-- ---------- -->\n\n                <div class="card-body-product-group" [hidden]="post.type != 3">\n\n                    <div class="product-group-cover"\n\n                         [hidden]="post.image == null" *ngIf="post.image[0]"\n\n                         [ngStyle]="{ \'background-image\': \'url(\' + post.image[0].img_url + \')\' }"></div>\n\n                    <!-- product-group-cover -->\n\n                    <div class="content-slide-group">\n\n                        <ion-slides class="product-group-slides" pager>\n\n\n\n                            <ion-slide *ngFor="let grupos of post.products">\n\n                                <ul class="list-group-products">\n\n                                    <li class="item-group-product" *ngFor="let produto of grupos.group">\n\n                                        <div class="item-product-cover"\n\n                                             [ngStyle]="{ \'background-image\': \'url(\' + constants.api_path + constants.src_img_posts + \'/\' + produto.prod_image +\')\' }">\n\n                                        </div> <!-- item-product-cover -->\n\n                                    </li><!-- item-group-product -->\n\n                                </ul><!-- list-group-products -->\n\n                            </ion-slide>\n\n\n\n                        </ion-slides><!-- product-group-slides -->\n\n                    </div> <!-- content-slide-group -->\n\n\n\n                    <div class="card-body-description">\n\n                        <span class="card-body-description-since"> {{post.date}} </span>\n\n                        <span class="card-body-description-desc">\n\n                            {{post.description}}\n\n                            <!--Welcome to <span class="hashtag-desc">#ThePradaDoubleClubMiami</span>, presented by Fondazione Prada and Carsten Höller. The temporary nightclub/installation is half gray scale.-->\n\n                        </span><!-- card-body-description-desc -->\n\n                    </div> <!-- card-body-description -->\n\n                    <div class="card-body-actions-post">\n\n                        <ion-grid>\n\n                            <ion-row>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'hearth.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col (click)="sharePost( post )">\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'share.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                            </ion-row>\n\n                        </ion-grid>\n\n                    </div> <!-- card-body-actions-post -->\n\n\n\n                </div> <!-- card-body-product-group -->\n\n                <!-- ---------- -->\n\n                <!-- ---------- -->\n\n\n\n                <!-- Fim da estrutura do tipo de layout de post ( Post somente com imagens ) -->\n\n            </div> <!-- feed-card-body -->\n\n\n\n        </div> <!-- feed-card-structure -->\n\n    </ion-card><!-- feed-card -->\n\n    <!-- fim do primeiro card do feed -->\n\n\n\n    <ion-infinite-scroll (ionInfinite)="doInfinite($event)"><!-- infinite scroll para carregar mais posts -->\n\n        <ion-infinite-scroll-content></ion-infinite-scroll-content>\n\n    </ion-infinite-scroll>\n\n\n\n\n\n    <!-- Terceiro card do feed -->\n\n    <!-- Fim do terceiro card do feed -->\n\n\n\n</ion-content>\n\n<!-- End of content Feed Page -->\n\n'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\feed\feed.html"*/,
+            selector: 'page-feed',template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\feed\feed.html"*/'<!-- Start of footer Content -->\n\n<ion-header>\n\n    <qr-header></qr-header>\n\n</ion-header>\n\n<!-- End of header Default -->\n\n<!-- Content of feed page -->\n\n<ion-content #Content>\n\n\n\n    <!-- Start of feed -->\n\n    <div class="feed-background"></div> <!-- feed-background -->\n\n\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col>\n\n\n\n                <div class="feed-post-something">\n\n\n\n                    <ion-grid>\n\n                        <ion-row>\n\n                            <ion-col class="post-something" (click)="doPost()">\n\n                                Publique Algo...\n\n                            </ion-col><!-- post-something -->\n\n                            <ion-col col-auto>\n\n                                <div class="feed-publication-shortcut">\n\n                                    <svg class="ico-publication-shortcut">\n\n                                        <use [attr.xlink:href]="constants.src_svg + \'hanger.svg#Layer_1\'"></use>\n\n                                    </svg> <!-- ico-publication-shortcut -->\n\n                                </div> <!-- feed-publication-shortcut -->\n\n                            </ion-col>\n\n                            <ion-col col-auto>\n\n                                <div class="feed-publication-shortcut">\n\n                                    <svg class="ico-publication-shortcut">\n\n                                        <use [attr.xlink:href]="constants.src_svg + \'picture.svg#Layer_1\'"></use>\n\n                                    </svg> <!-- ico-publication-shortcut -->\n\n                                </div> <!-- feed-publication-shortcut -->\n\n                            </ion-col>\n\n                        </ion-row>\n\n                    </ion-grid>\n\n\n\n                </div> <!-- feed-post-something -->\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n            <ion-col>\n\n                <div class="feed-filter">\n\n                    <ion-grid>\n\n                        <ion-row>\n\n\n\n                            <ion-col (click)="changeFilter( $event, 1 )" [ngClass]="{\'actived-filter\': filter == 1 }">\n\n                                Todos\n\n                            </ion-col>\n\n                            <ion-col (click)="changeFilter( $event, 2 )" [ngClass]="{\'actived-filter\': filter == 2 }">\n\n                                Confecções\n\n                            </ion-col>\n\n                            <ion-col (click)="changeFilter( $event, 3 )" [ngClass]="{\'actived-filter\': filter == 3 }">\n\n                                Lojistas\n\n                            </ion-col>\n\n                            <ion-col (click)="changeFilter( $event, 4 )" [ngClass]="{\'actived-filter\': filter == 4 }">\n\n                                Roupas\n\n                            </ion-col>\n\n\n\n                            <span class="filter-indicator">\n\n                                <span class="filter-caret" #filterCaret></span>\n\n                            </span><!-- filter-indicator -->\n\n\n\n                        </ion-row><!-- feed-filter -->\n\n                    </ion-grid>\n\n                </div> <!-- feed-filter -->\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n\n\n    <!-- Primeiro card do feed -->\n\n    <ion-card class="feed-card" *ngFor="let post of feed">\n\n        <div class="feed-card-structure">\n\n\n\n            <div class="feed-card-header">\n\n                <ion-grid>\n\n                    <ion-row>\n\n                        <ion-col col-2>\n\n                            <div class="feed-author-image">\n\n                                <div class="feed-author-img"></div> <!-- feed-author-img -->\n\n                            </div> <!-- feed-author-image -->\n\n                        </ion-col>\n\n                        <ion-col class="feed-author">\n\n                            <div class="feed-autor-label">\n\n                                <span class="feed-author-txt title ">\n\n                                    {{ post.company }}\n\n                                </span><!-- feed-author-txt -->\n\n                            </div> <!-- feed-autor-label -->\n\n                            <div class="feed-autor-label">\n\n                                <span class="feed-author-txt description" *ngFor="let endereco of post.enderecos">\n\n                                      {{endereco.endereco_local}} <ion-icon name="ai-notification"></ion-icon>\n\n                                </span>\n\n                            </div> <!-- feed-autor-label -->\n\n                        </ion-col>\n\n                        <ion-col col-2 (click)="actionsPostFeed( post )">\n\n                            <div class="feed-card-header-options">\n\n                                <svg class="ico-card-options">\n\n                                    <use [attr.xlink:href]="constants.src_svg + \'vertical-dots.svg#Layer_1\'"></use>\n\n                                </svg> <!-- ico-card-options -->\n\n                            </div> <!-- feed-card-header-options -->\n\n                        </ion-col>\n\n                    </ion-row>\n\n                </ion-grid>\n\n            </div> <!-- feed-card-header -->\n\n            <div class="feed-card-body">\n\n\n\n                <!-- Primeira estrutura de layout de post -->\n\n                <!-- Post somente com imagens -->\n\n                <!-- ------------ -->\n\n                <div class="card-body-image" [hidden]="post.type != 1">\n\n\n\n                    <div class="card-body-img"\n\n                         *ngIf="post.image[0]"\n\n                         [ngStyle]="{ \'background-image\': \'url(\' + post.image[0].img_url + \')\' }"></div>\n\n                    <!-- card-body-img -->\n\n\n\n                    <div class="card-body-description">\n\n                        <span class="card-body-description-since"> {{post.date}} </span>\n\n                        <span class="card-body-description-desc">\n\n                            {{post.description}}\n\n                            <!--Welcome to <span class="hashtag-desc">#ThePradaDoubleClubMiami</span>, presented by Fondazione Prada and Carsten Höller. The temporary nightclub/installation is half gray scale.-->\n\n                        </span><!-- card-body-description-desc -->\n\n                    </div> <!-- card-body-description -->\n\n                    <div class="card-body-actions-post">\n\n                        <ion-grid>\n\n                            <ion-row>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action" (click)="likePost(post)"\n\n                                             [ngStyle]="post.like_id ? {fill: \'red\'} : {fill: \'#b4c1d6\'}">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'hearth.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col (click)="sharePost( post )">\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'share.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                            </ion-row>\n\n                        </ion-grid>\n\n                    </div> <!-- card-body-actions-post -->\n\n                </div> <!-- card-body-image -->\n\n                <!-- ------------ -->\n\n                <!-- ------------ -->\n\n                <div class="card-body-product" [hidden]="post.type != 2">\n\n\n\n                    <div class="card-body-product-img">\n\n\n\n                        <ion-slides class="product-variables" *ngIf="post.image[0]">\n\n                            <ion-slide>\n\n                                <div class="product-variable-cover"\n\n                                     [ngStyle]="{\'background-image\': \'url(\' + post.image[0].img_url + \')\'}"></div>\n\n                                <!-- product-variable-cover -->\n\n                            </ion-slide>\n\n                        </ion-slides><!-- product-variables -->\n\n\n\n                        <ul class="variables-valiable">\n\n                            <li class="variable actived-variable"></li> <!-- variable -->\n\n                            <li class="variable"></li> <!-- variable -->\n\n                            <li class="variable"></li> <!-- variable -->\n\n                        </ul><!-- variables-valiable -->\n\n\n\n                    </div> <!-- card-body-product-img -->\n\n\n\n                    <div class="card-body-description">\n\n                        <span class="card-body-description-since"> {{post.date}} </span>\n\n                        <div class="card-body-description-desc">\n\n\n\n                            <span class="product-title"> TURTLENECK TOP </span>\n\n                            <div class="product-prices">\n\n                                <ion-grid class="grid-prices">\n\n                                    <ion-row>\n\n                                        <ion-col class="col-border">\n\n                                            <span class="col-label"> Atacado </span><!-- col-label -->\n\n                                            <span class="price"> 590 </span> <!-- price -->\n\n                                        </ion-col>\n\n                                        <ion-col class="col-varejo">\n\n                                            <span class="col-label"> Varejo </span><!-- col-label -->\n\n                                            <span class="price"> 590 </span> <!-- price -->\n\n                                        </ion-col><!-- col-varejo -->\n\n                                        <ion-col class="col-action">\n\n                                            <button class="button-action-product">\n\n                                                <svg class="icon-button-action-product">\n\n                                                    <use [attr.xlink:href]="constants.src_svg + \'cart.svg#Layer_1\'"></use>\n\n                                                </svg> <!-- icon-button-action-product -->\n\n                                                Comprar\n\n                                            </button><!-- button-action-product -->\n\n                                        </ion-col><!-- col-action -->\n\n                                    </ion-row>\n\n                                </ion-grid><!-- grid-prices -->\n\n                            </div><!-- product-prices -->\n\n\n\n                        </div><!-- card-body-description-desc -->\n\n\n\n                        <span class="card-body-description-desc">\n\n                            {{post.description}}\n\n                        </span><!-- card-body-description-desc -->\n\n\n\n                    </div> <!-- card-body-description -->\n\n\n\n                    <div class="card-body-actions-post">\n\n                        <ion-grid>\n\n                            <ion-row>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'hearth.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'star.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col (click)="sharePost( post )">\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'share.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                            </ion-row>\n\n                        </ion-grid>\n\n                    </div> <!-- card-body-actions-post -->\n\n\n\n                </div> <!-- card-body-product -->\n\n                <!-- ---------- -->\n\n                <!-- ---------- -->\n\n                <div class="card-body-product-group" [hidden]="post.type != 3">\n\n                    <div class="product-group-cover"\n\n                         [hidden]="post.image == null" *ngIf="post.image[0]"\n\n                         [ngStyle]="{ \'background-image\': \'url(\' + post.image[0].img_url + \')\' }"></div>\n\n                    <!-- product-group-cover -->\n\n                    <div class="content-slide-group">\n\n                        <ion-slides class="product-group-slides" pager>\n\n\n\n                            <ion-slide *ngFor="let grupos of post.products">\n\n                                <ul class="list-group-products">\n\n                                    <li class="item-group-product" *ngFor="let produto of grupos.group">\n\n                                        <div class="item-product-cover"\n\n                                             [ngStyle]="{ \'background-image\': \'url(\' + constants.api_path + constants.src_img_posts + \'/\' + produto.prod_image +\')\' }">\n\n                                        </div> <!-- item-product-cover -->\n\n                                    </li><!-- item-group-product -->\n\n                                </ul><!-- list-group-products -->\n\n                            </ion-slide>\n\n\n\n                        </ion-slides><!-- product-group-slides -->\n\n                    </div> <!-- content-slide-group -->\n\n\n\n                    <div class="card-body-description">\n\n                        <span class="card-body-description-since"> {{post.date}} </span>\n\n                        <span class="card-body-description-desc">\n\n                            {{post.description}}\n\n                            <!--Welcome to <span class="hashtag-desc">#ThePradaDoubleClubMiami</span>, presented by Fondazione Prada and Carsten Höller. The temporary nightclub/installation is half gray scale.-->\n\n                        </span><!-- card-body-description-desc -->\n\n                    </div> <!-- card-body-description -->\n\n                    <div class="card-body-actions-post">\n\n                        <ion-grid>\n\n                            <ion-row>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'hearth.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col>\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                                <ion-col (click)="sharePost( post )">\n\n                                    <div class="card-footer-action">\n\n                                        <svg class="ico-footer-action">\n\n                                            <use [attr.xlink:href]="constants.src_svg + \'share.svg#Layer_1\'"></use>\n\n                                        </svg> <!-- ico-footer-action -->\n\n                                    </div> <!-- card-footer-action" -->\n\n                                </ion-col>\n\n                            </ion-row>\n\n                        </ion-grid>\n\n                    </div> <!-- card-body-actions-post -->\n\n\n\n                </div> <!-- card-body-product-group -->\n\n                <!-- ---------- -->\n\n                <!-- ---------- -->\n\n\n\n                <!-- Fim da estrutura do tipo de layout de post ( Post somente com imagens ) -->\n\n            </div> <!-- feed-card-body -->\n\n\n\n        </div> <!-- feed-card-structure -->\n\n    </ion-card><!-- feed-card -->\n\n    <!-- fim do primeiro card do feed -->\n\n\n\n    <ion-infinite-scroll (ionInfinite)="doInfinite($event)"><!-- infinite scroll para carregar mais posts -->\n\n        <ion-infinite-scroll-content></ion-infinite-scroll-content>\n\n    </ion-infinite-scroll>\n\n\n\n\n\n    <!-- Terceiro card do feed -->\n\n    <!-- Fim do terceiro card do feed -->\n\n\n\n</ion-content>\n\n<!-- End of content Feed Page -->\n\n'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\feed\feed.html"*/,
             providers: [
                 __WEBPACK_IMPORTED_MODULE_5__providers_post_post__["a" /* PostProvider */]
             ]
@@ -3526,63 +3682,6 @@ var FeedPage = (function () {
 
 /***/ }),
 
-/***/ 54:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SlidesPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_login__ = __webpack_require__(26);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-/**
- * Generated class for the SlidesPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var SlidesPage = (function () {
-    function SlidesPage(navCtrl, navParams) {
-        var _this = this;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.constants = __WEBPACK_IMPORTED_MODULE_2__config_Constants__["a" /* Constants */];
-        /**
-         * Função utilizada para enviar o usuário para a pagina de login */
-        this.startLogin = (function () {
-            /* Envia o usuário à pagina de login */
-            var storage = { 'first_access': false };
-            localStorage.setItem("qrgo_application", JSON.stringify(storage));
-            _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__login_login__["a" /* LoginPage */], {}, { animate: true, direction: 'forward' });
-        });
-    }
-    SlidesPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-slides',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\slides\slides.html"*/'<ion-slides pager>\n\n\n\n  <ion-slide class="slider-content" >\n\n    \n\n    <div class="image-content" >\n\n      <img class="img-slide" [attr.src]="constants.src_img + \'slides/01.png\'" alt="">\n\n    </div> <!-- image-content -->\n\n\n\n    <h1 class="slider-title">A confecção na palma da sua mão</h1>\n\n    <p class="slide-description">\n\n      Uma rede que oferece o <strong>controle</strong> e <strong>divulgação</strong> dos seus produtos em tempo real!\n\n    </p><!-- slide-description -->\n\n\n\n    <button class="skip-slider" (click)="startLogin()"> Pular </button>\n\n\n\n  </ion-slide> <!-- End of slider 1 -->\n\n\n\n  <ion-slide class="slider-content" >\n\n\n\n    <div class="image-content" >\n\n      <img class="img-slide" [attr.src]="constants.src_img + \'slides/02.png\'" alt="">\n\n    </div> <!-- image-content -->\n\n\n\n    <h1 class="slider-title">Procura & Demanda</h1>\n\n    <p class="slide-description">\n\n        Milhares de lojistas e confecções procurando fazer novos contatos!\n\n    </p><!-- slide-description -->\n\n\n\n    <button class="skip-slider" (click)="startLogin()"> Pular </button>\n\n\n\n  </ion-slide> <!-- End of slider 2 -->\n\n\n\n  <ion-slide class="slider-content" >\n\n\n\n    <div class="image-content" >\n\n      <img class="img-slide" [attr.src]="constants.src_img + \'slides/03.png\'" alt="">\n\n    </div> <!-- image-content -->\n\n\n\n    <h1 class="slider-title">Sempre Informado</h1>\n\n    <p class="slide-description">\n\n      Acompanhe em primeira mão em uma unica plataforma as <strong>novidades, publicações</strong> e <strong>promoções</strong> dos seus contatos!\n\n    </p><!-- slide-description -->\n\n\n\n    <button class="skip-slider" (click)="startLogin()"> Pular </button>\n\n\n\n  </ion-slide> <!-- End of slider 3 -->\n\n\n\n  <ion-slide class="slider-content" >\n\n\n\n    <div class="image-content" >\n\n      <img class="img-slide" [attr.src]="constants.src_img + \'slides/04.png\'" alt="">\n\n    </div> <!-- image-content -->\n\n\n\n    <h1 class="slider-title">Seja Independente</h1>\n\n    <p class="slide-description">\n\n      Sinta a liberdade de poder <strong>comprar</strong> e <strong>reservar peças</strong> sem estar a mercê do tempo de um vendedor.\n\n    </p><!-- slide-description -->\n\n\n\n    <button class="start-button" (click)="startLogin()">Começar!</button>\n\n\n\n    <button class="skip-slider" (click)="startLogin()"> Pular </button>\n\n\n\n  </ion-slide> <!-- End of slider 4 -->\n\n\n\n</ion-slides>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\slides\slides.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
-    ], SlidesPage);
-    return SlidesPage;
-}());
-
-//# sourceMappingURL=slides.js.map
-
-/***/ }),
-
 /***/ 7:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -3592,13 +3691,7 @@ var Constants = {
     'base_url': './',
     'theme': 'prototype',
     //local
-    //  'api_path': 'http://localhost/fashon/qrgo/',
-    //dev
-    'api_path': 'http://192.168.0.251/fashon/qrgo/',
-    // diogo
-    // 'api_path': 'http://192.168.0.90/fashon/qrgo/',
-    //amazon
-    //'api_path': 'http://ec2-184-72-119-250.compute-1.amazonaws.com/qrgo/',
+    'api_path': 'http://localhost/nc5/',
     'src_img': './assets/themes/prototype/img/',
     'src_img_posts': '../uploads/',
     'src_svg': './assets/themes/prototype/img/svg/',
@@ -3613,180 +3706,12 @@ var Constants = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfirmCadPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_Constants__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__system_tabs_system_tabs__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(22);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-
-/**
- * Generated class for the ConfirmCadPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var ConfirmCadPage = (function () {
-    function ConfirmCadPage(navCtrl, navParams, http, alertCtrl, storage, loadingCtrl) {
-        var _this = this;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.http = http;
-        this.alertCtrl = alertCtrl;
-        this.storage = storage;
-        this.loadingCtrl = loadingCtrl;
-        this.seisdigitos = false;
-        this.constants = __WEBPACK_IMPORTED_MODULE_4__config_Constants__["a" /* Constants */];
-        this.newCod = (function () {
-            /* Reenvia novo código de atutenticação */
-            _this.storage.get('access').then(function (access) {
-                _this.http.post(_this.constants.api_path + 'cadastro/gerar_code', __WEBPACK_IMPORTED_MODULE_3_jquery__["param"]({
-                    token_id: access.token_id,
-                    token_hash: access.token_hash,
-                    updat: true
-                })).subscribe(function (data) {
-                    var response = data;
-                    var objeto_retorno = JSON.parse(response._body);
-                    //console.log(objeto_retorno);
-                    var alert = _this.alertCtrl.create({
-                        title: 'QRGO',
-                        subTitle: objeto_retorno.email_enviado,
-                        buttons: ['Ok']
-                    });
-                    alert.present();
-                }, function (error) {
-                    //modal de erro na autenticação
-                    return false;
-                });
-            });
-        });
-        this.skipCad = (function () {
-            /* Pula a confirmação do cadastro */
-            var alert = _this.alertCtrl.create({
-                title: 'Atenção!',
-                subTitle: 'Autenticação pendente. Valide seu email para ter acesso a todo nosso app.',
-                enableBackdropDismiss: false,
-                buttons: [
-                    {
-                        text: 'Ok',
-                        handler: function () {
-                            // this.navCtrl.setRoot(ExplorePage);
-                            _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_5__system_tabs_system_tabs__["a" /* SystemTabsPage */], {}, { animate: true, direction: 'forward' });
-                        }
-                    }
-                ]
-            });
-            alert.present();
-        });
-        //função verifica o codiga com a existencia de 6 digitos 
-        this.autenticaCod = (function (code) {
-            //desabilita o input
-            //this.seisdigitos=true;
-            _this.storage.get('access').then(function (access) {
-                //configura modal de load para reeinviar codigo
-                var loader = _this.loadingCtrl.create({ content: "Autenticando o e-mail..." });
-                //ativa o modal
-                loader.present();
-                //realiza o ajax enviando como parametro o código de entrada "data"
-                _this.http.post(_this.constants.api_path + 'cadastro/autenticacao', __WEBPACK_IMPORTED_MODULE_3_jquery__["param"]({
-                    codigo: code,
-                    token_id: access.token_id,
-                    token_hash: access.token_hash
-                })).subscribe(function (data) {
-                    var response = data;
-                    var objeto_retorno = JSON.parse(response._body);
-                    //destroe o modal
-                    loader.dismissAll();
-                    //console.log(response._body);
-                    //retorna o código
-                    if (objeto_retorno === true) {
-                        //modal de confirmação para o usuario
-                        var alert_1 = _this.alertCtrl.create({
-                            title: 'Parabéns<br>',
-                            subTitle: 'Parabéns, você realizou o cadastro em nosso sistema. Você será logado automáticamente.',
-                            enableBackdropDismiss: false,
-                            buttons: [
-                                {
-                                    text: 'Ok',
-                                    handler: function () {
-                                        // this.navCtrl.setRoot(ExplorePage);
-                                        _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_5__system_tabs_system_tabs__["a" /* SystemTabsPage */], {}, { animate: true, direction: 'forward' });
-                                    }
-                                }
-                            ]
-                        });
-                        alert_1.present();
-                    }
-                    else {
-                        //modal de código invalido
-                        var alert_2 = _this.alertCtrl.create({
-                            title: 'Autenticação',
-                            subTitle: 'Código incorreto',
-                            buttons: ['Ok']
-                        });
-                        alert_2.present();
-                    }
-                }, function (error) {
-                    //destroe o modal
-                    loader.dismissAll();
-                    //modal de erro na autenticação
-                    var alert = _this.alertCtrl.create({
-                        title: 'Autenticação',
-                        subTitle: 'Erro na autenticação',
-                        buttons: ['Ok']
-                    });
-                    alert.present();
-                });
-            });
-        });
-    }
-    ConfirmCadPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-confirm-cad',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\confirm-cad\confirm-cad.html"*/'<ion-content>\n\n\n\n  <div class="content-center" >\n\n\n\n    <ion-grid class="grid-confirm-cad">\n\n      <ion-row>\n\n        <ion-col>\n\n\n\n          <h3 class="page-title">Confirme sua conta</h3>\n\n\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row>\n\n        <ion-col>\n\n\n\n          <p class="page-description">Confira seu e-mail ou mensagem sms para confirmar sua conta para seguir usar o aplicativo da melhor forma possível!</p>\n\n\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n      <ion-row>\n\n        <ion-col>\n\n\n\n          <div class="cont-confirmcode" >\n\n            <div class="cad-form-content">\n\n              <label class="cad-form-label">\n\n                <input type="text" class="cad-form-ctrl text-center" placeholder="Codigo" maxlength="6" [(ngModel)]="codeautentic" [disabled]="seisdigitos">\n\n              </label><!-- cad-form-label -->\n\n            </div> <!-- cad-form-content -->\n\n          </div> <!-- cont-confirmcode -->\n\n\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n      <ion-row>\n\n        <ion-col>\n\n          <span (click)="newCod()" class="resend-code"> Re-enviar código </span>\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n      <ion-row>\n\n        <ion-col>\n\n          <button ion-button class="pink-button align-center" (click)="autenticaCod ( codeautentic )"> Confirmar </button>\n\n        </ion-col>\n\n      </ion-row>\n\n\n\n    </ion-grid><!-- grid-confirm-cad -->\n\n\n\n  </div> <!-- content-center -->\n\n\n\n</ion-content>\n\n\n\n<ion-footer>\n\n  <div class="footer-steps">\n\n\n\n    <div class="next-step-action allowed" (click)="skipCad()">\n\n            <span class="next-step-label">\n\n                Pular\n\n            </span> <!-- next-stap-label -->\n\n      <div class="nextstep-icon">\n\n        <span class="caret-body"></span>\n\n        <span class="caret-direction"></span>\n\n      </div> <!-- nextstep-icon -->\n\n    </div> <!-- next-stap-action -->\n\n\n\n  </div> <!-- footer-steps -->\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\confirm-cad\confirm-cad.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */],
-            __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* LoadingController */]])
-    ], ConfirmCadPage);
-    return ConfirmCadPage;
-}());
-
-//# sourceMappingURL=confirm-cad.js.map
-
-/***/ }),
-
-/***/ 89:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Step1Page; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_login__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__step2_step2__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__step2_step2__ = __webpack_require__(88);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3850,7 +3775,7 @@ var Step1Page = (function () {
     }
     Step1Page = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-step1',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\step1\step1.html"*/'<ion-header>\n\n    <div class="header-back" (click)="backToLogin()" >\n\n\n\n        <svg class="backpage-ico">\n\n            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n        </svg> <!-- backpage-ico -->\n\n\n\n    </div> <!-- header-back -->\n\n</ion-header>\n\n\n\n<ion-content>\n\n\n\n    <div class="step-indicator" >\n\n\n\n        <span class="dotdot actived rounded"></span>\n\n        <span class="dot-stick"></span>\n\n        <span class="dotdot "></span>\n\n        <span class="dot-stick"></span>\n\n        <span class="dotdot"></span>\n\n\n\n    </div> <!-- step-indicator -->\n\n\n\n    <h3 class="title-step">Escolha</h3> <!-- title-step -->\n\n\n\n    <div class="choose-content" >\n\n        <div class="choose-column" >\n\n\n\n            <div class="type-user" >\n\n\n\n                <div class="icon-user-type" [ngClass]="{ \'actived-type\': actived == 1 }" (click)="defineActived(1)" >\n\n                    <svg class="svg-ico-usertype">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'confeccao.svg#Layer_1\'"></use>\n\n                    </svg> <!-- svg-ico-usertype -->\n\n                </div> <!-- icon-user-type -->\n\n\n\n                <p class="type-title"> Confecção </p> <!-- type-title -->\n\n                <p class="type-description">\n\n                    Cadastre a sua confecção para realizar novas ligações e encontrar novos revendedores para a sua marca\n\n                </p> <!-- type-description -->\n\n\n\n            </div> <!-- type-user -->\n\n\n\n        </div> <!-- choose-column -->\n\n        <div class="choose-column" >\n\n\n\n            <div class="type-user" >\n\n\n\n                <div class="icon-user-type" [ngClass]="{ \'actived-type\': actived == 2 }" (click)="defineActived(2)">\n\n                    <svg class="svg-ico-usertype">\n\n                       <use [attr.xlink:href]="constants.src_svg + \'vendedor.svg#Layer_1\'"></use>\n\n                    </svg> <!-- svg-ico-usertype -->\n\n                </div> <!-- icon-user-type -->\n\n\n\n                <p class="type-title"> Lojista </p> <!-- type-title -->\n\n                <p class="type-description">\n\n                    Cadastre o seu perfil como lojista, para encontrar novas confecções para revendas. E novas conexões de clientes.\n\n                </p> <!-- type-description -->\n\n\n\n            </div> <!-- type-user -->\n\n\n\n        </div> <!-- choose-column -->\n\n    </div> <!-- choose-content -->\n\n    \n\n</ion-content>\n\n\n\n<ion-footer>\n\n    <div class="footer-steps" >\n\n\n\n        <div class="next-step-action" [ngClass]="{\'allowed\': actived != 0}" (click)="goToStep2()">\n\n            <span class="next-step-label">\n\n                Próximo\n\n            </span> <!-- next-stap-label -->\n\n            <div class="nextstep-icon" >\n\n                <span class="caret-body"></span>\n\n                <span class="caret-direction"></span>\n\n            </div> <!-- nextstep-icon -->\n\n        </div> <!-- next-stap-action -->\n\n\n\n    </div> <!-- footer-steps -->\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\step1\step1.html"*/,
+            selector: 'page-step1',template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\cadastro\step1\step1.html"*/'<ion-header>\n\n    <div class="header-back" (click)="backToLogin()" >\n\n\n\n        <svg class="backpage-ico">\n\n            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n        </svg> <!-- backpage-ico -->\n\n\n\n    </div> <!-- header-back -->\n\n</ion-header>\n\n\n\n<ion-content>\n\n\n\n    <div class="step-indicator" >\n\n\n\n        <span class="dotdot actived rounded"></span>\n\n        <span class="dot-stick"></span>\n\n        <span class="dotdot "></span>\n\n        <span class="dot-stick"></span>\n\n        <span class="dotdot"></span>\n\n\n\n    </div> <!-- step-indicator -->\n\n\n\n    <h3 class="title-step">Escolha</h3> <!-- title-step -->\n\n\n\n    <div class="choose-content" >\n\n        <div class="choose-column" >\n\n\n\n            <div class="type-user" >\n\n\n\n                <div class="icon-user-type" [ngClass]="{ \'actived-type\': actived == 1 }" (click)="defineActived(1)" >\n\n                    <svg class="svg-ico-usertype">\n\n                        <use [attr.xlink:href]="constants.src_svg + \'confeccao.svg#Layer_1\'"></use>\n\n                    </svg> <!-- svg-ico-usertype -->\n\n                </div> <!-- icon-user-type -->\n\n\n\n                <p class="type-title"> Confecção </p> <!-- type-title -->\n\n                <p class="type-description">\n\n                    Cadastre a sua confecção para realizar novas ligações e encontrar novos revendedores para a sua marca\n\n                </p> <!-- type-description -->\n\n\n\n            </div> <!-- type-user -->\n\n\n\n        </div> <!-- choose-column -->\n\n        <div class="choose-column" >\n\n\n\n            <div class="type-user" >\n\n\n\n                <div class="icon-user-type" [ngClass]="{ \'actived-type\': actived == 2 }" (click)="defineActived(2)">\n\n                    <svg class="svg-ico-usertype">\n\n                       <use [attr.xlink:href]="constants.src_svg + \'vendedor.svg#Layer_1\'"></use>\n\n                    </svg> <!-- svg-ico-usertype -->\n\n                </div> <!-- icon-user-type -->\n\n\n\n                <p class="type-title"> Lojista </p> <!-- type-title -->\n\n                <p class="type-description">\n\n                    Cadastre o seu perfil como lojista, para encontrar novas confecções para revendas. E novas conexões de clientes.\n\n                </p> <!-- type-description -->\n\n\n\n            </div> <!-- type-user -->\n\n\n\n        </div> <!-- choose-column -->\n\n    </div> <!-- choose-content -->\n\n    \n\n</ion-content>\n\n\n\n<ion-footer>\n\n    <div class="footer-steps" >\n\n\n\n        <div class="next-step-action" [ngClass]="{\'allowed\': actived != 0}" (click)="goToStep2()">\n\n            <span class="next-step-label">\n\n                Próximo\n\n            </span> <!-- next-stap-label -->\n\n            <div class="nextstep-icon" >\n\n                <span class="caret-body"></span>\n\n                <span class="caret-direction"></span>\n\n            </div> <!-- nextstep-icon -->\n\n        </div> <!-- next-stap-action -->\n\n\n\n    </div> <!-- footer-steps -->\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\cadastro\step1\step1.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
@@ -3863,7 +3788,7 @@ var Step1Page = (function () {
 
 /***/ }),
 
-/***/ 90:
+/***/ 88:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3871,7 +3796,7 @@ var Step1Page = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__step1_step1__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__step1_step1__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__step3_step3__ = __webpack_require__(174);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery__ = __webpack_require__(15);
@@ -4080,7 +4005,7 @@ var Step2Page = (function () {
     }
     Step2Page = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-step2',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\step2\step2.html"*/'<ion-header>\n\n    <div class="header-back" (click)="backToStep1()">\n\n\n\n        <svg class="backpage-ico">\n\n            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n        </svg> <!-- backpage-ico -->\n\n\n\n    </div> <!-- header-back -->\n\n</ion-header>\n\n\n\n<ion-content>\n\n\n\n    <div class="step-indicator">\n\n\n\n        <span class="dotdot actived"></span>\n\n        <span class="dot-stick actived"></span>\n\n        <span class="dotdot actived rounded"></span>\n\n        <span class="dot-stick"></span>\n\n        <span class="dotdot"></span>\n\n\n\n    </div> <!-- step-indicator -->\n\n\n\n    <h3 class="title-step">Complete</h3> <!-- title-step -->\n\n\n\n    <div class="cad-content-inn">\n\n        <ion-grid>\n\n\n\n            <ion-row>\n\n                <ion-col>\n\n                    <div class="cad-form-content">\n\n                        <label class="cad-form-label">\n\n                            <span class="cad-form-label-txt"> CNPJ: </span> <!-- cad-form-label-txt -->\n\n                            <input type="text" [(ngModel)]="captcha.vazio"  name="cnpj" (keyup)="statusBusca()" class="cad-form-ctrl cnpj" placeholder="Insira o CNPJ"  [brmasker]="{person:true}">\n\n                        </label><!-- cad-form-label -->\n\n                    </div> <!-- cad-form-content -->\n\n                </ion-col>\n\n            </ion-row>\n\n            <div [hidden]="stepOk || stepOkCnpj">\n\n                <div class="form-cont">\n\n                    <button  class="login-btn" (click)="searchCnpj()"> Buscar </button>\n\n                    <!--<ion-spinner [hidden]="!load" class="position-spinner"></ion-spinner>-->\n\n                </div> <!-- form-cont -->\n\n            </div>\n\n\n\n            <div [hidden]="!stepOk">\n\n                <ion-row>\n\n                    <ion-col>\n\n                        <img  class="img-captcha"  [attr.src]="imgCaptcha">\n\n                        <i class="ion-refresh"></i>\n\n                        <div class="cad-form-content">\n\n                            <label class="cad-form-label">\n\n                                <span class="cad-form-label-txt"> Captcha: </span> <!-- cad-form-label-txt -->\n\n                                <input type="text" [(ngModel)]="captcha.digito" class="cad-form-ctrl" placeholder="Insira o Captcha">\n\n                            </label><!-- cad-form-label -->\n\n                        </div> <!-- cad-form-content -->\n\n                    </ion-col>\n\n                </ion-row>\n\n                <div class="form-cont">\n\n                    <button class="login-btn" (click)=" getCnpj()">Enviar</button>\n\n                </div> <!-- form-cont -->\n\n            </div>\n\n\n\n            <ion-row>\n\n                <ion-grid class="grid-complete-cnpj" [hidden]="!stepOkCnpj">\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Razão Social: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Razão Social" [(ngModel)]="emp.empresa_razao" value="" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n                    </ion-row>\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Nome Fantasia: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Nome Fantasia"  [(ngModel)]="emp.empresa_nomefantasia" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n                    </ion-row>\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Bairro: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Bairro" [(ngModel)]="emp.empresa_bairro" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n                    </ion-row>\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Endereço: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Endereço" [(ngModel)]="emp.empresa_endereco" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n\n\n                        <ion-col col-4>\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Nº: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Nº" [(ngModel)]="emp.empresa_numero" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n                        </ion-col>\n\n\n\n                    </ion-row>\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Cidade: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Cidade" [(ngModel)]="emp.empresa_cidade" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n\n\n                        <ion-col col-4>\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Estado: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Estado" [(ngModel)]="emp.empresa_estado" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n                        </ion-col>\n\n\n\n                    </ion-row>\n\n\n\n                </ion-grid>\n\n\n\n            </ion-row>\n\n\n\n        </ion-grid>\n\n    </div> <!-- cad-content-inn -->\n\n\n\n\n\n</ion-content>\n\n\n\n\n\n<ion-footer>\n\n    <div class="footer-steps">\n\n\n\n        <div class="next-step-action" [ngClass]="{ \'allowed\': stepOkCnpj }" (click)="goToStep3()">\n\n            <span class="next-step-label">\n\n                Próximo\n\n            </span> <!-- next-stap-label -->\n\n            <div class="nextstep-icon">\n\n                <span class="caret-body"></span>\n\n                <span class="caret-direction"></span>\n\n            </div> <!-- nextstep-icon -->\n\n        </div> <!-- next-stap-action -->\n\n\n\n    </div> <!-- footer-steps -->\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\cadastro\step2\step2.html"*/,
+            selector: 'page-step2',template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\cadastro\step2\step2.html"*/'<ion-header>\n\n    <div class="header-back" (click)="backToStep1()">\n\n\n\n        <svg class="backpage-ico">\n\n            <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n        </svg> <!-- backpage-ico -->\n\n\n\n    </div> <!-- header-back -->\n\n</ion-header>\n\n\n\n<ion-content>\n\n\n\n    <div class="step-indicator">\n\n\n\n        <span class="dotdot actived"></span>\n\n        <span class="dot-stick actived"></span>\n\n        <span class="dotdot actived rounded"></span>\n\n        <span class="dot-stick"></span>\n\n        <span class="dotdot"></span>\n\n\n\n    </div> <!-- step-indicator -->\n\n\n\n    <h3 class="title-step">Complete</h3> <!-- title-step -->\n\n\n\n    <div class="cad-content-inn">\n\n        <ion-grid>\n\n\n\n            <ion-row>\n\n                <ion-col>\n\n                    <div class="cad-form-content">\n\n                        <label class="cad-form-label">\n\n                            <span class="cad-form-label-txt"> CNPJ: </span> <!-- cad-form-label-txt -->\n\n                            <input type="text" [(ngModel)]="captcha.vazio"  name="cnpj" (keyup)="statusBusca()" class="cad-form-ctrl cnpj" placeholder="Insira o CNPJ"  [brmasker]="{person:true}">\n\n                        </label><!-- cad-form-label -->\n\n                    </div> <!-- cad-form-content -->\n\n                </ion-col>\n\n            </ion-row>\n\n            <div [hidden]="stepOk || stepOkCnpj">\n\n                <div class="form-cont">\n\n                    <button  class="login-btn" (click)="searchCnpj()"> Buscar </button>\n\n                    <!--<ion-spinner [hidden]="!load" class="position-spinner"></ion-spinner>-->\n\n                </div> <!-- form-cont -->\n\n            </div>\n\n\n\n            <div [hidden]="!stepOk">\n\n                <ion-row>\n\n                    <ion-col>\n\n                        <img  class="img-captcha"  [attr.src]="imgCaptcha">\n\n                        <i class="ion-refresh"></i>\n\n                        <div class="cad-form-content">\n\n                            <label class="cad-form-label">\n\n                                <span class="cad-form-label-txt"> Captcha: </span> <!-- cad-form-label-txt -->\n\n                                <input type="text" [(ngModel)]="captcha.digito" class="cad-form-ctrl" placeholder="Insira o Captcha">\n\n                            </label><!-- cad-form-label -->\n\n                        </div> <!-- cad-form-content -->\n\n                    </ion-col>\n\n                </ion-row>\n\n                <div class="form-cont">\n\n                    <button class="login-btn" (click)=" getCnpj()">Enviar</button>\n\n                </div> <!-- form-cont -->\n\n            </div>\n\n\n\n            <ion-row>\n\n                <ion-grid class="grid-complete-cnpj" [hidden]="!stepOkCnpj">\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Razão Social: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Razão Social" [(ngModel)]="emp.empresa_razao" value="" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n                    </ion-row>\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Nome Fantasia: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Nome Fantasia"  [(ngModel)]="emp.empresa_nomefantasia" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n                    </ion-row>\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Bairro: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Bairro" [(ngModel)]="emp.empresa_bairro" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n                    </ion-row>\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Endereço: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Endereço" [(ngModel)]="emp.empresa_endereco" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n\n\n                        <ion-col col-4>\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Nº: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Nº" [(ngModel)]="emp.empresa_numero" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n                        </ion-col>\n\n\n\n                    </ion-row>\n\n                    <ion-row>\n\n                        <ion-col>\n\n\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Cidade: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Cidade" [(ngModel)]="emp.empresa_cidade" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n\n\n                        </ion-col>\n\n\n\n                        <ion-col col-4>\n\n                            <div class="cad-form-content">\n\n                                <label class="cad-form-label">\n\n                                    <span class="cad-form-label-txt"> Estado: </span> <!-- cad-form-label-txt -->\n\n                                    <input type="text" class="cad-form-ctrl" placeholder="Estado" [(ngModel)]="emp.empresa_estado" readonly>\n\n                                </label><!-- cad-form-label -->\n\n                            </div> <!-- cad-form-content -->\n\n                        </ion-col>\n\n\n\n                    </ion-row>\n\n\n\n                </ion-grid>\n\n\n\n            </ion-row>\n\n\n\n        </ion-grid>\n\n    </div> <!-- cad-content-inn -->\n\n\n\n\n\n</ion-content>\n\n\n\n\n\n<ion-footer>\n\n    <div class="footer-steps">\n\n\n\n        <div class="next-step-action" [ngClass]="{ \'allowed\': stepOkCnpj }" (click)="goToStep3()">\n\n            <span class="next-step-label">\n\n                Próximo\n\n            </span> <!-- next-stap-label -->\n\n            <div class="nextstep-icon">\n\n                <span class="caret-body"></span>\n\n                <span class="caret-direction"></span>\n\n            </div> <!-- nextstep-icon -->\n\n        </div> <!-- next-stap-action -->\n\n\n\n    </div> <!-- footer-steps -->\n\n</ion-footer>'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\cadastro\step2\step2.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
@@ -4095,7 +4020,7 @@ var Step2Page = (function () {
 
 /***/ }),
 
-/***/ 92:
+/***/ 90:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4103,7 +4028,7 @@ var Step2Page = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__explore_estilos_explore_estilos__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__explore_estilos_explore_estilos__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__login_login__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(22);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -4235,7 +4160,7 @@ var ExplorePage = (function () {
     }
     ExplorePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-explore',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\explore\explore.html"*/'<ion-content>\n\n    <div class="background-explore" [ngStyle]="{\'background-image\': \'url(\' + constants.src_img + \'backgrounds/explore-background.png)\'}"></div> <!-- background-explore -->\n\n\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col col-auto class="pointer">\n\n\n\n                <div class="explore-back" >\n\n                    <svg class="ico-explore-back">\n\n                       <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-explore-back -->\n\n                </div> <!-- explore-back -->\n\n\n\n            </ion-col>\n\n            <ion-col class="relative">\n\n\n\n                <input type="search" class="explore-search" placeholder="Buscar">\n\n                <ion-icon name="md-close-circle" class="explore-search-close" ></ion-icon>\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n\n\n    <ion-grid class="grid-estilos">\n\n        <ion-row>\n\n            <ion-col>\n\n\n\n                <span class="grid-title">\n\n                    Seus Estilos\n\n                </span> <!-- grid-title -->\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n            <ion-col col-auto>\n\n                <button class="style-plus-button" (click)="settingsStyles()"> + </button>\n\n            </ion-col>\n\n            <ion-col class="relative">\n\n                <div class="viewbox-styles" >\n\n                    <ul class="list-styles">\n\n                        <li class="style-item pink">\n\n                            Femininos\n\n                            <span class="times-style"></span><!-- times-style -->\n\n                        </li><!-- style-item -->\n\n                        <li class="style-item purple">\n\n                            Jaquetas\n\n                            <span class="times-style"></span><!-- times-style -->\n\n                        </li><!-- style-item -->\n\n                        <li class="style-item brown">\n\n                            Saias\n\n                            <span class="times-style"></span><!-- times-style -->\n\n                        </li><!-- style-item --> <li class="style-item brown">\n\n                            Saias\n\n                            <span class="times-style"></span><!-- times-style -->\n\n                        </li><!-- style-item -->\n\n                    </ul><!-- list-styles -->\n\n                </div> <!-- viewbox-styles -->\n\n            </ion-col>\n\n            <ion-col col-auto (click)="doLogout()">\n\n                \n\n                <div class="filter-styles" >\n\n                    <svg class="ico-filter-styles">\n\n                       <use [attr.xlink:href]="constants.src_svg + \'settings.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-filter-styles -->\n\n                </div> <!-- filter-styles -->\n\n                \n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid><!-- grid-estilos -->\n\n\n\n    <ion-grid class="grid-destaques">\n\n\n\n        <ion-row>\n\n            <ion-col class="col-title">\n\n                <span class="grid-title">\n\n                    Destaques\n\n                </span> <!-- grid-title -->\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n                <div class="viewport-destaques" >\n\n                    <ul class="viewport-list">\n\n                        <li class="destaque-item" *ngFor="let destaque of destaques">\n\n                            <div class="destaque-header" >\n\n\n\n                                <div class="destaque-header-img">\n\n                                    <div class="img-destaque" [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/\' + destaque.company_logo + \')\'}" ></div> <!-- img-destaque -->\n\n                                </div> <!-- destaque-header-img -->\n\n\n\n                                <div class="destaque-header-infos">\n\n                                    <div class="destaque-infos-cont" >\n\n                                        \n\n                                        <div class="destaque-info" >\n\n                                            <span class="destaque-info-label title" >\n\n                                                {{ destaque.company_name }}\n\n                                            </span> <!-- destaque-info-label -->\n\n                                        </div> <!-- destaque-info -->\n\n                                        <div class="destaque-info" >\n\n                                            <span class="destaque-info-label description" >\n\n                                                {{ destaque.company_type }}\n\n                                            </span> <!-- destaque-info-label -->\n\n                                        </div> <!-- destaque-info -->\n\n\n\n                                    </div> <!-- destaque-infos-cont -->\n\n                                </div> <!-- destaque-header-img -->\n\n\n\n                                <div class="destaque-header-actions">\n\n                                    <button ion-button class="destaque-header-action"> Conectar </button>\n\n                                </div> <!-- destaque-header-img -->\n\n\n\n                            </div> <!-- destaque-header -->\n\n\n\n                            <div class="destaque-body" [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/\' + destaque.destaque_wallpaper + \')\'}" ></div> <!-- destaque-body -->\n\n\n\n                            <div class="destaque-footer" >\n\n                                <ul class="destaque-footer-list">\n\n                                    <li class="destaque-footer-item" [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/\' + produto.product_image + \')\'}"  *ngFor="let produto of destaque.destaque_products"></li><!-- destaque-footer-item -->\n\n                                </ul><!-- destaque-footer-list -->\n\n                            </div> <!-- destaque-footer -->\n\n\n\n                        </li><!-- destaque-item -->\n\n                    </ul> <!-- viewport-list -->\n\n                </div> <!-- viewport-destaques -->\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid><!-- grid-destaques -->\n\n\n\n    <ion-grid class="grid-explore-middle">\n\n        <ion-row *ngFor="let feed of feedExplore">\n\n            <ion-col>\n\n                <ul class="list-explore-middle" [ngClass]="feed.direction">\n\n\n\n                    <li class="explore-middle-item" *ngFor="let produtos of feed.products">\n\n                        <div class="explore-item-cont" >\n\n                            <div class="explore-item" [ngStyle]="{\'background-image\': \'url(\' + constants.src_img + \'exemples/\' + produtos.product_image + \')\'}">\n\n                                <div class="explore-item-logo" [ngStyle]="{\'background-image\': \'url(\' + constants.src_img + \'exemples/\' + produtos.product_logo + \')\'}"  ></div> <!-- explore-item-logo -->\n\n                            </div> <!-- explore-item -->\n\n                        </div> <!-- explore-item-cont -->\n\n                    </li><!-- explore-middle-item -->\n\n\n\n                </ul><!-- list-explore-middle -->\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid><!-- grid-explore-middle -->\n\n\n\n    <ion-grid class="grid-follow-recommended">\n\n        <ion-row>\n\n            <ion-col>\n\n                <span class="grid-title grey">\n\n                    Sugestões para se conectar\n\n                </span> <!-- grid-title -->\n\n            </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n            <ion-col>\n\n                <div class="viewport-suggestions" >\n\n                    <ul class="viewport-suggestions-list">\n\n                        <li class="suggestions-item" *ngFor=" let suggestion of suggestions ">\n\n                            <div class="suggestion-image" [ngStyle]="{\'background-image\': \'url(\' + constants.src_img +\'exemples/\' + suggestion.company_logo + \')\'}" ></div> <!-- suggestion-image -->\n\n                            <div class="seggestion-actions" >\n\n                                <div class="suggestion-action" >\n\n                                    <span class="suggestion-label title">\n\n                                        {{suggestion.company_name}}\n\n                                    </span><!-- suggestion-label -->\n\n                                </div> <!-- suggestion-action -->\n\n                                <div class="suggestion-action description-action" >\n\n                                    <span class="suggestion-label description">\n\n                                        {{suggestion.company_type}}\n\n                                    </span><!-- suggestion-label -->\n\n                                </div> <!-- suggestion-action -->\n\n                                <div class="suggestion-action" >\n\n                                    <button ion-button class="suggestion-button"> Conectar </button>\n\n                                </div> <!-- suggestion-action -->\n\n                            </div> <!-- seggestion-actions -->\n\n\n\n                        </li><!-- suggestions-item -->\n\n                    </ul><!-- viewport-suggestions-list -->\n\n                </div> <!-- viewport-suggestions -->\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid><!-- grid-follow-recommended -->\n\n\n\n</ion-content>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\explore\explore.html"*/,
+            selector: 'page-explore',template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\explore\explore.html"*/'<ion-content>\n\n    <div class="background-explore" [ngStyle]="{\'background-image\': \'url(\' + constants.src_img + \'backgrounds/explore-background.png)\'}"></div> <!-- background-explore -->\n\n\n\n    <ion-grid>\n\n        <ion-row>\n\n            <ion-col col-auto class="pointer">\n\n\n\n                <div class="explore-back" >\n\n                    <svg class="ico-explore-back">\n\n                       <use [attr.xlink:href]="constants.src_svg + \'back.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-explore-back -->\n\n                </div> <!-- explore-back -->\n\n\n\n            </ion-col>\n\n            <ion-col class="relative">\n\n\n\n                <input type="search" class="explore-search" placeholder="Buscar">\n\n                <ion-icon name="md-close-circle" class="explore-search-close" ></ion-icon>\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid>\n\n\n\n    <ion-grid class="grid-estilos">\n\n        <ion-row>\n\n            <ion-col>\n\n\n\n                <span class="grid-title">\n\n                    Seus Estilos\n\n                </span> <!-- grid-title -->\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n            <ion-col col-auto>\n\n                <button class="style-plus-button" (click)="settingsStyles()"> + </button>\n\n            </ion-col>\n\n            <ion-col class="relative">\n\n                <div class="viewbox-styles" >\n\n                    <ul class="list-styles">\n\n                        <li class="style-item pink">\n\n                            Femininos\n\n                            <span class="times-style"></span><!-- times-style -->\n\n                        </li><!-- style-item -->\n\n                        <li class="style-item purple">\n\n                            Jaquetas\n\n                            <span class="times-style"></span><!-- times-style -->\n\n                        </li><!-- style-item -->\n\n                        <li class="style-item brown">\n\n                            Saias\n\n                            <span class="times-style"></span><!-- times-style -->\n\n                        </li><!-- style-item --> <li class="style-item brown">\n\n                            Saias\n\n                            <span class="times-style"></span><!-- times-style -->\n\n                        </li><!-- style-item -->\n\n                    </ul><!-- list-styles -->\n\n                </div> <!-- viewbox-styles -->\n\n            </ion-col>\n\n            <ion-col col-auto (click)="doLogout()">\n\n                \n\n                <div class="filter-styles" >\n\n                    <svg class="ico-filter-styles">\n\n                       <use [attr.xlink:href]="constants.src_svg + \'settings.svg#Layer_1\'"></use>\n\n                    </svg> <!-- ico-filter-styles -->\n\n                </div> <!-- filter-styles -->\n\n                \n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid><!-- grid-estilos -->\n\n\n\n    <ion-grid class="grid-destaques">\n\n\n\n        <ion-row>\n\n            <ion-col class="col-title">\n\n                <span class="grid-title">\n\n                    Destaques\n\n                </span> <!-- grid-title -->\n\n            </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row>\n\n            <ion-col>\n\n                <div class="viewport-destaques" >\n\n                    <ul class="viewport-list">\n\n                        <li class="destaque-item" *ngFor="let destaque of destaques">\n\n                            <div class="destaque-header" >\n\n\n\n                                <div class="destaque-header-img">\n\n                                    <div class="img-destaque" [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/\' + destaque.company_logo + \')\'}" ></div> <!-- img-destaque -->\n\n                                </div> <!-- destaque-header-img -->\n\n\n\n                                <div class="destaque-header-infos">\n\n                                    <div class="destaque-infos-cont" >\n\n                                        \n\n                                        <div class="destaque-info" >\n\n                                            <span class="destaque-info-label title" >\n\n                                                {{ destaque.company_name }}\n\n                                            </span> <!-- destaque-info-label -->\n\n                                        </div> <!-- destaque-info -->\n\n                                        <div class="destaque-info" >\n\n                                            <span class="destaque-info-label description" >\n\n                                                {{ destaque.company_type }}\n\n                                            </span> <!-- destaque-info-label -->\n\n                                        </div> <!-- destaque-info -->\n\n\n\n                                    </div> <!-- destaque-infos-cont -->\n\n                                </div> <!-- destaque-header-img -->\n\n\n\n                                <div class="destaque-header-actions">\n\n                                    <button ion-button class="destaque-header-action"> Conectar </button>\n\n                                </div> <!-- destaque-header-img -->\n\n\n\n                            </div> <!-- destaque-header -->\n\n\n\n                            <div class="destaque-body" [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/\' + destaque.destaque_wallpaper + \')\'}" ></div> <!-- destaque-body -->\n\n\n\n                            <div class="destaque-footer" >\n\n                                <ul class="destaque-footer-list">\n\n                                    <li class="destaque-footer-item" [ngStyle]="{ \'background-image\': \'url(\' + constants.src_img + \'exemples/\' + produto.product_image + \')\'}"  *ngFor="let produto of destaque.destaque_products"></li><!-- destaque-footer-item -->\n\n                                </ul><!-- destaque-footer-list -->\n\n                            </div> <!-- destaque-footer -->\n\n\n\n                        </li><!-- destaque-item -->\n\n                    </ul> <!-- viewport-list -->\n\n                </div> <!-- viewport-destaques -->\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid><!-- grid-destaques -->\n\n\n\n    <ion-grid class="grid-explore-middle">\n\n        <ion-row *ngFor="let feed of feedExplore">\n\n            <ion-col>\n\n                <ul class="list-explore-middle" [ngClass]="feed.direction">\n\n\n\n                    <li class="explore-middle-item" *ngFor="let produtos of feed.products">\n\n                        <div class="explore-item-cont" >\n\n                            <div class="explore-item" [ngStyle]="{\'background-image\': \'url(\' + constants.src_img + \'exemples/\' + produtos.product_image + \')\'}">\n\n                                <div class="explore-item-logo" [ngStyle]="{\'background-image\': \'url(\' + constants.src_img + \'exemples/\' + produtos.product_logo + \')\'}"  ></div> <!-- explore-item-logo -->\n\n                            </div> <!-- explore-item -->\n\n                        </div> <!-- explore-item-cont -->\n\n                    </li><!-- explore-middle-item -->\n\n\n\n                </ul><!-- list-explore-middle -->\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid><!-- grid-explore-middle -->\n\n\n\n    <ion-grid class="grid-follow-recommended">\n\n        <ion-row>\n\n            <ion-col>\n\n                <span class="grid-title grey">\n\n                    Sugestões para se conectar\n\n                </span> <!-- grid-title -->\n\n            </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n            <ion-col>\n\n                <div class="viewport-suggestions" >\n\n                    <ul class="viewport-suggestions-list">\n\n                        <li class="suggestions-item" *ngFor=" let suggestion of suggestions ">\n\n                            <div class="suggestion-image" [ngStyle]="{\'background-image\': \'url(\' + constants.src_img +\'exemples/\' + suggestion.company_logo + \')\'}" ></div> <!-- suggestion-image -->\n\n                            <div class="seggestion-actions" >\n\n                                <div class="suggestion-action" >\n\n                                    <span class="suggestion-label title">\n\n                                        {{suggestion.company_name}}\n\n                                    </span><!-- suggestion-label -->\n\n                                </div> <!-- suggestion-action -->\n\n                                <div class="suggestion-action description-action" >\n\n                                    <span class="suggestion-label description">\n\n                                        {{suggestion.company_type}}\n\n                                    </span><!-- suggestion-label -->\n\n                                </div> <!-- suggestion-action -->\n\n                                <div class="suggestion-action" >\n\n                                    <button ion-button class="suggestion-button"> Conectar </button>\n\n                                </div> <!-- suggestion-action -->\n\n                            </div> <!-- seggestion-actions -->\n\n\n\n                        </li><!-- suggestions-item -->\n\n                    </ul><!-- viewport-suggestions-list -->\n\n                </div> <!-- viewport-suggestions -->\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid><!-- grid-follow-recommended -->\n\n\n\n</ion-content>'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\explore\explore.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
@@ -4250,7 +4175,7 @@ var ExplorePage = (function () {
 
 /***/ }),
 
-/***/ 93:
+/***/ 91:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4348,7 +4273,7 @@ var ExploreEstilosPage = (function () {
     }
     ExploreEstilosPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-explore-estilos',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\explore-estilos\explore-estilos.html"*/'<div class="page-background"></div> <!-- page-background -->\n\n<ion-header>\n\n    <ion-grid class="grid-header">\n\n        <ion-row>\n\n            <ion-col col-auto class="col-back" (click)="closeModal()">\n\n                <div class="header-back"></div> <!-- header-back -->\n\n            </ion-col><!-- col-auto -->\n\n            <ion-col>\n\n            <span class="header-title">\n\n                Qual seu estilo?\n\n            </span><!-- header-title -->\n\n            </ion-col>\n\n            <ion-col col-auto>\n\n                <button ion-button class="confirm-explore-estilos" (click)="confirmModal()"> Confirmar</button>\n\n            </ion-col><!-- col-auto -->\n\n        </ion-row>\n\n    </ion-grid><!-- grid-header -->\n\n</ion-header>\n\n<ion-content>\n\n    <ion-grid class="grid-styles">\n\n        <ion-row>\n\n            <ion-col>\n\n\n\n                <ul class="list-styles">\n\n                    <li class="list-styles-item" *ngFor="let estilo of estilos"\n\n                        [ngClass]="estilo.class"\n\n                        (click)="selectStyle( $event )" >\n\n                        {{estilo.estilo}}\n\n                    </li> <!-- list-styles-item -->\n\n                </ul><!-- list-styles -->\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid><!-- grid-styles -->\n\n\n\n</ion-content>'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\explore-estilos\explore-estilos.html"*/,
+            selector: 'page-explore-estilos',template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\explore-estilos\explore-estilos.html"*/'<div class="page-background"></div> <!-- page-background -->\n\n<ion-header>\n\n    <ion-grid class="grid-header">\n\n        <ion-row>\n\n            <ion-col col-auto class="col-back" (click)="closeModal()">\n\n                <div class="header-back"></div> <!-- header-back -->\n\n            </ion-col><!-- col-auto -->\n\n            <ion-col>\n\n            <span class="header-title">\n\n                Qual seu estilo?\n\n            </span><!-- header-title -->\n\n            </ion-col>\n\n            <ion-col col-auto>\n\n                <button ion-button class="confirm-explore-estilos" (click)="confirmModal()"> Confirmar</button>\n\n            </ion-col><!-- col-auto -->\n\n        </ion-row>\n\n    </ion-grid><!-- grid-header -->\n\n</ion-header>\n\n<ion-content>\n\n    <ion-grid class="grid-styles">\n\n        <ion-row>\n\n            <ion-col>\n\n\n\n                <ul class="list-styles">\n\n                    <li class="list-styles-item" *ngFor="let estilo of estilos"\n\n                        [ngClass]="estilo.class"\n\n                        (click)="selectStyle( $event )" >\n\n                        {{estilo.estilo}}\n\n                    </li> <!-- list-styles-item -->\n\n                </ul><!-- list-styles -->\n\n\n\n            </ion-col>\n\n        </ion-row>\n\n    </ion-grid><!-- grid-styles -->\n\n\n\n</ion-content>'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\explore-estilos\explore-estilos.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
@@ -4361,7 +4286,7 @@ var ExploreEstilosPage = (function () {
 
 /***/ }),
 
-/***/ 94:
+/***/ 92:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4410,7 +4335,7 @@ var ProfileProvider = (function () {
 
 /***/ }),
 
-/***/ 95:
+/***/ 93:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4548,7 +4473,7 @@ var NotificacaoPage = (function () {
     }
     NotificacaoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-notificacao',template:/*ion-inline-start:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\notificações\notificacao\notificacao.html"*/'<ion-header>\n\n    <ion-grid>\n        <ion-row class="content-header-menu">\n            <ion-col>\n                <div text-align="center" class="btn-confir wrapper">\n                    <svg class="svg-search-ico-usertype">\n                        <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n                    </svg> <!-- svg-ico-usertype -->\n                </div>\n                <div class="col-header-menu">MENSAGENS</div>\n            </ion-col>\n            <ion-col class="col-selected-border">\n                <div text-align="center" class="wrapper">\n                    <svg class="svg-search-ico-usertype svg-selected">\n                        <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n                    </svg> <!-- svg-ico-usertype -->\n                </div>\n                <div class="col-header-menu col-selected">NOTIFICAÇÕES</div>\n            </ion-col>\n        </ion-row>\n\n    </ion-grid>\n</ion-header>\n\n<!-- Content of notification page -->\n<ion-content #Content>\n\n    <!-- Start of notification -->\n\n    <ion-grid class="content-submenu-header">\n        <ion-row>\n            <ion-col class="col-submenu">\n                <div class="content-ativiades submenu-selected">ATIVIDADES</div>\n            </ion-col>\n            <ion-col class="col-submenu" (click)="conexoes()">\n                <div class="content-conexoes">CONEXÕES</div>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n\n\n    <ion-list class="content-notification">\n        <div class="content-novas">\n            <div class="text-novas">Novas</div>\n        </div>\n        <div *ngFor="let data of notification">\n            <ion-item *ngIf="data.Anterior == false">\n                <div class="content-icon">\n                    <div class="content-icon-user">\n                        <div class="img-user-post">\n                            <div class="img-user-icon"\n                                 style=" background-size:cover; background-position: center;"\n                                 [ngStyle]="{\'background-image\': \'url(\'+ \'http://ziromoda.com.br/ziroblog/wp-content/uploads/2016/03/Unique-Chic-Oficial.png\' + \')\'}"\n                                 ngStyle="{\'background-image\': \'url(\'+ \'http://ziromoda.com.br/ziroblog/wp-content/uploads/2016/03/Unique-Chic-Oficial.png\' + \')\'}"></div>\n                        </div>\n                    </div>\n                </div>\n                <div class="text-content-notification">\n                    <div class="text-notification">\n                        <b>{{data.Nome}} </b> - {{data.Desc}}\n                    </div>\n                    <div class="text-time"> {{data.Time}}</div>\n                </div>\n            </ion-item>\n        </div>\n        <div class="content-novas">\n            <div class="text-novas">Anteriores</div>\n        </div>\n        <div *ngFor="let data of notification">\n            <ion-item *ngIf="data.Anterior == true">\n                <div class="content-icon">\n                    <div class="content-icon-user">\n                        <div class="img-user-post">\n                            <div class="img-user-icon"\n                                 style="  background-size:cover; background-position: center;"\n                                 [ngStyle]="{\'background-image\': \'url(\'+ \'http://ziromoda.com.br/ziroblog/wp-content/uploads/2016/03/Unique-Chic-Oficial.png\' + \')\'}"\n                                 ngStyle="{\'background-image\': \'url(\'+ \'http://ziromoda.com.br/ziroblog/wp-content/uploads/2016/03/Unique-Chic-Oficial.png\' + \')\'}"></div>\n                        </div>\n                    </div>\n                </div>\n                <div class="text-content-notification">\n                    <div class="text-notification">\n                        <b>{{data.Nome}} </b> - {{data.Desc}}\n                    </div>\n                    <div class="text-time"> {{data.Time}}</div>\n                </div>\n            </ion-item>\n        </div>\n\n    </ion-list>\n\n</ion-content>\n<!-- End of content notification Page -->\n'/*ion-inline-end:"C:\wamp64\www\qrgo_prototype\src\pages\themes\prototype\notificações\notificacao\notificacao.html"*/,
+            selector: 'page-notificacao',template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\notificações\notificacao\notificacao.html"*/'<ion-header>\n\n    <ion-grid>\n        <ion-row class="content-header-menu">\n            <ion-col>\n                <div text-align="center" class="btn-confir wrapper">\n                    <svg class="svg-search-ico-usertype">\n                        <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n                    </svg> <!-- svg-ico-usertype -->\n                </div>\n                <div class="col-header-menu">MENSAGENS</div>\n            </ion-col>\n            <ion-col class="col-selected-border">\n                <div text-align="center" class="wrapper">\n                    <svg class="svg-search-ico-usertype svg-selected">\n                        <use [attr.xlink:href]="constants.src_svg + \'chat_ballon.svg#Layer_1\'"></use>\n                    </svg> <!-- svg-ico-usertype -->\n                </div>\n                <div class="col-header-menu col-selected">NOTIFICAÇÕES</div>\n            </ion-col>\n        </ion-row>\n\n    </ion-grid>\n</ion-header>\n\n<!-- Content of notification page -->\n<ion-content #Content>\n\n    <!-- Start of notification -->\n\n    <ion-grid class="content-submenu-header">\n        <ion-row>\n            <ion-col class="col-submenu">\n                <div class="content-ativiades submenu-selected">ATIVIDADES</div>\n            </ion-col>\n            <ion-col class="col-submenu" (click)="conexoes()">\n                <div class="content-conexoes">CONEXÕES</div>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n\n\n    <ion-list class="content-notification">\n        <div class="content-novas">\n            <div class="text-novas">Novas</div>\n        </div>\n        <div *ngFor="let data of notification">\n            <ion-item *ngIf="data.Anterior == false">\n                <div class="content-icon">\n                    <div class="content-icon-user">\n                        <div class="img-user-post">\n                            <div class="img-user-icon"\n                                 style=" background-size:cover; background-position: center;"\n                                 [ngStyle]="{\'background-image\': \'url(\'+ \'http://ziromoda.com.br/ziroblog/wp-content/uploads/2016/03/Unique-Chic-Oficial.png\' + \')\'}"\n                                 ngStyle="{\'background-image\': \'url(\'+ \'http://ziromoda.com.br/ziroblog/wp-content/uploads/2016/03/Unique-Chic-Oficial.png\' + \')\'}"></div>\n                        </div>\n                    </div>\n                </div>\n                <div class="text-content-notification">\n                    <div class="text-notification">\n                        <b>{{data.Nome}} </b> - {{data.Desc}}\n                    </div>\n                    <div class="text-time"> {{data.Time}}</div>\n                </div>\n            </ion-item>\n        </div>\n        <div class="content-novas">\n            <div class="text-novas">Anteriores</div>\n        </div>\n        <div *ngFor="let data of notification">\n            <ion-item *ngIf="data.Anterior == true">\n                <div class="content-icon">\n                    <div class="content-icon-user">\n                        <div class="img-user-post">\n                            <div class="img-user-icon"\n                                 style="  background-size:cover; background-position: center;"\n                                 [ngStyle]="{\'background-image\': \'url(\'+ \'http://ziromoda.com.br/ziroblog/wp-content/uploads/2016/03/Unique-Chic-Oficial.png\' + \')\'}"\n                                 ngStyle="{\'background-image\': \'url(\'+ \'http://ziromoda.com.br/ziroblog/wp-content/uploads/2016/03/Unique-Chic-Oficial.png\' + \')\'}"></div>\n                        </div>\n                    </div>\n                </div>\n                <div class="text-content-notification">\n                    <div class="text-notification">\n                        <b>{{data.Nome}} </b> - {{data.Desc}}\n                    </div>\n                    <div class="text-time"> {{data.Time}}</div>\n                </div>\n            </ion-item>\n        </div>\n\n    </ion-list>\n\n</ion-content>\n<!-- End of content notification Page -->\n'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\notificações\notificacao\notificacao.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
     ], NotificacaoPage);
@@ -4559,7 +4484,7 @@ var NotificacaoPage = (function () {
 
 /***/ }),
 
-/***/ 96:
+/***/ 94:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4601,6 +4526,63 @@ var SharedModule = (function () {
 }());
 
 //# sourceMappingURL=share.module.js.map
+
+/***/ }),
+
+/***/ 95:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SlidesPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_Constants__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_login__ = __webpack_require__(26);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the SlidesPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var SlidesPage = (function () {
+    function SlidesPage(navCtrl, navParams) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.constants = __WEBPACK_IMPORTED_MODULE_2__config_Constants__["a" /* Constants */];
+        /**
+         * Função utilizada para enviar o usuário para a pagina de login */
+        this.startLogin = (function () {
+            /* Envia o usuário à pagina de login */
+            var storage = { 'first_access': false };
+            localStorage.setItem("qrgo_application", JSON.stringify(storage));
+            _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__login_login__["a" /* LoginPage */], {}, { animate: true, direction: 'forward' });
+        });
+    }
+    SlidesPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'page-slides',template:/*ion-inline-start:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\slides\slides.html"*/'<ion-slides pager>\n\n\n\n  <ion-slide class="slider-content" >\n\n    \n\n    <div class="image-content" >\n\n      <img class="img-slide" [attr.src]="constants.src_img + \'slides/01.png\'" alt="">\n\n    </div> <!-- image-content -->\n\n\n\n    <h1 class="slider-title">A confecção na palma da sua mão</h1>\n\n    <p class="slide-description">\n\n      Uma rede que oferece o <strong>controle</strong> e <strong>divulgação</strong> dos seus produtos em tempo real!\n\n    </p><!-- slide-description -->\n\n\n\n    <button class="skip-slider" (click)="startLogin()"> Pular </button>\n\n\n\n  </ion-slide> <!-- End of slider 1 -->\n\n\n\n  <ion-slide class="slider-content" >\n\n\n\n    <div class="image-content" >\n\n      <img class="img-slide" [attr.src]="constants.src_img + \'slides/02.png\'" alt="">\n\n    </div> <!-- image-content -->\n\n\n\n    <h1 class="slider-title">Procura & Demanda</h1>\n\n    <p class="slide-description">\n\n        Milhares de lojistas e confecções procurando fazer novos contatos!\n\n    </p><!-- slide-description -->\n\n\n\n    <button class="skip-slider" (click)="startLogin()"> Pular </button>\n\n\n\n  </ion-slide> <!-- End of slider 2 -->\n\n\n\n  <ion-slide class="slider-content" >\n\n\n\n    <div class="image-content" >\n\n      <img class="img-slide" [attr.src]="constants.src_img + \'slides/03.png\'" alt="">\n\n    </div> <!-- image-content -->\n\n\n\n    <h1 class="slider-title">Sempre Informado</h1>\n\n    <p class="slide-description">\n\n      Acompanhe em primeira mão em uma unica plataforma as <strong>novidades, publicações</strong> e <strong>promoções</strong> dos seus contatos!\n\n    </p><!-- slide-description -->\n\n\n\n    <button class="skip-slider" (click)="startLogin()"> Pular </button>\n\n\n\n  </ion-slide> <!-- End of slider 3 -->\n\n\n\n  <ion-slide class="slider-content" >\n\n\n\n    <div class="image-content" >\n\n      <img class="img-slide" [attr.src]="constants.src_img + \'slides/04.png\'" alt="">\n\n    </div> <!-- image-content -->\n\n\n\n    <h1 class="slider-title">Seja Independente</h1>\n\n    <p class="slide-description">\n\n      Sinta a liberdade de poder <strong>comprar</strong> e <strong>reservar peças</strong> sem estar a mercê do tempo de um vendedor.\n\n    </p><!-- slide-description -->\n\n\n\n    <button class="start-button" (click)="startLogin()">Começar!</button>\n\n\n\n    <button class="skip-slider" (click)="startLogin()"> Pular </button>\n\n\n\n  </ion-slide> <!-- End of slider 4 -->\n\n\n\n</ion-slides>'/*ion-inline-end:"C:\wamp64\www\nc5app1\src\pages\themes\prototype\slides\slides.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
+    ], SlidesPage);
+    return SlidesPage;
+}());
+
+//# sourceMappingURL=slides.js.map
 
 /***/ })
 
