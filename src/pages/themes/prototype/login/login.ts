@@ -1,15 +1,12 @@
 import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams, ToastController} from 'ionic-angular';
 import {Constants} from "../../../../config/Constants";
-import {SlidesPage} from "../slides/slides";
-import {Step1Page} from "../cadastro/step1/step1";
-import {SystemTabsPage} from "../system-tabs/system-tabs";
 import {ForgotPass_1Page} from "../forgot-pass/forgot-pass-1/forgot-pass-1";
-import {Http} from "@angular/http";
+import {Http, Headers, RequestOptions} from "@angular/http";
 import * as $ from "jquery";
-import {ConfirmCadPage} from "../cadastro/confirm-cad/confirm-cad";
 import {Storage} from '@ionic/storage';
 import {Platform} from 'ionic-angular';
+import {FeedPage} from "../feed/feed";
 
 /**
  * Generated class for the LoginPage page.
@@ -38,6 +35,8 @@ export class LoginPage {
                 public http: Http,
                 public storage: Storage,
                 public platform: Platform) { /* Init of constructor of class */
+
+        console.log(this.storage.get('user_logged'));
 
         platform.ready().then(() => {
 
@@ -74,11 +73,6 @@ export class LoginPage {
     });
     /* Fim da função de redirecionamento para os slides */
 
-    /**
-     * Função utilizada para redirecionar o usuário à pagina de realizar o cadastro */
-    public goToCadastro = (() => {
-        this.navCtrl.push(Step1Page);
-    });
     /* Fim da função de regdirecionamento para a página de cadastro */
 
     /**
@@ -86,21 +80,32 @@ export class LoginPage {
     public doLogin = (() => {
         //this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
 
+        let headers = new Headers({
+            'Content-Type': 'application/x-www-form-urlencoded'
+        });
+        let options = new RequestOptions({
+            headers: headers
+        });
+
         var data_send = this.logindata;
-        this.http.post(this.constants.api_path + 'login/do_login2', $.param(data_send)).subscribe(response => {
+        this.http.post(this.constants.api_path + 'login/do_login', $.param(data_send),options).subscribe(response => {
 
-            var login = (response as any);
+            var res = (response as any)
+            this.login = JSON.parse(res._body);
+            const login = (this.login as any);
 
-            console.log(login.id);
+            console.log(login.user);
 
             if (login.success) {
 
-                this.storage.set('user_logged', login.id).then(() => { // Setando os dados do usuário logado no storage
-                    localStorage.setItem('user_logged', JSON.stringify(login.useriddata)); // E no localStorage
+                this.storage.set('user_logged', login.user).then(() => { // Setando os dados do usuário logado no storage
+                    localStorage.setItem('user_logged', JSON.stringify(login)); // E no localStorage
                 });
 
+                console.log(localStorage.getItem('user_logged'))
 
-                    this.navCtrl.setRoot(SystemTabsPage, {}, {animate: true, direction: 'forward'});
+                    this.navCtrl.push(FeedPage, {'id': login.user}, {animate: true, direction: 'forward'});
+
 
 
             } else {

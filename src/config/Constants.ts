@@ -13,6 +13,4 @@ export const Constants = {
     'src_img_posts': '../uploads/',
     'src_svg': './assets/themes/prototype/img/svg/',
 
-    //API-GOOGLE-PLACE_AUTOCOMPLETE
-    'api_autocomplete':'https://maps.googleapis.com/maps/api/place/autocomplete/json?key=AIzaSyA1jeVP2ndBZkPsc6C-rOv4xzDbS24fXMM&'
 };
