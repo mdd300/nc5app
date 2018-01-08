@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9c4d24c-78b1-480c-bb6f-5425c5c878c1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/node-sass" afterPath="$PROJECT_DIR$/node_modules/.bin/node-sass" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change beforePath="$PROJECT_DIR$/platforms/android/assets/www/build/main.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/platforms/android/assets/www/build/main.js.map" afterPath="" />
@@ -12,92 +10,6 @@
       <change beforePath="$PROJECT_DIR$/platforms/android/assets/www/build/vendor.js.map" afterPath="" />
       <change beforePath="$PROJECT_DIR$/plugins/android.json" afterPath="" />
       <change beforePath="$PROJECT_DIR$/plugins/fetch.json" afterPath="$PROJECT_DIR$/plugins/fetch.json" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" afterPath="$PROJECT_DIR$/src/app/app.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" afterPath="$PROJECT_DIR$/src/app/app.module.ts" />
-      <change beforePath="$PROJECT_DIR$/src/components/components.module.ts" afterPath="$PROJECT_DIR$/src/components/components.module.ts" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu-bottom/menu-bottom.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu-bottom/menu-bottom.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu-bottom/menu-bottom.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/components/qrgo-header/qrgo-header.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/components/qrgo-header/qrgo-header.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/components/qrgo-header/qrgo-header.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/config/Constants.ts" afterPath="$PROJECT_DIR$/src/config/Constants.ts" />
-      <change beforePath="$PROJECT_DIR$/src/config/share.module.ts" afterPath="$PROJECT_DIR$/src/config/share.module.ts" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/cadastro-theme.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/confirm-cad/confirm-cad.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/confirm-cad/confirm-cad.module.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/confirm-cad/confirm-cad.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/confirm-cad/confirm-cad.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step1/step1.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step1/step1.module.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step1/step1.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step1/step1.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step2/step2.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step2/step2.module.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step2/step2.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step2/step2.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step3/step3.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step3/step3.module.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step3/step3.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/cadastro/step3/step3.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/explore-estilos/explore-estilos.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/explore-estilos/explore-estilos.module.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/explore-estilos/explore-estilos.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/explore-estilos/explore-estilos.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/explore/explore.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/explore/explore.module.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/explore/explore.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/explore/explore.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/feed/feed.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/feed/feed.module.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/feed/feed.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/feed/feed.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/login/login.html" afterPath="$PROJECT_DIR$/src/pages/themes/prototype/login/login.html" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/login/login.ts" afterPath="$PROJECT_DIR$/src/pages/themes/prototype/login/login.ts" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/modais/gostos/gostos.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/modais/gostos/gostos.module.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/modais/gostos/gostos.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/modais/gostos/gostos.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/modais/localizacao/localizacao.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/modais/localizacao/localizacao.module.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/modais/localizacao/localizacao.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/modais/localizacao/localizacao.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/modais/post/post.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/modais/post/post.module.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/modais/post/post.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/modais/post/post.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/notificações/conexoes/conexoes.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/notificações/conexoes/conexoes.module.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/notificações/conexoes/conexoes.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/notificações/conexoes/conexoes.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/notificações/notificacao/notificacao.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/notificações/notificacao/notificacao.module.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/notificações/notificacao/notificacao.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/notificações/notificacao/notificacao.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/produtos/product-profile/product-profile.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/produtos/product-profile/product-profile.module.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/produtos/product-profile/product-profile.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/produtos/product-profile/product-profile.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/profile-config/profile-config.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/profile-config/profile-config.module.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/profile-config/profile-config.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/profile-config/profile-config.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/profile/profile.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/profile/profile.module.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/profile/profile.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/profile/profile.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/slides/slides.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/slides/slides.module.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/slides/slides.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/slides/slides.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/system-tabs/system-tabs.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/system-tabs/system-tabs.module.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/system-tabs/system-tabs.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/pages/themes/prototype/system-tabs/system-tabs.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/www/build/main.js" afterPath="$PROJECT_DIR$/www/build/main.js" />
-      <change beforePath="$PROJECT_DIR$/www/build/main.js.map" afterPath="$PROJECT_DIR$/www/build/main.js.map" />
-      <change beforePath="$PROJECT_DIR$/www/build/vendor.js" afterPath="$PROJECT_DIR$/www/build/vendor.js" />
-      <change beforePath="$PROJECT_DIR$/www/build/vendor.js.map" afterPath="$PROJECT_DIR$/www/build/vendor.js.map" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -272,7 +184,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="98" />
     <option name="y" value="26" />
     <option name="width" value="1366" />
@@ -437,7 +349,7 @@
     <option name="totallyTimeSpent" value="117446000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="98" y="26" width="1366" height="696" extended-state="1" />
+    <frame x="98" y="26" width="1366" height="696" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />

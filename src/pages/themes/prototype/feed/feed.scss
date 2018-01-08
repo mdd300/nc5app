@@ -1,0 +1,45 @@
+page-feed {
+
+  .content-header{
+    width: 100%;
+    height: 10%;
+
+    background: #000080;
+    background: -webkit-linear-gradient(left, #0000FF , #6495ED);
+    background: -o-linear-gradient(right, #0000FF, #6495ED);
+    background: -moz-linear-gradient(right, #0000FF, #6495ED);
+    background: linear-gradient(to right, #0000FF , #6495ED);
+
+    .content-title{
+
+      padding: 5.5%;
+      font-size: 1.5em;
+      font-family: Multicolore;
+      color: white;
+
+    }
+
+  }
+
+  .content-file{
+    width: 100%;
+    height: auto;
+    border: 1px solid $color-grey;
+    border-radius: $border-rd-sm;
+
+    .img-file{
+      width: 100%;
+      height: 150px;
+      background-color: red;
+      background-size:cover;
+      background-position: center;
+    }
+    .info-file{
+      font-family: Multicolore;
+      font-size: 1rem;
+      padding: 11%;
+
+    }
+  }
+
+}

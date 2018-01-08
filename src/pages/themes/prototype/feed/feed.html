@@ -1,0 +1,24 @@
+<ion-header class="content-header">
+    <div class="content-title"> Meus Arquivos</div>
+
+</ion-header>
+
+<ion-content>
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let file of files" col-6 >
+        <div class="content-file" (click)="download(constants.api_path + 'public/assets/metronic/app/media/img/uploads/' + file.file_link, file.nome)">
+          <div class="img-file"
+               ngStyle="{'background-image': 'url('+  constants .api_path + 'public/assets/metronic/app/media/img/icons/'+ file.file_icon  + ')'}"
+               [ngStyle]="{'background-image': 'url('+  constants .api_path + 'public/assets/metronic/app/media/img/icons/'+ file.file_icon  + ')'}">
+          </div>
+          <div class="info-file">{{file.file_nome}}</div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+</ion-content>
